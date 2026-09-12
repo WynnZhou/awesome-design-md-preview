@@ -4,10 +4,12 @@
 
 **English** · [中文](README-zh.md)
 
+**Live:** <https://wynnzhou.github.io/awesome-design-md-preview/> — the same viewer, served from the repo.
+
 76 design systems, previewed offline. `index.html` is the viewer; each style folder carries that style's page with both its light and its dark theme in it.
 
 ## Layout
-    design-md-previews/
+    awesome-design-md-preview/
     ├── index.html                  the viewer — style list left, live preview right. Hand-kept:
     │                               no script writes it
     ├── README.md · README-zh.md · LICENSE

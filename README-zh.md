@@ -4,10 +4,12 @@
 
 [English](README.md) · **中文**
 
+**在线：** <https://wynnzhou.github.io/awesome-design-md-preview/> —— 同一个浏览器，从仓库直接托管。
+
 76 个设计系统，离线可看。`index.html` 是浏览器；每个风格目录里那一页同时带着它的浅色和深色主题。
 
 ## 目录结构
-    design-md-previews/
+    awesome-design-md-preview/
     ├── index.html                  浏览器 —— 左边风格列表，右边实时预览。手工维护，没有脚本写它
     ├── README.md · README-zh.md · LICENSE
     ├── design-md/                  每个风格一个目录，共 76 个，和上游的排布一致
