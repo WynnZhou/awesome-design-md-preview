@@ -28,8 +28,10 @@ FONTS = OUT / 'design-md' / 'fonts'
 ICONS = OUT / 'icons'
 CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 SITE = 'https://getdesign.md/design-md'
-# the VoltAgent mark in the footer credit; every saved copy of it is byte-identical
-LOGO = Path.home() / 'Downloads' / 'Design System Analysis_ Zapier_Light_files' / 'VoltAgent.png'
+# The VoltAgent mark in the footer credit. Fetched, not read off disk: a path into whoever ran
+# this last is one more thing a clone would have to reproduce, and github.com serves the same
+# 1153-byte png the pages carry.
+LOGO_URL = 'https://github.com/VoltAgent.png?size=32'
 
 FONT_LINK = re.compile(r'<link[^>]*fonts\.googleapis\.com[^>]*>')
 # both preconnects go first, or the stylesheet regex below swallows the googleapis one too
@@ -106,7 +108,7 @@ def tidy(doc):
     doc, n = FONT_LINK.subn(lambda _: '<style>\n' + faces + '\n</style>', doc)
     if n != 1:
         raise SystemExit(f'expected 1 fonts <link>, replaced {n}')
-    logo = base64.b64encode(LOGO.read_bytes()).decode()
+    logo = base64.b64encode(gen._get(LOGO_URL, timeout=20)).decode()
     doc, n = REMOTE_LOGO.subn(f'src="data:image/png;base64,{logo}"', doc)
     if n < 1:
         raise SystemExit('no remote VoltAgent avatar to inline')
