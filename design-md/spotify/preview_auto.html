@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-native="dark" data-theme="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spotify — Design System Preview</title>
+  <link rel="stylesheet" href="preview_auto.css">
+</head>
+<body>
+
+<div class="page">
+  <header class="topbar">
+    <div><div class="topbar-name">Spotify</div><div class="topbar-meta">design tokens · 18 colors · 14 type styles · 7 components</div></div>
+    <nav class="topbar-links"><a href="#colors">Colors</a><a href="#typography">Type</a><a href="#badges">Badges</a><a href="#spacing">Spacing</a><a href="#radius">Radius</a><a href="#elevation">Depth</a><a href="#signature">Other</a><a href="#reference">Reference</a></nav>
+  </header>
+  <section class="hero">
+    <h1>Spotify</h1>
+    <p class="lede">Spotify&#x27;s web interface is a dark, immersive music player that wraps listeners in a near-black cocoon (`#121212`, `#181818`, `#1f1f1f`) where album art and content become the primary source of color. The design philosophy is &quot;content-first darkness&quot; — the UI recedes into shadow so that music, podcasts, and playlists can glow. Every surface is a shade of charcoal, creating a theater-like environment where the only true color comes from the iconic Spotify Green (`#1ed760`) and the album artwork itself.</p>
+    <div class="meta">
+      <span class="chip solid">#1ed760</span>
+      <span class="chip">SpotifyMixUI</span>
+      <span class="chip">dark canvas</span>
+      <span class="chip">source: DESIGN.md (markdown)</span>
+    </div>
+  </section>
+  <section id="colors">
+    <div class="sec-head"><h2>Color Palette</h2><span class="count">18 tokens</span></div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-spotify-green">#1ed760</div><div class="info"><div class="nm">Spotify Green</div><div class="hx">spotify-green</div><div class="hx dim">Primary brand accent — play buttons, active states, CTAs</div></div></div>
+      <div class="swatch"><div class="fill sw-near-black">#121212</div><div class="info"><div class="nm">Near Black</div><div class="hx">near-black</div><div class="hx dim">Deepest background surface</div></div></div>
+      <div class="swatch"><div class="fill sw-dark-surface">#181818</div><div class="info"><div class="nm">Dark Surface</div><div class="hx">dark-surface</div><div class="hx dim">Cards, containers, elevated surfaces</div></div></div>
+      <div class="swatch"><div class="fill sw-mid-dark">#1f1f1f</div><div class="info"><div class="nm">Mid Dark</div><div class="hx">mid-dark</div><div class="hx dim">Button backgrounds, interactive surfaces</div></div></div>
+    </div>
+    <div class="group-title">Text</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-white">#ffffff</div><div class="info"><div class="nm">White</div><div class="hx">white</div><div class="hx dim">--text-base, primary text</div></div></div>
+      <div class="swatch"><div class="fill sw-silver">#b3b3b3</div><div class="info"><div class="nm">Silver</div><div class="hx">silver</div><div class="hx dim">Secondary text, muted labels, inactive nav</div></div></div>
+      <div class="swatch"><div class="fill sw-near-white">#cbcbcb</div><div class="info"><div class="nm">Near White</div><div class="hx">near-white</div><div class="hx dim">Slightly brighter secondary text</div></div></div>
+      <div class="swatch"><div class="fill sw-light">#fdfdfd</div><div class="info"><div class="nm">Light</div><div class="hx">light</div><div class="hx dim">Near-pure white for maximum emphasis</div></div></div>
+    </div>
+    <div class="group-title">Semantic</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-negative-red">#f3727f</div><div class="info"><div class="nm">Negative Red</div><div class="hx">negative-red</div><div class="hx dim">--text-negative, error states</div></div></div>
+      <div class="swatch"><div class="fill sw-warning-orange">#ffa42b</div><div class="info"><div class="nm">Warning Orange</div><div class="hx">warning-orange</div><div class="hx dim">--text-warning, warning states</div></div></div>
+      <div class="swatch"><div class="fill sw-announcement-blue">#539df5</div><div class="info"><div class="nm">Announcement Blue</div><div class="hx">announcement-blue</div><div class="hx dim">--text-announcement, info states</div></div></div>
+    </div>
+    <div class="group-title">Surface &amp; Border</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-dark-card">#252525</div><div class="info"><div class="nm">Dark Card</div><div class="hx">dark-card</div><div class="hx dim">Elevated card surface</div></div></div>
+      <div class="swatch"><div class="fill sw-mid-card">#272727</div><div class="info"><div class="nm">Mid Card</div><div class="hx">mid-card</div><div class="hx dim">Alternate card surface</div></div></div>
+      <div class="swatch"><div class="fill sw-border-gray">#4d4d4d</div><div class="info"><div class="nm">Border Gray</div><div class="hx">border-gray</div><div class="hx dim">Button borders on dark</div></div></div>
+      <div class="swatch"><div class="fill sw-light-border">#7c7c7c</div><div class="info"><div class="nm">Light Border</div><div class="hx">light-border</div><div class="hx dim">Outlined button borders, muted links</div></div></div>
+      <div class="swatch"><div class="fill sw-separator">#b3b3b3</div><div class="info"><div class="nm">Separator</div><div class="hx">separator</div><div class="hx dim">Divider lines</div></div></div>
+      <div class="swatch"><div class="fill sw-light-surface">#eeeeee</div><div class="info"><div class="nm">Light Surface</div><div class="hx">light-surface</div><div class="hx dim">Light-mode buttons (rare)</div></div></div>
+      <div class="swatch"><div class="fill sw-spotify-green-border">#1db954</div><div class="info"><div class="nm">Spotify Green Border</div><div class="hx">spotify-green-border</div><div class="hx dim">Green accent border variant</div></div></div>
+    </div>
+  </section>
+  <section id="typography">
+    <div class="sec-head"><h2>Typography Scale</h2><span class="count">14 styles</span></div>
+    <div class="type-row">
+      <div class="type-meta"><b>Section Title</b>24px / 700<br>lh normal · ls normal<br>SpotifyMixUITitle</div>
+      <div class="type-sample type-section-title">Section Title — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Feature Heading</b>18px / 600<br>lh 1.30 (tight) · ls normal<br>SpotifyMixUI</div>
+      <div class="type-sample type-feature-heading">Feature Heading — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Body Bold</b>16px / 700<br>lh normal · ls normal<br>SpotifyMixUI</div>
+      <div class="type-sample type-body-bold">Body Bold — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Body</b>16px / 400<br>lh normal · ls normal<br>SpotifyMixUI</div>
+      <div class="type-sample type-body">Body — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Button Uppercase</b>14px / 600<br>lh 1.00 (tight) · ls 1.4px–2px<br>SpotifyMixUI</div>
+      <div class="type-sample type-button-uppercase">Button Uppercase — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Button</b>14px / 700<br>lh normal · ls 0.14px<br>SpotifyMixUI</div>
+      <div class="type-sample type-button">Button — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Nav Link Bold</b>14px / 700<br>lh normal · ls normal<br>SpotifyMixUI</div>
+      <div class="type-sample type-nav-link-bold">Nav Link Bold — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Nav Link</b>14px / 400<br>lh normal · ls normal<br>SpotifyMixUI</div>
+      <div class="type-sample type-nav-link">Nav Link — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Caption Bold</b>14px / 700<br>lh 1.50–1.54 · ls normal<br>SpotifyMixUI</div>
+      <div class="type-sample type-caption-bold">Caption Bold — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Caption</b>14px / 400<br>lh normal · ls normal<br>SpotifyMixUI</div>
+      <div class="type-sample type-caption">Caption — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Small Bold</b>12px / 700<br>lh 1.50 · ls normal<br>SpotifyMixUI</div>
+      <div class="type-sample type-small-bold">Small Bold — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Small</b>12px / 400<br>lh normal · ls normal<br>SpotifyMixUI</div>
+      <div class="type-sample type-small">Small — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Badge</b>10.5px / 600<br>lh 1.33 · ls normal<br>SpotifyMixUI</div>
+      <div class="type-sample type-badge">Badge — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Micro</b>10px / 400<br>lh normal · ls normal<br>SpotifyMixUI</div>
+      <div class="type-sample type-micro">Micro — The quick brown fox jumps over the lazy dog</div>
+    </div>
+  </section>
+  <section id="badges">
+    <div class="sec-head"><h2>Badges & Pills</h2><span class="count">4</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-dark-pill">Dark Pill</div><div class="demo-el spec-buttons-dark-pill">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-dark-large-pill">Dark Large Pill</div><div class="demo-el spec-buttons-dark-large-pill">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-light-pill">Light Pill</div><div class="demo-el spec-buttons-light-pill">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-outlined-pill">Outlined Pill</div><div class="demo-el spec-buttons-outlined-pill">Badge</div></div>
+    </div></div>
+  </section>
+  <section id="signature">
+    <div class="sec-head"><h2>Other Components</h2><span class="count">3</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-circular-play">Circular Play</div><div class="demo-el spec-buttons-circular-play">Circular Play</div></div>
+      <div class="demo-col"><div class="lb" title="cards-containers">Containers</div><div class="demo-el spec-cards-containers">Containers</div></div>
+      <div class="demo-col"><div class="lb" title="inputs">Inputs</div><div class="demo-el spec-inputs">Inputs</div></div>
+    </div></div>
+  </section>
+  <section id="spacing">
+    <div class="sec-head"><h2>Spacing Scale</h2><span class="count">13 steps</span></div>
+    <div class="bar-row"><span>s0-1px</span><span class="val">1px</span><span class="bar bar-s0-1px"></span></div>
+    <div class="bar-row"><span>s1-2px</span><span class="val">2px</span><span class="bar bar-s1-2px"></span></div>
+    <div class="bar-row"><span>s2-3px</span><span class="val">3px</span><span class="bar bar-s2-3px"></span></div>
+    <div class="bar-row"><span>s3-4px</span><span class="val">4px</span><span class="bar bar-s3-4px"></span></div>
+    <div class="bar-row"><span>s4-5px</span><span class="val">5px</span><span class="bar bar-s4-5px"></span></div>
+    <div class="bar-row"><span>s5-6px</span><span class="val">6px</span><span class="bar bar-s5-6px"></span></div>
+    <div class="bar-row"><span>s6-8px</span><span class="val">8px</span><span class="bar bar-s6-8px"></span></div>
+    <div class="bar-row"><span>s7-10px</span><span class="val">10px</span><span class="bar bar-s7-10px"></span></div>
+    <div class="bar-row"><span>s8-12px</span><span class="val">12px</span><span class="bar bar-s8-12px"></span></div>
+    <div class="bar-row"><span>s9-14px</span><span class="val">14px</span><span class="bar bar-s9-14px"></span></div>
+    <div class="bar-row"><span>s10-15px</span><span class="val">15px</span><span class="bar bar-s10-15px"></span></div>
+    <div class="bar-row"><span>s11-16px</span><span class="val">16px</span><span class="bar bar-s11-16px"></span></div>
+    <div class="bar-row"><span>s12-20px</span><span class="val">20px</span><span class="bar bar-s12-20px"></span></div>
+  </section>
+  <section id="radius">
+    <div class="sec-head"><h2>Border Radius Scale</h2><span class="count">9 steps</span></div>
+    <div class="radius-grid">
+      <div class="radius-cell"><div class="box rd-minimal"></div><div class="lb">minimal · 2px</div></div>
+      <div class="radius-cell"><div class="box rd-subtle"></div><div class="lb">subtle · 4px</div></div>
+      <div class="radius-cell"><div class="box rd-standard"></div><div class="lb">standard · 6px</div></div>
+      <div class="radius-cell"><div class="box rd-comfortable"></div><div class="lb">comfortable · 8px</div></div>
+      <div class="radius-cell"><div class="box rd-medium"></div><div class="lb">medium · 10px–20px</div></div>
+      <div class="radius-cell"><div class="box rd-large"></div><div class="lb">large · 100px</div></div>
+      <div class="radius-cell"><div class="box rd-pill"></div><div class="lb">pill · 500px</div></div>
+      <div class="radius-cell"><div class="box rd-full-pill"></div><div class="lb">full-pill · 9999px</div></div>
+      <div class="radius-cell"><div class="box rd-circle"></div><div class="lb">circle · 50%</div></div>
+    </div>
+  </section>
+  <section id="elevation">
+    <div class="sec-head"><h2>Elevation &amp; Depth</h2><span class="count">8</span></div>
+    <div class="elev-grid">
+      <div class="elev-cell elev-heavy"><div class="lb">Heavy</div><div class="vl">rgba(0,0,0,0.5) 0px 8px 24px</div></div>
+      <div class="elev-cell elev-medium"><div class="lb">Medium</div><div class="vl">rgba(0,0,0,0.3) 0px 8px 8px</div></div>
+      <div class="elev-cell elev-inset-border"><div class="lb">Inset Border</div><div class="vl">rgb(18,18,18) 0px 1px 0px, rgb(124,124,124) 0px 0px 0px 1px inse</div></div>
+      <div class="elev-cell elev-base-level-0"><div class="lb">Base (Level 0)</div><div class="vl">#121212 background</div></div>
+      <div class="elev-cell elev-surface-level-1"><div class="lb">Surface (Level 1)</div><div class="vl">#181818 or #1f1f1f</div></div>
+      <div class="elev-cell elev-elevated-level-2"><div class="lb">Elevated (Level 2)</div><div class="vl">rgba(0,0,0,0.3) 0px 8px 8px</div></div>
+      <div class="elev-cell elev-dialog-level-3"><div class="lb">Dialog (Level 3)</div><div class="vl">rgba(0,0,0,0.5) 0px 8px 24px</div></div>
+      <div class="elev-cell elev-inset-border"><div class="lb">Inset (Border)</div><div class="vl">rgb(18,18,18) 0px 1px 0px, rgb(124,124,124) 0px 0px 0px 1px inse</div></div>
+    </div>
+  </section>
+  <section id="guidelines">
+    <div class="sec-head"><h2>Do&rsquo;s &amp; Don&rsquo;ts</h2></div>
+    <div class="guide">
+      <ul class="yes">
+        <li>Use near-black backgrounds (#121212–#1f1f1f) — depth through shade variation</li>
+        <li>Apply Spotify Green (#1ed760) only for play controls, active states, and primary CTAs</li>
+        <li>Use pill shape (500px–9999px) for all buttons — circular (50%) for play controls</li>
+        <li>Apply uppercase + wide letter-spacing (1.4px–2px) on button labels</li>
+        <li>Keep typography compact (10px–24px range) — this is an app, not a magazine</li>
+        <li>Use heavy shadows (0.3–0.5 opacity) for elevated elements on dark backgrounds</li>
+      </ul>
+      <ul class="no">
+        <li>Don&#x27;t use Spotify Green decoratively or on backgrounds — it&#x27;s functional only</li>
+        <li>Don&#x27;t use light backgrounds for primary surfaces — the dark immersion is core</li>
+        <li>Don&#x27;t skip the pill/circle geometry on buttons — square buttons break the identity</li>
+        <li>Don&#x27;t use thin/subtle shadows — on dark backgrounds, shadows need to be heavy to be visible</li>
+        <li>Don&#x27;t add additional brand colors — green + achromatic grays is the complete palette</li>
+        <li>Don&#x27;t use relaxed line-heights — Spotify&#x27;s typography is compact and dense</li>
+      </ul>
+    </div>
+  </section>
+  <section id="reference">
+    <div class="sec-head"><h2>Component Reference</h2><span class="count">7</span></div>
+    <table class="ref"><thead><tr><th>Component</th><th>Resolved properties</th></tr></thead><tbody>
+      <tr><td class="k">buttons-dark-pill</td><td>Background: #1f1f1f; Text: #ffffff; Padding: 8px 16px; Radius: 9999px; Use: Navigation pills, secondary actions</td></tr>
+      <tr><td class="k">buttons-dark-large-pill</td><td>Background: #181818; Text: #ffffff; Padding: 0px 43px; Radius: 500px; Use: Primary app navigation buttons</td></tr>
+      <tr><td class="k">buttons-light-pill</td><td>Background: #eeeeee; Text: #181818; Radius: 500px; Use: Light-mode CTAs</td></tr>
+      <tr><td class="k">buttons-outlined-pill</td><td>Background: transparent; Text: #ffffff; Border: 1px solid #7c7c7c; Padding: 4px 16px 4px 36px; Radius: 9999px; Use: Follow buttons, secondary actions</td></tr>
+      <tr><td class="k">buttons-circular-play</td><td>Background: #1f1f1f; Text: #ffffff; Padding: 12px; Radius: 50%; Use: Play/pause controls</td></tr>
+      <tr><td class="k">cards-containers</td><td>rounded: 6px; Background: #181818; Hover: slight background lightening</td></tr>
+      <tr><td class="k">inputs</td><td>rounded: 500px; Search input: #1f1f1f background, #ffffff text; Radius: 500px; Padding: 12px 96px 12px 48px</td></tr>
+    </tbody></table>
+  </section>
+  <footer><span>Spotify — design tokens extracted from DESIGN.md</span><span>awesome-design-md / getdesign.md</span></footer>
+</div>
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script>
+</body></html>

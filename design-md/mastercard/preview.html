@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of Mastercard</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #F3F0EE; } html[data-theme="dark"] { background: #0E0E0D; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<div class="theme-layer" data-when="light">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#palette">Palette</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#cards">Cards</a></li>
+    <li><a href="#elevation">Elevation</a></li>
+  </ul>
+
+  <button class="nav-cta">Get Started</button>
+</nav>
+
+<section class="hero">
+  <div class="hero-orbit"></div>
+  <div class="hero-orbit-2"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Design System Catalog</div>
+    <h1 class="hero-title">Design System Analysis of Mastercard</h1>
+    <p class="hero-sub">A complete, token-level catalog generated from <code>DESIGN.md</code>. Every color, type scale, button, card, and radius below is rendered using the same values documented for downstream agents.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#palette">Explore palette</a>
+      <a class="btn btn-secondary" href="#typography">View typography</a>
+    </div>
+  </div>
+</section>
+
+<section class="block container" id="palette">
+  <div class="section-eyebrow">Section 01</div>
+  <h2 class="block-title">Color Palette</h2>
+  <p class="block-sub">Six role groups built on a warm putty-cream canvas. Ink is warm near-black. Signal Orange is reserved for consent/legal; Light Signal Orange traces decorative orbits. The Mastercard logo red and yellow are brand-mark colors only.</p>
+
+  <div class="color-group">
+    <h3>Primary</h3>
+    <div class="color-grid">
+      <div class="swatch"><div class="swatch-chip" style="background:#EB001B"></div><div class="swatch-name">Mastercard Red</div><div class="swatch-hex">#EB001B</div><div class="swatch-role">Left circle of the brand mark — logo only, never a UI color.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#F79E1B"></div><div class="swatch-name">Mastercard Yellow</div><div class="swatch-hex">#F79E1B</div><div class="swatch-role">Right circle of the brand mark — logo only, never a UI color.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#141413"></div><div class="swatch-name">Ink Black</div><div class="swatch-hex">#141413</div><div class="swatch-role">Primary CTAs, headline text, footer surface. Slightly warm near-black.</div></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <h3>Secondary &amp; Accent</h3>
+    <div class="color-grid">
+      <div class="swatch"><div class="swatch-chip" style="background:#CF4500"></div><div class="swatch-name">Signal Orange</div><div class="swatch-hex">#CF4500</div><div class="swatch-role">Consent/legal actions and eyebrow accent dots. Reserved color.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#F37338"></div><div class="swatch-name">Light Signal Orange</div><div class="swatch-hex">#F37338</div><div class="swatch-role">Carousel active indicators and decorative orbital arcs.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#9A3A0A"></div><div class="swatch-name">Clay Brown</div><div class="swatch-hex">#9A3A0A</div><div class="swatch-role">Deep rust for secondary link-style buttons (e.g., details).</div></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <h3>Surface &amp; Background</h3>
+    <div class="color-grid">
+      <div class="swatch"><div class="swatch-chip" style="background:#F3F0EE"></div><div class="swatch-name">Canvas Cream</div><div class="swatch-hex">#F3F0EE</div><div class="swatch-role">Default body background. Warm putty tone — never pure white.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#FCFBFA"></div><div class="swatch-name">Lifted Cream</div><div class="swatch-hex">#FCFBFA</div><div class="swatch-role">One step lighter — nested sections laid on canvas.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#FFFFFF"></div><div class="swatch-name">White</div><div class="swatch-hex">#FFFFFF</div><div class="swatch-role">Floating nav pill, modal cards, satellite-CTA circles.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#F4F4F4"></div><div class="swatch-name">Soft Bone</div><div class="swatch-hex">#F4F4F4</div><div class="swatch-role">Cool-gray alternative surface used inside a few subregions.</div></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <h3>Neutrals &amp; Text</h3>
+    <div class="color-grid">
+      <div class="swatch"><div class="swatch-chip" style="background:#141413"></div><div class="swatch-name">Ink Black</div><div class="swatch-hex">#141413</div><div class="swatch-role">Primary headline and body text color.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#262627"></div><div class="swatch-name">Charcoal</div><div class="swatch-hex">#262627</div><div class="swatch-role">Softer black alternate for some text.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#696969"></div><div class="swatch-name">Slate Gray</div><div class="swatch-hex">#696969</div><div class="swatch-role">Muted secondary text and small-print rows.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#555555"></div><div class="swatch-name">Granite</div><div class="swatch-hex">#555555</div><div class="swatch-role">Deeper gray for inline body accents.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#D1CDC7"></div><div class="swatch-name">Dust Taupe</div><div class="swatch-hex">#D1CDC7</div><div class="swatch-role">Disabled / whisper text on cream. Low contrast, sparse use.</div></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <h3>Semantic &amp; Accent</h3>
+    <div class="color-grid">
+      <div class="swatch"><div class="swatch-chip" style="background:#3860BE"></div><div class="swatch-name">Link Blue</div><div class="swatch-hex">#3860BE</div><div class="swatch-role">Inline links and informational callouts. Dusty, saturated.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block container" id="typography">
+  <div class="section-eyebrow">Section 02</div>
+  <h2 class="block-title">Typography Scale</h2>
+  <p class="block-sub">Everything set in <em>MarkForMC</em> (Sofia Sans as open-source substitute). Display weight 500 with −2% tracking, body weight 450 for the signature airy tone, and a single uppercase eyebrow at +4% tracking.</p>
+
+  <div class="type-row">
+    <div class="type-meta"><strong>H1 / Hero</strong>64px · 500 · 64 lh · −1.28 tr</div>
+    <div class="t-h1">Powering economies and empowering people</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>H2 / Section</strong>36px · 500 · 44 lh · −0.72 tr</div>
+    <div class="t-h2">Benefits and services that ignite your passions</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>H3 / Card</strong>24px · 500 · 28.8 lh · −0.48 tr</div>
+    <div class="t-h3">Insights &amp; Intelligence</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>Eyebrow</strong>14px · 700 · 14 lh · +0.56 tr · uppercase</div>
+    <div class="t-eyebrow">• Services</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>Body</strong>16px · 450 · 22.4 lh</div>
+    <div class="t-body">Unlocking potential for people, businesses and governments, all around the world. The half-step 450 weight reads softer than regular 400 without feeling thin.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>Nav / Button</strong>16px · 500 · 16 lh · −0.48 tr</div>
+    <div class="t-nav">For business · For the world · For innovators</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>Footer Link</strong>14px · 450 · 20 lh</div>
+    <div class="t-foot">Privacy · Terms · Manage cookies · Your Privacy Choices</div>
+  </div>
+</section>
+
+<section class="block container" id="buttons">
+  <div class="section-eyebrow">Section 03</div>
+  <h2 class="block-title">Button Variants</h2>
+  <p class="block-sub">Five distinct buttons. The Ink Pill is the workhorse marketing CTA. The orange signal is reserved — it reads as consent, not engagement.</p>
+
+  <div class="btn-grid">
+    <div class="btn-cell">
+      <button class="btn btn-primary">Learn more</button>
+      <div class="btn-label">Primary — Ink Pill</div>
+      <div class="btn-spec">bg #141413 · text #F3F0EE · border 1.5px · radius 20px · padding 6px 24px · 16/500 · −0.32 tr</div>
+    </div>
+    <div class="btn-cell">
+      <button class="btn btn-secondary">Configure my cookies</button>
+      <div class="btn-label">Secondary — Outlined Pill</div>
+      <div class="btn-spec">bg #FFFFFF · text #141413 · border 1.5px ink · radius 20px · padding 6px 24px · 16/450</div>
+    </div>
+    <div class="btn-cell">
+      <button class="btn-signal">Reject all</button>
+      <div class="btn-label">Consent — Signal Pill</div>
+      <div class="btn-spec">bg #CF4500 · text #FFFFFF · radius 24px · padding 1px 30px · 13/400 · +0.13 tr</div>
+    </div>
+    <div class="btn-cell">
+      <button class="btn-satellite" aria-label="Satellite CTA">→</button>
+      <div class="btn-label">Satellite — Circular Micro-CTA</div>
+      <div class="btn-spec">bg #FFFFFF · icon ink · radius 50% · size 56px · attaches to circular portrait</div>
+    </div>
+    <div class="btn-cell">
+      <button class="btn-icon-round" aria-label="Search">◯</button>
+      <div class="btn-label">Icon — Round Outline</div>
+      <div class="btn-spec">bg #FFFFFF · border 1px ink · radius 50% · size 48px · carousel / search toggle</div>
+    </div>
+  </div>
+</section>
+
+<section class="block container" id="cards">
+  <div class="section-eyebrow">Section 04</div>
+  <h2 class="block-title">Card Examples</h2>
+  <p class="block-sub">Three signature card shapes: a 40px-radius stadium, a circular portrait with satellite CTA, and a full-pill editorial row. Shadows are soft with wide spread.</p>
+
+  <div class="card-grid">
+    <div class="card-stadium">
+      <h4>Stadium Hero Frame</h4>
+      <div class="spec">Radius 40px · bg #141413 · shadow 0 24 48 / 0.08 · full-bleed media holder</div>
+    </div>
+    <div class="card-portrait">
+      <div class="card-portrait-img"></div>
+      <div class="card-portrait-eyebrow">Services</div>
+      <h4>Circular Portrait Card</h4>
+    </div>
+    <div class="card-pill">
+      <div>
+        <h4>Full-Pill Editorial Row</h4>
+        <span class="spec">Radius 999px · bg #FCFBFA · shadow 0 24 48 / 0.08</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block container" id="forms">
+  <div class="section-eyebrow">Section 05</div>
+  <h2 class="block-title">Form Elements</h2>
+  <p class="block-sub">Inputs default to pill radius (999px) with an ink-tinted translucent border. Focused state firms the border to solid ink; error shifts to Signal Orange.</p>
+
+  <div class="form-grid">
+    <div class="form-field">
+      <label>Full name — default</label>
+      <input type="text" placeholder="Jane Cardholder">
+      <div class="caption">999px radius · 1px rgba(ink, 0.3) · 16/450</div>
+    </div>
+    <div class="form-field">
+      <label>Email — focused</label>
+      <input type="email" class="focused" value="jane@example.com">
+      <div class="caption">1.5px solid #141413 · outline removed</div>
+    </div>
+    <div class="form-field">
+      <label>ZIP — error</label>
+      <input type="text" class="error" value="12">
+      <div class="error-msg">Please enter a valid 5-digit ZIP code.</div>
+    </div>
+    <div class="form-field">
+      <label>Message — textarea</label>
+      <textarea placeholder="How can we help?"></textarea>
+      <div class="caption">20px radius · resize vertical</div>
+    </div>
+  </div>
+</section>
+
+<section class="block container" id="spacing">
+  <div class="section-eyebrow">Section 06</div>
+  <h2 class="block-title">Spacing Scale</h2>
+  <p class="block-sub">Base 8px unit. Marketing sections breathe at 96px and 128px on desktop; compress to 48–64px on mobile.</p>
+
+  <div class="spacing-row">
+    <div class="spacing-item"><div class="spacing-label">8px</div><div class="spacing-box" style="width:8px"></div></div>
+    <div class="spacing-item"><div class="spacing-label">16px</div><div class="spacing-box" style="width:16px"></div></div>
+    <div class="spacing-item"><div class="spacing-label">24px</div><div class="spacing-box" style="width:24px"></div></div>
+    <div class="spacing-item"><div class="spacing-label">32px</div><div class="spacing-box" style="width:32px"></div></div>
+    <div class="spacing-item"><div class="spacing-label">48px</div><div class="spacing-box" style="width:48px"></div></div>
+    <div class="spacing-item"><div class="spacing-label">64px</div><div class="spacing-box" style="width:64px"></div></div>
+    <div class="spacing-item"><div class="spacing-label">96px</div><div class="spacing-box" style="width:96px"></div></div>
+    <div class="spacing-item"><div class="spacing-label">128px</div><div class="spacing-box" style="width:128px"></div></div>
+  </div>
+</section>
+
+<section class="block container" id="radius">
+  <div class="section-eyebrow">Section 07</div>
+  <h2 class="block-title">Border Radius Scale</h2>
+  <p class="block-sub">The scale skips the 8–12px middle that most systems live in. Mastercard commits to either small (≤6), medium-large (20–40), or full-pill (99+).</p>
+
+  <div class="radius-grid">
+    <div class="radius-cell"><div class="radius-swatch" style="border-radius:4px"></div><div class="radius-label">4px</div><div class="radius-context">micro-chips</div></div>
+    <div class="radius-cell"><div class="radius-swatch" style="border-radius:20px"></div><div class="radius-label">20px</div><div class="radius-context">primary &amp; secondary buttons</div></div>
+    <div class="radius-cell"><div class="radius-swatch" style="border-radius:24px"></div><div class="radius-label">24px</div><div class="radius-context">signal buttons, modal chips</div></div>
+    <div class="radius-cell"><div class="radius-swatch" style="border-radius:40px"></div><div class="radius-label">40px</div><div class="radius-context">stadium hero frames</div></div>
+    <div class="radius-cell"><div class="radius-swatch" style="border-radius:50%;height:120px;width:120px;margin:0 auto 14px"></div><div class="radius-label">50%</div><div class="radius-context">portraits · icon buttons</div></div>
+    <div class="radius-cell"><div class="radius-swatch" style="border-radius:999px;height:48px"></div><div class="radius-label">999px</div><div class="radius-context">pill nav · selector · chips</div></div>
+  </div>
+</section>
+
+<section class="block container" id="elevation">
+  <div class="section-eyebrow">Section 08</div>
+  <h2 class="block-title">Elevation &amp; Depth</h2>
+  <p class="block-sub">Four elevation levels, all atmospheric. Shadows have wide spread and low opacity — the card is <em>breathing</em> above the canvas, not clamped onto it.</p>
+
+  <div class="elev-grid">
+    <div class="elev-cell e0">
+      <div>
+        <h5>Level 0 — Flat</h5>
+        <div class="shadow-spec">no shadow · sits directly on canvas</div>
+      </div>
+    </div>
+    <div class="elev-cell e1">
+      <div>
+        <h5>Level 1 — Float</h5>
+        <div class="shadow-spec">0 4 24 / 0.04 · floating nav pill</div>
+      </div>
+    </div>
+    <div class="elev-cell e2">
+      <div>
+        <h5>Level 2 — Lift</h5>
+        <div class="shadow-spec">0 24 48 / 0.08 · hero frames</div>
+      </div>
+    </div>
+    <div class="elev-cell e3">
+      <div>
+        <h5>Level 3 — Halo</h5>
+        <div class="shadow-spec">0 70 110 / 0.25 · rare feature</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</div>
+<div class="theme-layer" data-when="dark">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#palette">Palette</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#cards">Cards</a></li>
+    <li><a href="#elevation">Elevation</a></li>
+  </ul>
+
+  <button class="nav-cta">Get Started</button>
+</nav>
+
+<section class="hero">
+  <div class="hero-orbit"></div>
+  <div class="hero-orbit-2"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Design System Catalog</div>
+    <h1 class="hero-title">Design System Analysis of Mastercard</h1>
+    <p class="hero-sub">A complete, token-level catalog generated from <code>DESIGN.md</code>. Dark variant inverts surfaces while preserving brand accents and the orbital motif.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#palette">Explore palette</a>
+      <a class="btn btn-secondary" href="#typography">View typography</a>
+    </div>
+  </div>
+</section>
+
+<section class="block container" data-sec="palette">
+  <div class="section-eyebrow">Section 01</div>
+  <h2 class="block-title">Color Palette</h2>
+  <p class="block-sub">Surfaces derived from Ink Black, deepened for the dark canvas. Brand accents (Signal, Light Signal, Clay) remain identical to the light system. Text inverts to white and translucent-white tiers.</p>
+
+  <div class="color-group">
+    <h3>Primary</h3>
+    <div class="color-grid">
+      <div class="swatch"><div class="swatch-chip" style="background:#EB001B"></div><div class="swatch-name">Mastercard Red</div><div class="swatch-hex">#EB001B</div><div class="swatch-role">Left circle of the brand mark — logo only, never a UI color.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#F79E1B"></div><div class="swatch-name">Mastercard Yellow</div><div class="swatch-hex">#F79E1B</div><div class="swatch-role">Right circle of the brand mark — logo only, never a UI color.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#FFFFFF"></div><div class="swatch-name">White</div><div class="swatch-hex">#FFFFFF</div><div class="swatch-role">Inverts to primary CTA surface in dark mode.</div></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <h3>Secondary &amp; Accent</h3>
+    <div class="color-grid">
+      <div class="swatch"><div class="swatch-chip" style="background:#CF4500"></div><div class="swatch-name">Signal Orange</div><div class="swatch-hex">#CF4500</div><div class="swatch-role">Consent/legal actions — unchanged from light mode.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#F37338"></div><div class="swatch-name">Light Signal Orange</div><div class="swatch-hex">#F37338</div><div class="swatch-role">Carousel indicators and decorative orbital arcs.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#9A3A0A"></div><div class="swatch-name">Clay Brown</div><div class="swatch-hex">#9A3A0A</div><div class="swatch-role">Deep rust for secondary link-style actions.</div></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <h3>Surface &amp; Background</h3>
+    <div class="color-grid">
+      <div class="swatch"><div class="swatch-chip" style="background:#0E0E0D"></div><div class="swatch-name">Dark Canvas</div><div class="swatch-hex">#0E0E0D</div><div class="swatch-role">Deepened ink — default body background in dark mode.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#1A1A19"></div><div class="swatch-name">Lifted Surface</div><div class="swatch-hex">#1A1A19</div><div class="swatch-role">Cards and nested containers — one step above canvas.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#252523"></div><div class="swatch-name">Raised Surface</div><div class="swatch-hex">#252523</div><div class="swatch-role">Input surfaces and secondary elevated blocks.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#050505"></div><div class="swatch-name">Deep Well</div><div class="swatch-hex">#050505</div><div class="swatch-role">Footer surface and framed demo backgrounds.</div></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <h3>Neutrals &amp; Text</h3>
+    <div class="color-grid">
+      <div class="swatch"><div class="swatch-chip" style="background:#FFFFFF"></div><div class="swatch-name">Primary Text</div><div class="swatch-hex">#FFFFFF</div><div class="swatch-role">Headlines and primary text on all dark surfaces.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:rgba(255,255,255,0.85)"></div><div class="swatch-name">Body Text</div><div class="swatch-hex">rgba(255,255,255,0.85)</div><div class="swatch-role">Reading body paragraphs — slightly dimmed white.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:rgba(255,255,255,0.6)"></div><div class="swatch-name">Muted Text</div><div class="swatch-hex">rgba(255,255,255,0.6)</div><div class="swatch-role">Secondary labels, captions, footer columns.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:rgba(255,255,255,0.4)"></div><div class="swatch-name">Dust Text</div><div class="swatch-hex">rgba(255,255,255,0.4)</div><div class="swatch-role">Whisper / disabled content on dark canvas.</div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:rgba(255,255,255,0.12)"></div><div class="swatch-name">Soft Border</div><div class="swatch-hex">rgba(255,255,255,0.12)</div><div class="swatch-role">Translucent borders around cards and inputs.</div></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <h3>Semantic &amp; Accent</h3>
+    <div class="color-grid">
+      <div class="swatch"><div class="swatch-chip" style="background:#6C8EE0"></div><div class="swatch-name">Link Blue (dark)</div><div class="swatch-hex">#6C8EE0</div><div class="swatch-role">Lifted from #3860BE so links remain readable on dark canvas.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block container" data-sec="typography">
+  <div class="section-eyebrow">Section 02</div>
+  <h2 class="block-title">Typography Scale</h2>
+  <p class="block-sub">Identical scale to the light system — MarkForMC (Sofia Sans substitute) with −2% display tracking and 450 body weight. Only the color tokens change.</p>
+
+  <div class="type-row">
+    <div class="type-meta"><strong>H1 / Hero</strong>64px · 500 · 64 lh · −1.28 tr</div>
+    <div class="t-h1">Powering economies and empowering people</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>H2 / Section</strong>36px · 500 · 44 lh · −0.72 tr</div>
+    <div class="t-h2">Benefits and services that ignite your passions</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>H3 / Card</strong>24px · 500 · 28.8 lh · −0.48 tr</div>
+    <div class="t-h3">Insights &amp; Intelligence</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>Eyebrow</strong>14px · 700 · 14 lh · +0.56 tr · uppercase</div>
+    <div class="t-eyebrow">• Services</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>Body</strong>16px · 450 · 22.4 lh</div>
+    <div class="t-body">Unlocking potential for people, businesses and governments, all around the world. The half-step 450 weight reads softer than regular 400 without feeling thin.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>Nav / Button</strong>16px · 500 · 16 lh · −0.48 tr</div>
+    <div class="t-nav">For business · For the world · For innovators</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>Footer Link</strong>14px · 450 · 20 lh</div>
+    <div class="t-foot">Privacy · Terms · Manage cookies · Your Privacy Choices</div>
+  </div>
+</section>
+
+<section class="block container" data-sec="buttons">
+  <div class="section-eyebrow">Section 03</div>
+  <h2 class="block-title">Button Variants</h2>
+  <p class="block-sub">In dark mode the ink pill inverts to a white pill. Signal Orange stays unchanged — it's the same consent color regardless of theme.</p>
+
+  <div class="btn-grid">
+    <div class="btn-cell">
+      <button class="btn btn-primary">Learn more</button>
+      <div class="btn-label">Primary — White Pill</div>
+      <div class="btn-spec">bg #FFFFFF · text #141413 · border 1.5px · radius 20px · padding 6px 24px · 16/500 · −0.32 tr</div>
+    </div>
+    <div class="btn-cell">
+      <button class="btn btn-secondary">Configure my cookies</button>
+      <div class="btn-label">Secondary — Outlined Pill</div>
+      <div class="btn-spec">bg transparent · text #FFFFFF · border 1.5px white · radius 20px · padding 6px 24px · 16/450</div>
+    </div>
+    <div class="btn-cell">
+      <button class="btn-signal">Reject all</button>
+      <div class="btn-label">Consent — Signal Pill</div>
+      <div class="btn-spec">bg #CF4500 · text #FFFFFF · radius 24px · padding 1px 30px · 13/400 · +0.13 tr</div>
+    </div>
+    <div class="btn-cell">
+      <button class="btn-satellite" aria-label="Satellite CTA">→</button>
+      <div class="btn-label">Satellite — Circular Micro-CTA</div>
+      <div class="btn-spec">bg #FFFFFF · icon ink · radius 50% · size 56px · attaches to circular portrait</div>
+    </div>
+    <div class="btn-cell">
+      <button class="btn-icon-round" aria-label="Search">◯</button>
+      <div class="btn-label">Icon — Round Outline</div>
+      <div class="btn-spec">bg transparent · border 1px white · radius 50% · size 48px · carousel / search</div>
+    </div>
+  </div>
+</section>
+
+<section class="block container" data-sec="cards">
+  <div class="section-eyebrow">Section 04</div>
+  <h2 class="block-title">Card Examples</h2>
+  <p class="block-sub">Same three signature card shapes on dark surfaces. Borders lift cards a step off canvas where shadows alone would vanish in the dark.</p>
+
+  <div class="card-grid">
+    <div class="card-stadium">
+      <h4>Stadium Hero Frame</h4>
+      <div class="spec">Radius 40px · bg lifted · border soft · shadow wide low-opacity</div>
+    </div>
+    <div class="card-portrait">
+      <div class="card-portrait-img"></div>
+      <div class="card-portrait-eyebrow">Services</div>
+      <h4>Circular Portrait Card</h4>
+    </div>
+    <div class="card-pill">
+      <div>
+        <h4>Full-Pill Editorial Row</h4>
+        <span class="spec">Radius 999px · bg #252523 · shadow atmospheric</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block container" data-sec="forms">
+  <div class="section-eyebrow">Section 05</div>
+  <h2 class="block-title">Form Elements</h2>
+  <p class="block-sub">Inputs keep their 999px pill radius. Borders use translucent white at 35% default, firm white on focus, Signal Orange on error.</p>
+
+  <div class="form-grid">
+    <div class="form-field">
+      <label>Full name — default</label>
+      <input type="text" placeholder="Jane Cardholder">
+      <div class="caption">999px radius · 1px rgba(white, 0.35) · 16/450</div>
+    </div>
+    <div class="form-field">
+      <label>Email — focused</label>
+      <input type="email" class="focused" value="jane@example.com">
+      <div class="caption">1.5px solid #FFFFFF · outline removed</div>
+    </div>
+    <div class="form-field">
+      <label>ZIP — error</label>
+      <input type="text" class="error" value="12">
+      <div class="error-msg">Please enter a valid 5-digit ZIP code.</div>
+    </div>
+    <div class="form-field">
+      <label>Message — textarea</label>
+      <textarea placeholder="How can we help?"></textarea>
+      <div class="caption">20px radius · resize vertical</div>
+    </div>
+  </div>
+</section>
+
+<section class="block container" data-sec="spacing">
+  <div class="section-eyebrow">Section 06</div>
+  <h2 class="block-title">Spacing Scale</h2>
+  <p class="block-sub">Base 8px unit — unchanged from the light system. Section rhythm and gutter values apply identically.</p>
+
+  <div class="spacing-row">
+    <div class="spacing-item"><div class="spacing-label">8px</div><div class="spacing-box" style="width:8px"></div></div>
+    <div class="spacing-item"><div class="spacing-label">16px</div><div class="spacing-box" style="width:16px"></div></div>
+    <div class="spacing-item"><div class="spacing-label">24px</div><div class="spacing-box" style="width:24px"></div></div>
+    <div class="spacing-item"><div class="spacing-label">32px</div><div class="spacing-box" style="width:32px"></div></div>
+    <div class="spacing-item"><div class="spacing-label">48px</div><div class="spacing-box" style="width:48px"></div></div>
+    <div class="spacing-item"><div class="spacing-label">64px</div><div class="spacing-box" style="width:64px"></div></div>
+    <div class="spacing-item"><div class="spacing-label">96px</div><div class="spacing-box" style="width:96px"></div></div>
+    <div class="spacing-item"><div class="spacing-label">128px</div><div class="spacing-box" style="width:128px"></div></div>
+  </div>
+</section>
+
+<section class="block container" data-sec="radius">
+  <div class="section-eyebrow">Section 07</div>
+  <h2 class="block-title">Border Radius Scale</h2>
+  <p class="block-sub">The scale is theme-agnostic. Every radius below renders identically in light and dark variants.</p>
+
+  <div class="radius-grid">
+    <div class="radius-cell"><div class="radius-swatch" style="border-radius:4px"></div><div class="radius-label">4px</div><div class="radius-context">micro-chips</div></div>
+    <div class="radius-cell"><div class="radius-swatch" style="border-radius:20px"></div><div class="radius-label">20px</div><div class="radius-context">primary &amp; secondary buttons</div></div>
+    <div class="radius-cell"><div class="radius-swatch" style="border-radius:24px"></div><div class="radius-label">24px</div><div class="radius-context">signal buttons, modal chips</div></div>
+    <div class="radius-cell"><div class="radius-swatch" style="border-radius:40px"></div><div class="radius-label">40px</div><div class="radius-context">stadium hero frames</div></div>
+    <div class="radius-cell"><div class="radius-swatch" style="border-radius:50%;height:120px;width:120px;margin:0 auto 14px"></div><div class="radius-label">50%</div><div class="radius-context">portraits · icon buttons</div></div>
+    <div class="radius-cell"><div class="radius-swatch" style="border-radius:999px;height:48px"></div><div class="radius-label">999px</div><div class="radius-context">pill nav · selector · chips</div></div>
+  </div>
+</section>
+
+<section class="block container" data-sec="elevation">
+  <div class="section-eyebrow">Section 08</div>
+  <h2 class="block-title">Elevation &amp; Depth</h2>
+  <p class="block-sub">Shadows on dark surfaces use higher opacity (0.4–0.6) to register. Borders carry most of the separation work — shadows handle the atmospheric float.</p>
+
+  <div class="elev-grid">
+    <div class="elev-cell e0">
+      <div>
+        <h5>Level 0 — Flat</h5>
+        <div class="shadow-spec">border only · sits flush on canvas</div>
+      </div>
+    </div>
+    <div class="elev-cell e1">
+      <div>
+        <h5>Level 1 — Float</h5>
+        <div class="shadow-spec">0 4 24 / 0.4 · floating nav pill</div>
+      </div>
+    </div>
+    <div class="elev-cell e2">
+      <div>
+        <h5>Level 2 — Lift</h5>
+        <div class="shadow-spec">0 24 48 / 0.5 · hero frames</div>
+      </div>
+    </div>
+    <div class="elev-cell e3">
+      <div>
+        <h5>Level 3 — Halo</h5>
+        <div class="shadow-spec">0 70 110 / 0.6 · rare feature</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</div>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design System Analysis of Renault</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #050505; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#palette">Models</a></li>
+    <li><a href="#typography">Services</a></li>
+    <li><a href="#components">Renault Life</a></li>
+    <li><a href="#layout">MyRenault</a></li>
+  </ul>
+  <button class="nav-cta">Book an appointment</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of Renault</h1>
+    <p>High-contrast black-and-white canvas, a single Sunlight Yellow accent, square-cornered photography tiles, and the proprietary NouvelR display typeface from the modernised Renault diamond.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Start configurator</button>
+      <button class="btn btn-secondary-dark">Explore models</button>
+    </div>
+  </div>
+</header>
+
+<section id="palette">
+  <h2>Color Palette</h2>
+  <p class="lead">A two-tone canvas system anchored by a single brand accent. Yellow is the only decorative colour; everything else is structural.</p>
+
+  <div class="palette-group-title">Brand &amp; Accent</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--primary);"></div><div class="swatch-meta"><p class="swatch-name">Sunlight Yellow</p><p class="swatch-hex">#ffed00</p><p class="swatch-role">Primary CTA, "new" badge, accent tile.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--primary-deep);"></div><div class="swatch-meta"><p class="swatch-name">Sunlight Yellow Pressed</p><p class="swatch-hex">#e6d200</p><p class="swatch-role">Active/pressed state of yellow.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--on-primary);"></div><div class="swatch-meta"><p class="swatch-name">On-Primary</p><p class="swatch-hex">#000000</p><p class="swatch-role">Label colour on yellow surfaces.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--surface-dark);"></div><div class="swatch-meta"><p class="swatch-name">Surface Dark</p><p class="swatch-hex">#000000</p><p class="swatch-role">Hero bands, footer, dark storytelling.</p></div></div>
+  </div>
+
+  <div class="palette-group-title">Surface</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--canvas); border: 1px solid var(--hairline);"></div><div class="swatch-meta"><p class="swatch-name">Canvas</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Default page surface.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--surface-soft);"></div><div class="swatch-meta"><p class="swatch-name">Surface Soft</p><p class="swatch-hex">#f7f7f7</p><p class="swatch-role">Configurator inactive rows.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--surface-deep);"></div><div class="swatch-meta"><p class="swatch-name">Surface Deep</p><p class="swatch-hex">#111111</p><p class="swatch-role">Inset cards in dark bands.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--hairline);"></div><div class="swatch-meta"><p class="swatch-name">Hairline</p><p class="swatch-hex">#f2f2f2</p><p class="swatch-role">Soft 1px row dividers.</p></div></div>
+  </div>
+
+  <div class="palette-group-title">Text</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--ink);"></div><div class="swatch-meta"><p class="swatch-name">Ink</p><p class="swatch-hex">#000000</p><p class="swatch-role">Headings, logo, structural borders.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--body);"></div><div class="swatch-meta"><p class="swatch-name">Body</p><p class="swatch-hex">#222222</p><p class="swatch-role">Long-form body copy.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--charcoal);"></div><div class="swatch-meta"><p class="swatch-name">Charcoal</p><p class="swatch-hex">#333333</p><p class="swatch-role">Captions, metadata.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--mute);"></div><div class="swatch-meta"><p class="swatch-name">Mute</p><p class="swatch-hex">#666666</p><p class="swatch-role">Secondary nav labels.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--ash);"></div><div class="swatch-meta"><p class="swatch-name">Ash</p><p class="swatch-hex">#8a8a8a</p><p class="swatch-role">Placeholder text.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--stone);"></div><div class="swatch-meta"><p class="swatch-name">Stone</p><p class="swatch-hex">#c4c4c4</p><p class="swatch-role">Disabled foreground.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--on-dark); border: 1px solid var(--hairline);"></div><div class="swatch-meta"><p class="swatch-name">On-Dark</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Text on dark canvas.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #b8b8b8;"></div><div class="swatch-meta"><p class="swatch-name">On-Dark Mute</p><p class="swatch-hex">rgba(255,255,255,0.72)</p><p class="swatch-role">Secondary text on dark.</p></div></div>
+  </div>
+
+  <div class="palette-group-title">Semantic</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--error);"></div><div class="swatch-meta"><p class="swatch-name">Error</p><p class="swatch-hex">#be6464</p><p class="swatch-role">Inline form errors.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--warning);"></div><div class="swatch-meta"><p class="swatch-name">Warning</p><p class="swatch-hex">#f0ad4e</p><p class="swatch-role">Amber alerts.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--success);"></div><div class="swatch-meta"><p class="swatch-name">Success</p><p class="swatch-hex">#8dc572</p><p class="swatch-role">Confirmation.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--info);"></div><div class="swatch-meta"><p class="swatch-name">Info</p><p class="swatch-hex">#337ab7</p><p class="swatch-role">Informational chips.</p></div></div>
+  </div>
+</section>
+
+<section id="typography">
+  <h2>Typography</h2>
+  <p class="lead">NouvelR is the entire system. Display sizes are weight 700 with a tight 0.95 line-height; body stays at weight 400. Inter Tight is the closest open-source substitute.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>56px · 700 · 0.95</div><div class="type-sample" style="font-size:56px; font-weight:700; line-height:0.95; text-transform:uppercase; letter-spacing:-0.5px;">E-Tech Electric</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>40px · 700 · 0.95</div><div class="type-sample" style="font-size:40px; font-weight:700; line-height:0.95;">Renault Care Service</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>32px · 700 · 0.95</div><div class="type-sample" style="font-size:32px; font-weight:700; line-height:0.95;">Start configurator</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-lg</strong>24px · 700 · 0.95</div><div class="type-sample" style="font-size:24px; font-weight:700; line-height:0.95;">Hybrid vehicle models</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-md</strong>20px · 700 · 0.95</div><div class="type-sample" style="font-size:20px; font-weight:700; line-height:0.95;">Renault Master</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-sm</strong>18px · 700 · 1.0</div><div class="type-sample" style="font-size:18px; font-weight:700;">Service packages</div></div>
+  <div class="type-row"><div class="type-meta"><strong>subtitle</strong>19.2px · 600 · 1.3</div><div class="type-sample" style="font-size:19.2px; font-weight:600; line-height:1.3;">Find out your vehicle's value and explore our campaigns.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-lg</strong>18px · 400 · 1.5</div><div class="type-sample" style="font-size:18px; font-weight:400;">Renault's innovative electric and hybrid vehicles, promotional sales opportunities, appointment system, and myRenault membership benefits all in one place.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>16px · 400 · 1.4</div><div class="type-sample" style="font-size:16px;">Renault's innovative electric vehicle.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>14px · 400 · 1.57</div><div class="type-sample" style="font-size:14px;">Vehicle range listing — supporting metadata and short descriptions.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-md</strong>14.4px · 700 · 1.0 · 0.144px</div><div class="type-sample" style="font-size:14.4px; font-weight:700; letter-spacing:0.144px; text-transform:uppercase;">Book an appointment</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-sm</strong>13px · 600 · 1.2 · 0.13px</div><div class="type-sample" style="font-size:13px; font-weight:600; letter-spacing:0.13px;">Service &amp; appointment</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption</strong>12px · 400 · 1.4</div><div class="type-sample" style="font-size:12px; color:var(--mute);">© Renault Turkey 2026. All rights reserved.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>overline</strong>10px · 700 · 1.45</div><div class="type-sample" style="font-size:10px; font-weight:700; letter-spacing:0.144px; text-transform:uppercase; color:var(--mute);">New Model</div></div>
+</section>
+
+<section id="components">
+  <h2>Buttons</h2>
+  <p class="lead">Six button variants, all with `rounded: 2px`. Yellow primary, black secondary, and outlined tertiary cover 95% of CTA needs; pill chips are reserved for sub-nav.</p>
+  <div class="button-grid">
+    <button class="btn btn-primary">button-primary</button>
+    <button class="btn btn-primary" style="background: var(--primary-deep);">button-primary-pressed</button>
+    <button class="btn btn-secondary-dark">button-secondary-dark</button>
+    <button class="btn btn-outline">button-outline-dark</button>
+    <button class="btn btn-pill">button-pill</button>
+    <button class="btn btn-outline" style="width:40px; height:40px; padding:0;">→</button>
+  </div>
+  <div class="button-grid" style="margin-top:24px; padding:32px; background:var(--surface-dark);">
+    <button class="btn btn-primary">button-primary</button>
+    <button class="btn" style="background:var(--surface-dark); color:var(--on-dark); border:1px solid var(--on-dark);">button-outline-light</button>
+  </div>
+</section>
+
+<section>
+  <h2>Promotional Tiles</h2>
+  <p class="lead">A 2-up grid of square-cornered tiles cycling between light, dark, and the rare yellow accent.</p>
+  <div class="card-grid">
+    <div class="promo-tile promo-light">
+      <h3>Hybrid vehicle models</h3>
+      <p>Renault hybrid vehicles, eco-conscious driving, and promotional sales opportunities.</p>
+      <button class="btn btn-outline">View models</button>
+    </div>
+    <div class="promo-tile promo-dark">
+      <h3>Commercial vehicle campaigns</h3>
+      <p>Special financing options for Master and Trafic.</p>
+      <button class="btn btn-primary">Learn more</button>
+    </div>
+    <div class="promo-tile promo-yellow">
+      <h3>SUNLIGHT YELLOW</h3>
+      <p>Sunlight Yellow, designed especially for the R5 E-Tech Electric.</p>
+      <button class="btn btn-secondary-dark">Explore</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Vehicle Cards</h2>
+  <p class="lead">Full-bleed product photography with metadata stacked beneath. No rounded corners, no overlay text.</p>
+  <div class="card-grid">
+    <article class="vehicle-card">
+      <div class="vehicle-photo"></div>
+      <div class="vehicle-meta">
+        <div>
+          <h3>Scenic E-Tech Electric</h3>
+          <p>Electric SUV</p>
+        </div>
+        <div class="vehicle-arrow">→</div>
+      </div>
+    </article>
+    <article class="vehicle-card">
+      <div class="vehicle-photo" style="background: linear-gradient(135deg, #fff7c2 0%, #ffe550 100%);"></div>
+      <div class="vehicle-meta">
+        <div>
+          <span class="badge-new">new</span>
+          <h3 style="margin-top:8px;">R5 E-Tech</h3>
+          <p>Electric hatchback</p>
+        </div>
+        <div class="vehicle-arrow">→</div>
+      </div>
+    </article>
+    <article class="vehicle-card">
+      <div class="vehicle-photo"></div>
+      <div class="vehicle-meta">
+        <div>
+          <h3>Renault Master</h3>
+          <p>Commercial vehicle</p>
+        </div>
+        <div class="vehicle-arrow">→</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section>
+  <h2>Configurator</h2>
+  <p class="lead">A right-hand option list with hairline row dividers, circular colour swatches with `rounded.full`, and a sticky summary footer.</p>
+  <div style="border:1px solid var(--hairline-strong); padding:32px; max-width:520px;">
+    <div style="font-size:12px; font-weight:700; letter-spacing:0.144px; text-transform:uppercase; color:var(--mute); margin-bottom:8px;">New Renault Master</div>
+    <div style="font-size:24px; font-weight:700; line-height:0.95; margin-bottom:24px;">Configurator</div>
+    <div class="config-row">
+      <div class="config-label">Body type</div>
+      <div class="config-value">Panel Van <span style="color:var(--ink);">→</span></div>
+    </div>
+    <div class="config-row">
+      <div class="config-label">Engine selection</div>
+      <div class="config-value">dCi 150 <span style="color:var(--ink);">→</span></div>
+    </div>
+    <div class="config-row">
+      <div class="config-label">Version selection</div>
+      <div class="config-value">Pro+ <span style="color:var(--ink);">→</span></div>
+    </div>
+    <div class="config-row">
+      <div class="config-label">Color options</div>
+      <div class="config-swatch-row">
+        <span class="config-swatch c-white active"></span>
+        <span class="config-swatch c-black"></span>
+        <span class="config-swatch c-blue"></span>
+        <span class="config-swatch c-red"></span>
+      </div>
+    </div>
+    <div class="config-row" style="border-bottom:none; padding-top:24px; margin-top:8px; border-top:1px solid var(--hairline-strong);">
+      <div style="font-size:14px; color:var(--mute);">Total price</div>
+      <div style="font-size:20px; font-weight:700;">— TL</div>
+    </div>
+    <button class="btn btn-primary" style="width:100%; margin-top:16px;">Save configuration</button>
+  </div>
+</section>
+
+<section>
+  <h2>Form Elements</h2>
+  <p class="lead">Borderless on top and sides with a single hairline at the bottom — keeping the catalogue feel.</p>
+  <div class="form-grid">
+    <div class="field">
+      <label>Full name</label>
+      <input type="text" placeholder="Enter your name">
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <input type="email" placeholder="example@email.com">
+    </div>
+    <div class="field">
+      <label>Phone</label>
+      <input type="tel" placeholder="0 (5xx) xxx xx xx">
+    </div>
+    <div class="field">
+      <label>City</label>
+      <input type="text" placeholder="Istanbul">
+    </div>
+    <div class="field" style="grid-column: 1 / -1;">
+      <label>Message</label>
+      <textarea placeholder="Your question or note"></textarea>
+    </div>
+  </div>
+</section>
+
+<section id="layout">
+  <h2>Spacing Scale</h2>
+  <p class="lead">Built on a 4px base, with `section: 80px` driving full-bleed band-to-band rhythm.</p>
+  <div class="spacing-row">
+    <div><div class="spacing-block" style="width:4px;"></div><div class="spacing-label">xxs · 4</div></div>
+    <div><div class="spacing-block" style="width:8px;"></div><div class="spacing-label">xs · 8</div></div>
+    <div><div class="spacing-block" style="width:12px;"></div><div class="spacing-label">sm · 12</div></div>
+    <div><div class="spacing-block" style="width:16px;"></div><div class="spacing-label">md · 16</div></div>
+    <div><div class="spacing-block" style="width:20px;"></div><div class="spacing-label">lg · 20</div></div>
+    <div><div class="spacing-block" style="width:24px;"></div><div class="spacing-label">xl · 24</div></div>
+    <div><div class="spacing-block" style="width:32px;"></div><div class="spacing-label">xxl · 32</div></div>
+    <div><div class="spacing-block" style="width:40px;"></div><div class="spacing-label">xxxl · 40</div></div>
+    <div><div class="spacing-block" style="width:80px;"></div><div class="spacing-label">section · 80</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Border Radius</h2>
+  <p class="lead">Square corners dominate. Pill shape is reserved for sub-nav and badges.</p>
+  <div class="radius-grid">
+    <div class="radius-card"><div class="radius-box" style="border-radius:0;"></div><div class="radius-meta">none · 0</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:2px;"></div><div class="radius-meta">xs · 2</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:3px;"></div><div class="radius-meta">sm · 3</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:4px;"></div><div class="radius-meta">md · 4</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:46px;"></div><div class="radius-meta">pill · 46</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:9999px; height:120px; width:120px;"></div><div class="radius-meta">full · circle</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Elevation &amp; Depth</h2>
+  <p class="lead">Depth is structural — colour-blocking and outlines, not shadows.</p>
+  <div class="elev-grid">
+    <div class="elev-card elev-flat">Level 0 — Flat</div>
+    <div class="elev-card elev-outline">Level 1 — Outline</div>
+    <div class="elev-card elev-block">Level 2 — Colour Block</div>
+    <div class="elev-card elev-dark">Level 3 — Dark Inversion</div>
+  </div>
+</section>
+
+<section>
+  <h2>Responsive Behavior</h2>
+  <p class="lead">Six breakpoints from desktop XL (≥1440) to small mobile (≤425). Vehicle grids step from 4-up to 1-up; configurator switches from side-by-side to stacked at &lt; 1024px.</p>
+  <table class="breakpoint-table">
+    <thead><tr><th>Breakpoint</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Desktop XL</td><td>≥ 1440px</td><td>4-up vehicle grid, 2-up promo tile grid.</td></tr>
+      <tr><td>Desktop</td><td>1280–1439px</td><td>Container shrinks; padding `xl` 24px sides.</td></tr>
+      <tr><td>Tablet Large</td><td>1024–1279px</td><td>Vehicle grid 3-up; configurator 55/45 split.</td></tr>
+      <tr><td>Tablet</td><td>768–1023px</td><td>Promo tiles 2-up; sub-nav becomes scroll-rail.</td></tr>
+      <tr><td>Mobile Large</td><td>426–767px</td><td>Vehicle grid 2-up; nav collapses to hamburger.</td></tr>
+      <tr><td>Mobile</td><td>≤ 425px</td><td>All grids 1-up; display-xl clamps to 40px.</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="device" style="width:60px; height:120px;">390</div>
+    <div class="device" style="width:90px; height:140px;">600</div>
+    <div class="device" style="width:130px; height:170px;">800</div>
+    <div class="device" style="width:200px; height:200px;">1024</div>
+    <div class="device" style="width:280px; height:220px;">1280</div>
+    <div class="device" style="width:340px; height:240px;">1440</div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

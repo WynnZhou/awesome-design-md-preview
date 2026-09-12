@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design System Analysis of PostHog</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #eeefe9; } html[data-theme="dark"] { background: #1a1c14; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<div class="theme-layer" data-when="light">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#layout">Layout</a></li>
+  </ul>
+  <button class="nav-cta">Get started — free</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of PostHog</h1>
+    <p>A playful developer-tools system rendered on a warm cream canvas with hand-drawn hedgehog mascots dotted across every page like marginalia in a sketchbook. The chrome reads like a friendly engineering blog: olive-gray ink (#4d4f46) for body, deep olive-charcoal (#23251d) for headlines, IBM Plex Sans Variable typography in tight 1.43-line-height paragraphs, and a single saturated yellow-orange CTA pill (#f7a501) carrying every primary action. The system actively rejects the genre's typical somber dark-tech aesthetic in favor of a creamy, textbook-illustration sensibility.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Get started — free</button>
+      <button class="btn btn-secondary">Talk to sales</button>
+    </div>
+  </div>
+</header>
+
+<!-- COLOR PALETTE -->
+<section id="colors">
+  <p class="section-eyebrow">01 — Color</p>
+  <h2 class="section-heading">Color Palette</h2>
+  <p class="section-desc">Cream canvas, olive ink, single yellow-orange CTA, plus a four-color pastel callout family for inline doc tips/warnings/info.</p>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Brand &amp; Accent</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#f7a501"></div><div class="swatch-meta"><p class="swatch-name">PostHog Yellow (primary)</p><p class="swatch-hex">#f7a501</p><p class="swatch-role">Universal primary CTA pill — only saturated color</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#dd9001"></div><div class="swatch-meta"><p class="swatch-name">Yellow Pressed</p><p class="swatch-hex">#dd9001</p><p class="swatch-role">Pressed primary state</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#b17816"></div><div class="swatch-meta"><p class="swatch-name">Yellow Active</p><p class="swatch-hex">#b17816</p><p class="swatch-role">Deeply-pressed yellow + gold border accent</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Surface</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#eeefe9"></div><div class="swatch-meta"><p class="swatch-name">Canvas</p><p class="swatch-hex">#eeefe9</p><p class="swatch-role">Warm cream page background — most distinctive surface</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#e5e7e0"></div><div class="swatch-meta"><p class="swatch-name">Soft Surface</p><p class="swatch-hex">#e5e7e0</p><p class="swatch-role">button-secondary fill, sub-nav strip, inline-code chip</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff;box-shadow:inset 0 0 0 1px var(--hairline)"></div><div class="swatch-meta"><p class="swatch-name">Surface Card</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">True white card and tile background</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#fcfcfa;box-shadow:inset 0 0 0 1px var(--hairline)"></div><div class="swatch-meta"><p class="swatch-name">Surface Doc</p><p class="swatch-hex">#fcfcfa</p><p class="swatch-role">Faintly cream-warm white inside doc article body</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#23251d"></div><div class="swatch-meta"><p class="swatch-name">Surface Dark</p><p class="swatch-hex">#23251d</p><p class="swatch-role">Code-block background — same hex as ink</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#bfc1b7"></div><div class="swatch-meta"><p class="swatch-name">Hairline</p><p class="swatch-hex">#bfc1b7</p><p class="swatch-role">1px card border, table rule, footer divider</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Text</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#23251d"></div><div class="swatch-meta"><p class="swatch-name">Ink</p><p class="swatch-hex">#23251d</p><p class="swatch-role">Headlines, button text on light, primary nav links</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#4d4f46"></div><div class="swatch-meta"><p class="swatch-name">Body</p><p class="swatch-hex">#4d4f46</p><p class="swatch-role">Default paragraph text, doc article body</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#33342d"></div><div class="swatch-meta"><p class="swatch-name">Charcoal</p><p class="swatch-hex">#33342d</p><p class="swatch-role">Emphasized body text where body is too soft</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#6c6e63"></div><div class="swatch-meta"><p class="swatch-name">Mute</p><p class="swatch-hex">#6c6e63</p><p class="swatch-role">Metadata, footer link text</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#9b9c92"></div><div class="swatch-meta"><p class="swatch-name">Ash</p><p class="swatch-hex">#9b9c92</p><p class="swatch-role">Disabled-state text, lowest-emphasis utility</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#b6b7af"></div><div class="swatch-meta"><p class="swatch-name">Stone</p><p class="swatch-hex">#b6b7af</p><p class="swatch-role">Least-emphasis caption, disabled icons</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Semantic — Callout Banners (doc-only)</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#dceaf6"></div><div class="swatch-meta"><p class="swatch-name">Accent Blue Soft</p><p class="swatch-hex">#dceaf6</p><p class="swatch-role">💡 Tip / Info callout banner background</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#d9eddf"></div><div class="swatch-meta"><p class="swatch-name">Accent Green Soft</p><p class="swatch-hex">#d9eddf</p><p class="swatch-role">✅ Success / Positive callout banner</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f7d6d3"></div><div class="swatch-meta"><p class="swatch-name">Accent Red Soft</p><p class="swatch-hex">#f7d6d3</p><p class="swatch-role">⚠️ Warning / Caution callout banner</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#e7d8ee"></div><div class="swatch-meta"><p class="swatch-name">Accent Purple Soft</p><p class="swatch-hex">#e7d8ee</p><p class="swatch-role">📘 Note / Reference callout banner</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1078a3"></div><div class="swatch-meta"><p class="swatch-name">Link Teal</p><p class="swatch-hex">#1078a3</p><p class="swatch-role">Inline anchor link in body prose</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1d4ed8"></div><div class="swatch-meta"><p class="swatch-name">Link Blue</p><p class="swatch-hex">#1d4ed8</p><p class="swatch-role">Alt informational link color</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section id="typography">
+  <p class="section-eyebrow">02 — Typography</p>
+  <h2 class="section-heading">Typography Scale</h2>
+  <p class="section-desc">IBM Plex Sans Variable across every text role with weights 400/500/600/700/800. Weight 800 is reserved for the largest display moments.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>IBM Plex Sans<br>36px / 700 / lh 1.5</div><div class="type-sample" style="font-size:36px;font-weight:700;line-height:1.5">The new way to build products</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>IBM Plex Sans<br>24px / 800 / lh 1.33 / -0.6px</div><div class="type-sample" style="font-size:24px;font-weight:800;line-height:1.33;letter-spacing:-0.6px">Section headline</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-lg</strong>IBM Plex Sans<br>21px / 700 / lh 1.4 / -0.5px</div><div class="type-sample" style="font-size:21px;font-weight:700;line-height:1.4;letter-spacing:-0.5px">Sub-section heading</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-md</strong>IBM Plex Sans<br>20px / 700 / lh 1.4</div><div class="type-sample" style="font-size:20px;font-weight:700;line-height:1.4">Card group title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-sm</strong>IBM Plex Sans<br>18px / 700 / lh 1.5 / uppercase</div><div class="type-sample" style="font-size:18px;font-weight:700;line-height:1.5;text-transform:uppercase">UNDERSTAND PRODUCT USAGE</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-sm-mixed</strong>IBM Plex Sans<br>18px / 600 / lh 1.56</div><div class="type-sample" style="font-size:18px;font-weight:600;line-height:1.56">Card title in mixed case</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>IBM Plex Sans<br>16px / 400 / lh 1.5</div><div class="type-sample" style="font-size:16px;font-weight:400;line-height:1.5">Default body copy at 16px regular weight with 1.5 line-height for comfortable reading.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-strong</strong>IBM Plex Sans<br>16px / 600 / lh 1.5</div><div class="type-sample" style="font-size:16px;font-weight:600;line-height:1.5">Inline emphasis or primary nav link</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>IBM Plex Sans<br>15px / 400 / lh 1.71</div><div class="type-sample" style="font-size:15px;font-weight:400;line-height:1.71">Doc article body text and marketing card description.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm-strong</strong>IBM Plex Sans<br>15px / 600 / lh 1.71</div><div class="type-sample" style="font-size:15px;font-weight:600;line-height:1.71">Sub-section emphasis inside doc article</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-xs</strong>IBM Plex Sans<br>14px / 500 / lh 1.43</div><div class="type-sample" style="font-size:14px;font-weight:500;line-height:1.43">Doc sidebar item, metadata, in-list caption</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-md</strong>IBM Plex Sans<br>14px / 700 / lh 1.71</div><div class="type-sample" style="font-size:14px;font-weight:700;line-height:1.71">Card eyebrow, link cluster header</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-xs</strong>IBM Plex Sans<br>12px / 600 / lh 1.33 / uppercase</div><div class="type-sample" style="font-size:12px;font-weight:600;line-height:1.33;text-transform:uppercase">Inline badge label</div></div>
+  <div class="type-row"><div class="type-meta"><strong>utility-xs</strong>IBM Plex Sans<br>12px / 700 / lh 1.33 / uppercase</div><div class="type-sample" style="font-size:12px;font-weight:700;line-height:1.33;text-transform:uppercase">Section eyebrow utility text</div></div>
+  <div class="type-row"><div class="type-meta"><strong>code-sm</strong>IBM Plex Mono<br>14px / 400 / lh 1.43</div><div class="type-sample" style="font-family:var(--font-mono);font-size:14px;font-weight:400;line-height:1.43">posthog.capture('event_name')</div></div>
+  <div class="type-row"><div class="type-meta"><strong>code-xs</strong>Source Code Pro<br>14px / 500 / lh 1.43</div><div class="type-sample" style="font-family:var(--font-mono);font-size:14px;font-weight:500;line-height:1.43">inline code chip</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-md</strong>IBM Plex Sans<br>14px / 700 / lh 1.5</div><div class="type-sample" style="font-size:14px;font-weight:700;line-height:1.5">Get started — free</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-sm</strong>IBM Plex Sans<br>13px / 500 / lh 1</div><div class="type-sample" style="font-size:13px;font-weight:500;line-height:1">Compact pill chip</div></div>
+</section>
+
+<!-- BUTTONS -->
+<section id="components">
+  <p class="section-eyebrow">03 — Components</p>
+  <h2 class="section-heading">Button Variants</h2>
+  <p class="section-desc">Yellow-orange primary, soft-cream secondary, transparent tertiary — the entire button vocabulary plus product-tab and pill-tab variants.</p>
+
+  <div class="button-grid">
+    <div class="button-cell">
+      <button class="btn btn-primary">Get started — free</button>
+      <p class="button-cell-label">button-primary</p>
+      <p class="button-cell-spec">bg primary · text on-primary · rounded 6px · 40px height</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-primary" style="background:var(--primary-pressed)">Pressed</button>
+      <p class="button-cell-label">button-primary-pressed</p>
+      <p class="button-cell-spec">bg primary-pressed · text on-primary</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-secondary">Talk to sales</button>
+      <p class="button-cell-label">button-secondary</p>
+      <p class="button-cell-spec">bg surface-soft · text ink · rounded 6px</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-tertiary">See all docs →</button>
+      <p class="button-cell-label">button-tertiary</p>
+      <p class="button-cell-spec">transparent · text ink</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-disabled">Disabled</button>
+      <p class="button-cell-label">button-disabled</p>
+      <p class="button-cell-spec">bg surface-soft · text ash</p>
+    </div>
+    <div class="button-cell wide">
+      <div class="product-tabs">
+        <button class="product-tab active">Product analytics</button>
+        <button class="product-tab">Session replay</button>
+        <button class="product-tab">Feature flags</button>
+        <button class="product-tab">Experiments</button>
+      </div>
+      <p class="button-cell-label">product-tab + product-tab-active</p>
+      <p class="button-cell-spec">default: transparent · active: white card lift on cream</p>
+    </div>
+    <div class="button-cell wide">
+      <div class="pill-tabs">
+        <button class="pill-tab active">All</button>
+        <button class="pill-tab">Free</button>
+        <button class="pill-tab">Paid</button>
+        <button class="pill-tab">Self-hosted</button>
+        <button class="pill-tab">Cloud</button>
+      </div>
+      <p class="button-cell-label">pill-tab + pill-tab-active</p>
+      <p class="button-cell-spec">default: transparent + 1px hairline · active: ink fill + on-dark text</p>
+    </div>
+    <div class="button-cell">
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+        <span class="badge-promo">New</span>
+        <span class="badge-promo" style="background:var(--accent-green-soft);color:var(--accent-green)">Beta</span>
+        <span class="badge-uppercase">FEATURE FLAG</span>
+      </div>
+      <p class="button-cell-label">badge-promo + badge-uppercase</p>
+      <p class="button-cell-spec">soft pill chip + transparent uppercase utility label</p>
+    </div>
+  </div>
+</section>
+
+<!-- CALLOUTS + CODE -->
+<section>
+  <p class="section-eyebrow">04 — Callouts &amp; Code</p>
+  <h2 class="section-heading">Callout Banners &amp; Code Blocks</h2>
+  <p class="section-desc">Four-color pastel callout banner family used inside doc article body. Code blocks invert to deep olive-charcoal — the system's only "elevated" surface.</p>
+
+  <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:48px">
+    <div class="banner-tip blue"><strong>💡 Tip:</strong> Use a structured event taxonomy from day one. It's much easier to maintain than to retrofit later.</div>
+    <div class="banner-tip green"><strong>✅ Success:</strong> Your event has been captured. You'll see it appear in your live events feed within seconds.</div>
+    <div class="banner-tip red"><strong>⚠️ Warning:</strong> This action cannot be undone. Deleting an event property removes it permanently from all dashboards.</div>
+    <div class="banner-tip purple"><strong>📘 Note:</strong> The session replay feature is only available on paid plans. See pricing for details.</div>
+  </div>
+
+  <p class="palette-block-label">Code Block (Dark)</p>
+  <div class="code-block" style="margin-bottom:32px"><span class="comment">// Capture an event</span>
+<span class="keyword">posthog</span>.capture(<span class="string">'event_name'</span>, {
+  <span class="keyword">property</span>: <span class="string">'value'</span>,
+  <span class="keyword">timestamp</span>: <span class="keyword">new</span> <span class="keyword">Date</span>()
+});</div>
+
+  <p class="palette-block-label">Inline Code Chip</p>
+  <p style="font-size:16px;color:var(--body);line-height:1.5">Use the <span class="inline-code">posthog.identify()</span> method to associate events with a known user. The <span class="inline-code">distinct_id</span> parameter accepts a unique user identifier.</p>
+</section>
+
+<!-- CARDS -->
+<section>
+  <p class="section-eyebrow">05 — Cards</p>
+  <h2 class="section-heading">Card Examples</h2>
+  <p class="section-desc">Marketing cards on cream, doc cards on warm-white, pricing tier cards with check-icon feature lists, and the signature hedgehog-mascot card.</p>
+
+  <p class="palette-block-label">Marketing &amp; Doc Cards</p>
+  <div class="card-grid" style="margin-bottom:48px">
+    <div class="product-card">
+      <p style="font-size:18px;font-weight:600;color:var(--ink);margin:0 0 8px;line-height:1.56">Product analytics</p>
+      <p style="font-size:15px;color:var(--body);margin:0 0 16px;line-height:1.71">Measure engagement, track conversion, and understand single sessions — based on a single source of truth.</p>
+      <button class="btn btn-tertiary" style="padding:0;font-size:14px">Learn more →</button>
+    </div>
+    <div class="product-card">
+      <p style="font-size:18px;font-weight:600;color:var(--ink);margin:0 0 8px;line-height:1.56">Session replay</p>
+      <p style="font-size:15px;color:var(--body);margin:0 0 16px;line-height:1.71">Watch real users interact with your product to debug issues and find friction points.</p>
+      <button class="btn btn-tertiary" style="padding:0;font-size:14px">Learn more →</button>
+    </div>
+    <div class="doc-card">
+      <p style="font-size:21px;font-weight:700;color:var(--ink);margin:0 0 12px;letter-spacing:-0.5px;line-height:1.4">Getting started</p>
+      <p style="font-size:15px;color:var(--body);margin:0 0 16px;line-height:1.71">Learn how to use product analytics to understand your users.</p>
+      <button class="btn btn-primary">Installation guide</button>
+    </div>
+  </div>
+
+  <p class="palette-block-label">Pricing Tier Cards</p>
+  <div class="card-grid" style="margin-bottom:48px">
+    <div class="pricing-tier-card">
+      <p class="pricing-name">Free</p>
+      <p class="pricing-price">$0<span class="pricing-price-meta">forever</span></p>
+      <button class="btn btn-secondary" style="width:100%">Get started</button>
+      <ul class="pricing-features">
+        <li class="pricing-feature">No credit card required</li>
+        <li class="pricing-feature">1M events per month free</li>
+        <li class="pricing-feature">Community support</li>
+      </ul>
+    </div>
+    <div class="pricing-tier-card">
+      <p class="pricing-name">Pay-as-you-go</p>
+      <p class="pricing-price">$0<span class="pricing-price-meta">+ usage</span></p>
+      <button class="btn btn-primary" style="width:100%">Get started — free</button>
+      <ul class="pricing-features">
+        <li class="pricing-feature">All free features</li>
+        <li class="pricing-feature">Usage-based pricing</li>
+        <li class="pricing-feature">Email support</li>
+        <li class="pricing-feature">Up to 90% off as you scale</li>
+      </ul>
+    </div>
+    <div class="pricing-tier-card">
+      <p class="pricing-name">Enterprise</p>
+      <p class="pricing-price">Custom<span class="pricing-price-meta"></span></p>
+      <button class="btn btn-secondary" style="width:100%">Talk to sales</button>
+      <ul class="pricing-features">
+        <li class="pricing-feature">All pay-as-you-go features</li>
+        <li class="pricing-feature">SSO &amp; SAML</li>
+        <li class="pricing-feature">Dedicated support</li>
+        <li class="pricing-feature">SLA &amp; custom contracts</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="palette-block-label">Hedgehog Mascot Card</p>
+  <div class="card-grid">
+    <div class="hedgehog-mascot-card">
+      <div>
+        <p style="font-size:18px;font-weight:600;color:var(--ink);margin:0 0 8px;line-height:1.56">Hedgehog mascot card</p>
+        <p style="font-size:15px;color:var(--body);margin:0;line-height:1.71">Standard product card with a hand-drawn hedgehog character anchored in the right margin.</p>
+      </div>
+      <div class="mascot">🦔</div>
+    </div>
+    <div class="hedgehog-mascot-card">
+      <div>
+        <p style="font-size:18px;font-weight:600;color:var(--ink);margin:0 0 8px;line-height:1.56">Engineering blog vibe</p>
+        <p style="font-size:15px;color:var(--body);margin:0;line-height:1.71">Hedgehogs in lab coats, terminals, and reading glasses scatter across pages as marginalia.</p>
+      </div>
+      <div class="mascot">🦔</div>
+    </div>
+  </div>
+</section>
+
+<!-- NAV + DOC SIDEBAR -->
+<section>
+  <p class="section-eyebrow">06 — Navigation</p>
+  <h2 class="section-heading">Sub-nav &amp; Doc Sidebar</h2>
+  <p class="section-desc">A 40px sub-nav strip carries section anchors on workflows / product pages; the doc sidebar carries 240px-wide rounded-icon section nav with an "Ask PostHog AI" search at top.</p>
+
+  <p class="palette-block-label">Sub-nav Strip</p>
+  <div class="sub-nav-strip" style="margin-bottom:48px">
+    <span>Overview</span>
+    <span>Features</span>
+    <span>Pricing</span>
+    <span>Customers</span>
+    <span style="margin-left:auto;color:var(--ink);font-weight:700">Get started →</span>
+  </div>
+
+  <p class="palette-block-label">Doc Sidebar</p>
+  <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start">
+    <div class="doc-sidebar-demo">
+      <input class="text-input" placeholder="Ask PostHog AI" style="width:100%;margin-bottom:12px">
+      <div class="doc-sidebar-item active"><span class="icon">📊</span>Product analytics</div>
+      <div class="doc-sidebar-item"><span class="icon">▶️</span>Session replay</div>
+      <div class="doc-sidebar-item"><span class="icon">🚩</span>Feature flags</div>
+      <div class="doc-sidebar-item"><span class="icon">🧪</span>Experiments</div>
+      <div class="doc-sidebar-item"><span class="icon">📈</span>Web analytics</div>
+      <div class="doc-sidebar-item"><span class="icon">📥</span>Data warehouse</div>
+    </div>
+    <div style="flex:1;min-width:280px">
+      <p style="font-size:24px;font-weight:800;color:var(--ink);margin:0 0 12px;letter-spacing:-0.6px;line-height:1.33">Product analytics</p>
+      <p style="font-size:15px;color:var(--body);margin:0 0 24px;line-height:1.71">Learn how to use product analytics to understand your users. Build dashboards, run funnels, and find your most engaged customers.</p>
+      <button class="btn btn-primary">Installation guide</button>
+    </div>
+  </div>
+</section>
+
+<!-- FORMS -->
+<section>
+  <p class="section-eyebrow">07 — Forms</p>
+  <h2 class="section-heading">Form Elements</h2>
+  <p class="section-desc">6px-radius rectangle inputs at 36px height. Focus relies on a 2px Accent Blue border + translucent blue outline halo.</p>
+
+  <div class="form-grid">
+    <div class="form-cell">
+      <label class="form-label">Default Input</label>
+      <input class="text-input" placeholder="Email address">
+      <span class="form-spec">surface-card bg · 1px hairline · rounded 6px · 36px height</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Focused Input</label>
+      <input class="text-input focused" value="user@example.com">
+      <span class="form-spec">2px accent-blue border + translucent halo</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Search Input</label>
+      <input class="text-input" placeholder="Ask PostHog AI">
+      <span class="form-spec">standard text-input with magnifier icon prefix</span>
+    </div>
+    <div class="form-cell wide">
+      <label class="form-label">Textarea</label>
+      <textarea class="text-input" placeholder="Tell us about your use case..."></textarea>
+      <span class="form-spec">min-height 96px · resize vertical</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Submit</label>
+      <button class="btn btn-primary" style="width:100%">Get started — free</button>
+      <span class="form-spec">button-primary · always full-width below stacked fields</span>
+    </div>
+  </div>
+</section>
+
+<!-- SPACING -->
+<section>
+  <p class="section-eyebrow">08 — Layout</p>
+  <h2 class="section-heading">Spacing Scale</h2>
+  <p class="section-desc">8px base. Section rhythm sits at 80px between major content blocks across every page.</p>
+  <div class="spacing-row">
+    <div class="spacing-cell"><div class="spacing-bar" style="width:2px"></div><span class="spacing-label">xxs · 2</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:4px"></div><span class="spacing-label">xs · 4</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:8px"></div><span class="spacing-label">sm · 8</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:12px"></div><span class="spacing-label">md · 12</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:16px"></div><span class="spacing-label">lg · 16</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:24px"></div><span class="spacing-label">xl · 24</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:32px"></div><span class="spacing-label">xxl · 32</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:80px"></div><span class="spacing-label">section · 80</span></div>
+  </div>
+</section>
+
+<!-- RADIUS -->
+<section>
+  <p class="section-eyebrow">09 — Shapes</p>
+  <h2 class="section-heading">Border Radius Scale</h2>
+  <p class="section-desc">Most chrome lives at 4–6px. Pill (9999px) is reserved for the sticky nav CTA and pill chips.</p>
+  <div class="radius-row">
+    <div class="radius-cell"><div class="radius-box" style="border-radius:0"></div><span class="radius-label">none · 0</span><p class="radius-context">Sub-nav, footer, doc sidebar, primary nav</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:2px"></div><span class="radius-label">xs · 2</span><p class="radius-context">Inline code chip, micro-rule highlight</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:4px"></div><span class="radius-label">sm · 4</span><p class="radius-context">Inline buttons, micro chips</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:6px"></div><span class="radius-label">md · 6</span><p class="radius-context">Marketing cards, pricing cards, every standard CTA</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:8px"></div><span class="radius-label">lg · 8</span><p class="radius-context">Tab top corners, rare large containers</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:9999px"></div><span class="radius-label">full · 9999</span><p class="radius-context">Sticky CTA pill, pill chips</p></div>
+  </div>
+</section>
+
+<!-- ELEVATION -->
+<section>
+  <p class="section-eyebrow">10 — Depth</p>
+  <h2 class="section-heading">Elevation &amp; Depth</h2>
+  <p class="section-desc">No drop shadows. Cards sit flat on cream with thin olive borders. The dark code-block surface is the only "elevated" moment.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card level-0"><div class="elevation-name">Level 0 — Flat</div><div class="elevation-spec">no border / no shadow</div></div>
+    <div class="elevation-card level-1"><div class="elevation-name">Level 1 — Hairline</div><div class="elevation-spec">1px solid #bfc1b7</div></div>
+    <div class="elevation-card level-2"><div class="elevation-name">Level 2 — Hairline Soft</div><div class="elevation-spec">1px solid #dcdfd2</div></div>
+    <div class="elevation-card level-3"><div class="elevation-name">Level 3 — Inverted Code</div><div class="elevation-spec">bg #23251d · the only elevated surface</div></div>
+  </div>
+</section>
+
+<!-- RESPONSIVE -->
+<section id="layout">
+  <p class="section-eyebrow">11 — Responsive</p>
+  <h2 class="section-heading">Responsive Behavior</h2>
+  <p class="section-desc">7 breakpoint zones with a documentation-aware collapse strategy. The doc sidebar promotes to a top accordion at tablet.</p>
+
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>ultrawide</td><td>1920px+</td><td>Content max-width 1280px; gutters grow to ~80px</td></tr>
+      <tr><td>desktop-large</td><td>1440px</td><td>Default — 4-up tiles, 240px doc sidebar</td></tr>
+      <tr><td>desktop</td><td>1280px</td><td>Same with narrower gutters</td></tr>
+      <tr><td>desktop-small</td><td>1024px</td><td>4-up tiles → 3-up; doc sidebar visible</td></tr>
+      <tr><td>tablet</td><td>768px</td><td>3-up tiles → 2-up; doc sidebar accordion; nav hamburger</td></tr>
+      <tr><td>mobile</td><td>480px</td><td>Single-column; hero 36px → ~28px</td></tr>
+      <tr><td>mobile-narrow</td><td>320px</td><td>Section padding tightens to 32px</td></tr>
+    </tbody>
+  </table>
+
+  <div class="device-ladder">
+    <div class="device phone"><span class="name">320</span><span class="label">m-narrow</span></div>
+    <div class="device phone-large"><span class="name">480</span><span class="label">mobile</span></div>
+    <div class="device tablet"><span class="name">768</span><span class="label">tablet</span></div>
+    <div class="device desktop-small"><span class="name">1024</span><span class="label">desktop-sm</span></div>
+    <div class="device desktop"><span class="name">1280</span><span class="label">desktop-lg</span></div>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Touch Targets</h3>
+    <ul>
+      <li><strong>WCAG AA:</strong> button-primary and button-secondary at 40px height with 16px padding.</li>
+      <li><strong>Text input:</strong> 36px height with 12px padding (just under AAA but above AA).</li>
+      <li><strong>Pill tab:</strong> ~32–36px extends to 44px tappable via padding.</li>
+      <li><strong>Doc-sidebar items:</strong> 14px text + 32px line-height + 6px padding (~44px tap row).</li>
+    </ul>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Collapsing Strategy</h3>
+    <ul>
+      <li><strong>Primary nav:</strong> desktop horizontal cluster → tablet hamburger drawer at 768px. Yellow CTA stays visible.</li>
+      <li><strong>Sub-nav strip:</strong> desktop horizontal anchor row → tablet horizontal scroll → mobile dropdown.</li>
+      <li><strong>Marketing cards:</strong> 4-up → 3-up → 2-up → 1-up at 1024, 768, 480px.</li>
+      <li><strong>Pricing grid:</strong> 3-up → 2+1 → 1-up stacked at tablet and below.</li>
+      <li><strong>Doc layout:</strong> 240px sidebar + 720px article → tablet sidebar accordion → mobile fully collapsed.</li>
+      <li><strong>Footer:</strong> 6-up → 3-up → 2-up.</li>
+      <li><strong>Section padding:</strong> 80px → 64px → 48px.</li>
+      <li><strong>Hero headline:</strong> 36px → 28px down the breakpoint stack.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</div>
+<div class="theme-layer" data-when="dark">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#layout">Layout</a></li>
+  </ul>
+  <button class="nav-cta">Get started — free</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of PostHog</h1>
+    <p>The dark-canvas variant of PostHog's playful developer-tools system. The cream canvas inverts to a deep olive-tinted near-black; the yellow-orange CTA pill, hedgehog mascot system, and IBM Plex Sans typography stay exactly the same. Pastel callout banners brighten to translucent-white-tinted variants for AA contrast on dark, and the code-block surface deepens one notch below canvas.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Get started — free</button>
+      <button class="btn btn-secondary">Talk to sales</button>
+    </div>
+  </div>
+</header>
+
+<!-- COLOR PALETTE -->
+<section data-sec="colors">
+  <p class="section-eyebrow">01 — Color</p>
+  <h2 class="section-heading">Color Palette</h2>
+  <p class="section-desc">Olive-tinted near-black canvas with a 4-step surface ladder, translucent-white text and border tiers, brightened semantic accents.</p>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Brand &amp; Accent (preserved)</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#f7a501"></div><div class="swatch-meta"><p class="swatch-name">PostHog Yellow</p><p class="swatch-hex">#f7a501</p><p class="swatch-role">Primary CTA pill — preserved exactly</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#dd9001"></div><div class="swatch-meta"><p class="swatch-name">Yellow Pressed</p><p class="swatch-hex">#dd9001</p><p class="swatch-role">Pressed primary state — preserved</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Canvas &amp; Surface Ladder</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#1a1c14"></div><div class="swatch-meta"><p class="swatch-name">Canvas</p><p class="swatch-hex">#1a1c14</p><p class="swatch-role">Olive-tinted near-black page background</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#23251d"></div><div class="swatch-meta"><p class="swatch-name">Surface</p><p class="swatch-hex">#23251d</p><p class="swatch-role">Cards, sub-nav strip, button cell</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#2d2f24"></div><div class="swatch-meta"><p class="swatch-name">Surface Elevated</p><p class="swatch-hex">#2d2f24</p><p class="swatch-role">Active product-tab background, button-secondary</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#0e0f0a"></div><div class="swatch-meta"><p class="swatch-name">Surface Code</p><p class="swatch-hex">#0e0f0a</p><p class="swatch-role">Deepest dark surface — code-block background</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Translucent Borders</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:rgba(229,229,229,0.12)"></div><div class="swatch-meta"><p class="swatch-name">Hairline</p><p class="swatch-hex">rgba(229,229,229,0.12)</p><p class="swatch-role">1px card border, table rule, footer divider</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(229,229,229,0.24)"></div><div class="swatch-meta"><p class="swatch-name">Hairline Strong</p><p class="swatch-hex">rgba(229,229,229,0.24)</p><p class="swatch-role">Stronger inline divider</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Text Tiers</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff"></div><div class="swatch-meta"><p class="swatch-name">Ink</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Headlines, button text, primary nav links</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.85)"></div><div class="swatch-meta"><p class="swatch-name">Body</p><p class="swatch-hex">rgba(255,255,255,0.85)</p><p class="swatch-role">Default paragraph text</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.6)"></div><div class="swatch-meta"><p class="swatch-name">Mute</p><p class="swatch-hex">rgba(255,255,255,0.6)</p><p class="swatch-role">Metadata, footer link text</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(229,229,229,0.45)"></div><div class="swatch-meta"><p class="swatch-name">Ash</p><p class="swatch-hex">rgba(229,229,229,0.45)</p><p class="swatch-role">Disabled-state text, lowest-emphasis utility</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Semantic — Callout Banners (translucent-tinted for dark)</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#4a9dff"></div><div class="swatch-meta"><p class="swatch-name">Accent Blue</p><p class="swatch-hex">#4a9dff</p><p class="swatch-role">💡 Tip / Info border accent — brightened</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#4ad99d"></div><div class="swatch-meta"><p class="swatch-name">Accent Green</p><p class="swatch-hex">#4ad99d</p><p class="swatch-role">✅ Success / Positive — brightened</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#ff5e54"></div><div class="swatch-meta"><p class="swatch-name">Accent Red</p><p class="swatch-hex">#ff5e54</p><p class="swatch-role">⚠️ Warning / Caution — brightened</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#c060e0"></div><div class="swatch-meta"><p class="swatch-name">Accent Purple</p><p class="swatch-hex">#c060e0</p><p class="swatch-role">📘 Note / Reference — brightened</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#4ec1e8"></div><div class="swatch-meta"><p class="swatch-name">Link Teal</p><p class="swatch-hex">#4ec1e8</p><p class="swatch-role">Inline link in body prose — brightened</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#6a9aff"></div><div class="swatch-meta"><p class="swatch-name">Link Blue</p><p class="swatch-hex">#6a9aff</p><p class="swatch-role">Alt informational link — brightened</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section data-sec="typography">
+  <p class="section-eyebrow">02 — Typography</p>
+  <h2 class="section-heading">Typography Scale</h2>
+  <p class="section-desc">Identical hierarchy to light mode. Type tokens don't change between modes — only color values shift.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>IBM Plex Sans<br>36px / 700 / lh 1.5</div><div class="type-sample" style="font-size:36px;font-weight:700;line-height:1.5">The new way to build products</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>IBM Plex Sans<br>24px / 800 / lh 1.33 / -0.6px</div><div class="type-sample" style="font-size:24px;font-weight:800;line-height:1.33;letter-spacing:-0.6px">Section headline</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-lg</strong>IBM Plex Sans<br>21px / 700 / lh 1.4 / -0.5px</div><div class="type-sample" style="font-size:21px;font-weight:700;line-height:1.4;letter-spacing:-0.5px">Sub-section heading</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-md</strong>IBM Plex Sans<br>20px / 700 / lh 1.4</div><div class="type-sample" style="font-size:20px;font-weight:700;line-height:1.4">Card group title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-sm</strong>IBM Plex Sans<br>18px / 700 / lh 1.5 / uppercase</div><div class="type-sample" style="font-size:18px;font-weight:700;line-height:1.5;text-transform:uppercase">UNDERSTAND PRODUCT USAGE</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-sm-mixed</strong>IBM Plex Sans<br>18px / 600 / lh 1.56</div><div class="type-sample" style="font-size:18px;font-weight:600;line-height:1.56">Card title in mixed case</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>IBM Plex Sans<br>16px / 400 / lh 1.5</div><div class="type-sample" style="font-size:16px;font-weight:400;line-height:1.5">Default body copy on dark canvas at 16px regular weight.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-strong</strong>IBM Plex Sans<br>16px / 600 / lh 1.5</div><div class="type-sample" style="font-size:16px;font-weight:600;line-height:1.5">Inline emphasis or primary nav link</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>IBM Plex Sans<br>15px / 400 / lh 1.71</div><div class="type-sample" style="font-size:15px;font-weight:400;line-height:1.71">Doc article body and marketing card description.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-xs</strong>IBM Plex Sans<br>14px / 500 / lh 1.43</div><div class="type-sample" style="font-size:14px;font-weight:500;line-height:1.43">Doc sidebar item, metadata</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-md</strong>IBM Plex Sans<br>14px / 700 / lh 1.71</div><div class="type-sample" style="font-size:14px;font-weight:700;line-height:1.71">Card eyebrow, link cluster header</div></div>
+  <div class="type-row"><div class="type-meta"><strong>utility-xs</strong>IBM Plex Sans<br>12px / 700 / lh 1.33 / uppercase</div><div class="type-sample" style="font-size:12px;font-weight:700;line-height:1.33;text-transform:uppercase">Section eyebrow utility text</div></div>
+  <div class="type-row"><div class="type-meta"><strong>code-sm</strong>IBM Plex Mono<br>14px / 400 / lh 1.43</div><div class="type-sample" style="font-family:var(--font-mono);font-size:14px;font-weight:400;line-height:1.43">posthog.capture('event_name')</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-md</strong>IBM Plex Sans<br>14px / 700 / lh 1.5</div><div class="type-sample" style="font-size:14px;font-weight:700;line-height:1.5">Get started — free</div></div>
+</section>
+
+<!-- BUTTONS -->
+<section data-sec="components">
+  <p class="section-eyebrow">03 — Components</p>
+  <h2 class="section-heading">Button Variants</h2>
+  <p class="section-desc">Same vocabulary as light mode — yellow primary stays untouched; secondary inverts to surface-elevated with translucent-white border.</p>
+
+  <div class="button-grid">
+    <div class="button-cell">
+      <button class="btn btn-primary">Get started — free</button>
+      <p class="button-cell-label">button-primary</p>
+      <p class="button-cell-spec">bg primary · text on-primary · rounded 6px · 40px height</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-primary" style="background:var(--primary-pressed)">Pressed</button>
+      <p class="button-cell-label">button-primary-pressed</p>
+      <p class="button-cell-spec">bg primary-pressed · text on-primary</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-secondary">Talk to sales</button>
+      <p class="button-cell-label">button-secondary</p>
+      <p class="button-cell-spec">bg surface-elevated · text ink · 1px hairline</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-tertiary">See all docs →</button>
+      <p class="button-cell-label">button-tertiary</p>
+      <p class="button-cell-spec">transparent · text ink</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-disabled">Disabled</button>
+      <p class="button-cell-label">button-disabled</p>
+      <p class="button-cell-spec">bg surface · text ash</p>
+    </div>
+    <div class="button-cell wide">
+      <div class="product-tabs">
+        <button class="product-tab active">Product analytics</button>
+        <button class="product-tab">Session replay</button>
+        <button class="product-tab">Feature flags</button>
+        <button class="product-tab">Experiments</button>
+      </div>
+      <p class="button-cell-label">product-tab + product-tab-active</p>
+      <p class="button-cell-spec">default: transparent · active: surface-elevated lift</p>
+    </div>
+    <div class="button-cell wide">
+      <div class="pill-tabs">
+        <button class="pill-tab active">All</button>
+        <button class="pill-tab">Free</button>
+        <button class="pill-tab">Paid</button>
+        <button class="pill-tab">Self-hosted</button>
+        <button class="pill-tab">Cloud</button>
+      </div>
+      <p class="button-cell-label">pill-tab + pill-tab-active</p>
+      <p class="button-cell-spec">default: transparent + 1px hairline · active: ink fill + canvas text</p>
+    </div>
+    <div class="button-cell">
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+        <span class="badge-promo">New</span>
+        <span class="badge-promo" style="background:var(--accent-green-soft);color:var(--accent-green)">Beta</span>
+        <span class="badge-uppercase">FEATURE FLAG</span>
+      </div>
+      <p class="button-cell-label">badge-promo + badge-uppercase</p>
+      <p class="button-cell-spec">soft pill chip + transparent uppercase utility</p>
+    </div>
+  </div>
+</section>
+
+<!-- CALLOUTS + CODE -->
+<section>
+  <p class="section-eyebrow">04 — Callouts &amp; Code</p>
+  <h2 class="section-heading">Callout Banners &amp; Code Blocks</h2>
+  <p class="section-desc">Callout banners brighten to translucent-tinted variants for AA contrast on dark. Code blocks deepen to #0e0f0a — one notch below canvas.</p>
+
+  <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:48px">
+    <div class="banner-tip blue"><strong>💡 Tip:</strong> Use a structured event taxonomy from day one. It's much easier to maintain than to retrofit later.</div>
+    <div class="banner-tip green"><strong>✅ Success:</strong> Your event has been captured. You'll see it appear in your live events feed within seconds.</div>
+    <div class="banner-tip red"><strong>⚠️ Warning:</strong> This action cannot be undone. Deleting an event property removes it permanently from all dashboards.</div>
+    <div class="banner-tip purple"><strong>📘 Note:</strong> The session replay feature is only available on paid plans. See pricing for details.</div>
+  </div>
+
+  <p class="palette-block-label">Code Block</p>
+  <div class="code-block" style="margin-bottom:32px"><span class="comment">// Capture an event</span>
+<span class="keyword">posthog</span>.capture(<span class="string">'event_name'</span>, {
+  <span class="keyword">property</span>: <span class="string">'value'</span>,
+  <span class="keyword">timestamp</span>: <span class="keyword">new</span> <span class="keyword">Date</span>()
+});</div>
+
+  <p class="palette-block-label">Inline Code Chip</p>
+  <p style="font-size:16px;color:var(--body);line-height:1.5">Use the <span class="inline-code">posthog.identify()</span> method to associate events with a known user. The <span class="inline-code">distinct_id</span> parameter accepts a unique user identifier.</p>
+</section>
+
+<!-- CARDS -->
+<section>
+  <p class="section-eyebrow">05 — Cards</p>
+  <h2 class="section-heading">Card Examples</h2>
+  <p class="section-desc">Marketing cards, doc cards, pricing tier cards, and the signature hedgehog-mascot card on dark canvas.</p>
+
+  <p class="palette-block-label">Marketing &amp; Doc Cards</p>
+  <div class="card-grid" style="margin-bottom:48px">
+    <div class="product-card">
+      <p style="font-size:18px;font-weight:600;color:var(--ink);margin:0 0 8px;line-height:1.56">Product analytics</p>
+      <p style="font-size:15px;color:var(--body);margin:0 0 16px;line-height:1.71">Measure engagement, track conversion, and understand single sessions.</p>
+      <button class="btn btn-tertiary" style="padding:0;font-size:14px">Learn more →</button>
+    </div>
+    <div class="product-card">
+      <p style="font-size:18px;font-weight:600;color:var(--ink);margin:0 0 8px;line-height:1.56">Session replay</p>
+      <p style="font-size:15px;color:var(--body);margin:0 0 16px;line-height:1.71">Watch real users interact with your product to debug issues.</p>
+      <button class="btn btn-tertiary" style="padding:0;font-size:14px">Learn more →</button>
+    </div>
+    <div class="doc-card">
+      <p style="font-size:21px;font-weight:700;color:var(--ink);margin:0 0 12px;letter-spacing:-0.5px;line-height:1.4">Getting started</p>
+      <p style="font-size:15px;color:var(--body);margin:0 0 16px;line-height:1.71">Learn how to use product analytics to understand your users.</p>
+      <button class="btn btn-primary">Installation guide</button>
+    </div>
+  </div>
+
+  <p class="palette-block-label">Pricing Tier Cards</p>
+  <div class="card-grid" style="margin-bottom:48px">
+    <div class="pricing-tier-card">
+      <p class="pricing-name">Free</p>
+      <p class="pricing-price">$0<span class="pricing-price-meta">forever</span></p>
+      <button class="btn btn-secondary" style="width:100%">Get started</button>
+      <ul class="pricing-features">
+        <li class="pricing-feature">No credit card required</li>
+        <li class="pricing-feature">1M events per month free</li>
+        <li class="pricing-feature">Community support</li>
+      </ul>
+    </div>
+    <div class="pricing-tier-card">
+      <p class="pricing-name">Pay-as-you-go</p>
+      <p class="pricing-price">$0<span class="pricing-price-meta">+ usage</span></p>
+      <button class="btn btn-primary" style="width:100%">Get started — free</button>
+      <ul class="pricing-features">
+        <li class="pricing-feature">All free features</li>
+        <li class="pricing-feature">Usage-based pricing</li>
+        <li class="pricing-feature">Email support</li>
+        <li class="pricing-feature">Up to 90% off as you scale</li>
+      </ul>
+    </div>
+    <div class="pricing-tier-card">
+      <p class="pricing-name">Enterprise</p>
+      <p class="pricing-price">Custom<span class="pricing-price-meta"></span></p>
+      <button class="btn btn-secondary" style="width:100%">Talk to sales</button>
+      <ul class="pricing-features">
+        <li class="pricing-feature">All pay-as-you-go features</li>
+        <li class="pricing-feature">SSO &amp; SAML</li>
+        <li class="pricing-feature">Dedicated support</li>
+        <li class="pricing-feature">SLA &amp; custom contracts</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="palette-block-label">Hedgehog Mascot Card</p>
+  <div class="card-grid">
+    <div class="hedgehog-mascot-card">
+      <div>
+        <p style="font-size:18px;font-weight:600;color:var(--ink);margin:0 0 8px;line-height:1.56">Hedgehog mascot card</p>
+        <p style="font-size:15px;color:var(--body);margin:0;line-height:1.71">Standard product card with a hand-drawn hedgehog character anchored in the right margin.</p>
+      </div>
+      <div class="mascot">🦔</div>
+    </div>
+    <div class="hedgehog-mascot-card">
+      <div>
+        <p style="font-size:18px;font-weight:600;color:var(--ink);margin:0 0 8px;line-height:1.56">Engineering blog vibe</p>
+        <p style="font-size:15px;color:var(--body);margin:0;line-height:1.71">Hedgehogs in lab coats, terminals, and reading glasses scatter across pages.</p>
+      </div>
+      <div class="mascot">🦔</div>
+    </div>
+  </div>
+</section>
+
+<!-- NAV + DOC SIDEBAR -->
+<section>
+  <p class="section-eyebrow">06 — Navigation</p>
+  <h2 class="section-heading">Sub-nav &amp; Doc Sidebar</h2>
+  <p class="section-desc">A 40px sub-nav strip and a 240px-wide doc sidebar with rounded-icon section nav and "Ask PostHog AI" search at the top.</p>
+
+  <p class="palette-block-label">Sub-nav Strip</p>
+  <div class="sub-nav-strip" style="margin-bottom:48px">
+    <span>Overview</span>
+    <span>Features</span>
+    <span>Pricing</span>
+    <span>Customers</span>
+    <span style="margin-left:auto;color:var(--ink);font-weight:700">Get started →</span>
+  </div>
+
+  <p class="palette-block-label">Doc Sidebar</p>
+  <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start">
+    <div class="doc-sidebar-demo">
+      <input class="text-input" placeholder="Ask PostHog AI" style="width:100%;margin-bottom:12px">
+      <div class="doc-sidebar-item active"><span class="icon">📊</span>Product analytics</div>
+      <div class="doc-sidebar-item"><span class="icon">▶️</span>Session replay</div>
+      <div class="doc-sidebar-item"><span class="icon">🚩</span>Feature flags</div>
+      <div class="doc-sidebar-item"><span class="icon">🧪</span>Experiments</div>
+      <div class="doc-sidebar-item"><span class="icon">📈</span>Web analytics</div>
+      <div class="doc-sidebar-item"><span class="icon">📥</span>Data warehouse</div>
+    </div>
+    <div style="flex:1;min-width:280px">
+      <p style="font-size:24px;font-weight:800;color:var(--ink);margin:0 0 12px;letter-spacing:-0.6px;line-height:1.33">Product analytics</p>
+      <p style="font-size:15px;color:var(--body);margin:0 0 24px;line-height:1.71">Learn how to use product analytics to understand your users.</p>
+      <button class="btn btn-primary">Installation guide</button>
+    </div>
+  </div>
+</section>
+
+<!-- FORMS -->
+<section>
+  <p class="section-eyebrow">07 — Forms</p>
+  <h2 class="section-heading">Form Elements</h2>
+  <p class="section-desc">6px-radius rectangle inputs at 36px height. Focus relies on a 2px Accent Blue border + translucent halo.</p>
+
+  <div class="form-grid">
+    <div class="form-cell">
+      <label class="form-label">Default Input</label>
+      <input class="text-input" placeholder="Email address">
+      <span class="form-spec">surface bg · 1px hairline · rounded 6px · 36px</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Focused Input</label>
+      <input class="text-input focused" value="user@example.com">
+      <span class="form-spec">2px accent-blue border + translucent halo</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Search Input</label>
+      <input class="text-input" placeholder="Ask PostHog AI">
+      <span class="form-spec">standard text-input</span>
+    </div>
+    <div class="form-cell wide">
+      <label class="form-label">Textarea</label>
+      <textarea class="text-input" placeholder="Tell us about your use case..."></textarea>
+      <span class="form-spec">min-height 96px · resize vertical</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Submit</label>
+      <button class="btn btn-primary" style="width:100%">Get started — free</button>
+      <span class="form-spec">button-primary · always full-width</span>
+    </div>
+  </div>
+</section>
+
+<!-- SPACING -->
+<section>
+  <p class="section-eyebrow">08 — Layout</p>
+  <h2 class="section-heading">Spacing Scale</h2>
+  <p class="section-desc">8px base. Section rhythm at 80px is preserved across modes.</p>
+  <div class="spacing-row">
+    <div class="spacing-cell"><div class="spacing-bar" style="width:2px"></div><span class="spacing-label">xxs · 2</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:4px"></div><span class="spacing-label">xs · 4</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:8px"></div><span class="spacing-label">sm · 8</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:12px"></div><span class="spacing-label">md · 12</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:16px"></div><span class="spacing-label">lg · 16</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:24px"></div><span class="spacing-label">xl · 24</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:32px"></div><span class="spacing-label">xxl · 32</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:80px"></div><span class="spacing-label">section · 80</span></div>
+  </div>
+</section>
+
+<!-- RADIUS -->
+<section>
+  <p class="section-eyebrow">09 — Shapes</p>
+  <h2 class="section-heading">Border Radius Scale</h2>
+  <p class="section-desc">Identical to light mode: 4–6px for chrome, pill for the sticky CTA.</p>
+  <div class="radius-row">
+    <div class="radius-cell"><div class="radius-box" style="border-radius:0"></div><span class="radius-label">none · 0</span><p class="radius-context">Sub-nav, footer, doc sidebar</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:2px"></div><span class="radius-label">xs · 2</span><p class="radius-context">Inline code chip</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:4px"></div><span class="radius-label">sm · 4</span><p class="radius-context">Inline buttons, micro chips</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:6px"></div><span class="radius-label">md · 6</span><p class="radius-context">Cards, every standard CTA</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:8px"></div><span class="radius-label">lg · 8</span><p class="radius-context">Tab top corners</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:9999px"></div><span class="radius-label">full · 9999</span><p class="radius-context">Sticky CTA pill</p></div>
+  </div>
+</section>
+
+<!-- ELEVATION -->
+<section>
+  <p class="section-eyebrow">10 — Depth</p>
+  <h2 class="section-heading">Elevation &amp; Depth</h2>
+  <p class="section-desc">No drop shadows. Cards sit flat with translucent-white hairline borders. The deepest dark surface is the code-block.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card level-0"><div class="elevation-name">Level 0 — Flat</div><div class="elevation-spec">no border / no shadow</div></div>
+    <div class="elevation-card level-1"><div class="elevation-name">Level 1 — Hairline</div><div class="elevation-spec">1px solid rgba(229,229,229,0.12)</div></div>
+    <div class="elevation-card level-2"><div class="elevation-name">Level 2 — Hairline Strong</div><div class="elevation-spec">1px solid rgba(229,229,229,0.24)</div></div>
+    <div class="elevation-card level-3"><div class="elevation-name">Level 3 — Code Surface</div><div class="elevation-spec">bg #0e0f0a · deepest dark surface</div></div>
+  </div>
+</section>
+
+<!-- RESPONSIVE -->
+<section data-sec="layout">
+  <p class="section-eyebrow">11 — Responsive</p>
+  <h2 class="section-heading">Responsive Behavior</h2>
+  <p class="section-desc">Identical breakpoint stack to light mode.</p>
+
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>ultrawide</td><td>1920px+</td><td>Content max-width 1280px</td></tr>
+      <tr><td>desktop-large</td><td>1440px</td><td>Default — 4-up tiles, 240px sidebar</td></tr>
+      <tr><td>desktop</td><td>1280px</td><td>Same with narrower gutters</td></tr>
+      <tr><td>desktop-small</td><td>1024px</td><td>4-up tiles → 3-up</td></tr>
+      <tr><td>tablet</td><td>768px</td><td>3-up → 2-up; doc sidebar accordion; nav hamburger</td></tr>
+      <tr><td>mobile</td><td>480px</td><td>Single-column; hero 36px → ~28px</td></tr>
+    </tbody>
+  </table>
+
+  <div class="device-ladder">
+    <div class="device phone"><span class="name">320</span><span class="label">m-narrow</span></div>
+    <div class="device phone-large"><span class="name">480</span><span class="label">mobile</span></div>
+    <div class="device tablet"><span class="name">768</span><span class="label">tablet</span></div>
+    <div class="device desktop-small"><span class="name">1024</span><span class="label">desktop-sm</span></div>
+    <div class="device desktop"><span class="name">1280</span><span class="label">desktop-lg</span></div>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Touch Targets</h3>
+    <ul>
+      <li><strong>WCAG AA:</strong> button-primary at 40px height with 16px padding.</li>
+      <li><strong>Text input:</strong> 36px height.</li>
+      <li><strong>Pill tab:</strong> ~32–36px extends to 44px tappable via padding.</li>
+      <li><strong>Doc-sidebar items:</strong> 14px text + line-height + padding (~44px tap row).</li>
+    </ul>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Collapsing Strategy</h3>
+    <ul>
+      <li><strong>Primary nav:</strong> desktop horizontal → tablet hamburger drawer.</li>
+      <li><strong>Marketing cards:</strong> 4-up → 3-up → 2-up → 1-up.</li>
+      <li><strong>Pricing grid:</strong> 3-up → 2+1 → 1-up stacked.</li>
+      <li><strong>Doc layout:</strong> 240px sidebar + 720px article → tablet sidebar accordion.</li>
+      <li><strong>Section padding:</strong> 80px → 64px → 48px.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</div>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

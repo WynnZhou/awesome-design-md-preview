@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050) -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design System Analysis of PlayStation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  :root {
+    --primary: #0070d1;
+    --primary-pressed: #0064b7;
+    --primary-active: #004d8d;
+    --on-primary: #ffffff;
+    --link-light: #0064b7;
+    --link-dark: #53b1ff;
+    --commerce: #d53b00;
+    --commerce-pressed: #aa2f00;
+    --on-commerce: #ffffff;
+    --ink: #000000;
+    --ink-deep: #121314;
+    --ink-elevated: #181818;
+    --body-light: rgba(0,0,0,0.6);
+    --mute-light: #6b6b6b;
+    --ash-light: #cccccc;
+    --body-dark: rgba(255,255,255,0.7);
+    --ash-dark: rgba(229,229,229,0.2);
+    --canvas-light: #ffffff;
+    --surface-soft: #f3f3f3;
+    --surface-card: #f5f7fa;
+    --surface-filter: rgba(245,247,250,0.3);
+    --canvas-dark: #000000;
+    --surface-dark-elevated: #121314;
+    --surface-dark-card: #181818;
+    --hairline-light: #f3f3f3;
+    --hairline-dark: rgba(229,229,229,0.2);
+    --on-dark: #ffffff;
+    --on-dark-mute: #cccccc;
+    --warning: #c81b3a;
+    --ps-plus-gold-start: #ffce21;
+    --ps-plus-gold-mid: #f5a623;
+    --ps-plus-gold-end: #ee8e00;
+    --marathon-yellow: #deff20;
+
+    --font-ui: 'Inter', 'PlayStation SST', sst, Arial, Helvetica, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: var(--font-ui);
+    background: var(--canvas-light);
+    color: var(--body-light);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    font-size: 18px;
+  }
+
+  /* NAV */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--canvas-dark);
+    color: var(--on-dark);
+    padding: 0 48px;
+    height: 56px;
+    border-bottom: 1px solid var(--hairline-dark);
+  }
+  .nav-brand { font-family: var(--font-ui); font-weight: 500; font-size: 16px; color: var(--on-dark); letter-spacing: 0.4px; }
+  .nav-links { list-style: none; display: flex; gap: 24px; padding: 0; margin: 0; }
+  .nav-links a { font-family: var(--font-ui); font-size: 14px; font-weight: 500; color: var(--on-dark); text-decoration: none; letter-spacing: 0.324px; }
+  .nav-cta {
+    background: var(--primary);
+    color: var(--on-primary);
+    border: none;
+    border-radius: 9999px;
+    padding: 0 24px;
+    height: 40px;
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.324px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 96px 48px;
+    background: var(--canvas-light);
+    display: block;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .hero-content { max-width: 1200px; }
+  .hero h1 {
+    font-family: var(--font-ui);
+    font-size: 54px;
+    font-weight: 300;
+    line-height: 1.25;
+    color: var(--ink);
+    margin: 0 0 32px;
+    letter-spacing: -0.1px;
+    text-align: left;
+  }
+  .hero p {
+    font-size: 18px;
+    color: var(--body-light);
+    max-width: 900px;
+    margin: 0 0 40px;
+    line-height: 1.5;
+    text-align: left;
+    letter-spacing: 0.1px;
+  }
+  .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: flex-start; }
+  .btn {
+    font-family: var(--font-ui);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 9999px;
+    padding: 12px 28px;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.25;
+    letter-spacing: 0.45px;
+  }
+  .btn-primary { background: var(--primary); color: var(--on-primary); }
+  .btn-commerce { background: var(--commerce); color: var(--on-commerce); }
+  .btn-secondary-light { background: transparent; color: var(--ink); border: 1px solid var(--ash-light); padding: 11px 27px; }
+  .btn-secondary-dark { background: transparent; color: var(--on-dark); border: 1px solid var(--hairline-dark); padding: 11px 27px; }
+  .btn-disabled { background: var(--surface-soft); color: var(--ash-light); cursor: not-allowed; }
+
+  /* SECTIONS */
+  section {
+    padding: 96px 48px;
+    max-width: 1440px;
+    margin: 0 auto;
+    border-top: 1px solid var(--hairline-light);
+  }
+  .section-eyebrow {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--mute-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0 0 12px;
+  }
+  .section-heading {
+    font-family: var(--font-ui);
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 1.25;
+    color: var(--ink);
+    margin: 0 0 16px;
+    letter-spacing: 0;
+  }
+  .section-desc { font-size: 18px; color: var(--body-light); max-width: 820px; margin: 0 0 48px; line-height: 1.5; letter-spacing: 0.1px; }
+
+  /* PALETTE */
+  .palette-block { margin-bottom: 48px; }
+  .palette-block-label {
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin: 0 0 16px;
+  }
+  .palette-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  .swatch {
+    background: var(--canvas-light);
+    border: 1px solid var(--hairline-light);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .swatch-color { height: 100px; }
+  .swatch-meta { padding: 14px 16px 16px; }
+  .swatch-name { font-family: var(--font-ui); font-size: 14px; font-weight: 600; color: var(--ink); margin: 0 0 2px; }
+  .swatch-hex { font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 12px; color: var(--mute-light); margin: 0 0 6px; }
+  .swatch-role { font-family: var(--font-ui); font-size: 13px; color: var(--body-light); margin: 0; line-height: 1.4; }
+
+  /* TYPOGRAPHY */
+  .type-row {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 32px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--hairline-light);
+    align-items: baseline;
+  }
+  .type-meta { font-family: var(--font-ui); font-size: 12px; color: var(--mute-light); line-height: 1.6; }
+  .type-meta strong { display: block; color: var(--ink); font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+  .type-sample { color: var(--ink); font-family: var(--font-ui); }
+
+  /* BUTTONS GRID */
+  .button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .button-cell {
+    border: 1px solid var(--hairline-light);
+    border-radius: 8px;
+    padding: 28px 24px 22px;
+    background: var(--canvas-light);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .button-cell.on-dark { background: var(--canvas-dark); }
+  .button-cell.on-dark .button-cell-label { color: var(--on-dark); }
+  .button-cell.on-dark .button-cell-spec { color: var(--on-dark-mute); }
+  .button-cell-label { font-family: var(--font-ui); font-size: 13px; font-weight: 600; color: var(--ink); margin: 0; text-transform: uppercase; letter-spacing: 0.3px; }
+  .button-cell-spec { font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 11px; color: var(--mute-light); margin: 0; line-height: 1.5; }
+
+  /* FILTER PILLS */
+  .filter-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .filter-pill {
+    background: var(--surface-filter);
+    color: var(--ink);
+    padding: 8px 16px;
+    border-radius: 9999px;
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid var(--hairline-light);
+    letter-spacing: 0.324px;
+  }
+  .filter-pill.active { background: var(--canvas-light); border: 1px solid var(--primary); }
+
+  /* BADGE */
+  .badge-info {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--on-primary);
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  /* CARDS */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .product-card {
+    background: var(--surface-card);
+    border-radius: 8px;
+    padding: 24px;
+    color: var(--ink);
+  }
+  .product-card-dark {
+    background: var(--surface-dark-card);
+    border-radius: 8px;
+    padding: 24px;
+    color: var(--on-dark);
+  }
+  .feature-card {
+    background: var(--canvas-light);
+    border: 1px solid var(--hairline-light);
+    border-radius: 8px;
+    padding: 32px;
+    color: var(--ink);
+  }
+
+  /* GAME TILE */
+  .game-tile {
+    background: var(--surface-dark-elevated);
+    border-radius: 8px;
+    overflow: hidden;
+    color: var(--on-dark);
+    position: relative;
+  }
+  .game-tile-art {
+    aspect-ratio: 16/9;
+    background: linear-gradient(135deg, #1a3a5d 0%, #0a1a2d 100%);
+  }
+  .game-tile-art.a { background: linear-gradient(135deg, #2a1a4d, #0a0a1a); }
+  .game-tile-art.b { background: linear-gradient(135deg, #4d2a1a, #1a0a0a); }
+  .game-tile-art.c { background: linear-gradient(135deg, #1a4d2a, #0a1a0a); }
+  .game-tile-meta { padding: 12px 16px; }
+  .game-tile-title { font-family: var(--font-ui); font-size: 16px; font-weight: 700; margin: 0 0 4px; }
+  .game-tile-platform { font-family: var(--font-ui); font-size: 12px; color: var(--on-dark-mute); margin: 0; }
+
+  /* HERO BANDS */
+  .hero-band-blue {
+    background: var(--primary);
+    color: var(--on-primary);
+    padding: 96px 48px;
+    border-radius: 0;
+    text-align: left;
+  }
+  .hero-band-blue h3 { font-family: var(--font-ui); font-size: 35px; font-weight: 300; margin: 0 0 24px; letter-spacing: 0; }
+  .hero-band-dark {
+    background: linear-gradient(180deg, var(--surface-dark-elevated) 0%, var(--canvas-dark) 100%);
+    color: var(--on-dark);
+    padding: 96px 48px;
+    border-radius: 0;
+  }
+  .hero-band-dark h3 { font-family: var(--font-ui); font-size: 54px; font-weight: 300; margin: 0 0 24px; line-height: 1.25; letter-spacing: -0.1px; }
+  .hero-band-light {
+    background: var(--canvas-light);
+    color: var(--ink);
+    padding: 96px 48px;
+    border-radius: 0;
+    border: 1px solid var(--hairline-light);
+  }
+  .hero-band-light h3 { font-family: var(--font-ui); font-size: 54px; font-weight: 300; margin: 0 0 24px; line-height: 1.25; letter-spacing: -0.1px; }
+
+  /* PS PLUS BANNER */
+  .ps-plus-banner {
+    background: var(--surface-dark-elevated);
+    color: var(--on-dark);
+    padding: 48px 32px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+  }
+  .ps-plus-banner::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--ps-plus-gold-start) 0%, var(--ps-plus-gold-mid) 50%, var(--ps-plus-gold-end) 100%);
+  }
+  .ps-plus-banner h3 { font-family: var(--font-ui); font-size: 28px; font-weight: 300; margin: 0 0 16px; letter-spacing: 0.1px; }
+
+  /* CAROUSEL */
+  .carousel-paddle {
+    background: rgba(255,255,255,0.16);
+    color: var(--on-dark);
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 9999px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pagination { display: flex; gap: 8px; }
+  .pagination-dot { width: 8px; height: 8px; border-radius: 9999px; background: var(--ash-dark); }
+  .pagination-dot.active { background: var(--on-dark); }
+
+  /* SUPPORT */
+  .support-search-bar {
+    display: inline-flex;
+    align-items: center;
+    background: var(--canvas-light);
+    border: 1px solid var(--ash-light);
+    border-radius: 9999px;
+    padding: 12px 24px;
+    height: 56px;
+    width: 100%;
+    max-width: 560px;
+    gap: 12px;
+    color: var(--mute-light);
+    font-family: var(--font-ui);
+    font-size: 18px;
+  }
+  .support-row {
+    background: var(--canvas-light);
+    color: var(--ink);
+    padding: 16px 0;
+    border-bottom: 1px solid var(--hairline-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-ui);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+  }
+
+  /* FORMS */
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 800px;
+  }
+  .form-cell { display: flex; flex-direction: column; gap: 6px; }
+  .form-label { font-family: var(--font-ui); font-size: 14px; font-weight: 600; color: var(--ink); text-transform: uppercase; letter-spacing: 0.324px; }
+  .form-spec { font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 11px; color: var(--mute-light); margin-top: 4px; }
+  input.text-input {
+    height: 48px;
+    border: 1px solid var(--ash-light);
+    background: var(--canvas-light);
+    color: var(--ink);
+    border-radius: 4px;
+    padding: 0 16px;
+    font-family: var(--font-ui);
+    font-size: 18px;
+  }
+  input.text-input.focused { border: 2px solid var(--primary); padding: 0 15px; outline: none; }
+
+  /* SPACING + RADIUS */
+  .spacing-row, .radius-row { display: flex; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
+  .spacing-cell { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .spacing-bar { background: var(--ink); height: 32px; }
+  .spacing-label { font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 11px; color: var(--mute-light); }
+  .radius-cell { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .radius-box { width: 100px; height: 100px; background: var(--surface-card); border: 1px solid var(--hairline-light); }
+  .radius-label { font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 11px; color: var(--mute-light); }
+  .radius-context { font-family: var(--font-ui); font-size: 12px; color: var(--body-light); text-align: center; max-width: 110px; }
+
+  /* ELEVATION */
+  .elevation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px;
+    background: var(--surface-card);
+    padding: 32px;
+    border-radius: 8px;
+  }
+  .elevation-card {
+    background: var(--canvas-light);
+    height: 140px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+  }
+  .elevation-card.level-1 { border: 1px solid var(--hairline-light); }
+  .elevation-card.level-2 { box-shadow: 0 4px 12px rgba(0,0,0,0.16); }
+  .elevation-card.level-3 { background: linear-gradient(180deg, var(--surface-dark-elevated) 0%, var(--canvas-dark) 100%); color: var(--on-dark); }
+  .elevation-card.level-3 .elevation-name { color: var(--on-dark); }
+  .elevation-card.level-3 .elevation-spec { color: var(--on-dark-mute); }
+  .elevation-name { font-family: var(--font-ui); font-size: 14px; font-weight: 600; color: var(--ink); }
+  .elevation-spec { font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 11px; color: var(--mute-light); }
+
+  /* RESPONSIVE TABLE */
+  .responsive-table { width: 100%; border-collapse: collapse; font-family: var(--font-ui); font-size: 14px; }
+  .responsive-table th, .responsive-table td {
+    text-align: left;
+    padding: 14px 12px;
+    border-bottom: 1px solid var(--hairline-light);
+    vertical-align: top;
+  }
+  .responsive-table th { font-weight: 600; color: var(--ink); background: var(--surface-card); font-size: 13px; text-transform: uppercase; letter-spacing: 0.4px; }
+  .responsive-table td { color: var(--body-light); }
+
+  .device-ladder { display: flex; align-items: flex-end; gap: 16px; margin-top: 32px; flex-wrap: wrap; }
+  .device { background: var(--surface-card); border: 1px solid var(--hairline-light); display: flex; flex-direction: column; align-items: center; justify-content: flex-end; padding: 12px; border-radius: 8px; }
+  .device .label { font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 11px; color: var(--mute-light); margin-top: 8px; }
+  .device .name { font-family: var(--font-ui); font-size: 11px; color: var(--ink); font-weight: 600; }
+  .device.phone { width: 48px; height: 96px; }
+  .device.phone-large { width: 64px; height: 120px; }
+  .device.tablet { width: 100px; height: 150px; }
+  .device.desktop-small { width: 160px; height: 130px; }
+  .device.desktop { width: 220px; height: 150px; }
+
+  .responsive-sub-block { margin-top: 40px; }
+  .responsive-sub-block h3 { font-family: var(--font-ui); font-size: 22px; font-weight: 300; margin: 0 0 12px; color: var(--ink); letter-spacing: 0.1px; }
+  .responsive-sub-block ul { padding-left: 18px; line-height: 1.7; color: var(--body-light); }
+
+  /* FOOTER */
+  .footer {
+    padding: 48px 48px;
+    text-align: center;
+    background: var(--primary);
+    color: var(--on-primary);
+    font-family: var(--font-ui);
+    font-size: 14px;
+  }
+  .footer a { color: var(--on-primary); font-weight: 500; }
+
+  /* Overflow guards */
+  .cell, .cell > *, .demo, .button-cell, .component-cell { min-width: 0; }
+  .cell.wide,
+  .button-cell.wide,
+  .component-cell.wide { grid-column: span 2; }
+
+  @media (max-width: 1024px) {
+    section { padding: 64px 32px; }
+    .section-heading { font-size: 28px; }
+    .nav { padding: 0 32px; }
+    .nav > :last-child { display: none; }
+    .type-row { grid-template-columns: 1fr; gap: 8px; }
+    .type-row .type-meta { padding-bottom: 4px; }
+    .form-grid { gap: 16px; }
+    .hero { padding: 64px 32px; }
+    .hero h1 { font-size: 44px; }
+    .hero-band-dark h3, .hero-band-light h3 { font-size: 36px; }
+  }
+
+  @media (max-width: 720px) {
+    .cell.wide, .button-cell.wide, .component-cell.wide { grid-column: span 1; }
+    .nav { padding: 12px 20px; height: auto; min-height: 56px; }
+    .nav-links { display: none; }
+    .hero { padding: 48px 20px; }
+    .hero h1 { font-size: 32px; letter-spacing: -0.5px; }
+    .hero p { font-size: 16px; }
+    section { padding: 48px 20px; }
+    .section-heading { font-size: 24px; }
+    .palette-grid, .button-grid, .card-grid, .form-grid, .demo-grid, .elevation-grid { grid-template-columns: 1fr !important; gap: 16px; }
+    .hero-band-blue, .hero-band-dark, .hero-band-light, .ps-plus-banner { padding: 48px 24px; }
+    .hero-band-dark h3, .hero-band-light h3 { font-size: 30px; }
+    .spacing-row, .radius-row { gap: 12px; }
+    .responsive-table { font-size: 12px; }
+    .responsive-table th, .responsive-table td { padding: 10px 8px; }
+    .device-ladder { gap: 8px; }
+    .footer { padding: 24px 16px; font-size: 12px; }
+  }
+
+  /* getdesign.md nav additions */
+  .nav-left { display: flex; align-items: center; gap: 20px; }
+  .nav-brand-link,
+  .nav-brand-link:link,
+  .nav-brand-link:visited,
+  .nav-brand-link:hover,
+  .nav-brand-link:active { text-decoration: none; color: inherit; }
+  .nav-github,
+  .nav-github:link,
+  .nav-github:visited,
+  .nav-github:hover,
+  .nav-github:active {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: inherit;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 6px;
+    opacity: 0.75;
+    transition: opacity 200ms ease, border-color 200ms ease;
+    font-family: inherit;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  .nav-github:hover { opacity: 1; border-color: rgba(128, 128, 128, 0.55); }
+  .nav-github svg { display: block; flex-shrink: 0; }
+
+  /* getdesign.md nav centering */
+  .nav { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; }
+  .nav > .nav-left { justify-self: start; }
+  .nav > .nav-links { justify-self: center; }
+  .nav > :last-child { justify-self: end; }
+
+  /* Dark-nav GitHub override */
+  .nav .nav-github { color: #ffffff; border-color: rgba(255, 255, 255, 0.25); }
+  .nav .nav-github:hover { border-color: rgba(255, 255, 255, 0.5); }
+
+
+  /* Shared VoltAgent footer content */
+  .footer { text-align: left; }
+  .footer-shell { max-width: 1200px; margin: 0 auto; }
+  .footer-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; }
+  .footer-col h6 { margin: 0 0 14px; color: inherit; font: inherit; font-weight: 700; font-size: 14px; line-height: 1.2; }
+  .footer-col span { display: block; margin: 0 0 10px; color: inherit; opacity: 0.72; font-size: 14px; line-height: 1.35; }
+  .footer-credit { margin-top: 48px; padding-top: 24px; border-top: 1px solid currentColor; color: inherit; opacity: 0.78; font-size: 13px; line-height: 1.4; }
+  .footer-credit a { color: inherit; text-decoration: none; font-weight: 600; }
+  .footer-credit img { border-radius: 3px; vertical-align: -2px; margin-right: 3px; }
+  @media (max-width: 760px) {
+    .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#layout">Layout</a></li>
+  </ul>
+  <button class="nav-cta">Sign In</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of PlayStation</h1>
+    <p>A three-surface marketing system organized around alternating black, white, and PlayStation Blue chapters that scroll past the viewer like a console launch trailer. PlayStation SST display copy at signature weight 300 (light) gives the chrome an airy, premium feel; bright PlayStation Blue (#0070d1) carries every primary CTA as a fully-rounded pill; commerce orange (#d53b00) anchors store actions. The system never decorates — imagery does all the heavy lifting.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Learn More</button>
+      <button class="btn btn-commerce">Buy Now</button>
+    </div>
+  </div>
+</header>
+
+<!-- COLOR PALETTE -->
+<section id="colors">
+  <p class="section-eyebrow">01 — Color</p>
+  <h2 class="section-heading">Color Palette</h2>
+  <p class="section-desc">Three-canvas chapter system: black, white, and PlayStation Blue. Commerce orange is reserved for store actions; the gold gradient anchors only the PS Plus tier banner.</p>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Brand &amp; Accent</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#0070d1"></div><div class="swatch-meta"><p class="swatch-name">PlayStation Blue (primary)</p><p class="swatch-hex">#0070d1</p><p class="swatch-role">Primary CTA pill, footer surface, badge fills</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#0064b7"></div><div class="swatch-meta"><p class="swatch-name">Blue Pressed</p><p class="swatch-hex">#0064b7</p><p class="swatch-role">Pressed primary, link color on light canvas</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#004d8d"></div><div class="swatch-meta"><p class="swatch-name">Blue Active</p><p class="swatch-hex">#004d8d</p><p class="swatch-role">Deeply-pressed primary state</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#d53b00"></div><div class="swatch-meta"><p class="swatch-name">Commerce Orange</p><p class="swatch-hex">#d53b00</p><p class="swatch-role">Store/buy/pre-order CTAs only</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#aa2f00"></div><div class="swatch-meta"><p class="swatch-name">Commerce Pressed</p><p class="swatch-hex">#aa2f00</p><p class="swatch-role">Pressed commerce state</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Surface — Dark Canvas</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#000000"></div><div class="swatch-meta"><p class="swatch-name">Canvas Dark</p><p class="swatch-hex">#000000</p><p class="swatch-role">Pure black hero band, primary nav, footer base</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#121314"></div><div class="swatch-meta"><p class="swatch-name">Surface Dark Elevated</p><p class="swatch-hex">#121314</p><p class="swatch-role">PS Plus banner, ON PLAYSTATION gradient end</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#181818"></div><div class="swatch-meta"><p class="swatch-name">Surface Dark Card</p><p class="swatch-hex">#181818</p><p class="swatch-role">Game tile fill, dark product card background</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Surface — Light Canvas</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff;box-shadow:inset 0 0 0 1px var(--hairline-light)"></div><div class="swatch-meta"><p class="swatch-name">Canvas Light</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">True white console showcase, support page body</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f3f3f3"></div><div class="swatch-meta"><p class="swatch-name">Soft Surface</p><p class="swatch-hex">#f3f3f3</p><p class="swatch-role">Hairline-soft band fill on light pages</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f5f7fa"></div><div class="swatch-meta"><p class="swatch-name">Surface Card</p><p class="swatch-hex">#f5f7fa</p><p class="swatch-role">Cool-blue-tinted product card background</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Text Tiers</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#000000"></div><div class="swatch-meta"><p class="swatch-name">Ink</p><p class="swatch-hex">#000000</p><p class="swatch-role">Primary text on light canvas, headlines, button text</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(0,0,0,0.6)"></div><div class="swatch-meta"><p class="swatch-name">Body Light</p><p class="swatch-hex">rgba(0,0,0,0.6)</p><p class="swatch-role">Default paragraph text on light canvas</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#6b6b6b"></div><div class="swatch-meta"><p class="swatch-name">Mute Light</p><p class="swatch-hex">#6b6b6b</p><p class="swatch-role">Metadata, footer link captions</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#cccccc"></div><div class="swatch-meta"><p class="swatch-name">Ash Light</p><p class="swatch-hex">#cccccc</p><p class="swatch-role">Disabled text, lowest-emphasis utility</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff;box-shadow:inset 0 0 0 1px var(--hairline-light)"></div><div class="swatch-meta"><p class="swatch-name">On Dark</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Primary text on dark canvas</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.7);box-shadow:inset 0 0 0 1px var(--hairline-light)"></div><div class="swatch-meta"><p class="swatch-name">Body Dark</p><p class="swatch-hex">rgba(255,255,255,0.7)</p><p class="swatch-role">Translucent body text on dark canvas</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Semantic &amp; Brand Gradient</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#c81b3a"></div><div class="swatch-meta"><p class="swatch-name">Warning</p><p class="swatch-hex">#c81b3a</p><p class="swatch-role">Validation errors, destructive confirmation</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#53b1ff"></div><div class="swatch-meta"><p class="swatch-name">Link Dark</p><p class="swatch-hex">#53b1ff</p><p class="swatch-role">Inline link on dark canvas — brightened blue</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:linear-gradient(90deg, #ffce21 0%, #f5a623 50%, #ee8e00 100%)"></div><div class="swatch-meta"><p class="swatch-name">PS Plus Gold Gradient</p><p class="swatch-hex">#ffce21 → #ee8e00</p><p class="swatch-role">Reserved exclusively for PS Plus tier banner</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#deff20"></div><div class="swatch-meta"><p class="swatch-name">Marathon Yellow</p><p class="swatch-hex">#deff20</p><p class="swatch-role">Game-page-specific accent — Marathon only</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section id="typography">
+  <p class="section-eyebrow">02 — Typography</p>
+  <h2 class="section-heading">Typography Scale</h2>
+  <p class="section-desc">PlayStation SST renders display headlines at weight 300 (light) — the brand's signature airy editorial voice. Heading sizes drop in tight increments with +0.1 to +0.45px tracking on display and button tiers.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>PlayStation SST<br>54px / 300 / lh 1.25 / -0.1px</div><div class="type-sample" style="font-size:54px;font-weight:300;line-height:1.25;letter-spacing:-0.1px">Discover all PS5 consoles</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>PlayStation SST<br>44px / 300 / lh 1.25 / 0.1px</div><div class="type-sample" style="font-size:44px;font-weight:300;line-height:1.25;letter-spacing:0.1px">Great PS4 &amp; PS5 games out now</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>PlayStation SST<br>35px / 300 / lh 1.25</div><div class="type-sample" style="font-size:35px;font-weight:300;line-height:1.25">Mid-section headline</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-xl</strong>PlayStation SST<br>28px / 300 / lh 1.25 / 0.1px</div><div class="type-sample" style="font-size:28px;font-weight:300;line-height:1.25;letter-spacing:0.1px">30 Years of PlayStation</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-lg</strong>PlayStation SST<br>22px / 300 / lh 1.25 / 0.1px</div><div class="type-sample" style="font-size:22px;font-weight:300;line-height:1.25;letter-spacing:0.1px">News card title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-md</strong>PlayStation SST<br>18px / 600 / lh 1</div><div class="type-sample" style="font-size:18px;font-weight:600;line-height:1">Card label or strong title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>PlayStation SST<br>18px / 400 / lh 1.5 / 0.1px</div><div class="type-sample" style="font-size:18px;font-weight:400;line-height:1.5;letter-spacing:0.1px">Default body copy carries every paragraph at 18px regular weight with 1.5 line-height for comfortable reading.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-strong</strong>PlayStation SST<br>18px / 500 / lh 1.25 / 0.4px</div><div class="type-sample" style="font-size:18px;font-weight:500;line-height:1.25;letter-spacing:0.4px">Inline emphasis or primary nav link</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>PlayStation SST<br>16px / 400 / lh 1.5</div><div class="type-sample" style="font-size:16px;font-weight:400;line-height:1.5">Card description and secondary body</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-md</strong>PlayStation SST<br>14px / 400 / lh 1.5</div><div class="type-sample" style="font-size:14px;font-weight:400;line-height:1.5">Footer link, metadata, sub-nav text</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-sm</strong>PlayStation SST<br>12px / 500 / lh 1.5</div><div class="type-sample" style="font-size:12px;font-weight:500;line-height:1.5">Smallest utility text, badge label</div></div>
+  <div class="type-row"><div class="type-meta"><strong>link-md</strong>PlayStation SST<br>18px / 400 / lh 1.5</div><div class="type-sample" style="font-size:18px;font-weight:400;line-height:1.5;color:var(--link-light)">Inline body anchor link</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-lg</strong>PlayStation SST<br>18px / 700 / lh 1.25 / 0.45px</div><div class="type-sample" style="font-size:18px;font-weight:700;line-height:1.25;letter-spacing:0.45px">Add to bag</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-md</strong>PlayStation SST<br>14px / 700 / lh 1.25 / 0.324px</div><div class="type-sample" style="font-size:14px;font-weight:700;line-height:1.25;letter-spacing:0.324px">Compact CTA Label</div></div>
+</section>
+
+<!-- BUTTONS -->
+<section id="components">
+  <p class="section-eyebrow">03 — Components</p>
+  <h2 class="section-heading">Button Variants</h2>
+  <p class="section-desc">PlayStation Blue primary, commerce orange for store actions, transparent secondary on both light and dark canvases — all fully-rounded pills.</p>
+
+  <div class="button-grid">
+    <div class="button-cell">
+      <button class="btn btn-primary">Add to bag</button>
+      <p class="button-cell-label">button-primary</p>
+      <p class="button-cell-spec">bg primary · text on-primary · rounded full · 48px height</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-primary" style="background:var(--primary-pressed)">Pressed</button>
+      <p class="button-cell-label">button-primary-pressed</p>
+      <p class="button-cell-spec">bg primary-pressed · text on-primary</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-commerce">Buy Now</button>
+      <p class="button-cell-label">button-commerce</p>
+      <p class="button-cell-spec">bg commerce · text on-commerce · rounded full</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-commerce" style="background:var(--commerce-pressed)">Pressed</button>
+      <p class="button-cell-label">button-commerce-pressed</p>
+      <p class="button-cell-spec">bg commerce-pressed · text on-commerce</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-secondary-light">Learn More →</button>
+      <p class="button-cell-label">button-secondary-light</p>
+      <p class="button-cell-spec">transparent · text ink · 1px ash-light · rounded full</p>
+    </div>
+    <div class="button-cell on-dark">
+      <button class="btn btn-secondary-dark">Watch Trailer</button>
+      <p class="button-cell-label">button-secondary-dark</p>
+      <p class="button-cell-spec">transparent · text on-dark · 1px hairline-dark</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-disabled">Disabled</button>
+      <p class="button-cell-label">button-disabled</p>
+      <p class="button-cell-spec">bg surface-soft · text ash-light</p>
+    </div>
+    <div class="button-cell wide">
+      <div class="filter-pills">
+        <button class="filter-pill active">All</button>
+        <button class="filter-pill">Coming Soon</button>
+        <button class="filter-pill">PlayStation VR2</button>
+        <button class="filter-pill">Recently Released</button>
+      </div>
+      <p class="button-cell-label">filter-pill + filter-pill-active</p>
+      <p class="button-cell-spec">default: surface-filter translucent · active: canvas + 1px primary border</p>
+    </div>
+    <div class="button-cell">
+      <span class="badge-info">New</span>
+      <p class="button-cell-label">badge-info</p>
+      <p class="button-cell-spec">bg primary · text on-primary · rounded full · padding 4/10</p>
+    </div>
+    <div class="button-cell on-dark">
+      <div style="display:flex;gap:8px;align-items:center">
+        <button class="carousel-paddle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"></path></svg>
+        </button>
+        <button class="carousel-paddle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"></path></svg>
+        </button>
+        <div class="pagination">
+          <span class="pagination-dot active"></span>
+          <span class="pagination-dot"></span>
+          <span class="pagination-dot"></span>
+          <span class="pagination-dot"></span>
+        </div>
+      </div>
+      <p class="button-cell-label">carousel-paddle + pagination</p>
+      <p class="button-cell-spec">48px circle · rgba(255,255,255,0.16) · 8px dot indicator</p>
+    </div>
+  </div>
+</section>
+
+<!-- HERO BANDS -->
+<section>
+  <p class="section-eyebrow">04 — Surface Bands</p>
+  <h2 class="section-heading">Three-Canvas Chapter System</h2>
+  <p class="section-desc">Each section is a full-bleed band — pure black, true white, or PlayStation Blue — each owning one editorial moment. Section-color change IS the divider.</p>
+
+  <div style="display:flex;flex-direction:column;gap:24px">
+    <div class="hero-band-dark">
+      <h3>Discover all PS5 consoles and accessories</h3>
+      <button class="btn btn-secondary-dark">Learn More</button>
+    </div>
+    <div class="hero-band-light">
+      <h3>Great PS4 &amp; PS5 games out now or coming soon</h3>
+      <button class="btn btn-primary">Browse Games</button>
+    </div>
+    <div class="hero-band-blue">
+      <h3>This April, on PlayStation</h3>
+      <button class="btn btn-secondary-dark">View Releases</button>
+    </div>
+  </div>
+
+  <div style="margin-top:48px">
+    <p class="palette-block-label">PS Plus Banner</p>
+    <div class="ps-plus-banner">
+      <h3>Discover PlayStation Plus</h3>
+      <p style="color:var(--body-dark);margin:0 0 24px;font-size:18px;line-height:1.5">Get access to a curated library of games, online multiplayer, exclusive discounts, and more.</p>
+      <button class="btn btn-primary">Learn More</button>
+    </div>
+  </div>
+</section>
+
+<!-- CARDS -->
+<section>
+  <p class="section-eyebrow">05 — Cards</p>
+  <h2 class="section-heading">Card Examples</h2>
+  <p class="section-desc">Game tile, light product card, dark product card, and feature card — all at 8px radius, no resting shadow.</p>
+
+  <p class="palette-block-label">Game Tile Carousel (4-up at desktop)</p>
+  <div class="card-grid" style="margin-bottom:48px">
+    <div class="game-tile">
+      <div class="game-tile-art a"></div>
+      <div class="game-tile-meta">
+        <p class="game-tile-title">Game Title One</p>
+        <p class="game-tile-platform">PS5 · Coming Soon</p>
+      </div>
+    </div>
+    <div class="game-tile">
+      <div class="game-tile-art b"></div>
+      <div class="game-tile-meta">
+        <p class="game-tile-title">Game Title Two</p>
+        <p class="game-tile-platform">PS5 · Available Now</p>
+      </div>
+    </div>
+    <div class="game-tile">
+      <div class="game-tile-art c"></div>
+      <div class="game-tile-meta">
+        <p class="game-tile-title">Game Title Three</p>
+        <p class="game-tile-platform">PS4 · PS5 · Pre-order</p>
+      </div>
+    </div>
+    <div class="game-tile">
+      <div class="game-tile-art"></div>
+      <div class="game-tile-meta">
+        <p class="game-tile-title">Game Title Four</p>
+        <p class="game-tile-platform">PlayStation VR2</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="palette-block-label">Product &amp; Feature Cards</p>
+  <div class="card-grid">
+    <div class="product-card">
+      <p style="font-family:var(--font-ui);font-size:22px;font-weight:300;line-height:1.25;margin:0 0 12px;letter-spacing:0.1px">PlayStation Store</p>
+      <p style="font-family:var(--font-ui);font-size:16px;line-height:1.5;color:var(--body-light);margin:0 0 24px">Light canvas product card with cool-blue-tinted background.</p>
+      <button class="btn btn-primary">Visit Store</button>
+    </div>
+    <div class="product-card-dark">
+      <p style="font-family:var(--font-ui);font-size:22px;font-weight:300;line-height:1.25;margin:0 0 12px;letter-spacing:0.1px;color:var(--on-dark)">Game Detail</p>
+      <p style="font-family:var(--font-ui);font-size:16px;line-height:1.5;color:var(--body-dark);margin:0 0 24px">Dark canvas card for product detail and feature panels.</p>
+      <button class="btn btn-primary">Read More</button>
+    </div>
+    <div class="feature-card">
+      <p style="font-family:var(--font-ui);font-size:22px;font-weight:300;line-height:1.25;margin:0 0 12px;letter-spacing:0.1px">PlayStation Plus</p>
+      <p style="font-family:var(--font-ui);font-size:16px;line-height:1.5;color:var(--body-light);margin:0 0 24px">Light canvas marketing card with hairline border, 32px padding.</p>
+      <button class="btn btn-commerce">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORT -->
+<section>
+  <p class="section-eyebrow">06 — Support Page</p>
+  <h2 class="section-heading">Support Search &amp; Article Rows</h2>
+  <p class="section-desc">Light-canvas support page chrome with a 56px-tall fully-rounded search bar and stacked article rows separated by 1px Hairline rules.</p>
+
+  <div style="margin-bottom:48px">
+    <span class="support-search-bar">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+      Search the support center
+    </span>
+  </div>
+
+  <div>
+    <div class="support-row"><span>How to create or change your account email</span><span style="color:var(--body-light)">›</span></div>
+    <div class="support-row"><span>How to close your account</span><span style="color:var(--body-light)">›</span></div>
+    <div class="support-row"><span>How to update your sign-in ID</span><span style="color:var(--body-light)">›</span></div>
+    <div class="support-row"><span>Reset your password</span><span style="color:var(--body-light)">›</span></div>
+    <div class="support-row"><span>Add or change your two-step verification</span><span style="color:var(--body-light)">›</span></div>
+  </div>
+</section>
+
+<!-- FORMS -->
+<section>
+  <p class="section-eyebrow">07 — Forms</p>
+  <h2 class="section-heading">Form Elements</h2>
+  <p class="section-desc">4px-radius rectangle inputs at 48px height. Focus relies on a 2px solid PlayStation Blue border replacing the 1px ash default.</p>
+
+  <div class="form-grid">
+    <div class="form-cell">
+      <label class="form-label">Default Input</label>
+      <input class="text-input" placeholder="Email address">
+      <span class="form-spec">canvas-light bg · 1px ash · rounded 4px · 48px height</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Focused Input</label>
+      <input class="text-input focused" value="user@example.com">
+      <span class="form-spec">2px primary border</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Password</label>
+      <input class="text-input" type="password" placeholder="••••••••">
+      <span class="form-spec">standard text-input</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Submit</label>
+      <button class="btn btn-primary" style="width:100%">Sign In</button>
+      <span class="form-spec">button-primary · always full-width</span>
+    </div>
+  </div>
+</section>
+
+<!-- SPACING -->
+<section>
+  <p class="section-eyebrow">08 — Layout</p>
+  <h2 class="section-heading">Spacing Scale</h2>
+  <p class="section-desc">8px base. Section rhythm at 96px is the universal vertical gap between major chapters.</p>
+  <div class="spacing-row">
+    <div class="spacing-cell"><div class="spacing-bar" style="width:4px"></div><span class="spacing-label">xxs · 4</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:8px"></div><span class="spacing-label">xs · 8</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:12px"></div><span class="spacing-label">sm · 12</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:16px"></div><span class="spacing-label">md · 16</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:24px"></div><span class="spacing-label">lg · 24</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:32px"></div><span class="spacing-label">xl · 32</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:48px"></div><span class="spacing-label">xxl · 48</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:96px"></div><span class="spacing-label">section · 96</span></div>
+  </div>
+</section>
+
+<!-- RADIUS -->
+<section>
+  <p class="section-eyebrow">09 — Shapes</p>
+  <h2 class="section-heading">Border Radius Scale</h2>
+  <p class="section-desc">Three operative values: 4px for inputs, 8px for cards and tiles, pill (9999px) for every CTA. Hero bands stay flat at 0px.</p>
+  <div class="radius-row">
+    <div class="radius-cell"><div class="radius-box" style="border-radius:0"></div><span class="radius-label">none · 0</span><p class="radius-context">Hero bands, primary nav, footer, sub-nav</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:4px"></div><span class="radius-label">sm · 4</span><p class="radius-context">Text inputs, support search field</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:8px"></div><span class="radius-label">md · 8</span><p class="radius-context">Game tiles, product cards, PS Plus banner</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:16px"></div><span class="radius-label">lg · 16</span><p class="radius-context">Rare large container with extra-soft corners</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:9999px"></div><span class="radius-label">full · 9999</span><p class="radius-context">Every CTA pill, filter chips, paddles, dots</p></div>
+  </div>
+</section>
+
+<!-- ELEVATION -->
+<section>
+  <p class="section-eyebrow">10 — Depth</p>
+  <h2 class="section-heading">Elevation &amp; Depth</h2>
+  <p class="section-desc">No resting shadows. Cards lift only on press. Depth comes from alternating-band rhythm.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card level-0"><div class="elevation-name">Level 0 — Flat</div><div class="elevation-spec">no border / no shadow</div></div>
+    <div class="elevation-card level-1"><div class="elevation-name">Level 1 — Hairline</div><div class="elevation-spec">1px solid #f3f3f3</div></div>
+    <div class="elevation-card level-2"><div class="elevation-name">Level 2 — Soft Active</div><div class="elevation-spec">0 4px 12px rgba(0,0,0,0.16)</div></div>
+    <div class="elevation-card level-3"><div class="elevation-name">Level 3 — Section Gradient</div><div class="elevation-spec">#121314 → #000000 vertical</div></div>
+  </div>
+</section>
+
+<!-- RESPONSIVE -->
+<section id="layout">
+  <p class="section-eyebrow">11 — Responsive</p>
+  <h2 class="section-heading">Responsive Behavior</h2>
+  <p class="section-desc">7 breakpoint zones. Hero bands stay full-bleed at every breakpoint; only the internal column structure reflows.</p>
+
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>ultrawide</td><td>1920px+</td><td>Content max-width 1280px; gutters grow to ~80px</td></tr>
+      <tr><td>desktop-large</td><td>1440px</td><td>Default — 4-up game tile carousel, full primary nav</td></tr>
+      <tr><td>desktop</td><td>1280px</td><td>Same with narrower gutters</td></tr>
+      <tr><td>desktop-small</td><td>1024px</td><td>Game tiles → 3-up; sub-nav stays horizontal</td></tr>
+      <tr><td>tablet</td><td>768px</td><td>Game tiles → 2-up; primary nav becomes hamburger</td></tr>
+      <tr><td>mobile</td><td>480px</td><td>Single-column; hero 54px → ~32px</td></tr>
+      <tr><td>mobile-narrow</td><td>320px</td><td>Section padding tightens to 32px</td></tr>
+    </tbody>
+  </table>
+
+  <div class="device-ladder">
+    <div class="device phone"><span class="name">320</span><span class="label">m-narrow</span></div>
+    <div class="device phone-large"><span class="name">480</span><span class="label">mobile</span></div>
+    <div class="device tablet"><span class="name">768</span><span class="label">tablet</span></div>
+    <div class="device desktop-small"><span class="name">1024</span><span class="label">desktop-sm</span></div>
+    <div class="device desktop"><span class="name">1280</span><span class="label">desktop-lg</span></div>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Touch Targets</h3>
+    <ul>
+      <li><strong>WCAG AAA:</strong> button-primary and button-commerce at 48px height with 28px padding (~48×100px tappable).</li>
+      <li><strong>Text input:</strong> 48px height with 16px padding.</li>
+      <li><strong>Support search bar:</strong> 56px height with 24px padding.</li>
+      <li><strong>Carousel paddle:</strong> exactly 48×48 circular.</li>
+      <li><strong>Filter pill:</strong> ~36–40px extends to 44px tappable via padding.</li>
+    </ul>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Collapsing Strategy</h3>
+    <ul>
+      <li><strong>Primary nav:</strong> desktop horizontal cluster → tablet hamburger drawer at 768px.</li>
+      <li><strong>Sub-nav:</strong> desktop horizontal anchor row → tablet horizontal scroll → mobile select dropdown.</li>
+      <li><strong>Game carousel:</strong> 4-up → 3-up → 2-up at 1024 and 768px.</li>
+      <li><strong>Hero bands:</strong> stay full-bleed; internal column reflows from 2-col to single-col.</li>
+      <li><strong>Section padding:</strong> 96px → 64px → 48px.</li>
+      <li><strong>Hero headline:</strong> 54px → 44px → 32px → 28px down the breakpoint stack.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

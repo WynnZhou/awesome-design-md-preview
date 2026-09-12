@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design System Analysis of Mintlify</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #0a0a0a; }</style>
+  
+</head>
+<body>
+  <div class="promo-banner">📚 Mintlify is now in beta — <a href="#">Try it free</a></div>
+  <nav class="nav">
+    <div class="nav-left">
+      <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+        <span class="nav-brand">getdesign.md</span>
+      </a>
+      <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+        awesome-design-md
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Solutions</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Customers</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li><a href="#">Changelog</a></li>
+    </ul>
+    <button class="nav-cta">Get Started</button>
+  </nav>
+
+  <div class="hero">
+    <h1>Design System Analysis of Mintlify</h1>
+    <p>Mintlify presents documentation infrastructure with a dual-mode aesthetic — atmospheric sky-gradient marketing heroes paired with dense developer-grade documentation surfaces. Inter for UI prose, Geist Mono for code, signature mint green for accent CTAs.</p>
+    <div class="hero-actions">
+      <button class="btn-accent-green">Get started</button>
+      <button class="btn-secondary">Talk to us</button>
+    </div>
+  </div>
+
+  <section id="colors">
+    <h2 class="section-heading">Color Palette</h2>
+    <p class="section-sub">Stark monochrome anchored by black-and-white, accented surgically by Mintlify mint. Atmospheric gradient tokens carry the hero band aesthetic. Testimonial orange breaks color rhythm intentionally for emotional impact.</p>
+
+    <div class="palette-group">
+      <h3>Brand &amp; Accent</h3>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #00d4a4;"></div><div class="swatch-name">Mintlify Mint</div><div class="swatch-hex">#00d4a4</div><div class="swatch-role">Accent CTAs, active states</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #00b48a;"></div><div class="swatch-name">Deep Mint</div><div class="swatch-hex">#00b48a</div><div class="swatch-role">Pressed CTA state</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #7cebcb;"></div><div class="swatch-name">Soft Mint</div><div class="swatch-hex">#7cebcb</div><div class="swatch-role">Success tints</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #3772cf;"></div><div class="swatch-name">Brand Tag</div><div class="swatch-hex">#3772cf</div><div class="swatch-role">Doc tag references</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #1ba673;"></div><div class="swatch-name">Brand Annotate</div><div class="swatch-hex">#1ba673</div><div class="swatch-role">Code annotation green</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #c37d0d;"></div><div class="swatch-name">Brand Warn</div><div class="swatch-hex">#c37d0d</div><div class="swatch-role">Code warning highlight</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #d45656;"></div><div class="swatch-name">Brand Error</div><div class="swatch-hex">#d45656</div><div class="swatch-role">Required labels, errors</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #f55a3c;"></div><div class="swatch-name">Testimonial Orange</div><div class="swatch-hex">#f55a3c</div><div class="swatch-role">Cursor testimonial card</div></div>
+      </div>
+    </div>
+
+    <div class="palette-group">
+      <h3>Hero Atmospheric Gradients</h3>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #87a8c8;"></div><div class="swatch-name">Hero Sky From</div><div class="swatch-hex">#87a8c8</div><div class="swatch-role">Homepage hero top</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #f5e9d8;"></div><div class="swatch-name">Hero Sky To</div><div class="swatch-hex">#f5e9d8</div><div class="swatch-role">Homepage hero bottom</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #1a3d4a;"></div><div class="swatch-name">Hero Dark From</div><div class="swatch-hex">#1a3d4a</div><div class="swatch-role">Startups hero left</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #2d5a4f;"></div><div class="swatch-name">Hero Dark To</div><div class="swatch-hex">#2d5a4f</div><div class="swatch-role">Startups hero right</div></div>
+      </div>
+    </div>
+
+    <div class="palette-group">
+      <h3>Surface</h3>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #ffffff;"></div><div class="swatch-name">Canvas White</div><div class="swatch-hex">#ffffff</div><div class="swatch-role">Page + card background</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #0a0a0a;"></div><div class="swatch-name">Canvas Dark</div><div class="swatch-hex">#0a0a0a</div><div class="swatch-role">Promo banner, dark inversion</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #f7f7f7;"></div><div class="swatch-name">Surface</div><div class="swatch-hex">#f7f7f7</div><div class="swatch-role">Section bg, search-pill</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #fafafa;"></div><div class="swatch-name">Surface Soft</div><div class="swatch-hex">#fafafa</div><div class="swatch-role">Quieter sections, FAQ</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #1c1c1e;"></div><div class="swatch-name">Surface Code</div><div class="swatch-hex">#1c1c1e</div><div class="swatch-role">Code block background</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #e5e5e5;"></div><div class="swatch-name">Hairline</div><div class="swatch-hex">#e5e5e5</div><div class="swatch-role">Borders, dividers</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #ededed;"></div><div class="swatch-name">Hairline Soft</div><div class="swatch-hex">#ededed</div><div class="swatch-role">Quiet table dividers</div></div>
+      </div>
+    </div>
+
+    <div class="palette-group">
+      <h3>Text</h3>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #0a0a0a;"></div><div class="swatch-name">Ink</div><div class="swatch-hex">#0a0a0a</div><div class="swatch-role">Headlines, CTAs</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #1c1c1e;"></div><div class="swatch-name">Charcoal</div><div class="swatch-hex">#1c1c1e</div><div class="swatch-role">Body text, code-inline</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #3a3a3c;"></div><div class="swatch-name">Slate</div><div class="swatch-hex">#3a3a3c</div><div class="swatch-role">Secondary text</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #5a5a5c;"></div><div class="swatch-name">Steel</div><div class="swatch-hex">#5a5a5c</div><div class="swatch-role">Tertiary, sidebar inactive</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #888888;"></div><div class="swatch-name">Stone</div><div class="swatch-hex">#888888</div><div class="swatch-role">Captions, twoslash cursor</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #a8a8aa;"></div><div class="swatch-name">Muted</div><div class="swatch-hex">#a8a8aa</div><div class="swatch-role">Disabled, de-emphasized</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="typography">
+    <h2 class="section-heading">Typography Scale</h2>
+    <p class="section-sub">Inter for all UI prose; Geist Mono for code references and type signatures. Negative letter-spacing on display sizes; documentation-grade body leading at 1.50.</p>
+
+    <div class="type-row"><div class="type-meta"><span class="role">hero-display</span><span class="specs">72px / 600 / 1.05 / -2px</span></div><div class="type-sample" style="font-size: 72px; font-weight: 600; line-height: 1.05; letter-spacing: -2px;">Knowledge Platform</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">display-lg</span><span class="specs">56px / 600 / 1.10 / -1.5px</span></div><div class="type-sample" style="font-size: 56px; font-weight: 600; line-height: 1.10; letter-spacing: -1.5px;">Built for the intelligence age</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">heading-1</span><span class="specs">48px / 600 / 1.10 / -1px</span></div><div class="type-sample" style="font-size: 48px; font-weight: 600; line-height: 1.10; letter-spacing: -1px;">Pricing on your terms</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">heading-2</span><span class="specs">36px / 600 / 1.20 / -0.5px</span></div><div class="type-sample" style="font-size: 36px; font-weight: 600; line-height: 1.20; letter-spacing: -0.5px;">Apply to the Mintlify startup program</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">heading-3</span><span class="specs">28px / 600 / 1.25</span></div><div class="type-sample" style="font-size: 28px; font-weight: 600; line-height: 1.25;">Tabs</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">heading-4</span><span class="specs">22px / 600 / 1.30</span></div><div class="type-sample" style="font-size: 22px; font-weight: 600; line-height: 1.30;">Card titles</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">heading-5</span><span class="specs">18px / 600 / 1.40</span></div><div class="type-sample" style="font-size: 18px; font-weight: 600; line-height: 1.40;">Smaller feature headers</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">subtitle</span><span class="specs">18px / 400 / 1.50</span></div><div class="type-sample" style="font-size: 18px; font-weight: 400; line-height: 1.50;">Hero subtitle and lead body type</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">body-md</span><span class="specs">16px / 400 / 1.50</span></div><div class="type-sample" style="font-size: 16px; font-weight: 400; line-height: 1.50;">Primary body text used across documentation prose, marketing copy, and feature descriptions.</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">body-sm</span><span class="specs">14px / 400 / 1.50</span></div><div class="type-sample" style="font-size: 14px; font-weight: 400; line-height: 1.50;">Secondary body, table cells, navigation, and table-of-contents items</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">body-sm-medium</span><span class="specs">14px / 500 / 1.50</span></div><div class="type-sample" style="font-size: 14px; font-weight: 500; line-height: 1.50;">Active sidebar nav, button labels, tab labels</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">caption</span><span class="specs">13px / 400 / 1.40</span></div><div class="type-sample" style="font-size: 13px; font-weight: 400; line-height: 1.40;">Helper text, fine print, code-block headers</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">micro-uppercase</span><span class="specs">11px / 600 / 1.40 / 0.5px</span></div><div class="type-sample" style="font-size: 11px; font-weight: 600; line-height: 1.40; letter-spacing: 0.5px; text-transform: uppercase;">SIDEBAR SECTION HEADER</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">code-md</span><span class="specs">14px / 400 / Geist Mono</span></div><div class="type-sample code-font" style="font-size: 14px; font-weight: 400; line-height: 1.50;">function Tabs() { return &lt;div /&gt;; }</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">code-inline</span><span class="specs">13px / 500 / Geist Mono</span></div><div class="type-sample"><span class="code-inline">&lt;Tabs&gt;</span> inline reference inside body prose</div></div>
+  </section>
+
+  <section id="hero-bands">
+    <h2 class="section-heading">Hero Bands</h2>
+    <p class="section-sub">Two atmospheric hero modes — sky-gradient (homepage) and dark-teal (startups) — with cinematic backdrops.</p>
+
+    <div class="hero-band-dark">
+      <h2>Built for startups and scaleups</h2>
+      <p>Mintlify startups program for early-stage companies with Mintlify, building from your stack to deliver dollar valuations.</p>
+      <div><button class="btn-on-dark">Get started</button> <button class="btn-link" style="color: var(--on-dark); margin-left: 8px;">Apply to Startup Program →</button></div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin: 32px 0 16px;">Hero Product Mockup</h3>
+    <div class="hero-product-mockup">
+      <span>Documentation page preview / code-editor mockup</span>
+    </div>
+  </section>
+
+  <section id="buttons">
+    <h2 class="section-heading">Button Variants</h2>
+    <p class="section-sub">Pill-shaped everywhere. Mint accent for hero brand-emphasis CTAs. Black-pill for marketing dominance.</p>
+    <div class="button-grid">
+      <div class="button-cell"><button class="btn-primary">Get Started</button><span class="button-cell-name">button-primary</span><span class="button-cell-spec">Black pill — marketing CTA</span></div>
+      <div class="button-cell"><button class="btn-accent-green">Get started</button><span class="button-cell-name">button-accent-green</span><span class="button-cell-spec">Mint accent CTA</span></div>
+      <div class="button-cell" style="background: var(--surface-code);"><button class="btn-on-dark">Get started</button><span class="button-cell-name" style="color: var(--on-dark);">button-on-dark</span><span class="button-cell-spec" style="color: var(--on-dark-muted);">White pill on dark hero</span></div>
+      <div class="button-cell"><button class="btn-secondary">Talk to us</button><span class="button-cell-name">button-secondary</span><span class="button-cell-spec">Outlined pill</span></div>
+      <div class="button-cell"><button class="btn-ghost">View</button><span class="button-cell-name">button-ghost</span><span class="button-cell-spec">Quieter rect ghost</span></div>
+      <div class="button-cell"><button class="btn-link">Learn more →</button><span class="button-cell-name">button-link</span><span class="button-cell-spec">Inline text link</span></div>
+      <div class="button-cell"><button class="btn-icon-circular" aria-label="next">›</button><span class="button-cell-name">button-icon-circular</span><span class="button-cell-spec">32×32 utility</span></div>
+      <div class="button-cell"><button class="btn-disabled">Unavailable</button><span class="button-cell-name">button-primary-disabled</span><span class="button-cell-spec">Disabled state</span></div>
+    </div>
+  </section>
+
+  <section id="badges">
+    <h2 class="section-heading">Badges &amp; Status</h2>
+    <p class="section-sub">Pill-shaped status indicators alongside small rect tags for documentation type signatures.</p>
+    <div class="badge-row" style="margin-bottom: 32px;">
+      <span class="badge badge-discount">Save 20%</span>
+      <span class="badge-required">REQUIRED</span>
+      <span class="badge-type">string</span>
+      <span class="badge-type">number</span>
+      <span class="badge-type">boolean</span>
+      <span class="badge badge-tag">&lt;Tabs&gt;</span>
+    </div>
+    <div class="promo-banner" style="border-radius: 8px;">📚 Mintlify is now in beta — <a href="#">Try it free</a></div>
+    <p style="font-size: 12px; color: var(--steel); margin-top: 8px; font-family: &#39;Geist Mono&#39;, monospace;">promo-banner — sticky black strip above the top nav</p>
+  </section>
+
+  <section id="cards">
+    <h2 class="section-heading">Cards &amp; Containers</h2>
+    <p class="section-sub">White documentation cards, surface-tinted feature panels, startup perk grid, and the bright orange testimonial card that breaks the brand's monochrome rhythm.</p>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 20px;">Standard Cards</h3>
+    <div class="card-grid">
+      <div class="card-base">
+        <h5 style="font-size: 18px; font-weight: 600;">Standard Doc Card</h5>
+        <p style="font-size: 14px; color: var(--steel); line-height: 1.5;">White canvas with hairline border and 12px corners. Used for documentation cards and quiet product callouts.</p>
+        <button class="btn-link" style="padding: 0; align-self: flex-start;">Read more →</button>
+      </div>
+      <div class="card-feature">
+        <h5 style="font-size: 18px; font-weight: 600;">Feature Panel</h5>
+        <p style="font-size: 14px; color: var(--steel); line-height: 1.5;">Quieter section panel on light gray surface for grouped content.</p>
+      </div>
+      <div class="card-help">
+        <h5>Quickstart guide</h5>
+        <p>Learn more about how to get started with our docs.</p>
+        <button class="btn-link" style="padding: 0; align-self: flex-start;">View guide →</button>
+      </div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin: 48px 0 20px;">Startup Perk Grid</h3>
+    <div class="card-grid">
+      <div class="card-startup-perk"><div class="icon-zone">💰</div><h5>Discounts and credits</h5><p>Special savings on Mintlify Pro and other selected partner services.</p></div>
+      <div class="card-startup-perk"><div class="icon-zone">⚡</div><h5>Priority support</h5><p>Get expert help fast, when you need it most.</p></div>
+      <div class="card-startup-perk"><div class="icon-zone">🎁</div><h5>Startup pack</h5><p>Access exclusive products from partners worth several thousand dollars.</p></div>
+      <div class="card-startup-perk"><div class="icon-zone">🤝</div><h5>Founder community</h5><p>Connect with other early-stage founders building with Mintlify.</p></div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin: 48px 0 20px;">Featured Testimonial Card</h3>
+    <div class="testimonial-card-feature">
+      <div>
+        <div class="quote">"Every YC batch we consistently see the top performing startups use Mintlify to build their docs."</div>
+        <div class="attribution">— Cursor founder</div>
+      </div>
+      <div class="photo"></div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin: 48px 0 20px;">Testimonial Quote Card</h3>
+    <div class="card-grid">
+      <div class="testimonial-card-quote">
+        <div class="quote">From one founder to another. Supporting startups and empowering builders is in our DNA. We've been advocating for Mintlify since the early days of Combinator, and we're proud of the company we've built.</div>
+        <div class="attribution">Sai &amp; Hahnbi · Co-founders</div>
+      </div>
+      <div class="founder-quote-card">
+        <div class="quote">"Mintlify saved our docs from drowning. We launched a product six weeks ago. Every team can now ship docs without engineering involvement."</div>
+        <div class="attribution" style="font-size: 13px; opacity: 0.85;">— Cursor team</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2 class="section-heading">Pricing Cards</h2>
+    <p class="section-sub">3-tier pricing comparison with the featured tier highlighted in mint border + brand-tinted shadow.</p>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 32px;">
+      <div class="toggle-pill">
+        <button class="active">Monthly</button>
+        <button>Annual <span class="badge badge-discount" style="margin-left: 4px;">Save 20%</span></button>
+      </div>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <span class="tier-name">FREE</span>
+        <div class="tier-price">$0<small>/mo</small></div>
+        <p style="font-size: 14px; color: var(--steel);">Get started with Mintlify and explore.</p>
+        <ul class="tier-feature-list">
+          <li>1 user</li>
+          <li>Basic features</li>
+          <li>Community support</li>
+          <li>Limited integrations</li>
+        </ul>
+        <button class="btn-secondary" style="margin-top: 8px;">Get Started</button>
+      </div>
+      <div class="pricing-card featured">
+        <span class="tier-name">Lift Off</span>
+        <div class="tier-price">$150<small>/mo</small></div>
+        <p style="font-size: 14px; color: var(--steel);">For growing teams who need more features and support.</p>
+        <ul class="tier-feature-list">
+          <li>Up to 10 users</li>
+          <li>Advanced features</li>
+          <li>Priority email support</li>
+          <li>Full integrations</li>
+          <li>Advanced analytics</li>
+          <li>Custom branding</li>
+        </ul>
+        <button class="btn-accent-green" style="margin-top: 8px;">Start Free Trial</button>
+      </div>
+      <div class="pricing-card">
+        <span class="tier-name">Custom</span>
+        <div class="tier-price" style="font-size: 32px;">Contact us</div>
+        <p style="font-size: 14px; color: var(--steel);">Enterprise plans tailored to your team's needs.</p>
+        <ul class="tier-feature-list">
+          <li>Unlimited users</li>
+          <li>Custom integrations</li>
+          <li>Dedicated support</li>
+          <li>Custom contracts</li>
+          <li>SOC2 compliance</li>
+        </ul>
+        <button class="btn-secondary" style="margin-top: 8px;">Talk to sales</button>
+      </div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin: 48px 0 20px;">Feature Comparison Table</h3>
+    <table class="comparison-table">
+      <thead>
+        <tr><th>Feature</th><th style="text-align: center;">FREE</th><th style="text-align: center;">Lift Off</th><th style="text-align: center;">Custom</th></tr>
+      </thead>
+      <tbody>
+        <tr class="section-divider"><td colspan="4">CORE</td></tr>
+        <tr><td>Hosting &amp; deployment</td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+        <tr><td>Custom domain</td><td style="text-align: center;">—</td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+        <tr><td>Components library</td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+        <tr class="section-divider"><td colspan="4">API</td></tr>
+        <tr><td>API endpoints</td><td style="text-align: center;">10</td><td style="text-align: center;">100</td><td style="text-align: center;">Unlimited</td></tr>
+        <tr><td>API playground</td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+        <tr class="section-divider"><td colspan="4">SUPPORT</td></tr>
+        <tr><td>Community support</td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+        <tr><td>Priority email</td><td style="text-align: center;">—</td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+        <tr><td>Dedicated CSM</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="forms">
+    <h2 class="section-heading">Forms &amp; Inputs</h2>
+    <p class="section-sub">40px-tall inputs with 8px rounded corners. Focus shifts to a 2px Mintlify Mint border — the brand's mint serves as the activation signal.</p>
+    <div class="form-row">
+      <div class="form-field">
+        <label class="form-label">Email</label>
+        <input class="text-input" type="text" value="default state" placeholder="you@email.com">
+      </div>
+      <div class="form-field">
+        <label class="form-label">Workspace name</label>
+        <input class="text-input" type="text" value="focused state" autofocus="" style="border: 2px solid var(--brand-green); padding: 7px 15px;">
+      </div>
+      <div class="form-field">
+        <label class="form-label">API key</label>
+        <input class="text-input" type="text" placeholder="sk_live_***">
+      </div>
+    </div>
+    <div style="margin-top: 32px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+      <input class="search-pill" placeholder="🔍 Search documentation">
+      <span style="font-size: 12px; color: var(--steel); font-family: &#39;Geist Mono&#39;, monospace;">search-pill — 36px height, surface bg</span>
+    </div>
+  </section>
+
+  <section id="tabs">
+    <h2 class="section-heading">Tabs &amp; Navigation</h2>
+    <p class="section-sub">Underline-style segmented tabs (live in docs Tabs component) and pill tabs for top-level switching.</p>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 16px;">Segmented Tabs (docs Tabs page)</h3>
+    <div class="seg-tabs">
+      <button class="seg-tab active">First tab</button>
+      <button class="seg-tab">Second tab</button>
+      <button class="seg-tab">Third tab</button>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin: 32px 0 16px;">Pill Tabs (Pricing page)</h3>
+    <div class="pill-tabs">
+      <button class="pill-tab active">Pricing</button>
+      <button class="pill-tab">Roadmap</button>
+    </div>
+  </section>
+
+  <section id="code">
+    <h2 class="section-heading">Code Components</h2>
+    <p class="section-sub">Dark code blocks with syntax highlighting, header bar with copy button. Inline code chips inside body prose.</p>
+
+    <div class="code-block" style="margin-bottom: 24px;">
+      <div class="code-block-header">
+        <span>example.tsx</span>
+        <button class="copy-code-btn">Copy code</button>
+      </div>
+      <div class="code-block-body code-font">
+&lt;Tabs&gt;<br>
+&nbsp;&nbsp;&lt;Tab title="First tab"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Welcome to the content that you can only see<br>
+&nbsp;&nbsp;&nbsp;&nbsp;inside the first tab.<br>
+&nbsp;&nbsp;&lt;/Tab&gt;<br>
+&nbsp;&nbsp;&lt;Tab title="Second tab"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Here's content that's only inside the second tab.<br>
+&nbsp;&nbsp;&lt;/Tab&gt;<br>
+&lt;/Tabs&gt;
+      </div>
+    </div>
+
+    <p style="font-size: 16px; color: var(--charcoal); line-height: 1.6;">Use the <span class="code-inline">&lt;Tabs&gt;</span> component to organize content into multiple panels. Use <span class="code-inline">defaultIndex</span> to set the default tab on render. The component synchronizes the active tab via the URL <span class="code-inline">syncKey</span> property.</p>
+  </section>
+
+  <section id="docs-components">
+    <h2 class="section-heading">Documentation Components</h2>
+    <p class="section-sub">Property rows, comparison tables, and the 3-column documentation layout (sidebar / prose / TOC).</p>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 16px;">Property Rows</h3>
+    <div style="background: var(--canvas); border: 1px solid var(--hairline); border-radius: 8px; padding: 0 24px;">
+      <div class="property-row">
+        <div class="prop-header">
+          <span class="prop-name">defaultIndex</span>
+          <span class="badge-type">number</span>
+          <span class="badge-required">REQUIRED</span>
+        </div>
+        <div class="prop-desc">The index of the tab to display by default (zero-based). For example, set to <span class="code-inline">0</span> to show the second tab on page load.</div>
+      </div>
+      <div class="property-row">
+        <div class="prop-header">
+          <span class="prop-name">sync</span>
+          <span class="badge-type">boolean</span>
+          <span class="badge-type">default: true</span>
+        </div>
+        <div class="prop-desc">When <span class="code-inline">true</span>, this tab group will sync with other tabs and code groups on the page that have matching titles.</div>
+      </div>
+      <div class="property-row" style="border-bottom: none;">
+        <div class="prop-header">
+          <span class="prop-name">borderBottom</span>
+          <span class="badge-type">boolean</span>
+        </div>
+        <div class="prop-desc">Adds a bottom border and padding to the tabs container. Useful to visually separate tabbed content from the rest of the page, especially when tabs have matching titles.</div>
+      </div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin: 48px 0 16px;">Documentation Layout (3-column)</h3>
+    <div style="background: var(--surface); padding: 24px; border-radius: 12px;">
+      <div class="sidebar-grid">
+        <div class="sidebar-nav">
+          <div class="sidebar-section">COMPONENTS</div>
+          <a class="sidebar-nav-item" href="#">Accordions</a>
+          <a class="sidebar-nav-item" href="#">Cards</a>
+          <a class="sidebar-nav-item" href="#">Steps</a>
+          <a class="sidebar-nav-item active" href="#">Tabs</a>
+          <a class="sidebar-nav-item" href="#">Tooltips</a>
+          <div class="sidebar-section">PRIMITIVES</div>
+          <a class="sidebar-nav-item" href="#">Frames</a>
+          <a class="sidebar-nav-item" href="#">Images and Embeds</a>
+          <a class="sidebar-nav-item" href="#">Lists and Tables</a>
+        </div>
+        <div class="doc-prose">
+          <h3>Tabs</h3>
+          <p>Use the Tab component to organize content into switchable panels that users can switch between. You can add any number of tabs and include other components inside each tab.</p>
+          <p>Use tabs to organize content into multiple panels that users can switch between. You can add any number of tabs and include other components inside each tab.</p>
+        </div>
+        <div class="toc-rail">
+          <div class="toc-title">ON THIS PAGE</div>
+          <a href="#" class="active">Tabs properties</a>
+          <a href="#">Tab properties</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="logo-wall">
+    <h2 class="section-heading">Logo Wall</h2>
+    <p class="section-sub">Customer logo grid — 6-up wordmark presentation in trust-row sections.</p>
+    <div class="logo-wall">
+      <div class="logo-item">ANTHROP\C</div>
+      <div class="logo-item">Cognition</div>
+      <div class="logo-item">▲ Vercel</div>
+      <div class="logo-item">React</div>
+      <div class="logo-item">Lovable</div>
+      <div class="logo-item">Stripe</div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2 class="section-heading">FAQ Accordion</h2>
+    <p class="section-sub">Frequently-asked-questions panel. Collapsed by default; chevron toggle pattern.</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">How does Mintlify pricing work?</span>
+          <span class="chev">⌃</span>
+        </div>
+        <div class="faq-a">Mintlify offers a Free tier for individuals, a Lift Off tier for growing teams at $150/month, and Custom enterprise plans. Annual billing saves 20%.</div>
+      </div>
+      <div class="faq-item collapsed">
+        <div class="faq-q">
+          <span class="faq-q-text">Can I migrate my existing documentation to Mintlify?</span>
+          <span class="chev">⌄</span>
+        </div>
+        <div class="faq-a">Yes — Mintlify provides import tools for common documentation formats including Markdown, MDX, and OpenAPI specifications.</div>
+      </div>
+      <div class="faq-item collapsed">
+        <div class="faq-q">
+          <span class="faq-q-text">Is Mintlify SOC 2 compliant?</span>
+          <span class="chev">⌄</span>
+        </div>
+        <div class="faq-a">Yes — Mintlify is SOC 2 Type II certified. Custom enterprise plans include additional security and compliance features.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="spacing">
+    <h2 class="section-heading">Spacing Scale</h2>
+    <p class="section-sub">4px base unit, 8px primary increment. Section rhythm runs from 48px to 120px.</p>
+    <div class="spacing-grid">
+      <div class="spacing-box"><div class="spacing-visual" style="width: 4px; height: 16px;"></div><div class="spacing-label">4<small>xxs</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 8px; height: 16px;"></div><div class="spacing-label">8<small>xs</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 12px; height: 16px;"></div><div class="spacing-label">12<small>sm</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 16px; height: 16px;"></div><div class="spacing-label">16<small>md</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 20px; height: 16px;"></div><div class="spacing-label">20<small>lg</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 24px; height: 16px;"></div><div class="spacing-label">24<small>xl</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 32px; height: 16px;"></div><div class="spacing-label">32<small>xxl</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 40px; height: 16px;"></div><div class="spacing-label">40<small>xxxl</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 48px; height: 16px;"></div><div class="spacing-label">48<small>section-sm</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 64px; height: 16px;"></div><div class="spacing-label">64<small>section</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 96px; height: 16px;"></div><div class="spacing-label">96<small>section-lg</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 120px; height: 16px;"></div><div class="spacing-label">120<small>hero</small></div></div>
+    </div>
+  </section>
+
+  <section id="radius">
+    <h2 class="section-heading">Border Radius Scale</h2>
+    <p class="section-sub">Pill buttons (9999px), 12px standard cards, 8px inputs and code blocks. Tightly disciplined — no in-between values.</p>
+    <div class="radius-grid">
+      <div class="radius-demo" style="border-radius: 4px;">4px<small>xs</small></div>
+      <div class="radius-demo" style="border-radius: 6px;">6px<small>sm</small></div>
+      <div class="radius-demo" style="border-radius: 8px;">8px<small>md</small></div>
+      <div class="radius-demo" style="border-radius: 12px;">12px<small>lg</small></div>
+      <div class="radius-demo" style="border-radius: 16px;">16px<small>xl</small></div>
+      <div class="radius-demo" style="border-radius: 24px;">24px<small>xxl</small></div>
+      <div class="radius-demo" style="border-radius: 9999px;">pill<small>full</small></div>
+    </div>
+  </section>
+
+  <section id="elevation">
+    <h2 class="section-heading">Elevation &amp; Depth</h2>
+    <p class="section-sub">Predominantly flat. Strategic atmospheric depth on hero mockup; brand-tinted glow on featured pricing tier.</p>
+    <div class="elevation-grid">
+      <div class="elev-cell elev-0"><span class="elev-name">Level 0 — Flat</span><span class="elev-meta">border + hairline</span></div>
+      <div class="elev-cell elev-1"><span class="elev-name">Level 1 — Subtle</span><span class="elev-meta">rgba(0,0,0,0.04) 0 1px 2px</span></div>
+      <div class="elev-cell elev-2"><span class="elev-name">Level 2 — Card</span><span class="elev-meta">rgba(0,0,0,0.08) 0 4px 12px</span></div>
+      <div class="elev-cell elev-3"><span class="elev-name">Level 3 — Mockup</span><span class="elev-meta">rgba(0,0,0,0.12) 0 24px 48px -8px</span></div>
+      <div class="elev-cell elev-4"><span class="elev-name">Level 4 — Brand-tinted</span><span class="elev-meta">rgba(0,212,164,0.08) 0 8px 24px</span></div>
+    </div>
+  </section>
+
+  <section id="responsive">
+    <h2 class="section-heading">Responsive Behavior</h2>
+    <p class="section-sub">Hero scales from 72px → 36px on mobile. Pricing tiers stack 1-up. Documentation grid collapses to drawer + single column.</p>
+    <table class="breakpoint-table">
+      <thead><tr><th>Breakpoint</th><th>Width</th><th>Key Changes</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Mobile (small)</strong></td><td>&lt; 480px</td><td>Single column. Hero 36px. Pricing tiers stack 1-up. Footer 1-column accordion.</td></tr>
+        <tr><td><strong>Mobile (large)</strong></td><td>480 – 767px</td><td>Feature tiles 2-up. Hero 44px.</td></tr>
+        <tr><td><strong>Tablet</strong></td><td>768 – 1023px</td><td>Pill-tab nav returns. Sidebar collapses to drawer. Hero 56px.</td></tr>
+        <tr><td><strong>Desktop</strong></td><td>1024 – 1279px</td><td>3-column docs grid. 3-tier pricing row. Hero 72px.</td></tr>
+        <tr><td><strong>Wide Desktop</strong></td><td>≥ 1280px</td><td>Wider hero gutters. Fixed 240px sidebar.</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin-top: 32px;">Device Ladder</h3>
+    <div class="device-ladder">
+      <div class="device" style="width: 60px; height: 110px;">375px</div>
+      <div class="device" style="width: 90px; height: 130px;">480px</div>
+      <div class="device" style="width: 130px; height: 150px;">768px</div>
+      <div class="device" style="width: 200px; height: 170px;">1024px</div>
+      <div class="device" style="width: 280px; height: 200px;">1280+</div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin-top: 32px;">Touch Targets</h3>
+    <ul style="font-size: 14px; color: var(--charcoal); line-height: 1.7; padding-left: 20px;">
+      <li>Pill buttons render at 36–40px height — bumps to 44px on mobile.</li>
+      <li>Circular icon buttons: 32×32px desktop → 44×44px mobile.</li>
+      <li>Form inputs render at 40px height; bumps to 44px mobile.</li>
+      <li>Sidebar nav items: ~32px → 44px on mobile drawers.</li>
+    </ul>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin-top: 32px;">Collapsing Strategy</h3>
+    <ul style="font-size: 14px; color: var(--charcoal); line-height: 1.7; padding-left: 20px;">
+      <li><strong>Promo banner</strong> stays full-width; truncates at &lt; 480px.</li>
+      <li><strong>Top nav</strong> below 1024px collapses to hamburger.</li>
+      <li><strong>Hero band</strong>: 2-column hero stacks at &lt; 1024px; mockup below text on mobile.</li>
+      <li><strong>Documentation grid</strong>: 3-column → sidebar-drawer at &lt; 1024px → single-column at &lt; 768px.</li>
+      <li><strong>Pricing</strong>: 3-tier desktop → 1-column stacked at &lt; 768px; comparison table horizontal-scroll.</li>
+      <li><strong>Hero typography</strong>: 72px → 56px tablet → 44px mobile-large → 36px mobile-small.</li>
+      <li><strong>Logo wall</strong>: 6-up → 3-up tablet → 2-up mobile.</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of HP</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #0a0d18; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#type">Typography</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#cards">Cards</a></li>
+    <li><a href="#forms">Forms</a></li>
+    <li><a href="#responsive">Responsive</a></li>
+  </ul>
+  <button class="nav-cta">Shop Now</button>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of HP</h1>
+    <p>A white-paper enterprise-consumer system anchored by HP Electric Blue (#024ad8) as the lone signal CTA, near-black ink for headlines, geometric Forma DJR Micro across every surface, and angular blue-chevron decorations that nod to the HP wordmark's slashes. Cards round at 16px, photos sit in soft 16px frames, and dark-navy slabs anchor the closing customer-story and "how can we help" bands.</p>
+    <div class="hero-actions">
+      <button class="btn-primary">Shop Now</button>
+      <button class="btn-outline-ink">Learn More</button>
+    </div>
+  </div>
+</section>
+
+<section id="colors">
+  <div class="section-eyebrow">Foundation</div>
+  <h2 class="section-heading">Color Palette</h2>
+  <p class="section-sub">A pure-white canvas with deep ink ladder, HP Electric Blue as the lone signal, and supporting bloom + storm accent families for sale tags and lifestyle imagery.</p>
+
+  <div class="palette-group">
+    <h3>Brand &amp; Accent</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background: #024ad8;"></div><div class="swatch-meta"><div class="swatch-name">HP Electric Blue</div><div class="swatch-hex">#024ad8</div><p class="swatch-role">primary — lone signal CTA, link color, chevron-decoration fill</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #296ef9;"></div><div class="swatch-meta"><div class="swatch-name">Bright Blue</div><div class="swatch-hex">#296ef9</div><p class="swatch-role">primary-bright — CTA on dark slabs where the deep blue muddies</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #0e3191;"></div><div class="swatch-meta"><div class="swatch-name">Deep Navy</div><div class="swatch-hex">#0e3191</div><p class="swatch-role">primary-deep — pressed state, visited-link color</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #c9e0fc;"></div><div class="swatch-meta"><div class="swatch-name">Soft Blue</div><div class="swatch-hex">#c9e0fc</div><p class="swatch-role">primary-soft — selection chips, customer-story card backdrops</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Surface</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background: #ffffff; border-bottom: 1px solid var(--hairline);"></div><div class="swatch-meta"><div class="swatch-name">Canvas</div><div class="swatch-hex">#ffffff</div><p class="swatch-role">canvas — universal page background</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #f7f7f7;"></div><div class="swatch-meta"><div class="swatch-name">Cloud</div><div class="swatch-hex">#f7f7f7</div><p class="swatch-role">cloud — alternating section band, feature-card group surface</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #e8e8e8;"></div><div class="swatch-meta"><div class="swatch-name">Fog</div><div class="swatch-hex">#e8e8e8</div><p class="swatch-role">fog — slightly darker surface band, FAQ outer panel</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #c2c2c2;"></div><div class="swatch-meta"><div class="swatch-name">Steel</div><div class="swatch-hex">#c2c2c2</div><p class="swatch-role">steel — outlined element borders, focus rings</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #ff5050;"></div><div class="swatch-meta"><div class="swatch-name">Bloom Coral</div><div class="swatch-hex">#ff5050</div><p class="swatch-role">bloom-coral — sale-tag chip, "25% off" overlays</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #f9d4d2;"></div><div class="swatch-meta"><div class="swatch-name">Bloom Rose</div><div class="swatch-hex">#f9d4d2</div><p class="swatch-role">bloom-rose — soft pink lifestyle accent</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #8ebdce;"></div><div class="swatch-meta"><div class="swatch-name">Storm Mist</div><div class="swatch-hex">#8ebdce</div><p class="swatch-role">storm-mist — printer-plan illustration backdrop</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #356373;"></div><div class="swatch-meta"><div class="swatch-name">Storm Deep</div><div class="swatch-hex">#356373</div><p class="swatch-role">storm-deep — neutral status accent</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Text</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background: #1a1a1a;"></div><div class="swatch-meta"><div class="swatch-name">Ink</div><div class="swatch-hex">#1a1a1a</div><p class="swatch-role">ink — universal text on white surfaces</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #000000;"></div><div class="swatch-meta"><div class="swatch-name">Ink Deep</div><div class="swatch-hex">#000000</div><p class="swatch-role">ink-deep — wordmark, hairline strokes</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #3d3d3d;"></div><div class="swatch-meta"><div class="swatch-name">Charcoal</div><div class="swatch-hex">#3d3d3d</div><p class="swatch-role">charcoal — secondary descriptions, fine-print</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #636363;"></div><div class="swatch-meta"><div class="swatch-name">Graphite</div><div class="swatch-hex">#636363</div><p class="swatch-role">graphite — small-print, legal lines, timestamp meta</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #ffffff; border: 1px solid var(--hairline);"></div><div class="swatch-meta"><div class="swatch-name">On Ink</div><div class="swatch-hex">#ffffff</div><p class="swatch-role">on-ink — text on dark-navy slabs and footer</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Semantic</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background: #b3262b;"></div><div class="swatch-meta"><div class="swatch-name">Bloom Deep</div><div class="swatch-hex">#b3262b</div><p class="swatch-role">error / discount-emphasis</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #5a1313;"></div><div class="swatch-meta"><div class="swatch-name">Bloom Wine</div><div class="swatch-hex">#5a1313</div><p class="swatch-role">deep destructive accent</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="type">
+  <div class="section-eyebrow">Voice</div>
+  <h2 class="section-heading">Typography Scale</h2>
+  <p class="section-sub">Forma DJR Micro across every surface — display, body, button, caption — at weights 400 / 500 / 600 / 700. Inter is the closest open-source substitute.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xxl</strong>Forma DJR Micro · 72/1.0 · 500</div><div class="ts-display-xxl">Limited offer</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>Forma DJR Micro · 56/1.0 · 500</div><div class="ts-display-xl">Shop the catalog</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>Forma DJR Micro · 44/1.0 · 500</div><div class="ts-display-lg">A device for every workflow</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>Forma DJR Micro · 32/1.0 · 500</div><div class="ts-display-md">Why teams choose us</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-sm</strong>Forma DJR Micro · 24/1.17 · 500</div><div class="ts-display-sm">Featured catalog updates</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-xs</strong>Forma DJR Micro · 20/1.0 · 500</div><div class="ts-display-xs">Choose a printer</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-lg</strong>Forma DJR Micro · 18/1.33 · 400</div><div class="ts-body-lg">All-in-one subscription with hardware delivery, premium support, and supplies refresh.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>Forma DJR Micro · 16/1.38 · 400</div><div class="ts-body-md">Default body color. Most paragraph runs and table cells use this style with a 1.38 line-height that keeps catalog spec rows tight without crowding.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-emphasis</strong>Forma DJR Micro · 16/1.38 · 500</div><div class="ts-body-em">Bolded run-in word style — used inside paragraphs.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-md</strong>Forma DJR Micro · 14/1.5 · 400</div><div class="ts-caption-md">Specs row · 16GB RAM · 512GB SSD · 13.3-inch display</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-bold</strong>Forma DJR Micro · 14/1.3 · 700</div><div class="ts-caption-bold">SAVE $200 · LIMITED OFFER</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-sm</strong>Forma DJR Micro · 12/1.33 · 400</div><div class="ts-caption-sm">Footnote: pricing reflects in-cart adjustments before checkout.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>link-md</strong>Forma DJR Micro · 16/1.38 · 500 · #024ad8</div><div class="ts-link-md">View product details</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-md</strong>Forma DJR Micro · 14/1.4 · 600 · 0.7px · UPPER</div><div class="ts-button-md">SHOP NOW</div></div>
+</section>
+
+<section id="buttons">
+  <div class="section-eyebrow">Action</div>
+  <h2 class="section-heading">Button Variants</h2>
+  <p class="section-sub">Sharp 4px-rounded rectangles with uppercase 600 labels. The blue primary appears at most twice per viewport.</p>
+
+  <div class="button-grid">
+    <div class="button-cell"><span class="button-cell-label">button-primary</span><button class="btn-primary">Shop Now</button></div>
+    <div class="button-cell"><span class="button-cell-label">button-primary-pressed</span><button class="btn-primary btn-pressed">Shop Now</button></div>
+    <div class="button-cell"><span class="button-cell-label">button-primary-disabled</span><button class="btn-disabled">Shop Now</button></div>
+    <div class="button-cell"><span class="button-cell-label">button-ink</span><button class="btn-ink">Buy Now</button></div>
+    <div class="button-cell"><span class="button-cell-label">button-outline (blue)</span><button class="btn-outline">Compare</button></div>
+    <div class="button-cell"><span class="button-cell-label">button-outline-ink</span><button class="btn-outline-ink">View</button></div>
+    <div class="button-cell wide"><span class="button-cell-label">category-tab / active</span>
+      <div class="pill-tab-row">
+        <button class="pill-tab active">For Home</button>
+        <button class="pill-tab">For Business</button>
+        <button class="pill-tab">For Education</button>
+      </div>
+    </div>
+    <div class="button-cell"><span class="button-cell-label">badge-pill-ink</span>
+      <div class="badge-row">
+        <span class="badge-ink">New</span>
+        <span class="badge-ink">Featured</span>
+      </div>
+    </div>
+    <div class="button-cell"><span class="button-cell-label">badge-pill-outline</span>
+      <div class="badge-row">
+        <span class="badge-outline">In Stock</span>
+        <span class="badge-outline">Available</span>
+      </div>
+    </div>
+    <div class="button-cell"><span class="button-cell-label">badge-sale-coral</span>
+      <div class="badge-row">
+        <span class="badge-coral">Save $200</span>
+        <span class="badge-coral">25% Off</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cards">
+  <div class="section-eyebrow">Containers</div>
+  <h2 class="section-heading">Card Examples</h2>
+  <p class="section-sub">Cards round at 16px with Soft Lift shadow. Pricing tiers, product tiles, and category icons all share the same chrome vocabulary.</p>
+
+  <div class="card-grid" style="margin-bottom: 32px;">
+    <div class="card-product">
+      <div class="photo"></div>
+      <span class="ts-caption-md" style="color: var(--graphite);">Laptop · 13.3"</span>
+      <h4>Studio Laptop 13"</h4>
+      <p class="meta">Lightweight · 12-hour battery · Compact form</p>
+      <p class="price">$1,299</p>
+      <button class="btn-primary cta">Buy Now</button>
+    </div>
+    <div class="card-product">
+      <div class="photo"></div>
+      <span class="ts-caption-md" style="color: var(--graphite);">Laptop · 14"</span>
+      <h4>Studio Laptop 14"</h4>
+      <p class="meta">32GB RAM · 1TB SSD · Long battery</p>
+      <p class="price">$1,599</p>
+      <button class="btn-outline-ink cta">View</button>
+    </div>
+    <div class="card-product">
+      <div class="photo"></div>
+      <span class="ts-caption-md" style="color: var(--graphite);">Laptop · 17.3"</span>
+      <h4>Studio Laptop 17"</h4>
+      <p class="meta">16GB RAM · 1TB SSD · Compact form factor</p>
+      <p class="price">$1,799</p>
+      <button class="btn-outline-ink cta">View</button>
+    </div>
+  </div>
+
+  <div class="card-grid" style="margin-bottom: 32px;">
+    <div class="card-pricing">
+      <span class="section-eyebrow" style="margin: 0; color: var(--graphite);">Basic</span>
+      <h4 class="tier-name">Essential</h4>
+      <div class="tier-price">$8.99<span class="tier-cadence">/month</span></div>
+      <ul>
+        <li>Up to 100 pages/month</li>
+        <li>Original supplies delivered</li>
+        <li>Free shipping</li>
+      </ul>
+      <button class="btn-outline">Choose plan</button>
+    </div>
+    <div class="card-pricing featured">
+      <span class="section-eyebrow" style="margin: 0;">Most Popular</span>
+      <h4 class="tier-name">Versatile</h4>
+      <div class="tier-price">$15.99<span class="tier-cadence">/month</span></div>
+      <ul>
+        <li>Up to 500 pages/month</li>
+        <li>Premium supplies delivery</li>
+        <li>Free shipping + 24/7 support</li>
+        <li>Roll-over unused pages</li>
+      </ul>
+      <button class="btn-primary">Choose plan</button>
+    </div>
+    <div class="card-pricing">
+      <span class="section-eyebrow" style="margin: 0; color: var(--graphite);">High Volume</span>
+      <h4 class="tier-name">Frequent</h4>
+      <div class="tier-price">$24.99<span class="tier-cadence">/month</span></div>
+      <ul>
+        <li>Up to 1,500 pages/month</li>
+        <li>Priority ink shipping</li>
+        <li>24/7 phone support</li>
+      </ul>
+      <button class="btn-outline">Choose plan</button>
+    </div>
+  </div>
+
+  <div class="category-icon-row" style="margin-bottom: 32px;">
+    <div class="category-icon"><div class="glyph"></div><span class="label">Laptops</span></div>
+    <div class="category-icon"><div class="glyph"></div><span class="label">Desktops</span></div>
+    <div class="category-icon"><div class="glyph"></div><span class="label">Printers</span></div>
+    <div class="category-icon"><div class="glyph"></div><span class="label">Computer Tools</span></div>
+    <div class="category-icon"><div class="glyph"></div><span class="label">Accessories</span></div>
+    <div class="category-icon"><div class="glyph"></div><span class="label">Enterprise</span></div>
+  </div>
+
+  <div class="promo-strip-dark">
+    <div>
+      <h3>Work that fits the way teams actually work.</h3>
+      <p>A productivity-first design language with deep enterprise integration, AI-driven automation, and secure delivery across every device.</p>
+      <div style="margin-top: 24px;"><button class="btn-primary">Learn More</button></div>
+    </div>
+    <div class="photo"></div>
+  </div>
+</section>
+
+<section id="forms">
+  <div class="section-eyebrow">Inputs</div>
+  <h2 class="section-heading">Form Elements</h2>
+  <p class="section-sub">Inputs sit on white with steel-gray hairline borders, 4px corners, 44px height. Focused state thickens the stroke to 2px ink.</p>
+
+  <div class="form-grid">
+    <div class="form-cell">
+      <label>Email Address</label>
+      <input class="form-input" type="email" placeholder="you@company.com">
+      <p class="form-help">We'll never share your email.</p>
+    </div>
+    <div class="form-cell">
+      <label>Workspace Name (focused)</label>
+      <input class="form-input focused" type="text" value="Acme Marketing">
+      <p class="form-help">Focus state thickens the ink stroke; no halo.</p>
+    </div>
+    <div class="form-cell">
+      <label>Quantity (error)</label>
+      <input class="form-input error" type="number" value="0">
+      <p class="form-help error">Workspace requires at least 1 seat.</p>
+    </div>
+    <div class="form-cell">
+      <label>Search the catalog</label>
+      <input class="form-input search" type="search" placeholder="Search products…">
+      <p class="form-help">Compact search input — used inside the top nav.</p>
+    </div>
+    <div class="form-cell" style="grid-column: 1 / -1;">
+      <label>Notes</label>
+      <textarea class="form-input" rows="4" placeholder="Tell us about your workflow…"></textarea>
+    </div>
+  </div>
+</section>
+
+<section id="spacing">
+  <div class="section-eyebrow">Rhythm</div>
+  <h2 class="section-heading">Spacing Scale</h2>
+  <p class="section-sub">8px base unit. The 80px section gap is the universal rhythm constant — every full-bleed band is separated by it.</p>
+  <div class="spacing-row">
+    <div class="spacing-cell"><div class="spacing-block" style="width: 4px;"></div><span class="label">xxs · 4</span></div>
+    <div class="spacing-cell"><div class="spacing-block" style="width: 8px;"></div><span class="label">xs · 8</span></div>
+    <div class="spacing-cell"><div class="spacing-block" style="width: 12px;"></div><span class="label">sm · 12</span></div>
+    <div class="spacing-cell"><div class="spacing-block" style="width: 16px;"></div><span class="label">md · 16</span></div>
+    <div class="spacing-cell"><div class="spacing-block" style="width: 20px;"></div><span class="label">lg · 20</span></div>
+    <div class="spacing-cell"><div class="spacing-block" style="width: 24px;"></div><span class="label">xl · 24</span></div>
+    <div class="spacing-cell"><div class="spacing-block" style="width: 32px;"></div><span class="label">xxl · 32</span></div>
+    <div class="spacing-cell"><div class="spacing-block" style="width: 80px;"></div><span class="label">section · 80</span></div>
+  </div>
+</section>
+
+<section id="radius">
+  <div class="section-eyebrow">Geometry</div>
+  <h2 class="section-heading">Border Radius Scale</h2>
+  <p class="section-sub">Two-tier philosophy: buttons stay sharp at 4px while cards and photo frames soften at 16px.</p>
+  <div class="radius-row">
+    <div class="radius-cell"><div class="radius-block" style="border-radius: 0;"></div><span class="label">none · 0px</span><span class="role">chevron decorations, hero photos</span></div>
+    <div class="radius-cell"><div class="radius-block" style="border-radius: 2px;"></div><span class="label">xs · 2px</span><span class="role">sale tag pills</span></div>
+    <div class="radius-cell"><div class="radius-block" style="border-radius: 3px;"></div><span class="label">sm · 3px</span><span class="role">small CTA radius</span></div>
+    <div class="radius-cell"><div class="radius-block" style="border-radius: 4px;"></div><span class="label">md · 4px</span><span class="role">buttons, inputs (default)</span></div>
+    <div class="radius-cell"><div class="radius-block" style="border-radius: 8px;"></div><span class="label">lg · 8px</span><span class="role">badges, FAQ rows</span></div>
+    <div class="radius-cell"><div class="radius-block" style="border-radius: 16px;"></div><span class="label">xl · 16px</span><span class="role">cards, photo frames</span></div>
+    <div class="radius-cell"><div class="radius-block" style="border-radius: 9999px;"></div><span class="label">pill · 9999px</span><span class="role">filter chips, search</span></div>
+  </div>
+</section>
+
+<section id="elevation">
+  <div class="section-eyebrow">Depth</div>
+  <h2 class="section-heading">Elevation &amp; Depth</h2>
+  <p class="section-sub">Mostly flat. Soft Lift shadow is the workhorse for product cards and pricing tiers. Floating Modal is rare and reserved for transient overlays.</p>
+  <div class="elevation-grid">
+    <div class="elevation-cell elev-flat">
+      <span class="label">level 0 · flat</span>
+      <h4>Section band</h4>
+      <p>Full-bleed color block. No shadow, no border. Cloud + fog alternating bands rely on this.</p>
+    </div>
+    <div class="elevation-cell elev-hairline">
+      <span class="label">level 1 · hairline</span>
+      <h4>Hairline frame</h4>
+      <p>1px hairline border. FAQ accordions, outlined buttons, comparison-table cells.</p>
+    </div>
+    <div class="elevation-cell elev-soft">
+      <span class="label">level 2 · soft lift</span>
+      <h4>Soft Lift</h4>
+      <p>0 2px 8px rgba(26,26,26,0.08). The catalog workhorse — every product card gets it.</p>
+    </div>
+    <div class="elevation-cell elev-floating">
+      <span class="label">level 3 · floating</span>
+      <h4>Floating Modal</h4>
+      <p>0 8px 24px rgba(26,26,26,0.12). Reserved for transient overlays — add-to-cart drawer, image zoom.</p>
+    </div>
+  </div>
+</section>
+
+<section id="responsive">
+  <div class="section-eyebrow">Adapt</div>
+  <h2 class="section-heading">Responsive Behavior</h2>
+  <p class="section-sub">Five breakpoints. The blue chevron decorations vanish on mobile so the photo card centers cleanly.</p>
+
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Mobile</td><td>&lt; 480px</td><td>Single-column stack, hamburger nav, hero scales to ~36px, section padding ~48px, chevrons hidden</td></tr>
+      <tr><td>Mobile-Large</td><td>480–767px</td><td>Same column count, hero scales to ~44px, pricing tiers stack vertically</td></tr>
+      <tr><td>Tablet</td><td>768–1023px</td><td>2-column product grid, 2x2 pricing, full text nav, chevrons shrink to ~60%</td></tr>
+      <tr><td>Desktop</td><td>1024–1279px</td><td>3-column product grid, 4-column pricing, full nav</td></tr>
+      <tr><td>Desktop-Large</td><td>≥ 1280px</td><td>4-column product grid, 1366px content max-width with full-bleed bands</td></tr>
+    </tbody>
+  </table>
+
+  <div class="device-ladder">
+    <div class="device-cell"><div class="device-block" style="width: 56px; height: 96px;"></div><span class="label">320</span></div>
+    <div class="device-cell"><div class="device-block" style="width: 80px; height: 120px;"></div><span class="label">480</span></div>
+    <div class="device-cell"><div class="device-block" style="width: 140px; height: 160px;"></div><span class="label">768</span></div>
+    <div class="device-cell"><div class="device-block" style="width: 200px; height: 180px;"></div><span class="label">1024</span></div>
+    <div class="device-cell"><div class="device-block" style="width: 280px; height: 200px;"></div><span class="label">1280</span></div>
+    <div class="device-cell"><div class="device-block" style="width: 340px; height: 220px;"></div><span class="label">1366+</span></div>
+  </div>
+
+  <div class="responsive-sub">
+    <div>
+      <h4>Touch Targets</h4>
+      <p>button-primary at 44px height + 24px horizontal padding clears WCAG-AAA 44×44 touch target.</p>
+      <p>category-tab at 8px 20px padding bumps to 12px 24px on touch screens.</p>
+      <p>Top-nav icons use 44×44 invisible hit boxes around 24×24 glyphs.</p>
+    </div>
+    <div>
+      <h4>Collapsing Strategy</h4>
+      <ul>
+        <li>Utility strip stays visible on every breakpoint; account dropdowns collapse below 768px</li>
+        <li>Top nav middle category list collapses into hamburger drawer below 1024px</li>
+        <li>Hero chevrons shrink at tablet, vanish at mobile — photo card centers in viewport</li>
+        <li>Product family grid: 4 → 3 → 2 → 1 column as breakpoints shrink</li>
+        <li>Pricing comparison table 4-col → 2x2 → single-column accordion on mobile</li>
+        <li>Footer 5-col link grid → 2-col tablet → single-column accordion on mobile</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

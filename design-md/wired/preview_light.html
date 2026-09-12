@@ -1,0 +1,2078 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044) -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of Wired</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwf7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMw77I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* math */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuM3b7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuM2T7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwX7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwT7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwr7I_FMl_E.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwf7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMw77I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* math */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuM3b7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuM2T7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwX7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwT7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwr7I_FMl_E.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgEM86xRbPQ.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgEM86xRbPQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgEM86xRbPQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgEM86xRbPQ.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgEM86xRbPQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgEM86xRbPQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+:root {
+  --primary: #000000;
+  --on-primary: #ffffff;
+  --ink: #000000;
+  --ink-soft: #1a1a1a;
+  --body: #757575;
+  --hairline: #e0e0e0;
+  --canvas: #ffffff;
+  --canvas-soft: #f5f5f5;
+  --link: #057dbc;
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-serif: "Lora", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; min-width: 0; }
+body {
+  font-family: var(--font-serif);
+  background: var(--canvas);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a { color: var(--ink); }
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--canvas);
+  color: var(--ink);
+  border-bottom: 1px solid var(--hairline);
+  height: 64px;
+  padding: 0 48px;
+  font-size: 14px;
+}
+.nav-brand {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: -0.3px;
+  color: var(--ink);
+}
+.nav-links { list-style: none; padding: 0; margin: 0; display: flex; gap: 4px; }
+.nav-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  color: var(--ink);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+.nav-cta {
+  background: var(--primary);
+  color: var(--on-primary);
+  border: 1px solid var(--primary);
+  border-radius: 0;
+  padding: 0 18px;
+  height: 36px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.masthead {
+  background: var(--canvas);
+  border-bottom: 1px solid var(--hairline);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.masthead .wordmark {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: var(--ink);
+}
+
+.hero {
+  padding: 96px 48px 96px;
+  background: var(--canvas);
+  display: block;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.hero-content { max-width: 920px; }
+.hero .eyebrow {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 24px;
+}
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 7vw, 64px);
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: -0.5px;
+  color: var(--ink);
+  margin: 0 0 28px;
+}
+.hero p {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-weight: 400;
+  color: var(--ink-soft);
+  max-width: 720px;
+  margin: 0 0 40px;
+  line-height: 1.47;
+  letter-spacing: 0.108px;
+}
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  background: var(--primary);
+  color: var(--on-primary);
+  border: 1px solid var(--primary);
+  border-radius: 0;
+  padding: 0 22px;
+  height: 48px;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-outline {
+  background: var(--canvas);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  padding: 0 22px;
+  height: 48px;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-icon-circular {
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  background: var(--canvas);
+  color: var(--ink);
+  border: 1px solid var(--hairline);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+section {
+  padding: 96px 48px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.section-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 14px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.section-heading {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  line-height: 1.05;
+  margin: 0 0 14px;
+  color: var(--ink);
+}
+.section-lead {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  color: var(--ink-soft);
+  max-width: 720px;
+  margin: 0 0 48px;
+  line-height: 1.47;
+  letter-spacing: 0.108px;
+}
+
+/* Color palette */
+.palette-group { margin-top: 32px; }
+.palette-group h3 {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--ink);
+  margin: 0 0 16px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+.swatch {
+  border: 1px solid var(--hairline);
+  background: var(--canvas);
+  padding: 0;
+  overflow: hidden;
+}
+.swatch .chip {
+  height: 96px;
+  display: block;
+}
+.swatch .meta {
+  padding: 12px 14px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.swatch .name {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.4px;
+}
+.swatch .hex {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--body);
+  letter-spacing: 0.3px;
+}
+.swatch .role {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  color: var(--body);
+  margin-top: 2px;
+}
+
+/* Typography */
+.type-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 32px;
+  align-items: baseline;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.type-row:last-child { border-bottom: none; }
+.type-row .label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.type-row .label .token {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.4px;
+}
+.type-row .label .spec {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--body);
+}
+.type-row .sample { color: var(--ink); }
+
+/* Buttons grid */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.button-cell {
+  border: 1px solid var(--hairline);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  background: var(--canvas);
+}
+.button-cell .label {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: var(--ink);
+  text-transform: uppercase;
+}
+.button-cell .desc {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  color: var(--body);
+  line-height: 1.5;
+}
+
+/* Cards & containers */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.story-card-large {
+  background: var(--canvas);
+  color: var(--ink);
+  padding: 16px;
+  border: 1px solid var(--hairline);
+}
+.story-card-large .hero-img {
+  height: 220px;
+  background: var(--canvas-soft) linear-gradient(135deg, #f5f5f5 0%, #ebebeb 50%, #f5f5f5 100%);
+  margin-bottom: 16px;
+}
+.story-card-large .eyebrow {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.story-card-large h3 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.10;
+  letter-spacing: -0.3px;
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+.story-card-large p {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 0.09px;
+}
+.story-card {
+  background: var(--canvas);
+  color: var(--ink);
+  padding: 12px;
+  border: 1px solid var(--hairline);
+}
+.story-card .thumb {
+  height: 160px;
+  background: var(--canvas-soft) linear-gradient(135deg, #f5f5f5 0%, #ebebeb 50%, #f5f5f5 100%);
+  margin-bottom: 12px;
+}
+.story-card .eyebrow {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.story-card h4 {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.20;
+  letter-spacing: -0.28px;
+  color: var(--ink);
+  margin: 0 0 6px;
+}
+.story-card p {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  color: var(--body);
+  margin: 0;
+  line-height: 1.4;
+}
+.story-row-stack {
+  display: flex;
+  flex-direction: column;
+}
+.story-row {
+  background: var(--canvas);
+  color: var(--ink);
+  border-bottom: 1px solid var(--hairline);
+  padding: 16px 0;
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  gap: 20px;
+  align-items: start;
+}
+.story-row .body .eyebrow {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 6px;
+  display: block;
+}
+.story-row h5 {
+  font-family: var(--font-sans);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.29;
+  letter-spacing: -0.144px;
+  color: var(--ink);
+  margin: 0 0 4px;
+}
+.story-row .byline-row {
+  font-family: var(--font-serif);
+  font-size: 12.73px;
+  font-weight: 700;
+  line-height: 2.2;
+  letter-spacing: 0.108px;
+  color: var(--body);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.story-row .byline-row .avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  background: var(--canvas-soft);
+  border: 1px solid var(--hairline);
+}
+.story-row .thumb {
+  width: 120px;
+  height: 90px;
+  background: var(--canvas-soft) linear-gradient(135deg, #f5f5f5 0%, #ebebeb 50%, #f5f5f5 100%);
+}
+
+/* Forms */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.form-cell {
+  border: 1px solid var(--hairline);
+  padding: 24px;
+  background: var(--canvas);
+}
+.form-cell label {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: var(--ink);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.form-cell input[type="text"],
+.form-cell input[type="email"] {
+  width: 100%;
+  background: var(--canvas);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  padding: 12px 16px;
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.2;
+  box-sizing: border-box;
+}
+
+/* Spacing scale */
+.scale-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.scale-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 80px;
+  gap: 16px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.scale-row .token {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: var(--ink);
+}
+.scale-row .bar {
+  background: var(--ink);
+  height: 12px;
+}
+.scale-row .value {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--body);
+  text-align: right;
+}
+
+/* Radius */
+.radius-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+.radius-cell {
+  border: 1px solid var(--hairline);
+  padding: 28px;
+  background: var(--canvas);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+.radius-shape {
+  width: 80px;
+  height: 80px;
+  background: var(--ink);
+}
+.radius-shape.full { border-radius: 9999px; }
+
+/* Elevation */
+.elev-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+.elev-cell {
+  background: var(--canvas);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 160px;
+}
+.elev-cell.flat { border: none; }
+.elev-cell.hairline { border: 1px solid var(--hairline); }
+.elev-cell.heavy { border: 2px solid var(--ink); }
+.elev-cell .label {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: var(--ink);
+  text-transform: uppercase;
+}
+.elev-cell .desc {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  color: var(--body);
+}
+
+/* Signature components demos */
+.hero-band-demo {
+  background: var(--canvas);
+  border: 1px solid var(--hairline);
+  padding: 48px 32px;
+  margin-bottom: 24px;
+}
+.hero-band-demo .eyebrow {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--ink);
+  margin-bottom: 18px;
+}
+.hero-band-demo h3 {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 6vw, 64px);
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  line-height: 1.0;
+  color: var(--ink);
+  margin: 0;
+}
+.masthead-band-demo {
+  background: var(--canvas);
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.masthead-band-demo .wordmark {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: var(--ink);
+}
+.eyebrow-demo {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--ink);
+  display: inline-block;
+  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 6px;
+  margin-bottom: 24px;
+}
+.byline-demo {
+  font-family: var(--font-serif);
+  font-size: 12.73px;
+  font-weight: 700;
+  line-height: 2.2;
+  letter-spacing: 0.108px;
+  color: var(--body);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--hairline);
+  padding: 16px 20px;
+  margin-bottom: 24px;
+}
+.byline-demo .avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  background: var(--canvas-soft);
+  border: 1px solid var(--hairline);
+}
+.hairline-demo {
+  border-top: 1px solid var(--hairline);
+  margin: 24px 0;
+}
+.footer-demo {
+  background: var(--primary);
+  color: var(--on-primary);
+  padding: 48px 20px;
+}
+.footer-demo .cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.footer-demo .col h4 {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--on-primary);
+  margin: 0 0 12px;
+}
+.footer-demo .col a {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--on-primary);
+  text-decoration: none;
+  padding: 4px 0;
+  opacity: 0.85;
+}
+.footer-demo .col a + a { margin-top: 4px; }
+.footer-demo .wordmark {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 1px;
+  color: var(--on-primary);
+  text-align: center;
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive table */
+.resp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+}
+.resp-table th, .resp-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--hairline);
+  font-size: 14px;
+  vertical-align: top;
+}
+.resp-table th {
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-size: 12px;
+  background: var(--canvas-soft);
+}
+.resp-table td { color: var(--ink-soft); }
+
+/* Footer */
+.footer {
+  background: var(--canvas);
+  color: var(--ink);
+  padding: 32px 20px;
+  text-align: center;
+  border-top: 1px solid var(--hairline);
+  font-family: var(--font-sans);
+  font-size: 14px;
+}
+.footer a { color: var(--ink); }
+
+/* getdesign.md nav additions */
+.nav-left { display: flex; align-items: center; gap: 20px; }
+.nav-brand-link,
+.nav-brand-link:link,
+.nav-brand-link:visited,
+.nav-brand-link:hover,
+.nav-brand-link:active { text-decoration: none; color: inherit; }
+.nav-github,
+.nav-github:link,
+.nav-github:visited,
+.nav-github:hover,
+.nav-github:active {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: inherit;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid var(--hairline);
+  border-radius: 0;
+  opacity: 0.85;
+  transition: opacity 200ms ease, border-color 200ms ease;
+  line-height: 1;
+  white-space: nowrap;
+}
+.nav-github:hover { opacity: 1; border-color: var(--ink); }
+.nav-github svg { display: block; flex-shrink: 0; }
+
+/* getdesign.md nav centering */
+.nav { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; }
+.nav > .nav-left { justify-self: start; }
+.nav > .nav-links { justify-self: center; }
+.nav > :last-child { justify-self: end; }
+
+/* Responsive: always-on guards */
+img, video, svg { max-width: 100%; height: auto; }
+* { min-width: 0; }
+.palette-grid, .card-grid, .button-grid, .radius-grid, .elev-grid, .form-grid { min-width: 0; }
+
+/* Responsive: 1024px tablet reflow */
+@media (max-width: 1024px) {
+  section { padding: 72px 32px; }
+  .hero { padding: 72px 32px 72px; }
+  .nav { padding: 0 32px; grid-template-columns: auto auto; }
+  .nav > .nav-links { display: none; }
+  .type-row { grid-template-columns: 1fr; gap: 12px; }
+  .section-heading { font-size: 38px; }
+  .hero-band-demo { padding: 36px 24px; }
+}
+
+/* Responsive: 720px mobile reflow */
+@media (max-width: 720px) {
+  section { padding: 56px 20px; }
+  .hero { padding: 48px 20px 56px; }
+  .hero h1 { font-size: 40px; letter-spacing: -0.3px; }
+  .hero p { font-size: 17px; }
+  .nav { padding: 0 20px; height: 56px; }
+  .section-heading { font-size: 30px; }
+  .palette-grid, .card-grid, .button-grid, .radius-grid, .elev-grid, .form-grid { grid-template-columns: 1fr; }
+  .footer { padding: 24px 16px; font-size: 12px; }
+  .hero-band-demo h3 { font-size: 36px; }
+  .story-row { grid-template-columns: 1fr; }
+  .story-row .thumb { width: 100%; height: 180px; }
+}
+
+/* Kit-mirror token alias bridge */
+:root {
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--on-primary);
+  --color-foreground: var(--ink);
+  --color-foreground-muted: var(--body);
+  --color-foreground-tertiary: var(--body);
+  --color-foreground-disabled: var(--hairline);
+  --color-foreground-on-primary: #ffffff;
+  --color-canvas: var(--canvas);
+  --color-canvas-soft: var(--canvas-soft);
+  --color-surface-elevated: var(--canvas);
+  --color-border: var(--hairline);
+  --color-border-soft: var(--hairline);
+  --color-accent: var(--link);
+  --color-accent-soft: rgba(5, 125, 188, 0.10);
+  --color-success: #38a169;
+  --color-warning: #d69e2e;
+  --color-danger: #e53e3e;
+  --color-silver: var(--body);
+  --color-avatar-fill: rgba(0, 0, 0, 0.06);
+  --color-chip-bg: var(--canvas-soft);
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+  --shadow-md: 0 0 0 1px var(--hairline);
+  --shadow-lg: 0 0 0 1px var(--hairline);
+}
+
+/* ============================== EXAMPLES (kit-mirror) ============================== */
+.ex-section { padding: clamp(48px, 8vw, 96px) 0; border-top: 1px solid var(--color-border); background: var(--color-canvas); }
+.ex-section .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+.ex-h2 { font-family: var(--font-display); font-size: clamp(32px, 5vw, 50px); font-weight: 700; line-height: 1.0; letter-spacing: -0.5px; color: var(--color-foreground); margin: 0 0 12px; }
+.ex-intro { font-size: 16px; color: var(--color-foreground-muted); max-width: 720px; margin: 0 0 48px; line-height: 1.43; }
+.ex-mono { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase; color: var(--color-foreground-muted); }
+.ex-primary { background: var(--color-primary); color: var(--color-primary-foreground); border: 1px solid var(--color-primary); border-radius: 4px; padding: 0 22px; height: 48px; font-family: var(--font-sans); font-size: 16px; font-weight: 600; letter-spacing: 0.162px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+.ex-outlined { background: var(--color-canvas); color: var(--color-foreground); border: 1px solid var(--color-border-soft); border-radius: 4px; padding: 0 20px; height: 44px; font-family: var(--font-sans); font-size: 14px; font-weight: 500; line-height: 1; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+.ex-textlink { background: transparent; color: var(--color-foreground); border: none; padding: 6px; font-family: var(--font-sans); font-size: 14px; font-weight: 500; cursor: pointer; text-decoration: underline; }
+.ex-input { background: var(--color-canvas); border: 1px solid var(--color-border-soft); border-radius: 4px; padding: 0 16px; height: 48px; font-family: var(--font-sans); font-size: 16px; color: var(--color-foreground); width: 100%; box-sizing: border-box; }
+.ex-field { display: flex; flex-direction: column; gap: 8px; }
+.ex-field-label { font-size: 12px; font-weight: 400; letter-spacing: 0.5px; text-transform: uppercase; color: var(--color-foreground); font-family: var(--font-mono); }
+.ex-td { padding: 14px 16px; text-align: left; border-bottom: 1px solid var(--color-border); font-size: 14px; color: var(--color-foreground); line-height: 1.5; vertical-align: middle; }
+.ex-th { padding: 14px 16px; text-align: left; border-bottom: 1px solid var(--color-border); font-size: 11px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: var(--color-foreground-muted); background: var(--color-canvas-soft); font-family: var(--font-mono); }
+.ex-pager { height: 32px; min-width: 32px; padding: 0 10px; font-family: var(--font-mono); font-size: 12px; background: var(--color-canvas); border: 1px solid var(--color-border-soft); color: var(--color-foreground); border-radius: 4px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+.ex-pager.active { background: var(--color-foreground); color: var(--color-foreground-on-primary); border-color: var(--color-foreground); }
+.ex-grid-pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+.ex-grid-product { display: grid; grid-template-columns: 1fr; gap: 32px; }
+@media (min-width: 1024px) { .ex-grid-product { grid-template-columns: 1.1fr 1fr; } }
+.ex-grid-gallery { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 8px; }
+.ex-tile { background: var(--color-canvas-soft); border: 1px solid var(--color-border); border-radius: 4px; aspect-ratio: 1; padding: 12px; display: flex; align-items: flex-end; background-image: linear-gradient(135deg, var(--color-canvas-soft) 0%, var(--color-canvas) 50%, var(--color-canvas-soft) 100%); }
+.ex-tile.tall { grid-row: span 2; aspect-ratio: 1 / 2; }
+.ex-grid-sizes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.ex-size-btn { height: 44px; border-radius: 4px; font-family: var(--font-sans); font-size: 13px; font-weight: 500; line-height: 1; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; border: 1px solid var(--color-border-soft); background: var(--color-canvas); color: var(--color-foreground); }
+.ex-size-btn.selected { border-color: var(--color-foreground); background: var(--color-foreground); color: var(--color-foreground-on-primary); }
+.ex-size-btn:disabled { color: var(--color-foreground-disabled); text-decoration: line-through; cursor: not-allowed; }
+.ex-grid-appshell { display: grid; grid-template-columns: 1fr; border: 1px solid var(--color-border); border-radius: 6px; overflow: hidden; background: var(--color-canvas); }
+@media (min-width: 768px) { .ex-grid-appshell { grid-template-columns: 200px 1fr; } }
+.ex-grid-kpi { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.ex-grid-auth { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+.ex-grid-toasts { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+.ex-table-wrap { overflow-x: auto; }
+.ex-table-wrap table { width: 100%; min-width: 720px; border-collapse: collapse; font-size: 14px; }
+.ex-features { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--color-border); }
+.ex-features li { padding: 12px 0; font-size: 14px; border-bottom: 1px solid var(--color-border); display: flex; align-items: flex-start; gap: 10px; }
+.ex-features.dark { border-top-color: rgba(255,255,255,0.18); }
+.ex-features.dark li { border-bottom-color: rgba(255,255,255,0.10); }
+.ex-bullet { margin-top: 7px; width: 6px; height: 6px; background: var(--color-accent); border-radius: 9999px; flex-shrink: 0; }
+.ex-tier-card { border: 1px solid var(--color-border); border-radius: 6px; padding: 28px; background: var(--color-canvas); color: var(--color-foreground); display: flex; flex-direction: column; gap: 20px; }
+.ex-tier-card.dark { background: var(--color-foreground); color: var(--color-foreground-on-primary); border-color: var(--color-foreground); }
+.ex-tier-price { font-family: var(--font-display); font-size: clamp(40px, 5vw, 50px); font-weight: 700; line-height: 1; letter-spacing: -1.5px; }
+.ex-tier-cta { margin-top: auto; height: 44px; border-radius: 4px; font-family: var(--font-sans); font-size: 14px; font-weight: 600; letter-spacing: 0.162px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+.ex-tier-cta.ink { border: 1px solid var(--color-foreground); background: var(--color-foreground); color: var(--color-foreground-on-primary); }
+.ex-tier-cta.invert { border: 1px solid var(--color-canvas); background: var(--color-canvas); color: var(--color-foreground); }
+.ex-status { display: inline-block; padding: 4px 10px; border-radius: 4px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase; }
+.ex-status.ok { color: var(--color-success); background: var(--color-accent-soft); }
+.ex-status.pending { color: var(--color-foreground-muted); background: var(--color-chip-bg); }
+.ex-status.fail { color: var(--color-danger); background: var(--color-accent-soft); }
+.ex-frame { position: relative; border-radius: 6px; border: 1px solid var(--color-border); overflow: hidden; background: var(--color-canvas-soft); }
+.ex-frame.short { height: 420px; }
+.ex-frame.tall { height: clamp(480px, 70vh, 560px); }
+.ex-scrim { position: absolute; inset: 0; background: rgba(26, 24, 22, 0.5); }
+.ex-cart-drawer { position: absolute; top: 0; right: 0; bottom: 0; width: min(420px, 100%); background: var(--color-surface-elevated); border-left: 1px solid var(--color-border); box-shadow: var(--shadow-lg); display: flex; flex-direction: column; }
+.ex-modal-card { width: 100%; max-width: 480px; background: var(--color-surface-elevated); border-radius: 6px; box-shadow: var(--shadow-lg); border: 1px solid var(--color-border); }
+.ex-emptystate { border: 1px solid var(--color-border); border-radius: 6px; padding: 72px 24px; display: flex; flex-direction: column; align-items: center; text-align: center; background: var(--color-canvas); }
+.ex-toast { display: grid; grid-template-columns: 3px 1fr auto; background: var(--color-surface-elevated); border: 1px solid var(--color-border); border-radius: 4px; box-shadow: var(--shadow-md); overflow: hidden; }
+
+/* Brand-shape overrides — align kit-mirror block with Wired DESIGN.md spec */
+.ex-primary, .ex-outlined, .ex-tier-cta, .ex-pager, .ex-size-btn {
+  border-radius: 0;
+  height: 44px;
+  padding: 0 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.ex-pager { height: 32px; min-width: 32px; padding: 0 10px; font-family: "Inter", sans-serif; font-size: 12px; letter-spacing: 0.4px; }
+.ex-size-btn { height: 44px; padding: 0; font-size: 13px; }
+.ex-tier-card, .ex-frame, .ex-emptystate, .ex-toast, .ex-tile, .ex-modal-card {
+  border-radius: 0;
+  border: 1px solid #e0e0e0;
+}
+.ex-input {
+  border-radius: 0;
+  height: 44px;
+  padding: 0 16px;
+  font-family: "Inter", sans-serif;
+  border: 1px solid #000000;
+  font-size: 16px;
+}
+.ex-mono, .ex-th, .ex-field-label {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.ex-h2, .ex-tier-price {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#cards">Cards</a></li>
+    <li><a href="#signature">Signature</a></li>
+  </ul>
+
+  <a class="nav-cta" href="#">Subscribe</a>
+</nav>
+
+<header class="masthead">
+  <span class="wordmark">Wired</span>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">Design System</p>
+    <h1>Design System Analysis of Wired</h1>
+    <p>A flagship technology-magazine surface built as a strict editorial duet — stark black wordmark on a white canvas, a high-contrast display serif at 64 pixels, a humanist serif for long-form reading, and a clean sans for nav, eyebrows, and buttons. Square corners, hairline rules, no chromatic accent.</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="#">Subscribe</a>
+      <a class="btn-outline" href="#">Read latest</a>
+    </div>
+  </div>
+</section>
+
+<section id="colors">
+  <p class="section-eyebrow">Color Palette</p>
+  <h2 class="section-heading">A strict black-on-white duet.</h2>
+  <p class="section-lead">The brand operates with a single ink black, two surface neutrals, a body grey, and a hairline. The only chromatic accent is the inline link blue, reserved for body copy inside articles — never used on buttons, navigation, eyebrows, or any UI affordance. The entire chromatic identity is a strict editorial duet that reads as a printed magazine ported to the web. No gradient, no marketing chrome, no atmospheric backdrop. Surface contrast and 1 px hairlines carry every cue.</p>
+
+  <div class="palette-group">
+    <h3>Brand &amp; Accent</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#000000;"></span><div class="meta"><span class="name">Ink Black</span><span class="hex">#000000</span><span class="role">Wordmark, headlines, CTAs, footer fill.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#057dbc;"></span><div class="meta"><span class="name">Link Blue</span><span class="hex">#057dbc</span><span class="role">Inline body links inside article copy only.</span></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Surface</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#ffffff; border-bottom:1px solid #e0e0e0;"></span><div class="meta"><span class="name">Canvas</span><span class="hex">#ffffff</span><span class="role">Default page background.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#f5f5f5;"></span><div class="meta"><span class="name">Canvas Soft</span><span class="hex">#f5f5f5</span><span class="role">Rare tint, comment block, hover row.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#e0e0e0;"></span><div class="meta"><span class="name">Hairline</span><span class="hex">#e0e0e0</span><span class="role">1 px dividers between story rows.</span></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Text</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#000000;"></span><div class="meta"><span class="name">Ink</span><span class="hex">#000000</span><span class="role">Every headline, every body paragraph.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#1a1a1a;"></span><div class="meta"><span class="name">Ink Soft</span><span class="hex">#1a1a1a</span><span class="role">Near-black variant for caption emphasis.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#757575;"></span><div class="meta"><span class="name">Body</span><span class="hex">#757575</span><span class="role">Bylines, timestamps, secondary metadata.</span></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Semantic</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#057dbc;"></span><div class="meta"><span class="name">Link</span><span class="hex">#057dbc</span><span class="role">Inline body links — never on UI buttons.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="typography">
+  <p class="section-eyebrow">Typography</p>
+  <h2 class="section-heading">Serif for narrative, sans for structure.</h2>
+  <p class="section-lead">Three families ladder the system. Playfair Display (substitute for the proprietary WiredDisplay) carries every editorial headline at weight 400 — the brand never promotes display weight to 700+; the high-contrast didone reads as elegant by virtue of typeface design, not bold weight. Lora (substitute for BreveText) sets every body paragraph and byline at 16–19 px with relaxed line-heights tuned for long-form reading density. Inter (substitute for Apercu) handles every nav label, button, eyebrow, and metadata caption at weights 400 and 700.</p>
+
+  <div class="type-row"><div class="label"><span class="token">display-hero</span><span class="spec">Playfair Display · 64 / 59.5 / -0.5</span></div><div class="sample" style="font-family:var(--font-display); font-size:64px; font-weight:400; line-height:0.93; letter-spacing:-0.5px;">A cover-story headline.</div></div>
+  <div class="type-row"><div class="label"><span class="token">display-lg</span><span class="spec">Playfair Display · 48 / 50.4 / -0.4</span></div><div class="sample" style="font-family:var(--font-display); font-size:48px; font-weight:400; line-height:1.05; letter-spacing:-0.4px;">A major section heading.</div></div>
+  <div class="type-row"><div class="label"><span class="token">display-md</span><span class="spec">Playfair Display · 32 / 35.2 / -0.3</span></div><div class="sample" style="font-family:var(--font-display); font-size:32px; font-weight:400; line-height:1.1; letter-spacing:-0.3px;">Story-card large variant.</div></div>
+  <div class="type-row"><div class="label"><span class="token">display-sm</span><span class="spec">Playfair Display · 26 / 28.08 / 0</span></div><div class="sample" style="font-family:var(--font-display); font-size:26px; font-weight:400; line-height:1.08;">Sub-display heading.</div></div>
+  <div class="type-row"><div class="label"><span class="token">display-xs</span><span class="spec">Inter · 20 / 24 / -0.28</span></div><div class="sample" style="font-family:var(--font-sans); font-size:20px; font-weight:700; line-height:1.2; letter-spacing:-0.28px;">Category callout.</div></div>
+  <div class="type-row"><div class="label"><span class="token">body-serif-lg</span><span class="spec">Lora · 19 / 27.93 / 0.108</span></div><div class="sample" style="font-family:var(--font-serif); font-size:19px; font-weight:400; line-height:1.47; letter-spacing:0.108px;">Lead paragraph of an article. The brand uses a humanist serif for long-form body copy.</div></div>
+  <div class="type-row"><div class="label"><span class="token">body-serif-md</span><span class="spec">Lora · 16 / 24 / 0.09</span></div><div class="sample" style="font-family:var(--font-serif); font-size:16px; font-weight:400; line-height:1.5; letter-spacing:0.09px;">Default article body. A humanist serif tuned for comfortable reading density.</div></div>
+  <div class="type-row"><div class="label"><span class="token">body-md</span><span class="spec">Inter · 17 / 20 / 0</span></div><div class="sample" style="font-family:var(--font-sans); font-size:17px; font-weight:400; line-height:1.18;">Sans body for nav and metadata.</div></div>
+  <div class="type-row"><div class="label"><span class="token">body-md-strong</span><span class="spec">Inter · 17 / 22 / -0.144</span></div><div class="sample" style="font-family:var(--font-sans); font-size:17px; font-weight:700; line-height:1.29; letter-spacing:-0.144px;">Bold sans body for emphasis.</div></div>
+  <div class="type-row"><div class="label"><span class="token">body-sm</span><span class="spec">Inter · 14 / 18 / 0.4</span></div><div class="sample" style="font-family:var(--font-sans); font-size:14px; font-weight:400; line-height:1.29; letter-spacing:0.4px;">Secondary sans body. Caption and footer copy.</div></div>
+  <div class="type-row"><div class="label"><span class="token">body-sm-strong</span><span class="spec">Inter · 14 / 18 / 0.4</span></div><div class="sample" style="font-family:var(--font-sans); font-size:14px; font-weight:700; line-height:1.29; letter-spacing:0.4px;">Bold caption and nav-link.</div></div>
+  <div class="type-row"><div class="label"><span class="token">byline</span><span class="spec">Lora · 12.73 / 28 / 0.108</span></div><div class="sample" style="font-family:var(--font-serif); font-size:12.73px; font-weight:700; line-height:2.2; letter-spacing:0.108px;">By M. Reyes · May 11, 2026</div></div>
+  <div class="type-row"><div class="label"><span class="token">caption</span><span class="spec">Inter · 12 / 16 / 0</span></div><div class="sample" style="font-family:var(--font-sans); font-size:12px; font-weight:400; line-height:1.33;">Fine print and image captions.</div></div>
+  <div class="type-row"><div class="label"><span class="token">button-md</span><span class="spec">Inter · 16 / 20 / 0.3</span></div><div class="sample" style="font-family:var(--font-sans); font-size:16px; font-weight:700; line-height:1.25; letter-spacing:0.3px;">Subscribe</div></div>
+  <div class="type-row"><div class="label"><span class="token">family-system</span><span class="spec">3 families · Playfair / Lora / Inter</span></div><div class="sample"><span style="font-family:var(--font-display); font-size:24px;">Playfair Display</span> · <span style="font-family:var(--font-serif); font-size:18px;">Lora</span> · <span style="font-family:var(--font-sans); font-size:16px; font-weight:700;">Inter</span></div></div>
+</section>
+
+<section id="buttons">
+  <p class="section-eyebrow">Buttons</p>
+  <h2 class="section-heading">Square corners, no compromise.</h2>
+  <p class="section-lead">Every button on the brand is a sharp rectangle. The brand reads as a printed magazine — square corners are non-negotiable across newsletter sign-ups, login forms, "Read more" CTAs, and inline calls to action. The only circular shape is the small icon container used for social-share affordances. Labels set in Inter weight 700 with 0.3 px tracking. Touch targets land at 44 / 48 px tall — comfortably WCAG-compliant.</p>
+  <div class="button-grid">
+    <div class="button-cell">
+      <span class="label">button-primary</span>
+      <button class="btn-primary" type="button">Subscribe</button>
+      <span class="desc">Ink black fill, white label, 0 px corners. The default CTA.</span>
+    </div>
+    <div class="button-cell">
+      <span class="label">button-outline</span>
+      <button class="btn-outline" type="button">Read latest</button>
+      <span class="desc">White surface, 1 px ink border, square corners.</span>
+    </div>
+    <div class="button-cell">
+      <span class="label">button-icon-circular</span>
+      <button class="btn-icon-circular" type="button" aria-label="Share">↗</button>
+      <span class="desc">The only circular affordance — used for social-share icons.</span>
+    </div>
+  </div>
+</section>
+
+<section id="cards">
+  <p class="section-eyebrow">Cards &amp; Containers</p>
+  <h2 class="section-heading">Magazine cards, hairline rules.</h2>
+  <p class="section-lead">A printed-magazine grid: one large feature card, a row of secondary cards, then a vertical stack of bylined story rows separated by 1 px hairlines. No drop shadows — the brand uses surface contrast and hairlines for elevation. Story-card-large carries a 32 px Playfair display headline; story-card uses Inter weight 700 at 20 px for category callouts; story-row uses Inter weight 700 body for the headline and a BreveText byline strip beneath.</p>
+  <div class="card-grid">
+    <div class="story-card-large">
+      <div class="hero-img"></div>
+      <span class="eyebrow">Cover Story</span>
+      <h3>The next decade of computational news.</h3>
+      <p>How a generation of newsroom engineers is rebuilding the editorial stack around inference, retrieval, and live data — and what it means for the byline.</p>
+    </div>
+    <div class="story-card">
+      <div class="thumb"></div>
+      <span class="eyebrow">Science</span>
+      <h4>A new lattice for room-temperature superconductors.</h4>
+      <p>Why the lab in Zurich is the one to watch.</p>
+    </div>
+    <div class="story-card">
+      <div class="thumb"></div>
+      <span class="eyebrow">Business</span>
+      <h4>What the founders are buying instead of ads.</h4>
+      <p>Distribution is the moat — community is the price.</p>
+    </div>
+  </div>
+
+  <div class="story-row-stack" style="margin-top:48px;">
+    <article class="story-row">
+      <div class="body">
+        <span class="eyebrow">Culture</span>
+        <h5>The film festival is the last analog briefing room.</h5>
+        <div class="byline-row"><span class="avatar"></span><span>By A. Park · May 11, 2026</span></div>
+      </div>
+      <div class="thumb"></div>
+    </article>
+    <article class="story-row">
+      <div class="body">
+        <span class="eyebrow">Security</span>
+        <h5>Why the supply chain is suddenly the threat model.</h5>
+        <div class="byline-row"><span class="avatar"></span><span>By L. Okafor · May 10, 2026</span></div>
+      </div>
+      <div class="thumb"></div>
+    </article>
+    <article class="story-row">
+      <div class="body">
+        <span class="eyebrow">Gear</span>
+        <h5>Field-tested: the season's most over-engineered headphones.</h5>
+        <div class="byline-row"><span class="avatar"></span><span>By S. Chen · May 9, 2026</span></div>
+      </div>
+      <div class="thumb"></div>
+    </article>
+  </div>
+</section>
+
+<section id="forms">
+  <p class="section-eyebrow">Form Elements</p>
+  <h2 class="section-heading">Inputs are rectangles, too.</h2>
+  <p class="section-lead">Text inputs render with a 1 px solid ink border, 0 px corners, sans body type, and generous tap area. The brand never softens form geometry.</p>
+  <div class="form-grid">
+    <div class="form-cell">
+      <label for="newsletter-email">Email address</label>
+      <input id="newsletter-email" type="email" placeholder="you@inbox.com">
+    </div>
+    <div class="form-cell">
+      <label for="search-q">Search</label>
+      <input id="search-q" type="text" placeholder="Search articles">
+    </div>
+  </div>
+</section>
+
+<section id="spacing">
+  <p class="section-eyebrow">Spacing Scale</p>
+  <h2 class="section-heading">A 4 px rhythm from xxs to 4xl.</h2>
+  <p class="section-lead">Section padding lands at the 48 px step (4xl) on desktop, dropping to 32 px (3xl) at tablet and 20 px (xl) at mobile. Story rows stack at the 16 px step. The base unit is 4 px and every step is a multiple of it. The scale ladders xxs (2 px) → xs (4 px) → sm (8 px) → md (12 px) → lg (16 px) → xl (20 px) → 2xl (24 px) → 3xl (32 px) → 4xl (48 px), giving the editorial rhythm its discipline.</p>
+  <div class="scale-grid">
+    <div class="scale-row"><span class="token">xxs</span><span class="bar" style="width:2px;"></span><span class="value">2px</span></div>
+    <div class="scale-row"><span class="token">xs</span><span class="bar" style="width:4px;"></span><span class="value">4px</span></div>
+    <div class="scale-row"><span class="token">sm</span><span class="bar" style="width:8px;"></span><span class="value">8px</span></div>
+    <div class="scale-row"><span class="token">md</span><span class="bar" style="width:12px;"></span><span class="value">12px</span></div>
+    <div class="scale-row"><span class="token">lg</span><span class="bar" style="width:16px;"></span><span class="value">16px</span></div>
+    <div class="scale-row"><span class="token">xl</span><span class="bar" style="width:20px;"></span><span class="value">20px</span></div>
+    <div class="scale-row"><span class="token">2xl</span><span class="bar" style="width:24px;"></span><span class="value">24px</span></div>
+    <div class="scale-row"><span class="token">3xl</span><span class="bar" style="width:32px;"></span><span class="value">32px</span></div>
+    <div class="scale-row"><span class="token">4xl</span><span class="bar" style="width:48px;"></span><span class="value">48px</span></div>
+  </div>
+</section>
+
+<section id="radius">
+  <p class="section-eyebrow">Border Radius Scale</p>
+  <h2 class="section-heading">Two states: square or circle.</h2>
+  <p class="section-lead">The brand uses 0 px corners everywhere except the small circular icon container. There is no intermediate radius.</p>
+  <div class="radius-grid">
+    <div class="radius-cell">
+      <div class="radius-shape"></div>
+      <div>
+        <div style="font-family:var(--font-sans); font-weight:700; font-size:14px; letter-spacing:0.4px; color:var(--ink); text-transform:uppercase;">rounded.none</div>
+        <div style="font-family:var(--font-serif); font-size:14px; color:var(--body); margin-top:6px;">0 px corners. Used on buttons, inputs, story cards, footer.</div>
+      </div>
+    </div>
+    <div class="radius-cell">
+      <div class="radius-shape full"></div>
+      <div>
+        <div style="font-family:var(--font-sans); font-weight:700; font-size:14px; letter-spacing:0.4px; color:var(--ink); text-transform:uppercase;">rounded.full</div>
+        <div style="font-family:var(--font-serif); font-size:14px; color:var(--body); margin-top:6px;">9999 px corners. Only used for circular icon containers and avatar crops.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="elevation">
+  <p class="section-eyebrow">Elevation &amp; Depth</p>
+  <h2 class="section-heading">Three levels, no drop shadows.</h2>
+  <p class="section-lead">Surface contrast and hairlines carry every visual hierarchy cue. The brand never uses a soft drop shadow — there is no Material-style elevation ladder, no SaaS-style card glow, no atmospheric fade. Three discrete states: flat (default), hairline (1 px hairline border), and heavy (2 px solid ink border, reserved for the Subscribe CTA on campaign moments).</p>
+  <div class="elev-grid">
+    <div class="elev-cell flat">
+      <span class="label">Level 0 — Flat</span>
+      <span class="desc">No shadow, no border. Default — almost every surface lives at this level.</span>
+    </div>
+    <div class="elev-cell hairline">
+      <span class="label">Level 1 — Hairline</span>
+      <span class="desc">1 px solid hairline border. Story-row dividers and input borders.</span>
+    </div>
+    <div class="elev-cell heavy">
+      <span class="label">Level 2 — Heavy Black</span>
+      <span class="desc">2 px solid ink border. Subscribe CTA on certain campaign moments.</span>
+    </div>
+  </div>
+</section>
+
+<section id="signature">
+  <p class="section-eyebrow">Signature Components</p>
+  <h2 class="section-heading">The pieces that make this Wired.</h2>
+  <p class="section-lead">A hero band hosting the cover-story headline at 64 px Playfair, a thin masthead band with the centred wordmark, category eyebrows above story headlines in 14 px Inter caps, byline rows under article titles in 12.73 px Lora with relaxed line-height 2.2, hairline dividers between rows, and a black footer band repeating the wordmark beneath topic columns.</p>
+
+  <div class="hero-band-demo">
+    <span class="eyebrow">Hero band — display-hero · 64 px</span>
+    <h3>A single cover headline holds the page.</h3>
+  </div>
+
+  <div class="masthead-band-demo">
+    <span class="wordmark">Wired</span>
+  </div>
+
+  <span class="eyebrow-demo">Category eyebrow — Inter 14 / 700 / 0.4 tracking</span>
+
+  <div class="byline-demo"><span class="avatar"></span><span>By M. Reyes · Senior writer · May 11, 2026</span></div>
+
+  <div class="hairline-demo"></div>
+
+  <div class="footer-demo">
+    <div class="cols">
+      <div class="col"><h4>Topics</h4><a href="#">Science</a><a href="#">Security</a><a href="#">Business</a><a href="#">Culture</a></div>
+      <div class="col"><h4>Magazine</h4><a href="#">Subscribe</a><a href="#">Newsletters</a><a href="#">Podcasts</a><a href="#">Events</a></div>
+      <div class="col"><h4>Contact</h4><a href="#">Editorial</a><a href="#">Advertising</a><a href="#">Press</a><a href="#">Careers</a></div>
+      <div class="col"><h4>Company</h4><a href="#">About</a><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Accessibility</a></div>
+    </div>
+    <div class="wordmark">Wired</div>
+  </div>
+</section>
+
+<section id="responsive">
+  <p class="section-eyebrow">Responsive Behavior</p>
+  <h2 class="section-heading">Three breakpoints, one rhythm.</h2>
+  <p class="section-lead">The magazine grid collapses cleanly: hero stays full width, secondary cards drop to 1-up at mobile, story rows stay single-column at every viewport.</p>
+  <table class="resp-table">
+    <thead>
+      <tr><th>Breakpoint</th><th>Width</th><th>Key changes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Mobile</td><td>&lt; 768 px</td><td>Cover hero scales 64 → 40 px. All grids 1-up. Hamburger nav.</td></tr>
+      <tr><td>Tablet</td><td>768 – 1023 px</td><td>2-up secondary story grid. Section padding 72 / 32.</td></tr>
+      <tr><td>Desktop</td><td>≥ 1024 px</td><td>Full magazine grid. Section padding 96 / 48.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ============================== EXAMPLES (kit-mirror) ============================== -->
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Pricing Tiers</h2>
+    <p class="ex-intro">Three-up plan grid with the middle tier polarity-flipped. Mono uppercase tier name, display numeral price, hairline-divided feature list.</p>
+    <div class="ex-grid-pricing">
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">/0.1 · Starter</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$9</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For individuals getting started.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Core features</li>
+          <li><span class="ex-bullet"></span>Up to 3 projects</li>
+          <li><span class="ex-bullet"></span>Community support</li>
+        </ul>
+        <button class="ex-tier-cta ink">Get started</button>
+      </div>
+      <div class="ex-tier-card dark">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span class="ex-mono" style="color:rgba(255,255,255,0.55);">/0.2 · Pro</span>
+          <span style="font-family:var(--font-mono); font-size:10px; letter-spacing:0.5px; text-transform:uppercase; color:var(--color-accent); display:inline-flex; align-items:center; gap:6px;"><span style="width:6px; height:6px; background:var(--color-accent); border-radius:9999px;"></span>Most popular</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$29</span><span style="font-family:var(--font-mono); font-size:12px; color:rgba(255,255,255,0.55);">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:rgba(255,255,255,0.72); margin:0;">For teams ready to ship.</p>
+        <ul class="ex-features dark">
+          <li><span class="ex-bullet"></span>Everything in Starter</li>
+          <li><span class="ex-bullet"></span>Unlimited projects</li>
+          <li><span class="ex-bullet"></span>Email support</li>
+          <li><span class="ex-bullet"></span>Advanced analytics</li>
+        </ul>
+        <button class="ex-tier-cta invert">Start free trial</button>
+      </div>
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">/0.3 · Team</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$99</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For organizations operating at scale.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Everything in Pro</li>
+          <li><span class="ex-bullet"></span>SSO + audit log</li>
+          <li><span class="ex-bullet"></span>Priority support</li>
+          <li><span class="ex-bullet"></span>SLA &amp; onboarding</li>
+        </ul>
+        <button class="ex-tier-cta ink">Talk to sales</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Product Selector
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Product Selector</h2>
+    <p class="ex-intro">Image gallery + variant picker + add-to-bag CTA. Color swatches use a 1px ink ring for selection; size pills polarity-flip to ink fill.</p>
+    <div class="ex-grid-product">
+      <div class="ex-grid-gallery">
+        <div class="ex-tile tall"><span class="ex-mono" style="font-size:10px;">/IMG · 01</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG · 02</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG · 03</span></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <div class="ex-mono" style="display:flex; align-items:center; gap:8px;"><span style="width:8px; height:8px; background:var(--color-accent); border-radius:9999px;"></span>/0.1 · Goods</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(24px, 4.5vw, 34px); font-weight:400; line-height:1.06; letter-spacing:-0.4px; color:var(--color-foreground); margin:0;">Field Tee, 6-Pack</h3>
+        <div style="display:flex; align-items:baseline; gap:12px;">
+          <span style="font-family:var(--font-display); font-size:clamp(32px, 5vw, 40px); font-weight:400; line-height:1; letter-spacing:-0.4px; color:var(--color-foreground);">$192</span>
+          <span class="ex-mono">★★★★☆ &nbsp;·&nbsp; 117 reviews</span>
+        </div>
+        <p style="font-size:15px; color:var(--color-foreground-muted); line-height:1.5; margin:0;">Six tees in our default rotation: two bone, two stone, two ink. Ultra-soft 100% cotton, dyed with our proprietary palette, pre-washed so the first wear feels like the fiftieth.</p>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Hand cut and sewn locally</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Pre-washed, pre-shrunk cotton</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Reinforced collar and cuffs</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Carbon-neutral shipping</li>
+        </ul>
+        <div>
+          <div class="ex-mono" style="margin-bottom:10px;">Color · Bone</div>
+          <div style="display:flex; gap:10px;">
+            <button aria-label="Bone" style="width:32px; height:32px; border-radius:9999px; background:#ececec; border:1px solid var(--color-border-soft); box-shadow:0 0 0 2px var(--color-canvas), 0 0 0 3px var(--color-foreground); cursor:pointer; padding:0;"></button>
+            <button aria-label="Stone" style="width:32px; height:32px; border-radius:9999px; background:#aaaaaa; border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+            <button aria-label="Ink" style="width:32px; height:32px; border-radius:9999px; background:#1e2124; border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+          </div>
+        </div>
+        <div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+            <span class="ex-mono">Size</span>
+            <a href="#" style="font-family:var(--font-mono); font-size:11px; letter-spacing:0.5px; text-transform:uppercase; color:var(--color-foreground); text-decoration:underline;">Size guide</a>
+          </div>
+          <div class="ex-grid-sizes">
+            <button class="ex-size-btn" disabled>XXS</button>
+            <button class="ex-size-btn">XS</button>
+            <button class="ex-size-btn selected">S</button>
+            <button class="ex-size-btn">M</button>
+            <button class="ex-size-btn">L</button>
+            <button class="ex-size-btn">XL</button>
+            <button class="ex-size-btn">2XL</button>
+            <button class="ex-size-btn">3XL</button>
+          </div>
+        </div>
+        <button class="ex-primary" style="width:100%; margin-top:4px;">Add to bag</button>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Shopping Cart
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Shopping Cart</h2>
+    <p class="ex-intro">Right-anchored drawer over a 50% ink scrim. Each line is a thumb + name/variant/qty stack + price + Remove text-link. Subtotal sits above a full-width primary Checkout, with a Continue link below.</p>
+    <div class="ex-frame tall">
+      <div style="padding:32px; opacity:0.5; display:flex; flex-direction:column; gap:20px;">
+        <div style="height:14px; width:40%; background:var(--color-border); border-radius:2px;"></div>
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px;">
+          <div style="height:120px; background:var(--color-border); border-radius:4px;"></div>
+          <div style="height:120px; background:var(--color-border); border-radius:4px;"></div>
+          <div style="height:120px; background:var(--color-border); border-radius:4px;"></div>
+        </div>
+      </div>
+      <div class="ex-scrim"></div>
+      <aside class="ex-cart-drawer">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:20px 24px; border-bottom:1px solid var(--color-border);">
+          <div>
+            <div class="ex-mono" style="margin-bottom:4px;">/0.1 · Cart</div>
+            <h4 style="font-family:var(--font-display); font-size:22px; font-weight:400; line-height:1.0; letter-spacing:-0.4px; color:var(--color-foreground); margin:0;">Shopping Cart</h4>
+          </div>
+          <button aria-label="Close" style="background:transparent; border:none; color:var(--color-foreground); font-size:18px; cursor:pointer; padding:4px 8px;">×</button>
+        </div>
+        <ul style="list-style:none; padding:0; margin:0; flex:1; overflow-y:auto;">
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px; border-bottom:1px solid var(--color-border);">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border); border-radius:4px; display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/01</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Field Tee, 6-Pack</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Bone · S</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$192.00</span>
+          </li>
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px; border-bottom:1px solid var(--color-border);">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border); border-radius:4px; display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/02</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Compass Hip Bag</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Salmon</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$90.00</span>
+          </li>
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px;">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border); border-radius:4px; display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/03</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Range Tote</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Bone / Ink</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$140.00</span>
+          </li>
+        </ul>
+        <div style="border-top:1px solid var(--color-border); padding:20px 24px;">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:4px;">
+            <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Subtotal</span>
+            <span style="font-family:var(--font-display); font-size:22px; font-weight:400; letter-spacing:-0.4px; color:var(--color-foreground);">$422.00</span>
+          </div>
+          <p style="font-size:12px; color:var(--color-foreground-muted); margin:0 0 16px;">Shipping and taxes calculated at checkout.</p>
+          <button class="ex-primary" style="width:100%;">Checkout</button>
+          <div style="margin-top:12px; text-align:center; font-size:13px; color:var(--color-foreground-muted);">or <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Continue Shopping →</a></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable App Shell
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">App Shell</h2>
+    <p class="ex-intro">Sidebar navigation + breadcrumb topbar + page heading + KPI strip + activity feed. The everyday product surface.</p>
+    <div class="ex-grid-appshell">
+      <aside style="background:var(--color-canvas-soft); border-right:1px solid var(--color-border); padding:20px 12px; display:flex; flex-direction:column; gap:4px;">
+        <div class="ex-mono" style="padding:8px 12px 16px;">/Workspace</div>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:0; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◇</span>Overview</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:0; background:var(--color-foreground); color:var(--color-foreground-on-primary); font-weight:600; text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">▤</span>Operations</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:0; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◫</span>Datasets</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:0; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◐</span>Models</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:0; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◧</span>Settings</a>
+      </aside>
+      <div style="display:flex; flex-direction:column;">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 24px; border-bottom:1px solid var(--color-border);">
+          <div style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--color-foreground-muted); font-family:var(--font-mono);">
+            <span>/Operations</span><span style="color:var(--color-foreground-tertiary);">›</span><span style="color:var(--color-foreground);">Decision Logs</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <span style="font-size:13px; color:var(--color-foreground-muted);">M. Reyes</span>
+            <div style="width:32px; height:32px; border-radius:9999px; background:var(--color-avatar-fill); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:600; color:var(--color-foreground);">MR</div>
+          </div>
+        </div>
+        <div style="padding:32px 24px; display:flex; flex-direction:column; gap:32px;">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+              <span style="width:8px; height:8px; background:var(--color-accent); border-radius:9999px;"></span>
+              <span class="ex-mono">Operations · Live</span>
+            </div>
+            <h3 style="font-family:var(--font-display); font-size:clamp(24px, 4.5vw, 34px); font-weight:400; line-height:1.06; letter-spacing:-0.4px; color:var(--color-foreground); margin:0;">Decision Logs</h3>
+          </div>
+          <div class="ex-grid-kpi">
+            <div style="border:1px solid var(--color-border); border-radius:0; padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Active operators</div>
+              <div style="font-family:var(--font-display); font-size:32px; font-weight:400; line-height:1; color:var(--color-foreground); letter-spacing:-0.4px;">2,481</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-success); font-family:var(--font-mono);">+4.1%</div>
+            </div>
+            <div style="border:1px solid var(--color-border); border-radius:0; padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Decisions / hr</div>
+              <div style="font-family:var(--font-display); font-size:32px; font-weight:400; line-height:1; color:var(--color-foreground); letter-spacing:-0.4px;">17,209</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-success); font-family:var(--font-mono);">+12.4%</div>
+            </div>
+            <div style="border:1px solid var(--color-border); border-radius:0; padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Pending reviews</div>
+              <div style="font-family:var(--font-display); font-size:32px; font-weight:400; line-height:1; color:var(--color-foreground); letter-spacing:-0.4px;">38</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-danger); font-family:var(--font-mono);">−9 vs. yesterday</div>
+            </div>
+          </div>
+          <div>
+            <div class="ex-mono" style="margin-bottom:12px;">Recent Activity</div>
+            <ul style="list-style:none; padding:0; margin:0; border:1px solid var(--color-border); border-radius:0; overflow:hidden;">
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:14px 16px; border-bottom:1px solid var(--color-border); align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.1</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:42</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">M. Reyes</strong> · Promoted dataset v2024.11.21 to production</span>
+              </li>
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:14px 16px; border-bottom:1px solid var(--color-border); align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.2</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:36</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">A. Park</strong> · Approved decision-rule "Northwind Triage"</span>
+              </li>
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:14px 16px; align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.3</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:29</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">System</strong> · Backfilled 412 records into operations log</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Data Table
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Data Table</h2>
+    <p class="ex-intro">Mono uppercase column headers, alternating canvas rows, status pills wired to semantic color tokens, hairline row dividers, and a footer pager.</p>
+    <div style="border:1px solid var(--color-border); border-radius:0; overflow:hidden;">
+      <div class="ex-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th class="ex-th" style="width:40px;"><input type="checkbox" aria-label="Select all"></th>
+              <th class="ex-th" style="width:120px;">ID</th>
+              <th class="ex-th" style="width:160px;">Actor</th>
+              <th class="ex-th">Target</th>
+              <th class="ex-th" style="width:140px;">Status</th>
+              <th class="ex-th" style="width:140px;">When ↓</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2401</td>
+              <td class="ex-td">M. Reyes</td>
+              <td class="ex-td">Northwind Triage</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:42 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2400</td>
+              <td class="ex-td">A. Park</td>
+              <td class="ex-td">Atlas Migration v3</td>
+              <td class="ex-td"><span class="ex-status pending">Pending</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:36 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2399</td>
+              <td class="ex-td">L. Okafor</td>
+              <td class="ex-td">Watchlist Sync</td>
+              <td class="ex-td"><span class="ex-status fail">Failed</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:21 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2398</td>
+              <td class="ex-td">S. Chen</td>
+              <td class="ex-td">Supply Chain Index</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:14 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2397</td>
+              <td class="ex-td">System</td>
+              <td class="ex-td">Nightly Backfill</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">07:55 UTC</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-top:1px solid var(--color-border); background:var(--color-canvas-soft);">
+        <span style="font-size:12px; color:var(--color-foreground-muted); font-family:var(--font-mono);">1–5 of 412</span>
+        <div style="display:flex; gap:4px;">
+          <button class="ex-pager" aria-label="Previous">‹</button>
+          <button class="ex-pager active" aria-current="page">1</button>
+          <button class="ex-pager">2</button>
+          <button class="ex-pager">3</button>
+          <button class="ex-pager" aria-label="Next">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Auth Forms
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Auth Forms</h2>
+    <p class="ex-intro">Centered cards on canvas, full-width primary CTA, mono uppercase field labels, hairline-divided SSO fallback.</p>
+    <div class="ex-grid-auth">
+      <div class="ex-auth-form-card" style="background:var(--color-canvas); border:1px solid var(--color-border); border-radius:0; padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">/0.1 · Sign in</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:400; line-height:1.05; letter-spacing:-0.4px; color:var(--color-foreground); margin:0 0 24px;">Welcome back.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="••••••••" class="ex-input">
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-top:4px;">
+            <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--color-foreground);"><input type="checkbox"> Remember me</label>
+            <a href="#" style="font-size:13px; color:var(--color-foreground); text-decoration:underline;">Forgot password?</a>
+          </div>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Sign in</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">New here? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Create an account</a></div>
+      </div>
+      <div class="ex-auth-form-card" style="background:var(--color-canvas); border:1px solid var(--color-border); border-radius:0; padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">/0.2 · Create account</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:400; line-height:1.05; letter-spacing:-0.4px; color:var(--color-foreground); margin:0 0 24px;">Start building.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Full Name</label>
+            <input type="text" placeholder="Mira Reyes" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="••••••••" class="ex-input">
+          </div>
+          <label style="display:flex; align-items:flex-start; gap:8px; font-size:13px; color:var(--color-foreground-muted); margin-top:4px; line-height:1.5;">
+            <input type="checkbox" style="margin-top:3px;">
+            <span>I agree to the <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Terms</a> and <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Privacy Policy</a>.</span>
+          </label>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Create account</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">Already have an account? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Sign in</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Modal Dialog
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Modal Dialog</h2>
+    <p class="ex-intro">Centered card over a 50% ink scrim. Hairline divider above the action row, secondary text-button on the left, primary on the right.</p>
+    <div class="ex-frame short">
+      <div style="padding:24px; opacity:0.7;">
+        <div style="height:14px; width:40%; background:var(--color-border); border-radius:2px; margin-bottom:12px;"></div>
+        <div style="height:12px; width:70%; background:var(--color-border); border-radius:2px; margin-bottom:8px;"></div>
+        <div style="height:12px; width:60%; background:var(--color-border); border-radius:2px;"></div>
+      </div>
+      <div class="ex-scrim"></div>
+      <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:24px;">
+        <div class="ex-modal-card">
+          <div style="padding:24px 28px 16px;">
+            <div class="ex-mono" style="margin-bottom:8px;">/0.1 · Confirm</div>
+            <h4 style="font-family:var(--font-display); font-size:22px; font-weight:400; line-height:1.1; letter-spacing:-0.4px; color:var(--color-foreground); margin:0;">Promote dataset to production?</h4>
+          </div>
+          <div style="padding:0 28px 20px; font-size:14px; color:var(--color-foreground-muted); line-height:1.5;">
+            This replaces <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.20</strong> with <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.21</strong> across all downstream consumers. The action is reversible within 24 hours.
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:16px 24px; border-top:1px solid var(--color-border);">
+            <button class="ex-textlink">Cancel</button>
+            <button class="ex-primary" style="height:40px; padding:0 18px; font-size:14px;">Promote</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Empty State
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Empty State</h2>
+    <p class="ex-intro">Outlined icon tile, decimal index, declarative heading, one-sentence body, and a single primary CTA.</p>
+    <div class="ex-emptystate">
+      <div style="width:56px; height:56px; border:1px solid var(--color-border-soft); border-radius:0; display:flex; align-items:center; justify-content:center; margin-bottom:20px; color:var(--color-foreground-muted);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="M3.5 9.5h17M8 5.5v13"/></svg>
+      </div>
+      <div class="ex-mono" style="margin-bottom:12px;">/0.1 · No datasets</div>
+      <h4 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:400; line-height:1.05; letter-spacing:-0.4px; color:var(--color-foreground); margin:0 0 8px;">Nothing here yet.</h4>
+      <p style="font-size:15px; color:var(--color-foreground-muted); max-width:380px; margin:0 0 24px; line-height:1.5;">Connect a source or upload a CSV to start ingesting records into this workspace.</p>
+      <button class="ex-primary">Connect a source</button>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Toast Stack
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Toast Stack</h2>
+    <p class="ex-intro">Four semantic variants — info, success, warning, error. Each is a card with a 3 px accent rule on the leading edge, a mono uppercase tag, and a single dismiss affordance.</p>
+    <div class="ex-grid-toasts">
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-foreground);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-foreground); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">info</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync in progress</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Backfilling 412 records into the operations log.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-success);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-success); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">success</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Dataset promoted</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">v2024.11.21 is live across all downstream consumers.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-warning);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-warning); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">warning</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Approaching quota</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">88% of your monthly compute has been used.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-danger);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-danger); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">error</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync failed</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Watchlist source returned 502. Retry queued.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+
+
+
+</body></html>

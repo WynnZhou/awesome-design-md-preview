@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of Clay</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #fffaf0; } html[data-theme="dark"] { background: #0c0c0e; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#responsive">Responsive</a></li>
+  </ul>
+  <button class="nav-cta">Try Clay free</button>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of Clay</h1>
+    <p>A vibrant claymation-meets-data interface. Cream canvas with dark-navy CTAs, custom rounded display type, and saturated single-color feature cards — pink, teal, lavender, peach, ochre — punctuating long-scroll explainer pages.</p>
+    <div class="hero-actions">
+      <button class="btn-hero-primary">Try Clay free</button>
+      <button class="btn-hero-secondary">Book a demo</button>
+    </div>
+  </div>
+  <div class="hero-art">
+    <div class="label">3D claymation hero<br>Mountains · Mascots · Landscape</div>
+  </div>
+</div>
+
+<section id="colors">
+  <div class="section-label">01 — Color Palette</div>
+  <h2 class="section-heading">Cream + 6 brand colors</h2>
+  <p class="section-intro">Cream canvas with dark-navy ink, paired with a 6-color saturated feature-card palette. The cards cycle pink → teal → lavender → peach → ochre → cream across long-scroll pages.</p>
+
+  <div class="palette-group">
+    <h3>Brand Card Colors</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ff4d8b;"></div><div class="swatch-meta"><div class="swatch-name">brand-pink</div><div class="swatch-hex">#ff4d8b</div><div class="swatch-role">Hot pink card. Outbound / sequencer features.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1a3a3a;"></div><div class="swatch-meta"><div class="swatch-name">brand-teal</div><div class="swatch-hex">#1a3a3a</div><div class="swatch-role">Deep teal card. Featured pricing tier.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#b8a4ed;"></div><div class="swatch-meta"><div class="swatch-name">brand-lavender</div><div class="swatch-hex">#b8a4ed</div><div class="swatch-role">Soft lavender card. AI agent products.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#ffb084;"></div><div class="swatch-meta"><div class="swatch-name">brand-peach</div><div class="swatch-hex">#ffb084</div><div class="swatch-role">Warm peach card. General SaaS warmth.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#e8b94a;"></div><div class="swatch-meta"><div class="swatch-name">brand-ochre</div><div class="swatch-hex">#e8b94a</div><div class="swatch-role">Mustard / ochre card. Community / experts.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#a4d4c5;"></div><div class="swatch-meta"><div class="swatch-name">brand-mint</div><div class="swatch-hex">#a4d4c5</div><div class="swatch-role">Mint accent on illustrations.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Surface</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#fffaf0;"></div><div class="swatch-meta"><div class="swatch-name">canvas (cream)</div><div class="swatch-hex">#fffaf0</div><div class="swatch-role">Default page floor.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#faf5e8;"></div><div class="swatch-meta"><div class="swatch-name">surface-soft</div><div class="swatch-hex">#faf5e8</div><div class="swatch-role">Footer + CTA-band background.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f5f0e0;"></div><div class="swatch-meta"><div class="swatch-name">surface-card</div><div class="swatch-hex">#f5f0e0</div><div class="swatch-role">Cream feature cards, testimonials.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#0a1a1a;"></div><div class="swatch-meta"><div class="swatch-name">surface-dark</div><div class="swatch-hex">#0a1a1a</div><div class="swatch-role">Rare dark surfaces.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#e5e5e5;"></div><div class="swatch-meta"><div class="swatch-name">hairline</div><div class="swatch-hex">#e5e5e5</div><div class="swatch-role">1px borders.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Text</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#0a0a0a;"></div><div class="swatch-meta"><div class="swatch-name">primary / ink</div><div class="swatch-hex">#0a0a0a</div><div class="swatch-role">Primary CTAs, headlines.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#3a3a3a;"></div><div class="swatch-meta"><div class="swatch-name">body</div><div class="swatch-hex">#3a3a3a</div><div class="swatch-role">Default running-text.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#6a6a6a;"></div><div class="swatch-meta"><div class="swatch-name">muted</div><div class="swatch-hex">#6a6a6a</div><div class="swatch-role">Sub-headings, breadcrumbs, footer.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#9a9a9a;"></div><div class="swatch-meta"><div class="swatch-name">muted-soft</div><div class="swatch-hex">#9a9a9a</div><div class="swatch-role">Captions, fine-print.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="typography">
+  <div class="section-label">02 — Typography</div>
+  <h2 class="section-heading">Plain Black display + Inter body</h2>
+  <p class="section-intro">Custom rounded display face at weight 500 with -1 to -2.5px letter-spacing. Inter handles body, buttons, navigation.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>72px / 500 / 1.0 / -2.5px<br>Plain Black</div><div class="type-sample" style="font-size:72px; font-weight:500; line-height:1; letter-spacing:-2.5px;">Go to market with unique data</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>56px / 500 / 1.05 / -2px</div><div class="type-sample" style="font-size:56px; font-weight:500; letter-spacing:-2px;">Turn data into action</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>40px / 500 / 1.1 / -1px</div><div class="type-sample" style="font-size:40px; font-weight:500; letter-spacing:-1px;">A flexible CRM data point</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-sm</strong>32px / 500 / 1.15 / -0.5px</div><div class="type-sample" style="font-size:32px; font-weight:500; letter-spacing:-0.5px;">Cut costs, access data faster</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-lg</strong>24px / 600 / 1.3</div><div class="type-sample" style="font-size:24px; font-weight:600;">Pro · $349 / month</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-md</strong>18px / 600 / 1.4</div><div class="type-sample" style="font-size:18px; font-weight:600;">Orchestrate workflows</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-sm</strong>16px / 600 / 1.4</div><div class="type-sample" style="font-size:16px; font-weight:600;">CRM enrichment</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>16px / 400 / 1.55</div><div class="type-sample" style="font-size:16px; line-height:1.55;">Clay turns scattered data sources into a single source of truth — enriched, refreshed, and actionable across your stack.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>14px / 400 / 1.55</div><div class="type-sample" style="font-size:14px; color:var(--body);">Footer body, fine-print legal text.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption</strong>13px / 500 / 1.4</div><div class="type-sample" style="font-size:13px; font-weight:500; color:var(--muted);">Trusted by 100,000+ growth teams</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-uppercase</strong>12px / 600 / 1.5px</div><div class="type-sample" style="font-size:12px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase;">FEATURED · NEW</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button</strong>14px / 600 / 1.0</div><div class="type-sample" style="font-size:14px; font-weight:600;">Try Clay free</div></div>
+  <div class="type-row"><div class="type-meta"><strong>nav-link</strong>14px / 500 / 1.4</div><div class="type-sample" style="font-size:14px; font-weight:500;">Product · Solutions · Resources · Pricing · Customers</div></div>
+</section>
+
+<section id="components">
+  <div class="section-label">03 — Button Variants</div>
+
+  <div class="button-grid">
+    <div class="button-cell"><div class="button-label">button-primary</div><button class="btn btn-primary">Try Clay free</button><div class="button-meta">primary near-black / white text / md radius</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-active</div><button class="btn btn-primary-active">Pressed</button><div class="button-meta">primary-active background</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-disabled</div><button class="btn btn-primary-disabled" disabled="">Disabled</button></div>
+    <div class="button-cell"><div class="button-label">button-secondary</div><button class="btn btn-secondary">Book a demo</button><div class="button-meta">cream / ink / hairline outline</div></div>
+    <div class="button-cell on-pink"><div class="button-label">button-on-color</div><button class="btn btn-on-color">Get started</button><div class="button-meta">White button on saturated pink card</div></div>
+    <div class="button-cell on-teal"><div class="button-label">button-on-color</div><button class="btn btn-on-color">Get started</button><div class="button-meta">White button on deep-teal card</div></div>
+    <div class="button-cell"><div class="button-label">button-text-link</div><button class="btn-text-link">Read more</button></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">04 — Brand-Color Feature Cards</div>
+  <h2 class="section-heading">Cycle through 6 saturated cards</h2>
+  <p class="section-intro">Pink → teal → lavender → peach → ochre → cream. The order varies per page, but no two consecutive cards repeat the same color.</p>
+
+  <div class="card-grid">
+    <div class="feature-card pink">
+      <div class="icon">📤</div>
+      <h4>Sequencer</h4>
+      <p>Send personalized cold emails at scale. Multi-channel sequences with native fallback.</p>
+    </div>
+    <div class="feature-card teal">
+      <div class="icon">🤖</div>
+      <h4>Claygent</h4>
+      <p>AI agent that runs research, enrichment, and outreach autonomously.</p>
+    </div>
+    <div class="feature-card lavender">
+      <div class="icon">🔌</div>
+      <h4>Integrations</h4>
+      <p>200+ data providers, native CRM sync, Salesforce + HubSpot two-way.</p>
+    </div>
+    <div class="feature-card peach">
+      <div class="icon">📊</div>
+      <h4>CRM Enrichment</h4>
+      <p>Find missing fields, dedupe records, refresh stale accounts automatically.</p>
+    </div>
+    <div class="feature-card ochre">
+      <div class="icon">👥</div>
+      <h4>Experts</h4>
+      <p>Book a Clay-certified expert to design your GTM workflows in days, not months.</p>
+    </div>
+    <div class="feature-card cream">
+      <div class="icon">⚡</div>
+      <h4>Workflows</h4>
+      <p>Visual flow builder for outbound, lead scoring, account expansion.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">05 — Product Mockup + Testimonial Cards</div>
+
+  <div class="card-grid">
+    <div class="product-mockup-card">
+      <div class="ui-header" style="font-weight:600; color:var(--ink);">Live data · 12,408 leads</div>
+      <div class="ui-row"><div class="dot green"></div><div style="flex:1;"><div style="font-weight:600;">Acme Corp</div><div style="color:var(--muted); font-size:12px;">Enriched · Score 92</div></div><span style="color:var(--muted); font-size:12px;">2m ago</span></div>
+      <div class="ui-row"><div class="dot blue"></div><div style="flex:1;"><div style="font-weight:600;">Globex Industries</div><div style="color:var(--muted); font-size:12px;">In-progress · Score 78</div></div><span style="color:var(--muted); font-size:12px;">5m ago</span></div>
+      <div class="ui-row"><div class="dot green"></div><div style="flex:1;"><div style="font-weight:600;">Initech</div><div style="color:var(--muted); font-size:12px;">Enriched · Score 85</div></div><span style="color:var(--muted); font-size:12px;">12m ago</span></div>
+    </div>
+    <div class="testimonial-card">
+      <div class="head">
+        <div class="avatar">RP</div>
+        <div class="who"><div class="name">Rachel Park</div><div class="role">Head of GTM · Notion</div></div>
+      </div>
+      <p style="color:var(--body); font-size:14px; line-height:1.55;">"Clay replaced 7 GTM tools overnight. The flexibility of the workflow builder + Claygent's research depth has us shipping 3× more outbound campaigns per week."</p>
+    </div>
+    <div class="testimonial-card">
+      <div class="head">
+        <div class="avatar" style="background:var(--brand-lavender);">JM</div>
+        <div class="who"><div class="name">Jamie Morrison</div><div class="role">VP Sales · Linear</div></div>
+      </div>
+      <p style="color:var(--body); font-size:14px; line-height:1.55;">"Game-changer for personalized outbound at scale. The Claygent agent does what a junior SDR used to do — but in seconds, and across thousands of accounts."</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">06 — Pricing Tiers</div>
+
+  <div class="pricing-grid">
+    <div class="pricing-tier"><h4>Free</h4><div class="price">$0</div><ul><li>100 credits / month</li><li>Up to 1 user</li><li>Community support</li></ul><button class="btn btn-secondary" style="width:100%;">Get started</button></div>
+    <div class="pricing-tier"><h4>Starter</h4><div class="price">$149</div><ul><li>2,000 credits / month</li><li>Up to 3 users</li><li>Workflow templates</li></ul><button class="btn btn-primary" style="width:100%;">Try Starter</button></div>
+    <div class="pricing-tier featured"><h4>Pro</h4><div class="price">$349</div><ul><li>10,000 credits / month</li><li>Unlimited users</li><li>Claygent enabled</li></ul><button class="btn btn-primary" style="width:100%; background:#fff; color:#0a1a1a;">Try Pro</button></div>
+    <div class="pricing-tier"><h4>Enterprise</h4><div class="price">Custom</div><ul><li>Unlimited credits</li><li>Dedicated success</li><li>SOC 2 + custom integrations</li></ul><button class="btn btn-secondary" style="width:100%;">Contact sales</button></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">07 — Form Elements</div>
+
+  <div class="form-grid">
+    <div class="form-cell"><label class="form-label">Email address</label><input class="form-input" type="email" placeholder="you@company.com"></div>
+    <div class="form-cell"><label class="form-label">Email (focused)</label><input class="form-input focused" type="email" value="alex@studio.com"></div>
+    <div class="form-cell"><label class="form-label">Company name</label><input class="form-input" type="text" placeholder="Studio Inc"></div>
+    <div class="form-cell wide"><label class="form-label">Tell us about your GTM motion</label><input class="form-input" type="text" placeholder="What does your team need to scale?"></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">08 — Spacing Scale</div>
+  <div class="spacing-row">
+    <div class="spacing-block"><div class="spacing-bar" style="width:4px;"></div><div class="spacing-label">xxs · 4px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:8px;"></div><div class="spacing-label">xs · 8px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:12px;"></div><div class="spacing-label">sm · 12px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:16px;"></div><div class="spacing-label">md · 16px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:24px;"></div><div class="spacing-label">lg · 24px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:32px;"></div><div class="spacing-label">xl · 32px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:48px;"></div><div class="spacing-label">xxl · 48px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:96px;"></div><div class="spacing-label">section · 96px</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">09 — Border Radius Scale</div>
+  <div class="radius-row">
+    <div class="radius-block" style="border-radius:6px;">6 · xs</div>
+    <div class="radius-block" style="border-radius:8px;">8 · sm</div>
+    <div class="radius-block" style="border-radius:12px;">12 · md</div>
+    <div class="radius-block" style="border-radius:16px;">16 · lg</div>
+    <div class="radius-block" style="border-radius:24px;">24 · xl</div>
+    <div class="radius-block" style="border-radius:9999px;">pill</div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">10 — Elevation &amp; Depth</div>
+  <p class="section-intro">No heavy shadows. Depth comes from saturated card-vs-canvas contrast.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card elevation-flat"><h5>Flat / Canvas</h5><p>Body sections, top nav.</p></div>
+    <div class="elevation-card elevation-cream"><h5>Cream card</h5><p>Testimonials, secondary content cards.</p></div>
+    <div class="elevation-card elevation-pink"><h5>Pink card</h5><p>Outbound / sequencer features.</p></div>
+    <div class="elevation-card elevation-teal"><h5>Teal card</h5><p>Featured pricing tier, enterprise.</p></div>
+    <div class="elevation-card elevation-flat"><h5>Hairline border</h5><p>Cream card with 1px hairline.</p></div>
+    <div class="elevation-card elevation-flat"><h5>3D illustration</h5><p>Claymation art is the depth element.</p></div>
+  </div>
+</section>
+
+<section id="responsive">
+  <div class="section-label">11 — Responsive Behavior</div>
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Mobile</td><td>&lt; 768px</td><td>Hamburger nav; hero h1 72→36px; hero-art stacks below; feature grids 1-up; pricing 1-up.</td></tr>
+      <tr><td>Tablet</td><td>768–1024px</td><td>Top nav tightens; feature cards 2-up; pricing 2-up.</td></tr>
+      <tr><td>Desktop</td><td>1024–1440px</td><td>Full top-nav; 3-up feature cards; 3-up pricing tiers.</td></tr>
+      <tr><td>Wide</td><td>&gt; 1440px</td><td>Same as desktop with more breathing room; max content 1280px.</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="device-bar" style="width:60px; height:120px;">375<br>mobile</div>
+    <div class="device-bar" style="width:90px; height:140px;">600<br>small phone</div>
+    <div class="device-bar" style="width:140px; height:160px;">768<br>tablet</div>
+    <div class="device-bar" style="width:200px; height:180px;">1024<br>laptop</div>
+    <div class="device-bar" style="width:260px; height:200px;">1280<br>desktop</div>
+    <div class="device-bar" style="width:320px; height:220px;">1440<br>wide</div>
+  </div>
+  <div class="responsive-sub"><h4>Touch Targets</h4><ul><li>Primary CTA at min 44 × 44px — meets WCAG AAA.</li><li>Text input height 44px.</li></ul></div>
+  <div class="responsive-sub"><h4>Collapsing Strategy</h4><ul><li>Top nav collapses to hamburger at &lt; 768px.</li><li>Hero 7-5 grid → single-column on mobile.</li><li>Saturated feature cards retain colored fill at every breakpoint.</li><li>Pricing tier cards collapse 4 → 2 → 1; featured stays distinct.</li></ul></div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

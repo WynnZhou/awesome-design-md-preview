@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design System Analysis of NVIDIA</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #000000; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<div class="theme-layer" data-when="light">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#layout">Layout</a></li>
+  </ul>
+  <button class="nav-cta">Get Started</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of NVIDIA</h1>
+    <p>An engineering-grade marketing system organized around two surface modes — a deep black canvas for hero and footer chapters and a flat paper-white canvas for body content — connected by a single, almost violently saturated NVIDIA Green accent that carries every CTA, every active tab, and the small decorative corner squares that mark out cards. The system is unapologetically angular: 2px radius across every surface, tight bold typography, and a hairline gray rule that separates dense multi-column technical content.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Get Started</button>
+      <button class="btn btn-outline">Read the Docs</button>
+    </div>
+  </div>
+</header>
+
+<!-- COLOR PALETTE -->
+<section id="colors">
+  <p class="section-eyebrow">01 — Color</p>
+  <h2 class="section-heading">Color Palette</h2>
+  <p class="section-desc">A single saturated brand green doing all the work, sitting on top of an architectural black/white/gray neutral system. Editorial accents (purples, pales) appear sparingly inside long-form content but never on chrome.</p>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Brand &amp; Accent</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#76b900"></div><div class="swatch-meta"><p class="swatch-name">NVIDIA Green (primary)</p><p class="swatch-hex">#76b900</p><p class="swatch-role">Every primary CTA, active state, link affordance on dark, brand wordmark, decorative corner square</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#5a8d00"></div><div class="swatch-meta"><p class="swatch-name">NVIDIA Green Dark</p><p class="swatch-hex">#5a8d00</p><p class="swatch-role">Pressed state for the primary button</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#bff230"></div><div class="swatch-meta"><p class="swatch-name">Accent Green Pale</p><p class="swatch-hex">#bff230</p><p class="swatch-role">Editorial highlight tint, decorative micro-blocks</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Surface</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff;box-shadow:inset 0 0 0 1px var(--hairline)"></div><div class="swatch-meta"><p class="swatch-name">Page Canvas</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Body of every page, card backgrounds</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f7f7f7"></div><div class="swatch-meta"><p class="swatch-name">Soft Surface</p><p class="swatch-hex">#f7f7f7</p><p class="swatch-role">Breadcrumb strip, sub-nav, comparison panels, alternating rows</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#000000"></div><div class="swatch-meta"><p class="swatch-name">Black Canvas</p><p class="swatch-hex">#000000</p><p class="swatch-role">Hero chapter, dark CTA strip, footer, primary nav</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1a1a1a"></div><div class="swatch-meta"><p class="swatch-name">Surface Elevated</p><p class="swatch-hex">#1a1a1a</p><p class="swatch-role">Nested dark panels inside footer</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#cccccc"></div><div class="swatch-meta"><p class="swatch-name">Hairline</p><p class="swatch-hex">#cccccc</p><p class="swatch-role">1px card border, table rule, footer link section divider</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#5e5e5e"></div><div class="swatch-meta"><p class="swatch-name">Hairline Strong</p><p class="swatch-hex">#5e5e5e</p><p class="swatch-role">1px divider on dark surfaces (footer column rules)</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Text</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#000000"></div><div class="swatch-meta"><p class="swatch-name">Ink</p><p class="swatch-hex">#000000</p><p class="swatch-role">Headlines and body text on canvas</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1a1a1a"></div><div class="swatch-meta"><p class="swatch-name">Body</p><p class="swatch-hex">#1a1a1a</p><p class="swatch-role">Long-form paragraph text where pure black is too heavy</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#757575"></div><div class="swatch-meta"><p class="swatch-name">Mute</p><p class="swatch-hex">#757575</p><p class="swatch-role">Metadata, breadcrumb separators, footer copyright</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#898989"></div><div class="swatch-meta"><p class="swatch-name">Stone</p><p class="swatch-hex">#898989</p><p class="swatch-role">Least-emphasis text, disabled state</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#a7a7a7"></div><div class="swatch-meta"><p class="swatch-name">Ash</p><p class="swatch-hex">#a7a7a7</p><p class="swatch-role">Disabled icon color, faint utility text</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff;box-shadow:inset 0 0 0 1px var(--hairline)"></div><div class="swatch-meta"><p class="swatch-name">On Dark</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Primary text on Black Canvas</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.7);box-shadow:inset 0 0 0 1px var(--hairline)"></div><div class="swatch-meta"><p class="swatch-name">On Dark Mute</p><p class="swatch-hex">rgba(255,255,255,0.7)</p><p class="swatch-role">Secondary footer link text, dark-canvas body copy</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Semantic</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#e52020"></div><div class="swatch-meta"><p class="swatch-name">Error</p><p class="swatch-hex">#e52020</p><p class="swatch-role">Validation, destructive confirmation</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#650b0b"></div><div class="swatch-meta"><p class="swatch-name">Error Deep</p><p class="swatch-hex">#650b0b</p><p class="swatch-role">Pressed error state</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#df6500"></div><div class="swatch-meta"><p class="swatch-name">Warning</p><p class="swatch-hex">#df6500</p><p class="swatch-role">Caution callouts, deprecated banners</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#ef9100"></div><div class="swatch-meta"><p class="swatch-name">Warning Bright</p><p class="swatch-hex">#ef9100</p><p class="swatch-role">Inverse warning on dark canvas</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#3f8500"></div><div class="swatch-meta"><p class="swatch-name">Success Deep</p><p class="swatch-hex">#3f8500</p><p class="swatch-role">Positive confirmation where brand green clashes</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#0046a4"></div><div class="swatch-meta"><p class="swatch-name">Link Blue</p><p class="swatch-hex">#0046a4</p><p class="swatch-role">Inline body-prose anchor link — only blue in the system</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Editorial Accents (long-form content only)</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#952fc6"></div><div class="swatch-meta"><p class="swatch-name">Accent Purple</p><p class="swatch-hex">#952fc6</p><p class="swatch-role">Research / scientific computing accent</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#4d1368"></div><div class="swatch-meta"><p class="swatch-name">Accent Purple Deep</p><p class="swatch-hex">#4d1368</p><p class="swatch-role">Paired dark for purple lockups</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f9d4ff"></div><div class="swatch-meta"><p class="swatch-name">Accent Purple Pale</p><p class="swatch-hex">#f9d4ff</p><p class="swatch-role">Editorial callout wash</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#feeeb2"></div><div class="swatch-meta"><p class="swatch-name">Accent Yellow Pale</p><p class="swatch-hex">#feeeb2</p><p class="swatch-role">Documentation tip, soft callout fill</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section id="typography">
+  <p class="section-eyebrow">02 — Typography</p>
+  <h2 class="section-heading">Typography Scale</h2>
+  <p class="section-desc">NVIDIA-EMEA at weights 400 and 700 across a 12-tier hierarchy. Hierarchy is built almost entirely from size and weight — color is reserved for emphasis and never used to separate type tiers.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>NVIDIA-EMEA<br>48px / 700 / lh 1.25</div><div class="type-sample" style="font-family:var(--font-ui);font-size:48px;font-weight:700;line-height:1.25">Accelerated Computing</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>NVIDIA-EMEA<br>36px / 700 / lh 1.25</div><div class="type-sample" style="font-family:var(--font-ui);font-size:36px;font-weight:700;line-height:1.25">Explore Our AI Solutions</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-xl</strong>NVIDIA-EMEA<br>24px / 700 / lh 1.25</div><div class="type-sample" style="font-family:var(--font-ui);font-size:24px;font-weight:700;line-height:1.25">Sub-section title or dark CTA</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-lg</strong>NVIDIA-EMEA<br>22px / 400 / lh 1.75</div><div class="type-sample" style="font-family:var(--font-ui);font-size:22px;font-weight:400;line-height:1.75">A long-form intro paragraph that doubles as a heading.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-md</strong>NVIDIA-EMEA<br>20px / 700 / lh 1.25</div><div class="type-sample" style="font-family:var(--font-ui);font-size:20px;font-weight:700;line-height:1.25">Card group title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-sm</strong>NVIDIA-EMEA<br>18px / 700 / lh 1.4</div><div class="type-sample" style="font-family:var(--font-ui);font-size:18px;font-weight:700;line-height:1.4">Side-rail filter group</div></div>
+  <div class="type-row"><div class="type-meta"><strong>card-title</strong>NVIDIA-EMEA<br>17px / 700 / lh 1.47</div><div class="type-sample" style="font-family:var(--font-ui);font-size:17px;font-weight:700;line-height:1.47">Resource Card Title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>NVIDIA-EMEA<br>16px / 400 / lh 1.5</div><div class="type-sample" style="font-family:var(--font-ui);font-size:16px;font-weight:400;line-height:1.5">Body copy carries product descriptions, technical specifications, and any long-form prose at 16px regular weight.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-strong</strong>NVIDIA-EMEA<br>16px / 700 / lh 1.5</div><div class="type-sample" style="font-family:var(--font-ui);font-size:16px;font-weight:700;line-height:1.5">Inline emphasis or primary nav link</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>NVIDIA-EMEA<br>15px / 400 / lh 1.67</div><div class="type-sample" style="font-family:var(--font-ui);font-size:15px;font-weight:400;line-height:1.67">Card description and secondary copy at 15px.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-md</strong>NVIDIA-EMEA<br>16px / 700 / lh 1.25</div><div class="type-sample" style="font-family:var(--font-ui);font-size:16px;font-weight:700;line-height:1.25">Get Started</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-sm</strong>NVIDIA-EMEA<br>14.4px / 700 / lh 1 / +0.144px</div><div class="type-sample" style="font-family:var(--font-ui);font-size:14.4px;font-weight:700;line-height:1;letter-spacing:0.144px">Compact CTA Label</div></div>
+  <div class="type-row"><div class="type-meta"><strong>link-md</strong>NVIDIA-EMEA<br>15px / 400 / lh 1.5</div><div class="type-sample" style="font-family:var(--font-ui);font-size:15px;font-weight:400;line-height:1.5"><a style="color:var(--link-blue);text-decoration:underline">Inline body link</a></div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-md</strong>NVIDIA-EMEA<br>14px / 700 / lh 1.43 / uppercase</div><div class="type-sample" style="font-family:var(--font-ui);font-size:14px;font-weight:700;line-height:1.43;text-transform:uppercase;letter-spacing:0.4px">Eyebrow Over Section</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-sm</strong>NVIDIA-EMEA<br>12px / 400 / lh 1.25</div><div class="type-sample" style="font-family:var(--font-ui);font-size:12px;font-weight:400;line-height:1.25">Footnote, metadata, table caption</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-xs</strong>NVIDIA-EMEA<br>11px / 700 / lh 1</div><div class="type-sample" style="font-family:var(--font-ui);font-size:11px;font-weight:700;line-height:1">Pill chip · utility-bar text</div></div>
+  <div class="type-row"><div class="type-meta"><strong>utility-xs</strong>NVIDIA-EMEA<br>10px / 700 / lh 1.5 / uppercase</div><div class="type-sample" style="font-family:var(--font-ui);font-size:10px;font-weight:700;line-height:1.5;text-transform:uppercase">Legal fine-print row</div></div>
+</section>
+
+<!-- BUTTONS -->
+<section id="components">
+  <p class="section-eyebrow">03 — Components</p>
+  <h2 class="section-heading">Button Variants</h2>
+  <p class="section-desc">Single-accent button system. Primary fill is reserved for the most important action per viewport; outline and ghost-link variants carry secondary actions with the same green color.</p>
+
+  <div class="button-grid">
+    <div class="button-cell">
+      <button class="btn btn-primary">Get Started</button>
+      <p class="button-cell-label">button-primary</p>
+      <p class="button-cell-spec">bg primary · text on-primary · rounded sm · 44px height · pad 0/24</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-primary" style="background:var(--primary-dark)">Pressed</button>
+      <p class="button-cell-label">button-primary-active</p>
+      <p class="button-cell-spec">bg primary-dark · text on-primary</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-outline">Read the Docs</button>
+      <p class="button-cell-label">button-outline</p>
+      <p class="button-cell-spec">transparent · text ink · 2px primary border · rounded sm</p>
+    </div>
+    <div class="button-cell on-dark">
+      <button class="btn btn-outline-on-dark">Watch Video</button>
+      <p class="button-cell-label">button-outline-on-dark</p>
+      <p class="button-cell-spec">transparent · text on-dark · 1px on-dark border</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-ghost-link">LEARN MORE →</button>
+      <p class="button-cell-label">button-ghost-link</p>
+      <p class="button-cell-spec">text primary · no bg · button-md weight</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-disabled">Disabled</button>
+      <p class="button-cell-label">button-disabled</p>
+      <p class="button-cell-spec">bg surface-soft · text ash</p>
+    </div>
+    <div class="button-cell wide">
+      <div class="pill-tabs">
+        <button class="pill-tab active">All Resources</button>
+        <button class="pill-tab">White Papers</button>
+        <button class="pill-tab">Webinars</button>
+        <button class="pill-tab">Blogs</button>
+        <button class="pill-tab">Case Studies</button>
+      </div>
+      <p class="button-cell-label">pill-tab + pill-tab-active</p>
+      <p class="button-cell-spec">default: transparent + 1px hairline · active: ink fill + on-dark text</p>
+    </div>
+    <div class="button-cell wide">
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <span class="badge-tag">White Paper</span>
+        <span class="badge-tag">Webinar</span>
+        <span class="badge-tag">Blog</span>
+        <span class="badge-tag">Case Study</span>
+        <span class="badge-tag">Documentation</span>
+      </div>
+      <p class="button-cell-label">badge-tag</p>
+      <p class="button-cell-spec">bg surface-soft · text body · uppercase caption-md · rounded sm</p>
+    </div>
+  </div>
+</section>
+
+<!-- CARDS -->
+<section>
+  <p class="section-eyebrow">04 — Cards</p>
+  <h2 class="section-heading">Card Examples</h2>
+  <p class="section-desc">Cards sit flat on canvas with a 1px Hairline border and the small green corner square as ornament. No drop shadow, no tilt, no soft chrome — just rectangle, ruler line, and the brand mark.</p>
+
+  <div class="card-grid">
+    <!-- Product card -->
+    <div class="product-card">
+      <div class="product-card-image green"></div>
+      <div class="card-body">
+        <h3 class="card-title">Product Card Title</h3>
+        <p class="card-desc">Short description of the product, capability, or platform offering rendered in body-sm.</p>
+        <a class="card-link">Learn More →</a>
+      </div>
+    </div>
+    <!-- Feature card -->
+    <div class="feature-card">
+      <div class="card-body">
+        <div class="feature-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+        </div>
+        <h4 class="feature-card-title">Agentic AI</h4>
+        <p class="card-desc" style="font-size:16px;line-height:1.5">Capability description rendered in body-md as part of a 3- or 4-up grid that explains product features.</p>
+        <a class="card-link">Learn More →</a>
+      </div>
+    </div>
+    <!-- Resource card -->
+    <div class="resource-card">
+      <div class="resource-card-tag"><span class="badge-tag">White Paper</span></div>
+      <div class="resource-card-image purple" style="margin-top:16px"></div>
+      <div class="card-body">
+        <h3 class="card-title">Resource Card Title</h3>
+        <p class="card-desc">A longer-form description of the resource — typically 2 lines — that gives the reader enough to decide whether to download.</p>
+        <a class="card-link">Read More →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stat callouts -->
+  <div style="margin-top:48px">
+    <p class="palette-block-label">Stat Callouts</p>
+    <div class="stat-grid">
+      <div class="callout-stat">
+        <p class="callout-stat-number">4×</p>
+        <p class="callout-stat-label">Faster training</p>
+      </div>
+      <div class="callout-stat">
+        <p class="callout-stat-number">60%</p>
+        <p class="callout-stat-label">Lower cost</p>
+      </div>
+      <div class="callout-stat">
+        <p class="callout-stat-number">10x</p>
+        <p class="callout-stat-label">Inference throughput</p>
+      </div>
+      <div class="callout-stat">
+        <p class="callout-stat-number">2.5x</p>
+        <p class="callout-stat-label">Energy efficiency</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero card dark + CTA strip -->
+  <div style="margin-top:48px">
+    <p class="palette-block-label">Hero Chapter &amp; Dark CTA Strip</p>
+    <div class="hero-card-dark">
+      <p class="hero-card-eyebrow">Industries — Healthcare</p>
+      <h3 class="hero-card-title">Accelerate Discovery, Diagnostics, and Patient Care</h3>
+      <p class="hero-card-subtitle">Full-bleed dark chapter that anchors the top of every primary landing page with a single green CTA paired with an outline-on-dark secondary.</p>
+      <div class="hero-card-actions">
+        <button class="btn btn-primary">Get Started</button>
+        <button class="btn btn-outline-on-dark">Watch Video</button>
+      </div>
+    </div>
+    <div class="cta-strip-dark" style="margin-top:24px">
+      <h3 class="cta-strip-title">Ready to Build with NVIDIA AI Foundry?</h3>
+      <button class="btn btn-primary">Start Building</button>
+    </div>
+  </div>
+
+  <!-- Disclosure rows -->
+  <div style="margin-top:48px">
+    <p class="palette-block-label">Disclosure Rows</p>
+    <div class="disclosure-list">
+      <div class="disclosure-row"><span class="disclosure-label">Specifications</span><span style="color:var(--ink)">▾</span></div>
+      <div class="disclosure-row"><span class="disclosure-label">System Requirements</span><span style="color:var(--ink)">▾</span></div>
+      <div class="disclosure-row"><span class="disclosure-label">Documentation</span><span style="color:var(--ink)">▾</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- NAV -->
+<section>
+  <p class="section-eyebrow">05 — Navigation</p>
+  <h2 class="section-heading">Utility · Primary · Breadcrumb · Sub-nav</h2>
+  <p class="section-desc">A 4-tier navigation stack: utility bar (locale + account), primary nav (product taxonomy), breadcrumb strip (uppercase trail), and a section sub-nav with the active anchor underlined in NVIDIA Green.</p>
+
+  <div class="demo-nav-stack">
+    <div class="demo-utility-bar"><span>EN-EU</span><span>Login</span><span>Account</span></div>
+    <div class="demo-primary-nav">
+      <span class="nvbrand">NVIDIA</span>
+      <div class="demo-primary-nav-links">
+        <span>Products</span>
+        <span>Solutions</span>
+        <span>Industries</span>
+        <span>Resources</span>
+        <span>Support</span>
+        <span>Company</span>
+      </div>
+      <button class="btn btn-primary" style="height:36px;padding:0 16px;font-size:14px">Get Started</button>
+    </div>
+    <div class="demo-breadcrumb-bar"><span>Industries</span><span class="sep">/</span><span>Healthcare &amp; Life Sciences</span></div>
+    <div class="demo-sub-nav-strip">
+      <span class="active">Drug Discovery</span>
+      <span>Medical Imaging</span>
+      <span>Genomics</span>
+      <span>Patient Care</span>
+    </div>
+  </div>
+</section>
+
+<!-- FORMS -->
+<section>
+  <p class="section-eyebrow">06 — Forms</p>
+  <h2 class="section-heading">Form Elements</h2>
+  <p class="section-desc">2px-radius inputs with a Hairline border by default; on focus the border becomes a 2px NVIDIA Green outline — the only focus signal in the system.</p>
+
+  <div class="form-grid">
+    <div class="form-cell">
+      <label class="form-label">Default Input</label>
+      <input class="text-input" placeholder="Email address">
+      <span class="form-spec">canvas bg · 1px hairline · rounded sm · 44px height</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Focused Input</label>
+      <input class="text-input focused" value="user@example.com">
+      <span class="form-spec">2px primary border</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Error Input</label>
+      <input class="text-input error" value="invalid email">
+      <span class="form-spec">1px error border</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Search Input</label>
+      <input class="text-input" placeholder="Search NVIDIA…" style="height:40px">
+      <span class="form-spec">canvas bg · 1px hairline · 40px height</span>
+    </div>
+    <div class="form-cell wide">
+      <label class="form-label">Textarea</label>
+      <textarea class="text-input" placeholder="Describe your use case…"></textarea>
+      <span class="form-spec">canvas bg · 1px hairline · rounded sm · min-height 96px</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Submit</label>
+      <button class="btn btn-primary" style="width:100%">Submit Form</button>
+      <span class="form-spec">button-primary · always full-width below stacked fields</span>
+    </div>
+  </div>
+</section>
+
+<!-- SPACING -->
+<section>
+  <p class="section-eyebrow">07 — Layout</p>
+  <h2 class="section-heading">Spacing Scale</h2>
+  <p class="section-desc">8px base unit. Section rhythm sits at 64px — the universal vertical gap between major content blocks across every page.</p>
+  <div class="spacing-row">
+    <div class="spacing-cell"><div class="spacing-bar" style="width:2px"></div><span class="spacing-label">xxs · 2</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:4px"></div><span class="spacing-label">xs · 4</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:8px"></div><span class="spacing-label">sm · 8</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:12px"></div><span class="spacing-label">md · 12</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:16px"></div><span class="spacing-label">lg · 16</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:24px"></div><span class="spacing-label">xl · 24</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:32px"></div><span class="spacing-label">xxl · 32</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:64px"></div><span class="spacing-label">section · 64</span></div>
+  </div>
+</section>
+
+<!-- RADIUS -->
+<section>
+  <p class="section-eyebrow">08 — Shapes</p>
+  <h2 class="section-heading">Border Radius Scale</h2>
+  <p class="section-desc">Aggressively angular. Outside avatar/icon circles, no element exceeds 2px radius. Just enough to soften optical aliasing without softening the brand.</p>
+  <div class="radius-row">
+    <div class="radius-cell"><div class="radius-box" style="border-radius:0"></div><span class="radius-label">none · 0</span><p class="radius-context">Hero, footer, dark CTA strip, primary nav</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:1px"></div><span class="radius-label">xs · 1</span><p class="radius-context">Decorative micro-rules and inset accent strips</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:2px"></div><span class="radius-label">sm · 2</span><p class="radius-context">Every interactive element — buttons, cards, inputs</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:9999px"></div><span class="radius-label">full · 9999</span><p class="radius-context">Avatar circles, social icons</p></div>
+  </div>
+</section>
+
+<!-- ELEVATION -->
+<section>
+  <p class="section-eyebrow">09 — Depth</p>
+  <h2 class="section-heading">Elevation &amp; Depth</h2>
+  <p class="section-desc">No drop-shadow elevation in card or content surfaces. Depth is built from hairline borders and surface-color contrast.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card level-0"><div class="elevation-name">Level 0 — Flat</div><div class="elevation-spec">no border / no shadow</div></div>
+    <div class="elevation-card level-1"><div class="elevation-name">Level 1 — Hairline</div><div class="elevation-spec">1px solid #cccccc</div></div>
+    <div class="elevation-card level-2"><div class="elevation-name">Level 2 — Hairline Strong</div><div class="elevation-spec">1px solid #5e5e5e</div></div>
+    <div class="elevation-card level-3"><div class="elevation-name">Level 3 — Soft Shadow</div><div class="elevation-spec">0 0 5px 0 rgba(0,0,0,0.3)</div></div>
+  </div>
+</section>
+
+<!-- FOOTER DEMO -->
+<section>
+  <p class="section-eyebrow">10 — Footer</p>
+  <h2 class="section-heading">Footer Section</h2>
+  <p class="section-desc">Dense 6-column link grid on Black Canvas — the global navigation anchor that closes every page.</p>
+  <div class="footer-demo">
+    <div class="footer-col"><h4 class="footer-col-title">Products</h4><a>GeForce</a><a>Quadro</a><a>Tesla</a><a>DGX</a><a>Jetson</a></div>
+    <div class="footer-col"><h4 class="footer-col-title">Software</h4><a>CUDA</a><a>NIM</a><a>NeMo</a><a>Omniverse</a></div>
+    <div class="footer-col"><h4 class="footer-col-title">Resources</h4><a>Documentation</a><a>Tutorials</a><a>Webinars</a><a>White Papers</a></div>
+    <div class="footer-col"><h4 class="footer-col-title">Solutions</h4><a>AI</a><a>HPC</a><a>Data Science</a><a>Robotics</a></div>
+    <div class="footer-col"><h4 class="footer-col-title">Company</h4><a>About</a><a>Careers</a><a>Investors</a><a>Press</a></div>
+    <div class="footer-col"><h4 class="footer-col-title">Support</h4><a>Contact</a><a>Forums</a><a>Customer Care</a><a>Status</a></div>
+  </div>
+</section>
+
+<!-- RESPONSIVE -->
+<section id="layout">
+  <p class="section-eyebrow">11 — Responsive</p>
+  <h2 class="section-heading">Responsive Behavior</h2>
+  <p class="section-desc">7 breakpoint zones with a predictable collapse strategy. Section rhythm shrinks from 64px → 48px → 32px on the way down.</p>
+
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>ultrawide</td><td>1920px+</td><td>Content max-width 1280px; gutters grow to ~80px</td></tr>
+      <tr><td>desktop-large</td><td>1440px</td><td>Default — 4-up cards, 6-col footer</td></tr>
+      <tr><td>desktop</td><td>1280px</td><td>Same as large with narrower gutters</td></tr>
+      <tr><td>desktop-small</td><td>1024px</td><td>4-up cards collapse to 3-up; sub-nav stays horizontal</td></tr>
+      <tr><td>tablet</td><td>768px</td><td>3-up cards collapse to 2-up; primary nav becomes hamburger</td></tr>
+      <tr><td>mobile</td><td>480px</td><td>Single-column; footer columns collapse to accordion</td></tr>
+      <tr><td>mobile-narrow</td><td>320px</td><td>Hero display-xl scales 48px → 32px</td></tr>
+    </tbody>
+  </table>
+
+  <div class="device-ladder">
+    <div class="device phone"><span class="name">320</span><span class="label">m-narrow</span></div>
+    <div class="device phone-large"><span class="name">480</span><span class="label">mobile</span></div>
+    <div class="device tablet"><span class="name">768</span><span class="label">tablet</span></div>
+    <div class="device desktop-small"><span class="name">1024</span><span class="label">desktop-sm</span></div>
+    <div class="device desktop"><span class="name">1440</span><span class="label">desktop-lg</span></div>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Touch Targets</h3>
+    <ul>
+      <li><strong>WCAG AA (≥ 44×44px):</strong> button-primary, button-outline, and text-input all sit at 44px height with 24px horizontal padding.</li>
+      <li><strong>Pill tab:</strong> ~40px height with extended hit-target padding to 44×44.</li>
+      <li><strong>Footer links:</strong> 18–20px line-height with 8–12px vertical padding (~36–44px tap target).</li>
+    </ul>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Collapsing Strategy</h3>
+    <ul>
+      <li><strong>Primary nav:</strong> desktop center cluster → tablet hamburger drawer at 768px.</li>
+      <li><strong>Card grid:</strong> 4-up → 3-up → 2-up → 1-up at 1024, 768, and 480px; gutters drop from 24px to 16px on mobile.</li>
+      <li><strong>Footer:</strong> 6-up → 2-up at tablet → full accordion at mobile.</li>
+      <li><strong>Hero display:</strong> 48px → 36px → 32px; line-height stays at 1.25.</li>
+      <li><strong>Sub-nav strip:</strong> desktop horizontal anchor row → tablet horizontal scroll → mobile select dropdown.</li>
+      <li><strong>Section padding:</strong> 64px desktop → 48px tablet → 32px mobile.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</div>
+<div class="theme-layer" data-when="dark">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#layout">Layout</a></li>
+  </ul>
+  <button class="nav-cta">Get Started</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of NVIDIA</h1>
+    <p>An engineering-grade marketing system organized around two surface modes — a deep black canvas for hero and footer chapters and a flat paper-white canvas for body content — connected by a single, almost violently saturated NVIDIA Green accent that carries every CTA. In dark mode the body inverts to true black and the chrome flips to translucent-white hairlines, but every brand accent — green, sale red, success green, the editorial purples — holds its identity.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Get Started</button>
+      <button class="btn btn-outline">Read the Docs</button>
+    </div>
+  </div>
+</header>
+
+<!-- COLOR PALETTE -->
+<section data-sec="colors">
+  <p class="section-eyebrow">01 — Color</p>
+  <h2 class="section-heading">Color Palette</h2>
+  <p class="section-desc">Black canvas with a 3-step neutral surface ladder, translucent white text/border tiers, and brand accent colors preserved unchanged from light mode.</p>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Brand &amp; Accent</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#76b900"></div><div class="swatch-meta"><p class="swatch-name">NVIDIA Green (primary)</p><p class="swatch-hex">#76b900</p><p class="swatch-role">Every primary CTA, active state, link affordance, brand mark, decorative corner square</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#5a8d00"></div><div class="swatch-meta"><p class="swatch-name">NVIDIA Green Dark</p><p class="swatch-hex">#5a8d00</p><p class="swatch-role">Pressed state for the primary button</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#bff230"></div><div class="swatch-meta"><p class="swatch-name">Accent Green Pale</p><p class="swatch-hex">#bff230</p><p class="swatch-role">Editorial highlight tint</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Canvas &amp; Surface Ladder</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#000000"></div><div class="swatch-meta"><p class="swatch-name">Canvas</p><p class="swatch-hex">#000000</p><p class="swatch-role">Page background, primary nav, footer</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#0d0d0d"></div><div class="swatch-meta"><p class="swatch-name">Surface</p><p class="swatch-hex">#0d0d0d</p><p class="swatch-role">Cards, callout containers</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1a1a1a"></div><div class="swatch-meta"><p class="swatch-name">Surface Soft</p><p class="swatch-hex">#1a1a1a</p><p class="swatch-role">Breadcrumb strip, sub-nav, alternating rows</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#232323"></div><div class="swatch-meta"><p class="swatch-name">Surface Elevated</p><p class="swatch-hex">#232323</p><p class="swatch-role">Disabled state, badge background</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.12)"></div><div class="swatch-meta"><p class="swatch-name">Hairline</p><p class="swatch-hex">rgba(255,255,255,0.12)</p><p class="swatch-role">Translucent 1px row dividers</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.24)"></div><div class="swatch-meta"><p class="swatch-name">Hairline Strong</p><p class="swatch-hex">rgba(255,255,255,0.24)</p><p class="swatch-role">Stronger divider on dark surfaces</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Text Tiers (translucent white)</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff"></div><div class="swatch-meta"><p class="swatch-name">Ink</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Headlines and primary text</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.85)"></div><div class="swatch-meta"><p class="swatch-name">Body</p><p class="swatch-hex">rgba(255,255,255,0.85)</p><p class="swatch-role">Body copy on dark canvas</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.6)"></div><div class="swatch-meta"><p class="swatch-name">Mute</p><p class="swatch-hex">rgba(255,255,255,0.6)</p><p class="swatch-role">Metadata, separators</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.4)"></div><div class="swatch-meta"><p class="swatch-name">Stone</p><p class="swatch-hex">rgba(255,255,255,0.4)</p><p class="swatch-role">Lowest-emphasis utility text</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Semantic (preserved + brightened where needed for AA)</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ff4047"></div><div class="swatch-meta"><p class="swatch-name">Error</p><p class="swatch-hex">#ff4047</p><p class="swatch-role">Brightened from #e52020 for AA on dark</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#ef9100"></div><div class="swatch-meta"><p class="swatch-name">Warning</p><p class="swatch-hex">#ef9100</p><p class="swatch-role">Caution callouts, deprecated banners</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1eaa52"></div><div class="swatch-meta"><p class="swatch-name">Success</p><p class="swatch-hex">#1eaa52</p><p class="swatch-role">Brightened success indicator</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#4a7dff"></div><div class="swatch-meta"><p class="swatch-name">Link Blue</p><p class="swatch-hex">#4a7dff</p><p class="swatch-role">Inline body-prose link — brightened from #0046a4</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Editorial Accents</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#c060e0"></div><div class="swatch-meta"><p class="swatch-name">Accent Purple</p><p class="swatch-hex">#c060e0</p><p class="swatch-role">Brightened research accent</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f9d4ff"></div><div class="swatch-meta"><p class="swatch-name">Accent Purple Pale</p><p class="swatch-hex">#f9d4ff</p><p class="swatch-role">Editorial callout wash</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#feeeb2"></div><div class="swatch-meta"><p class="swatch-name">Accent Yellow Pale</p><p class="swatch-hex">#feeeb2</p><p class="swatch-role">Documentation tip fill</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section data-sec="typography">
+  <p class="section-eyebrow">02 — Typography</p>
+  <h2 class="section-heading">Typography Scale</h2>
+  <p class="section-desc">Identical hierarchy to light mode. Type tokens don't change between modes — only color values shift.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>NVIDIA-EMEA<br>48px / 700 / lh 1.25</div><div class="type-sample" style="font-family:var(--font-ui);font-size:48px;font-weight:700;line-height:1.25">Accelerated Computing</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>NVIDIA-EMEA<br>36px / 700 / lh 1.25</div><div class="type-sample" style="font-family:var(--font-ui);font-size:36px;font-weight:700;line-height:1.25">Explore Our AI Solutions</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-xl</strong>NVIDIA-EMEA<br>24px / 700 / lh 1.25</div><div class="type-sample" style="font-family:var(--font-ui);font-size:24px;font-weight:700;line-height:1.25">Sub-section title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-lg</strong>NVIDIA-EMEA<br>22px / 400 / lh 1.75</div><div class="type-sample" style="font-family:var(--font-ui);font-size:22px;font-weight:400;line-height:1.75">A long-form intro paragraph that doubles as a heading.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-md</strong>NVIDIA-EMEA<br>20px / 700 / lh 1.25</div><div class="type-sample" style="font-family:var(--font-ui);font-size:20px;font-weight:700;line-height:1.25">Card group title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-sm</strong>NVIDIA-EMEA<br>18px / 700 / lh 1.4</div><div class="type-sample" style="font-family:var(--font-ui);font-size:18px;font-weight:700;line-height:1.4">Side-rail filter group</div></div>
+  <div class="type-row"><div class="type-meta"><strong>card-title</strong>NVIDIA-EMEA<br>17px / 700 / lh 1.47</div><div class="type-sample" style="font-family:var(--font-ui);font-size:17px;font-weight:700;line-height:1.47">Resource Card Title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>NVIDIA-EMEA<br>16px / 400 / lh 1.5</div><div class="type-sample" style="font-family:var(--font-ui);font-size:16px;font-weight:400;line-height:1.5">Body copy carries product descriptions and any long-form prose at 16px regular weight.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-strong</strong>NVIDIA-EMEA<br>16px / 700 / lh 1.5</div><div class="type-sample" style="font-family:var(--font-ui);font-size:16px;font-weight:700;line-height:1.5">Inline emphasis or primary nav link</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>NVIDIA-EMEA<br>15px / 400 / lh 1.67</div><div class="type-sample" style="font-family:var(--font-ui);font-size:15px;font-weight:400;line-height:1.67">Card description and secondary copy at 15px.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-md</strong>NVIDIA-EMEA<br>16px / 700 / lh 1.25</div><div class="type-sample" style="font-family:var(--font-ui);font-size:16px;font-weight:700;line-height:1.25">Get Started</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-sm</strong>NVIDIA-EMEA<br>14.4px / 700 / lh 1 / +0.144px</div><div class="type-sample" style="font-family:var(--font-ui);font-size:14.4px;font-weight:700;line-height:1;letter-spacing:0.144px">Compact CTA Label</div></div>
+  <div class="type-row"><div class="type-meta"><strong>link-md</strong>NVIDIA-EMEA<br>15px / 400 / lh 1.5</div><div class="type-sample" style="font-family:var(--font-ui);font-size:15px;font-weight:400;line-height:1.5"><a style="color:var(--link-blue);text-decoration:underline">Inline body link</a></div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-md</strong>NVIDIA-EMEA<br>14px / 700 / lh 1.43 / uppercase</div><div class="type-sample" style="font-family:var(--font-ui);font-size:14px;font-weight:700;line-height:1.43;text-transform:uppercase;letter-spacing:0.4px">Eyebrow Over Section</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-sm</strong>NVIDIA-EMEA<br>12px / 400 / lh 1.25</div><div class="type-sample" style="font-family:var(--font-ui);font-size:12px;font-weight:400;line-height:1.25">Footnote, metadata, table caption</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-xs</strong>NVIDIA-EMEA<br>11px / 700 / lh 1</div><div class="type-sample" style="font-family:var(--font-ui);font-size:11px;font-weight:700;line-height:1">Pill chip · utility-bar text</div></div>
+  <div class="type-row"><div class="type-meta"><strong>utility-xs</strong>NVIDIA-EMEA<br>10px / 700 / lh 1.5 / uppercase</div><div class="type-sample" style="font-family:var(--font-ui);font-size:10px;font-weight:700;line-height:1.5;text-transform:uppercase">Legal fine-print row</div></div>
+</section>
+
+<!-- BUTTONS -->
+<section data-sec="components">
+  <p class="section-eyebrow">03 — Components</p>
+  <h2 class="section-heading">Button Variants</h2>
+  <p class="section-desc">Single-accent green CTA system on dark canvas. Outline gets a 2px green border; outline-on-dark stays white-on-black for inverted layouts.</p>
+
+  <div class="button-grid">
+    <div class="button-cell">
+      <button class="btn btn-primary">Get Started</button>
+      <p class="button-cell-label">button-primary</p>
+      <p class="button-cell-spec">bg primary · text on-primary · rounded sm · 44px height</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-primary" style="background:var(--primary-dark)">Pressed</button>
+      <p class="button-cell-label">button-primary-active</p>
+      <p class="button-cell-spec">bg primary-dark · text on-primary</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-outline">Read the Docs</button>
+      <p class="button-cell-label">button-outline</p>
+      <p class="button-cell-spec">transparent · text ink · 2px primary border</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-outline-on-dark">Watch Video</button>
+      <p class="button-cell-label">button-outline-on-dark</p>
+      <p class="button-cell-spec">transparent · text on-dark · 1px on-dark border</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-ghost-link">LEARN MORE →</button>
+      <p class="button-cell-label">button-ghost-link</p>
+      <p class="button-cell-spec">text primary · no bg</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-disabled">Disabled</button>
+      <p class="button-cell-label">button-disabled</p>
+      <p class="button-cell-spec">bg surface-elevated · text stone</p>
+    </div>
+    <div class="button-cell wide">
+      <div class="pill-tabs">
+        <button class="pill-tab active">All Resources</button>
+        <button class="pill-tab">White Papers</button>
+        <button class="pill-tab">Webinars</button>
+        <button class="pill-tab">Blogs</button>
+        <button class="pill-tab">Case Studies</button>
+      </div>
+      <p class="button-cell-label">pill-tab + pill-tab-active</p>
+      <p class="button-cell-spec">default: transparent + 1px hairline · active: ink fill + canvas text</p>
+    </div>
+    <div class="button-cell wide">
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <span class="badge-tag">White Paper</span>
+        <span class="badge-tag">Webinar</span>
+        <span class="badge-tag">Blog</span>
+        <span class="badge-tag">Case Study</span>
+        <span class="badge-tag">Documentation</span>
+      </div>
+      <p class="button-cell-label">badge-tag</p>
+      <p class="button-cell-spec">bg surface-elevated · uppercase caption-md</p>
+    </div>
+  </div>
+</section>
+
+<!-- CARDS -->
+<section>
+  <p class="section-eyebrow">04 — Cards</p>
+  <h2 class="section-heading">Card Examples</h2>
+  <p class="section-desc">Cards stay flat on canvas with translucent-white hairline borders and the green corner square as ornament. No shadow, no tilt, no soft chrome.</p>
+
+  <div class="card-grid">
+    <div class="product-card">
+      <div class="product-card-image green"></div>
+      <div class="card-body">
+        <h3 class="card-title">Product Card Title</h3>
+        <p class="card-desc">Short description rendered in body-sm.</p>
+        <a class="card-link">Learn More →</a>
+      </div>
+    </div>
+    <div class="feature-card">
+      <div class="card-body">
+        <div class="feature-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg></div>
+        <h4 class="feature-card-title">Agentic AI</h4>
+        <p class="card-desc" style="font-size:16px;line-height:1.5">Capability description rendered in body-md.</p>
+        <a class="card-link">Learn More →</a>
+      </div>
+    </div>
+    <div class="resource-card">
+      <div class="resource-card-tag"><span class="badge-tag">White Paper</span></div>
+      <div class="resource-card-image purple" style="margin-top:16px"></div>
+      <div class="card-body">
+        <h3 class="card-title">Resource Card Title</h3>
+        <p class="card-desc">Longer-form description that gives the reader enough to decide whether to download.</p>
+        <a class="card-link">Read More →</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:48px">
+    <p class="palette-block-label">Stat Callouts</p>
+    <div class="stat-grid">
+      <div class="callout-stat"><p class="callout-stat-number">4×</p><p class="callout-stat-label">Faster training</p></div>
+      <div class="callout-stat"><p class="callout-stat-number">60%</p><p class="callout-stat-label">Lower cost</p></div>
+      <div class="callout-stat"><p class="callout-stat-number">10x</p><p class="callout-stat-label">Inference throughput</p></div>
+      <div class="callout-stat"><p class="callout-stat-number">2.5x</p><p class="callout-stat-label">Energy efficiency</p></div>
+    </div>
+  </div>
+
+  <div style="margin-top:48px">
+    <p class="palette-block-label">Hero Chapter &amp; Dark CTA Strip</p>
+    <div class="hero-card-dark">
+      <p class="hero-card-eyebrow">Industries — Healthcare</p>
+      <h3 class="hero-card-title">Accelerate Discovery, Diagnostics, and Patient Care</h3>
+      <p class="hero-card-subtitle">Full-bleed dark chapter that anchors the top of every primary landing page.</p>
+      <div class="hero-card-actions">
+        <button class="btn btn-primary">Get Started</button>
+        <button class="btn btn-outline-on-dark">Watch Video</button>
+      </div>
+    </div>
+    <div class="cta-strip-dark" style="margin-top:24px">
+      <h3 class="cta-strip-title">Ready to Build with NVIDIA AI Foundry?</h3>
+      <button class="btn btn-primary">Start Building</button>
+    </div>
+  </div>
+
+  <div style="margin-top:48px">
+    <p class="palette-block-label">Disclosure Rows</p>
+    <div class="disclosure-list">
+      <div class="disclosure-row"><span class="disclosure-label">Specifications</span><span style="color:var(--ink)">▾</span></div>
+      <div class="disclosure-row"><span class="disclosure-label">System Requirements</span><span style="color:var(--ink)">▾</span></div>
+      <div class="disclosure-row"><span class="disclosure-label">Documentation</span><span style="color:var(--ink)">▾</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- NAV -->
+<section>
+  <p class="section-eyebrow">05 — Navigation</p>
+  <h2 class="section-heading">Utility · Primary · Breadcrumb · Sub-nav</h2>
+  <p class="section-desc">A 4-tier navigation stack — utility, primary, breadcrumb, sub-nav — all on the same dark canvas with translucent-white dividers.</p>
+
+  <div class="demo-nav-stack">
+    <div class="demo-utility-bar"><span>EN-EU</span><span>Login</span><span>Account</span></div>
+    <div class="demo-primary-nav">
+      <span class="nvbrand">NVIDIA</span>
+      <div class="demo-primary-nav-links">
+        <span>Products</span>
+        <span>Solutions</span>
+        <span>Industries</span>
+        <span>Resources</span>
+        <span>Support</span>
+        <span>Company</span>
+      </div>
+      <button class="btn btn-primary" style="height:36px;padding:0 16px;font-size:14px">Get Started</button>
+    </div>
+    <div class="demo-breadcrumb-bar"><span>Industries</span><span class="sep">/</span><span>Healthcare &amp; Life Sciences</span></div>
+    <div class="demo-sub-nav-strip">
+      <span class="active">Drug Discovery</span>
+      <span>Medical Imaging</span>
+      <span>Genomics</span>
+      <span>Patient Care</span>
+    </div>
+  </div>
+</section>
+
+<!-- FORMS -->
+<section>
+  <p class="section-eyebrow">06 — Forms</p>
+  <h2 class="section-heading">Form Elements</h2>
+  <p class="section-desc">2px-radius inputs on Surface; on focus the border becomes a 2px NVIDIA Green outline.</p>
+
+  <div class="form-grid">
+    <div class="form-cell">
+      <label class="form-label">Default Input</label>
+      <input class="text-input" placeholder="Email address">
+      <span class="form-spec">surface bg · 1px hairline · rounded sm · 44px height</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Focused Input</label>
+      <input class="text-input focused" value="user@example.com">
+      <span class="form-spec">2px primary border</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Error Input</label>
+      <input class="text-input error" value="invalid email">
+      <span class="form-spec">1px error border</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Search Input</label>
+      <input class="text-input" placeholder="Search NVIDIA…" style="height:40px">
+      <span class="form-spec">surface bg · 1px hairline · 40px height</span>
+    </div>
+    <div class="form-cell wide">
+      <label class="form-label">Textarea</label>
+      <textarea class="text-input" placeholder="Describe your use case…"></textarea>
+      <span class="form-spec">surface bg · 1px hairline · rounded sm</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Submit</label>
+      <button class="btn btn-primary" style="width:100%">Submit Form</button>
+      <span class="form-spec">button-primary · always full-width</span>
+    </div>
+  </div>
+</section>
+
+<!-- SPACING -->
+<section>
+  <p class="section-eyebrow">07 — Layout</p>
+  <h2 class="section-heading">Spacing Scale</h2>
+  <p class="section-desc">8px base unit. Section rhythm at 64px is preserved across modes.</p>
+  <div class="spacing-row">
+    <div class="spacing-cell"><div class="spacing-bar" style="width:2px"></div><span class="spacing-label">xxs · 2</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:4px"></div><span class="spacing-label">xs · 4</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:8px"></div><span class="spacing-label">sm · 8</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:12px"></div><span class="spacing-label">md · 12</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:16px"></div><span class="spacing-label">lg · 16</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:24px"></div><span class="spacing-label">xl · 24</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:32px"></div><span class="spacing-label">xxl · 32</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:64px"></div><span class="spacing-label">section · 64</span></div>
+  </div>
+</section>
+
+<!-- RADIUS -->
+<section>
+  <p class="section-eyebrow">08 — Shapes</p>
+  <h2 class="section-heading">Border Radius Scale</h2>
+  <p class="section-desc">Identical to light mode. Containers stay sharp; CTAs stay 2px.</p>
+  <div class="radius-row">
+    <div class="radius-cell"><div class="radius-box" style="border-radius:0"></div><span class="radius-label">none · 0</span><p class="radius-context">Hero, footer, dark CTA, primary nav</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:1px"></div><span class="radius-label">xs · 1</span><p class="radius-context">Decorative micro-rules</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:2px"></div><span class="radius-label">sm · 2</span><p class="radius-context">Every interactive element</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:9999px"></div><span class="radius-label">full · 9999</span><p class="radius-context">Avatar circles, social icons</p></div>
+  </div>
+</section>
+
+<!-- ELEVATION -->
+<section>
+  <p class="section-eyebrow">09 — Depth</p>
+  <h2 class="section-heading">Elevation &amp; Depth</h2>
+  <p class="section-desc">No drop shadows in card surfaces. Depth comes from translucent-white hairline borders and surface-color contrast.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card level-0"><div class="elevation-name">Level 0 — Flat</div><div class="elevation-spec">no border / no shadow</div></div>
+    <div class="elevation-card level-1"><div class="elevation-name">Level 1 — Hairline</div><div class="elevation-spec">1px solid rgba(255,255,255,0.12)</div></div>
+    <div class="elevation-card level-2"><div class="elevation-name">Level 2 — Hairline Strong</div><div class="elevation-spec">1px solid rgba(255,255,255,0.24)</div></div>
+    <div class="elevation-card level-3"><div class="elevation-name">Level 3 — Soft Shadow</div><div class="elevation-spec">0 0 5px 0 rgba(0,0,0,0.6)</div></div>
+  </div>
+</section>
+
+<!-- FOOTER DEMO -->
+<section>
+  <p class="section-eyebrow">10 — Footer</p>
+  <h2 class="section-heading">Footer Section</h2>
+  <p class="section-desc">Dense 6-column link grid on Black Canvas with translucent-white text tiers.</p>
+  <div class="footer-demo">
+    <div class="footer-col"><h4 class="footer-col-title">Products</h4><a>GeForce</a><a>Quadro</a><a>Tesla</a><a>DGX</a><a>Jetson</a></div>
+    <div class="footer-col"><h4 class="footer-col-title">Software</h4><a>CUDA</a><a>NIM</a><a>NeMo</a><a>Omniverse</a></div>
+    <div class="footer-col"><h4 class="footer-col-title">Resources</h4><a>Documentation</a><a>Tutorials</a><a>Webinars</a><a>White Papers</a></div>
+    <div class="footer-col"><h4 class="footer-col-title">Solutions</h4><a>AI</a><a>HPC</a><a>Data Science</a><a>Robotics</a></div>
+    <div class="footer-col"><h4 class="footer-col-title">Company</h4><a>About</a><a>Careers</a><a>Investors</a><a>Press</a></div>
+    <div class="footer-col"><h4 class="footer-col-title">Support</h4><a>Contact</a><a>Forums</a><a>Customer Care</a><a>Status</a></div>
+  </div>
+</section>
+
+<!-- RESPONSIVE -->
+<section data-sec="layout">
+  <p class="section-eyebrow">11 — Responsive</p>
+  <h2 class="section-heading">Responsive Behavior</h2>
+  <p class="section-desc">Identical breakpoint stack to light mode.</p>
+
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>ultrawide</td><td>1920px+</td><td>Content max-width 1280px; gutters grow to ~80px</td></tr>
+      <tr><td>desktop-large</td><td>1440px</td><td>Default — 4-up cards, 6-col footer</td></tr>
+      <tr><td>desktop</td><td>1280px</td><td>Same as large with narrower gutters</td></tr>
+      <tr><td>desktop-small</td><td>1024px</td><td>4-up cards collapse to 3-up</td></tr>
+      <tr><td>tablet</td><td>768px</td><td>3-up cards collapse to 2-up; primary nav becomes hamburger</td></tr>
+      <tr><td>mobile</td><td>480px</td><td>Single-column; footer collapses to accordion</td></tr>
+      <tr><td>mobile-narrow</td><td>320px</td><td>Hero display-xl scales 48px → 32px</td></tr>
+    </tbody>
+  </table>
+
+  <div class="device-ladder">
+    <div class="device phone"><span class="name">320</span><span class="label">m-narrow</span></div>
+    <div class="device phone-large"><span class="name">480</span><span class="label">mobile</span></div>
+    <div class="device tablet"><span class="name">768</span><span class="label">tablet</span></div>
+    <div class="device desktop-small"><span class="name">1024</span><span class="label">desktop-sm</span></div>
+    <div class="device desktop"><span class="name">1440</span><span class="label">desktop-lg</span></div>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Touch Targets</h3>
+    <ul>
+      <li><strong>WCAG AA (≥ 44×44px):</strong> button-primary, button-outline, and text-input at 44px height with 24px padding.</li>
+      <li><strong>Pill tab:</strong> ~40px height with extended hit-target padding to 44×44.</li>
+      <li><strong>Footer links:</strong> 18–20px line-height with 8–12px vertical padding.</li>
+    </ul>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Collapsing Strategy</h3>
+    <ul>
+      <li><strong>Primary nav:</strong> desktop center cluster → tablet hamburger drawer at 768px.</li>
+      <li><strong>Card grid:</strong> 4-up → 3-up → 2-up → 1-up at 1024, 768, and 480px.</li>
+      <li><strong>Footer:</strong> 6-up → 2-up at tablet → full accordion at mobile.</li>
+      <li><strong>Hero display:</strong> 48px → 36px → 32px.</li>
+      <li><strong>Section padding:</strong> 64px desktop → 48px tablet → 32px mobile.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</div>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

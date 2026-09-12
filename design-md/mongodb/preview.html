@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design System Analysis of MongoDB</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #001220; }</style>
+  
+</head>
+<body>
+  <div class="promo-banner">MongoDB AI Hub is now live. Build smarter with vector search. <a href="#">Learn more →</a></div>
+  <nav class="nav">
+    <div class="nav-left">
+      <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+        <span class="nav-brand">getdesign.md</span>
+      </a>
+      <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+        awesome-design-md
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Solutions</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Company</a></li>
+      <li><a href="#">Pricing</a></li>
+    </ul>
+    <button class="nav-cta">Try Free</button>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-band-dark">
+      <h1>Design System Analysis of MongoDB</h1>
+      <p>MongoDB carries a strong dual-mode visual identity — dark deep-teal hero bands with bright MongoDB green CTAs paired with stark white documentation surfaces. The signature green pill is unmistakable across product, pricing, learning, and AI use-case surfaces.</p>
+      <div class="hero-actions">
+        <button class="btn-primary">Try Free</button>
+        <button class="btn-secondary-on-dark">Documentation</button>
+      </div>
+    </div>
+  </div>
+
+  <section id="colors">
+    <h2 class="section-heading">Color Palette</h2>
+    <p class="section-sub">Bright MongoDB green ({colors.brand-green}) anchored by deep navy/teal hero bands. Category accent palette (purple, orange, pink, blue) reserved for course tags only.</p>
+
+    <div class="palette-group">
+      <h3>Brand &amp; Accent</h3>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #00ed64;"></div><div class="swatch-name">MongoDB Green</div><div class="swatch-hex">#00ed64</div><div class="swatch-role">Primary CTA pill</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #00b545;"></div><div class="swatch-name">Green Deep</div><div class="swatch-hex">#00b545</div><div class="swatch-role">Pressed-state green</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #00684a;"></div><div class="swatch-name">Green Dark</div><div class="swatch-hex">#00684a</div><div class="swatch-role">Inline links</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #00a35c;"></div><div class="swatch-name">Green Mid</div><div class="swatch-hex">#00a35c</div><div class="swatch-role">Atmospheric tints</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #c3f0d2;"></div><div class="swatch-name">Green Soft</div><div class="swatch-hex">#c3f0d2</div><div class="swatch-role">Featured pricing tier</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #001e2b;"></div><div class="swatch-name">Brand Teal Deep</div><div class="swatch-hex">#001e2b</div><div class="swatch-role">Hero bands, footer</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #003d4f;"></div><div class="swatch-name">Brand Teal</div><div class="swatch-hex">#003d4f</div><div class="swatch-role">Mid-spectrum teal</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #00684a;"></div><div class="swatch-name">Brand Teal Mid</div><div class="swatch-hex">#00684a</div><div class="swatch-role">Hero platform card</div></div>
+      </div>
+    </div>
+
+    <div class="palette-group">
+      <h3>Category Accent (Course Tags)</h3>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #7b3ff2;"></div><div class="swatch-name">Accent Purple</div><div class="swatch-hex">#7b3ff2</div><div class="swatch-role">Database &amp; Security</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #fa6e39;"></div><div class="swatch-name">Accent Orange</div><div class="swatch-hex">#fa6e39</div><div class="swatch-role">Search topics</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #f06bb8;"></div><div class="swatch-name">Accent Pink</div><div class="swatch-hex">#f06bb8</div><div class="swatch-role">Specialized topics</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #3d4f9f;"></div><div class="swatch-name">Accent Blue</div><div class="swatch-hex">#3d4f9f</div><div class="swatch-role">Atlas/cloud topics</div></div>
+      </div>
+    </div>
+
+    <div class="palette-group">
+      <h3>Surface</h3>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #ffffff;"></div><div class="swatch-name">Canvas White</div><div class="swatch-hex">#ffffff</div><div class="swatch-role">Page + card background</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #001e2b;"></div><div class="swatch-name">Canvas Dark</div><div class="swatch-hex">#001e2b</div><div class="swatch-role">Code mockups</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #f9fbfa;"></div><div class="swatch-name">Surface</div><div class="swatch-hex">#f9fbfa</div><div class="swatch-role">Subtle background</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #e3fcef;"></div><div class="swatch-name">Surface Feature</div><div class="swatch-hex">#e3fcef</div><div class="swatch-role">Featured tier bg</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #e1e5e8;"></div><div class="swatch-name">Hairline</div><div class="swatch-hex">#e1e5e8</div><div class="swatch-role">Borders</div></div>
+      </div>
+    </div>
+
+    <div class="palette-group">
+      <h3>Text</h3>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #001e2b;"></div><div class="swatch-name">Ink</div><div class="swatch-hex">#001e2b</div><div class="swatch-role">Headlines, body</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #1c2d38;"></div><div class="swatch-name">Charcoal</div><div class="swatch-hex">#1c2d38</div><div class="swatch-role">Body emphasis</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #3d4f5b;"></div><div class="swatch-name">Slate</div><div class="swatch-hex">#3d4f5b</div><div class="swatch-role">Secondary text</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #5c6c7a;"></div><div class="swatch-name">Steel</div><div class="swatch-hex">#5c6c7a</div><div class="swatch-role">Tertiary, captions</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #7c8c9a;"></div><div class="swatch-name">Stone</div><div class="swatch-hex">#7c8c9a</div><div class="swatch-role">Muted labels</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #a8b3bc;"></div><div class="swatch-name">Muted</div><div class="swatch-hex">#a8b3bc</div><div class="swatch-role">Disabled</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="typography">
+    <h2 class="section-heading">Typography Scale</h2>
+    <p class="section-sub">Euclid Circular A across every UI surface — from 72px hero displays to 11px micro labels. Source Code Pro for code mockups.</p>
+
+    <div class="type-row"><div class="type-meta"><span class="role">hero-display</span><span class="specs">72px / 500 / 1.10 / -1.5px</span></div><div class="type-sample" style="font-size: 72px; font-weight: 500; line-height: 1.10; letter-spacing: -1.5px;">One data platform</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">display-lg</span><span class="specs">56px / 500 / 1.15 / -1px</span></div><div class="type-sample" style="font-size: 56px; font-weight: 500; line-height: 1.15; letter-spacing: -1px;">Build with MongoDB</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">heading-1</span><span class="specs">48px / 500 / 1.20 / -0.5px</span></div><div class="type-sample" style="font-size: 48px; font-weight: 500; line-height: 1.20; letter-spacing: -0.5px;">MongoDB Pricing</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">heading-2</span><span class="specs">36px / 500 / 1.25 / -0.5px</span></div><div class="type-sample" style="font-size: 36px; font-weight: 500; line-height: 1.25; letter-spacing: -0.5px;">Compare Atlas plans</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">heading-3</span><span class="specs">28px / 500 / 1.30</span></div><div class="type-sample" style="font-size: 28px; font-weight: 500; line-height: 1.30;">Card title</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">heading-5</span><span class="specs">18px / 600 / 1.40</span></div><div class="type-sample" style="font-size: 18px; font-weight: 600; line-height: 1.40;">Smaller card titles</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">subtitle</span><span class="specs">18px / 400 / 1.50</span></div><div class="type-sample" style="font-size: 18px; font-weight: 400; line-height: 1.50;">Hero subtitle</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">body-md</span><span class="specs">16px / 400 / 1.55</span></div><div class="type-sample" style="font-size: 16px; font-weight: 400; line-height: 1.55;">Primary body text used across documentation prose, marketing copy, and feature descriptions.</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">body-sm</span><span class="specs">14px / 400 / 1.50</span></div><div class="type-sample" style="font-size: 14px; font-weight: 400; line-height: 1.50;">Secondary body, table cells, navigation</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">caption-bold</span><span class="specs">13px / 600 / 1.40</span></div><div class="type-sample" style="font-size: 13px; font-weight: 600; line-height: 1.40;">BADGE / TAG</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">code-md</span><span class="specs">Source Code Pro / 14px / 1.55</span></div><div class="type-sample" style="font-family: &#39;Source Code Pro&#39;, monospace; font-size: 14px;">db.collection.find({"$lt": 100})</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">button-md</span><span class="specs">14px / 600 / 1.30</span></div><div class="type-sample" style="font-size: 14px; font-weight: 600; line-height: 1.30;">PILL BUTTON LABEL</div></div>
+  </section>
+
+  <section id="buttons">
+    <h2 class="section-heading">Button Variants</h2>
+    <p class="section-sub">Pill-shaped everywhere. Bright MongoDB green is the dominant CTA across all surfaces.</p>
+    <div class="button-grid">
+      <div class="button-cell"><button class="btn-primary">Try Free</button><span class="button-cell-name">button-primary</span><span class="button-cell-spec">MongoDB green pill</span></div>
+      <div class="button-cell"><button class="btn-secondary">Documentation</button><span class="button-cell-name">button-secondary</span><span class="button-cell-spec">Outlined pill</span></div>
+      <div class="button-cell" style="background: var(--brand-teal-deep);"><button class="btn-primary">Get started</button><span class="button-cell-name" style="color: var(--on-dark);">button-on-dark</span><span class="button-cell-spec" style="color: var(--on-dark-muted);">Green pill on dark</span></div>
+      <div class="button-cell" style="background: var(--brand-teal-deep);"><button class="btn-secondary-on-dark">View docs</button><span class="button-cell-name" style="color: var(--on-dark);">button-secondary-on-dark</span><span class="button-cell-spec" style="color: var(--on-dark-muted);">Outlined on dark</span></div>
+      <div class="button-cell"><button class="btn-ghost">View</button><span class="button-cell-name">button-ghost</span><span class="button-cell-spec">Quieter rect ghost</span></div>
+      <div class="button-cell"><button class="btn-link">Learn more →</button><span class="button-cell-name">button-link</span><span class="button-cell-spec">Inline green link</span></div>
+      <div class="button-cell"><button class="btn-disabled">Unavailable</button><span class="button-cell-name">button-primary-disabled</span><span class="button-cell-spec">Disabled state</span></div>
+    </div>
+  </section>
+
+  <section id="badges">
+    <h2 class="section-heading">Badges &amp; Status</h2>
+    <p class="section-sub">Mix of green status indicators and category-encoding tag chips. Course tags use the colored accent palette.</p>
+    <div class="badge-row">
+      <span class="badge badge-green">New</span>
+      <span class="badge badge-green-soft">Free</span>
+      <span class="badge badge-popular">Most Popular</span>
+      <span class="badge badge-purple">Database &amp; Security</span>
+      <span class="badge badge-orange">Search</span>
+      <span class="badge badge-pink">Specialized</span>
+    </div>
+    <div class="promo-banner" style="border-radius: 8px; margin-top: 24px;">MongoDB AI Hub is now live. Build smarter with vector search. <a href="#">Learn more →</a></div>
+    <p style="font-size: 12px; color: var(--steel); margin-top: 8px; font-family: &#39;Source Code Pro&#39;, monospace;">promo-banner — sticky teal strip with green inline link</p>
+  </section>
+
+  <section id="cards">
+    <h2 class="section-heading">Cards &amp; Containers</h2>
+    <p class="section-sub">White feature cards, dark teal callout cards, course tiles with category tags, and certification cards with leaf-icon zones.</p>
+    <div class="card-grid">
+      <div class="card-base">
+        <h4 style="font-size: 18px; font-weight: 600;">Standard Card</h4>
+        <p style="font-size: 14px; color: var(--steel); line-height: 1.55;">White canvas with hairline border and 12px corners.</p>
+      </div>
+      <div class="card-product-deploy">
+        <div class="indicator"></div>
+        <h4>MongoDB Atlas</h4>
+        <p>Fully managed cloud database with zero-downtime deployments and automatic scaling.</p>
+        <button class="btn-link" style="padding: 0; align-self: flex-start;">Learn more →</button>
+      </div>
+      <div class="card-feature-dark">
+        <h4>Atlas makes it easy</h4>
+        <p>Vector search, encryption, and 100+ integrations included.</p>
+      </div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin: 48px 0 20px;">Course Tiles (MongoDB University)</h3>
+    <div class="card-grid">
+      <div class="card-course">
+        <div class="tag-row"><span class="badge badge-orange">Popular Training</span></div>
+        <h5>Relational to Document Model</h5>
+        <p>How to model your data in document databases.</p>
+        <button class="btn-link" style="padding: 0; align-self: flex-start;">Get Started →</button>
+      </div>
+      <div class="card-course">
+        <div class="tag-row"><span class="badge badge-purple">Database &amp; Security</span></div>
+        <h5>M0210: MongoDB Database &amp; Security</h5>
+        <p>MongoDB Atlas explores how to secure your MongoDB deployments.</p>
+        <button class="btn-link" style="padding: 0; align-self: flex-start;">Get Started →</button>
+      </div>
+      <div class="card-course">
+        <div class="tag-row"><span class="badge badge-green">Self-paced learning</span></div>
+        <h5>Building AI-Powered Search with Vector Search</h5>
+        <p>How to use MongoDB Atlas Vector Search for AI-powered search.</p>
+        <button class="btn-link" style="padding: 0; align-self: flex-start;">Get Started →</button>
+      </div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin: 48px 0 20px;">Certification Cards</h3>
+    <div class="card-grid">
+      <div class="card-cert"><div class="leaf-icon">🌱</div><h5>MongoDB Associate Developer Exam</h5><p>Validate developer skills.</p></div>
+      <div class="card-cert"><div class="leaf-icon">🌱</div><h5>MongoDB Associate Data Modeler Exam</h5><p>Validate data modeling expertise.</p></div>
+      <div class="card-cert"><div class="leaf-icon">🌱</div><h5>MongoDB Associate Atlas Administrator Exam</h5><p>Atlas operations certification.</p></div>
+      <div class="card-cert"><div class="leaf-icon">🌱</div><h5>MongoDB Associate Database Administrator Exam</h5><p>Database administration cert.</p></div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2 class="section-heading">Pricing Tiers</h2>
+    <p class="section-sub">3-tier comparison (Free / Flex / Dedicated) with the featured tier highlighted in pale mint background and bright green border.</p>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <span class="tier-name">Free</span>
+        <div class="tier-price">$0<small>/mo</small></div>
+        <p style="font-size: 14px; color: var(--steel);">Get started with MongoDB Atlas.</p>
+        <ul class="tier-feature-list">
+          <li>512 MB storage</li>
+          <li>Shared infrastructure</li>
+          <li>Community support</li>
+        </ul>
+        <button class="btn-secondary" style="margin-top: 8px;">Get Started</button>
+      </div>
+      <div class="pricing-card featured">
+        <div class="popular-tag"><span class="badge badge-popular">Most Popular</span></div>
+        <span class="tier-name">Flex</span>
+        <div class="tier-price">$0.011<small>/hr</small></div>
+        <p style="font-size: 14px; color: var(--steel);">For development and growing teams.</p>
+        <ul class="tier-feature-list">
+          <li>Auto-scaling storage</li>
+          <li>Backups included</li>
+          <li>Email support</li>
+          <li>5GB free monthly transfer</li>
+        </ul>
+        <button class="btn-primary" style="margin-top: 8px;">Start trial</button>
+      </div>
+      <div class="pricing-card">
+        <span class="tier-name">Dedicated</span>
+        <div class="tier-price">$0.08<small>/hr</small></div>
+        <p style="font-size: 14px; color: var(--steel);">For production workloads.</p>
+        <ul class="tier-feature-list">
+          <li>Dedicated infrastructure</li>
+          <li>Advanced security</li>
+          <li>24/7 priority support</li>
+          <li>SOC2 compliance</li>
+        </ul>
+        <button class="btn-secondary" style="margin-top: 8px;">Talk to sales</button>
+      </div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin: 48px 0 20px;">Feature Comparison Table</h3>
+    <table class="comparison-table">
+      <thead>
+        <tr><th>Feature</th><th style="text-align: center;">Free</th><th style="text-align: center;">Flex</th><th style="text-align: center;">Dedicated</th></tr>
+      </thead>
+      <tbody>
+        <tr class="section-divider"><td colspan="4">DATABASE FEATURES</td></tr>
+        <tr><td>Storage</td><td style="text-align: center;">512 MB</td><td style="text-align: center;">Auto-scaling</td><td style="text-align: center;">Up to 4 TB</td></tr>
+        <tr><td>Vector Search</td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+        <tr class="section-divider"><td colspan="4">SECURITY</td></tr>
+        <tr><td>Encryption at rest</td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+        <tr><td>VPC peering</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+        <tr class="section-divider"><td colspan="4">SUPPORT</td></tr>
+        <tr><td>Community support</td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+        <tr><td>Priority email</td><td style="text-align: center;">—</td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+        <tr><td>24/7 phone support</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="forms">
+    <h2 class="section-heading">Forms &amp; Inputs</h2>
+    <p class="section-sub">44px-tall inputs with 8px rounded corners. Focus shifts to a 2px Green Dark border.</p>
+    <div class="form-row">
+      <div class="form-field">
+        <label class="form-label">Email</label>
+        <input class="text-input" type="text" value="default state" placeholder="you@email.com">
+      </div>
+      <div class="form-field">
+        <label class="form-label">Workspace name</label>
+        <input class="text-input" type="text" value="focused state" autofocus="" style="border: 2px solid var(--brand-green-dark); padding: 11px 15px;">
+      </div>
+      <div class="form-field">
+        <label class="form-label">API key</label>
+        <input class="text-input" type="text" placeholder="connection string">
+      </div>
+    </div>
+    <div style="margin-top: 32px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+      <input class="search-pill" placeholder="🔍 Search MongoDB docs">
+      <span style="font-size: 12px; color: var(--steel); font-family: &#39;Source Code Pro&#39;, monospace;">search-pill — 44px height</span>
+    </div>
+    <h3 style="font-size: 18px; font-weight: 600; margin: 32px 0 16px;">Search Pill Large (MongoDB University)</h3>
+    <div class="search-pill-large">
+      <span style="color: var(--steel);">🔍</span>
+      <input type="text" placeholder="Search for content">
+      <button class="submit-pill">Search</button>
+    </div>
+  </section>
+
+  <section id="tabs">
+    <h2 class="section-heading">Tabs &amp; Navigation</h2>
+    <p class="section-sub">Underline-style segmented tabs with green active indicator. Pill tabs for top-level switching.</p>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 16px;">Segmented Tabs</h3>
+    <div class="seg-tabs">
+      <button class="seg-tab active">Popular Training</button>
+      <button class="seg-tab">Self-paced learning</button>
+      <button class="seg-tab">Instructor-led Training</button>
+      <button class="seg-tab">Credentials</button>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin: 32px 0 16px;">Pill Tabs (Pricing)</h3>
+    <div class="pill-tabs">
+      <button class="pill-tab active">MongoDB Atlas</button>
+      <button class="pill-tab">Enterprise Advanced</button>
+    </div>
+  </section>
+
+  <section id="code">
+    <h2 class="section-heading">Code Mockup Card</h2>
+    <p class="section-sub">Embedded terminal-aesthetic code mockup on hero bands. Dark canvas with syntax-highlighted snippets.</p>
+
+    <div class="code-mockup-card">
+      <span class="term-line"><span class="gray">$</span> <span class="green">npm install</span> mongodb</span>
+      <span class="term-line"><span class="gray">$</span> <span class="green">mongo</span> "mongodb+srv://cluster0.mongodb.net" --apikey</span>
+      <span class="term-line">  <span class="gray">→ Connected</span></span>
+      <br>
+      <span class="term-line"><span class="yellow">db</span>.collection(<span class="green">"users"</span>).find({ <span class="green">"active"</span>: <span class="yellow">true</span> })</span>
+      <span class="term-line">  <span class="gray">// Returns matching documents</span></span>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2 class="section-heading">Service Tiles</h2>
+    <p class="section-sub">"Customize your deployment with tools &amp; services" — 6-up grid with green icon zones and short descriptions.</p>
+    <div class="card-grid">
+      <div class="service-tile"><div class="icon-zone">🔍</div><h5>MongoDB Atlas Search</h5><p>Full-text search built into your database.</p></div>
+      <div class="service-tile"><div class="icon-zone">📊</div><h5>Atlas Charts</h5><p>Visualize and explore your MongoDB data.</p></div>
+      <div class="service-tile"><div class="icon-zone">⚡</div><h5>Atlas Stream Processing</h5><p>Real-time data processing in MongoDB.</p></div>
+      <div class="service-tile"><div class="icon-zone">🔗</div><h5>Atlas Data Federation</h5><p>Query across data sources seamlessly.</p></div>
+      <div class="service-tile"><div class="icon-zone">📦</div><h5>Atlas Data API</h5><p>Build apps with HTTPS database access.</p></div>
+      <div class="service-tile"><div class="icon-zone">🛡</div><h5>Online Archive</h5><p>Auto-archive infrequently accessed data.</p></div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2 class="section-heading">Customer Testimonials</h2>
+    <p class="section-sub">White testimonial cards with quote + author + title. Used inside product and use-case pages.</p>
+    <div class="testimonial-grid">
+      <div class="customer-testimonial-card">
+        <p class="quote">"MongoDB Atlas gave us the flexibility to scale our database alongside our customer growth — no manual provisioning, no downtime."</p>
+        <div class="author"><div class="avatar"></div><div><div class="author-name">Verified buyer</div><div class="author-title">Engineering Lead</div></div></div>
+      </div>
+      <div class="customer-testimonial-card">
+        <p class="quote">"Vector Search inside Atlas eliminated the need for a separate vector database. Our AI features ship 3x faster now."</p>
+        <div class="author"><div class="avatar" style="background: linear-gradient(135deg, #00a35c, #003d4f);"></div><div><div class="author-name">Customer Success</div><div class="author-title">Tech Architect</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="logo-wall">
+    <h2 class="section-heading">Logo Wall</h2>
+    <p class="section-sub">Customer logo grid — wordmark presentation in trust-row sections.</p>
+    <div class="logo-wall">
+      <div class="logo-item">Coinbase</div>
+      <div class="logo-item">Lyft</div>
+      <div class="logo-item">Adobe</div>
+      <div class="logo-item">Tata</div>
+      <div class="logo-item">Tech Mahindra</div>
+      <div class="logo-item">DataKO</div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2 class="section-heading">FAQ Accordion</h2>
+    <p class="section-sub">Frequently-asked-questions panel. Collapsed by default; chevron toggle.</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">Is the Free tier available for production?</span>
+          <span class="chev">⌃</span>
+        </div>
+        <div class="faq-a">The Free tier is available for development, learning, and small projects. For production workloads, we recommend Flex or Dedicated tiers with backups and priority support.</div>
+      </div>
+      <div class="faq-item collapsed">
+        <div class="faq-q">
+          <span class="faq-q-text">How do I migrate from a self-managed deployment?</span>
+          <span class="chev">⌄</span>
+        </div>
+        <div class="faq-a">MongoDB provides Live Migration tooling for zero-downtime migration from self-managed clusters to Atlas.</div>
+      </div>
+      <div class="faq-item collapsed">
+        <div class="faq-q">
+          <span class="faq-q-text">Is MongoDB SOC 2 compliant?</span>
+          <span class="chev">⌄</span>
+        </div>
+        <div class="faq-a">Yes — MongoDB Atlas Dedicated tier includes SOC 2 Type II compliance plus additional enterprise security features.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta-banner">
+    <h2 class="section-heading">CTA Banner Dark</h2>
+    <p class="section-sub">Page-bottom dark teal CTA banner with bright green primary CTA.</p>
+    <div class="cta-banner-dark">
+      <h4>Ready to get started?</h4>
+      <p>Launch a new cluster in MongoDB Atlas in minutes. No credit card required.</p>
+      <div class="actions">
+        <button class="btn-primary">Try Free</button>
+        <button class="btn-secondary-on-dark">Documentation</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="spacing">
+    <h2 class="section-heading">Spacing Scale</h2>
+    <p class="section-sub">4px base unit, 8px primary increment. Section rhythm runs from 48px to 120px.</p>
+    <div class="spacing-grid">
+      <div class="spacing-box"><div class="spacing-visual" style="width: 4px; height: 16px;"></div><div class="spacing-label">4<small>xxs</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 8px; height: 16px;"></div><div class="spacing-label">8<small>xs</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 12px; height: 16px;"></div><div class="spacing-label">12<small>sm</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 16px; height: 16px;"></div><div class="spacing-label">16<small>md</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 20px; height: 16px;"></div><div class="spacing-label">20<small>lg</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 24px; height: 16px;"></div><div class="spacing-label">24<small>xl</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 32px; height: 16px;"></div><div class="spacing-label">32<small>xxl</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 40px; height: 16px;"></div><div class="spacing-label">40<small>xxxl</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 48px; height: 16px;"></div><div class="spacing-label">48<small>section-sm</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 64px; height: 16px;"></div><div class="spacing-label">64<small>section</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 96px; height: 16px;"></div><div class="spacing-label">96<small>section-lg</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 120px; height: 16px;"></div><div class="spacing-label">120<small>hero</small></div></div>
+    </div>
+  </section>
+
+  <section id="radius">
+    <h2 class="section-heading">Border Radius Scale</h2>
+    <p class="section-sub">Pill buttons (9999px), 12px standard cards, 8px inputs and code blocks.</p>
+    <div class="radius-grid">
+      <div class="radius-demo" style="border-radius: 4px;">4px<small>xs</small></div>
+      <div class="radius-demo" style="border-radius: 6px;">6px<small>sm</small></div>
+      <div class="radius-demo" style="border-radius: 8px;">8px<small>md</small></div>
+      <div class="radius-demo" style="border-radius: 12px;">12px<small>lg</small></div>
+      <div class="radius-demo" style="border-radius: 16px;">16px<small>xl</small></div>
+      <div class="radius-demo" style="border-radius: 24px;">24px<small>xxl</small></div>
+      <div class="radius-demo" style="border-radius: 9999px;">pill<small>full</small></div>
+    </div>
+  </section>
+
+  <section id="elevation">
+    <h2 class="section-heading">Elevation &amp; Depth</h2>
+    <p class="section-sub">Predominantly flat. Strategic depth on code mockup cards over hero bands.</p>
+    <div class="elevation-grid">
+      <div class="elev-cell elev-0"><span class="elev-name">Level 0 — Flat</span><span class="elev-meta">border + hairline</span></div>
+      <div class="elev-cell elev-1"><span class="elev-name">Level 1 — Subtle</span><span class="elev-meta">rgba(0,30,43,0.04) 0 1px 2px</span></div>
+      <div class="elev-cell elev-2"><span class="elev-name">Level 2 — Card</span><span class="elev-meta">rgba(0,30,43,0.08) 0 4px 12px</span></div>
+      <div class="elev-cell elev-3"><span class="elev-name">Level 3 — Mockup</span><span class="elev-meta">rgba(0,30,43,0.12) 0 12px 24px -4px</span></div>
+      <div class="elev-cell elev-4"><span class="elev-name">Level 4 — Modal</span><span class="elev-meta">rgba(0,30,43,0.16) 0 16px 48px -8px</span></div>
+    </div>
+  </section>
+
+  <section id="responsive">
+    <h2 class="section-heading">Responsive Behavior</h2>
+    <p class="section-sub">Hero scales from 72px → 36px on mobile. 3-tier pricing collapses to 1-up. Course catalog 3-up → 1-up.</p>
+    <table class="breakpoint-table">
+      <thead><tr><th>Breakpoint</th><th>Width</th><th>Key Changes</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Mobile (small)</strong></td><td>&lt; 480px</td><td>Single column. Hero 36px. Pricing 1-up. Course catalog 1-up.</td></tr>
+        <tr><td><strong>Mobile (large)</strong></td><td>480 – 767px</td><td>Course tiles 2-up. Hero 48px.</td></tr>
+        <tr><td><strong>Tablet</strong></td><td>768 – 1023px</td><td>2-column feature grids. Pill-tab nav returns. Hero 56px.</td></tr>
+        <tr><td><strong>Desktop</strong></td><td>1024 – 1279px</td><td>3-tier pricing card row. 3-up course catalog. Hero 64px.</td></tr>
+        <tr><td><strong>Wide Desktop</strong></td><td>≥ 1280px</td><td>Full 72px hero presentation.</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin-top: 32px;">Device Ladder</h3>
+    <div class="device-ladder">
+      <div class="device" style="width: 60px; height: 110px;">375px</div>
+      <div class="device" style="width: 90px; height: 130px;">480px</div>
+      <div class="device" style="width: 130px; height: 150px;">768px</div>
+      <div class="device" style="width: 200px; height: 170px;">1024px</div>
+      <div class="device" style="width: 280px; height: 200px;">1280+</div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin-top: 32px;">Touch Targets</h3>
+    <ul style="font-size: 14px; color: var(--charcoal); line-height: 1.7; padding-left: 20px;">
+      <li>Pill buttons render at 40–44px height — at WCAG AAA floor.</li>
+      <li>Form inputs render at 44px height.</li>
+      <li>Search pill (large) renders at 56px.</li>
+      <li>Pill tabs ~32px → 44px on mobile.</li>
+    </ul>
+
+    <h3 style="font-size: 18px; font-weight: 600; margin-top: 32px;">Collapsing Strategy</h3>
+    <ul style="font-size: 14px; color: var(--charcoal); line-height: 1.7; padding-left: 20px;">
+      <li><strong>Promo banner</strong> stays full-width; truncates at &lt; 480px.</li>
+      <li><strong>Top nav</strong> below 1024px collapses to hamburger.</li>
+      <li><strong>Hero band</strong>: code mockup card moves below text on mobile.</li>
+      <li><strong>Pricing tiers</strong>: 3-column → 2-column tablet → 1-column mobile.</li>
+      <li><strong>Course catalog</strong>: 3-up → 2-up tablet → 1-up mobile.</li>
+      <li><strong>Hero typography</strong>: 72px → 56px → 48px → 36px.</li>
+      <li><strong>Footer</strong>: 6-column desktop → 3-column tablet → accordion mobile.</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

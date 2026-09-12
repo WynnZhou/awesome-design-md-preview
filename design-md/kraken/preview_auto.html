@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-native="dark" data-theme="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kraken — Design System Preview</title>
+  <link rel="stylesheet" href="preview_auto.css">
+</head>
+<body>
+
+<div class="page">
+  <header class="topbar">
+    <div><div class="topbar-name">Kraken</div><div class="topbar-meta">design tokens · 11 colors · 10 type styles · 6 components</div></div>
+    <nav class="topbar-links"><a href="#colors">Colors</a><a href="#typography">Type</a><a href="#buttons">Buttons</a><a href="#spacing">Spacing</a><a href="#radius">Radius</a><a href="#signature">Other</a><a href="#reference">Reference</a></nav>
+  </header>
+  <section class="hero">
+    <h1>Kraken</h1>
+    <p class="lede">Kraken&#x27;s website is a clean, trustworthy crypto exchange that uses purple as its commanding brand color. The design operates on white backgrounds with Kraken Purple (`#7132f5`, `#5741d8`, `#5b1ecf`) creating a distinctive, professional crypto identity. The proprietary Kraken-Brand font handles display headings with bold (700) weight and negative tracking, while Kraken-Product (with IBM Plex Sans fallback) serves as the UI workhorse.</p>
+    <div class="meta">
+      <span class="chip solid">#7132f5</span>
+      <span class="chip">Kraken-Product</span>
+      <span class="chip">dark canvas</span>
+      <span class="chip">source: DESIGN.md (markdown)</span>
+    </div>
+  </section>
+  <section id="colors">
+    <div class="sec-head"><h2>Color Palette</h2><span class="count">11 tokens</span></div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-kraken-purple">#7132f5</div><div class="info"><div class="nm">Kraken Purple</div><div class="hx">kraken-purple</div><div class="hx dim">Primary CTA, brand accent, links</div></div></div>
+      <div class="swatch"><div class="fill sw-purple-dark">#5741d8</div><div class="info"><div class="nm">Purple Dark</div><div class="hx">purple-dark</div><div class="hx dim">Button borders, outlined variants</div></div></div>
+      <div class="swatch"><div class="fill sw-purple-deep">#5b1ecf</div><div class="info"><div class="nm">Purple Deep</div><div class="hx">purple-deep</div><div class="hx dim">Deepest purple</div></div></div>
+      <div class="swatch"><div class="fill sw-purple-subtle">rgba(133,91,251,0.16)</div><div class="info"><div class="nm">Purple Subtle</div><div class="hx">purple-subtle</div><div class="hx dim">Purple at 16% — subtle button backgrounds</div></div></div>
+      <div class="swatch"><div class="fill sw-near-black">#101114</div><div class="info"><div class="nm">Near Black</div><div class="hx">near-black</div><div class="hx dim">Primary text</div></div></div>
+    </div>
+    <div class="group-title">Neutral</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-cool-gray">#686b82</div><div class="info"><div class="nm">Cool Gray</div><div class="hx">cool-gray</div><div class="hx dim">Primary neutral, borders at 24% opacity</div></div></div>
+      <div class="swatch"><div class="fill sw-silver-blue">#9497a9</div><div class="info"><div class="nm">Silver Blue</div><div class="hx">silver-blue</div><div class="hx dim">Secondary text, muted elements</div></div></div>
+      <div class="swatch"><div class="fill sw-white">#ffffff</div><div class="info"><div class="nm">White</div><div class="hx">white</div><div class="hx dim">Primary surface</div></div></div>
+      <div class="swatch"><div class="fill sw-border-gray">#dedee5</div><div class="info"><div class="nm">Border Gray</div><div class="hx">border-gray</div><div class="hx dim">Divider borders</div></div></div>
+    </div>
+    <div class="group-title">Semantic</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-green">#149e61</div><div class="info"><div class="nm">Green</div><div class="hx">green</div><div class="hx dim">Success/positive at 16% opacity for badges</div></div></div>
+      <div class="swatch"><div class="fill sw-green-dark">#026b3f</div><div class="info"><div class="nm">Green Dark</div><div class="hx">green-dark</div><div class="hx dim">Badge text</div></div></div>
+    </div>
+  </section>
+  <section id="typography">
+    <div class="sec-head"><h2>Typography Scale</h2><span class="count">10 styles</span></div>
+    <div class="type-row">
+      <div class="type-meta"><b>Display Hero</b>48px / 700<br>lh 1.17 · ls -1px<br>Kraken-Brand</div>
+      <div class="type-sample type-display-hero">Display Hero — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Section Heading</b>36px / 700<br>lh 1.22 · ls -0.5px<br>Kraken-Brand</div>
+      <div class="type-sample type-section-heading">Section Heading — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Sub-heading</b>28px / 700<br>lh 1.29 · ls -0.5px<br>Kraken-Brand</div>
+      <div class="type-sample type-sub-heading">Sub-heading — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Feature Title</b>22px / 600<br>lh 1.20 · ls normal<br>Kraken-Product</div>
+      <div class="type-sample type-feature-title">Feature Title — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Body</b>16px / 400<br>lh 1.38 · ls normal<br>Kraken-Product</div>
+      <div class="type-sample type-body">Body — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Body Medium</b>16px / 500<br>lh 1.38 · ls normal<br>Kraken-Product</div>
+      <div class="type-sample type-body-medium">Body Medium — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Button</b>16px / 500<br>lh 1.38 · ls normal<br>Kraken-Product</div>
+      <div class="type-sample type-button">Button — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Caption</b>14px / 400<br>lh 1.43–1.71 · ls normal<br>Kraken-Product</div>
+      <div class="type-sample type-caption">Caption — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Small</b>12px / 400<br>lh 1.33 · ls normal<br>Kraken-Product</div>
+      <div class="type-sample type-small">Small — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Micro</b>7px / 500<br>lh 1.00 · ls uppercase<br>Kraken-Product</div>
+      <div class="type-sample type-micro">Micro — The quick brown fox jumps over the lazy dog</div>
+    </div>
+  </section>
+  <section id="buttons">
+    <div class="sec-head"><h2>Button Variants</h2><span class="count">1</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-white-button">White Button</div><button class="demo-el spec-buttons-white-button" type="button">Button</button></div>
+    </div></div>
+  </section>
+  <section id="signature">
+    <div class="sec-head"><h2>Other Components</h2><span class="count">5</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-primary-purple">Primary Purple</div><div class="demo-el spec-buttons-primary-purple">Primary Purple</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-purple-outlined">Purple Outlined</div><div class="demo-el spec-buttons-purple-outlined">Purple Outlined</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-purple-subtle">Purple Subtle</div><div class="demo-el spec-buttons-purple-subtle">Purple Subtle</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-secondary-gray">Secondary Gray</div><div class="demo-el spec-buttons-secondary-gray">Secondary Gray</div></div>
+      <div class="demo-col"><div class="lb" title="badges">Badges</div><div class="demo-el demo-el-ghost spec-badges">Badges</div></div>
+    </div></div>
+  </section>
+  <section id="spacing">
+    <div class="sec-head"><h2>Spacing Scale</h2><span class="count">15 steps</span></div>
+    <div class="bar-row"><span>s0-1px</span><span class="val">1px</span><span class="bar bar-s0-1px"></span></div>
+    <div class="bar-row"><span>s1-2px</span><span class="val">2px</span><span class="bar bar-s1-2px"></span></div>
+    <div class="bar-row"><span>s2-3px</span><span class="val">3px</span><span class="bar bar-s2-3px"></span></div>
+    <div class="bar-row"><span>s3-4px</span><span class="val">4px</span><span class="bar bar-s3-4px"></span></div>
+    <div class="bar-row"><span>s4-5px</span><span class="val">5px</span><span class="bar bar-s4-5px"></span></div>
+    <div class="bar-row"><span>s5-6px</span><span class="val">6px</span><span class="bar bar-s5-6px"></span></div>
+    <div class="bar-row"><span>s6-8px</span><span class="val">8px</span><span class="bar bar-s6-8px"></span></div>
+    <div class="bar-row"><span>s7-10px</span><span class="val">10px</span><span class="bar bar-s7-10px"></span></div>
+    <div class="bar-row"><span>s8-12px</span><span class="val">12px</span><span class="bar bar-s8-12px"></span></div>
+    <div class="bar-row"><span>s9-13px</span><span class="val">13px</span><span class="bar bar-s9-13px"></span></div>
+    <div class="bar-row"><span>s10-15px</span><span class="val">15px</span><span class="bar bar-s10-15px"></span></div>
+    <div class="bar-row"><span>s11-16px</span><span class="val">16px</span><span class="bar bar-s11-16px"></span></div>
+    <div class="bar-row"><span>s12-20px</span><span class="val">20px</span><span class="bar bar-s12-20px"></span></div>
+    <div class="bar-row"><span>s13-24px</span><span class="val">24px</span><span class="bar bar-s13-24px"></span></div>
+    <div class="bar-row"><span>s14-25px</span><span class="val">25px</span><span class="bar bar-s14-25px"></span></div>
+  </section>
+  <section id="radius">
+    <div class="sec-head"><h2>Border Radius Scale</h2><span class="count">8 steps</span></div>
+    <div class="radius-grid">
+      <div class="radius-cell"><div class="box rd-r0-3px"></div><div class="lb">r0-3px · 3px</div></div>
+      <div class="radius-cell"><div class="box rd-r1-6px"></div><div class="lb">r1-6px · 6px</div></div>
+      <div class="radius-cell"><div class="box rd-r2-8px"></div><div class="lb">r2-8px · 8px</div></div>
+      <div class="radius-cell"><div class="box rd-r3-10px"></div><div class="lb">r3-10px · 10px</div></div>
+      <div class="radius-cell"><div class="box rd-r4-12px"></div><div class="lb">r4-12px · 12px</div></div>
+      <div class="radius-cell"><div class="box rd-r5-16px"></div><div class="lb">r5-16px · 16px</div></div>
+      <div class="radius-cell"><div class="box rd-r6-9999px"></div><div class="lb">r6-9999px · 9999px</div></div>
+      <div class="radius-cell"><div class="box rd-r7-50"></div><div class="lb">r7-50 · 50%</div></div>
+    </div>
+  </section>
+  <section id="guidelines">
+    <div class="sec-head"><h2>Do&rsquo;s &amp; Don&rsquo;ts</h2></div>
+    <div class="guide">
+      <ul class="yes">
+        <li>Use Kraken Purple (#7132f5) for CTAs and links</li>
+        <li>Apply 12px radius on all buttons</li>
+        <li>Use Kraken-Brand for headings, Kraken-Product for body</li>
+      </ul>
+      <ul class="no">
+        <li>Don&#x27;t use pill buttons — 12px is the max radius for buttons</li>
+        <li>Don&#x27;t use other purples outside the defined scale</li>
+      </ul>
+    </div>
+  </section>
+  <section id="reference">
+    <div class="sec-head"><h2>Component Reference</h2><span class="count">6</span></div>
+    <table class="ref"><thead><tr><th>Component</th><th>Resolved properties</th></tr></thead><tbody>
+      <tr><td class="k">buttons-primary-purple</td><td>Background: #7132f5; Text: #ffffff; Padding: 13px 16px; Radius: 12px</td></tr>
+      <tr><td class="k">buttons-purple-outlined</td><td>Background: #ffffff; Text: #5741d8; Border: 1px solid #5741d8; Radius: 12px</td></tr>
+      <tr><td class="k">buttons-purple-subtle</td><td>Background: rgba(133,91,251,0.16); Text: #7132f5; Padding: 8px; Radius: 12px</td></tr>
+      <tr><td class="k">buttons-white-button</td><td>Background: #ffffff; Text: #101114; Radius: 10px; Shadow: rgba(0,0,0,0.03) 0px 4px 24px</td></tr>
+      <tr><td class="k">buttons-secondary-gray</td><td>Background: rgba(148,151,169,0.08); Text: #101114; Radius: 12px</td></tr>
+      <tr><td class="k">badges</td><td></td></tr>
+    </tbody></table>
+  </section>
+  <footer><span>Kraken — design tokens extracted from DESIGN.md</span><span>awesome-design-md / getdesign.md</span></footer>
+</div>
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script>
+</body></html>

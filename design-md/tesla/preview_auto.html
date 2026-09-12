@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-native="light" data-theme="light"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tesla — Design System Preview</title>
+  <link rel="stylesheet" href="preview_auto.css">
+</head>
+<body>
+
+<div class="page">
+  <header class="topbar">
+    <div><div class="topbar-name">Tesla</div><div class="topbar-meta">design tokens · 14 colors · 8 type styles · 6 components</div></div>
+    <nav class="topbar-links"><a href="#colors">Colors</a><a href="#typography">Type</a><a href="#buttons">Buttons</a><a href="#nav">Tabs</a><a href="#spacing">Spacing</a><a href="#radius">Radius</a><a href="#elevation">Depth</a><a href="#signature">Other</a><a href="#reference">Reference</a></nav>
+  </header>
+  <section class="hero">
+    <h1>Tesla</h1>
+    <p class="lede">Tesla&#x27;s website is an exercise in radical subtraction — a digital showroom where the product is everything and the interface is almost nothing. The page opens with a full-viewport hero that fills the entire screen with cinematic car photography: three vehicles arranged on polished concrete against a hazy cityscape sky, with a single model name floating above in translucent white type. There are no decorative borders, no gradients, no patterns, no shadows. The UI exists only to provide just enough navigational structure to get out of the way. Every pixel that isn&#x27;t product imagery is white space, and that restraint is the design system&#x27;s most powerful statement.</p>
+    <div class="meta">
+      <span class="chip solid">#3E6AE1</span>
+      <span class="chip">system-ui</span>
+      <span class="chip">light canvas</span>
+      <span class="chip">source: DESIGN.md (markdown)</span>
+    </div>
+  </section>
+  <section id="colors">
+    <div class="sec-head"><h2>Color Palette</h2><span class="count">14 tokens</span></div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-electric-blue">#3E6AE1</div><div class="info"><div class="nm">Electric Blue</div><div class="hx">electric-blue</div><div class="hx dim">Primary CTA button background — a confident, mid-saturation blue (rgb </div></div></div>
+      <div class="swatch"><div class="fill sw-pure-white">#FFFFFF</div><div class="info"><div class="nm">Pure White</div><div class="hx">pure-white</div><div class="hx dim">Dominant background color for all surfaces, panels, navigation, and se</div></div></div>
+    </div>
+    <div class="group-title">Secondary &amp; Accent</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-promo-blue">#3E6AE1</div><div class="info"><div class="nm">Promo Blue</div><div class="hx">promo-blue</div><div class="hx dim">Blue also serves for promotional text (&quot;0% APR Available&quot;) displayed o</div></div></div>
+    </div>
+    <div class="group-title">Surface &amp; Background</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-white-canvas">#FFFFFF</div><div class="info"><div class="nm">White Canvas</div><div class="hx">white-canvas</div><div class="hx dim">Page background, navigation panel, dropdown menus, and all surface con</div></div></div>
+      <div class="swatch"><div class="fill sw-light-ash">#F4F4F4</div><div class="info"><div class="nm">Light Ash</div><div class="hx">light-ash</div><div class="hx dim">Subtle alternate surface for section differentiation — barely percepti</div></div></div>
+      <div class="swatch"><div class="fill sw-carbon-dark">#171A20</div><div class="info"><div class="nm">Carbon Dark</div><div class="hx">carbon-dark</div><div class="hx dim">Dark surface color for hero text overlays and potential dark-mode cont</div></div></div>
+      <div class="swatch"><div class="fill sw-frosted-glass">rgba(255, 255, 255, 0.75)</div><div class="info"><div class="nm">Frosted Glass</div><div class="hx">frosted-glass</div><div class="hx dim">Semi-transparent white for navigation backdrop-filter effects on scrol</div></div></div>
+    </div>
+    <div class="group-title">Neutrals &amp; Text</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-carbon-dark">#171A20</div><div class="info"><div class="nm">Carbon Dark</div><div class="hx">carbon-dark</div><div class="hx dim">Primary heading and navigation text — the darkest text value (rgb 23, </div></div></div>
+      <div class="swatch"><div class="fill sw-graphite">#393C41</div><div class="info"><div class="nm">Graphite</div><div class="hx">graphite</div><div class="hx dim">Body text and secondary content (rgb 57, 60, 65) — the default paragra</div></div></div>
+      <div class="swatch"><div class="fill sw-pewter">#5C5E62</div><div class="info"><div class="nm">Pewter</div><div class="hx">pewter</div><div class="hx dim">Tertiary text for sub-links, secondary navigation links like &quot;Learn&quot; a</div></div></div>
+      <div class="swatch"><div class="fill sw-silver-fog">#8E8E8E</div><div class="info"><div class="nm">Silver Fog</div><div class="hx">silver-fog</div><div class="hx dim">Placeholder text in input fields and disabled states (rgb 142, 142, 14</div></div></div>
+      <div class="swatch"><div class="fill sw-cloud-gray">#EEEEEE</div><div class="info"><div class="nm">Cloud Gray</div><div class="hx">cloud-gray</div><div class="hx dim">Light borders and divider lines (rgb 238, 238, 238)</div></div></div>
+      <div class="swatch"><div class="fill sw-pale-silver">#D0D1D2</div><div class="info"><div class="nm">Pale Silver</div><div class="hx">pale-silver</div><div class="hx dim">Subtle UI borders and delineation (rgb 208, 209, 210)</div></div></div>
+    </div>
+    <div class="group-title">Semantic &amp; Accent</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-the-blue-cta">#3E6AE1</div><div class="info"><div class="nm">The blue CTA</div><div class="hx">the-blue-cta</div><div class="hx dim">serves as the sole interactive color signal</div></div></div>
+    </div>
+  </section>
+  <section id="typography">
+    <div class="sec-head"><h2>Typography Scale</h2><span class="count">8 styles</span></div>
+    <div class="type-row">
+      <div class="type-meta"><b>Hero Title</b>40px / 500<br>lh 1.20 · ls normal<br></div>
+      <div class="type-sample type-hero-title">Hero Title — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Product Name</b>17px / 500<br>lh 1.18 · ls normal<br></div>
+      <div class="type-sample type-product-name">Product Name — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Nav Item</b>14px / 500<br>lh 1.20 · ls normal<br></div>
+      <div class="type-sample type-nav-item">Nav Item — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Body Text</b>14px / 400<br>lh 1.43 · ls normal<br></div>
+      <div class="type-sample type-body-text">Body Text — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Button Label</b>14px / 500<br>lh 1.20 · ls normal<br></div>
+      <div class="type-sample type-button-label">Button Label — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Sub-link</b>14px / 400<br>lh 1.43 · ls normal<br></div>
+      <div class="type-sample type-sub-link">Sub-link — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Promo Text</b>22px / 400<br>lh 0.91 · ls normal<br></div>
+      <div class="type-sample type-promo-text">Promo Text — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Category Label</b>16px / 500<br>lh 1.4 · ls normal<br></div>
+      <div class="type-sample type-category-label">Category Label — The quick brown fox jumps over the lazy dog</div>
+    </div>
+  </section>
+  <section id="buttons">
+    <div class="sec-head"><h2>Button Variants</h2><span class="count">3</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-primary-cta">Primary Cta</div><button class="demo-el demo-el-ghost spec-buttons-primary-cta" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="buttons-secondary-cta">Secondary Cta</div><button class="demo-el demo-el-ghost spec-buttons-secondary-cta" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="buttons-nav-button">Nav Button</div><button class="demo-el demo-el-ghost spec-buttons-nav-button" type="button">Button</button></div>
+    </div></div>
+  </section>
+  <section id="nav">
+    <div class="sec-head"><h2>Navigation & Tabs</h2><span class="count">1</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-nav-button">Nav Button</div><div class="demo-el demo-el-ghost spec-buttons-nav-button"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+    </div></div>
+  </section>
+  <section id="signature">
+    <div class="sec-head"><h2>Other Components</h2><span class="count">3</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="cards-containers">Containers</div><div class="demo-el spec-cards-containers">Containers</div></div>
+      <div class="demo-col"><div class="lb" title="inputs-forms">Forms</div><div class="demo-el demo-el-ghost spec-inputs-forms">Forms</div></div>
+      <div class="demo-col"><div class="lb" title="persistent-chat-bar">Persistent Chat Bar</div><div class="demo-el demo-el-ghost spec-persistent-chat-bar">Persistent Chat Bar</div></div>
+    </div></div>
+  </section>
+  <section id="spacing">
+    <div class="sec-head"><h2>Spacing Scale</h2><span class="count">3 steps</span></div>
+    <div class="bar-row"><span>button-padding</span><span class="val">4px</span><span class="bar bar-button-padding"></span></div>
+    <div class="bar-row"><span>base-unit</span><span class="val">8px</span><span class="bar bar-base-unit"></span></div>
+    <div class="bar-row"><span>common-values</span><span class="val">8px</span><span class="bar bar-common-values"></span></div>
+  </section>
+  <section id="radius">
+    <div class="sec-head"><h2>Border Radius Scale</h2><span class="count">4 steps</span></div>
+    <div class="radius-grid">
+      <div class="radius-cell"><div class="box rd-radius-0px"></div><div class="lb">radius-0px · 0px</div></div>
+      <div class="radius-cell"><div class="box rd-radius-4px"></div><div class="lb">radius-4px · 4px</div></div>
+      <div class="radius-cell"><div class="box rd-radius-12px"></div><div class="lb">radius-12px · 12px</div></div>
+      <div class="radius-cell"><div class="box rd-radius-50"></div><div class="lb">radius-50 · 50%</div></div>
+    </div>
+  </section>
+  <section id="elevation">
+    <div class="sec-head"><h2>Elevation &amp; Depth</h2><span class="count">4</span></div>
+    <div class="elev-grid">
+      <div class="elev-cell elev-level-0-flat"><div class="lb">Level 0 (Flat)</div><div class="vl">No shadow, no border</div></div>
+      <div class="elev-cell elev-level-1-frost"><div class="lb">Level 1 (Frost)</div><div class="vl">rgba(255,255,255,0.75) backdrop</div></div>
+      <div class="elev-cell elev-level-2-overlay"><div class="lb">Level 2 (Overlay)</div><div class="vl">rgba(128,128,128,0.65)</div></div>
+      <div class="elev-cell elev-level-3-subtle"><div class="lb">Level 3 (Subtle)</div><div class="vl">rgba(0,0,0,0.05)</div></div>
+    </div>
+  </section>
+  <section id="guidelines">
+    <div class="sec-head"><h2>Do&rsquo;s &amp; Don&rsquo;ts</h2></div>
+    <div class="guide">
+      <ul class="yes">
+        <li>Let photography dominate every screen — the product IS the design</li>
+        <li>Use Electric Blue (#3E6AE1) exclusively for primary CTAs — never for decorative purposes</li>
+        <li>Maintain viewport-height sections for major content blocks — one message per screen</li>
+        <li>Keep typography at weight 400-500 only — no bold, no light, no extremes</li>
+        <li>Use 4px border-radius for all interactive elements — precision over playfulness</li>
+        <li>Trust whitespace as a luxury signal — never fill available space just because it&#x27;s empty</li>
+      </ul>
+      <ul class="no">
+        <li>Add shadows to any element — elevation through shadow contradicts the flat, gallery aesthetic</li>
+        <li>Use more than one chromatic color besides the blue CTA — the palette is intentionally monochrome-plus-one</li>
+        <li>Apply gradients, patterns, or decorative backgrounds to surfaces — white and photography are the only backgrounds</li>
+        <li>Use text larger than 40px on the web — the typography is deliberately restrained even at hero scale</li>
+        <li>Add borders to cards or containers — separation is achieved through spacing, not lines</li>
+        <li>Use uppercase text transforms — Tesla&#x27;s confidence is expressed through lowercase calm</li>
+      </ul>
+    </div>
+  </section>
+  <section id="reference">
+    <div class="sec-head"><h2>Component Reference</h2><span class="count">6</span></div>
+    <table class="ref"><thead><tr><th>Component</th><th>Resolved properties</th></tr></thead><tbody>
+      <tr><td class="k">buttons-primary-cta</td><td>Border: 3px solid transparent</td></tr>
+      <tr><td class="k">buttons-secondary-cta</td><td>Transition: identical timing to primary</td></tr>
+      <tr><td class="k">buttons-nav-button</td><td>Transition: color 0.33s, background-color 0.33s; Active/expanded: subtle background highlight</td></tr>
+      <tr><td class="k">cards-containers</td><td>rounded: 12px; Background: transparent; Border: none; Shadow: none; Border radius: 12px; Overflow: hidden</td></tr>
+      <tr><td class="k">inputs-forms</td><td>Background: transparent; Text color: #171A20; Placeholder color: #8E8E8E; Font: Universal Sans Text, 14px</td></tr>
+      <tr><td class="k">persistent-chat-bar</td><td></td></tr>
+    </tbody></table>
+  </section>
+  <footer><span>Tesla — design tokens extracted from DESIGN.md</span><span>awesome-design-md / getdesign.md</span></footer>
+</div>
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script>
+</body></html>

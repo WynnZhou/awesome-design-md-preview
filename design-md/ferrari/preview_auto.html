@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-native="dark" data-theme="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ferrari-design-analysis — Design System Preview</title>
+  <link rel="stylesheet" href="preview_auto.css">
+</head>
+<body>
+
+<div class="page">
+  <header class="topbar">
+    <div><div class="topbar-name">Ferrari-design-analysis</div><div class="topbar-meta">design tokens · 26 colors · 13 type styles · 24 components</div></div>
+    <nav class="topbar-links"><a href="#colors">Colors</a><a href="#typography">Type</a><a href="#buttons">Buttons</a><a href="#badges">Badges</a><a href="#cards">Cards</a><a href="#forms">Forms</a><a href="#nav">Tabs</a><a href="#spacing">Spacing</a><a href="#radius">Radius</a><a href="#elevation">Depth</a><a href="#signature">Other</a><a href="#reference">Reference</a></nav>
+  </header>
+  <section class="hero">
+    <h1>Ferrari-design-analysis</h1>
+    <p class="lede">A luxury-automotive brand whose marketing surfaces read as cinematic editorial. The base canvas is **near-black** (`#181818`) holding pure white display type; white-canvas bands appear only inside specific editorial contexts (preowned listings, pricing tables). The single brand voltage is **Rosso Corsa** (`#da291c`) — the iconic Ferrari racing red — used scarcely on primary CTAs, the Cavallino mark, and Formula 1 race-position highlights. Type runs **FerrariSans** at modest weights (display 500, body 400) — never bombastic. Spacing follows an explicit 8px token ladder (`xxxs` 4px through `super` 128px); generous editorial pacing throughout. The brand&#x27;s strongest visual signature is the **full-bleed cinematic hero photograph** that fills the viewport top with car photography, model details, or trackside livery — followed by a tighter editorial body layout below.</p>
+    <div class="meta">
+      <span class="chip solid">#da291c</span>
+      <span class="chip">&#x27;FerrariSans&#x27;</span>
+      <span class="chip">dark canvas</span>
+      <span class="chip">source: DESIGN.md (frontmatter)</span>
+    </div>
+  </section>
+  <section id="colors">
+    <div class="sec-head"><h2>Color Palette</h2><span class="count">26 tokens</span></div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-primary">#da291c</div><div class="info"><div class="nm">primary</div><div class="hx">primary</div></div></div>
+      <div class="swatch"><div class="fill sw-primary-active">#b01e0a</div><div class="info"><div class="nm">primary-active</div><div class="hx">primary-active</div></div></div>
+      <div class="swatch"><div class="fill sw-primary-hover">#9d2211</div><div class="info"><div class="nm">primary-hover</div><div class="hx">primary-hover</div></div></div>
+      <div class="swatch"><div class="fill sw-ink">#ffffff</div><div class="info"><div class="nm">ink</div><div class="hx">ink</div></div></div>
+      <div class="swatch"><div class="fill sw-body">#969696</div><div class="info"><div class="nm">body</div><div class="hx">body</div></div></div>
+      <div class="swatch"><div class="fill sw-body-strong">#ffffff</div><div class="info"><div class="nm">body-strong</div><div class="hx">body-strong</div></div></div>
+      <div class="swatch"><div class="fill sw-body-on-light">#181818</div><div class="info"><div class="nm">body-on-light</div><div class="hx">body-on-light</div></div></div>
+      <div class="swatch"><div class="fill sw-muted">#666666</div><div class="info"><div class="nm">muted</div><div class="hx">muted</div></div></div>
+      <div class="swatch"><div class="fill sw-muted-soft">#8f8f8f</div><div class="info"><div class="nm">muted-soft</div><div class="hx">muted-soft</div></div></div>
+      <div class="swatch"><div class="fill sw-hairline">#303030</div><div class="info"><div class="nm">hairline</div><div class="hx">hairline</div></div></div>
+      <div class="swatch"><div class="fill sw-hairline-on-light">#d2d2d2</div><div class="info"><div class="nm">hairline-on-light</div><div class="hx">hairline-on-light</div></div></div>
+      <div class="swatch"><div class="fill sw-hairline-soft">#ebebeb</div><div class="info"><div class="nm">hairline-soft</div><div class="hx">hairline-soft</div></div></div>
+      <div class="swatch"><div class="fill sw-canvas">#181818</div><div class="info"><div class="nm">canvas</div><div class="hx">canvas</div></div></div>
+      <div class="swatch"><div class="fill sw-canvas-elevated">#303030</div><div class="info"><div class="nm">canvas-elevated</div><div class="hx">canvas-elevated</div></div></div>
+      <div class="swatch"><div class="fill sw-canvas-light">#ffffff</div><div class="info"><div class="nm">canvas-light</div><div class="hx">canvas-light</div></div></div>
+      <div class="swatch"><div class="fill sw-surface-card">#303030</div><div class="info"><div class="nm">surface-card</div><div class="hx">surface-card</div></div></div>
+      <div class="swatch"><div class="fill sw-surface-soft-light">#f7f7f7</div><div class="info"><div class="nm">surface-soft-light</div><div class="hx">surface-soft-light</div></div></div>
+      <div class="swatch"><div class="fill sw-surface-strong-light">#ebebeb</div><div class="info"><div class="nm">surface-strong-light</div><div class="hx">surface-strong-light</div></div></div>
+      <div class="swatch"><div class="fill sw-on-primary">#ffffff</div><div class="info"><div class="nm">on-primary</div><div class="hx">on-primary</div></div></div>
+      <div class="swatch"><div class="fill sw-on-dark">#ffffff</div><div class="info"><div class="nm">on-dark</div><div class="hx">on-dark</div></div></div>
+      <div class="swatch"><div class="fill sw-on-light">#181818</div><div class="info"><div class="nm">on-light</div><div class="hx">on-light</div></div></div>
+      <div class="swatch"><div class="fill sw-accent-yellow-hypersail">#fff200</div><div class="info"><div class="nm">accent-yellow-hypersail</div><div class="hx">accent-yellow-hypersail</div></div></div>
+      <div class="swatch"><div class="fill sw-accent-yellow">#f6e500</div><div class="info"><div class="nm">accent-yellow</div><div class="hx">accent-yellow</div></div></div>
+      <div class="swatch"><div class="fill sw-semantic-info">#4c98b9</div><div class="info"><div class="nm">semantic-info</div><div class="hx">semantic-info</div></div></div>
+      <div class="swatch"><div class="fill sw-semantic-success">#03904a</div><div class="info"><div class="nm">semantic-success</div><div class="hx">semantic-success</div></div></div>
+      <div class="swatch"><div class="fill sw-semantic-warning">#f13a2c</div><div class="info"><div class="nm">semantic-warning</div><div class="hx">semantic-warning</div></div></div>
+    </div>
+  </section>
+  <section id="typography">
+    <div class="sec-head"><h2>Typography Scale</h2><span class="count">13 styles</span></div>
+    <div class="type-row">
+      <div class="type-meta"><b>display-mega</b>80px / 500<br>lh 1.05 · ls -1.6px<br>&#x27;FerrariSans&#x27;, -apple-system, system-ui, sans-serif</div>
+      <div class="type-sample type-display-mega">display-mega — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>display-xl</b>56px / 500<br>lh 1.1 · ls -1.12px<br>&#x27;FerrariSans&#x27;, sans-serif</div>
+      <div class="type-sample type-display-xl">display-xl — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>display-lg</b>36px / 500<br>lh 1.2 · ls -0.36px<br>&#x27;FerrariSans&#x27;, sans-serif</div>
+      <div class="type-sample type-display-lg">display-lg — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>display-md</b>26px / 500<br>lh 1.5 · ls 0.195px<br>&#x27;FerrariSans&#x27;, sans-serif</div>
+      <div class="type-sample type-display-md">display-md — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>title-md</b>18px / 700<br>lh 1.2 · ls 0<br>&#x27;FerrariSans&#x27;, sans-serif</div>
+      <div class="type-sample type-title-md">title-md — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>title-sm</b>16px / 500<br>lh 1.4 · ls 0.08px<br>&#x27;FerrariSans&#x27;, sans-serif</div>
+      <div class="type-sample type-title-sm">title-sm — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>body-md</b>14px / 400<br>lh 1.5 · ls 0<br>&#x27;FerrariSans&#x27;, sans-serif</div>
+      <div class="type-sample type-body-md">body-md — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>body-sm</b>13px / 400<br>lh 1.5 · ls 0<br>&#x27;FerrariSans&#x27;, sans-serif</div>
+      <div class="type-sample type-body-sm">body-sm — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>caption</b>12px / 400<br>lh 1.4 · ls 0<br>&#x27;FerrariSans&#x27;, sans-serif</div>
+      <div class="type-sample type-caption">caption — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>caption-uppercase</b>11px / 600<br>lh 1.4 · ls 1.1px<br>&#x27;FerrariSans&#x27;, sans-serif</div>
+      <div class="type-sample type-caption-uppercase">caption-uppercase — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>button</b>14px / 700<br>lh 1.0 · ls 1.4px<br>&#x27;FerrariSans&#x27;, sans-serif</div>
+      <div class="type-sample type-button">button — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>nav-link</b>13px / 600<br>lh 1.4 · ls 0.65px<br>&#x27;FerrariSans&#x27;, sans-serif</div>
+      <div class="type-sample type-nav-link">nav-link — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>number-display</b>80px / 700<br>lh 1.0 · ls -1.6px<br>&#x27;FerrariSans&#x27;, sans-serif</div>
+      <div class="type-sample type-number-display">number-display — The quick brown fox jumps over the lazy dog</div>
+    </div>
+  </section>
+  <section id="buttons">
+    <div class="sec-head"><h2>Button Variants</h2><span class="count">6</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="button-primary">Primary</div><button class="demo-el spec-button-primary" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-primary-active">Primary Active</div><button class="demo-el spec-button-primary-active" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-outline-on-dark">Outline On Dark</div><button class="demo-el spec-button-outline-on-dark" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-outline-on-light">Outline On Light</div><button class="demo-el spec-button-outline-on-light" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-tertiary-text">Tertiary Text</div><button class="demo-el demo-el-ghost spec-button-tertiary-text" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="cta-band-dark">Cta Band Dark</div><button class="demo-el spec-cta-band-dark" type="button">Button</button></div>
+    </div></div>
+  </section>
+  <section id="badges">
+    <div class="sec-head"><h2>Badges & Pills</h2><span class="count">1</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="badge-pill">Pill</div><div class="demo-el spec-badge-pill">Badge</div></div>
+    </div></div>
+  </section>
+  <section id="cards">
+    <div class="sec-head"><h2>Cards & Containers</h2><span class="count">6</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="hero-band-cinema">Hero Band Cinema</div><div class="demo-el spec-hero-band-cinema"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="hero-band-light">Hero Band Light</div><div class="demo-el spec-hero-band-light"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="feature-card-photo">Feature Card Photo</div><div class="demo-el spec-feature-card-photo"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="feature-card-light">Feature Card Light</div><div class="demo-el spec-feature-card-light"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="preowned-listing-card">Preowned Listing Card</div><div class="demo-el spec-preowned-listing-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="driver-card">Driver Card</div><div class="demo-el spec-driver-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+    </div></div>
+  </section>
+  <section id="forms">
+    <div class="sec-head"><h2>Forms & Inputs</h2><span class="count">3</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="text-input-on-dark">Text Input On Dark</div><div class="demo-el spec-text-input-on-dark"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="text-input-on-light">Text Input On Light</div><div class="demo-el spec-text-input-on-light"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="newsletter-input-band">Newsletter Input Band</div><div class="demo-el spec-newsletter-input-band"><span class="demo-el-b">Placeholder text</span></div></div>
+    </div></div>
+  </section>
+  <section id="nav">
+    <div class="sec-head"><h2>Navigation & Tabs</h2><span class="count">4</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="top-nav-on-dark">Top Nav On Dark</div><div class="demo-el spec-top-nav-on-dark"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="top-nav-on-light">Top Nav On Light</div><div class="demo-el spec-top-nav-on-light"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="footer-dark">Footer Dark</div><div class="demo-el spec-footer-dark"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="footer-link">Footer Link</div><div class="demo-el demo-el-ghost spec-footer-link"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+    </div></div>
+  </section>
+  <section id="signature">
+    <div class="sec-head"><h2>Other Components</h2><span class="count">4</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="livery-band">Livery Band</div><div class="demo-el spec-livery-band">Livery Band</div></div>
+      <div class="demo-col"><div class="lb" title="spec-cell">Spec Cell</div><div class="demo-el demo-el-ghost spec-spec-cell">Spec Cell</div></div>
+      <div class="demo-col"><div class="lb" title="race-position-cell">Race Position Cell</div><div class="demo-el demo-el-ghost spec-race-position-cell">Race Position Cell</div></div>
+      <div class="demo-col"><div class="lb" title="race-calendar-row">Race Calendar Row</div><div class="demo-el demo-el-ghost spec-race-calendar-row">Race Calendar Row</div></div>
+    </div></div>
+  </section>
+  <section id="spacing">
+    <div class="sec-head"><h2>Spacing Scale</h2><span class="count">9 steps</span></div>
+    <div class="bar-row"><span>xxxs</span><span class="val">4px</span><span class="bar bar-xxxs"></span></div>
+    <div class="bar-row"><span>xxs</span><span class="val">8px</span><span class="bar bar-xxs"></span></div>
+    <div class="bar-row"><span>xs</span><span class="val">16px</span><span class="bar bar-xs"></span></div>
+    <div class="bar-row"><span>sm</span><span class="val">24px</span><span class="bar bar-sm"></span></div>
+    <div class="bar-row"><span>md</span><span class="val">32px</span><span class="bar bar-md"></span></div>
+    <div class="bar-row"><span>lg</span><span class="val">48px</span><span class="bar bar-lg"></span></div>
+    <div class="bar-row"><span>xl</span><span class="val">64px</span><span class="bar bar-xl"></span></div>
+    <div class="bar-row"><span>xxl</span><span class="val">96px</span><span class="bar bar-xxl"></span></div>
+    <div class="bar-row"><span>super</span><span class="val">128px</span><span class="bar bar-super"></span></div>
+  </section>
+  <section id="radius">
+    <div class="sec-head"><h2>Border Radius Scale</h2><span class="count">7 steps</span></div>
+    <div class="radius-grid">
+      <div class="radius-cell"><div class="box rd-none"></div><div class="lb">none · 0px</div></div>
+      <div class="radius-cell"><div class="box rd-xs"></div><div class="lb">xs · 2px</div></div>
+      <div class="radius-cell"><div class="box rd-sm"></div><div class="lb">sm · 4px</div></div>
+      <div class="radius-cell"><div class="box rd-md"></div><div class="lb">md · 6px</div></div>
+      <div class="radius-cell"><div class="box rd-lg"></div><div class="lb">lg · 8px</div></div>
+      <div class="radius-cell"><div class="box rd-xl"></div><div class="lb">xl · 12px</div></div>
+      <div class="radius-cell"><div class="box rd-full"></div><div class="lb">full · 9999px</div></div>
+    </div>
+  </section>
+  <section id="elevation">
+    <div class="sec-head"><h2>Elevation &amp; Depth</h2><span class="count">2</span></div>
+    <div class="elev-grid">
+      <div class="elev-cell elev-hairline-border"><div class="lb">Hairline border</div><div class="vl">1px {colors.hairline} or {colors.hairline-on-light}</div></div>
+      <div class="elev-cell elev-soft-drop"><div class="lb">Soft drop</div><div class="vl">0 4px 8px rgba(0,0,0,0.1)</div></div>
+    </div>
+  </section>
+  <section id="guidelines">
+    <div class="sec-head"><h2>Do&rsquo;s &amp; Don&rsquo;ts</h2></div>
+    <div class="guide">
+      <ul class="yes">
+        <li>Reserve {colors.primary} (Rosso Corsa) for primary CTAs, the Cavallino mark, and F1 race-position highlights.</li>
+        <li>Set every CTA at {rounded.none} (0px sharp corners) — the brand&#x27;s signature precision.</li>
+        <li>Render CTA labels in uppercase with 1.4px tracking via {typography.button}.</li>
+        <li>Pair every hero with a full-bleed cinematic photograph — the photograph IS the depth.</li>
+        <li>Use the explicit 8px spacing ladder (xxxs through super) rather than ad-hoc px values.</li>
+        <li>Keep display weight at 500 — never bold.</li>
+      </ul>
+      <ul class="no">
+        <li>Don&#x27;t introduce a saturated brand color other than Rosso Corsa.</li>
+        <li>Don&#x27;t use rounded or pill CTAs — sharp 0px corners are the brand button.</li>
+        <li>Don&#x27;t bold display copy. The cinematic photography does the visual heavy-lifting.</li>
+        <li>Don&#x27;t use Hypersail yellow outside the Hypersail sailing program context.</li>
+        <li>Don&#x27;t use pure black canvas. The brand canvas is {colors.canvas} (#181818) — slightly warm.</li>
+        <li>Don&#x27;t add drop shadow tiers. Photography + brightness-step elevation carry the depth.</li>
+      </ul>
+    </div>
+  </section>
+  <section id="reference">
+    <div class="sec-head"><h2>Component Reference</h2><span class="count">24</span></div>
+    <table class="ref"><thead><tr><th>Component</th><th>Resolved properties</th></tr></thead><tbody>
+      <tr><td class="k">top-nav-on-dark</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); typography: var(--t-nav-link-size); height: 64px</td></tr>
+      <tr><td class="k">top-nav-on-light</td><td>backgroundColor: var(--c-canvas-light); textColor: var(--c-body-on-light); typography: var(--t-nav-link-size); height: 64px</td></tr>
+      <tr><td class="k">button-primary</td><td>backgroundColor: var(--c-primary); textColor: var(--c-on-primary); typography: var(--t-button-size); rounded: var(--r-none); padding: 14px 32px; height: 48px</td></tr>
+      <tr><td class="k">button-primary-active</td><td>backgroundColor: var(--c-primary-active); textColor: var(--c-on-primary); rounded: var(--r-none)</td></tr>
+      <tr><td class="k">button-outline-on-dark</td><td>backgroundColor: transparent; textColor: var(--c-ink); typography: var(--t-button-size); rounded: var(--r-none); padding: 13px 31px; height: 48px</td></tr>
+      <tr><td class="k">button-outline-on-light</td><td>backgroundColor: transparent; textColor: var(--c-body-on-light); typography: var(--t-button-size); rounded: var(--r-none); padding: 13px 31px; height: 48px</td></tr>
+      <tr><td class="k">button-tertiary-text</td><td>backgroundColor: transparent; textColor: var(--c-ink); typography: var(--t-button-size)</td></tr>
+      <tr><td class="k">hero-band-cinema</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); typography: var(--t-display-mega-size); padding: 0</td></tr>
+      <tr><td class="k">hero-band-light</td><td>backgroundColor: var(--c-canvas-light); textColor: var(--c-body-on-light); typography: var(--t-display-xl-size); padding: 96px</td></tr>
+      <tr><td class="k">feature-card-photo</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); typography: var(--t-title-md-size); rounded: var(--r-none); padding: 0</td></tr>
+      <tr><td class="k">feature-card-light</td><td>backgroundColor: var(--c-canvas-light); textColor: var(--c-body-on-light); typography: var(--t-title-md-size); rounded: var(--r-none); padding: 32px</td></tr>
+      <tr><td class="k">livery-band</td><td>backgroundColor: var(--c-primary); textColor: var(--c-ink); typography: var(--t-display-lg-size); padding: 96px</td></tr>
+      <tr><td class="k">preowned-listing-card</td><td>backgroundColor: var(--c-canvas-light); textColor: var(--c-body-on-light); typography: var(--t-body-md-size); rounded: var(--r-none); padding: 24px</td></tr>
+      <tr><td class="k">spec-cell</td><td>backgroundColor: transparent; textColor: var(--c-ink); typography: var(--t-number-display-size); padding: 24px 0</td></tr>
+      <tr><td class="k">race-position-cell</td><td>backgroundColor: transparent; textColor: var(--c-primary); typography: var(--t-number-display-size)</td></tr>
+      <tr><td class="k">race-calendar-row</td><td>backgroundColor: transparent; textColor: var(--c-ink); typography: var(--t-body-md-size); padding: 16px 0</td></tr>
+      <tr><td class="k">driver-card</td><td>backgroundColor: var(--c-canvas-elevated); textColor: var(--c-ink); typography: var(--t-title-md-size); rounded: var(--r-none); padding: 24px</td></tr>
+      <tr><td class="k">text-input-on-dark</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); typography: var(--t-body-md-size); rounded: var(--r-sm); padding: 14px 16px; height: 48px</td></tr>
+      <tr><td class="k">text-input-on-light</td><td>backgroundColor: var(--c-canvas-light); textColor: var(--c-body-on-light); typography: var(--t-body-md-size); rounded: var(--r-sm); padding: 14px 16px; height: 48px</td></tr>
+      <tr><td class="k">badge-pill</td><td>backgroundColor: var(--c-canvas-elevated); textColor: var(--c-ink); typography: var(--t-caption-uppercase-size); rounded: var(--r-full); padding: 4px 12px</td></tr>
+      <tr><td class="k">cta-band-dark</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); typography: var(--t-display-lg-size); padding: 96px</td></tr>
+      <tr><td class="k">newsletter-input-band</td><td>backgroundColor: var(--c-canvas-elevated); textColor: var(--c-ink); typography: var(--t-body-md-size); rounded: var(--r-sm); padding: 32px</td></tr>
+      <tr><td class="k">footer-dark</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-body); typography: var(--t-body-sm-size); padding: 64px 48px</td></tr>
+      <tr><td class="k">footer-link</td><td>backgroundColor: transparent; textColor: var(--c-body); typography: var(--t-body-sm-size)</td></tr>
+    </tbody></table>
+  </section>
+  <footer><span>Ferrari-design-analysis — design tokens extracted from DESIGN.md</span><span>awesome-design-md / getdesign.md</span></footer>
+</div>
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script>
+</body></html>

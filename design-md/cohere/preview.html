@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design System Analysis of Cohere</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #0c0c0e; }</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-left">
+      <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+        <span class="nav-brand">getdesign.md</span>
+      </a>
+      <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+        awesome-design-md
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#colors">Colors</a></li>
+      <li><a href="#type">Typography</a></li>
+      <li><a href="#components">Components</a></li>
+      <li><a href="#responsive">Responsive</a></li>
+    </ul>
+
+    <button class="nav-cta">Get Started</button>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div>
+        <h1>Design System Analysis of Cohere</h1>
+        <p class="hero-copy">A static catalog generated from Cohere's DESIGN.md: monumental type, austere canvas, dark product bands, rounded media cards, coral editorial chips, and enterprise AI product mockups.</p>
+        <div class="hero-actions">
+          <button class="btn-primary">Request a demo</button>
+          <button class="btn-secondary">Explore products</button>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="media-card">
+          <div class="agent-console">
+            <div class="console-title"><span class="console-mark">A</span><span>Financial Analysis Agent</span></div>
+            <div class="status-row"><span class="status-chip">Ready</span><span class="status-chip">Data</span><span class="status-chip">Cloud</span></div>
+            <div class="console-input"><span>Help me understand the Q3 revenue surplus</span><span>Go</span></div>
+          </div>
+        </div>
+        <div class="photo-card"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="colors">
+      <div class="label">Palette</div>
+      <h2>1. Color Palette</h2>
+      <p class="section-note">Cohere's UI shell is mostly white, near-black, and cool rules. Saturated color appears through dark product fields, coral editorial controls, action blue links, and media-led imagery.</p>
+      <h3>Brand &amp; Accent</h3>
+      <div class="swatch-grid">
+        <div class="swatch"><div class="swatch-color" style="background:#17171c"></div><div class="swatch-body"><span class="swatch-name">Near-Black Primary</span><span class="swatch-hex">#17171c</span><span class="swatch-role">Primary CTAs, footer, deep UI cards.</span></div></div>
+        <div class="swatch"><div class="swatch-color" style="background:#003c33"></div><div class="swatch-body"><span class="swatch-name">Deep Enterprise Green</span><span class="swatch-hex">#003c33</span><span class="swatch-role">Product hero bands and dark capability panels.</span></div></div>
+        <div class="swatch"><div class="swatch-color" style="background:#071829"></div><div class="swatch-body"><span class="swatch-name">Dark Navy</span><span class="swatch-hex">#071829</span><span class="swatch-role">Security and financial-services bands.</span></div></div>
+        <div class="swatch"><div class="swatch-color" style="background:#1863dc"></div><div class="swatch-body"><span class="swatch-name">Action Blue</span><span class="swatch-hex">#1863dc</span><span class="swatch-role">Editorial links and pagination accents.</span></div></div>
+        <div class="swatch"><div class="swatch-color" style="background:#ff7759"></div><div class="swatch-body"><span class="swatch-name">Coral</span><span class="swatch-hex">#ff7759</span><span class="swatch-role">Blog chips, taxonomy outlines, warm markers.</span></div></div>
+      </div>
+      <h3>Surface &amp; Text</h3>
+      <div class="swatch-grid">
+        <div class="swatch"><div class="swatch-color" style="background:#ffffff"></div><div class="swatch-body"><span class="swatch-name">Canvas</span><span class="swatch-hex">#ffffff</span><span class="swatch-role">Dominant page and card background.</span></div></div>
+        <div class="swatch"><div class="swatch-color" style="background:#eeece7"></div><div class="swatch-body"><span class="swatch-name">Soft Stone</span><span class="swatch-hex">#eeece7</span><span class="swatch-role">Product cards and warm neutral blocks.</span></div></div>
+        <div class="swatch"><div class="swatch-color" style="background:#212121"></div><div class="swatch-body"><span class="swatch-name">Ink</span><span class="swatch-hex">#212121</span><span class="swatch-role">Default body text.</span></div></div>
+        <div class="swatch"><div class="swatch-color" style="background:#d9d9dd"></div><div class="swatch-body"><span class="swatch-name">Hairline</span><span class="swatch-hex">#d9d9dd</span><span class="swatch-role">Rules and dividers.</span></div></div>
+        <div class="swatch"><div class="swatch-color" style="background:#93939f"></div><div class="swatch-body"><span class="swatch-name">Muted Slate</span><span class="swatch-hex">#93939f</span><span class="swatch-role">Metadata and footer links.</span></div></div>
+      </div>
+    </section>
+
+    <section id="type">
+      <div class="label">Type</div>
+      <h2>2. Typography Scale</h2>
+      <p class="section-note">The preview uses Space Grotesk and Space Mono as local substitutes while preserving Cohere's extracted scale, weights, line heights, and tracking.</p>
+      <div class="type-grid">
+        <div class="type-row"><div style="font-size:64px;font-weight:400;line-height:1;letter-spacing:-1.92px;">Hero Display</div><div class="type-meta">hero-display - CohereText - 96px / 400 / 1 / -1.92px</div></div>
+        <div class="type-row"><div style="font-size:54px;font-weight:400;line-height:1;letter-spacing:-1.44px;">Product Display</div><div class="type-meta">product-display - CohereText - 72px / 400 / 1 / -1.44px</div></div>
+        <div class="type-row"><div style="font-size:48px;font-weight:400;line-height:1.2;letter-spacing:-.48px;">Section Heading</div><div class="type-meta">section-heading - 48px / 400 / 1.2 / -0.48px</div></div>
+        <div class="type-row"><div style="font-size:32px;font-weight:400;line-height:1.2;letter-spacing:-.32px;">Card Heading</div><div class="type-meta">card-heading - 32px / 400 / 1.2 / -0.32px</div></div>
+        <div class="type-row"><div style="font-size:24px;font-weight:400;line-height:1.3;">Feature Heading</div><div class="type-meta">feature-heading - 24px / 400 / 1.3 / 0</div></div>
+        <div class="type-row"><div style="font-size:18px;font-weight:400;line-height:1.4;">Body Large</div><div class="type-meta">body-large - 18px / 400 / 1.4 / 0</div></div>
+        <div class="type-row"><div style="font-size:16px;font-weight:400;line-height:1.5;">Body and UI</div><div class="type-meta">body - 16px / 400 / 1.5 / 0</div></div>
+        <div class="type-row"><div style="font-size:14px;font-weight:500;line-height:1.71;">Button Label</div><div class="type-meta">button - 14px / 500 / 1.71 / 0</div></div>
+        <div class="type-row"><div style="font-family:var(--font-mono);font-size:14px;line-height:1.4;letter-spacing:.28px;text-transform:uppercase;">Mono Label</div><div class="type-meta">mono-label - 14px / 400 / 1.4 / 0.28px</div></div>
+      </div>
+    </section>
+
+    <section id="components">
+      <div class="label">Components</div>
+      <h2>3. Button Variants</h2>
+      <div class="button-grid">
+        <div class="demo-cell"><button class="btn-primary">Request a demo</button><div class="type-meta">button-primary - #17171c, white text, 32px radius.</div></div>
+        <div class="demo-cell"><button class="btn-secondary">Explore products</button><div class="type-meta">button-secondary - transparent text action with underline.</div></div>
+        <div class="demo-cell"><button class="outline-pill">Agents</button><div class="type-meta">button-pill-outline - research and taxonomy filter pill.</div></div>
+        <div class="demo-cell"><div class="chip-row"><span class="blog-chip active">All</span><span class="blog-chip">Product</span><span class="blog-chip">Research</span></div><div class="type-meta">blog-filter-chip - oversized coral editorial taxonomy.</div></div>
+      </div>
+
+      <h2>4. Card Examples</h2>
+      <div class="card-grid">
+        <div class="demo-cell"><div class="media-mini"></div><div><h3>hero-photo-card</h3><p class="section-note">Rounded media panel with product or photography-led color.</p></div></div>
+        <div class="product-card"><h3>product-card</h3><p>A warm stone product summary with pill CTA and rule-separated bullet details.</p><hr><p>Supports product families, model cards, and capability summaries.</p></div>
+        <div class="demo-cell"><div class="agent-console"><div class="console-title"><span class="console-mark">C</span><span>Agent Console</span></div><div class="status-row"><span class="status-chip">Ready</span></div></div><div class="type-meta">agent-console-card - dark product mockup panel.</div></div>
+      </div>
+
+      <h2>5. Form Elements</h2>
+      <div class="form-grid">
+        <div><label>Default input</label><input value="Business email"></div>
+        <div><label>Focused input</label><input class="focus-sample" value="Product of interest"></div>
+        <div><label>Select</label><select><option>Country/Region</option></select></div>
+        <div><label>Textarea</label><textarea>How do you plan to use AI?</textarea></div>
+      </div>
+
+      <h2>Component Library</h2>
+      <div class="component-grid">
+        <div class="demo-cell"><div class="label">announcement-bar</div><div style="background:#000;color:#fff;padding:12px;text-align:center;">Cohere and Aleph Alpha join forces. Learn more</div></div>
+        <div class="demo-cell"><div class="label">trust-logo-strip</div><div style="display:flex;justify-content:space-between;gap:16px;font-size:20px;">ORACLE <span>TD</span> SAP <span>RBC</span></div></div>
+        <div class="demo-cell"><div class="label">capability-card</div><h3>Security</h3><p>Thin-line illustration slot, heading, body, and text link.</p></div>
+        <div class="dark-band"><div class="label" style="color:#fff;">dark-feature-band</div><h3>Discover, Create, Automate</h3><div class="dark-band-grid"><div class="dark-panel">Discover</div><div class="dark-panel">Create</div><div class="dark-panel">Automate</div></div></div>
+        <div class="demo-cell"><div class="label">research-table</div><div class="research-table"><div class="research-row"><span>Agents Explore but Agents Ignore</span><span><span class="small-pill">Agents</span></span><span>Apr 19, 2026</span></div></div></div>
+        <div class="demo-cell"><div class="label">contact-form-card</div><input value="First name"><br><br><input value="Business email"><br><br><button class="btn-primary">Submit</button></div>
+        <div class="demo-cell field-dark"><div class="label" style="color:#fff;">footer-newsletter</div><h3>AI moves fast</h3><p>We'll keep you up to date with the latest.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="label">Spacing</div>
+      <h2>6. Spacing Scale</h2>
+      <div class="space-row">
+        <div class="space-item"><div class="space-bar" style="width:2px"></div>2</div><div class="space-item"><div class="space-bar" style="width:6px"></div>6</div><div class="space-item"><div class="space-bar" style="width:8px"></div>8</div><div class="space-item"><div class="space-bar" style="width:12px"></div>12</div><div class="space-item"><div class="space-bar" style="width:16px"></div>16</div><div class="space-item"><div class="space-bar" style="width:24px"></div>24</div><div class="space-item"><div class="space-bar" style="width:32px"></div>32</div><div class="space-item"><div class="space-bar" style="width:80px"></div>80</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="label">Radius</div>
+      <h2>7. Border Radius Scale</h2>
+      <div class="radius-row">
+        <div class="radius-box" style="border-radius:4px;">xs<br>4px</div><div class="radius-box" style="border-radius:8px;">sm<br>8px</div><div class="radius-box" style="border-radius:16px;">md<br>16px</div><div class="radius-box" style="border-radius:22px;">lg<br>22px</div><div class="radius-box" style="border-radius:30px;">xl<br>30px</div><div class="radius-box" style="border-radius:32px;">pill<br>32px</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="label">Depth</div>
+      <h2>8. Elevation / Depth</h2>
+      <div class="elevation-row">
+        <div class="elevation-card">Flat white canvas</div>
+        <div class="elevation-card" style="border-color:var(--hairline);">Bordered rule system</div>
+        <div class="elevation-card field-dark">Dark product field</div>
+        <div class="elevation-card" style="background:linear-gradient(135deg,#15151b,#514066,#dad6c9);color:#fff;">Media-led color</div>
+      </div>
+    </section>
+
+    <section id="responsive">
+      <div class="label">Responsive</div>
+      <h2>9. Responsive Behavior</h2>
+      <table>
+        <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+        <tbody>
+          <tr><td>Small Mobile</td><td>&lt;425px</td><td>Single-column cards, compact nav, reduced hero scale.</td></tr>
+          <tr><td>Mobile</td><td>425-640px</td><td>Hero media stacks, form rows stack.</td></tr>
+          <tr><td>Tablet</td><td>768-1024px</td><td>Two-column cards begin, nav spacing tightens.</td></tr>
+          <tr><td>Desktop</td><td>1024-1440px</td><td>Full nav, 3-column grids, split hero compositions.</td></tr>
+          <tr><td>Large Desktop</td><td>1440-2560px</td><td>Wide containers and large empty vertical intervals.</td></tr>
+        </tbody>
+      </table>
+      <h3>Viewport Ladder</h3>
+      <div class="ladder"><div class="device" style="width:86px;">425</div><div class="device" style="width:126px;">640</div><div class="device" style="width:176px;">768</div><div class="device" style="width:236px;">1024</div><div class="device" style="width:310px;">1440+</div></div>
+      <div class="note"><strong>Touch Targets:</strong> Primary CTAs and pills use generous vertical padding; taxonomy chips are intentionally large on editorial pages.</div>
+      <div class="note"><strong>Collapsing Strategy:</strong> Nav compresses, split media stacks, 3-column product grids collapse, and research metadata stacks below titles.</div>
+    </section>
+
+    <section>
+      <div class="label">Prompt Guide</div>
+      <h2>10. Agent Prompt Guide - Quick Color Reference</h2>
+      <div class="quick-grid">
+        <div class="quick-chip"><span class="chip-color" style="background:#17171c"></span><span><span class="chip-role">Primary</span><span class="chip-name">Near-Black Primary</span></span><span class="chip-hex">#17171c</span></div>
+        <div class="quick-chip"><span class="chip-color" style="background:#003c33"></span><span><span class="chip-role">Dark band</span><span class="chip-name">Deep Enterprise Green</span></span><span class="chip-hex">#003c33</span></div>
+        <div class="quick-chip"><span class="chip-color" style="background:#ffffff"></span><span><span class="chip-role">Canvas</span><span class="chip-name">Canvas White</span></span><span class="chip-hex">#ffffff</span></div>
+        <div class="quick-chip"><span class="chip-color" style="background:#eeece7"></span><span><span class="chip-role">Stone card</span><span class="chip-name">Soft Stone</span></span><span class="chip-hex">#eeece7</span></div>
+        <div class="quick-chip"><span class="chip-color" style="background:#ff7759"></span><span><span class="chip-role">Editorial</span><span class="chip-name">Coral</span></span><span class="chip-hex">#ff7759</span></div>
+        <div class="quick-chip"><span class="chip-color" style="background:#1863dc"></span><span><span class="chip-role">Link</span><span class="chip-name">Action Blue</span></span><span class="chip-hex">#1863dc</span></div>
+      </div>
+      <div class="note">Use white canvas or a full dark band first. Keep CTAs pill-shaped, media cards rounded, and editorial taxonomy coral. No undocumented interaction variants are rendered in this preview.</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

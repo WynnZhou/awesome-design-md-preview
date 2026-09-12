@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design System Analysis of Meta</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #0a0d11; }</style>
+  
+</head>
+<body>
+  <div class="promo-banner">Get 25% off the #1 selling AI glasses <a href="#">Shop now →</a></div>
+  <nav class="nav">
+    <div class="nav-left">
+      <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+        <span class="nav-brand">getdesign.md</span>
+      </a>
+      <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+        awesome-design-md
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Glasses</a></li>
+      <li><a href="#">Quest</a></li>
+      <li><a href="#">Apps</a></li>
+    </ul>
+    <button class="nav-cta">Sign in</button>
+  </nav>
+
+  <div class="hero">
+    <h1>Design System Analysis of Meta</h1>
+    <p>Meta's commerce surfaces (homepage, Quest configurator, Ray-Ban product detail, prescription page) read as a confident hardware merchandiser. The brand voice is photography-first: full-bleed product imagery, tight typographic hierarchy, and a recognizable dual-CTA pattern — black pill primaries on marketing, cobalt pill primaries inside the buy-now flow.</p>
+    <div class="hero-actions">
+      <button class="btn-primary">Shop the system</button>
+      <button class="btn-secondary">Explore on GitHub</button>
+    </div>
+  </div>
+
+  <section id="colors">
+    <h2 class="section-heading">Color Palette</h2>
+    <p class="section-sub">A two-tier primary system: cobalt blue for commerce CTAs, black for marketing CTAs. Saturated semantic colors are reserved for status badges and promo banners.</p>
+
+    <div class="palette-group">
+      <h3>Brand &amp; Accent</h3>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #0064e0;"></div><div class="swatch-name">Cobalt Primary</div><div class="swatch-hex">#0064e0</div><div class="swatch-role">Buy-now CTA color</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #0457cb;"></div><div class="swatch-name">Deep Cobalt</div><div class="swatch-hex">#0457cb</div><div class="swatch-role">Pressed-state, dark surfaces</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: rgba(0,145,255,0.15);"></div><div class="swatch-name">Soft Cobalt 15%</div><div class="swatch-hex">#0091ff @ 15%</div><div class="swatch-role">Informational tints</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #1876f2;"></div><div class="swatch-name">Facebook Blue</div><div class="swatch-hex">#1876f2</div><div class="swatch-role">Form-control activation</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #385898;"></div><div class="swatch-name">Meta Link Blue</div><div class="swatch-hex">#385898</div><div class="swatch-role">Legacy nav, footer links</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #a121ce;"></div><div class="swatch-name">Oculus Purple</div><div class="swatch-hex">#a121ce</div><div class="swatch-role">VR product accent</div></div>
+      </div>
+    </div>
+
+    <div class="palette-group">
+      <h3>Surface</h3>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #ffffff;"></div><div class="swatch-name">Canvas White</div><div class="swatch-hex">#ffffff</div><div class="swatch-role">Page + card background</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #f1f4f7;"></div><div class="swatch-name">Soft Cloud</div><div class="swatch-hex">#f1f4f7</div><div class="swatch-role">Thumbnails, search-pill</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #ced0d4;"></div><div class="swatch-name">Hairline Gray</div><div class="swatch-hex">#ced0d4</div><div class="swatch-role">Input borders</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #dee3e9;"></div><div class="swatch-name">Hairline Soft</div><div class="swatch-hex">#dee3e9</div><div class="swatch-role">Card dividers</div></div>
+      </div>
+    </div>
+
+    <div class="palette-group">
+      <h3>Text</h3>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #0a1317;"></div><div class="swatch-name">Deep Ink</div><div class="swatch-hex">#0a1317</div><div class="swatch-role">Primary headlines</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #1c1e21;"></div><div class="swatch-name">Ink</div><div class="swatch-hex">#1c1e21</div><div class="swatch-role">Body text</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #444950;"></div><div class="swatch-name">Charcoal</div><div class="swatch-hex">#444950</div><div class="swatch-role">Tertiary text</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #5d6c7b;"></div><div class="swatch-name">Steel</div><div class="swatch-hex">#5d6c7b</div><div class="swatch-role">Caption text</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #8595a4;"></div><div class="swatch-name">Stone</div><div class="swatch-hex">#8595a4</div><div class="swatch-role">Disabled labels</div></div>
+      </div>
+    </div>
+
+    <div class="palette-group">
+      <h3>Semantic</h3>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #31a24c;"></div><div class="swatch-name">Success</div><div class="swatch-hex">#31a24c</div><div class="swatch-role">In-stock, free returns</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #f2a918;"></div><div class="swatch-name">Attention</div><div class="swatch-hex">#f2a918</div><div class="swatch-role">Mid-priority alerts</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #f7b928;"></div><div class="swatch-name">Warning</div><div class="swatch-hex">#f7b928</div><div class="swatch-role">Promo banners, limited-time</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #e41e3f;"></div><div class="swatch-name">Critical</div><div class="swatch-hex">#e41e3f</div><div class="swatch-role">Error states</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #f0284a;"></div><div class="swatch-name">Critical Strong</div><div class="swatch-hex">#f0284a</div><div class="swatch-role">Form input error border</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="typography">
+    <h2 class="section-heading">Typography Scale</h2>
+    <p class="section-sub">Optimistic VF anchors the system from 64px hero displays to 12px captions. Stylistic sets ss01 + ss02 are switched on across every heading role; negative letter-spacing tightens body copy.</p>
+
+    <div class="type-row">
+      <div class="type-meta"><span class="role">hero-display</span><span class="specs">64px / 500 / 1.16 / ss01,ss02</span></div>
+      <div class="type-sample" style="font-size: 64px; font-weight: 500; line-height: 1.16;">The quick brown fox</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><span class="role">display-lg</span><span class="specs">48px / 500 / 1.17</span></div>
+      <div class="type-sample" style="font-size: 48px; font-weight: 500; line-height: 1.17;">The quick brown fox</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><span class="role">heading-lg</span><span class="specs">36px / 500 / 1.28</span></div>
+      <div class="type-sample" style="font-size: 36px; font-weight: 500; line-height: 1.28;">Why buy from Meta</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><span class="role">heading-md</span><span class="specs">28px / 300 / 1.21</span></div>
+      <div class="type-sample" style="font-size: 28px; font-weight: 300; line-height: 1.21;">Look forward — editorial subhead</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><span class="role">heading-sm</span><span class="specs">24px / 500 / 1.25</span></div>
+      <div class="type-sample" style="font-size: 24px; font-weight: 500; line-height: 1.25;">Card title</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><span class="role">subtitle-lg</span><span class="specs">18px / 700 / 1.44</span></div>
+      <div class="type-sample" style="font-size: 18px; font-weight: 700; line-height: 1.44;">Bold callout for FAQ questions</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><span class="role">subtitle-md</span><span class="specs">18px / 400 / 1.44</span></div>
+      <div class="type-sample" style="font-size: 18px; font-weight: 400; line-height: 1.44;">Regular subtitle for body lead</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><span class="role">body-md</span><span class="specs">16px / 400 / 1.50 / -0.16px</span></div>
+      <div class="type-sample" style="font-size: 16px; font-weight: 400; line-height: 1.5; letter-spacing: -0.16px;">Primary body text. The system uses negative letter-spacing to tighten Optimistic VF's metrics for refined feel.</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><span class="role">body-md-bold</span><span class="specs">16px / 700 / 1.50 / -0.16px</span></div>
+      <div class="type-sample" style="font-size: 16px; font-weight: 700; line-height: 1.5; letter-spacing: -0.16px;">Bold body emphasis and link-md token</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><span class="role">body-sm</span><span class="specs">14px / 400 / 1.43 / -0.14px</span></div>
+      <div class="type-sample" style="font-size: 14px; font-weight: 400; line-height: 1.43; letter-spacing: -0.14px;">Secondary body and helper text used in captions and form labels</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><span class="role">body-sm-bold</span><span class="specs">14px / 700 / 1.43 / -0.14px</span></div>
+      <div class="type-sample" style="font-size: 14px; font-weight: 700; line-height: 1.43; letter-spacing: -0.14px;">Pill tab labels, footer headings, button base</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><span class="role">caption</span><span class="specs">12px / 400 / 1.33</span></div>
+      <div class="type-sample" style="font-size: 12px; font-weight: 400; line-height: 1.33;">Footer fine print, legal microcopy, timestamps</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><span class="role">button-md</span><span class="specs">14px / 700 / 1.43 / -0.14px</span></div>
+      <div class="type-sample" style="font-size: 14px; font-weight: 700; line-height: 1.43; letter-spacing: -0.14px;">PILL BUTTON LABEL</div>
+    </div>
+  </section>
+
+  <section id="buttons">
+    <h2 class="section-heading">Button Variants</h2>
+    <p class="section-sub">Pill-shaped buttons everywhere. The system has TWO primary CTAs: black for marketing, cobalt for buy-now.</p>
+    <div class="button-grid">
+      <div class="button-cell"><button class="btn-primary">Shop now</button><span class="button-cell-name">button-primary</span><span class="button-cell-spec">Black pill — marketing CTA</span></div>
+      <div class="button-cell"><button class="btn-buy">Add to cart</button><span class="button-cell-name">button-buy-cta</span><span class="button-cell-spec">Cobalt pill — commerce CTA</span></div>
+      <div class="button-cell"><button class="btn-secondary">Learn more</button><span class="button-cell-name">button-secondary</span><span class="button-cell-spec">Outlined ghost</span></div>
+      <div class="button-cell"><button class="btn-ghost">View specs</button><span class="button-cell-name">button-ghost</span><span class="button-cell-spec">Quiet outline</span></div>
+      <div class="button-cell"><button class="btn-pill-tab">Glasses</button><span class="button-cell-name">button-pill-tab</span><span class="button-cell-spec">Inactive nav tab</span></div>
+      <div class="button-cell"><button class="btn-pill-tab active">Quest</button><span class="button-cell-name">button-pill-tab-active</span><span class="button-cell-spec">Active nav tab</span></div>
+      <div class="button-cell"><button class="btn-icon-circular" aria-label="next">›</button><span class="button-cell-name">button-icon-circular</span><span class="button-cell-spec">40×40 utility</span></div>
+      <div class="button-cell"><button class="btn-disabled">Sold out</button><span class="button-cell-name">button-primary-disabled</span><span class="button-cell-spec">Disabled state</span></div>
+    </div>
+  </section>
+
+  <section id="badges">
+    <h2 class="section-heading">Badges &amp; Status</h2>
+    <p class="section-sub">Pill-shaped status indicators reuse the brand's full-radius geometry. Backgrounds carry the saturated semantic colors directly.</p>
+    <div class="badge-row">
+      <span class="badge badge-warning">Limited time</span>
+      <span class="badge badge-attention">Almost gone</span>
+      <span class="badge badge-success">In stock</span>
+      <span class="badge badge-critical">Out of stock</span>
+    </div>
+    <div style="margin-top: 32px;">
+      <div class="promo-banner" style="border-radius: 8px;">Get 25% off the #1 selling AI glasses <a href="#">Shop now →</a></div>
+      <p style="font-size: 12px; color: var(--steel); margin-top: 8px; font-family: &#39;SF Mono&#39;, Menlo, monospace;">promo-banner — full-width strip above the top nav</p>
+    </div>
+  </section>
+
+  <section id="cards">
+    <h2 class="section-heading">Cards &amp; Containers</h2>
+    <p class="section-sub">Photographic feature cards (32px rounded), icon-feature tiles (16px rounded), and a sticky checkout summary with subtle elevation.</p>
+    <div class="card-grid">
+      <div class="card-product-feature">
+        <div class="photo"></div>
+        <h4>Designed for sport</h4>
+        <p>Rugged, water-resistant frames for everyday adventure.</p>
+      </div>
+      <div class="card-feature-photo">
+        <h4>Built for prescriptions</h4>
+        <p>Customized for your fit, vision, and style.</p>
+      </div>
+      <div class="card-promo-strip">
+        <h4>Meta Quest brings the magic of virtual reality.</h4>
+        <p>Step into immersive worlds, play with friends, and experience entertainment in entirely new ways.</p>
+        <div><button class="btn-primary" style="background: white; color: black;">Shop Quest</button></div>
+      </div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 700; margin: 48px 0 20px;">Icon Feature Tiles (Why buy from Meta)</h3>
+    <div class="card-grid">
+      <div class="card-icon-feature"><div class="icon-box">⚡</div><h5>Free 2-day delivery</h5><p>Get it tomorrow on orders over $50</p></div>
+      <div class="card-icon-feature"><div class="icon-box">↺</div><h5>Free 30-day returns</h5><p>Risk-free returns on every order</p></div>
+      <div class="card-icon-feature"><div class="icon-box">🛡</div><h5>Worry-free warranty</h5><p>Full 1-year coverage included</p></div>
+      <div class="card-icon-feature"><div class="icon-box">$</div><h5>Buy now, pay later</h5><p>Flexible financing available at checkout</p></div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 700; margin: 48px 0 20px;">Checkout Summary (PDP right rail)</h3>
+    <div class="card-checkout">
+      <span class="product-title">Skyler (Gen 2)</span>
+      <div><span class="price">$379</span><span class="strike">$429</span></div>
+      <div style="display: flex; gap: 6px;"><span class="badge badge-warning">Limited time</span><span class="badge badge-success">In stock</span></div>
+      <div>
+        <span class="form-label" style="display: block; margin-bottom: 8px;">Color</span>
+        <div class="swatch-circle-row">
+          <div class="color-swatch-circle selected" style="background: #2a2f36;"></div>
+          <div class="color-swatch-circle" style="background: #6b7180;"></div>
+          <div class="color-swatch-circle" style="background: #c5a87a;"></div>
+        </div>
+      </div>
+      <button class="btn-buy" style="width: 100%;">Add to cart</button>
+    </div>
+  </section>
+
+  <section id="forms">
+    <h2 class="section-heading">Forms &amp; Inputs</h2>
+    <p class="section-sub">44px-tall inputs with 8px rounded corners. Focus shifts to a 2px Facebook Blue border; errors use the deep critical red.</p>
+    <div class="form-row">
+      <div class="form-field">
+        <label class="form-label">Email</label>
+        <input class="text-input" type="text" value="default state" placeholder="you@email.com">
+      </div>
+      <div class="form-field">
+        <label class="form-label">Phone</label>
+        <input class="text-input" type="text" value="focused state" autofocus="" style="border: 2px solid var(--fb-blue); padding: 11px 15px;">
+      </div>
+      <div class="form-field">
+        <label class="form-label">Zip code</label>
+        <input class="text-input error" type="text" value="invalid">
+        <span class="err-label">Please enter a valid 5-digit zip</span>
+      </div>
+    </div>
+    <div style="margin-top: 32px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+      <input class="search-pill" placeholder="🔍 Search Meta">
+      <span style="font-size: 12px; color: var(--steel); font-family: &#39;SF Mono&#39;, Menlo, monospace;">search-pill — 40px rounded-full</span>
+    </div>
+  </section>
+
+  <section id="signature">
+    <h2 class="section-heading">Signature Components</h2>
+    <p class="section-sub">Components unique to Meta's commerce surfaces — radio-option configurators, color/SKU picker grids, FAQ accordion, tech-specs table, customer testimonial cards.</p>
+
+    <h3 style="font-size: 18px; font-weight: 700; margin: 32px 0 16px;">Radio Option (Configurator)</h3>
+    <div class="radio-row" style="max-width: 520px;">
+      <div class="radio-option selected">
+        <div class="radio-circle"></div>
+        <div><div class="radio-option-label">128 GB</div><div class="radio-option-meta">Standard storage — $299</div></div>
+      </div>
+      <div class="radio-option">
+        <div class="radio-circle"></div>
+        <div><div class="radio-option-label">256 GB</div><div class="radio-option-meta">Recommended — $379</div></div>
+      </div>
+      <div class="radio-option">
+        <div class="radio-circle"></div>
+        <div><div class="radio-option-label">512 GB</div><div class="radio-option-meta">For extensive libraries — $499</div></div>
+      </div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 700; margin: 48px 0 16px;">Color &amp; SKU Picker Row</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; max-width: 920px;">
+      <div class="sku-tile active"><div class="img"></div><span class="name">Skyler — Black</span><span class="price">$379</span></div>
+      <div class="sku-tile"><div class="img" style="background: linear-gradient(135deg, #c5a87a, #8c7050);"></div><span class="name">Skyler — Tortoise</span><span class="price">$379</span></div>
+      <div class="sku-tile"><div class="img" style="background: linear-gradient(135deg, #6b7180, #4a5060);"></div><span class="name">Skyler — Slate</span><span class="price">$379</span></div>
+      <div class="sku-tile"><div class="img" style="background: linear-gradient(135deg, #d3c8b5, #a89d8a);"></div><span class="name">Skyler — Sand</span><span class="price">$379</span></div>
+      <div class="sku-tile"><div class="img" style="background: linear-gradient(135deg, #5a8090, #3d5a6a);"></div><span class="name">Skyler — Teal</span><span class="price">$379</span></div>
+      <div class="sku-tile"><div class="img" style="background: linear-gradient(135deg, #8a4a4a, #6a2f2f);"></div><span class="name">Skyler — Wine</span><span class="price">$379</span></div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 700; margin: 48px 0 16px;">Color Swatch Circles</h3>
+    <div class="swatch-circle-row">
+      <div class="color-swatch-circle selected" style="background: #2a2f36;"></div>
+      <div class="color-swatch-circle" style="background: #6b7180;"></div>
+      <div class="color-swatch-circle" style="background: #c5a87a;"></div>
+      <div class="color-swatch-circle" style="background: #5a8090;"></div>
+      <div class="color-swatch-circle" style="background: #8a4a4a;"></div>
+      <div class="color-swatch-circle" style="background: #d3c8b5;"></div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 700; margin: 48px 0 16px;">Product Thumbnails (PDP gallery)</h3>
+    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+      <div class="product-thumbnail active"><div class="swatch-img"></div></div>
+      <div class="product-thumbnail"><div class="swatch-img" style="background: linear-gradient(135deg, #c5a87a, #8c7050);"></div></div>
+      <div class="product-thumbnail"><div class="swatch-img" style="background: linear-gradient(135deg, #6b7180, #4a5060);"></div></div>
+      <div class="product-thumbnail"><div class="swatch-img" style="background: linear-gradient(135deg, #5a8090, #3d5a6a);"></div></div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 700; margin: 48px 0 16px;">FAQ Accordion</h3>
+    <div class="accordion-list">
+      <div class="accordion-item">
+        <div class="accordion-q">
+          <span class="accordion-q-text">What is the battery life of Meta Quest 3S?</span>
+          <span class="chev">⌃</span>
+        </div>
+        <div class="accordion-a">Approximately 2.5 hours of mixed-use video and gaming on a single charge. Charging time from 0 to 100 percent is approximately 2.3 hours.</div>
+      </div>
+      <div class="accordion-item collapsed">
+        <div class="accordion-q">
+          <span class="accordion-q-text">What is the warranty period on Meta Quest 3S?</span>
+          <span class="chev">⌄</span>
+        </div>
+        <div class="accordion-a">Standard 1-year manufacturer warranty included.</div>
+      </div>
+      <div class="accordion-item collapsed">
+        <div class="accordion-q">
+          <span class="accordion-q-text">Can I use prescription lenses with my glasses?</span>
+          <span class="chev">⌄</span>
+        </div>
+        <div class="accordion-a">Yes — prescription lenses can be ordered through the Meta prescription program.</div>
+      </div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 700; margin: 48px 0 16px;">Tech Specs Table</h3>
+    <div class="specs-table">
+      <div class="spec-section-header">Display</div>
+      <div class="spec-row"><span class="spec-label">Resolution</span><span class="spec-value">2064 × 2208 pixels per eye</span></div>
+      <div class="spec-row"><span class="spec-label">Refresh Rate</span><span class="spec-value">90 Hz / 120 Hz (experimental)</span></div>
+      <div class="spec-section-header">Storage &amp; Battery</div>
+      <div class="spec-row"><span class="spec-label">Internal Storage</span><span class="spec-value">128 GB / 256 GB</span></div>
+      <div class="spec-row"><span class="spec-label">Battery Life</span><span class="spec-value">~2.5 hours mixed use</span></div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 700; margin: 48px 0 16px;">Customer Testimonial Cards</h3>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p class="testi-quote">The form-factor finally caught up with the dream. Wearing them daily — they vanish on my face.</p>
+        <div class="testi-author">
+          <div class="avatar"></div>
+          <div><div class="testi-byline">Verified buyer</div><div class="testi-byline-meta">Skyler — Gen 2 owner</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testi-quote">Setup was effortless. My kids were inside Beat Saber within five minutes.</p>
+        <div class="testi-author">
+          <div class="avatar" style="background: linear-gradient(135deg, #6a90b6, #4a6a90);"></div>
+          <div><div class="testi-byline">Verified buyer</div><div class="testi-byline-meta">Quest 3S owner</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="spacing">
+    <h2 class="section-heading">Spacing Scale</h2>
+    <p class="section-sub">4px base unit, 8px primary increment. Section rhythm runs from 48px to 120px.</p>
+    <div class="spacing-grid">
+      <div class="spacing-box"><div class="spacing-visual" style="width: 4px; height: 16px;"></div><div class="spacing-label">4<small>xxs</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 8px; height: 16px;"></div><div class="spacing-label">8<small>xs</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 12px; height: 16px;"></div><div class="spacing-label">12<small>md</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 16px; height: 16px;"></div><div class="spacing-label">16<small>base</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 24px; height: 16px;"></div><div class="spacing-label">24<small>xl</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 32px; height: 16px;"></div><div class="spacing-label">32<small>xxl</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 48px; height: 16px;"></div><div class="spacing-label">48<small>section-sm</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 64px; height: 16px;"></div><div class="spacing-label">64<small>section</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 80px; height: 16px;"></div><div class="spacing-label">80<small>section-lg</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 120px; height: 16px;"></div><div class="spacing-label">120<small>hero</small></div></div>
+    </div>
+  </section>
+
+  <section id="radius">
+    <h2 class="section-heading">Border Radius Scale</h2>
+    <p class="section-sub">From subtle 2px detailing to 40px feature panels and full-pill 100px buttons. Buttons are NEVER squared.</p>
+    <div class="radius-grid">
+      <div class="radius-demo" style="border-radius: 2px;">2px<small>xs</small></div>
+      <div class="radius-demo" style="border-radius: 4px;">4px<small>sm</small></div>
+      <div class="radius-demo" style="border-radius: 8px;">8px<small>lg</small></div>
+      <div class="radius-demo" style="border-radius: 16px;">16px<small>xl</small></div>
+      <div class="radius-demo" style="border-radius: 24px;">24px<small>xxl</small></div>
+      <div class="radius-demo" style="border-radius: 32px;">32px<small>xxxl</small></div>
+      <div class="radius-demo" style="border-radius: 40px;">40px<small>feature</small></div>
+      <div class="radius-demo" style="border-radius: 100px;">100px<small>full</small></div>
+    </div>
+  </section>
+
+  <section id="elevation">
+    <h2 class="section-heading">Elevation &amp; Depth</h2>
+    <p class="section-sub">Three layers — flat default, subtle indicator, sticky panel. Photography carries depth on marketing surfaces.</p>
+    <div class="elevation-grid">
+      <div class="elev-cell elev-0"><span class="elev-name">Level 0 — Flat</span><span class="elev-meta">border + hairline-soft</span><p style="font-size: 12px; color: var(--steel); margin-top: 8px;">Default product cards, why-buy tiles</p></div>
+      <div class="elev-cell elev-1"><span class="elev-name">Level 1 — Subtle</span><span class="elev-meta">rgba(0,0,0,0.2) 1px 1px</span><p style="font-size: 12px; color: var(--steel); margin-top: 8px;">Pill tab activation indicator</p></div>
+      <div class="elev-cell elev-2"><span class="elev-name">Level 2 — Sticky panel</span><span class="elev-meta">rgba(20,22,26,0.3) 0 1px 4px</span><p style="font-size: 12px; color: var(--steel); margin-top: 8px;">PDP purchase rail, mobile checkout bar</p></div>
+    </div>
+  </section>
+
+  <section id="responsive">
+    <h2 class="section-heading">Responsive Behavior</h2>
+    <p class="section-sub">Mobile-first reflow: hero stacks, pill nav becomes hamburger, three-up grids flatten, PDP rail becomes sticky bottom bar.</p>
+    <table class="breakpoint-table">
+      <thead><tr><th>Breakpoint</th><th>Width</th><th>Key Changes</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Mobile (small)</strong></td><td>&lt; 480px</td><td>Single column. Hero drops to display-lg. Pill tabs collapse to hamburger. PDP rail → sticky bottom bar.</td></tr>
+        <tr><td><strong>Mobile (large)</strong></td><td>480 – 767px</td><td>Same as small but feature tiles render two-up.</td></tr>
+        <tr><td><strong>Tablet</strong></td><td>768 – 1023px</td><td>Two-column feature grids. Pill-tab nav returns. PDP at compressed 60/40.</td></tr>
+        <tr><td><strong>Desktop</strong></td><td>1024 – 1359px</td><td>Three- and four-up feature grids; full pill-tab nav; PDP at 58/42.</td></tr>
+        <tr><td><strong>Wide Desktop</strong></td><td>≥ 1360px</td><td>Wider hero gutters, larger product photography.</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size: 18px; font-weight: 700; margin-top: 32px;">Device Ladder</h3>
+    <div class="device-ladder">
+      <div class="device" style="width: 60px; height: 110px;">375px</div>
+      <div class="device" style="width: 90px; height: 130px;">480px</div>
+      <div class="device" style="width: 130px; height: 150px;">768px</div>
+      <div class="device" style="width: 200px; height: 170px;">1024px</div>
+      <div class="device" style="width: 280px; height: 200px;">1360+</div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 700; margin-top: 32px;">Touch Targets</h3>
+    <ul style="font-size: 14px; color: var(--charcoal); line-height: 1.7; padding-left: 20px; letter-spacing: -0.14px;">
+      <li>Pill buttons render at 40–44px effective height — at WCAG AAA floor.</li>
+      <li>Circular icon buttons: 40×40px desktop, 44×44px on mobile.</li>
+      <li>Color swatch circles 32×32px with 12px clear hit zone (effective ~56px).</li>
+      <li>Form inputs render at 44px height to align with primary button height.</li>
+    </ul>
+
+    <h3 style="font-size: 18px; font-weight: 700; margin-top: 32px;">Collapsing Strategy</h3>
+    <ul style="font-size: 14px; color: var(--charcoal); line-height: 1.7; padding-left: 20px; letter-spacing: -0.14px;">
+      <li><strong>Promo banner</strong> stays full-width; truncates with ellipsis on small mobile.</li>
+      <li><strong>Pill-tab nav</strong> below 768px collapses into hamburger drawer.</li>
+      <li><strong>PDP layout</strong>: gallery stacks above purchase summary at &lt; 1024px; sticky bottom bar at &lt; 768px.</li>
+      <li><strong>Feature grids</strong> (3-up, 4-up) → 2-up at tablet → 1-up at mobile.</li>
+      <li><strong>Hero typography</strong>: hero-display (64px) → heading-lg (36px) at &lt; 768px → heading-sm (24px) at &lt; 480px.</li>
+      <li><strong>Footer</strong>: 6-column desktop → 2-column tablet → accordion-collapsed mobile.</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

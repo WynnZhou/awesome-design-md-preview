@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of BMW</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #0c0c0e; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#responsive">Responsive</a></li>
+  </ul>
+  <button class="nav-cta">Learn More</button>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of BMW</h1>
+    <p>BMW corporate site. On a light canvas, the BMW corporate blue (#1c69d4) carries every primary CTA; dark navy hero bands frame model photography. Heavy 700 display weight against Light 300 body in BMW Type Next Latin is the editorial signature.</p>
+    <div class="hero-actions">
+      <button class="btn-hero-primary">Learn More</button>
+      <button class="btn-hero-secondary">Book a Test Drive</button>
+    </div>
+  </div>
+  <div class="hero-art">
+    <div class="label">iX3</div>
+    <div class="sublabel">100% electric BMW. Reserve yours now.</div>
+    <div class="stripe"></div>
+  </div>
+</div>
+
+<section id="colors">
+  <div class="section-label">01 — Color Palette</div>
+  <h2 class="section-heading">BMW Blue + light canvas + dark navy</h2>
+  <p class="section-intro">A single primary action color: BMW Blue. Light canvas pages, dark navy hero bands, soft gray card surfaces. The M tricolor only appears in M-model contexts.</p>
+
+  <div class="palette-group">
+    <h3>Brand</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#1c69d4;"></div><div class="swatch-meta"><div class="swatch-name">primary (BMW Blue)</div><div class="swatch-hex">#1c69d4</div><div class="swatch-role">All primary CTAs and the blue text-link prefix.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#0653b6;"></div><div class="swatch-meta"><div class="swatch-name">primary-active</div><div class="swatch-hex">#0653b6</div><div class="swatch-role">Press state.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#d6d6d6;"></div><div class="swatch-meta"><div class="swatch-name">primary-disabled</div><div class="swatch-hex">#d6d6d6</div><div class="swatch-role">Disabled CTA.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>M Tricolor (M context only)</h3>
+    <div class="m-stripe-display"></div>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#0066b1;"></div><div class="swatch-meta"><div class="swatch-name">m-blue-light</div><div class="swatch-hex">#0066b1</div><div class="swatch-role">First stop of the M tricolor stripe.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1c69d4;"></div><div class="swatch-meta"><div class="swatch-name">m-blue-dark</div><div class="swatch-hex">#1c69d4</div><div class="swatch-role">Middle stop. Same as the corporate blue.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#e22718;"></div><div class="swatch-meta"><div class="swatch-name">m-red</div><div class="swatch-hex">#e22718</div><div class="swatch-role">Third stop. M-power red.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Surface</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff; border-bottom:1px solid var(--hairline);"></div><div class="swatch-meta"><div class="swatch-name">canvas</div><div class="swatch-hex">#ffffff</div><div class="swatch-role">Default page surface.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f7f7f7;"></div><div class="swatch-meta"><div class="swatch-name">surface-soft</div><div class="swatch-hex">#f7f7f7</div><div class="swatch-role">Footer and sub-nav band.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#fafafa;"></div><div class="swatch-meta"><div class="swatch-name">surface-card</div><div class="swatch-hex">#fafafa</div><div class="swatch-role">Photo plate inside the model card.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1a2129;"></div><div class="swatch-meta"><div class="swatch-name">surface-dark</div><div class="swatch-hex">#1a2129</div><div class="swatch-role">Hero band, dark CTA. Not pure black — carries a warm undertone.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#262e38;"></div><div class="swatch-meta"><div class="swatch-name">surface-dark-elevated</div><div class="swatch-hex">#262e38</div><div class="swatch-role">Nested card on top of the dark hero.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#e6e6e6;"></div><div class="swatch-meta"><div class="swatch-name">hairline</div><div class="swatch-hex">#e6e6e6</div><div class="swatch-role">1px divider, input outline.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Text</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#262626;"></div><div class="swatch-meta"><div class="swatch-name">ink</div><div class="swatch-hex">#262626</div><div class="swatch-role">Display and primary text.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#3c3c3c;"></div><div class="swatch-meta"><div class="swatch-name">body</div><div class="swatch-hex">#3c3c3c</div><div class="swatch-role">Default running text.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#6b6b6b;"></div><div class="swatch-meta"><div class="swatch-name">muted</div><div class="swatch-hex">#6b6b6b</div><div class="swatch-role">Footer link, breadcrumb, caption.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#bbbbbb;"></div><div class="swatch-meta"><div class="swatch-name">on-dark-soft</div><div class="swatch-hex">#bbbbbb</div><div class="swatch-role">Secondary text on dark bands.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="typography">
+  <div class="section-label">02 — Typography Scale</div>
+  <h2 class="section-heading">BMW Type Next Latin · 700/300 contrast</h2>
+  <p class="section-intro">Display weight 700 against body weight 300 (Light) — the contrast is the editorial signature. Inter is used here as a substitute.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>64px / 700 / 1.05 / 0</div><div class="type-sample" style="font-size:64px; font-weight:700; line-height:1.05;">Exactly What You Need</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>48px / 700 / 1.1 / 0</div><div class="type-sample" style="font-size:48px; font-weight:700; line-height:1.1;">The New BMW iX3</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>32px / 700 / 1.15 / 0</div><div class="type-sample" style="font-size:32px; font-weight:700; line-height:1.15;">BMW iX</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-sm</strong>24px / 700 / 1.25 / 0</div><div class="type-sample" style="font-size:24px; font-weight:700;">Driving Pleasure at Its Peak</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-lg</strong>20px / 700 / 1.3 / 0</div><div class="type-sample" style="font-size:20px; font-weight:700;">The New iX3</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-md</strong>18px / 700 / 1.4 / 0</div><div class="type-sample" style="font-size:18px; font-weight:700;">BMW 5 Series Sedan</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-sm</strong>16px / 700 / 1.4 / 0</div><div class="type-sample" style="font-size:16px; font-weight:700;">BMW M3 Competition</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>16px / 300 (Light) / 1.55</div><div class="type-sample" style="font-size:16px; font-weight:300; line-height:1.55;">Discover the new BMW iX3 with technology, driving dynamics, and sustainable design that raise the standard.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>14px / 300 (Light) / 1.55</div><div class="type-sample" style="font-size:14px; font-weight:300; color:var(--body); line-height:1.55;">Footer body and fine-print legal — Light weight even in legal copy.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption</strong>12px / 400 / 1.4 / 0.5px</div><div class="type-sample" style="font-size:12px; font-weight:400; letter-spacing:0.5px; color:var(--muted);">Photo: BMW · 2026</div></div>
+  <div class="type-row"><div class="type-meta"><strong>label-uppercase</strong>13px / 700 / 1.3 / 1.5px</div><div class="type-sample" style="font-size:13px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase;">LEARN MORE</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button</strong>14px / 700 / 1.0 / 0.5px</div><div class="type-sample" style="font-size:14px; font-weight:700; letter-spacing:0.5px;">Book a Test Drive</div></div>
+  <div class="type-row"><div class="type-meta"><strong>nav-link</strong>14px / 400 / 1.4 / 0.3px</div><div class="type-sample" style="font-size:14px; font-weight:400; letter-spacing:0.3px;">Models · Next Generation · Pre-Owned · Dealers · Test Drive</div></div>
+</section>
+
+<section id="components">
+  <div class="section-label">03 — Button Variants</div>
+  <h2 class="section-heading">Blue primary, white outline secondary</h2>
+  <p class="section-intro">All buttons are 0px corner radius (rectangular). No pills, no rounded shapes — the corporate "engineered precision" voice.</p>
+
+  <div class="button-grid">
+    <div class="button-cell"><div class="button-label">button-primary</div><button class="btn btn-primary">Learn More</button><div class="button-meta">BMW Blue / on-primary white / 0px radius</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-active</div><button class="btn btn-primary-active">Pressed</button><div class="button-meta">primary-active deep blue</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-disabled</div><button class="btn btn-primary-disabled" disabled="">Disabled</button></div>
+    <div class="button-cell"><div class="button-label">button-secondary</div><button class="btn btn-secondary">Book a Test Drive</button><div class="button-meta">canvas / ink / hairline-strong outline</div></div>
+    <div class="button-cell on-dark"><div class="button-label">button-secondary-on-dark</div><button class="btn btn-secondary-on-dark">Configurator</button><div class="button-meta">Transparent + white outline on a dark hero</div></div>
+    <div class="button-cell"><div class="button-label">button-text-link</div><button class="btn-text-link">Learn More</button><div class="button-meta">UPPERCASE 1.5px tracking + chevron</div></div>
+    <div class="button-cell"><div class="button-label">text-link</div><button class="text-link">View details</button><div class="button-meta">Inline link inside body copy.</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">04 — Model Cards</div>
+  <h2 class="section-heading">5-up grid: Next Generation models</h2>
+  <p class="section-intro">The signature homepage pattern. Model photo on a `surface-card` plate, title underneath, closed off with an UPPERCASE "LEARN MORE" link.</p>
+
+  <div class="card-grid">
+    <div class="model-card">
+      <div class="model-card-photo"><div class="render"></div></div>
+      <h4>The New iX3</h4>
+      <div class="tagline">100% electric BMW. Sustainable luxury.</div>
+      <button class="btn-text-link">Learn More</button>
+    </div>
+    <div class="model-card">
+      <div class="model-card-photo"><div class="render"></div></div>
+      <h4>BMW iX</h4>
+      <div class="tagline">Innovation, luxury, and sustainability.</div>
+      <button class="btn-text-link">Learn More</button>
+    </div>
+    <div class="model-card">
+      <div class="model-card-photo"><div class="render"></div></div>
+      <h4>BMW X3</h4>
+      <div class="tagline">Sporty SAV. Premium comfort.</div>
+      <button class="btn-text-link">Learn More</button>
+    </div>
+    <div class="model-card">
+      <div class="model-card-photo"><div class="render"></div></div>
+      <h4>BMW 5 Series Sedan</h4>
+      <div class="tagline">The executive sedan, redesigned.</div>
+      <button class="btn-text-link">Learn More</button>
+    </div>
+    <div class="model-card">
+      <div class="model-card-photo"><div class="render"></div></div>
+      <h4>BMW 5 Series Sport</h4>
+      <div class="tagline">Enriched with M Performance.</div>
+      <button class="btn-text-link">Learn More</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">05 — Hero Band (Dark)</div>
+  <div class="hero-band-dark" style="margin: 0 -48px;">
+    <div class="inner">
+      <h2>BMW iX3</h2>
+      <p>Pure electric driving thrill. 0–100 km/h in 4.9 seconds. 600+ km range. Fast-charge 200 km in 10 minutes.</p>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <button class="btn btn-primary">Reserve Now</button>
+        <button class="btn btn-secondary-on-dark">Configurator</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">06 — Spec Cells</div>
+  <h2 class="section-heading">Technical data — gridded layout</h2>
+  <div class="spec-grid">
+    <div class="spec-cell"><div class="value">340 PS</div><div class="label">Engine Power</div></div>
+    <div class="spec-cell"><div class="value">4.9 s</div><div class="label">0 – 100 km/h</div></div>
+    <div class="spec-cell"><div class="value">213 km/h</div><div class="label">Top Speed</div></div>
+    <div class="spec-cell"><div class="value">605 km</div><div class="label">WLTP Range</div></div>
+    <div class="spec-cell"><div class="value">81 kWh</div><div class="label">Battery</div></div>
+    <div class="spec-cell"><div class="value">10 min</div><div class="label">Fast Charge (200 km)</div></div>
+    <div class="spec-cell"><div class="value">M xDrive</div><div class="label">Drivetrain</div></div>
+    <div class="spec-cell"><div class="value">M Compound</div><div class="label">Brakes</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">07 — Inventory + Filter</div>
+  <h2 class="section-heading">Dealer vehicle inventory</h2>
+  <p class="section-intro">Dealer inventory page — a horizontal row of filter chips above an inventory card per vehicle.</p>
+
+  <div class="filter-row" style="margin-bottom: 24px;">
+    <button class="filter-chip active">iX3</button>
+    <button class="filter-chip">iX</button>
+    <button class="filter-chip">X3</button>
+    <button class="filter-chip">X5</button>
+    <button class="filter-chip">5 Series</button>
+    <button class="filter-chip">7 Series</button>
+  </div>
+
+  <div class="inventory-grid">
+    <div class="inventory-card"><div class="photo"></div><div class="model">BMW iX3</div><div class="variant">xDrive50 · Inline 6 electric · 2025</div><div class="price">€68,900</div><button class="btn-text-link">View</button></div>
+    <div class="inventory-card"><div class="photo"></div><div class="model">BMW iX</div><div class="variant">xDrive40 · Sport · 2025</div><div class="price">€84,500</div><button class="btn-text-link">View</button></div>
+    <div class="inventory-card"><div class="photo"></div><div class="model">BMW X3 30e</div><div class="variant">Plug-in Hybrid · M Sport · 2025</div><div class="price">€72,400</div><button class="btn-text-link">View</button></div>
+    <div class="inventory-card"><div class="photo"></div><div class="model">BMW 530i</div><div class="variant">M Sport · Automatic · 2025</div><div class="price">€78,200</div><button class="btn-text-link">View</button></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">08 — Configurator Options</div>
+  <p class="section-intro">Build-and-reserve flow. Color, upholstery, and wheel choices — selected variant carries a 2px BMW Blue border.</p>
+
+  <h4 style="font-size:13px; font-weight:700; color:var(--ink); margin-bottom:16px; text-transform:uppercase; letter-spacing:1.5px;">Color selection</h4>
+  <div class="config-row" style="margin-bottom: 32px;">
+    <button class="configurator-option-tile selected"><span class="swatch-dot" style="background:#bdc3cc;"></span>Alpine White</button>
+    <button class="configurator-option-tile"><span class="swatch-dot" style="background:#1a1a1a;"></span>Sapphire Black</button>
+    <button class="configurator-option-tile"><span class="swatch-dot" style="background:#3d4754;"></span>Misano Blue</button>
+    <button class="configurator-option-tile"><span class="swatch-dot" style="background:#5a5a5a;"></span>Mineral Grey</button>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">09 — Form &amp; Cookie</div>
+  <p class="section-intro">All inputs are 0px corner with a 1px hairline outline. On focus the border shifts to 2px ink.</p>
+
+  <div class="form-grid" style="margin-bottom: 32px;">
+    <div class="form-cell"><label class="form-label">Full Name</label><input class="form-input" type="text" placeholder="Enter your name"></div>
+    <div class="form-cell"><label class="form-label">Email</label><input class="form-input focused" type="email" value="example@bmw.com"></div>
+    <div class="form-cell"><label class="form-label">Phone</label><input class="form-input" type="tel" placeholder="+90 555 123 45 67"></div>
+    <div class="form-cell wide"><label class="form-label">Request / Message</label><input class="form-input" type="text" placeholder="Test drive, pricing inquiry, etc."></div>
+  </div>
+
+  <div class="cookie-consent-card">
+    <p><strong style="color:var(--ink);">Cookie usage.</strong> We use cookies on this site to improve your experience. You can manage your preferences.</p>
+    <button class="btn btn-primary">Accept All</button>
+    <button class="btn-text-link" style="margin-left:16px;">Manage Preferences</button>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">10 — Category Tabs</div>
+  <div class="category-tabs">
+    <div class="category-tab active">All</div>
+    <div class="category-tab">Electric</div>
+    <div class="category-tab">Hybrid</div>
+    <div class="category-tab">Petrol</div>
+    <div class="category-tab">M Performance</div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">11 — Brand Signature: M Stripe</div>
+  <p class="section-intro">M tricolor stripe — only ever appears in M-model contexts.</p>
+  <div class="m-stripe-display"></div>
+</section>
+
+<section>
+  <div class="section-label">12 — Spacing Scale</div>
+  <div class="spacing-row">
+    <div class="spacing-block"><div class="spacing-bar" style="width:4px;"></div><div class="spacing-label">xxs · 4px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:8px;"></div><div class="spacing-label">xs · 8px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:12px;"></div><div class="spacing-label">sm · 12px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:16px;"></div><div class="spacing-label">md · 16px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:24px;"></div><div class="spacing-label">lg · 24px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:32px;"></div><div class="spacing-label">xl · 32px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:48px;"></div><div class="spacing-label">xxl · 48px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:80px;"></div><div class="spacing-label">section · 80px</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">13 — Border Radius</div>
+  <p class="section-intro">Almost always 0px. Full radius is reserved for circular icon buttons.</p>
+  <div class="radius-row">
+    <div class="radius-block" style="border-radius:0;">0 · none</div>
+    <div class="radius-block" style="border-radius:2px;">2 · xs</div>
+    <div class="radius-block" style="border-radius:4px;">4 · sm</div>
+    <div class="radius-block" style="border-radius:8px;">8 · md</div>
+    <div class="radius-block" style="border-radius:12px;">12 · lg</div>
+    <div class="radius-block" style="border-radius:50%;">full</div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">14 — Elevation &amp; Depth</div>
+  <p class="section-intro">No drop shadows. Depth comes from photography and the dark/light surface contrast.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card"><h5>Flat / Canvas</h5><p>Body, top nav, hero bands.</p></div>
+    <div class="elevation-card elevation-card-card"><h5>Soft hairline</h5><p>1px hairline border. Configurator option tile.</p></div>
+    <div class="elevation-card elevation-dark"><h5>Dark hero</h5><p>surface-dark — dark-tone photo blended with a dark gradient.</p></div>
+    <div class="elevation-card"><h5>Photographic</h5><p>Edge-to-edge photography does the job of chrome.</p></div>
+    <div class="elevation-card elevation-card-card"><h5>Card surface</h5><p>surface-card — model card photo plate.</p></div>
+    <div class="elevation-card"><h5>M-stripe accent</h5><p>4px tricolor — only in the M context.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">15 — CTA Band (Dark)</div>
+  <div class="cta-band-photo" style="margin: 0 -48px;">
+    <div class="inner">
+      <h2>Get in touch with your nearest BMW dealer</h2>
+      <button class="btn btn-secondary-on-dark">Find a Dealer</button>
+    </div>
+  </div>
+</section>
+
+<section id="responsive">
+  <div class="section-label">16 — Responsive Behavior</div>
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Mobile</td><td>&lt; 768px</td><td>Hamburger nav; hero h1 64→40px; model card 1-up; configurator chips 2-up.</td></tr>
+      <tr><td>Tablet</td><td>768–1024px</td><td>Top nav narrows; model card 2-up; inventory 2-up.</td></tr>
+      <tr><td>Desktop</td><td>1024–1440px</td><td>Full top-nav; 4–5 up model card; inventory 3-up.</td></tr>
+      <tr><td>Wide</td><td>&gt; 1440px</td><td>Content stays pinned at 1440px; the gutters absorb the rest.</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="device-bar" style="width:60px; height:120px;">375<br>mobile</div>
+    <div class="device-bar" style="width:90px; height:140px;">600<br>small phone</div>
+    <div class="device-bar" style="width:140px; height:160px;">768<br>tablet</div>
+    <div class="device-bar" style="width:200px; height:180px;">1024<br>laptop</div>
+    <div class="device-bar" style="width:260px; height:200px;">1280<br>desktop</div>
+    <div class="device-bar" style="width:320px; height:220px;">1440<br>wide</div>
+  </div>
+  <div class="responsive-sub"><h4>Touch Targets</h4><ul><li>Primary CTA at minimum 48 × 48px (above WCAG AAA).</li><li>Text input height 48px.</li><li>Filter chip 8px vertical padding gives an effective tap area.</li></ul></div>
+  <div class="responsive-sub"><h4>Collapsing Strategy</h4><ul><li>Top nav switches to a hamburger below 768px.</li><li>Model card grid 5-up → 2-up → 1-up.</li><li>Inventory grid 3-up → 2-up → 1-up.</li><li>The M-stripe stays at 4px height across every breakpoint.</li></ul></div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of Intercom</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #f5f1ec; } html[data-theme="dark"] { background: #1a1816; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#palette">Palette</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#cards">Cards</a></li>
+  </ul>
+  <button class="nav-cta">Sign up</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of Intercom</h1>
+    <p>An editorial customer-service marketing canvas built around a soft cream-white ground, charcoal type set in Saans, and a single confident Fin Orange (#ff5600) reserved for the Fin AI brand. Cards live as floating white tiles with thin hairline borders. The system reads as a careful, product-led publication.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Sign up</button>
+      <button class="btn btn-secondary">View pricing</button>
+      <button class="btn btn-fin">Talk to Fin</button>
+    </div>
+  </div>
+</header>
+
+<section id="palette">
+  <div class="section-eyebrow">01 — Color Palette</div>
+  <h2 class="section-heading">Palette</h2>
+
+  <div class="palette-group-heading">Brand &amp; Accent</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#111111"></div><div class="swatch-info"><div class="swatch-name">Charcoal (primary)</div><div class="swatch-hex">#111111</div><div class="swatch-role">System primary — headlines, body type, CTA pill background.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#ff5600"></div><div class="swatch-info"><div class="swatch-name">Fin Orange</div><div class="swatch-hex">#ff5600</div><div class="swatch-role">AI-product accent. Fin CTA, Fin badge only.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#0007cb"></div><div class="swatch-info"><div class="swatch-name">Brand Blue</div><div class="swatch-hex">#0007cb</div><div class="swatch-role">Saturated brand blue — small set of marketing illustrations.</div></div></div>
+  </div>
+
+  <div class="palette-group-heading">Surface</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#f5f1ec"></div><div class="swatch-info"><div class="swatch-name">Canvas (cream)</div><div class="swatch-hex">#f5f1ec</div><div class="swatch-role">Default page background — soft cream-white, deliberately warm.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#ffffff;border:1px solid var(--hairline)"></div><div class="swatch-info"><div class="swatch-name">Surface 1</div><div class="swatch-hex">#ffffff</div><div class="swatch-role">Pure white — floating cards (pricing, feature, mockup).</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#ebe7e1"></div><div class="swatch-info"><div class="swatch-name">Surface 2</div><div class="swatch-hex">#ebe7e1</div><div class="swatch-role">Slightly darker cream — startup discount banner, alt rows.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#d3cec6"></div><div class="swatch-info"><div class="swatch-name">Hairline</div><div class="swatch-hex">#d3cec6</div><div class="swatch-role">1px borders on cards — soft warm gray.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#000000"></div><div class="swatch-info"><div class="swatch-name">Inverse Canvas</div><div class="swatch-hex">#000000</div><div class="swatch-role">Pure black — only on the testimonial / quote callout.</div></div></div>
+  </div>
+
+  <div class="palette-group-heading">Text</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#111111"></div><div class="swatch-info"><div class="swatch-name">Ink</div><div class="swatch-hex">#111111</div><div class="swatch-role">Headlines, body type, button labels.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#626260"></div><div class="swatch-info"><div class="swatch-name">Ink Muted</div><div class="swatch-hex">#626260</div><div class="swatch-role">Secondary type — meta info, deselected pricing tabs.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#7b7b78"></div><div class="swatch-info"><div class="swatch-name">Ink Subtle</div><div class="swatch-hex">#7b7b78</div><div class="swatch-role">Tertiary type — footer columns, helper text.</div></div></div>
+  </div>
+
+  <div class="palette-group-heading">Report Palette (in-product mockups)</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#65b5ff"></div><div class="swatch-info"><div class="swatch-name">Report Blue</div><div class="swatch-hex">#65b5ff</div><div class="swatch-role">Analytics chart blue.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#0bdf50"></div><div class="swatch-info"><div class="swatch-name">Report Green</div><div class="swatch-hex">#0bdf50</div><div class="swatch-role">Analytics chart green / success.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#ff2067"></div><div class="swatch-info"><div class="swatch-name">Report Pink</div><div class="swatch-hex">#ff2067</div><div class="swatch-role">Analytics chart pink.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#b3e01c"></div><div class="swatch-info"><div class="swatch-name">Report Lime</div><div class="swatch-hex">#b3e01c</div><div class="swatch-role">Analytics chart lime.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#03b2cb"></div><div class="swatch-info"><div class="swatch-name">Report Cyan</div><div class="swatch-hex">#03b2cb</div><div class="swatch-role">Analytics chart cyan.</div></div></div>
+  </div>
+</section>
+
+<section id="typography" style="background: var(--surface-2);">
+  <div class="section-eyebrow">02 — Typography Scale</div>
+  <h2 class="section-heading">Typography</h2>
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>72px · 500 · 1.05 · -2.0px · Saans</div><div class="type-sample" style="font-size:64px;font-weight:500;line-height:1.05;letter-spacing:-2.0px">The only helpdesk designed for AI</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>56px · 500 · 1.10 · -1.4px</div><div class="type-sample" style="font-size:52px;font-weight:500;line-height:1.10;letter-spacing:-1.4px">Get Fin and Intercom for one platform</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>40px · 500 · 1.15 · -0.8px</div><div class="type-sample" style="font-size:40px;font-weight:500;line-height:1.15;letter-spacing:-0.8px">Add-ons</div></div>
+  <div class="type-row"><div class="type-meta"><strong>headline</strong>28px · 500 · 1.20 · -0.5px</div><div class="type-sample" style="font-size:28px;font-weight:500;line-height:1.20;letter-spacing:-0.5px">Pricing tier title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>card-title</strong>22px · 500 · 1.25 · -0.3px</div><div class="type-sample" style="font-size:22px;font-weight:500;line-height:1.25;letter-spacing:-0.3px">Feature card title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>subhead</strong>20px · 400 · 1.40 · -0.2px</div><div class="type-sample" style="font-size:20px;font-weight:400;line-height:1.40;letter-spacing:-0.2px">Lead body, intro paragraphs</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-lg</strong>18px · 400 · 1.50 · -0.1px</div><div class="type-sample" style="font-size:18px;font-weight:400;line-height:1.50;letter-spacing:-0.1px">Hero subhead and lead paragraphs.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body</strong>16px · 400 · 1.50</div><div class="type-sample" style="font-size:16px;font-weight:400;line-height:1.50">Default body — Saans at weight 400 reads as quietly editorial.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>14px · 400 · 1.50</div><div class="type-sample" style="font-size:14px;font-weight:400;line-height:1.50">Card body, footer columns.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption</strong>12px · 400 · 1.40</div><div class="type-sample" style="font-size:12px;font-weight:400;line-height:1.40">Captions and meta</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button</strong>15px · 500 · 1.20</div><div class="type-sample" style="font-size:15px;font-weight:500;line-height:1.20">Sign up</div></div>
+  <div class="type-row"><div class="type-meta"><strong>mono</strong>13px · 400 · 1.50 · SaansMono</div><div class="type-sample" style="font-family:var(--mono);font-size:13px;font-weight:400;line-height:1.50">const fin = new Intercom.Fin();</div></div>
+</section>
+
+<section id="components">
+  <div class="section-eyebrow">03 — Button Variants</div>
+  <h2 class="section-heading">Buttons</h2>
+  <div class="button-grid">
+    <div class="button-cell"><span class="button-label">button-primary</span><button class="b-btn b-primary">Sign up</button></div>
+    <div class="button-cell"><span class="button-label">button-primary-pressed</span><button class="b-btn b-primary" style="background:var(--inverse-canvas)">Sign up</button></div>
+    <div class="button-cell"><span class="button-label">button-secondary</span><button class="b-btn b-secondary">View pricing</button></div>
+    <div class="button-cell"><span class="button-label">button-tertiary</span><button class="b-btn b-tertiary">Read docs →</button></div>
+    <div class="button-cell"><span class="button-label">button-fin</span><button class="b-btn b-fin">Talk to Fin</button></div>
+    <div class="button-cell wide"><span class="button-label">pricing-tab-default + pricing-tab-selected</span>
+      <div style="display:flex;gap:4px;background:var(--canvas);border-radius:9999px;padding:4px;border:1px solid var(--hairline)">
+        <button class="b-btn b-tab-default">Essential</button>
+        <button class="b-btn b-tab-selected">Advanced</button>
+        <button class="b-btn b-tab-default">Expert</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cards" style="background: var(--surface-2);">
+  <div class="section-eyebrow">04 — Cards &amp; Containers</div>
+  <h2 class="section-heading">Cards</h2>
+  <div class="card-grid">
+    <div class="pricing-card"><div class="button-label" style="margin-bottom:12px">pricing-card · Essential</div><div class="pricing-card-tier">Essential</div><div class="pricing-card-price">$XX</div><ul class="pricing-card-list"><li>Inbox</li><li>Help Center</li><li>Reporting</li></ul><button class="b-btn b-primary">Buy now</button></div>
+    <div class="pricing-card-featured"><div class="button-label" style="margin-bottom:12px;color:rgba(255,255,255,0.7)">pricing-card-featured · Advanced</div><div class="pricing-card-tier">Advanced</div><div class="pricing-card-price">$XX</div><ul class="pricing-card-list"><li>Multi-brand support</li><li>Workflows</li><li>Custom roles</li></ul><button class="b-btn b-fin">Buy now</button></div>
+    <div class="pricing-card"><div class="button-label" style="margin-bottom:12px">pricing-card · Expert</div><div class="pricing-card-tier">Expert</div><div class="pricing-card-price">$XX</div><ul class="pricing-card-list"><li>SSO &amp; SAML</li><li>Audit logs</li><li>SLA management</li></ul><button class="b-btn b-primary">Buy now</button></div>
+    <div class="feature-card"><div class="button-label" style="margin-bottom:12px">feature-card</div><div style="font-size:22px;font-weight:500;letter-spacing:-0.3px;margin-bottom:8px">Generic feature card</div><p style="font-size:14px;color:var(--ink-muted);margin:0">Used when the section is a feature highlight rather than a pricing tier.</p></div>
+    <div class="product-mockup-card"><div class="button-label" style="margin-bottom:12px">product-mockup-card</div><div class="product-mockup-frame">// Product UI mockup frame</div></div>
+  </div>
+
+  <div style="margin-top:48px;display:grid;grid-template-columns:2fr 1fr;gap:24px">
+    <div class="testimonial-card"><div class="button-label" style="margin-bottom:12px">testimonial-card</div><blockquote style="margin:0;font-style:normal">"Within six days, Fin is successfully resolving 42% of conversations. It's truly surpassed my expectations."</blockquote><div style="margin-top:16px;font-size:13px;color:var(--ink-muted)">— Customer, Lessonly</div></div>
+    <div class="startup-card"><div class="button-label" style="margin-bottom:12px">startup-discount-card</div><div style="font-size:22px;font-weight:500;letter-spacing:-0.3px;margin-bottom:8px">Startups get 90% off</div><p style="font-size:14px;color:var(--ink-muted);margin:0 0 16px">Get the AI-first customer service platform that grows with your business.</p><button class="b-btn b-primary">Learn more</button></div>
+  </div>
+
+  <div style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fill, minmax(180px, 1fr));gap:1px;background:var(--hairline-soft)">
+    <div class="customer-tile">LESSONLY</div>
+    <div class="customer-tile">SHIPSTATION</div>
+    <div class="customer-tile">LIVING SPACES</div>
+    <div class="customer-tile">EVENTBRITE</div>
+    <div class="customer-tile">UDEMY</div>
+    <div class="customer-tile">AMAZON</div>
+  </div>
+
+  <div style="margin-top:48px">
+    <div class="cta-banner">
+      <div class="button-label" style="margin-bottom:12px">cta-banner</div>
+      <h3>Perfect customer experiences, powered by Intercom</h3>
+      <p style="color:var(--ink-muted);margin:0 0 24px">Get started with the AI-first customer service platform.</p>
+      <button class="b-btn b-primary">Start free trial</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-eyebrow">05 — Quote / Inverse Strip</div>
+  <h2 class="section-heading">Quote Strip</h2>
+  <div class="quote-strip">
+    "Within six days, Fin is successfully resolving 42% of conversations. It's truly surpassed my expectations."
+    <div class="quote-meta">— The deepest dark surface on the page; only used for testimonial callouts.</div>
+  </div>
+</section>
+
+<section style="background: var(--surface-2);">
+  <div class="section-eyebrow">06 — Form Elements</div>
+  <h2 class="section-heading">Forms</h2>
+  <div class="form-grid">
+    <div class="form-field"><label class="form-label">text-input · default</label><input class="form-input" type="email" placeholder="Work email"></div>
+    <div class="form-field"><label class="form-label">text-input · focused</label><input class="form-input focused" type="text" value="Jane Doe"></div>
+    <div class="form-field"><label class="form-label">text-input · disabled</label><input class="form-input" type="text" value="—" disabled="" style="opacity:0.5"></div>
+    <div class="form-field" style="grid-column:span 2;min-width:0"><label class="form-label">textarea</label><textarea class="form-input" placeholder="How can we help?"></textarea></div>
+    <div class="form-field"><button class="b-btn b-primary">Submit</button></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-eyebrow">07 — FAQ</div>
+  <h2 class="section-heading">FAQ</h2>
+  <div class="faq-row"><strong>How does Intercom pricing work?</strong></div>
+  <div class="faq-row"><strong>Can I get Fin without buying Intercom?</strong></div>
+  <div class="faq-row"><strong>Will my data be safe?</strong></div>
+  <div class="faq-row"><strong>Can I customize Fin?</strong></div>
+</section>
+
+<section style="background: var(--surface-2);">
+  <div class="section-eyebrow">08 — Spacing &amp; Radius</div>
+  <h2 class="section-heading">Spacing</h2>
+  <div class="spacing-row">
+    <div class="spacing-cell"><div class="spacing-bar" style="width:4px"></div><div class="spacing-meta">xxs · 4px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:8px"></div><div class="spacing-meta">xs · 8px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:12px"></div><div class="spacing-meta">sm · 12px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:16px"></div><div class="spacing-meta">md · 16px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:24px"></div><div class="spacing-meta">lg · 24px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:32px"></div><div class="spacing-meta">xl · 32px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:48px"></div><div class="spacing-meta">xxl · 48px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:96px"></div><div class="spacing-meta">section · 96px</div></div>
+  </div>
+  <h3 style="font-size:28px;font-weight:500;letter-spacing:-0.5px;margin:48px 0 24px">Radius</h3>
+  <div class="radius-row">
+    <div class="radius-cell"><div class="radius-box" style="border-radius:4px"></div><div class="radius-meta">xs · 4px</div></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:6px"></div><div class="radius-meta">sm · 6px</div></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:8px"></div><div class="radius-meta">md · 8px</div></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:12px"></div><div class="radius-meta">lg · 12px</div></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:16px"></div><div class="radius-meta">xl · 16px</div></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:24px"></div><div class="radius-meta">xxl · 24px</div></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:9999px;width:96px"></div><div class="radius-meta">pill · 9999</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-eyebrow">09 — Elevation &amp; Depth</div>
+  <h2 class="section-heading">Elevation</h2>
+  <div class="elevation-grid">
+    <div class="elev-card elev-0">Level 0 — flat</div>
+    <div class="elev-card elev-1">Level 1 — lift on cream</div>
+    <div class="elev-card elev-2">Level 2 — hairline + soft shadow</div>
+    <div class="elev-card elev-3">Level 3 — deep accent</div>
+  </div>
+</section>
+
+<section style="background: var(--surface-2);">
+  <div class="section-eyebrow">10 — Responsive Behavior</div>
+  <h2 class="section-heading">Responsive</h2>
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Desktop-XL</td><td>1440px</td><td>Default desktop layout</td></tr>
+      <tr><td>Desktop</td><td>1280px</td><td>Card grid 3-up maintained</td></tr>
+      <tr><td>Tablet</td><td>1024px</td><td>Card grid 3-up → 2-up</td></tr>
+      <tr><td>Mobile-Lg</td><td>768px</td><td>Pricing comparison becomes accordion; nav hamburger</td></tr>
+      <tr><td>Mobile</td><td>480px</td><td>Single-column; display-xl scales 72px → ~32px</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="device-cell" style="width:60px;height:120px">375</div>
+    <div class="device-cell" style="width:130px;height:170px">768</div>
+    <div class="device-cell" style="width:170px;height:200px">1024</div>
+    <div class="device-cell" style="width:220px;height:230px">1280</div>
+    <div class="device-cell" style="width:280px;height:260px">1440</div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:32px">
+    <div>
+      <div class="button-label" style="margin-bottom:12px">Touch Targets</div>
+      <ul style="font-size:15px;line-height:1.6;padding-left:20px;margin:0;color:var(--ink-muted)">
+        <li>CTAs hold ≥40px tap height across viewports.</li>
+        <li>Pricing tab pills hold ≥40px tap height.</li>
+        <li>Form inputs hold ≥44px tap target on touch.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="button-label" style="margin-bottom:12px">Collapsing Strategy</div>
+      <ul style="font-size:15px;line-height:1.6;padding-left:20px;margin:0;color:var(--ink-muted)">
+        <li>Top nav: links collapse to hamburger below 768px.</li>
+        <li>Card grids: 3-up → 2-up at 1024px → 1-up below 768px.</li>
+        <li>Pricing comparison: per-tier accordion below 768px.</li>
+        <li>Display type scales 72px → 40px while preserving negative tracking.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of Coinbase</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #0c0c0e; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>awesome-design-md</a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#responsive">Responsive</a></li>
+  </ul>
+  <button class="nav-cta">Sign Up</button>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of Coinbase</h1>
+    <p>Institutional-grade crypto exchange. Coinbase Blue carries every primary CTA on a 100px pill; CoinbaseDisplay sits at weight 400 — calm, never bombastic.</p>
+    <div class="hero-actions">
+      <button class="btn-hero-primary">Get Started</button>
+      <button class="btn-hero-secondary">Explore Markets</button>
+    </div>
+  </div>
+  </div>
+
+<section id="colors">
+  <div class="section-label">01 — Color Palette</div>
+  <h2 class="section-heading">Coinbase Blue + monochrome</h2>
+  <p class="section-intro">A single brand voltage on white canvas plus a near-black editorial canvas for full-bleed heroes. Trading green/red are semantic-only.</p>
+
+  <div class="palette-group"><h3>Brand &amp; Accent</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#0052ff;"></div><div class="swatch-meta"><div class="swatch-name">primary (Coinbase Blue)</div><div class="swatch-hex">#0052ff</div><div class="swatch-role">All primary CTAs, brand wordmark, inline brand links.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#003ecc;"></div><div class="swatch-meta"><div class="swatch-name">primary-active</div><div class="swatch-hex">#003ecc</div><div class="swatch-role">Press state.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#a8b8cc;"></div><div class="swatch-meta"><div class="swatch-name">primary-disabled</div><div class="swatch-hex">#a8b8cc</div><div class="swatch-role">Disabled CTA tint.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f4b000;"></div><div class="swatch-meta"><div class="swatch-name">accent-yellow</div><div class="swatch-hex">#f4b000</div><div class="swatch-role">Bitcoin glyph fill — illustrative only.</div></div></div>
+    </div>
+  </div>
+  <div class="palette-group"><h3>Surface</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff; border-bottom:1px solid var(--hairline);"></div><div class="swatch-meta"><div class="swatch-name">canvas</div><div class="swatch-hex">#ffffff</div><div class="swatch-role">Default page floor.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f7f7f7;"></div><div class="swatch-meta"><div class="swatch-name">surface-soft</div><div class="swatch-hex">#f7f7f7</div><div class="swatch-role">Subtle alternating band.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#eef0f3;"></div><div class="swatch-meta"><div class="swatch-name">surface-strong</div><div class="swatch-hex">#eef0f3</div><div class="swatch-role">Secondary buttons, search pills.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#0a0b0d;"></div><div class="swatch-meta"><div class="swatch-name">surface-dark</div><div class="swatch-hex">#0a0b0d</div><div class="swatch-role">Full-bleed dark heroes, CTA bands.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#16181c;"></div><div class="swatch-meta"><div class="swatch-name">surface-dark-elevated</div><div class="swatch-hex">#16181c</div><div class="swatch-role">Floating product-UI mockup cards.</div></div></div>
+    </div>
+  </div>
+  <div class="palette-group"><h3>Hairlines &amp; Text</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#dee1e6;"></div><div class="swatch-meta"><div class="swatch-name">hairline</div><div class="swatch-hex">#dee1e6</div><div class="swatch-role">1px divider.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#0a0b0d;"></div><div class="swatch-meta"><div class="swatch-name">ink</div><div class="swatch-hex">#0a0b0d</div><div class="swatch-role">Display, primary nav, body emphasis.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#5b616e;"></div><div class="swatch-meta"><div class="swatch-name">body</div><div class="swatch-hex">#5b616e</div><div class="swatch-role">Default running-text.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#7c828a;"></div><div class="swatch-meta"><div class="swatch-name">muted</div><div class="swatch-hex">#7c828a</div><div class="swatch-role">Sub-titles, breadcrumbs.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#a8acb3;"></div><div class="swatch-meta"><div class="swatch-name">muted-soft</div><div class="swatch-hex">#a8acb3</div><div class="swatch-role">Disabled link text.</div></div></div>
+    </div>
+  </div>
+  <div class="palette-group"><h3>Trading Semantics</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#05b169;"></div><div class="swatch-meta"><div class="swatch-name">semantic-up</div><div class="swatch-hex">#05b169</div><div class="swatch-role">Price-up green — text color only.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#cf202f;"></div><div class="swatch-meta"><div class="swatch-name">semantic-down</div><div class="swatch-hex">#cf202f</div><div class="swatch-role">Price-down red — text color only.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="typography">
+  <div class="section-label">02 — Typography</div>
+  <h2 class="section-heading">Display 400, body in CoinbaseSans</h2>
+  <p class="section-intro">Display sits at weight 400 — never bold. CoinbaseMono on every numerical value.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-mega</strong>80px / 400 / 1.0 / -2px</div><div class="type-sample" style="font-family:var(--display); font-size:64px; font-weight:400; letter-spacing:-2px;">The future of finance.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>64px / 400 / 1.0 / -1.6px</div><div class="type-sample" style="font-family:var(--display); font-size:52px; font-weight:400; letter-spacing:-1.6px;">Coinbase Wealth</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>52px / 400 / 1.0 / -1.3px</div><div class="type-sample" style="font-family:var(--display); font-size:44px; font-weight:400; letter-spacing:-1.3px;">Take control of your money</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>44px / 400 / 1.09 / -1px</div><div class="type-sample" style="font-family:var(--display); font-size:40px; font-weight:400; letter-spacing:-1px;">Section heading</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-md</strong>18px / 600 / 1.33</div><div class="type-sample" style="font-size:18px; font-weight:600;">Component title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>16px / 400 / 1.5</div><div class="type-sample" style="font-size:16px;">Default body text on white canvas.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>14px / 400 / 1.5</div><div class="type-sample" style="font-size:14px;">Footer body, fine print.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-strong</strong>12px / 600 / 1.5</div><div class="type-sample" style="font-size:12px; font-weight:600;">Badge label</div></div>
+  <div class="type-row"><div class="type-meta"><strong>number-display</strong>18px / 500 (CoinbaseMono)</div><div class="type-sample" style="font-family:var(--mono); font-size:18px; font-weight:500;">$67,432.18 +2.4%</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button</strong>16px / 600 / 1.15</div><div class="type-sample" style="font-size:16px; font-weight:600;">Get Started</div></div>
+  <div class="type-row"><div class="type-meta"><strong>nav-link</strong>14px / 500 / 1.4</div><div class="type-sample" style="font-size:14px; font-weight:500;">Cryptocurrencies · Individuals · Businesses</div></div>
+</section>
+
+<section id="components">
+  <div class="section-label">03 — Buttons</div>
+  <h2 class="section-heading">Pill geometry across</h2>
+  <p class="section-intro">100px radius for every button. Primary blue is reserved.</p>
+
+  <div class="button-grid">
+    <div class="button-cell"><div class="button-label">button-primary</div><button class="btn btn-primary">Get Started</button><div class="button-meta">Coinbase Blue / 100px pill / 44px height</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-active</div><button class="btn btn-primary-active">Pressed</button><div class="button-meta">Deeper blue press state.</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-disabled</div><button class="btn btn-primary-disabled" disabled="">Disabled</button></div>
+    <div class="button-cell"><div class="button-label">button-pill-cta</div><button class="btn btn-pill-cta">Get Started</button><div class="button-meta">Larger 56px hero variant.</div></div>
+    <div class="button-cell"><div class="button-label">button-secondary-light</div><button class="btn btn-secondary-light">Cancel</button><div class="button-meta">Soft-gray on white.</div></div>
+    <div class="button-cell on-dark"><div class="button-label">button-secondary-dark</div><button class="btn btn-secondary-dark">Learn more</button><div class="button-meta">Surface-elevated on dark.</div></div>
+    <div class="button-cell on-dark"><div class="button-label">button-outline-on-dark</div><button class="btn btn-outline-on-dark">Get the app</button><div class="button-meta">Transparent + 1px white border.</div></div>
+    <div class="button-cell"><div class="button-label">button-tertiary-text</div><button class="btn btn-tertiary-text">Learn more →</button><div class="button-meta">Inline blue text link.</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">04 — Hero Band (Dark)</div>
+  <h2 class="section-heading">Layered product-UI mockups</h2>
+  <p class="section-intro">Full-bleed dark hero with floating UI cards mimicking a layered dashboard.</p>
+
+  <div class="hero-band-dark">
+    <div>
+      <h2>Explore millions of tokens.</h2>
+      <p>Real-time prices, deep liquidity, and a global asset universe.</p>
+      <button class="btn btn-primary">Explore markets</button>
+      <button class="btn btn-outline-on-dark" style="margin-left: 8px;">Get the app</button>
+    </div>
+    <div class="ui-stack">
+      <div class="ui-card-large">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+          <span style="font-size:12px; color:var(--on-dark-soft);">BTC / USD</span>
+          <span style="font-family:var(--mono); font-size:13px; color:var(--semantic-up);">+2.4%</span>
+        </div>
+        <div class="price">$67,432</div>
+        <div class="change">+$1,621 today</div>
+        <div class="row"><span>Volume 24h</span><span class="v">$28.4B</span></div>
+        <div class="row"><span>Market cap</span><span class="v">$1.32T</span></div>
+      </div>
+      <div class="ui-card-small">
+        <div style="font-size:11px; color:var(--on-dark-soft);">ETH / USD</div>
+        <div class="price">$3,512</div>
+        <div class="change">−1.1%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">05 — Feature Cards</div>
+  <h2 class="section-heading">3-up benefit grid</h2>
+
+  <div class="card-grid">
+    <div class="feature-card"><div class="glyph">CB</div><h4>Powerful tools</h4><p>Built for the advanced trader — real-time charts, depth, advanced order types.</p><button class="btn btn-tertiary-text">Learn more →</button></div>
+    <div class="feature-card"><div class="glyph">$</div><h4>Zero trading fees</h4><p>More rewards for active members on the One subscription.</p><button class="btn btn-tertiary-text">Learn more →</button></div>
+    <div class="feature-card"><div class="glyph">⊕</div><h4>Countless ways to earn</h4><p>Stake, lend, and earn yield on the Base App.</p><button class="btn btn-tertiary-text">Learn more →</button></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">06 — Asset Rows</div>
+  <h2 class="section-heading">Markets table</h2>
+  <p class="section-intro">Hairline-divided rows with circular icon plate, mono prices, and semantic green/red change cells.</p>
+
+  <div class="asset-list">
+    <div class="asset-row"><div class="asset-icon-circular">BT</div><div><div class="name">Bitcoin</div><div class="ticker">BTC</div></div><div class="price">$67,432.18</div><div class="change-up">+2.4%</div></div>
+    <div class="asset-row"><div class="asset-icon-circular">ET</div><div><div class="name">Ethereum</div><div class="ticker">ETH</div></div><div class="price">$3,512.04</div><div class="change-down">−1.1%</div></div>
+    <div class="asset-row"><div class="asset-icon-circular">SO</div><div><div class="name">Solana</div><div class="ticker">SOL</div></div><div class="price">$148.60</div><div class="change-up">+0.8%</div></div>
+    <div class="asset-row"><div class="asset-icon-circular">XR</div><div><div class="name">XRP</div><div class="ticker">XRP</div></div><div class="price">$0.5832</div><div class="change-down">−0.3%</div></div>
+    <div class="asset-row"><div class="asset-icon-circular">BN</div><div><div class="name">BNB</div><div class="ticker">BNB</div></div><div class="price">$612.40</div><div class="change-up">+1.6%</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">07 — Pricing Tiers</div>
+  <h2 class="section-heading">Developer Platform pricing</h2>
+  <p class="section-intro">Featured tier inverts to dark — visual inversion signals "highlighted choice" without colored ribbons.</p>
+
+  <div class="pricing-grid">
+    <div class="pricing-tier-card"><h4>Starter</h4><div class="price-display">$0</div><ul><li>1,000 requests / mo</li><li>Standard support</li><li>Basic API access</li></ul><button class="btn btn-secondary-light" style="width:100%;">Get started</button></div>
+    <div class="pricing-tier-card featured"><h4>Scale</h4><div class="price-display">$199<span style="font-size:18px; color:var(--on-dark-soft);">/mo</span></div><ul><li>100,000 requests / mo</li><li>Priority support</li><li>Advanced API access</li><li>Higher rate limits</li></ul><button class="btn btn-primary" style="width:100%;">Choose plan</button></div>
+    <div class="pricing-tier-card"><h4>Enterprise</h4><div class="price-display">Custom</div><ul><li>Unlimited requests</li><li>Dedicated support</li><li>Custom integrations</li></ul><button class="btn btn-secondary-light" style="width:100%;">Contact sales</button></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">08 — Forms</div>
+  <h2 class="section-heading">Inputs &amp; search</h2>
+
+  <div class="form-grid">
+    <div class="form-cell"><label class="form-label">Email</label><input class="text-input" type="email" placeholder="you@example.com"></div>
+    <div class="form-cell"><label class="form-label">Phone</label><input class="text-input focused" type="tel" value="+1 555 123 4567"></div>
+    <div class="form-cell"><label class="form-label">Search</label><input class="search-pill" type="text" placeholder="Search assets, currencies..."></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">09 — Badges</div>
+  <p class="section-intro">Small uppercase pills used as section labels.</p>
+  <div style="display:flex; gap:12px; flex-wrap:wrap;">
+    <span class="badge-pill">Institutional</span>
+    <span class="badge-pill">Regulated</span>
+    <span class="badge-pill">Audited</span>
+    <span class="badge-pill">SOC 2</span>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">10 — Spacing Scale</div>
+  <p class="section-intro">4px base, 96px section rhythm.</p>
+  <div class="spacing-row">
+    <div class="spacing-block"><div class="spacing-bar" style="width:4px;"></div><div class="spacing-label">xxs · 4</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:8px;"></div><div class="spacing-label">xs · 8</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:12px;"></div><div class="spacing-label">sm · 12</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:16px;"></div><div class="spacing-label">base · 16</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:20px;"></div><div class="spacing-label">md · 20</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:24px;"></div><div class="spacing-label">lg · 24</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:32px;"></div><div class="spacing-label">xl · 32</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:48px;"></div><div class="spacing-label">xxl · 48</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:96px;"></div><div class="spacing-label">section · 96</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">11 — Border Radius</div>
+  <p class="section-intro">Pill (100px) for interactive, card-radius (24px) for containers.</p>
+  <div class="radius-row">
+    <div class="radius-block" style="border-radius:0;">0 · none</div>
+    <div class="radius-block" style="border-radius:4px;">4 · xs</div>
+    <div class="radius-block" style="border-radius:8px;">8 · sm</div>
+    <div class="radius-block" style="border-radius:12px;">12 · md</div>
+    <div class="radius-block" style="border-radius:16px;">16 · lg</div>
+    <div class="radius-block" style="border-radius:24px;">24 · xl</div>
+    <div class="radius-block" style="border-radius:100px;">100 · pill</div>
+    <div class="radius-block" style="border-radius:9999px;">full</div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">12 — Elevation &amp; Depth</div>
+  <p class="section-intro">One shadow tier; depth from band rotation and layered cards.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card"><h5>Flat / Canvas</h5><p>80% of surfaces.</p></div>
+    <div class="elevation-card"><h5>Hairline border</h5><p>1px hairline. Feature card outlines on white.</p></div>
+    <div class="elevation-card elevated"><h5>Soft drop</h5><p>0 4px 12px rgba(0,0,0,0.04). Single shadow tier.</p></div>
+    <div class="elevation-card"><h5>Layered cards</h5><p>Floating product-UI mockups inside dark heroes.</p></div>
+  </div>
+</section>
+
+<section id="responsive">
+  <div class="section-label">13 — Responsive Behavior</div>
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Mobile</td><td>&lt; 640px</td><td>Hero h1 80→40px; feature cards 1-up; asset rows stack; nav hamburger.</td></tr>
+      <tr><td>Tablet</td><td>640–1024px</td><td>Hero h1 64px; feature cards 2-up.</td></tr>
+      <tr><td>Desktop</td><td>1024–1280px</td><td>Full hero h1 80px; 3-up feature cards.</td></tr>
+      <tr><td>Wide</td><td>&gt; 1280px</td><td>Content caps at 1200px.</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="device-bar" style="width:60px; height:120px;">375<br>mobile</div>
+    <div class="device-bar" style="width:90px; height:140px;">640<br>small</div>
+    <div class="device-bar" style="width:140px; height:160px;">768<br>tablet</div>
+    <div class="device-bar" style="width:200px; height:180px;">1024<br>laptop</div>
+    <div class="device-bar" style="width:260px; height:200px;">1280<br>desktop</div>
+  </div>
+  <div class="responsive-sub"><h4>Touch Targets</h4><ul><li>Primary pill at 44px height — at WCAG AAA.</li><li>Hero pill at 56px — well above AAA.</li><li>Asset icon circles 32px — padded row creates effective 48px tap zone.</li></ul></div>
+  <div class="responsive-sub"><h4>Collapsing Strategy</h4><ul><li>Top nav switches to hamburger below 768px.</li><li>Layered product-UI mockup cards collapse from 2-3 stacked to single card.</li><li>Pricing tier rows: 3-up → 2-up → 1-up.</li><li>Asset rows on mobile drop the change column.</li></ul></div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

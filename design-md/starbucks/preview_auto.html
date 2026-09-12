@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-native="light" data-theme="light"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Starbucks — Design System Preview</title>
+  <link rel="stylesheet" href="preview_auto.css">
+</head>
+<body>
+
+<div class="page">
+  <header class="topbar">
+    <div><div class="topbar-name">Starbucks</div><div class="topbar-meta">design tokens · 21 colors · 10 type styles · 23 components</div></div>
+    <nav class="topbar-links"><a href="#colors">Colors</a><a href="#typography">Type</a><a href="#buttons">Buttons</a><a href="#badges">Badges</a><a href="#cards">Cards</a><a href="#forms">Forms</a><a href="#nav">Tabs</a><a href="#spacing">Spacing</a><a href="#radius">Radius</a><a href="#elevation">Depth</a><a href="#signature">Other</a><a href="#reference">Reference</a></nav>
+  </header>
+  <section class="hero">
+    <h1>Starbucks</h1>
+    <p class="lede">Starbucks&#x27; design system is a **warm, confident retail flagship** wearing the green of their storefront apron across every surface. The canvas alternates between a neutral-warm cream (`#f2f0eb`) and a ceramic off-white (`#edebe9`) — colors that reference actual store materials: the paper napkins, the café walls, the wood finishes — while the signature **Starbucks Green** (`#006241`) anchors the brand moment on hero bands, CTAs, and the Rewards experience. The greens come in four calibrated shades (Starbucks, Accent, House, Uplift) each mapped to a specific surface role, and gold (`#cba258`) appears only around Rewards-status ceremony — not as a general accent.</p>
+    <div class="meta">
+      <span class="chip solid">#006241</span>
+      <span class="chip">system-ui</span>
+      <span class="chip">light canvas</span>
+      <span class="chip">source: DESIGN.md (markdown)</span>
+    </div>
+  </section>
+  <section id="colors">
+    <div class="sec-head"><h2>Color Palette</h2><span class="count">21 tokens</span></div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-starbucks-green">#006241</div><div class="info"><div class="nm">Starbucks Green</div><div class="hx">starbucks-green</div><div class="hx dim">The historic brand green. Used on h1 headings, primary section headers</div></div></div>
+      <div class="swatch"><div class="fill sw-green-accent">#00754A</div><div class="info"><div class="nm">Green Accent</div><div class="hx">green-accent</div><div class="hx dim">A slightly brighter, more luminous green. The primary filled-CTA color</div></div></div>
+      <div class="swatch"><div class="fill sw-house-green">#1E3932</div><div class="info"><div class="nm">House Green</div><div class="hx">house-green</div><div class="hx dim">The deep near-black brand green. Footer surface, feature-band backgrou</div></div></div>
+      <div class="swatch"><div class="fill sw-green-uplift">#2b5148</div><div class="info"><div class="nm">Green Uplift</div><div class="hx">green-uplift</div><div class="hx dim">A secondary mid-dark green used sparingly on decorative accents and da</div></div></div>
+      <div class="swatch"><div class="fill sw-green-light">#d4e9e2</div><div class="info"><div class="nm">Green Light</div><div class="hx">green-light</div><div class="hx dim">A pale mint wash used for form-valid-state tints and light green utili</div></div></div>
+    </div>
+    <div class="group-title">Secondary &amp; Accent</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-gold">#cba258</div><div class="info"><div class="nm">Gold</div><div class="hx">gold</div><div class="hx dim">Reserved almost exclusively for Rewards-status ceremony — Gold-tier ca</div></div></div>
+      <div class="swatch"><div class="fill sw-gold-light">#dfc49d</div><div class="info"><div class="nm">Gold Light</div><div class="hx">gold-light</div><div class="hx dim">Softer gold for background washes on gold-tier sections.</div></div></div>
+      <div class="swatch"><div class="fill sw-gold-lightest">#faf6ee</div><div class="info"><div class="nm">Gold Lightest</div><div class="hx">gold-lightest</div><div class="hx dim">Cream-gold page-surface wash used under partnership sections on the Re</div></div></div>
+    </div>
+    <div class="group-title">Surface &amp; Background</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-white">#ffffff</div><div class="info"><div class="nm">White</div><div class="hx">white</div><div class="hx dim">Primary card and modal surface. Also card fill on gift-card tiles.</div></div></div>
+      <div class="swatch"><div class="fill sw-neutral-cool">#f9f9f9</div><div class="info"><div class="nm">Neutral Cool</div><div class="hx">neutral-cool</div><div class="hx dim">Subtle cool-gray surface used on dropdown menus (&quot;Account&quot; dropdown), </div></div></div>
+      <div class="swatch"><div class="fill sw-neutral-warm">#f2f0eb</div><div class="info"><div class="nm">Neutral Warm</div><div class="hx">neutral-warm</div><div class="hx dim">The warm cream **primary page canvas** for Rewards utility zones and h</div></div></div>
+      <div class="swatch"><div class="fill sw-ceramic">#edebe9</div><div class="info"><div class="nm">Ceramic</div><div class="hx">ceramic</div><div class="hx dim">A slightly warmer/darker cream for zone separators, soft page-section </div></div></div>
+      <div class="swatch"><div class="fill sw-black">#000000</div><div class="info"><div class="nm">Black</div><div class="hx">black</div><div class="hx dim">Deep ink reserved for the dark top-of-page CTA strip (&quot;Join now&quot;) and </div></div></div>
+    </div>
+    <div class="group-title">Neutrals &amp; Text</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-text-black">rgba(0, 0, 0, 0.87)</div><div class="info"><div class="nm">Text Black</div><div class="hx">text-black</div><div class="hx dim">Primary heading and body text color on light surfaces. Not pure black </div></div></div>
+      <div class="swatch"><div class="fill sw-text-black-soft">rgba(0, 0, 0, 0.58)</div><div class="info"><div class="nm">Text Black Soft</div><div class="hx">text-black-soft</div><div class="hx dim">Secondary/metadata text on light surfaces.</div></div></div>
+      <div class="swatch"><div class="fill sw-text-white">rgba(255, 255, 255, 1)</div><div class="info"><div class="nm">Text White</div><div class="hx">text-white</div><div class="hx dim">Primary heading/body text on dark green surfaces.</div></div></div>
+      <div class="swatch"><div class="fill sw-text-white-soft">rgba(255, 255, 255, 0.70)</div><div class="info"><div class="nm">Text White Soft</div><div class="hx">text-white-soft</div><div class="hx dim">Secondary text on dark-green surfaces — footer link descriptions, capt</div></div></div>
+      <div class="swatch"><div class="fill sw-rewards-green">#33433d</div><div class="info"><div class="nm">Rewards Green</div><div class="hx">rewards-green</div><div class="hx dim">A dedicated muted slate-green used only on Rewards-page text blocks — </div></div></div>
+    </div>
+    <div class="group-title">Semantic &amp; Accent</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-red">#c82014</div><div class="info"><div class="nm">Red</div><div class="hx">red</div><div class="hx dim">Error and destructive state (form invalid, destructive actions).</div></div></div>
+      <div class="swatch"><div class="fill sw-yellow">#fbbc05</div><div class="info"><div class="nm">Yellow</div><div class="hx">yellow</div><div class="hx dim">Warning state, legacy brand touch.</div></div></div>
+      <div class="swatch"><div class="fill sw-red-tint">hsl(4 82% 43% / 5%)</div><div class="info"><div class="nm">Red Tint</div><div class="hx">red-tint</div><div class="hx dim">Invalid-field tint on forms.</div></div></div>
+    </div>
+  </section>
+  <section id="typography">
+    <div class="sec-head"><h2>Typography Scale</h2><span class="count">10 styles</span></div>
+    <div class="type-row">
+      <div class="type-meta"><b>Display (text-10)</b>80px / 400<br>lh 1.2 · ls -0.16px<br></div>
+      <div class="type-sample type-display-text-10">Display (text-10) — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Jumbo (text-9)</b>58px / 400<br>lh 1.2 · ls -0.16px<br></div>
+      <div class="type-sample type-jumbo-text-9">Jumbo (text-9) — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Hero Large (text-8)</b>45px / 400<br>lh 1.2–1.5 · ls -0.16px<br></div>
+      <div class="type-sample type-hero-large-text-8">Hero Large (text-8) — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>H1</b>24px / 600<br>lh 1.50 · ls -0.16px<br></div>
+      <div class="type-sample type-h1">H1 — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>H2</b>24px / 400<br>lh 1.50 · ls -0.16px<br></div>
+      <div class="type-sample type-h2">H2 — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Body Large</b>19px / 400<br>lh 1.75 · ls -0.16px<br></div>
+      <div class="type-sample type-body-large">Body Large — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Body (text-3)</b>16px / 400<br>lh 0.09 · ls -0.01em<br></div>
+      <div class="type-sample type-body-text-3">Body (text-3) — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Small (text-2)</b>14px / 400<br>lh 1.5 · ls -0.01em<br></div>
+      <div class="type-sample type-small-text-2">Small (text-2) — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Micro (text-1)</b>13px / 400<br>lh 1.5 · ls -0.01em<br></div>
+      <div class="type-sample type-micro-text-1">Micro (text-1) — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Button Label</b>16px / 400<br>lh 1.2 · ls -0.01em<br></div>
+      <div class="type-sample type-button-label">Button Label — The quick brown fox jumps over the lazy dog</div>
+    </div>
+  </section>
+  <section id="buttons">
+    <div class="sec-head"><h2>Button Variants</h2><span class="count">3</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-8-frap-floating-circular-order-button">8 Frap Floating Circular Order Button</div><button class="demo-el spec-buttons-8-frap-floating-circular-order-button" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="product-detail-components-pdp-signature-cluster-customize-button">Product Detail Components Pdp Signature Cluster Customize Button</div><button class="demo-el spec-product-detail-components-pdp-signature-cluster-customize-button" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="product-detail-components-pdp-signature-cluster-add-to-order-button-pdp">Product Detail Components Pdp Signature Cluster Add To Order Button Pdp</div><button class="demo-el spec-product-detail-components-pdp-signature-cluster-add-to-order-button-pdp" type="button">Button</button></div>
+    </div></div>
+  </section>
+  <section id="badges">
+    <div class="sec-head"><h2>Badges & Pills</h2><span class="count">2</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="inputs-forms-floating-label-input">Forms Floating Label Input</div><div class="demo-el demo-el-ghost spec-inputs-forms-floating-label-input">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="product-detail-components-pdp-signature-cluster-rewards-cost-pill-200-item">Product Detail Components Pdp Signature Cluster Rewards Cost Pill 200 Item</div><div class="demo-el spec-product-detail-components-pdp-signature-cluster-rewards-cost-pill-200-item">Badge</div></div>
+    </div></div>
+  </section>
+  <section id="cards">
+    <div class="sec-head"><h2>Cards & Containers</h2><span class="count">13</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="cards-containers-content-card-default">Containers Content Card Default</div><div class="demo-el spec-cards-containers-content-card-default"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="cards-containers-gift-card-tile">Containers Gift Card Tile</div><div class="demo-el spec-cards-containers-gift-card-tile"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="feature-band-dark-green-hero-strip">Feature Band Dark Green Hero Strip</div><div class="demo-el demo-el-ghost spec-feature-band-dark-green-hero-strip"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="product-detail-components-pdp-signature-cluster-size-options-selector">Product Detail Components Pdp Signature Cluster Size Options Selector</div><div class="demo-el demo-el-ghost spec-product-detail-components-pdp-signature-cluster-size-options-selector"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="product-detail-components-pdp-signature-cluster-add-in-milk-select-outlined-rectangle">Product Detail Components Pdp Signature Cluster Add In Milk Select Outlined Rectangle</div><div class="demo-el spec-product-detail-components-pdp-signature-cluster-add-in-milk-select-outlined-rectangle"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="product-detail-components-pdp-signature-cluster-numeric-stepper">Product Detail Components Pdp Signature Cluster Numeric Stepper</div><div class="demo-el demo-el-ghost spec-product-detail-components-pdp-signature-cluster-numeric-stepper"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="product-detail-components-pdp-signature-cluster-customize-button">Product Detail Components Pdp Signature Cluster Customize Button</div><div class="demo-el spec-product-detail-components-pdp-signature-cluster-customize-button"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="product-detail-components-pdp-signature-cluster-add-to-order-button-pdp">Product Detail Components Pdp Signature Cluster Add To Order Button Pdp</div><div class="demo-el spec-product-detail-components-pdp-signature-cluster-add-to-order-button-pdp"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="product-detail-components-pdp-signature-cluster-rewards-cost-pill-200-item">Product Detail Components Pdp Signature Cluster Rewards Cost Pill 200 Item</div><div class="demo-el spec-product-detail-components-pdp-signature-cluster-rewards-cost-pill-200-item"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="product-detail-components-pdp-signature-cluster-product-description-band">Product Detail Components Pdp Signature Cluster Product Description Band</div><div class="demo-el demo-el-ghost spec-product-detail-components-pdp-signature-cluster-product-description-band"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="product-detail-components-pdp-signature-cluster-ingredients-nutrition-table">Product Detail Components Pdp Signature Cluster Ingredients Nutrition Table</div><div class="demo-el demo-el-ghost spec-product-detail-components-pdp-signature-cluster-ingredients-nutrition-table"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="product-detail-components-pdp-signature-cluster-store-availability-selector">Product Detail Components Pdp Signature Cluster Store Availability Selector</div><div class="demo-el spec-product-detail-components-pdp-signature-cluster-store-availability-selector"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="product-detail-components-pdp-signature-cluster-pdp-breadcrumb">Product Detail Components Pdp Signature Cluster Pdp Breadcrumb</div><div class="demo-el demo-el-ghost spec-product-detail-components-pdp-signature-cluster-pdp-breadcrumb"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+    </div></div>
+  </section>
+  <section id="forms">
+    <div class="sec-head"><h2>Forms & Inputs</h2><span class="count">3</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="inputs-forms-floating-label-input">Forms Floating Label Input</div><div class="demo-el demo-el-ghost spec-inputs-forms-floating-label-input"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="inputs-forms-option-icon-checkbox-radio">Forms Option Icon Checkbox Radio</div><div class="demo-el demo-el-ghost spec-inputs-forms-option-icon-checkbox-radio"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="product-detail-components-pdp-signature-cluster-add-in-milk-select-outlined-rectangle">Product Detail Components Pdp Signature Cluster Add In Milk Select Outlined Rectangle</div><div class="demo-el spec-product-detail-components-pdp-signature-cluster-add-in-milk-select-outlined-rectangle"><span class="demo-el-b">Placeholder text</span></div></div>
+    </div></div>
+  </section>
+  <section id="nav">
+    <div class="sec-head"><h2>Navigation & Tabs</h2><span class="count">2</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="cards-containers-dropdown-menu-account-dropdown-top-nav">Containers Dropdown Menu Account Dropdown Top Nav</div><div class="demo-el spec-cards-containers-dropdown-menu-account-dropdown-top-nav"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="product-detail-components-pdp-signature-cluster-pdp-breadcrumb">Product Detail Components Pdp Signature Cluster Pdp Breadcrumb</div><div class="demo-el demo-el-ghost spec-product-detail-components-pdp-signature-cluster-pdp-breadcrumb"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+    </div></div>
+  </section>
+  <section id="signature">
+    <div class="sec-head"><h2>Other Components</h2><span class="count">6</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-3-black-filled-join-now">3 Black Filled Join Now</div><div class="demo-el spec-buttons-3-black-filled-join-now">3 Black Filled Join Now</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-4-dark-outlined-sign-in">4 Dark Outlined Sign In</div><div class="demo-el spec-buttons-4-dark-outlined-sign-in">4 Dark Outlined Sign In</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-7-consent-agree-dark-green-variant">7 Consent Agree Dark Green Variant</div><div class="demo-el demo-el-ghost spec-buttons-7-consent-agree-dark-green-variant">7 Consent Agree Dark Green Variant</div></div>
+      <div class="demo-col"><div class="lb" title="cards-containers-modal">Containers Modal</div><div class="demo-el spec-cards-containers-modal">Containers Modal</div></div>
+      <div class="demo-col"><div class="lb" title="image-treatment">Image Treatment</div><div class="demo-el demo-el-ghost spec-image-treatment">Image Treatment</div></div>
+      <div class="demo-col"><div class="lb" title="expander-accordion">Expander Accordion</div><div class="demo-el demo-el-ghost spec-expander-accordion">Expander Accordion</div></div>
+    </div></div>
+  </section>
+  <section id="spacing">
+    <div class="sec-head"><h2>Spacing Scale</h2><span class="count">9 steps</span></div>
+    <div class="bar-row"><span>space-1</span><span class="val">4px</span><span class="bar bar-space-1"></span></div>
+    <div class="bar-row"><span>space-2</span><span class="val">8px</span><span class="bar bar-space-2"></span></div>
+    <div class="bar-row"><span>space-3</span><span class="val">16px</span><span class="bar bar-space-3"></span></div>
+    <div class="bar-row"><span>space-4</span><span class="val">24px</span><span class="bar bar-space-4"></span></div>
+    <div class="bar-row"><span>space-5</span><span class="val">32px</span><span class="bar bar-space-5"></span></div>
+    <div class="bar-row"><span>space-6</span><span class="val">40px</span><span class="bar bar-space-6"></span></div>
+    <div class="bar-row"><span>space-7</span><span class="val">48px</span><span class="bar bar-space-7"></span></div>
+    <div class="bar-row"><span>space-8</span><span class="val">56px</span><span class="bar bar-space-8"></span></div>
+    <div class="bar-row"><span>space-9</span><span class="val">64px</span><span class="bar bar-space-9"></span></div>
+  </section>
+  <section id="radius">
+    <div class="sec-head"><h2>Border Radius Scale</h2><span class="count">5 steps</span></div>
+    <div class="radius-grid">
+      <div class="radius-cell"><div class="box rd-radius-12px"></div><div class="lb">radius-12px · 12px</div></div>
+      <div class="radius-cell"><div class="box rd-radius-12px-12px"></div><div class="lb">radius-12px-12px · 12px 12px</div></div>
+      <div class="radius-cell"><div class="box rd-radius-50px"></div><div class="lb">radius-50px · 50px</div></div>
+      <div class="radius-cell"><div class="box rd-radius-50"></div><div class="lb">radius-50 · 50%</div></div>
+      <div class="radius-cell"><div class="box rd-radius-specialty"></div><div class="lb">radius-specialty · Specialty</div></div>
+    </div>
+  </section>
+  <section id="elevation">
+    <div class="sec-head"><h2>Elevation &amp; Depth</h2><span class="count">6</span></div>
+    <div class="elev-grid">
+      <div class="elev-cell elev-card"><div class="lb">Card</div><div class="vl">0 0 0.5px rgba(0,0,0,0.14), 0 1px 1px rgba(0,0,0,0.24)</div></div>
+      <div class="elev-cell elev-global-nav"><div class="lb">Global Nav</div><div class="vl">0 1px 3px rgba(0,0,0,0.1), 0 2px 2px rgba(0,0,0,0.06), 0 0 2px r</div></div>
+      <div class="elev-cell elev-frap-base"><div class="lb">Frap Base</div><div class="vl">0 0 6px rgba(0,0,0,0.24)</div></div>
+      <div class="elev-cell elev-frap-ambient"><div class="lb">Frap Ambient</div><div class="vl">0 8px 12px rgba(0,0,0,0.14)</div></div>
+      <div class="elev-cell elev-gift-card"><div class="lb">Gift Card</div><div class="vl">Light drop shadow around illustrated photograph</div></div>
+      <div class="elev-cell elev-starbucks-card-svc"><div class="lb">Starbucks Card (SVC)</div><div class="vl">drop-shadow(0 4px 1px rgba(0,0,0,0.11)) drop-shadow(0 0 2px rgba</div></div>
+    </div>
+  </section>
+  <section id="guidelines">
+    <div class="sec-head"><h2>Do&rsquo;s &amp; Don&rsquo;ts</h2></div>
+    <div class="guide">
+      <ul class="yes">
+        <li>Use Neutral Warm (#f2f0eb) or Ceramic (#edebe9) as page canvas instead of pure white — the warm cream is the signature</li>
+        <li>Map the green tiers to their intended surface role — Starbucks Green for headings, Green Accent for CTAs, House Green for deep bands, Uplift for decorative</li>
+        <li>Keep tracking tight at -0.01em / -0.16px on SoDoSans across the whole system</li>
+        <li>Use 50px full-pill radius on every button without exception</li>
+        <li>Apply transform: scale(0.95) as the universal button active state</li>
+        <li>Reserve Gold for Rewards-status ceremony moments only</li>
+      </ul>
+      <ul class="no">
+        <li>Don&#x27;t use pure white as the page canvas — the warm cream temperature is load-bearing</li>
+        <li>Don&#x27;t pick &quot;one brand green&quot; — the four-green system is intentional; using only #006241 everywhere flattens the brand</li>
+        <li>Don&#x27;t use Gold as a general-purpose accent — it&#x27;s a Rewards signal only</li>
+        <li>Don&#x27;t square the corners on buttons — the 50px pill is universal</li>
+        <li>Don&#x27;t introduce gradient fills — the system is color-block throughout</li>
+        <li>Don&#x27;t weight-contrast h1 and h2 by size — the hierarchy comes from weight + color (600 Starbucks-Green vs 400 Text Black)</li>
+      </ul>
+    </div>
+  </section>
+  <section id="reference">
+    <div class="sec-head"><h2>Component Reference</h2><span class="count">23</span></div>
+    <table class="ref"><thead><tr><th>Component</th><th>Resolved properties</th></tr></thead><tbody>
+      <tr><td class="k">buttons-3-black-filled-join-now</td><td>Background: #000000; Text: #ffffff; Border: 1px solid #000000; Font: 14px, weight 600</td></tr>
+      <tr><td class="k">buttons-4-dark-outlined-sign-in</td><td>Background: transparent; Text: #ffffff; Border: 1px solid #ffffff; Font: 14px, weight 600</td></tr>
+      <tr><td class="k">buttons-7-consent-agree-dark-green-variant</td><td>Text: #ffffff</td></tr>
+      <tr><td class="k">buttons-8-frap-floating-circular-order-button</td><td>Background: #00754A; Icon: #ffffff; Radius: 12px 12px 0px 0px; Text: #ffffff; Padding: 8px 16px; Font: 14px, weight 400</td></tr>
+      <tr><td class="k">cards-containers-content-card-default</td><td>Background: #ffffff; Radius: 12px</td></tr>
+      <tr><td class="k">cards-containers-gift-card-tile</td><td>Radius: similar to cards; Shadow: lighter than default card</td></tr>
+      <tr><td class="k">cards-containers-dropdown-menu-account-dropdown-top-nav</td><td>Background: #f9f9f9; textColor: Black No border</td></tr>
+      <tr><td class="k">cards-containers-modal</td><td>Padding: 2.4rem; Combined vertical padding: 11.2rem; rounded: 12px</td></tr>
+      <tr><td class="k">inputs-forms-floating-label-input</td><td>Label horizontal offset: 12px from left; Field padding: 12px; Form horizontal padding: 1.6rem</td></tr>
+      <tr><td class="k">inputs-forms-option-icon-checkbox-radio</td><td>Padding: 3px inner</td></tr>
+      <tr><td class="k">image-treatment</td><td>opacity: 0.3</td></tr>
+      <tr><td class="k">feature-band-dark-green-hero-strip</td><td>Right: product photography</td></tr>
+      <tr><td class="k">expander-accordion</td><td>Duration: 300ms</td></tr>
+      <tr><td class="k">product-detail-components-pdp-signature-cluster-size-options-selector</td><td>Inactive: no ring, same typography; Radius of container: 12px; Padding: 16px 24px internal</td></tr>
+      <tr><td class="k">product-detail-components-pdp-signature-cluster-add-in-milk-select-outlined-rectangle</td><td>Background: #ffffff; Border: 1px solid #d6dbde; Radius: 4px</td></tr>
+      <tr><td class="k">product-detail-components-pdp-signature-cluster-numeric-stepper</td><td>Count number: 16/700 Text Black centered</td></tr>
+      <tr><td class="k">product-detail-components-pdp-signature-cluster-customize-button</td><td>Background: #ffffff; Text: #00754A; Border: 1.5px solid #00754A; Radius: 50px; Padding: 14px 40px</td></tr>
+      <tr><td class="k">product-detail-components-pdp-signature-cluster-add-to-order-button-pdp</td><td>Background: #00754A; Text: #ffffff; Radius: 50px; Padding: 14px 32px</td></tr>
+      <tr><td class="k">product-detail-components-pdp-signature-cluster-rewards-cost-pill-200-item</td><td>Background: transparent; Border: 1px solid #cba258; Text: #cba258; Radius: 50px; Padding: 4px 12px</td></tr>
+      <tr><td class="k">product-detail-components-pdp-signature-cluster-product-description-band</td><td>Padding: 32px vertical</td></tr>
+      <tr><td class="k">product-detail-components-pdp-signature-cluster-ingredients-nutrition-table</td><td>Left column: &quot;Ingredients&quot; header + list</td></tr>
+      <tr><td class="k">product-detail-components-pdp-signature-cluster-store-availability-selector</td><td>Radius: 4px; Height: 48px</td></tr>
+      <tr><td class="k">product-detail-components-pdp-signature-cluster-pdp-breadcrumb</td><td>Font: 14/400 Proxima Nova</td></tr>
+    </tbody></table>
+  </section>
+  <footer><span>Starbucks — design tokens extracted from DESIGN.md</span><span>awesome-design-md / getdesign.md</span></footer>
+</div>
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script>
+</body></html>

@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design System Analysis of Saniti</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #0b0b0b; } html[data-theme="dark"] { background: #0b0b0b; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<div class="theme-layer" data-when="light">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#palette">Product</a></li>
+    <li><a href="#palette">Solutions</a></li>
+    <li><a href="#typography">Resources</a></li>
+    <li><a href="#components">Customers</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#components">Docs</a></li>
+  </ul>
+  <div class="nav-cta-group">
+    <a href="#" class="nav-signin">Sign In</a>
+    <button class="nav-secondary">Book a Demo</button>
+    <button class="nav-cta">Get Started Free</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <p class="hero-eyebrow">CONTENT PLATFORM · DESIGN SYSTEM CATALOGUE</p>
+    <h1>Design System Analysis of Saniti</h1>
+    <p>Dark-first editorial marketing surface. Oversized waldenburgNormal display type up to 112px, IBM Plex Mono technical eyebrows, a single coral-red accent reserved for the highest-priority CTA, and a polarity-flip section rhythm that swaps canvas mid-page.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary-on-light">Get Started Free</button>
+      <button class="btn" style="background:transparent; color:var(--ink); border:1px solid var(--ink);">Book a Demo</button>
+    </div>
+  </div>
+</header>
+
+<section id="palette">
+  <p class="mono-eyebrow">// COLOURS</p>
+  <h2>Color Palette</h2>
+  <p class="lead">Near-black canvas, white type, a single coral-red accent. The chromatic story is monochrome plus one signature hue — all atmosphere comes from polarity, not from gradient.</p>
+
+  <div class="palette-group-title">Brand &amp; Accent</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--brand);"></div><div class="swatch-meta"><p class="swatch-name">Brand</p><p class="swatch-hex">#f36458</p><p class="swatch-role">Coral-red signature accent. One CTA per viewport.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--brand-deep);"></div><div class="swatch-meta"><p class="swatch-name">Brand Deep</p><p class="swatch-hex">#dd0000</p><p class="swatch-role">Error/destructive variant only.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--primary);"></div><div class="swatch-meta"><p class="swatch-name">Primary</p><p class="swatch-hex">#0b0b0b</p><p class="swatch-role">Default canvas + ink colour.</p></div></div>
+  </div>
+
+  <div class="palette-group-title">Surface</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--canvas);"></div><div class="swatch-meta"><p class="swatch-name">Canvas</p><p class="swatch-hex">#0b0b0b</p><p class="swatch-role">Default dark-section background.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--canvas-soft);"></div><div class="swatch-meta"><p class="swatch-name">Canvas Soft</p><p class="swatch-hex">#212121</p><p class="swatch-role">Card surface inside dark sections.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--canvas-light); border-bottom: 1px solid var(--hairline);"></div><div class="swatch-meta"><p class="swatch-name">Canvas Light</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Pricing &amp; light-mode background.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--canvas-paper);"></div><div class="swatch-meta"><p class="swatch-name">Canvas Paper</p><p class="swatch-hex">#ededed</p><p class="swatch-role">Warm-grey alternate light surface.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--hairline-soft);"></div><div class="swatch-meta"><p class="swatch-name">Hairline Soft</p><p class="swatch-hex">#353535</p><p class="swatch-role">Border on dark cards.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--hairline);"></div><div class="swatch-meta"><p class="swatch-name">Hairline</p><p class="swatch-hex">#ededed</p><p class="swatch-role">Border on light cards, dividers.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--surface-blue-bg);"></div><div class="swatch-meta"><p class="swatch-name">Surface Blue</p><p class="swatch-hex">#afe3ff</p><p class="swatch-role">Soft-blue alert surface.</p></div></div>
+  </div>
+
+  <div class="palette-group-title">Text</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--ink);"></div><div class="swatch-meta"><p class="swatch-name">Ink</p><p class="swatch-hex">#0b0b0b</p><p class="swatch-role">Headlines &amp; body on light.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--ink-soft);"></div><div class="swatch-meta"><p class="swatch-name">Ink Soft</p><p class="swatch-hex">#212121</p><p class="swatch-role">Secondary text on light.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--graphite);"></div><div class="swatch-meta"><p class="swatch-name">Graphite</p><p class="swatch-hex">#353535</p><p class="swatch-role">Tertiary text on dark.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--slate);"></div><div class="swatch-meta"><p class="swatch-name">Slate</p><p class="swatch-hex">#3c4758</p><p class="swatch-role">Cool blue-grey link text.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--slate-soft);"></div><div class="swatch-meta"><p class="swatch-name">Slate Soft</p><p class="swatch-hex">#505b6c</p><p class="swatch-role">De-emphasized rule lines.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--mute);"></div><div class="swatch-meta"><p class="swatch-name">Mute</p><p class="swatch-hex">#797979</p><p class="swatch-role">Mid-grey caption colour.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--ash);"></div><div class="swatch-meta"><p class="swatch-name">Ash</p><p class="swatch-hex">#b9b9b9</p><p class="swatch-role">Default body on dark.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--on-primary); border: 1px solid var(--hairline);"></div><div class="swatch-meta"><p class="swatch-name">On Primary</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Headline colour on dark.</p></div></div>
+  </div>
+
+  <div class="palette-group-title">Semantic</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--link-blue);"></div><div class="swatch-meta"><p class="swatch-name">Link Blue</p><p class="swatch-hex">#0052ef</p><p class="swatch-role">Inline link on light.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--link-blue-soft);"></div><div class="swatch-meta"><p class="swatch-name">Link Blue Soft</p><p class="swatch-hex">#55beff</p><p class="swatch-role">Link colour on dark.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--success);"></div><div class="swatch-meta"><p class="swatch-name">Success</p><p class="swatch-hex">#37cd84</p><p class="swatch-role">Validation success.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--error);"></div><div class="swatch-meta"><p class="swatch-name">Error</p><p class="swatch-hex">#dd0000</p><p class="swatch-role">Required-field markers.</p></div></div>
+  </div>
+</section>
+
+<section id="typography">
+  <p class="mono-eyebrow">// TYPOGRAPHY</p>
+  <h2>Typography Scale</h2>
+  <p class="lead">waldenburgNormal across every level — display through caption — with IBM Plex Mono reserved exclusively for technical eyebrows and small-caps labels. Inter is the open-source fallback at -0.04em tracking on display sizes.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-mega</strong>112 · 400 · 1.0 · -4.48px</div><div class="type-sample display" style="font-size:112px; line-height:1.0;">Structure</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>72 · 400 · 1.05 · -2.88px</div><div class="type-sample display" style="font-size:72px; line-height:1.05;">Loved by 1M+ users</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>60 · 400 · 0.8 · 0</div><div class="type-sample display" style="font-size:60px; line-height:0.8;">Tightly leaded</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>48 · 400 · 1.08 · -1.68px</div><div class="type-sample display" style="font-size:48px; line-height:1.08;">Standard section headline</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-sm</strong>38 · 400 · 1.10 · -1.14px</div><div class="type-sample display" style="font-size:38px; line-height:1.1;">Sub-section heads</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-md</strong>32 · 425 · 1.13 · -0.32px</div><div class="type-sample" style="font-size:32px; font-weight:425; letter-spacing:-0.32px; line-height:1.13;">Card title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-sm</strong>24 · 400 · 1.10 · -0.24px</div><div class="type-sample" style="font-size:24px; letter-spacing:-0.24px;">Feature card title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>subtitle</strong>18 · 400 · 1.5 · -0.18px</div><div class="type-sample" style="font-size:18px; letter-spacing:-0.18px;">Hero sub-copy and lead paragraphs.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body</strong>16 · 400 · 1.5 · 0</div><div class="type-sample" style="font-size:16px;">Default running body across both themes.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>15 · 400 · 1.5 · -0.15px</div><div class="type-sample" style="font-size:15px; letter-spacing:-0.15px;">Comparison-table cells, mid-density reading copy.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption</strong>13 · 400 · 1.5 · 0</div><div class="type-sample" style="font-size:13px;">Card captions and list-item meta.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-tight</strong>13 · 500 · 1.3 · -0.13px</div><div class="type-sample" style="font-size:13px; font-weight:500; letter-spacing:-0.13px;">Tight metadata and button-sm.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>meta</strong>12 · 400 · 1.5 · -0.12px</div><div class="type-sample" style="font-size:12px; letter-spacing:-0.12px;">Footnotes and fine print.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>mono-eyebrow</strong>13 · 400 · IBM Plex Mono</div><div class="type-sample" style="font-family:var(--font-mono); font-size:13px;">// SECTION EYEBROW</div></div>
+  <div class="type-row"><div class="type-meta"><strong>mono-caps</strong>11 · 400 · IBM Plex Mono</div><div class="type-sample" style="font-family:var(--font-mono); font-size:11px; text-transform:uppercase;">FOOTER COLUMN HEAD</div></div>
+  <div class="type-row"><div class="type-meta"><strong>mono-micro</strong>10 · 400 · IBM Plex Mono</div><div class="type-sample" style="font-family:var(--font-mono); font-size:10px;">tag-chip-label</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-lg</strong>16 · 500 · 1.5</div><div class="type-sample" style="font-size:16px; font-weight:500;">Get Started Free</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-sm</strong>13 · 500 · 1.3 · -0.13px</div><div class="type-sample" style="font-size:13px; font-weight:500; letter-spacing:-0.13px;">Book a Demo</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-uppercase</strong>11 · 600 · uppercase</div><div class="type-sample" style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.04em;">CONTENT</div></div>
+</section>
+
+<section id="components">
+  <p class="mono-eyebrow">// BUTTONS</p>
+  <h2>Button Variants</h2>
+  <p class="lead">Pill primary buttons (rounded.full) for marketing CTAs paired with sharply-cut application radii (3–6px) for in-product Studio screenshots. Mixing the two corner languages is intentional.</p>
+  <div class="button-grid">
+    <button class="btn btn-primary">button-primary</button>
+    <button class="btn btn-brand">button-brand</button>
+    <button class="btn btn-secondary-dark">button-secondary-dark</button>
+    <button class="btn btn-ghost-dark">button-ghost-dark</button>
+    <button class="btn btn-app-tab">button-app-tab</button>
+  </div>
+  <div class="button-grid-light">
+    <button class="btn btn-primary-on-light">button-primary-on-light</button>
+    <button class="btn btn-brand">button-brand</button>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// BRAND MARK</p>
+  <h2>Brand Mark</h2>
+  <p class="lead">The brand-dot + Saniti wordmark lockup. The dot is the system's primary identification mark — never replace it with a logo glyph.</p>
+  <div class="brand-mark-row">
+    <div class="brand-mark-block">
+      <span class="brand-dot"></span>
+      <span class="brand-wordmark">Saniti</span>
+    </div>
+    <div class="brand-mark-light">
+      <span class="brand-dot"></span>
+      <span class="brand-wordmark">Saniti</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// CARDS</p>
+  <h2>Feature Cards</h2>
+  <p class="lead">Three card variants — dark, brand, and light — mapped to the polarity of their parent section.</p>
+  <div class="card-grid">
+    <div class="feature-card-dark">
+      <p class="card-eyebrow">// DARK</p>
+      <h3>Structured content</h3>
+      <p>The default dark-section feature card. Canvas-soft infill on canvas with optional hairline-soft border.</p>
+    </div>
+    <div class="feature-card-brand">
+      <p class="card-eyebrow">// BRAND</p>
+      <h3>Coral accent</h3>
+      <p>The rare brand-coloured highlight card. Used at most once per page to anchor the eye against the dark canvas.</p>
+    </div>
+    <div class="feature-card-light">
+      <p class="card-eyebrow">// LIGHT</p>
+      <h3>Editorial light tile</h3>
+      <p>Light-section feature tile — canvas-light fill, hairline border, ink text. Reads like a print-magazine spread.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <p class="mono-eyebrow">// PRICING</p>
+  <h2>Pricing Tiers</h2>
+  <p class="lead">4-tier grid where the featured tier is signalled by full-fill ink inversion — no ribbon, no border treatment. The polarity flip is the badge.</p>
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <p class="pricing-name">Free</p>
+      <p class="pricing-desc">For solo developers exploring the platform.</p>
+      <p class="pricing-amount">$0<small> / month</small></p>
+      <ul class="pricing-features">
+        <li>3 users</li>
+        <li>1 project</li>
+        <li>Community support</li>
+      </ul>
+      <button class="btn btn-primary-on-light" style="width:100%;">Start free</button>
+    </div>
+    <div class="pricing-card">
+      <p class="pricing-name">Growth</p>
+      <p class="pricing-desc">For teams shipping content at scale.</p>
+      <p class="pricing-amount">$99<small> / month</small></p>
+      <ul class="pricing-features">
+        <li>20 users</li>
+        <li>Unlimited projects</li>
+        <li>Standard support</li>
+      </ul>
+      <button class="btn btn-primary-on-light" style="width:100%;">Choose Growth</button>
+    </div>
+    <div class="pricing-card-featured">
+      <p class="pricing-name">Enterprise</p>
+      <p class="pricing-desc">Inverted polarity is the badge.</p>
+      <p class="pricing-amount">Custom</p>
+      <ul class="pricing-features">
+        <li>Unlimited users</li>
+        <li>SSO + SOC 2</li>
+        <li>Dedicated CSM</li>
+      </ul>
+      <button class="btn btn-primary" style="width:100%;">Contact sales</button>
+    </div>
+    <div class="pricing-card">
+      <p class="pricing-name">Custom</p>
+      <p class="pricing-desc">For unique, large-scale deployments.</p>
+      <p class="pricing-amount">Talk to us</p>
+      <ul class="pricing-features">
+        <li>Custom limits</li>
+        <li>Bespoke contracts</li>
+        <li>Account manager</li>
+      </ul>
+      <button class="btn btn-primary-on-light" style="width:100%;">Get in touch</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// STUDIO WINDOW</p>
+  <h2>Studio Window</h2>
+  <p class="lead">Every Studio-product screenshot is framed inside the studio-window chrome — sharp 6px radius, three macOS-style traffic lights, canvas-soft body. The mockup signals "real product, not marketing diagram."</p>
+  <div class="studio-window">
+    <div class="studio-chrome">
+      <span class="studio-dot r"></span>
+      <span class="studio-dot y"></span>
+      <span class="studio-dot g"></span>
+    </div>
+    <div class="studio-tabs">
+      <button class="btn btn-app-tab">CONTENT</button>
+      <button class="btn btn-app-tab">VISION</button>
+      <button class="btn btn-app-tab">MEDIA</button>
+    </div>
+    <pre class="studio-body">// Saniti Studio — content schema
+export default {
+  name: 'article',
+  type: 'document',
+  fields: [
+    { name: 'title', type: 'string' },
+    { name: 'body',  type: 'array',  of: [{ type: 'block' }] },
+  ],
+}</pre>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// FORMS</p>
+  <h2>Form Elements</h2>
+  <p class="lead">Light text-input on canvas-light with 3px application-grade radius and hairline border. Dark text-input variant on canvas for in-product Studio mockups.</p>
+  <div class="form-grid field-light">
+    <div class="field">
+      <label>Email</label>
+      <input type="email" placeholder="you@example.com">
+    </div>
+    <div class="field">
+      <label>Project name</label>
+      <input type="text" placeholder="my-content-platform">
+    </div>
+    <div class="field" style="grid-column: 1 / -1;">
+      <label>Notes</label>
+      <textarea placeholder="Optional notes"></textarea>
+    </div>
+  </div>
+  <div class="form-dark">
+    <div class="form-grid field-dark">
+      <div class="field">
+        <label>Email (dark)</label>
+        <input type="email" placeholder="you@example.com">
+      </div>
+      <div class="field">
+        <label>API key</label>
+        <input type="text" placeholder="sk_live_...">
+      </div>
+    </div>
+  </div>
+  <div class="alert-banner">Heads up — the soft-blue alert is the only chromatic surface fill in the system.</div>
+  <div style="margin-top: 32px; display: flex; gap: 16px; align-items: center;">
+    <span class="badge-neutral">badge-neutral</span>
+    <span class="badge-filled">badge-filled</span>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// POLARITY-FLIP</p>
+  <h2>Polarity-Flip Section Rhythm</h2>
+  <p class="lead">Saniti's signature depth cue — adjacent dark and light stripes form a hard cut that reads as a strong layout statement. The polarity flip is the section divider, never a horizontal rule.</p>
+  <div class="polarity-flip">
+    <div class="polarity-dark">
+      <p class="polarity-eyebrow">// DARK STRIPE</p>
+      <h3>Structure powers intelligence.</h3>
+      <p>The brand voice. Oversized editorial headlines on near-black canvas with white type and a single accent.</p>
+    </div>
+    <div class="polarity-light">
+      <p class="polarity-eyebrow">// LIGHT STRIPE</p>
+      <h3>Built for commercial clarity.</h3>
+      <p>The pricing voice. White canvas, dense reading rhythm, ink type, hairline rules. Same type system, opposite polarity.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// SPACING</p>
+  <h2>Spacing Scale</h2>
+  <p class="lead">8px base unit with 4px micro-steps. Section vertical rhythm uses 96px between major modules.</p>
+  <div class="spacing-row">
+    <div><div class="spacing-block" style="width:4px;"></div><div class="spacing-label">xxs · 4</div></div>
+    <div><div class="spacing-block" style="width:8px;"></div><div class="spacing-label">xs · 8</div></div>
+    <div><div class="spacing-block" style="width:12px;"></div><div class="spacing-label">sm · 12</div></div>
+    <div><div class="spacing-block" style="width:16px;"></div><div class="spacing-label">md · 16</div></div>
+    <div><div class="spacing-block" style="width:24px;"></div><div class="spacing-label">lg · 24</div></div>
+    <div><div class="spacing-block" style="width:32px;"></div><div class="spacing-label">xl · 32</div></div>
+    <div><div class="spacing-block" style="width:48px;"></div><div class="spacing-label">xxl · 48</div></div>
+    <div><div class="spacing-block" style="width:64px;"></div><div class="spacing-label">section · 64</div></div>
+    <div><div class="spacing-block" style="width:96px;"></div><div class="spacing-label">section-lg · 96</div></div>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// RADIUS</p>
+  <h2>Border Radius</h2>
+  <p class="lead">Application-grade 3–6px radii for in-product UI; 12px for marketing cards; full pills for marketing CTAs.</p>
+  <div class="radius-grid">
+    <div class="radius-card"><div class="radius-box" style="border-radius:0;"></div><div class="radius-meta">none · 0</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:3px;"></div><div class="radius-meta">app-xs · 3</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:4px;"></div><div class="radius-meta">app-sm · 4</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:5px;"></div><div class="radius-meta">app-md · 5</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:6px;"></div><div class="radius-meta">app-lg · 6</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:12px;"></div><div class="radius-meta">marketing · 12</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:9999px; height:120px; width:120px;"></div><div class="radius-meta">full · pill</div></div>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// ELEVATION</p>
+  <h2>Elevation &amp; Depth</h2>
+  <p class="lead">Depth is delivered by tonal surface stepping (canvas → canvas-soft → canvas-light) and by the polarity flip — never by heavy drop shadows.</p>
+  <div class="elev-grid">
+    <div class="elev-card elev-flat">Flat (Dark)</div>
+    <div class="elev-card elev-card-dark">Card (Dark)</div>
+    <div class="elev-card elev-card-light">Card (Light)</div>
+    <div class="elev-card elev-inverted">Inverted Featured</div>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// RESPONSIVE</p>
+  <h2>Responsive Behavior</h2>
+  <p class="lead">Eight breakpoints. Display headlines step from 112px down to 64px on the smallest viewport; pricing collapses 4-up → 2-up → 1-up; section polarity flips are preserved at every breakpoint.</p>
+  <table class="breakpoint-table">
+    <thead><tr><th>Breakpoint</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>2xl</td><td>1640px</td><td>Full editorial container; pricing 4-tier wide.</td></tr>
+      <tr><td>xl</td><td>1440px</td><td>Display-mega may step down to 96px.</td></tr>
+      <tr><td>lg</td><td>1200px</td><td>Default desktop reading view.</td></tr>
+      <tr><td>md</td><td>1100px</td><td>Pricing 4-up but tighter.</td></tr>
+      <tr><td>sm</td><td>960px</td><td>Pricing collapses to 2 columns; nav hamburger.</td></tr>
+      <tr><td>xs</td><td>768px</td><td>Section padding drops; display sizes step down.</td></tr>
+      <tr><td>xxs</td><td>480px</td><td>Single-column reading; display-mega → 64px.</td></tr>
+      <tr><td>xxxs</td><td>376px</td><td>Footer collapses to 2-column; brand-dot 10px.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+
+
+
+
+</div>
+<div class="theme-layer" data-when="dark">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#palette">Product</a></li>
+    <li><a href="#palette">Solutions</a></li>
+    <li><a href="#typography">Resources</a></li>
+    <li><a href="#components">Customers</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#components">Docs</a></li>
+  </ul>
+  <div class="nav-cta-group">
+    <a href="#" class="nav-signin">Sign In</a>
+    <button class="nav-secondary">Book a Demo</button>
+    <button class="nav-cta">Get Started Free</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <p class="hero-eyebrow">CONTENT PLATFORM · DESIGN SYSTEM CATALOGUE</p>
+    <h1>Design System Analysis of Saniti</h1>
+    <p>Dark-first editorial marketing surface. Oversized waldenburgNormal display type up to 112px, IBM Plex Mono technical eyebrows, a single coral-red accent reserved for the highest-priority CTA, and a polarity-flip section rhythm that swaps canvas mid-page.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Get Started Free</button>
+      <button class="btn btn-secondary-dark" style="height:44px; font-size:16px;">Book a Demo</button>
+    </div>
+  </div>
+</header>
+
+<section data-sec="palette">
+  <p class="mono-eyebrow">// COLOURS</p>
+  <h2>Color Palette</h2>
+  <p class="lead">Near-black canvas, white type, a single coral-red accent. The chromatic story is monochrome plus one signature hue — all atmosphere comes from polarity, not from gradient.</p>
+
+  <div class="palette-group-title">Brand &amp; Accent</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--brand);"></div><div class="swatch-meta"><p class="swatch-name">Brand</p><p class="swatch-hex">#f36458</p><p class="swatch-role">Coral-red signature accent. One CTA per viewport.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--brand-deep);"></div><div class="swatch-meta"><p class="swatch-name">Brand Deep</p><p class="swatch-hex">#dd0000</p><p class="swatch-role">Error/destructive variant only.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--primary);"></div><div class="swatch-meta"><p class="swatch-name">Primary</p><p class="swatch-hex">#0b0b0b</p><p class="swatch-role">Default canvas + ink colour.</p></div></div>
+  </div>
+
+  <div class="palette-group-title">Surface</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--canvas);"></div><div class="swatch-meta"><p class="swatch-name">Canvas</p><p class="swatch-hex">#0b0b0b</p><p class="swatch-role">Default dark-section background.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--canvas-soft);"></div><div class="swatch-meta"><p class="swatch-name">Canvas Soft</p><p class="swatch-hex">#212121</p><p class="swatch-role">Card surface inside dark sections.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--canvas-light);"></div><div class="swatch-meta"><p class="swatch-name">Canvas Light</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Pricing &amp; light-mode background.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--canvas-paper);"></div><div class="swatch-meta"><p class="swatch-name">Canvas Paper</p><p class="swatch-hex">#ededed</p><p class="swatch-role">Warm-grey alternate light surface.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--hairline-soft);"></div><div class="swatch-meta"><p class="swatch-name">Hairline Soft</p><p class="swatch-hex">#353535</p><p class="swatch-role">Border on dark cards.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--hairline);"></div><div class="swatch-meta"><p class="swatch-name">Hairline</p><p class="swatch-hex">#ededed</p><p class="swatch-role">Border on light cards, dividers.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--surface-blue-bg);"></div><div class="swatch-meta"><p class="swatch-name">Surface Blue</p><p class="swatch-hex">#afe3ff</p><p class="swatch-role">Soft-blue alert surface.</p></div></div>
+  </div>
+
+  <div class="palette-group-title">Text</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--ink);"></div><div class="swatch-meta"><p class="swatch-name">Ink</p><p class="swatch-hex">#0b0b0b</p><p class="swatch-role">Headlines &amp; body on light.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--ink-soft);"></div><div class="swatch-meta"><p class="swatch-name">Ink Soft</p><p class="swatch-hex">#212121</p><p class="swatch-role">Secondary text on light.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--graphite);"></div><div class="swatch-meta"><p class="swatch-name">Graphite</p><p class="swatch-hex">#353535</p><p class="swatch-role">Tertiary text on dark.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--slate);"></div><div class="swatch-meta"><p class="swatch-name">Slate</p><p class="swatch-hex">#3c4758</p><p class="swatch-role">Cool blue-grey link text.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--slate-soft);"></div><div class="swatch-meta"><p class="swatch-name">Slate Soft</p><p class="swatch-hex">#505b6c</p><p class="swatch-role">De-emphasized rule lines.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--mute);"></div><div class="swatch-meta"><p class="swatch-name">Mute</p><p class="swatch-hex">#797979</p><p class="swatch-role">Mid-grey caption colour.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--ash);"></div><div class="swatch-meta"><p class="swatch-name">Ash</p><p class="swatch-hex">#b9b9b9</p><p class="swatch-role">Default body on dark.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--on-primary);"></div><div class="swatch-meta"><p class="swatch-name">On Primary</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Headline colour on dark.</p></div></div>
+  </div>
+
+  <div class="palette-group-title">Semantic</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--link-blue);"></div><div class="swatch-meta"><p class="swatch-name">Link Blue</p><p class="swatch-hex">#0052ef</p><p class="swatch-role">Inline link on light.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--link-blue-soft);"></div><div class="swatch-meta"><p class="swatch-name">Link Blue Soft</p><p class="swatch-hex">#55beff</p><p class="swatch-role">Link colour on dark.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--success);"></div><div class="swatch-meta"><p class="swatch-name">Success</p><p class="swatch-hex">#37cd84</p><p class="swatch-role">Validation success.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--error);"></div><div class="swatch-meta"><p class="swatch-name">Error</p><p class="swatch-hex">#dd0000</p><p class="swatch-role">Required-field markers.</p></div></div>
+  </div>
+</section>
+
+<section data-sec="typography">
+  <p class="mono-eyebrow">// TYPOGRAPHY</p>
+  <h2>Typography Scale</h2>
+  <p class="lead">waldenburgNormal across every level — display through caption — with IBM Plex Mono reserved exclusively for technical eyebrows and small-caps labels. Inter is the open-source fallback at -0.04em tracking on display sizes.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-mega</strong>112 · 400 · 1.0 · -4.48px</div><div class="type-sample display" style="font-size:112px; line-height:1.0;">Structure</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>72 · 400 · 1.05 · -2.88px</div><div class="type-sample display" style="font-size:72px; line-height:1.05;">Loved by 1M+ users</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>60 · 400 · 0.8 · 0</div><div class="type-sample display" style="font-size:60px; line-height:0.8;">Tightly leaded</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>48 · 400 · 1.08 · -1.68px</div><div class="type-sample display" style="font-size:48px; line-height:1.08;">Standard section headline</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-sm</strong>38 · 400 · 1.10 · -1.14px</div><div class="type-sample display" style="font-size:38px; line-height:1.1;">Sub-section heads</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-md</strong>32 · 425 · 1.13 · -0.32px</div><div class="type-sample" style="font-size:32px; font-weight:425; letter-spacing:-0.32px; line-height:1.13;">Card title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-sm</strong>24 · 400 · 1.10 · -0.24px</div><div class="type-sample" style="font-size:24px; letter-spacing:-0.24px;">Feature card title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>subtitle</strong>18 · 400 · 1.5 · -0.18px</div><div class="type-sample" style="font-size:18px; letter-spacing:-0.18px;">Hero sub-copy and lead paragraphs.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body</strong>16 · 400 · 1.5 · 0</div><div class="type-sample" style="font-size:16px;">Default running body across both themes.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>15 · 400 · 1.5 · -0.15px</div><div class="type-sample" style="font-size:15px; letter-spacing:-0.15px;">Comparison-table cells, mid-density reading copy.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption</strong>13 · 400 · 1.5 · 0</div><div class="type-sample" style="font-size:13px;">Card captions and list-item meta.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-tight</strong>13 · 500 · 1.3 · -0.13px</div><div class="type-sample" style="font-size:13px; font-weight:500; letter-spacing:-0.13px;">Tight metadata and button-sm.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>meta</strong>12 · 400 · 1.5 · -0.12px</div><div class="type-sample" style="font-size:12px; letter-spacing:-0.12px;">Footnotes and fine print.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>mono-eyebrow</strong>13 · 400 · IBM Plex Mono</div><div class="type-sample" style="font-family:var(--font-mono); font-size:13px;">// SECTION EYEBROW</div></div>
+  <div class="type-row"><div class="type-meta"><strong>mono-caps</strong>11 · 400 · IBM Plex Mono</div><div class="type-sample" style="font-family:var(--font-mono); font-size:11px; text-transform:uppercase;">FOOTER COLUMN HEAD</div></div>
+  <div class="type-row"><div class="type-meta"><strong>mono-micro</strong>10 · 400 · IBM Plex Mono</div><div class="type-sample" style="font-family:var(--font-mono); font-size:10px;">tag-chip-label</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-lg</strong>16 · 500 · 1.5</div><div class="type-sample" style="font-size:16px; font-weight:500;">Get Started Free</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-sm</strong>13 · 500 · 1.3 · -0.13px</div><div class="type-sample" style="font-size:13px; font-weight:500; letter-spacing:-0.13px;">Book a Demo</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-uppercase</strong>11 · 600 · uppercase</div><div class="type-sample" style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.04em;">CONTENT</div></div>
+</section>
+
+<section data-sec="components">
+  <p class="mono-eyebrow">// BUTTONS</p>
+  <h2>Button Variants</h2>
+  <p class="lead">Pill primary buttons (rounded.full) for marketing CTAs paired with sharply-cut application radii (3–6px) for in-product Studio screenshots. Mixing the two corner languages is intentional.</p>
+  <div class="button-grid">
+    <button class="btn btn-primary">button-primary</button>
+    <button class="btn btn-brand">button-brand</button>
+    <button class="btn btn-secondary-dark">button-secondary-dark</button>
+    <button class="btn btn-ghost-dark">button-ghost-dark</button>
+    <button class="btn btn-app-tab">button-app-tab</button>
+  </div>
+  <div class="button-grid-light">
+    <button class="btn btn-primary-on-light">button-primary-on-light</button>
+    <button class="btn btn-brand">button-brand</button>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// BRAND MARK</p>
+  <h2>Brand Mark</h2>
+  <p class="lead">The brand-dot + Saniti wordmark lockup. The dot is the system's primary identification mark — never replace it with a logo glyph.</p>
+  <div class="brand-mark-row">
+    <div class="brand-mark-block">
+      <span class="brand-dot"></span>
+      <span class="brand-wordmark">Saniti</span>
+    </div>
+    <div class="brand-mark-light">
+      <span class="brand-dot"></span>
+      <span class="brand-wordmark">Saniti</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// CARDS</p>
+  <h2>Feature Cards</h2>
+  <p class="lead">Three card variants — dark, brand, and light — mapped to the polarity of their parent section.</p>
+  <div class="card-grid">
+    <div class="feature-card-dark">
+      <p class="card-eyebrow">// DARK</p>
+      <h3>Structured content</h3>
+      <p>The default dark-section feature card. Canvas-soft infill on canvas with optional hairline-soft border.</p>
+    </div>
+    <div class="feature-card-brand">
+      <p class="card-eyebrow">// BRAND</p>
+      <h3>Coral accent</h3>
+      <p>The rare brand-coloured highlight card. Used at most once per page to anchor the eye against the dark canvas.</p>
+    </div>
+    <div class="feature-card-light">
+      <p class="card-eyebrow">// LIGHT</p>
+      <h3>Editorial light tile</h3>
+      <p>Light-section feature tile — canvas-light fill, hairline border, ink text. Reads like a print-magazine spread.</p>
+    </div>
+  </div>
+</section>
+
+<section data-sec="pricing">
+  <p class="mono-eyebrow">// PRICING</p>
+  <h2>Pricing Tiers</h2>
+  <p class="lead">4-tier grid where the featured tier is signalled by full-fill inversion to white-on-black — no ribbon, no border treatment. The polarity flip is the badge.</p>
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <p class="pricing-name">Free</p>
+      <p class="pricing-desc">For solo developers exploring the platform.</p>
+      <p class="pricing-amount">$0<small> / month</small></p>
+      <ul class="pricing-features">
+        <li>3 users</li>
+        <li>1 project</li>
+        <li>Community support</li>
+      </ul>
+      <button class="btn btn-primary" style="width:100%;">Start free</button>
+    </div>
+    <div class="pricing-card">
+      <p class="pricing-name">Growth</p>
+      <p class="pricing-desc">For teams shipping content at scale.</p>
+      <p class="pricing-amount">$99<small> / month</small></p>
+      <ul class="pricing-features">
+        <li>20 users</li>
+        <li>Unlimited projects</li>
+        <li>Standard support</li>
+      </ul>
+      <button class="btn btn-primary" style="width:100%;">Choose Growth</button>
+    </div>
+    <div class="pricing-card-featured">
+      <p class="pricing-name">Enterprise</p>
+      <p class="pricing-desc">Inverted polarity is the badge.</p>
+      <p class="pricing-amount">Custom</p>
+      <ul class="pricing-features">
+        <li>Unlimited users</li>
+        <li>SSO + SOC 2</li>
+        <li>Dedicated CSM</li>
+      </ul>
+      <button class="btn btn-primary-on-light" style="width:100%;">Contact sales</button>
+    </div>
+    <div class="pricing-card">
+      <p class="pricing-name">Custom</p>
+      <p class="pricing-desc">For unique, large-scale deployments.</p>
+      <p class="pricing-amount">Talk to us</p>
+      <ul class="pricing-features">
+        <li>Custom limits</li>
+        <li>Bespoke contracts</li>
+        <li>Account manager</li>
+      </ul>
+      <button class="btn btn-primary" style="width:100%;">Get in touch</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// STUDIO WINDOW</p>
+  <h2>Studio Window</h2>
+  <p class="lead">Every Studio-product screenshot is framed inside the studio-window chrome — sharp 6px radius, three macOS-style traffic lights, canvas-soft body. The mockup signals "real product, not marketing diagram."</p>
+  <div class="studio-window">
+    <div class="studio-chrome">
+      <span class="studio-dot r"></span>
+      <span class="studio-dot y"></span>
+      <span class="studio-dot g"></span>
+    </div>
+    <div class="studio-tabs">
+      <button class="btn btn-app-tab">CONTENT</button>
+      <button class="btn btn-app-tab">VISION</button>
+      <button class="btn btn-app-tab">MEDIA</button>
+    </div>
+    <pre class="studio-body">// Saniti Studio — content schema
+export default {
+  name: 'article',
+  type: 'document',
+  fields: [
+    { name: 'title', type: 'string' },
+    { name: 'body',  type: 'array',  of: [{ type: 'block' }] },
+  ],
+}</pre>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// FORMS</p>
+  <h2>Form Elements</h2>
+  <p class="lead">Dark text-input on canvas with 3px application-grade radius and ink-soft border. Light text-input variant for pricing forms.</p>
+  <div class="form-grid field-dark">
+    <div class="field">
+      <label>Email</label>
+      <input type="email" placeholder="you@example.com">
+    </div>
+    <div class="field">
+      <label>Project name</label>
+      <input type="text" placeholder="my-content-platform">
+    </div>
+    <div class="field" style="grid-column: 1 / -1;">
+      <label>Notes</label>
+      <textarea placeholder="Optional notes"></textarea>
+    </div>
+  </div>
+  <div class="form-light">
+    <div class="form-grid field-light">
+      <div class="field">
+        <label>Email (light)</label>
+        <input type="email" placeholder="you@example.com">
+      </div>
+      <div class="field">
+        <label>API key</label>
+        <input type="text" placeholder="sk_live_...">
+      </div>
+    </div>
+  </div>
+  <div class="alert-banner">Heads up — the soft-blue alert is the only chromatic surface fill in the system.</div>
+  <div style="margin-top: 32px; display: flex; gap: 16px; align-items: center;">
+    <span class="badge-neutral">badge-neutral</span>
+    <span class="badge-filled">badge-filled</span>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// POLARITY-FLIP</p>
+  <h2>Polarity-Flip Section Rhythm</h2>
+  <p class="lead">Saniti's signature depth cue — adjacent dark and light stripes form a hard cut that reads as a strong layout statement. The polarity flip is the section divider, never a horizontal rule.</p>
+  <div class="polarity-flip">
+    <div class="polarity-dark">
+      <p class="polarity-eyebrow">// DARK STRIPE</p>
+      <h3>Structure powers intelligence.</h3>
+      <p>The brand voice. Oversized editorial headlines on near-black canvas with white type and a single accent.</p>
+    </div>
+    <div class="polarity-light">
+      <p class="polarity-eyebrow">// LIGHT STRIPE</p>
+      <h3>Built for commercial clarity.</h3>
+      <p>The pricing voice. White canvas, dense reading rhythm, ink type, hairline rules. Same type system, opposite polarity.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// SPACING</p>
+  <h2>Spacing Scale</h2>
+  <p class="lead">8px base unit with 4px micro-steps. Section vertical rhythm uses 96px between major modules.</p>
+  <div class="spacing-row">
+    <div><div class="spacing-block" style="width:4px;"></div><div class="spacing-label">xxs · 4</div></div>
+    <div><div class="spacing-block" style="width:8px;"></div><div class="spacing-label">xs · 8</div></div>
+    <div><div class="spacing-block" style="width:12px;"></div><div class="spacing-label">sm · 12</div></div>
+    <div><div class="spacing-block" style="width:16px;"></div><div class="spacing-label">md · 16</div></div>
+    <div><div class="spacing-block" style="width:24px;"></div><div class="spacing-label">lg · 24</div></div>
+    <div><div class="spacing-block" style="width:32px;"></div><div class="spacing-label">xl · 32</div></div>
+    <div><div class="spacing-block" style="width:48px;"></div><div class="spacing-label">xxl · 48</div></div>
+    <div><div class="spacing-block" style="width:64px;"></div><div class="spacing-label">section · 64</div></div>
+    <div><div class="spacing-block" style="width:96px;"></div><div class="spacing-label">section-lg · 96</div></div>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// RADIUS</p>
+  <h2>Border Radius</h2>
+  <p class="lead">Application-grade 3–6px radii for in-product UI; 12px for marketing cards; full pills for marketing CTAs.</p>
+  <div class="radius-grid">
+    <div class="radius-card"><div class="radius-box" style="border-radius:0;"></div><div class="radius-meta">none · 0</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:3px;"></div><div class="radius-meta">app-xs · 3</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:4px;"></div><div class="radius-meta">app-sm · 4</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:5px;"></div><div class="radius-meta">app-md · 5</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:6px;"></div><div class="radius-meta">app-lg · 6</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:12px;"></div><div class="radius-meta">marketing · 12</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:9999px; height:120px; width:120px;"></div><div class="radius-meta">full · pill</div></div>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// ELEVATION</p>
+  <h2>Elevation &amp; Depth</h2>
+  <p class="lead">Depth is delivered by tonal surface stepping (canvas → canvas-soft → canvas-light) and by the polarity flip — never by heavy drop shadows.</p>
+  <div class="elev-grid">
+    <div class="elev-card elev-flat">Flat (Dark)</div>
+    <div class="elev-card elev-card-dark">Card (Dark)</div>
+    <div class="elev-card elev-card-light">Card (Light)</div>
+    <div class="elev-card elev-inverted">Inverted Featured</div>
+  </div>
+</section>
+
+<section>
+  <p class="mono-eyebrow">// RESPONSIVE</p>
+  <h2>Responsive Behavior</h2>
+  <p class="lead">Eight breakpoints. Display headlines step from 112px down to 64px on the smallest viewport; pricing collapses 4-up → 2-up → 1-up; section polarity flips are preserved at every breakpoint.</p>
+  <table class="breakpoint-table">
+    <thead><tr><th>Breakpoint</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>2xl</td><td>1640px</td><td>Full editorial container; pricing 4-tier wide.</td></tr>
+      <tr><td>xl</td><td>1440px</td><td>Display-mega may step down to 96px.</td></tr>
+      <tr><td>lg</td><td>1200px</td><td>Default desktop reading view.</td></tr>
+      <tr><td>md</td><td>1100px</td><td>Pricing 4-up but tighter.</td></tr>
+      <tr><td>sm</td><td>960px</td><td>Pricing collapses to 2 columns; nav hamburger.</td></tr>
+      <tr><td>xs</td><td>768px</td><td>Section padding drops; display sizes step down.</td></tr>
+      <tr><td>xxs</td><td>480px</td><td>Single-column reading; display-mega → 64px.</td></tr>
+      <tr><td>xxxs</td><td>376px</td><td>Footer collapses to 2-column; brand-dot 10px.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+
+
+
+
+</div>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

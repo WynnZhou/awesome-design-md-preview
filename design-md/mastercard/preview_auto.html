@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-native="light" data-theme="light"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mastercard — Design System Preview</title>
+  <link rel="stylesheet" href="preview_auto.css">
+</head>
+<body>
+
+<div class="page">
+  <header class="topbar">
+    <div><div class="topbar-name">Mastercard</div><div class="topbar-meta">design tokens · 16 colors · 9 type styles · 10 components</div></div>
+    <nav class="topbar-links"><a href="#colors">Colors</a><a href="#typography">Type</a><a href="#buttons">Buttons</a><a href="#badges">Badges</a><a href="#cards">Cards</a><a href="#nav">Tabs</a><a href="#spacing">Spacing</a><a href="#radius">Radius</a><a href="#elevation">Depth</a><a href="#reference">Reference</a></nav>
+  </header>
+  <section class="hero">
+    <h1>Mastercard</h1>
+    <p class="lede">Mastercard&#x27;s experience reads like a warm, editorial magazine built from soft stone and signal orange. The canvas is a muted putty-cream (`#F3F0EE`) — not white, not gray, but a color that feels like the paper of a premium annual report. On top of that canvas, everything that matters is shaped like a stadium, a pill, or a perfect circle. The dominant visual gesture is the **oversized radius**: heroes carry 40-point corners, cards go fully pill-shaped, service images are cropped into circular orbits, and buttons either complete the pill or fit snugly at 20 points. There are almost no sharp corners anywhere on the page.</p>
+    <div class="meta">
+      <span class="chip solid">#EB001B</span>
+      <span class="chip">system-ui</span>
+      <span class="chip">light canvas</span>
+      <span class="chip">source: DESIGN.md (markdown)</span>
+    </div>
+  </section>
+  <section id="colors">
+    <div class="sec-head"><h2>Color Palette</h2><span class="count">16 tokens</span></div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-mastercard-red">#EB001B</div><div class="info"><div class="nm">Mastercard Red</div><div class="hx">mastercard-red</div><div class="hx dim">The left circle of the Mastercard mark — used only in the brand logo, </div></div></div>
+      <div class="swatch"><div class="fill sw-mastercard-yellow">#F79E1B</div><div class="info"><div class="nm">Mastercard Yellow</div><div class="hx">mastercard-yellow</div><div class="hx dim">The right circle of the Mastercard mark — used only in the brand logo,</div></div></div>
+      <div class="swatch"><div class="fill sw-ink-black">#141413</div><div class="info"><div class="nm">Ink Black</div><div class="hx">ink-black</div><div class="hx dim">The warm near-black used for primary CTAs, headline text on cream, and</div></div></div>
+    </div>
+    <div class="group-title">Secondary &amp; Accent</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-signal-orange">#CF4500</div><div class="info"><div class="nm">Signal Orange</div><div class="hx">signal-orange</div><div class="hx dim">The burnt/rust CTA orange used on consent actions and eyebrow dots. De</div></div></div>
+      <div class="swatch"><div class="fill sw-light-signal-orange">#F37338</div><div class="info"><div class="nm">Light Signal Orange</div><div class="hx">light-signal-orange</div><div class="hx dim">A lighter carroty orange used for carousel active indicators and decor</div></div></div>
+      <div class="swatch"><div class="fill sw-clay-brown">#9A3A0A</div><div class="info"><div class="nm">Clay Brown</div><div class="hx">clay-brown</div><div class="hx dim">The deep rust used for secondary link-style buttons (e.g., cookie deta</div></div></div>
+    </div>
+    <div class="group-title">Surface &amp; Background</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-canvas-cream">#F3F0EE</div><div class="info"><div class="nm">Canvas Cream</div><div class="hx">canvas-cream</div><div class="hx dim">The page canvas. Warm, putty-toned, the default body background. All e</div></div></div>
+      <div class="swatch"><div class="fill sw-lifted-cream">#FCFBFA</div><div class="info"><div class="nm">Lifted Cream</div><div class="hx">lifted-cream</div><div class="hx dim">One step lighter than canvas — used for nested &quot;raised&quot; sections that </div></div></div>
+      <div class="swatch"><div class="fill sw-white">#FFFFFF</div><div class="info"><div class="nm">White</div><div class="hx">white</div><div class="hx dim">Reserved for the floating navigation pill, modal cards, secondary butt</div></div></div>
+      <div class="swatch"><div class="fill sw-soft-bone">#F4F4F4</div><div class="info"><div class="nm">Soft Bone</div><div class="hx">soft-bone</div><div class="hx dim">A cool-gray alternative surface used inside a handful of component sub</div></div></div>
+    </div>
+    <div class="group-title">Neutrals &amp; Text</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-ink-black">#141413</div><div class="info"><div class="nm">Ink Black</div><div class="hx">ink-black</div><div class="hx dim">Primary headline and body text color.</div></div></div>
+      <div class="swatch"><div class="fill sw-charcoal">#262627</div><div class="info"><div class="nm">Charcoal</div><div class="hx">charcoal</div><div class="hx dim">A slightly softer black used for some text alternates.</div></div></div>
+      <div class="swatch"><div class="fill sw-slate-gray">#696969</div><div class="info"><div class="nm">Slate Gray</div><div class="hx">slate-gray</div><div class="hx dim">Muted secondary text — eyebrow label alternative, disabled states, &quot;Pr</div></div></div>
+      <div class="swatch"><div class="fill sw-granite">#555555</div><div class="info"><div class="nm">Granite</div><div class="hx">granite</div><div class="hx dim">and **Graphite** (#565656): Deeper gray for inline body accents and li</div></div></div>
+      <div class="swatch"><div class="fill sw-dust-taupe">#D1CDC7</div><div class="info"><div class="nm">Dust Taupe</div><div class="hx">dust-taupe</div><div class="hx dim">Very muted cream-gray used for disabled or &quot;whisper&quot; text (e.g., place</div></div></div>
+    </div>
+    <div class="group-title">Semantic &amp; Accent</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-link-blue">#3860BE</div><div class="info"><div class="nm">Link Blue</div><div class="hx">link-blue</div><div class="hx dim">A deep, slightly dusty blue used for inline links and informational ca</div></div></div>
+    </div>
+  </section>
+  <section id="typography">
+    <div class="sec-head"><h2>Typography Scale</h2><span class="count">9 styles</span></div>
+    <div class="type-row">
+      <div class="type-meta"><b>H1 (hero)</b>64px / 500<br>lh 1.00 · ls -1.28px (-2%)<br></div>
+      <div class="type-sample type-h1-hero">H1 (hero) — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>H2 (section)</b>36px / 500<br>lh 1.22 · ls -0.72px (-2%)<br></div>
+      <div class="type-sample type-h2-section">H2 (section) — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>H3 (card title)</b>24px / 500<br>lh 1.20 · ls -0.48px (-2%)<br></div>
+      <div class="type-sample type-h3-card-title">H3 (card title) — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>H4 (subhead)</b>14px / 700<br>lh 1.30 · ls normal<br></div>
+      <div class="type-sample type-h4-subhead">H4 (subhead) — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Eyebrow (H5)</b>14px / 700<br>lh 1.00 · ls 0.56px (+4%)<br></div>
+      <div class="type-sample type-eyebrow-h5">Eyebrow (H5) — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Body paragraph</b>16px / 450<br>lh 1.40 · ls normal<br></div>
+      <div class="type-sample type-body-paragraph">Body paragraph — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Nav link / Button label</b>16px / 500<br>lh 1.00 · ls -0.48px (-3%)<br></div>
+      <div class="type-sample type-nav-link-button-label">Nav link / Button label — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Footer link</b>14px / 450<br>lh 1.43 · ls normal<br></div>
+      <div class="type-sample type-footer-link">Footer link — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Footer column header</b>14px / 700<br>lh 1.00 · ls 0.56px (+4%)<br></div>
+      <div class="type-sample type-footer-column-header">Footer column header — The quick brown fox jumps over the lazy dog</div>
+    </div>
+  </section>
+  <section id="buttons">
+    <div class="sec-head"><h2>Button Variants</h2><span class="count">1</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-satellite-circular-micro-cta">Satellite Circular Micro Cta</div><button class="demo-el spec-buttons-satellite-circular-micro-cta" type="button">Button</button></div>
+    </div></div>
+  </section>
+  <section id="badges">
+    <div class="sec-head"><h2>Badges & Pills</h2><span class="count">5</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-primary-ink-pill">Primary Ink Pill</div><div class="demo-el spec-buttons-primary-ink-pill">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-secondary-outlined-pill">Secondary Outlined Pill</div><div class="demo-el spec-buttons-secondary-outlined-pill">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-consent-signal-orange-pill">Consent Signal Orange Pill</div><div class="demo-el spec-buttons-consent-signal-orange-pill">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="cards-containers-pill-carousel-card">Containers Pill Carousel Card</div><div class="demo-el spec-cards-containers-pill-carousel-card">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="navigation-floating-nav-pill-desktop">Navigation Floating Nav Pill Desktop</div><div class="demo-el spec-navigation-floating-nav-pill-desktop">Badge</div></div>
+    </div></div>
+  </section>
+  <section id="cards">
+    <div class="sec-head"><h2>Cards & Containers</h2><span class="count">3</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="cards-containers-hero-media-frame-stadium">Containers Hero Media Frame Stadium</div><div class="demo-el spec-cards-containers-hero-media-frame-stadium"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="cards-containers-service-solution-portrait-card">Containers Service Solution Portrait Card</div><div class="demo-el demo-el-ghost spec-cards-containers-service-solution-portrait-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="cards-containers-pill-carousel-card">Containers Pill Carousel Card</div><div class="demo-el spec-cards-containers-pill-carousel-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+    </div></div>
+  </section>
+  <section id="nav">
+    <div class="sec-head"><h2>Navigation & Tabs</h2><span class="count">3</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="inputs-forms-country-language-selector-footer">Forms Country Language Selector Footer</div><div class="demo-el spec-inputs-forms-country-language-selector-footer"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="navigation-floating-nav-pill-desktop">Navigation Floating Nav Pill Desktop</div><div class="demo-el spec-navigation-floating-nav-pill-desktop"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="footer">Footer</div><div class="demo-el spec-footer"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+    </div></div>
+  </section>
+  <section id="spacing">
+    <div class="sec-head"><h2>Spacing Scale</h2><span class="count">2 steps</span></div>
+    <div class="bar-row"><span>base-unit</span><span class="val">8px</span><span class="bar bar-base-unit"></span></div>
+    <div class="bar-row"><span>s0-8-16-24-32-48-64-96-128-powers-of-8</span><span class="val">**: 8 / 16 / 24 / 32 / 48 / 64 / 96 / 128 (powers of 8)</span><span class="bar bar-s0-8-16-24-32-48-64-96-128-powers-of-8"></span></div>
+  </section>
+  <section id="radius">
+    <div class="sec-head"><h2>Border Radius Scale</h2><span class="count">6 steps</span></div>
+    <div class="radius-grid">
+      <div class="radius-cell"><div class="box rd-radius-6px"></div><div class="lb">radius-6px · 6px</div></div>
+      <div class="radius-cell"><div class="box rd-radius-20px"></div><div class="lb">radius-20px · 20px</div></div>
+      <div class="radius-cell"><div class="box rd-radius-24px"></div><div class="lb">radius-24px · 24px</div></div>
+      <div class="radius-cell"><div class="box rd-radius-40px"></div><div class="lb">radius-40px · 40px</div></div>
+      <div class="radius-cell"><div class="box rd-radius-50"></div><div class="lb">radius-50 · 50%</div></div>
+      <div class="radius-cell"><div class="box rd-radius-99px"></div><div class="lb">radius-99px · 99px</div></div>
+    </div>
+  </section>
+  <section id="elevation">
+    <div class="sec-head"><h2>Elevation &amp; Depth</h2><span class="count">4</span></div>
+    <div class="elev-grid">
+      <div class="elev-cell elev-0"><div class="lb">0</div><div class="vl">No shadow</div></div>
+      <div class="elev-cell elev-1"><div class="lb">1</div><div class="vl">rgba(0, 0, 0, 0.04) 0px 4px 24px 0px</div></div>
+      <div class="elev-cell elev-2"><div class="lb">2</div><div class="vl">rgba(0, 0, 0, 0.08) 0px 24px 48px 0px</div></div>
+      <div class="elev-cell elev-3"><div class="lb">3</div><div class="vl">rgba(0, 0, 0, 0.25) 0px 70px 110px 0px</div></div>
+    </div>
+  </section>
+  <section id="guidelines">
+    <div class="sec-head"><h2>Do&rsquo;s &amp; Don&rsquo;ts</h2></div>
+    <div class="guide">
+      <ul class="yes">
+        <li>Use Canvas Cream (#F3F0EE) as the default body background — never pure white</li>
+        <li>Mask service/feature imagery as perfect circles, not rectangles or rounded rectangles</li>
+        <li>Attach a white satellite CTA to the bottom-right of each circular portrait</li>
+        <li>Set headlines in MarkForMC weight 500 with -2% letter-spacing</li>
+        <li>Use weight 450 (not 400) for body paragraphs</li>
+        <li>Keep primary CTAs as Ink Black pills (20px radius) with cream text</li>
+      </ul>
+      <ul class="no">
+        <li>Don&#x27;t use pure white as a page background — it breaks the warm editorial tone</li>
+        <li>Don&#x27;t round image frames at 8–16px — Mastercard either uses full-pill, 40px, or full-circle. In-between radii look generic</li>
+        <li>Don&#x27;t use Signal Orange for marketing CTAs — it reads as cookie-consent orange and dilutes the legal color signal</li>
+        <li>Don&#x27;t mix typefaces — no serif accent, no script, no secondary display font</li>
+        <li>Don&#x27;t crowd the nav with more than six top-level links — the pill is meant to feel airy</li>
+        <li>Don&#x27;t drop hard shadows — all elevation should use 48px+ spread and ≤10% opacity</li>
+      </ul>
+    </div>
+  </section>
+  <section id="reference">
+    <div class="sec-head"><h2>Component Reference</h2><span class="count">10</span></div>
+    <table class="ref"><thead><tr><th>Component</th><th>Resolved properties</th></tr></thead><tbody>
+      <tr><td class="k">buttons-primary-ink-pill</td><td>Background: Ink Black; Border: 1.5px solid Ink Black; Radius: 20px; Padding: 6px 24px; Active / pressed: subtle inward-shrink</td></tr>
+      <tr><td class="k">buttons-secondary-outlined-pill</td><td>Background: White; Text: Ink Black; Border: 1.5px solid Ink Black; Radius: 20px; Padding: 6px 24px; Active / pressed: subtle compression</td></tr>
+      <tr><td class="k">buttons-consent-signal-orange-pill</td><td>Background: Signal Orange; Text: White; Border: 0; Radius: 24px; Padding: 1px 30px</td></tr>
+      <tr><td class="k">buttons-satellite-circular-micro-cta</td><td>Background: transparent; Border: 1px solid Ink Black; Radius: 50%; Shadow: none</td></tr>
+      <tr><td class="k">cards-containers-hero-media-frame-stadium</td><td>Background: Dark video; Radius: 40px all corners; Shadow: none</td></tr>
+      <tr><td class="k">cards-containers-service-solution-portrait-card</td><td>Shape: Perfect circle</td></tr>
+      <tr><td class="k">cards-containers-pill-carousel-card</td><td>Radius: 1000px; Large inline CTA inside: Ink Pill button, oversized</td></tr>
+      <tr><td class="k">inputs-forms-country-language-selector-footer</td><td>Background: Ink Black; Text: White; Border: 1px solid rgba; Radius: 999px</td></tr>
+      <tr><td class="k">navigation-floating-nav-pill-desktop</td><td>Radius: 999px / 1000px; Padding: 16px 40px internal</td></tr>
+      <tr><td class="k">footer</td><td>Background: Ink Black; Text: White</td></tr>
+    </tbody></table>
+  </section>
+  <footer><span>Mastercard — design tokens extracted from DESIGN.md</span><span>awesome-design-md / getdesign.md</span></footer>
+</div>
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script>
+</body></html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Design System Analysis of Discord</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #0b0b0c; }</style><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+</head>
+<body>
+<div class="theme-layer" data-when="light">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>awesome-design-md</a>
+  </div>
+  <ul class="nav-links"><li>Products</li><li>Solutions</li><li>Customers</li><li>Pricing</li></ul>
+  <button class="nav-cta">Open Discord</button>
+</nav>
+<div class="hero"><div class="hero-content">
+  <h1>Design System Analysis of Discord</h1>
+  <p>A loud, playful gaming-native system on a deep-indigo canvas lit by Blurple, electric green, and vibrant magenta gradients. Heavy all-caps ABC Ginto Nord display shouts over generously rounded media and full-bleed colour bands.</p>
+  <div class="hero-actions"><button class="btn-primary">Open Discord</button><button class="btn-secondary">Download</button></div>
+</div></div>
+<section><span class="section-eyebrow">01 — Foundations</span><h2 class="section-heading">Color Palette</h2><div class="palette-grid"><div class="swatch"><div class="swatch-fill" style="background:#5865f2;"></div><div class="swatch-meta"><p class="swatch-name">Blurple</p><p class="swatch-hex">#5865f2</p><p class="swatch-role">Primary CTA, bands, brand mark</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#35ed7e;"></div><div class="swatch-meta"><p class="swatch-name">Electric Green</p><p class="swatch-hex">#35ed7e</p><p class="swatch-role">Highest-intent CTA (black label)</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#ec48bd;"></div><div class="swatch-meta"><p class="swatch-name">Vibrant Magenta</p><p class="swatch-hex">#ec48bd</p><p class="swatch-role">Gradient feature panels, step cards, badges</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#00b0f4;"></div><div class="swatch-meta"><p class="swatch-name">Link Cyan</p><p class="swatch-hex">#00b0f4</p><p class="swatch-role">Inline text links on dark</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#0a0d3a;"></div><div class="swatch-meta"><p class="swatch-name">Indigo Canvas</p><p class="swatch-hex">#0a0d3a</p><p class="swatch-role">Deep-indigo page base</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#1e2353;"></div><div class="swatch-meta"><p class="swatch-name">Raised Indigo</p><p class="swatch-hex">#1e2353</p><p class="swatch-role">Dark feature cards, pricing, rows</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#23272a;"></div><div class="swatch-meta"><p class="swatch-name">Onyx</p><p class="swatch-hex">#23272a</p><p class="swatch-role">Classic dark-UI surface</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#000000;"></div><div class="swatch-meta"><p class="swatch-name">Black</p><p class="swatch-hex">#000000</p><p class="swatch-role">Full-black showcase bands</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#ffffff;"></div><div class="swatch-meta"><p class="swatch-name">White</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Display + body text on dark</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#333333;"></div><div class="swatch-meta"><p class="swatch-name">Muted Ink</p><p class="swatch-hex">#333333</p><p class="swatch-role">Secondary text on light surfaces</p></div></div></div></section>
+<section><span class="section-eyebrow">02 — Foundations</span><h2 class="section-heading">Typography</h2><p style="color:#333333;margin:-16px 0 28px;max-width:720px;">ggsans — ABC Ginto Nord (heavy display) paired with ggsans / ABC Ginto for body; Inter shown as the open-source substitute. Headlines shout in 700-800 all-caps; body drops to 400-500.</p><div class="type-row"><div class="type-meta">display-xl<br>82px / 800 / 1.0 / 0</div><div style="font-family:" abc="" ginto="" nord","inter",sans-serif;font-size:82px;font-weight:800;line-height:1.0;letter-spacing:0;color:#0a0d3a;"="">DISCORD</div></div>
+<div class="type-row"><div class="type-meta">display-lg<br>62px / 800 / 1.05 / 0</div><div style="font-family:" abc="" ginto="" nord","inter",sans-serif;font-size:62px;font-weight:800;line-height:1.05;letter-spacing:0;color:#0a0d3a;"="">DISCORD</div></div>
+<div class="type-row"><div class="type-meta">display-md<br>56px / 700 / 1.05 / 0</div><div style="font-family:" abc="" ginto="" nord","inter",sans-serif;font-size:56px;font-weight:700;line-height:1.05;letter-spacing:0;color:#0a0d3a;"="">DISCORD</div></div>
+<div class="type-row"><div class="type-meta">heading-lg<br>48px / 700 / 1.1 / 0</div><div style="font-family:" abc="" ginto="" nord","inter",sans-serif;font-size:48px;font-weight:700;line-height:1.1;letter-spacing:0;color:#0a0d3a;"="">DISCORD</div></div>
+<div class="type-row"><div class="type-meta">heading-sm<br>22px / 700 / 1.2 / 0</div><div style="font-family:" abc="" ginto="" nord","inter",sans-serif;font-size:22px;font-weight:700;line-height:1.2;letter-spacing:0;color:#0a0d3a;"="">Group chat</div></div>
+<div class="type-row"><div class="type-meta">body-lg<br>20px / 500 / 1.4 / 0</div><div style="font-family:&#39;ggsans&#39;,&#39;Inter&#39;,sans-serif;font-size:20px;font-weight:500;line-height:1.4;letter-spacing:0;color:#0a0d3a;">Talk, play, hang out</div></div>
+<div class="type-row"><div class="type-meta">link-lg<br>18px / 500 / 1.4 / 0</div><div style="font-family:&#39;ggsans&#39;,&#39;Inter&#39;,sans-serif;font-size:18px;font-weight:500;line-height:1.4;letter-spacing:0;color:#0a0d3a;">Talk, play, hang out</div></div>
+<div class="type-row"><div class="type-meta">body<br>16px / 400 / 1.5 / 0</div><div style="font-family:&#39;ggsans&#39;,&#39;Inter&#39;,sans-serif;font-size:16px;font-weight:400;line-height:1.5;letter-spacing:0;color:#0a0d3a;">Talk, play, hang out</div></div>
+<div class="type-row"><div class="type-meta">link<br>16px / 500 / 1.4 / 0</div><div style="font-family:&#39;ggsans&#39;,&#39;Inter&#39;,sans-serif;font-size:16px;font-weight:500;line-height:1.4;letter-spacing:0;color:#0a0d3a;">Talk, play, hang out</div></div>
+<div class="type-row"><div class="type-meta">link-sm<br>14px / 500 / 1.4 / 0</div><div style="font-family:&#39;ggsans&#39;,&#39;Inter&#39;,sans-serif;font-size:14px;font-weight:500;line-height:1.4;letter-spacing:0;color:#0a0d3a;">Talk, play, hang out</div></div></section>
+<section><span class="section-eyebrow">03 — Components</span><h2 class="section-heading">Button Variants</h2><div class="button-grid">
+<div class="demo-card"><span class="label">button-primary · Blurple pill</span><button class="btn-primary" style="height:48px;">Open Discord</button><p style="font-size:12px;color:#333333;margin:12px 0 0;">Blurple fill, white label, 12px radius — the everyday CTA.</p></div>
+<div class="demo-card"><span class="label">button-green · high-intent</span><button class="btn-primary" style="height:48px;background:#35ed7e;border-color:#35ed7e;color:#000000;">Download</button><p style="font-size:12px;color:#333333;margin:12px 0 0;">Electric green, black label — the single highest-intent action.</p></div>
+<div class="demo-card"><span class="label">button-white</span><button class="btn-primary" style="height:44px;background:#ffffff;border-color:#ffffff;color:#000000;border-radius:16px;">Login</button></div>
+<div class="demo-card"><span class="label">button-ghost · translucent</span><button class="btn-secondary" style="height:44px;background:#1e2353;color:#ffffff;border-color:#1e2353;border-radius:16px;">Learn more</button></div>
+<div class="demo-card"><span class="label">badge</span><span style="display:inline-block;background:#ec48bd;color:#ffffff;border-radius:16px;padding:4px 12px;font-size:14px;font-weight:600;">New</span></div>
+</div></section>
+<section><span class="section-eyebrow">04 — Components</span><h2 class="section-heading">Cards &amp; Surfaces</h2><div class="card-grid">
+<div class="feature-card" style="background:#ec48bd;color:#fff;border:none;border-radius:40px;"><h4 style="color:#fff;">Gradient feature panel</h4><p style="color:rgba(255,255,255,0.85);">Vibrant magenta panel framing a product mockup or 3D prop — the playful signature surface.</p></div>
+<div class="feature-card" style="background:#1e2353;color:#fff;border:none;border-radius:40px;"><h4 style="color:#fff;">Dark feature card</h4><p style="color:rgba(255,255,255,0.8);">Raised-indigo card holding product screenshots and chat mockups.</p></div>
+<div class="feature-card" style="background:#5865f2;color:#fff;border:none;border-radius:40px;"><h4 style="color:#fff;">Blurple stat / CTA band</h4><p style="color:rgba(255,255,255,0.9);">Full-bleed Blurple field for big-number stats and CTA bands.</p></div>
+</div></section>
+<section><span class="section-eyebrow">05 — Components</span><h2 class="section-heading">Form Elements</h2><div class="form-grid">
+<div class="demo-card"><span class="label">text-input · 16px radius</span><input class="ex-input-demo" style="border-radius:16px;" placeholder="name@email.com"></div>
+<div class="demo-card"><span class="label">textarea</span><textarea class="ex-input-demo" style="border-radius:16px;" rows="3" placeholder="Say something"></textarea></div>
+</div></section>
+<section><span class="section-eyebrow">06 — Foundations</span><h2 class="section-heading">Spacing Scale</h2><p style="color:#333333;margin:-16px 0 28px;">8px base unit. Card interiors run xl (24px) to section (40px); buttons pad sm-lg vertical by xl horizontal.</p><div class="spacing-row"><div><div class="spacing-box" style="width:4px;"></div><div class="spacing-label">xxs<br>4</div></div>
+<div><div class="spacing-box" style="width:8px;"></div><div class="spacing-label">xs<br>8</div></div>
+<div><div class="spacing-box" style="width:12px;"></div><div class="spacing-label">sm<br>12</div></div>
+<div><div class="spacing-box" style="width:16px;"></div><div class="spacing-label">md<br>16</div></div>
+<div><div class="spacing-box" style="width:20px;"></div><div class="spacing-label">lg<br>20</div></div>
+<div><div class="spacing-box" style="width:24px;"></div><div class="spacing-label">xl<br>24</div></div>
+<div><div class="spacing-box" style="width:32px;"></div><div class="spacing-label">xxl<br>32</div></div>
+<div><div class="spacing-box" style="width:40px;"></div><div class="spacing-label">section<br>40</div></div></div></section>
+<section><span class="section-eyebrow">07 — Foundations</span><h2 class="section-heading">Border Radius</h2><p style="color:#333333;margin:-16px 0 28px;">Soft throughout: 12px on CTAs, 16px on cards and media, 40px+ on gradient feature panels, up to jumbo 120px on signature shapes.</p><div class="radius-row"><div><div class="radius-box" style="border-radius:6px;">6</div><div class="radius-label">xs<br>6</div></div>
+<div><div class="radius-box" style="border-radius:12px;">12</div><div class="radius-label">sm<br>12</div></div>
+<div><div class="radius-box" style="border-radius:14px;">14</div><div class="radius-label">md<br>14</div></div>
+<div><div class="radius-box" style="border-radius:16px;">16</div><div class="radius-label">lg<br>16</div></div>
+<div><div class="radius-box" style="border-radius:40px;">40</div><div class="radius-label">xl<br>40</div></div>
+<div><div class="radius-box" style="border-radius:50px;">50</div><div class="radius-label">pill<br>50</div></div>
+<div><div class="radius-box" style="border-radius:120px;">120</div><div class="radius-label">jumbo<br>120</div></div>
+<div><div class="radius-box" style="border-radius:9999px;">999</div><div class="radius-label">full<br>9999</div></div></div></section>
+<section><span class="section-eyebrow">08 — Foundations</span><h2 class="section-heading">Elevation &amp; Depth</h2><div class="elevation-grid">
+<div class="elev-card elev-1" style="box-shadow:none;">Level 0 — flat. Colour field, gradient, and large radius do the work.</div>
+<div class="elev-card elev-2">Level 1 — soft float. Wide violet-tinted glow (0 3px 68px rgba(69,42,124,0.1)) lifts product media.</div>
+</div></section>
+<section><span class="section-eyebrow">09 — Responsive</span><h2 class="section-heading">Responsive Behavior</h2>
+  <table class="responsive-table"><thead><tr><th>Name</th><th>Width</th><th>Key changes</th></tr></thead><tbody>
+  <tr><td>Mobile</td><td>&lt; 768px</td><td>Single column; nav → hamburger; CTAs + pricing tiers stack full-width</td></tr>
+  <tr><td>Tablet</td><td>768–1023px</td><td>Grids collapse toward 2-up / 1-up; nav condenses</td></tr>
+  <tr><td>Laptop</td><td>1024–1279px</td><td>Tightened gutters; 3-col grids retained</td></tr>
+  <tr><td>Desktop</td><td>≥ 1280px</td><td>Full multi-column grids; centred ~1200px column</td></tr></tbody></table>
+  <div class="device-ladder">
+    <div class="device-box" style="width:60px;height:110px;">375</div>
+    <div class="device-box" style="width:120px;height:110px;">768</div>
+    <div class="device-box" style="width:170px;height:110px;">1024</div>
+    <div class="device-box" style="width:220px;height:110px;">1280</div>
+    <div class="device-box" style="width:280px;height:110px;">1440</div>
+  </div>
+  <p style="color:#333333;margin-top:24px;font-size:14px;"><strong style="color:#0a0d3a;">Touch targets:</strong> button-primary and button-green clear 44x44 WCAG-AAA via their vertical padding. <strong style="color:#0a0d3a;">Collapsing:</strong> nav collapses to logo plus hamburger below the tablet breakpoint (Download CTA stays); multi-column pricing/feature grids reflow to a single stacked column; section padding compresses toward 20-32px; gradient cards and bands span full width; display type scales down while keeping weight 700-800.</p>
+</section>
+<!-- ============================== EXAMPLES (kit-mirror) ==============================
+ *
+ * 9 product-UI patterns themed with the brand's tokens via the alias bridge in
+ * preview-examples-block.css.
+ *
+ * Paste this verbatim into preview.html and preview-dark.html, immediately before
+ * the closing <footer>. Both light and dark variants use IDENTICAL HTML — only the
+ * `:root { ... }` alias map differs (see preview-design.md).
+ *
+ * Hardcoded radii (4px / 6px / 9999px) intentionally inherited from the
+ * /generate-kit base template. Hardcoded scrim opacity (rgba 26,24,22,0.5) is the
+ * kit default; do not tokenize without parallel update.
+ * ============================================================================ -->
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Pricing Tiers</h2>
+    <p class="ex-intro">Three-up plan grid with the middle tier polarity-flipped. Mono uppercase tier name, display numeral price, hairline-divided feature list.</p>
+    <div class="ex-grid-pricing">
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">Starter</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$9</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For individuals getting started.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Core features</li>
+          <li><span class="ex-bullet"></span>Up to 3 projects</li>
+          <li><span class="ex-bullet"></span>Community support</li>
+        </ul>
+        <button class="ex-tier-cta ink">Get started</button>
+      </div>
+      <div class="ex-tier-card dark">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span class="ex-mono" style="color:rgba(255,255,255,0.55);">Pro</span>
+          <span style="font-family:var(--font-mono); font-size:10px; letter-spacing: var(--ex-letter-eyebrow, 0); text-transform:uppercase; color:var(--color-accent); display:inline-flex; align-items:center; gap:6px;"><span style="width:6px; height:6px; background:var(--color-accent); border-radius:9999px;"></span>Most popular</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$29</span><span style="font-family:var(--font-mono); font-size:12px; color:rgba(255,255,255,0.55);">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:rgba(255,255,255,0.72); margin:0;">For teams ready to ship.</p>
+        <ul class="ex-features dark">
+          <li><span class="ex-bullet"></span>Everything in Starter</li>
+          <li><span class="ex-bullet"></span>Unlimited projects</li>
+          <li><span class="ex-bullet"></span>Email support</li>
+          <li><span class="ex-bullet"></span>Advanced analytics</li>
+        </ul>
+        <button class="ex-tier-cta invert">Start free trial</button>
+      </div>
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">Team</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$99</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For organizations operating at scale.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Everything in Pro</li>
+          <li><span class="ex-bullet"></span>SSO + audit log</li>
+          <li><span class="ex-bullet"></span>Priority support</li>
+          <li><span class="ex-bullet"></span>SLA &amp; onboarding</li>
+        </ul>
+        <button class="ex-tier-cta ink">Talk to sales</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+</div>
+<div class="theme-layer" data-when="dark">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>awesome-design-md</a>
+  </div>
+  <ul class="nav-links"><li>Products</li><li>Solutions</li><li>Customers</li><li>Pricing</li></ul>
+  <button class="nav-cta">Open Discord</button>
+</nav>
+<div class="hero"><div class="hero-content">
+  <h1>Design System Analysis of Discord</h1>
+  <p>Discord's native dark system — a deep-indigo canvas lit by an animated Blurple-to-magenta gradient mesh, heavy all-caps ABC Ginto Nord display, electric-green CTAs, and generously rounded media.</p>
+  <div class="hero-actions"><button class="btn-primary">Open Discord</button><button class="btn-secondary">Download</button></div>
+</div></div>
+<section><span class="section-eyebrow">01 — Foundations</span><h2 class="section-heading">Color Palette</h2><div class="palette-grid"><div class="swatch"><div class="swatch-fill" style="background:#5865f2;"></div><div class="swatch-meta"><p class="swatch-name">Blurple</p><p class="swatch-hex">#5865f2</p><p class="swatch-role">Primary CTA, bands, brand mark</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#35ed7e;"></div><div class="swatch-meta"><p class="swatch-name">Electric Green</p><p class="swatch-hex">#35ed7e</p><p class="swatch-role">Highest-intent CTA (black label)</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#ec48bd;"></div><div class="swatch-meta"><p class="swatch-name">Vibrant Magenta</p><p class="swatch-hex">#ec48bd</p><p class="swatch-role">Gradient feature panels, step cards, badges</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#00b0f4;"></div><div class="swatch-meta"><p class="swatch-name">Link Cyan</p><p class="swatch-hex">#00b0f4</p><p class="swatch-role">Inline text links on dark</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#0a0d3a;"></div><div class="swatch-meta"><p class="swatch-name">Indigo Canvas</p><p class="swatch-hex">#0a0d3a</p><p class="swatch-role">Deep-indigo page base</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#1e2353;"></div><div class="swatch-meta"><p class="swatch-name">Raised Indigo</p><p class="swatch-hex">#1e2353</p><p class="swatch-role">Dark feature cards, pricing, rows</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#23272a;"></div><div class="swatch-meta"><p class="swatch-name">Onyx</p><p class="swatch-hex">#23272a</p><p class="swatch-role">Classic dark-UI surface</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#000000;"></div><div class="swatch-meta"><p class="swatch-name">Black</p><p class="swatch-hex">#000000</p><p class="swatch-role">Full-black showcase bands</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#ffffff;"></div><div class="swatch-meta"><p class="swatch-name">White</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Display + body text on dark</p></div></div>
+<div class="swatch"><div class="swatch-fill" style="background:#333333;"></div><div class="swatch-meta"><p class="swatch-name">Muted Ink</p><p class="swatch-hex">#333333</p><p class="swatch-role">Secondary text on light surfaces</p></div></div></div></section>
+<section><span class="section-eyebrow">02 — Foundations</span><h2 class="section-heading">Typography</h2><p style="color:#a9adc9;margin:-16px 0 28px;max-width:720px;">ggsans — ABC Ginto Nord (heavy display) paired with ggsans / ABC Ginto for body; Inter shown as the open-source substitute. Headlines shout in 700-800 all-caps; body drops to 400-500.</p><div class="type-row"><div class="type-meta">display-xl<br>82px / 800 / 1.0 / 0</div><div style="font-family:" abc="" ginto="" nord","inter",sans-serif;font-size:82px;font-weight:800;line-height:1.0;letter-spacing:0;color:#ffffff;"="">DISCORD</div></div>
+<div class="type-row"><div class="type-meta">display-lg<br>62px / 800 / 1.05 / 0</div><div style="font-family:" abc="" ginto="" nord","inter",sans-serif;font-size:62px;font-weight:800;line-height:1.05;letter-spacing:0;color:#ffffff;"="">DISCORD</div></div>
+<div class="type-row"><div class="type-meta">display-md<br>56px / 700 / 1.05 / 0</div><div style="font-family:" abc="" ginto="" nord","inter",sans-serif;font-size:56px;font-weight:700;line-height:1.05;letter-spacing:0;color:#ffffff;"="">DISCORD</div></div>
+<div class="type-row"><div class="type-meta">heading-lg<br>48px / 700 / 1.1 / 0</div><div style="font-family:" abc="" ginto="" nord","inter",sans-serif;font-size:48px;font-weight:700;line-height:1.1;letter-spacing:0;color:#ffffff;"="">DISCORD</div></div>
+<div class="type-row"><div class="type-meta">heading-sm<br>22px / 700 / 1.2 / 0</div><div style="font-family:" abc="" ginto="" nord","inter",sans-serif;font-size:22px;font-weight:700;line-height:1.2;letter-spacing:0;color:#ffffff;"="">Group chat</div></div>
+<div class="type-row"><div class="type-meta">body-lg<br>20px / 500 / 1.4 / 0</div><div style="font-family:&#39;ggsans&#39;,&#39;Inter&#39;,sans-serif;font-size:20px;font-weight:500;line-height:1.4;letter-spacing:0;color:#ffffff;">Talk, play, hang out</div></div>
+<div class="type-row"><div class="type-meta">link-lg<br>18px / 500 / 1.4 / 0</div><div style="font-family:&#39;ggsans&#39;,&#39;Inter&#39;,sans-serif;font-size:18px;font-weight:500;line-height:1.4;letter-spacing:0;color:#ffffff;">Talk, play, hang out</div></div>
+<div class="type-row"><div class="type-meta">body<br>16px / 400 / 1.5 / 0</div><div style="font-family:&#39;ggsans&#39;,&#39;Inter&#39;,sans-serif;font-size:16px;font-weight:400;line-height:1.5;letter-spacing:0;color:#ffffff;">Talk, play, hang out</div></div>
+<div class="type-row"><div class="type-meta">link<br>16px / 500 / 1.4 / 0</div><div style="font-family:&#39;ggsans&#39;,&#39;Inter&#39;,sans-serif;font-size:16px;font-weight:500;line-height:1.4;letter-spacing:0;color:#ffffff;">Talk, play, hang out</div></div>
+<div class="type-row"><div class="type-meta">link-sm<br>14px / 500 / 1.4 / 0</div><div style="font-family:&#39;ggsans&#39;,&#39;Inter&#39;,sans-serif;font-size:14px;font-weight:500;line-height:1.4;letter-spacing:0;color:#ffffff;">Talk, play, hang out</div></div></section>
+<section><span class="section-eyebrow">03 — Components</span><h2 class="section-heading">Button Variants</h2><div class="button-grid">
+<div class="demo-card"><span class="label">button-primary · Blurple pill</span><button class="btn-primary" style="height:48px;">Open Discord</button><p style="font-size:12px;color:#a9adc9;margin:12px 0 0;">Blurple fill, white label, 12px radius — the everyday CTA.</p></div>
+<div class="demo-card"><span class="label">button-green · high-intent</span><button class="btn-primary" style="height:48px;background:#35ed7e;border-color:#35ed7e;color:#000000;">Download</button><p style="font-size:12px;color:#a9adc9;margin:12px 0 0;">Electric green, black label — the single highest-intent action.</p></div>
+<div class="demo-card"><span class="label">button-white</span><button class="btn-primary" style="height:44px;background:#ffffff;border-color:#ffffff;color:#000000;border-radius:16px;">Login</button></div>
+<div class="demo-card"><span class="label">button-ghost · translucent</span><button class="btn-secondary" style="height:44px;background:#1e2353;color:#ffffff;border-color:#1e2353;border-radius:16px;">Learn more</button></div>
+<div class="demo-card"><span class="label">badge</span><span style="display:inline-block;background:#ec48bd;color:#ffffff;border-radius:16px;padding:4px 12px;font-size:14px;font-weight:600;">New</span></div>
+</div></section>
+<section><span class="section-eyebrow">04 — Components</span><h2 class="section-heading">Cards &amp; Surfaces</h2><div class="card-grid">
+<div class="feature-card" style="background:#ec48bd;color:#fff;border:none;border-radius:40px;"><h4 style="color:#fff;">Gradient feature panel</h4><p style="color:rgba(255,255,255,0.85);">Vibrant magenta panel framing a product mockup or 3D prop — the playful signature surface.</p></div>
+<div class="feature-card" style="background:#1e2353;color:#fff;border:none;border-radius:40px;"><h4 style="color:#fff;">Dark feature card</h4><p style="color:rgba(255,255,255,0.8);">Raised-indigo card holding product screenshots and chat mockups.</p></div>
+<div class="feature-card" style="background:#5865f2;color:#fff;border:none;border-radius:40px;"><h4 style="color:#fff;">Blurple stat / CTA band</h4><p style="color:rgba(255,255,255,0.9);">Full-bleed Blurple field for big-number stats and CTA bands.</p></div>
+</div></section>
+<section><span class="section-eyebrow">05 — Components</span><h2 class="section-heading">Form Elements</h2><div class="form-grid">
+<div class="demo-card"><span class="label">text-input · 16px radius</span><input class="ex-input-demo" style="border-radius:16px;background:#1e2353;color:#ffffff;border-color:#2a2f55;" placeholder="name@email.com"></div>
+<div class="demo-card"><span class="label">textarea</span><textarea class="ex-input-demo" style="border-radius:16px;background:#1e2353;color:#ffffff;border-color:#2a2f55;" rows="3" placeholder="Say something"></textarea></div>
+</div></section>
+<section><span class="section-eyebrow">06 — Foundations</span><h2 class="section-heading">Spacing Scale</h2><p style="color:#a9adc9;margin:-16px 0 28px;">8px base unit. Card interiors run xl (24px) to section (40px); buttons pad sm-lg vertical by xl horizontal.</p><div class="spacing-row"><div><div class="spacing-box" style="width:4px;"></div><div class="spacing-label">xxs<br>4</div></div>
+<div><div class="spacing-box" style="width:8px;"></div><div class="spacing-label">xs<br>8</div></div>
+<div><div class="spacing-box" style="width:12px;"></div><div class="spacing-label">sm<br>12</div></div>
+<div><div class="spacing-box" style="width:16px;"></div><div class="spacing-label">md<br>16</div></div>
+<div><div class="spacing-box" style="width:20px;"></div><div class="spacing-label">lg<br>20</div></div>
+<div><div class="spacing-box" style="width:24px;"></div><div class="spacing-label">xl<br>24</div></div>
+<div><div class="spacing-box" style="width:32px;"></div><div class="spacing-label">xxl<br>32</div></div>
+<div><div class="spacing-box" style="width:40px;"></div><div class="spacing-label">section<br>40</div></div></div></section>
+<section><span class="section-eyebrow">07 — Foundations</span><h2 class="section-heading">Border Radius</h2><p style="color:#a9adc9;margin:-16px 0 28px;">Soft throughout: 12px on CTAs, 16px on cards and media, 40px+ on gradient feature panels, up to jumbo 120px on signature shapes.</p><div class="radius-row"><div><div class="radius-box" style="border-radius:6px;">6</div><div class="radius-label">xs<br>6</div></div>
+<div><div class="radius-box" style="border-radius:12px;">12</div><div class="radius-label">sm<br>12</div></div>
+<div><div class="radius-box" style="border-radius:14px;">14</div><div class="radius-label">md<br>14</div></div>
+<div><div class="radius-box" style="border-radius:16px;">16</div><div class="radius-label">lg<br>16</div></div>
+<div><div class="radius-box" style="border-radius:40px;">40</div><div class="radius-label">xl<br>40</div></div>
+<div><div class="radius-box" style="border-radius:50px;">50</div><div class="radius-label">pill<br>50</div></div>
+<div><div class="radius-box" style="border-radius:120px;">120</div><div class="radius-label">jumbo<br>120</div></div>
+<div><div class="radius-box" style="border-radius:9999px;">999</div><div class="radius-label">full<br>9999</div></div></div></section>
+<section><span class="section-eyebrow">08 — Foundations</span><h2 class="section-heading">Elevation &amp; Depth</h2><div class="elevation-grid">
+<div class="elev-card elev-1" style="box-shadow:none;">Level 0 — flat. Colour field, gradient, and large radius do the work.</div>
+<div class="elev-card elev-2">Level 1 — soft float. Wide violet-tinted glow (0 3px 68px rgba(69,42,124,0.1)) lifts product media.</div>
+</div></section>
+<section><span class="section-eyebrow">09 — Responsive</span><h2 class="section-heading">Responsive Behavior</h2>
+  <table class="responsive-table"><thead><tr><th>Name</th><th>Width</th><th>Key changes</th></tr></thead><tbody>
+  <tr><td>Mobile</td><td>&lt; 768px</td><td>Single column; nav → hamburger; CTAs + pricing tiers stack full-width</td></tr>
+  <tr><td>Tablet</td><td>768–1023px</td><td>Grids collapse toward 2-up / 1-up; nav condenses</td></tr>
+  <tr><td>Laptop</td><td>1024–1279px</td><td>Tightened gutters; 3-col grids retained</td></tr>
+  <tr><td>Desktop</td><td>≥ 1280px</td><td>Full multi-column grids; centred ~1200px column</td></tr></tbody></table>
+  <div class="device-ladder">
+    <div class="device-box" style="width:60px;height:110px;">375</div>
+    <div class="device-box" style="width:120px;height:110px;">768</div>
+    <div class="device-box" style="width:170px;height:110px;">1024</div>
+    <div class="device-box" style="width:220px;height:110px;">1280</div>
+    <div class="device-box" style="width:280px;height:110px;">1440</div>
+  </div>
+  <p style="color:#a9adc9;margin-top:24px;font-size:14px;"><strong style="color:#ffffff;">Touch targets:</strong> button-primary and button-green clear 44x44 WCAG-AAA via their vertical padding. <strong style="color:#ffffff;">Collapsing:</strong> nav collapses to logo plus hamburger below the tablet breakpoint (Download CTA stays); multi-column pricing/feature grids reflow to a single stacked column; section padding compresses toward 20-32px; gradient cards and bands span full width; display type scales down while keeping weight 700-800.</p>
+</section>
+<!-- ============================== EXAMPLES (kit-mirror) ==============================
+ *
+ * 9 product-UI patterns themed with the brand's tokens via the alias bridge in
+ * preview-examples-block.css.
+ *
+ * Paste this verbatim into preview.html and preview-dark.html, immediately before
+ * the closing <footer>. Both light and dark variants use IDENTICAL HTML — only the
+ * `:root { ... }` alias map differs (see preview-design.md).
+ *
+ * Hardcoded radii (4px / 6px / 9999px) intentionally inherited from the
+ * /generate-kit base template. Hardcoded scrim opacity (rgba 26,24,22,0.5) is the
+ * kit default; do not tokenize without parallel update.
+ * ============================================================================ -->
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Pricing Tiers</h2>
+    <p class="ex-intro">Three-up plan grid with the middle tier polarity-flipped. Mono uppercase tier name, display numeral price, hairline-divided feature list.</p>
+    <div class="ex-grid-pricing">
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">Starter</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$9</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For individuals getting started.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Core features</li>
+          <li><span class="ex-bullet"></span>Up to 3 projects</li>
+          <li><span class="ex-bullet"></span>Community support</li>
+        </ul>
+        <button class="ex-tier-cta ink">Get started</button>
+      </div>
+      <div class="ex-tier-card dark">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span class="ex-mono" style="color:rgba(255,255,255,0.55);">Pro</span>
+          <span style="font-family:var(--font-mono); font-size:10px; letter-spacing: var(--ex-letter-eyebrow, 0); text-transform:uppercase; color:var(--color-accent); display:inline-flex; align-items:center; gap:6px;"><span style="width:6px; height:6px; background:var(--color-accent); border-radius:9999px;"></span>Most popular</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$29</span><span style="font-family:var(--font-mono); font-size:12px; color:rgba(255,255,255,0.55);">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:rgba(255,255,255,0.72); margin:0;">For teams ready to ship.</p>
+        <ul class="ex-features dark">
+          <li><span class="ex-bullet"></span>Everything in Starter</li>
+          <li><span class="ex-bullet"></span>Unlimited projects</li>
+          <li><span class="ex-bullet"></span>Email support</li>
+          <li><span class="ex-bullet"></span>Advanced analytics</li>
+        </ul>
+        <button class="ex-tier-cta invert">Start free trial</button>
+      </div>
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">Team</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$99</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For organizations operating at scale.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Everything in Pro</li>
+          <li><span class="ex-bullet"></span>SSO + audit log</li>
+          <li><span class="ex-bullet"></span>Priority support</li>
+          <li><span class="ex-bullet"></span>SLA &amp; onboarding</li>
+        </ul>
+        <button class="ex-tier-cta ink">Talk to sales</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+</div>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

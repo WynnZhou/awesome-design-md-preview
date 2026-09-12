@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-native="dark" data-theme="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Verge — Design System Preview</title>
+  <link rel="stylesheet" href="preview_auto.css">
+</head>
+<body>
+
+<div class="page">
+  <header class="topbar">
+    <div><div class="topbar-name">The Verge</div><div class="topbar-meta">design tokens · 18 colors · 21 type styles · 7 components</div></div>
+    <nav class="topbar-links"><a href="#colors">Colors</a><a href="#typography">Type</a><a href="#badges">Badges</a><a href="#cards">Cards</a><a href="#spacing">Spacing</a><a href="#radius">Radius</a><a href="#elevation">Depth</a><a href="#signature">Other</a><a href="#reference">Reference</a></nav>
+  </header>
+  <section class="hero">
+    <h1>The Verge</h1>
+    <p class="lede">The Verge&#x27;s 2024 redesign feels like somebody wired a Condé Nast magazine to a chiptune soundboard. The canvas is almost-black (`#131313`), the headlines are built from a brutally heavy display face (Manuka) that runs up to 107px, and the whole page is peppered with acid-mint `#3cffd0` and ultraviolet `#5200ff` that behave less like brand colors and more like hazard tape. Story tiles are not quiet gray cards — they&#x27;re saturated, full-bleed color blocks (yellow, pink, orange, blue, purple) that feel like pasted-up rave flyers arranged into a timeline. The mood is &quot;developer console meets club night meets tech tabloid&quot;: serious enough to cover a congressional hearing, loud enough to review a synthesizer.</p>
+    <div class="meta">
+      <span class="chip solid">#5200ff</span>
+      <span class="chip">PolySans</span>
+      <span class="chip">dark canvas</span>
+      <span class="chip">source: DESIGN.md (markdown)</span>
+    </div>
+  </section>
+  <section id="colors">
+    <div class="sec-head"><h2>Color Palette</h2><span class="count">18 tokens</span></div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-jelly-mint">#3cffd0</div><div class="info"><div class="nm">Jelly Mint</div><div class="hx">jelly-mint</div><div class="hx dim">The Verge&#x27;s signature acid-mint accent. Used as CTA button fill, link </div></div></div>
+      <div class="swatch"><div class="fill sw-verge-ultraviolet">#5200ff</div><div class="info"><div class="nm">Verge Ultraviolet</div><div class="hx">verge-ultraviolet</div><div class="hx dim">The complementary brand hazard. Used for secondary color-block tiles, </div></div></div>
+    </div>
+    <div class="group-title">Secondary &amp; Accent</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-console-mint-border">#309875</div><div class="info"><div class="nm">Console Mint Border</div><div class="hx">console-mint-border</div><div class="hx dim">A darker variant of the jelly mint used on card outlines and button bo</div></div></div>
+      <div class="swatch"><div class="fill sw-deep-link-blue">#3860be</div><div class="info"><div class="nm">Deep Link Blue</div><div class="hx">deep-link-blue</div><div class="hx dim">The link *hover* color — the one moment blue appears on the site. It r</div></div></div>
+      <div class="swatch"><div class="fill sw-focus-cyan">#1eaedb</div><div class="info"><div class="nm">Focus Cyan</div><div class="hx">focus-cyan</div><div class="hx dim">Reserved for button focus rings. Never shown outside a keyboard-focus </div></div></div>
+      <div class="swatch"><div class="fill sw-purple-rule">#3d00bf</div><div class="info"><div class="nm">Purple Rule</div><div class="hx">purple-rule</div><div class="hx dim">A darker ultraviolet variant used as the vertical border on StoryStrea</div></div></div>
+    </div>
+    <div class="group-title">Surface &amp; Background</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-canvas-black">#131313</div><div class="info"><div class="nm">Canvas Black</div><div class="hx">canvas-black</div><div class="hx dim">The default dark surface for the entire homepage. Almost-but-not-quite</div></div></div>
+      <div class="swatch"><div class="fill sw-surface-slate">#2d2d2d</div><div class="info"><div class="nm">Surface Slate</div><div class="hx">surface-slate</div><div class="hx dim">Secondary card background, used when a story tile doesn&#x27;t need to be a</div></div></div>
+      <div class="swatch"><div class="fill sw-image-frame">#313131</div><div class="info"><div class="nm">Image Frame</div><div class="hx">image-frame</div><div class="hx dim">The 1px border that wraps inline imagery.</div></div></div>
+      <div class="swatch"><div class="fill sw-hazard-white">#ffffff</div><div class="info"><div class="nm">Hazard White</div><div class="hx">hazard-white</div><div class="hx dim">Used as story-tile fill, button border, and primary text. When white a</div></div></div>
+      <div class="swatch"><div class="fill sw-absolute-black">#000000</div><div class="info"><div class="nm">Absolute Black</div><div class="hx">absolute-black</div><div class="hx dim">Reserved for text on the mint/yellow/white tiles — the only place it a</div></div></div>
+    </div>
+    <div class="group-title">Neutrals &amp; Text</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-primary-text">#ffffff</div><div class="info"><div class="nm">Primary Text</div><div class="hx">primary-text</div><div class="hx dim">Headlines and display text on the canvas.</div></div></div>
+      <div class="swatch"><div class="fill sw-secondary-text">#949494</div><div class="info"><div class="nm">Secondary Text</div><div class="hx">secondary-text</div><div class="hx dim">Bylines, timestamps, photo credits. The mid-gray that anchors the meta</div></div></div>
+      <div class="swatch"><div class="fill sw-muted-text">#e9e9e9</div><div class="info"><div class="nm">Muted Text</div><div class="hx">muted-text</div><div class="hx dim">Button text on dark slate buttons. Slightly off-white to reduce screen</div></div></div>
+      <div class="swatch"><div class="fill sw-inverted-text">#131313</div><div class="info"><div class="nm">Inverted Text</div><div class="hx">inverted-text</div><div class="hx dim">Used only on accent tiles (mint, yellow, white) to keep contrast legib</div></div></div>
+    </div>
+    <div class="group-title">Semantic &amp; Accent</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-focus-ring">#1eaedb</div><div class="info"><div class="nm">Focus Ring</div><div class="hx">focus-ring</div><div class="hx dim">Keyboard focus only.</div></div></div>
+      <div class="swatch"><div class="fill sw-overlay-black">rgba(0, 0, 0, 0.33)</div><div class="info"><div class="nm">Overlay Black</div><div class="hx">overlay-black</div><div class="hx dim">Subtle 1px ring used as the quiet shadow alternative on stacked cards.</div></div></div>
+      <div class="swatch"><div class="fill sw-dim-gray">#8c8c8c</div><div class="info"><div class="nm">Dim Gray</div><div class="hx">dim-gray</div><div class="hx dim">Active/pressed button background — the &quot;pressed down&quot; state.</div></div></div>
+    </div>
+  </section>
+  <section id="typography">
+    <div class="sec-head"><h2>Typography Scale</h2><span class="count">21 styles</span></div>
+    <div class="type-row">
+      <div class="type-meta"><b>Hero Wordmark / Display</b>107px / 900<br>lh 0.80 · ls 1.07px<br>Manuka</div>
+      <div class="type-sample type-hero-wordmark-display">Hero Wordmark / Display — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Secondary Display</b>90px / 900<br>lh 0.80 · ls —<br>Manuka</div>
+      <div class="type-sample type-secondary-display">Secondary Display — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Tertiary Display</b>60px / 900<br>lh 0.80 · ls —<br>Manuka</div>
+      <div class="type-sample type-tertiary-display">Tertiary Display — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Large Headline</b>34px / 700<br>lh 1.00 · ls —<br>PolySans</div>
+      <div class="type-sample type-large-headline">Large Headline — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Heading Wide</b>32px / 400<br>lh 1.10 · ls 0.32px<br>PolySans</div>
+      <div class="type-sample type-heading-wide">Heading Wide — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Heading Medium</b>24px / 700<br>lh 1.00 · ls —<br>PolySans</div>
+      <div class="type-sample type-heading-medium">Heading Medium — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Heading Small</b>20px / 700<br>lh 1.00 · ls —<br>PolySans</div>
+      <div class="type-sample type-heading-small">Heading Small — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Light Capitalized Label</b>19px / 300<br>lh 1.20 · ls 1.9px<br>PolySans</div>
+      <div class="type-sample type-light-capitalized-label">Light Capitalized Label — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>All-Caps Label XL</b>18px / 400<br>lh 1.10 · ls 1.8px<br>PolySans</div>
+      <div class="type-sample type-all-caps-label-xl">All-Caps Label XL — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Bold Body</b>16px / 700<br>lh 1.00 · ls —<br>PolySans</div>
+      <div class="type-sample type-bold-body">Bold Body — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Body Relaxed</b>16px / 500<br>lh 1.60 · ls —<br>PolySans</div>
+      <div class="type-sample type-body-relaxed">Body Relaxed — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Inline Label</b>15px / 400<br>lh 1.20 · ls 0.15px<br>PolySans</div>
+      <div class="type-sample type-inline-label">Inline Label — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Body Compact</b>13px / 400<br>lh 1.60 · ls —<br>PolySans</div>
+      <div class="type-sample type-body-compact">Body Compact — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Eyebrow All-Caps</b>12px / 400<br>lh 1.30 · ls 1.8px<br>PolySans</div>
+      <div class="type-sample type-eyebrow-all-caps">Eyebrow All-Caps — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Tag Label</b>12px / 400<br>lh 1.20 · ls 0.72px<br>PolySans</div>
+      <div class="type-sample type-tag-label">Tag Label — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Caption Micro</b>11px / 400<br>lh 1.20 · ls 1.1px<br>PolySans</div>
+      <div class="type-sample type-caption-micro">Caption Micro — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Meta Nano</b>10px / 500<br>lh 1.40 · ls 1.5px<br>PolySans</div>
+      <div class="type-sample type-meta-nano">Meta Nano — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Mono Button Label</b>12px / 600<br>lh 2.00 · ls 1.5px<br>PolySans Mono</div>
+      <div class="type-sample type-mono-button-label">Mono Button Label — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Mono Timestamp</b>11px / 500<br>lh 1.20 · ls 1.1–1.8px<br>PolySans Mono</div>
+      <div class="type-sample type-mono-timestamp">Mono Timestamp — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Serif Body</b>16px / 400<br>lh 1.30 · ls -0.16px<br>FK Roman Standard</div>
+      <div class="type-sample type-serif-body">Serif Body — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Serif Caption</b>20px / 400<br>lh 1.20 · ls —<br>FK Roman Standard</div>
+      <div class="type-sample type-serif-caption">Serif Caption — The quick brown fox jumps over the lazy dog</div>
+    </div>
+  </section>
+  <section id="badges">
+    <div class="sec-head"><h2>Badges & Pills</h2><span class="count">3</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-primary-jelly-mint-pill">Primary Jelly Mint Pill</div><div class="demo-el spec-buttons-primary-jelly-mint-pill">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-secondary-dark-slate-pill">Secondary Dark Slate Pill</div><div class="demo-el spec-buttons-secondary-dark-slate-pill">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-pill-tag-non-interactive">Pill Tag Non Interactive</div><div class="demo-el spec-buttons-pill-tag-non-interactive">Badge</div></div>
+    </div></div>
+  </section>
+  <section id="cards">
+    <div class="sec-head"><h2>Cards & Containers</h2><span class="count">2</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="cards-containers-storystream-tile">Containers Storystream Tile</div><div class="demo-el spec-cards-containers-storystream-tile"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="cards-containers-feature-card-top-story">Containers Feature Card Top Story</div><div class="demo-el spec-cards-containers-feature-card-top-story"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+    </div></div>
+  </section>
+  <section id="signature">
+    <div class="sec-head"><h2>Other Components</h2><span class="count">2</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-tertiary-outlined-mint">Tertiary Outlined Mint</div><div class="demo-el spec-buttons-tertiary-outlined-mint">Tertiary Outlined Mint</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-outlined-ultraviolet-promotional">Outlined Ultraviolet Promotional</div><div class="demo-el spec-buttons-outlined-ultraviolet-promotional">Outlined Ultraviolet Promotional</div></div>
+    </div></div>
+  </section>
+  <section id="spacing">
+    <div class="sec-head"><h2>Spacing Scale</h2><span class="count">20 steps</span></div>
+    <div class="bar-row"><span>s1-pills</span><span class="val">pills</span><span class="bar bar-s1-pills"></span></div>
+    <div class="bar-row"><span>s2-and-tight-label-clusters</span><span class="val">and tight label clusters</span><span class="bar bar-s2-and-tight-label-clusters"></span></div>
+    <div class="bar-row"><span>s3-not-in-the-editorial-grid</span><span class="val">not in the editorial grid.</span><span class="bar bar-s3-not-in-the-editorial-grid"></span></div>
+    <div class="bar-row"><span>s0-1</span><span class="val">**: 1</span><span class="bar bar-s0-1"></span></div>
+    <div class="bar-row"><span>s1-2</span><span class="val">2</span><span class="bar bar-s1-2"></span></div>
+    <div class="bar-row"><span>s0-the-2-4-5-6-9-10px-values-are-used-inside-buttons</span><span class="val">**: The 2/4/5/6/9/10px values are used inside buttons</span><span class="bar bar-s0-the-2-4-5-6-9-10px-values-are-used-inside-buttons"></span></div>
+    <div class="bar-row"><span>s2-4</span><span class="val">4</span><span class="bar bar-s2-4"></span></div>
+    <div class="bar-row"><span>s3-5</span><span class="val">5</span><span class="bar bar-s3-5"></span></div>
+    <div class="bar-row"><span>s4-6</span><span class="val">6</span><span class="bar bar-s4-6"></span></div>
+    <div class="bar-row"><span>base-unit</span><span class="val">8px</span><span class="bar bar-base-unit"></span></div>
+    <div class="bar-row"><span>s5-8</span><span class="val">8</span><span class="bar bar-s5-8"></span></div>
+    <div class="bar-row"><span>s6-9</span><span class="val">9</span><span class="bar bar-s6-9"></span></div>
+    <div class="bar-row"><span>s7-10</span><span class="val">10</span><span class="bar bar-s7-10"></span></div>
+    <div class="bar-row"><span>s8-12</span><span class="val">12</span><span class="bar bar-s8-12"></span></div>
+    <div class="bar-row"><span>s9-14</span><span class="val">14</span><span class="bar bar-s9-14"></span></div>
+    <div class="bar-row"><span>s10-15</span><span class="val">15</span><span class="bar bar-s10-15"></span></div>
+    <div class="bar-row"><span>s11-16</span><span class="val">16</span><span class="bar bar-s11-16"></span></div>
+    <div class="bar-row"><span>s12-20</span><span class="val">20</span><span class="bar bar-s12-20"></span></div>
+    <div class="bar-row"><span>s13-24</span><span class="val">24</span><span class="bar bar-s13-24"></span></div>
+    <div class="bar-row"><span>s14-25px</span><span class="val">25px.</span><span class="bar bar-s14-25px"></span></div>
+  </section>
+  <section id="radius">
+    <div class="sec-head"><h2>Border Radius Scale</h2><span class="count">3 steps</span></div>
+    <div class="radius-grid">
+      <div class="radius-cell"><div class="box rd-2px-inputs-small-badges"></div><div class="lb">2px-inputs-small-badges · feels like a typewriter tag</div></div>
+      <div class="radius-cell"><div class="box rd-3px-inline-images"></div><div class="lb">3px-inline-images · just enough to soften against the canvas</div></div>
+      <div class="radius-cell"><div class="box rd-40px-outlined-cta-pills"></div><div class="lb">40px-outlined-cta-pills · the loudest pill in the system</div></div>
+    </div>
+  </section>
+  <section id="elevation">
+    <div class="sec-head"><h2>Elevation &amp; Depth</h2><span class="count">8</span></div>
+    <div class="elev-grid">
+      <div class="elev-cell elev-0"><div class="lb">0</div><div class="vl">No border, no shadow</div></div>
+      <div class="elev-cell elev-1"><div class="lb">1</div><div class="vl">rgba(0,0,0,0) 0px 0px 0px 0px inset (placeholder)</div></div>
+      <div class="elev-cell elev-2"><div class="lb">2</div><div class="vl">1px solid #ffffff or #313131 hairline</div></div>
+      <div class="elev-cell elev-3"><div class="lb">3</div><div class="vl">1px solid #3cffd0 hairline</div></div>
+      <div class="elev-cell elev-4"><div class="lb">4</div><div class="vl">1px solid #5200ff hairline</div></div>
+      <div class="elev-cell elev-5"><div class="lb">5</div><div class="vl">rgba(0, 0, 0, 0.33) 0px 0px 0px 1px</div></div>
+      <div class="elev-cell elev-6"><div class="lb">6</div><div class="vl">0px -1px 0px 0px inset (mint/black/white)</div></div>
+      <div class="elev-cell elev-7"><div class="lb">7</div><div class="vl">Saturated accent fill (#3cffd0, #5200ff, white, yellow, pink)</div></div>
+    </div>
+  </section>
+  <section id="guidelines">
+    <div class="sec-head"><h2>Do&rsquo;s &amp; Don&rsquo;ts</h2></div>
+    <div class="guide">
+      <ul class="yes">
+        <li>**Do** use #131313 as the canvas for every view. There is no light mode.</li>
+        <li>**Do** use Jelly Mint (#3cffd0) and Verge Ultraviolet (#5200ff) as hazard accents — buttons, borders, active states, and saturated color-block tiles.</li>
+        <li>**Do** use Manuka exclusively at 60px+ for hero headlines. Treat anything smaller as a bug.</li>
+        <li>**Do** round everything: 20px for cards, 24px for feature cards, 30–40px for pill buttons.</li>
+        <li>**Do** use PolySans Mono for UPPERCASE labels, timestamps, kickers, and button text. Lowercase mono doesn&#x27;t exist here.</li>
+        <li>**Do** apply 1.5–1.9px letter-spacing to every ALL-CAPS label — this is a Verge signature.</li>
+      </ul>
+      <ul class="no">
+        <li>**Don&#x27;t** use a light background. The dark canvas is the product.</li>
+        <li>**Don&#x27;t** add box-shadow for elevation. Use 1px borders or saturated accent fills instead.</li>
+        <li>**Don&#x27;t** use square corners. Every interactive and content container is rounded.</li>
+        <li>**Don&#x27;t** use Manuka for UI, buttons, or body copy. It&#x27;s strictly display.</li>
+        <li>**Don&#x27;t** use lowercase mono. PolySans Mono is always UPPERCASE.</li>
+        <li>**Don&#x27;t** let mint and ultraviolet appear as background washes — they&#x27;re hazard accents, not canvas tints.</li>
+      </ul>
+    </div>
+  </section>
+  <section id="reference">
+    <div class="sec-head"><h2>Component Reference</h2><span class="count">7</span></div>
+    <table class="ref"><thead><tr><th>Component</th><th>Resolved properties</th></tr></thead><tbody>
+      <tr><td class="k">buttons-primary-jelly-mint-pill</td><td>Background: #3cffd0; Border: none; Border radius: 24px; Padding: 10px 24px; Outline: none at rest</td></tr>
+      <tr><td class="k">buttons-secondary-dark-slate-pill</td><td>Background: #2d2d2d; Border: none; Border radius: 24px; Padding: 10px 24px</td></tr>
+      <tr><td class="k">buttons-tertiary-outlined-mint</td><td>Background: transparent; Border: 1px solid #3cffd0; Border radius: 40px; Padding: 10px 20px; Transition: 150ms ease</td></tr>
+      <tr><td class="k">buttons-outlined-ultraviolet-promotional</td><td>Background: transparent; Text: #5200ff; Border: 1px solid #5200ff; Border radius: 30px</td></tr>
+      <tr><td class="k">buttons-pill-tag-non-interactive</td><td>Background: saturated accent; Text: black; Border radius: 20px; Padding: 4px 10px</td></tr>
+      <tr><td class="k">cards-containers-storystream-tile</td><td>Border radius: 20px; Border: 1px solid #ffffff; Hover: no lift, no scale</td></tr>
+      <tr><td class="k">cards-containers-feature-card-top-story</td><td>Border radius: 24px; Padding: 32px+</td></tr>
+    </tbody></table>
+  </section>
+  <footer><span>The Verge — design tokens extracted from DESIGN.md</span><span>awesome-design-md / getdesign.md</span></footer>
+</div>
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script>
+</body></html>

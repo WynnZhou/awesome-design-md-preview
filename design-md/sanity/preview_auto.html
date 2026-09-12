@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" data-native="dark" data-theme="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sanity — Design System Preview</title>
+  <link rel="stylesheet" href="preview_auto.css">
+</head>
+<body>
+
+<div class="page">
+  <header class="topbar">
+    <div><div class="topbar-name">Sanity</div><div class="topbar-meta">design tokens · 21 colors · 16 type styles · 13 components</div></div>
+    <nav class="topbar-links"><a href="#colors">Colors</a><a href="#typography">Type</a><a href="#buttons">Buttons</a><a href="#badges">Badges</a><a href="#cards">Cards</a><a href="#forms">Forms</a><a href="#nav">Tabs</a><a href="#spacing">Spacing</a><a href="#radius">Radius</a><a href="#signature">Other</a><a href="#reference">Reference</a></nav>
+  </header>
+  <section class="hero">
+    <h1>Sanity</h1>
+    <p class="lede">Sanity&#x27;s website is a developer-content platform rendered as a nocturnal command center -- dark, precise, and deeply structured. The entire experience sits on a near-black canvas (`#0b0b0b`) that reads less like a &quot;dark mode toggle&quot; and more like the natural state of a tool built for people who live in terminals. Where most CMS marketing pages reach for friendly pastels and soft illustration, Sanity leans into the gravity of its own product: structured content deserves a structured stage.</p>
+    <div class="meta">
+      <span class="chip solid">#f36458</span>
+      <span class="chip">waldenburgNormal</span>
+      <span class="chip">dark canvas</span>
+      <span class="chip">source: DESIGN.md (markdown)</span>
+    </div>
+  </section>
+  <section id="colors">
+    <div class="sec-head"><h2>Color Palette</h2><span class="count">21 tokens</span></div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-sanity-black">#0b0b0b</div><div class="info"><div class="nm">Sanity Black</div><div class="hx">sanity-black</div><div class="hx dim">The primary canvas and dominant surface color. Not pure black but clos</div></div></div>
+      <div class="swatch"><div class="fill sw-pure-black">#000000</div><div class="info"><div class="nm">Pure Black</div><div class="hx">pure-black</div><div class="hx dim">Used for maximum-contrast moments, deep overlays, and certain border a</div></div></div>
+      <div class="swatch"><div class="fill sw-sanity-red">#f36458</div><div class="info"><div class="nm">Sanity Red</div><div class="hx">sanity-red</div><div class="hx dim">The primary CTA and brand accent -- a warm coral-red that serves as th</div></div></div>
+    </div>
+    <div class="group-title">Accent &amp; Interactive</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-electric-blue">#0052ef</div><div class="info"><div class="nm">Electric Blue</div><div class="hx">electric-blue</div><div class="hx dim">The universal hover/active state color across the entire system. Butto</div></div></div>
+    </div>
+    <div class="group-title">Surface &amp; Background</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-near-black">#0b0b0b</div><div class="info"><div class="nm">Near Black</div><div class="hx">near-black</div><div class="hx dim">Default page background and primary surface.</div></div></div>
+      <div class="swatch"><div class="fill sw-dark-gray">#212121</div><div class="info"><div class="nm">Dark Gray</div><div class="hx">dark-gray</div><div class="hx dim">Elevated surface color for cards, secondary containers, input backgrou</div></div></div>
+      <div class="swatch"><div class="fill sw-medium-dark">#353535</div><div class="info"><div class="nm">Medium Dark</div><div class="hx">medium-dark</div><div class="hx dim">Tertiary surface and border color for creating depth between dark laye</div></div></div>
+      <div class="swatch"><div class="fill sw-pure-white">#ffffff</div><div class="info"><div class="nm">Pure White</div><div class="hx">pure-white</div><div class="hx dim">Used for inverted sections, light-on-dark text, and specific button su</div></div></div>
+      <div class="swatch"><div class="fill sw-light-gray">#ededed</div><div class="info"><div class="nm">Light Gray</div><div class="hx">light-gray</div><div class="hx dim">Light surface for inverted/light sections and subtle background tints.</div></div></div>
+    </div>
+    <div class="group-title">Neutrals &amp; Text</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-white">#ffffff</div><div class="info"><div class="nm">White</div><div class="hx">white</div><div class="hx dim">Primary text color on dark surfaces, maximum legibility.</div></div></div>
+      <div class="swatch"><div class="fill sw-silver">#b9b9b9</div><div class="info"><div class="nm">Silver</div><div class="hx">silver</div><div class="hx dim">Secondary text, body copy on dark surfaces, muted descriptions, and pl</div></div></div>
+      <div class="swatch"><div class="fill sw-medium-gray">#797979</div><div class="info"><div class="nm">Medium Gray</div><div class="hx">medium-gray</div><div class="hx dim">Tertiary text, metadata, timestamps, and de-emphasized content.</div></div></div>
+      <div class="swatch"><div class="fill sw-charcoal">#212121</div><div class="info"><div class="nm">Charcoal</div><div class="hx">charcoal</div><div class="hx dim">Text on light/inverted surfaces.</div></div></div>
+      <div class="swatch"><div class="fill sw-near-black-text">#0b0b0b</div><div class="info"><div class="nm">Near Black Text</div><div class="hx">near-black-text</div><div class="hx dim">Primary text on white/light button surfaces.</div></div></div>
+    </div>
+    <div class="group-title">Semantic</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-error-red">#dd0000</div><div class="info"><div class="nm">Error Red</div><div class="hx">error-red</div><div class="hx dim">Destructive actions, validation errors, and critical warnings -- a pur</div></div></div>
+      <div class="swatch"><div class="fill sw-gpc-green">#37cd84</div><div class="info"><div class="nm">GPC Green</div><div class="hx">gpc-green</div><div class="hx dim">Privacy/compliance indicator green.</div></div></div>
+      <div class="swatch"><div class="fill sw-focus-ring-blue">#0052ef</div><div class="info"><div class="nm">Focus Ring Blue</div><div class="hx">focus-ring-blue</div><div class="hx dim">Focus ring color for accessibility, matching the interactive blue.</div></div></div>
+    </div>
+    <div class="group-title">Border System</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-dark-border">#0b0b0b</div><div class="info"><div class="nm">Dark Border</div><div class="hx">dark-border</div><div class="hx dim">Primary border on dark containers -- barely visible, maintaining minim</div></div></div>
+      <div class="swatch"><div class="fill sw-subtle-border">#212121</div><div class="info"><div class="nm">Subtle Border</div><div class="hx">subtle-border</div><div class="hx dim">Standard border for inputs, textareas, and card edges on dark surfaces</div></div></div>
+      <div class="swatch"><div class="fill sw-medium-border">#353535</div><div class="info"><div class="nm">Medium Border</div><div class="hx">medium-border</div><div class="hx dim">More visible borders for emphasized containment and dividers.</div></div></div>
+      <div class="swatch"><div class="fill sw-light-border">#ffffff</div><div class="info"><div class="nm">Light Border</div><div class="hx">light-border</div><div class="hx dim">Border on inverted/light elements or buttons needing contrast separati</div></div></div>
+    </div>
+  </section>
+  <section id="typography">
+    <div class="sec-head"><h2>Typography Scale</h2><span class="count">16 styles</span></div>
+    <div class="type-row">
+      <div class="type-meta"><b>Display / Hero</b>112px / 400<br>lh 1.00 (tight) · ls -4.48px<br>waldenburgNormal</div>
+      <div class="type-sample type-display-hero">Display / Hero — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Hero Secondary</b>72px / 400<br>lh 1.05 (tight) · ls -2.88px<br>waldenburgNormal</div>
+      <div class="type-sample type-hero-secondary">Hero Secondary — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Section Heading</b>48px / 400<br>lh 1.08 (tight) · ls -1.68px<br>waldenburgNormal</div>
+      <div class="type-sample type-section-heading">Section Heading — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Heading Large</b>38px / 400<br>lh 1.10 (tight) · ls -1.14px<br>waldenburgNormal</div>
+      <div class="type-sample type-heading-large">Heading Large — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Heading Medium</b>32px / 425<br>lh 1.24 (tight) · ls -0.32px<br>waldenburgNormal</div>
+      <div class="type-sample type-heading-medium">Heading Medium — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Heading Small</b>24px / 425<br>lh 1.24 (tight) · ls -0.24px<br>waldenburgNormal</div>
+      <div class="type-sample type-heading-small">Heading Small — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Subheading</b>20px / 425<br>lh 1.13 (tight) · ls -0.2px<br>waldenburgNormal</div>
+      <div class="type-sample type-subheading">Subheading — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Body Large</b>18px / 400<br>lh 1.50 · ls -0.18px<br>waldenburgNormal</div>
+      <div class="type-sample type-body-large">Body Large — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Body</b>16px / 400<br>lh 1.50 · ls normal<br>waldenburgNormal</div>
+      <div class="type-sample type-body">Body — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Body Small</b>15px / 400<br>lh 1.50 · ls -0.15px<br>waldenburgNormal</div>
+      <div class="type-sample type-body-small">Body Small — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Caption</b>13px / 400<br>lh 1.30-1.50 · ls -0.13px<br>waldenburgNormal</div>
+      <div class="type-sample type-caption">Caption — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Small Caption</b>12px / 400<br>lh 1.50 · ls -0.12px<br>waldenburgNormal</div>
+      <div class="type-sample type-small-caption">Small Caption — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Micro / Label</b>11px / 500<br>lh 1.00-1.50 · ls normal<br>waldenburgNormal</div>
+      <div class="type-sample type-micro-label">Micro / Label — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Code Body</b>15px / 400<br>lh 1.50 · ls normal<br>IBM Plex Mono</div>
+      <div class="type-sample type-code-body">Code Body — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Code Caption</b>13px / 400<br>lh 1.30-1.50 · ls normal<br>IBM Plex Mono</div>
+      <div class="type-sample type-code-caption">Code Caption — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Code Micro</b>12px / 400<br>lh 1.30-1.50 · ls normal<br>IBM Plex Mono</div>
+      <div class="type-sample type-code-micro">Code Micro — The quick brown fox jumps over the lazy dog</div>
+    </div>
+  </section>
+  <section id="buttons">
+    <div class="sec-head"><h2>Button Variants</h2><span class="count">2</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-primary-cta-pill">Primary Cta Pill</div><button class="demo-el spec-buttons-primary-cta-pill" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="buttons-uppercase-label-button">Uppercase Label Button</div><button class="demo-el demo-el-ghost spec-buttons-uppercase-label-button" type="button">Button</button></div>
+    </div></div>
+  </section>
+  <section id="badges">
+    <div class="sec-head"><h2>Badges & Pills</h2><span class="count">4</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-primary-cta-pill">Primary Cta Pill</div><div class="demo-el spec-buttons-primary-cta-pill">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-secondary-dark-pill">Secondary Dark Pill</div><div class="demo-el spec-buttons-secondary-dark-pill">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-outlined-light-pill">Outlined Light Pill</div><div class="demo-el spec-buttons-outlined-light-pill">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-uppercase-label-button">Uppercase Label Button</div><div class="demo-el demo-el-ghost spec-buttons-uppercase-label-button">Badge</div></div>
+    </div></div>
+  </section>
+  <section id="cards">
+    <div class="sec-head"><h2>Cards & Containers</h2><span class="count">2</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="cards-dark-content-card">Dark Content Card</div><div class="demo-el spec-cards-dark-content-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="cards-feature-card-full-bleed">Feature Card Full Bleed</div><div class="demo-el spec-cards-feature-card-full-bleed"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+    </div></div>
+  </section>
+  <section id="forms">
+    <div class="sec-head"><h2>Forms & Inputs</h2><span class="count">2</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="inputs-text-input-textarea">Text Input Textarea</div><div class="demo-el spec-inputs-text-input-textarea"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="inputs-search-input">Search Input</div><div class="demo-el spec-inputs-search-input"><span class="demo-el-b">Placeholder text</span></div></div>
+    </div></div>
+  </section>
+  <section id="nav">
+    <div class="sec-head"><h2>Navigation & Tabs</h2><span class="count">1</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="navigation-footer">Navigation Footer</div><div class="demo-el spec-navigation-footer"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+    </div></div>
+  </section>
+  <section id="signature">
+    <div class="sec-head"><h2>Other Components</h2><span class="count">4</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-ghost-subtle">Ghost Subtle</div><div class="demo-el spec-buttons-ghost-subtle">Ghost Subtle</div></div>
+      <div class="demo-col"><div class="lb" title="navigation-top-navigation">Navigation Top Navigation</div><div class="demo-el demo-el-ghost spec-navigation-top-navigation">Navigation Top Navigation</div></div>
+      <div class="demo-col"><div class="lb" title="badges-pills-neutral-subtle">Pills Neutral Subtle</div><div class="demo-el spec-badges-pills-neutral-subtle">Pills Neutral Subtle</div></div>
+      <div class="demo-col"><div class="lb" title="badges-pills-neutral-filled">Pills Neutral Filled</div><div class="demo-el spec-badges-pills-neutral-filled">Pills Neutral Filled</div></div>
+    </div></div>
+  </section>
+  <section id="spacing">
+    <div class="sec-head"><h2>Spacing Scale</h2><span class="count">12 steps</span></div>
+    <div class="bar-row"><span>space-1</span><span class="val">1px</span><span class="bar bar-space-1"></span></div>
+    <div class="bar-row"><span>space-2</span><span class="val">2px</span><span class="bar bar-space-2"></span></div>
+    <div class="bar-row"><span>space-3</span><span class="val">4px</span><span class="bar bar-space-3"></span></div>
+    <div class="bar-row"><span>space-4</span><span class="val">6px</span><span class="bar bar-space-4"></span></div>
+    <div class="bar-row"><span>space-5</span><span class="val">8px</span><span class="bar bar-space-5"></span></div>
+    <div class="bar-row"><span>space-6</span><span class="val">12px</span><span class="bar bar-space-6"></span></div>
+    <div class="bar-row"><span>space-7</span><span class="val">16px</span><span class="bar bar-space-7"></span></div>
+    <div class="bar-row"><span>space-8</span><span class="val">24px</span><span class="bar bar-space-8"></span></div>
+    <div class="bar-row"><span>space-9</span><span class="val">32px</span><span class="bar bar-space-9"></span></div>
+    <div class="bar-row"><span>space-10</span><span class="val">48px</span><span class="bar bar-space-10"></span></div>
+    <div class="bar-row"><span>space-11</span><span class="val">64px</span><span class="bar bar-space-11"></span></div>
+    <div class="bar-row"><span>space-12</span><span class="val">120px</span><span class="bar bar-space-12"></span></div>
+  </section>
+  <section id="radius">
+    <div class="sec-head"><h2>Border Radius Scale</h2><span class="count">5 steps</span></div>
+    <div class="radius-grid">
+      <div class="radius-cell"><div class="box rd-radius-xs"></div><div class="lb">radius-xs · 3px</div></div>
+      <div class="radius-cell"><div class="box rd-radius-sm"></div><div class="lb">radius-sm · 5px</div></div>
+      <div class="radius-cell"><div class="box rd-radius-md"></div><div class="lb">radius-md · 6px</div></div>
+      <div class="radius-cell"><div class="box rd-radius-lg"></div><div class="lb">radius-lg · 12px</div></div>
+      <div class="radius-cell"><div class="box rd-radius-pill"></div><div class="lb">radius-pill · 99999px</div></div>
+    </div>
+  </section>
+  <section id="guidelines">
+    <div class="sec-head"><h2>Do&rsquo;s &amp; Don&rsquo;ts</h2></div>
+    <div class="guide">
+      <ul class="yes">
+        <li>Use the achromatic gray scale as the foundation -- maintain pure neutral discipline with no warm/cool tinting</li>
+        <li>Apply Electric Blue (#0052ef) consistently as the universal hover/active state across all interactive elements</li>
+        <li>Use extreme negative letter-spacing (-2px to -4.48px) on display headings 48px and above</li>
+        <li>Keep primary CTAs as full-pill shapes (99999px radius) with the coral-red (#f36458)</li>
+        <li>Use IBM Plex Mono uppercase for technical labels, tags, and system metadata</li>
+        <li>Communicate depth through surface color (dark-to-light) rather than shadows</li>
+      </ul>
+      <ul class="no">
+        <li>Don&#x27;t introduce warm or cool color tints to the neutral scale -- Sanity&#x27;s grays are pure achromatic</li>
+        <li>Don&#x27;t use drop shadows for elevation -- dark interfaces demand colorimetric depth</li>
+        <li>Don&#x27;t apply border-radius between 13px and 99998px -- the system jumps from 12px (large card) directly to pill (99999px)</li>
+        <li>Don&#x27;t mix the coral-red CTA with the electric blue interactive color in the same element</li>
+        <li>Don&#x27;t use heavy font weights (700+) -- the system maxes out at 600 and only for 11px uppercase labels</li>
+        <li>Don&#x27;t place light text on light surfaces or dark text on dark surfaces without checking the gray-on-gray contrast ratio</li>
+      </ul>
+    </div>
+  </section>
+  <section id="reference">
+    <div class="sec-head"><h2>Component Reference</h2><span class="count">13</span></div>
+    <table class="ref"><thead><tr><th>Component</th><th>Resolved properties</th></tr></thead><tbody>
+      <tr><td class="k">buttons-primary-cta-pill</td><td>Background: Sanity Red; Text: White; Padding: 8px 16px; Border Radius: 99999px; Border: none; Font: 16px waldenburgNormal, weight 400</td></tr>
+      <tr><td class="k">buttons-secondary-dark-pill</td><td>Background: Near Black; Text: Silver; Padding: 8px 12px; Border Radius: 99999px; Border: none</td></tr>
+      <tr><td class="k">buttons-outlined-light-pill</td><td>Background: White; Text: Near Black; Padding: 8px; Border Radius: 99999px; Border: 1px solid #0b0b0b</td></tr>
+      <tr><td class="k">buttons-ghost-subtle</td><td>Background: Dark Gray; Text: Silver; Padding: 0px 12px; Border Radius: 5px; Border: 1px solid #212121</td></tr>
+      <tr><td class="k">buttons-uppercase-label-button</td><td>Background: transparent; Text: Silver; Letter-spacing: normal</td></tr>
+      <tr><td class="k">cards-dark-content-card</td><td>Background: #212121; Border: 1px solid #353535; Border Radius: 6px; Padding: 24px; Hover: subtle border color shift</td></tr>
+      <tr><td class="k">cards-feature-card-full-bleed</td><td>Background: #0b0b0b; Border: none; Border Radius: 12px; Padding: 32-48px</td></tr>
+      <tr><td class="k">inputs-text-input-textarea</td><td>Background: Near Black; Text: Silver; Border: 1px solid #212121; Padding: 8px 12px; Border Radius: 3px; Focus background: shifts to deep cyan</td></tr>
+      <tr><td class="k">inputs-search-input</td><td>Background: #0b0b0b; Text: Silver; Padding: 0px 12px; Border Radius: 3px; Placeholder: Medium Gray</td></tr>
+      <tr><td class="k">navigation-top-navigation</td><td>Height: auto, compact padding; Logo: left-aligned, Sanity wordmark; Links: waldenburgNormal 16px, Silver; Link Hover: Electric Blue via --color-fg-accent-blue; Separator: 1px border-bottom #212121</td></tr>
+      <tr><td class="k">navigation-footer</td><td>Background: Near Black</td></tr>
+      <tr><td class="k">badges-pills-neutral-subtle</td><td>Background: White; Text: Near Black; Padding: 8px; Font: 13px; Border Radius: 99999px</td></tr>
+      <tr><td class="k">badges-pills-neutral-filled</td><td>Background: Near Black; Text: White; Padding: 8px; Font: 13px; Border Radius: 99999px</td></tr>
+    </tbody></table>
+  </section>
+  <footer><span>Sanity — design tokens extracted from DESIGN.md</span><span>awesome-design-md / getdesign.md</span></footer>
+</div>
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script>
+</body></html>

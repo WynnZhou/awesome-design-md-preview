@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of Binance</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #0b0b0c; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#responsive">Responsive</a></li>
+  </ul>
+  <button class="nav-cta">Sign Up</button>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of Binance</h1>
+    <p>A confident financial-platform interface anchored on a deep near-black canvas, where Binance's iconic yellow carries every primary CTA, brand accent, and value-claim moment.</p>
+    <div class="hero-actions">
+      <button class="btn-hero-primary">Sign Up</button>
+      <button class="btn-hero-secondary">Trading Fee</button>
+    </div>
+  </div>
+  <div class="hero-art">
+    <div class="hero-tab-row">
+      <div class="hero-tab active">Popular</div>
+      <div class="hero-tab">New listing</div>
+      <div class="hero-tab">Top gainers</div>
+    </div>
+    <div class="hero-row"><div class="pair">BTC</div><div class="price">$78,065.04</div><div class="change up">+1.42%</div></div>
+    <div class="hero-row"><div class="pair">ETH</div><div class="price">$3,219.18</div><div class="change up">+0.85%</div></div>
+    <div class="hero-row"><div class="pair">SOL</div><div class="price">$162.40</div><div class="change down">−2.31%</div></div>
+    <div class="hero-row"><div class="pair">BNB</div><div class="price">$586.00</div><div class="change up">+0.34%</div></div>
+  </div>
+</div>
+
+<section id="colors">
+  <div class="section-label">01 — Color Palette</div>
+  <h2 class="section-heading">Single-accent system on dual-canvas modes</h2>
+  <p class="section-intro">Binance Yellow does all brand voltage. Marketing pages default dark, transactional pages flip light — but yellow CTAs and trading green/red thread through both modes unchanged.</p>
+
+  <div class="palette-group">
+    <h3>Brand</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#fcd535;"></div><div class="swatch-meta"><div class="swatch-name">primary (Binance Yellow)</div><div class="swatch-hex">#fcd535</div><div class="swatch-role">All primary CTAs, brand-claim headlines, the wordmark.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f0b90b;"></div><div class="swatch-meta"><div class="swatch-name">primary-active</div><div class="swatch-hex">#f0b90b</div><div class="swatch-role">Press state on yellow buttons.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#3a3a1f;"></div><div class="swatch-meta"><div class="swatch-name">primary-disabled</div><div class="swatch-hex">#3a3a1f</div><div class="swatch-role">Desaturated yellow on dark canvas.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#2dbdb6;"></div><div class="swatch-meta"><div class="swatch-name">accent-turquoise</div><div class="swatch-hex">#2dbdb6</div><div class="swatch-role">Smart Money "Check Now" — sparingly used product accent.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Surface — Dark</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#0b0e11;"></div><div class="swatch-meta"><div class="swatch-name">canvas-dark</div><div class="swatch-hex">#0b0e11</div><div class="swatch-role">Marketing pages, Smart Money, Futures Arena.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1e2329;"></div><div class="swatch-meta"><div class="swatch-name">surface-card-dark</div><div class="swatch-hex">#1e2329</div><div class="swatch-role">Cards, secondary buttons, markets table.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#2b3139;"></div><div class="swatch-meta"><div class="swatch-name">surface-elevated-dark</div><div class="swatch-hex">#2b3139</div><div class="swatch-role">Nested cards, hovered nav, chart panels.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Surface — Light</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff; border:1px solid var(--hairline-on-dark);"></div><div class="swatch-meta"><div class="swatch-name">canvas-light</div><div class="swatch-hex">#ffffff</div><div class="swatch-role">Transactional pages (buy crypto, deposit).</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#fafafa;"></div><div class="swatch-meta"><div class="swatch-name">surface-soft-light</div><div class="swatch-hex">#fafafa</div><div class="swatch-role">Footer surface, disabled states.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f5f5f5;"></div><div class="swatch-meta"><div class="swatch-name">surface-strong-light</div><div class="swatch-hex">#f5f5f5</div><div class="swatch-role">Form input backgrounds in muted contexts.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#eaecef;"></div><div class="swatch-meta"><div class="swatch-name">hairline-on-light</div><div class="swatch-hex">#eaecef</div><div class="swatch-role">1px borders on light surfaces.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Text</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#181a20;"></div><div class="swatch-meta"><div class="swatch-name">ink</div><div class="swatch-hex">#181a20</div><div class="swatch-role">Strongest text on light surfaces.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#eaecef;"></div><div class="swatch-meta"><div class="swatch-name">body (on dark)</div><div class="swatch-hex">#eaecef</div><div class="swatch-role">Default running-text on dark canvas.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#707a8a;"></div><div class="swatch-meta"><div class="swatch-name">muted</div><div class="swatch-hex">#707a8a</div><div class="swatch-role">Footer links, captions, table headers.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#929aa5;"></div><div class="swatch-meta"><div class="swatch-name">muted-strong</div><div class="swatch-hex">#929aa5</div><div class="swatch-role">Second-tier muted for emphasized labels.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Trading Semantics</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#0ecb81;"></div><div class="swatch-meta"><div class="swatch-name">trading-up</div><div class="swatch-hex">#0ecb81</div><div class="swatch-role">Price-up green. Used as text color on prices and changes.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f6465d;"></div><div class="swatch-meta"><div class="swatch-name">trading-down</div><div class="swatch-hex">#f6465d</div><div class="swatch-role">Price-down red. Symmetric to trading-up.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#3b82f6;"></div><div class="swatch-meta"><div class="swatch-name">info / focus-ring</div><div class="swatch-hex">#3b82f6</div><div class="swatch-role">Info badges, input focus ring.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="typography">
+  <div class="section-label">02 — Typography Scale</div>
+  <h2 class="section-heading">BinanceNova + BinancePlex split</h2>
+  <p class="section-intro">Display + body run BinanceNova; numerical / financial data run BinancePlex (preview uses Inter + JetBrains Mono as substitutes). The split is functional — every price ticker, stat counter, and percentage uses the monospace-tuned numeric face.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>hero-display</strong>64px / 700 / 1.1 / -1px</div><div class="type-sample" style="font-size:64px; font-weight:700; line-height:1.1; letter-spacing:-1.5px;">316,258,026 USERS TRUST US</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>48px / 700 / 1.1 / -0.5px</div><div class="type-sample" style="font-size:48px; font-weight:700; line-height:1.1; letter-spacing:-0.5px; color:var(--primary);">FUNDS ARE SAFU</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>40px / 600 / 1.15 / -0.3px</div><div class="type-sample" style="font-size:40px; font-weight:600;">The World's Leading Cryptocurrency Exchange</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-sm</strong>32px / 600 / 1.2 / 0</div><div class="type-sample" style="font-size:32px; font-weight:600;">Secure, Low-Fee Trading on Binance</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-lg</strong>24px / 600 / 1.3 / 0</div><div class="type-sample" style="font-size:24px; font-weight:600;">Frequently Asked Questions</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-md</strong>20px / 600 / 1.35 / 0</div><div class="type-sample" style="font-size:20px; font-weight:600;">Trade on the go. Anywhere, anytime.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-sm</strong>16px / 600 / 1.4 / 0</div><div class="type-sample" style="font-size:16px; font-weight:600;">Why is Binance the best exchange for crypto traders?</div></div>
+  <div class="type-row"><div class="type-meta"><strong>number-display</strong>40px / 700 / 1.1 / -0.3px<br>BinancePlex (JetBrains Mono substitute)</div><div class="type-sample numeric" style="font-size:40px; font-weight:700; color:var(--primary);">15,000 BTC</div></div>
+  <div class="type-row"><div class="type-meta"><strong>number-md</strong>16px / 500 / 1.4 / 0<br>BinancePlex</div><div class="type-sample numeric" style="font-size:16px; font-weight:500;">$78,065.04</div></div>
+  <div class="type-row"><div class="type-meta"><strong>number-sm</strong>14px / 500 / 1.4 / 0<br>BinancePlex</div><div class="type-sample numeric" style="font-size:14px; font-weight:500; color:var(--trading-up);">+0.45%</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>14px / 400 / 1.5 / 0</div><div class="type-sample" style="font-size:14px;">Buy and sell crypto with confidence on Binance — the world's most trusted cryptocurrency exchange.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>13px / 400 / 1.5 / 0</div><div class="type-sample" style="font-size:13px; color:var(--muted);">By clicking "Strictly Necessary" cookies are stored on your device.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption</strong>12px / 500 / 1.4 / 0</div><div class="type-sample" style="font-size:12px; font-weight:500; color:var(--muted);">24H VOLUME</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button</strong>14px / 600 / 1 / 0</div><div class="type-sample" style="font-size:14px; font-weight:600;">Sign Up</div></div>
+  <div class="type-row"><div class="type-meta"><strong>nav-link</strong>14px / 500 / 1.4 / 0</div><div class="type-sample" style="font-size:14px; font-weight:500;">Buy Crypto · Markets · Trade · Futures</div></div>
+</section>
+
+<section id="components">
+  <div class="section-label">03 — Button Variants</div>
+  <h2 class="section-heading">Yellow-on-black across modes</h2>
+  <p class="section-intro">Primary stays identical across dark and light surfaces — yellow with black text is the system's universal action signal. Trading green and red signal Buy/Sell direction; never general confirm/cancel.</p>
+
+  <div class="button-grid">
+    <div class="button-cell"><div class="button-label">button-primary</div><button class="btn btn-primary">Sign Up</button><div class="button-meta">primary / on-primary / md radius / standard CTA</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-active</div><button class="btn btn-primary-active">Pressed</button><div class="button-meta">primary-active background</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-disabled</div><button class="btn btn-primary-disabled" disabled="">Disabled</button><div class="button-meta">primary-disabled / muted text</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-pill</div><button class="btn btn-primary-pill">Join Now</button><div class="button-meta">Pill radius for top-of-page sign-up moments</div></div>
+    <div class="button-cell"><div class="button-label">button-secondary-on-dark</div><button class="btn btn-secondary-on-dark">Trading Fee</button><div class="button-meta">surface-card-dark / on-dark / md radius</div></div>
+    <div class="button-cell on-light"><div class="button-label">button-secondary-on-light</div><button class="btn btn-secondary-on-light">Manage Cookies</button><div class="button-meta">canvas-light / ink with hairline outline</div></div>
+    <div class="button-cell"><div class="button-label">button-tertiary-text</div><button class="btn btn-tertiary-text">Log In</button><div class="button-meta">No background; inline link-style action</div></div>
+    <div class="button-cell"><div class="button-label">button-trading-up</div><button class="btn btn-trading-up">Buy / Long</button><div class="button-meta">trading-up / sm radius / dense trading interfaces</div></div>
+    <div class="button-cell"><div class="button-label">button-trading-down</div><button class="btn btn-trading-down">Sell / Short</button><div class="button-meta">trading-down / sm radius / symmetric to up</div></div>
+    <div class="button-cell"><div class="button-label">button-subscribe</div><button class="btn btn-subscribe">Subscribe</button><div class="button-meta">28px height — fits inside dense table rows</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">04 — Trust &amp; Stat Components</div>
+  <h2 class="section-heading">Yellow-as-emphasis</h2>
+  <p class="section-intro">Stat numbers render in BinancePlex with yellow ink — no surface card, just the numeral and a small label below.</p>
+
+  <div class="card-grid">
+    <div class="trust-badge"><div class="badge-no">No.1</div><div class="badge-label">Customer Service</div></div>
+    <div class="trust-badge"><div class="badge-no">No.1</div><div class="badge-label">Trading Volume</div></div>
+    <div class="trust-badge"><div class="badge-no">99.9%</div><div class="badge-label">Uptime</div></div>
+    <div class="stat-callout"><div class="num">15,000 BTC</div><div class="label">SAFU Insurance Fund</div></div>
+    <div class="stat-callout"><div class="num">7,488,223</div><div class="label">Users helped</div></div>
+    <div class="stat-callout"><div class="num">$429,423,449</div><div class="label">Funds recovered</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">05 — Markets Table Card</div>
+  <h2 class="section-heading">Trading data, dense rows</h2>
+  <p class="section-intro">Right-rail markets table on the homepage. BinancePlex prices, green/red change cells, hairline dividers between rows.</p>
+
+  <div class="markets-table-card">
+    <div class="markets-tabs">
+      <div class="tab active">Popular</div>
+      <div class="tab">New listing</div>
+      <div class="tab">Top gainers</div>
+    </div>
+    <div class="markets-row"><div class="pair-cell">BTC</div><div class="price-cell">$78,065.04</div><div class="change-cell price-up">+1.42%</div></div>
+    <div class="markets-row"><div class="pair-cell">ETH</div><div class="price-cell">$3,219.18</div><div class="change-cell price-up">+0.85%</div></div>
+    <div class="markets-row"><div class="pair-cell">SOL</div><div class="price-cell">$162.40</div><div class="change-cell price-down">−2.31%</div></div>
+    <div class="markets-row"><div class="pair-cell">BNB</div><div class="price-cell">$586.00</div><div class="change-cell price-up">+0.34%</div></div>
+    <div class="markets-row"><div class="pair-cell">XRP</div><div class="price-cell">$0.5821</div><div class="change-cell price-down">−1.15%</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">06 — FUNDS ARE SAFU + Pre-Footer CTA</div>
+  <h2 class="section-heading">Yellow-headlined value claim + dark CTA strip</h2>
+
+  <div class="funds-safu-band">
+    <h2>FUNDS ARE SAFU</h2>
+    <div style="display:flex; gap:32px; justify-content:center; flex-wrap:wrap;">
+      <div class="stat-callout"><div class="num">15,000 BTC</div><div class="label">SAFU Insurance Fund</div></div>
+      <div class="stat-callout"><div class="num">7,488,223</div><div class="label">Users helped</div></div>
+      <div class="stat-callout"><div class="num">$429,423,449</div><div class="label">Funds recovered</div></div>
+    </div>
+  </div>
+
+  <div style="height:48px;"></div>
+
+  <div class="cta-band-dark">
+    <h3>Secure, Low-Fee Trading on Binance</h3>
+    <button class="btn btn-primary">Sign Up</button>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">07 — QR Promo Card + FAQ Rows</div>
+  <h2 class="section-heading">Trade on the go + Q&amp;A pattern</h2>
+
+  <div class="card-grid">
+    <div class="qr-promo-card">
+      <h4>Trade on the go. Anywhere, anytime.</h4>
+      <p style="color:var(--body); font-size:14px;">Available on iOS and Android. Scan to download.</p>
+      <div class="qr-area"></div>
+    </div>
+    <div>
+      <div class="faq-row">Why is Binance the best exchange for crypto traders? <span class="chev">+</span></div>
+      <div class="faq-row">Which products does Binance provide? <span class="chev">+</span></div>
+      <div class="faq-row">How do I buy Bitcoin and other cryptocurrencies on Binance? <span class="chev">+</span></div>
+      <div class="faq-row">How is Binance a secure cryptocurrency exchange? <span class="chev">+</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="light-section">
+  <div class="section-label" style="color:var(--muted);">08 — Light-Mode Transactional Components</div>
+  <h2 class="section-heading">Transactional surfaces flip to white canvas</h2>
+  <p class="section-intro">Buy crypto, deposit, withdraw, conversion pages render on light canvas. Yellow CTAs and trading green/red stay identical.</p>
+
+  <div class="card-grid">
+    <div class="buy-amount-card">
+      <div style="font-size:13px; color:var(--muted); margin-bottom:8px;">Buy</div>
+      <div class="num">78,254.6</div>
+      <div style="font-size:13px; color:var(--muted); margin-bottom:16px;">USDT</div>
+      <button class="btn btn-primary" style="width:100%;">Continue</button>
+    </div>
+    <div class="steps-card">
+      <div class="step-num">1</div>
+      <h4>Enter Amount &amp; Select Payment</h4>
+      <p>Choose how much you want to buy and pick your preferred payment method.</p>
+    </div>
+    <div class="steps-card">
+      <div class="step-num">2</div>
+      <h4>Confirm Order</h4>
+      <p>Review the conversion rate, fees, and order details before confirming.</p>
+    </div>
+    <div class="steps-card">
+      <div class="step-num">3</div>
+      <h4>Receive Crypto</h4>
+      <p>Your crypto lands in your spot wallet within minutes.</p>
+    </div>
+  </div>
+
+  <div style="height:32px;"></div>
+
+  <div class="price-chart-card">
+    <div class="top-row">
+      <div>
+        <div style="font-size:13px; color:var(--muted);">BTC</div>
+        <div class="price">$78,065.04</div>
+      </div>
+      <div class="change-up">+0.45% • 24H</div>
+    </div>
+    <div class="chart-area"></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">09 — Smart Money Trader Rows</div>
+  <h2 class="section-heading">Top traders subscription pattern</h2>
+  <p class="section-intro">Dense table row with avatar, ROI %, AUM, mint date, and yellow subscribe CTA. The 28px subscribe button fits the table density.</p>
+
+  <div style="background:var(--surface-card-dark); border-radius:12px; padding:24px;">
+    <div class="trader-row" style="font-weight:600; color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:0.5px;">
+      <div>Trader</div><div style="text-align:right;">ROI</div><div style="text-align:right;">AUM</div><div style="text-align:right;">Active</div><div></div>
+    </div>
+    <div class="trader-row"><div class="trader-name"><div class="avatar"></div><span>FuturesGuy01</span></div><div class="roi" style="text-align:right;">+86.42%</div><div class="aum" style="text-align:right;">$1,521,344</div><div style="text-align:right; color:var(--muted);">128d</div><div style="text-align:right;"><button class="btn btn-subscribe">Subscribe</button></div></div>
+    <div class="trader-row"><div class="trader-name"><div class="avatar"></div><span>ChainTrader</span></div><div class="roi" style="text-align:right;">+62.18%</div><div class="aum" style="text-align:right;">$2,340,810</div><div style="text-align:right; color:var(--muted);">95d</div><div style="text-align:right;"><button class="btn btn-subscribe">Subscribe</button></div></div>
+    <div class="trader-row"><div class="trader-name"><div class="avatar"></div><span>SatoshiPilot</span></div><div class="roi" style="text-align:right;">+54.07%</div><div class="aum" style="text-align:right;">$782,450</div><div style="text-align:right; color:var(--muted);">214d</div><div style="text-align:right;"><button class="btn btn-subscribe">Subscribe</button></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">10 — Form Elements</div>
+  <h2 class="section-heading">Inputs on dark + light</h2>
+  <p class="section-intro">Search input on dark canvas (homepage hero) at 40px height with 8px radius. Light-mode inputs match transactional surfaces.</p>
+
+  <div class="form-grid">
+    <div class="form-cell">
+      <label class="form-label">Search currencies (on dark)</label>
+      <input class="form-input-dark" type="text" placeholder="Search BTC, ETH, ...">
+    </div>
+    <div class="form-cell on-light">
+      <label class="form-label">Email address (on light)</label>
+      <input class="form-input-light" type="email" placeholder="you@example.com">
+    </div>
+    <div class="form-cell on-light">
+      <label class="form-label">Email (focused)</label>
+      <input class="form-input-light focused" type="email" value="alex@studio.com">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">11 — Spacing Scale</div>
+  <h2 class="section-heading">Base unit 4px</h2>
+  <p class="section-intro">Section rhythm 80px — slightly tighter than airy marketing sites because Binance mixes marketing bands with product surfaces.</p>
+
+  <div class="spacing-row">
+    <div class="spacing-block"><div class="spacing-bar" style="width:4px;"></div><div class="spacing-label">xxs · 4px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:8px;"></div><div class="spacing-label">xs · 8px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:12px;"></div><div class="spacing-label">sm · 12px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:16px;"></div><div class="spacing-label">md · 16px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:24px;"></div><div class="spacing-label">lg · 24px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:32px;"></div><div class="spacing-label">xl · 32px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:48px;"></div><div class="spacing-label">xxl · 48px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:80px;"></div><div class="spacing-label">section · 80px</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">12 — Border Radius Scale</div>
+  <h2 class="section-heading">Tight radius hierarchy</h2>
+  <p class="section-intro">6px primary CTAs, 8px content cards, 12px elevated containers, pill for top-of-page actions.</p>
+
+  <div class="radius-row">
+    <div class="radius-block" style="border-radius:2px;">2 · xs</div>
+    <div class="radius-block" style="border-radius:4px;">4 · sm</div>
+    <div class="radius-block" style="border-radius:6px;">6 · md</div>
+    <div class="radius-block" style="border-radius:8px;">8 · lg</div>
+    <div class="radius-block" style="border-radius:12px;">12 · xl</div>
+    <div class="radius-block" style="border-radius:9999px;">pill</div>
+    <div class="radius-block" style="border-radius:50%;">full</div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">13 — Elevation &amp; Depth</div>
+  <h2 class="section-heading">Flat surfaces, color-block separation</h2>
+  <p class="section-intro">No drop shadows, no glassmorphism. Depth comes from the lightness step between canvas-dark (#0b0e11) and surface-card-dark (#1e2329).</p>
+
+  <div class="elevation-grid">
+    <div class="elevation-card elevation-flat"><h5>Flat</h5><p>No shadow. Body sections, top nav, hero bands, footer.</p></div>
+    <div class="elevation-card elevation-flat"><h5>Soft hairline</h5><p>1px hairline. Inputs, table dividers, FAQ separators.</p></div>
+    <div class="elevation-card elevation-elevated"><h5>Card surface</h5><p>surface-card-dark over canvas-dark — 12-step lightness jump.</p></div>
+    <div class="elevation-card elevation-flat"><h5>Card elevated</h5><p>surface-elevated-dark for nested cards inside markets-table-card.</p></div>
+    <div class="elevation-card elevation-light-card"><h5>Light card flat</h5><p>canvas-light over surface-soft-light — same flat philosophy.</p></div>
+    <div class="elevation-card elevation-flat"><h5>Focus ring</h5><p>0 0 0 2px info-ring at 50% alpha. Inputs and buttons.</p></div>
+  </div>
+</section>
+
+<section id="responsive">
+  <div class="section-label">14 — Responsive Behavior</div>
+  <h2 class="section-heading">Dense layouts that scale to mobile</h2>
+  <p class="section-intro">Markets table reflows to a horizontally-scrollable card list on mobile. The hero h1 shrinks proportionally rather than wrapping.</p>
+
+  <table class="responsive-table">
+    <thead>
+      <tr><th>Name</th><th>Width</th><th>Key Changes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Mobile</td><td>&lt; 768px</td><td>Hamburger nav; hero h1 ~36px; markets table → horizontal-scroll cards; demo grids 1-up; footer 6 cols → 2.</td></tr>
+      <tr><td>Tablet</td><td>768–1024px</td><td>Top nav tightens, secondary items in "More"; markets 2-up; pricing/feature grids 2-up.</td></tr>
+      <tr><td>Desktop</td><td>1024–1440px</td><td>Full top-nav; 5-col markets table; trading dashboards in 8/4 split (chart + side rail).</td></tr>
+      <tr><td>Wide</td><td>&gt; 1440px</td><td>Same as desktop with more outer breathing room; max content 1280-1440px.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="device-ladder">
+    <div class="device-bar" style="width:60px; height:120px;">375<br>mobile</div>
+    <div class="device-bar" style="width:90px; height:140px;">600<br>small phone</div>
+    <div class="device-bar" style="width:140px; height:160px;">768<br>tablet</div>
+    <div class="device-bar" style="width:200px; height:180px;">1024<br>laptop</div>
+    <div class="device-bar" style="width:260px; height:200px;">1280<br>desktop</div>
+    <div class="device-bar" style="width:320px; height:220px;">1440<br>wide</div>
+  </div>
+
+  <div class="responsive-sub">
+    <h4>Touch Targets</h4>
+    <ul>
+      <li>Primary CTA buttons render at min 40 × 40px.</li>
+      <li>Subscribe / inline action buttons at 28 × 28 — denser than ideal but matches industry trading norms; row-tap area effective ≥ 44px.</li>
+      <li>Coin icons in markets tables are 32 × 32px.</li>
+    </ul>
+  </div>
+
+  <div class="responsive-sub">
+    <h4>Collapsing Strategy</h4>
+    <ul>
+      <li>Top nav collapses to hamburger at &lt; 768px; full-screen sheet with bottom-anchored CTAs.</li>
+      <li>Markets table reflows to horizontally-scrollable card-per-pair on mobile.</li>
+      <li>Hero stat numbers shrink proportionally, never wrap — must read as single block.</li>
+      <li>Trading dashboards switch chart + side-rail → chart-only with a separate "Trade" tab on mobile.</li>
+      <li>Light footer stays full-bleed at every breakpoint.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

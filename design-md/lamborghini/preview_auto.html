@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" data-native="dark" data-theme="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lamborghini — Design System Preview</title>
+  <link rel="stylesheet" href="preview_auto.css">
+</head>
+<body>
+
+<div class="page">
+  <header class="topbar">
+    <div><div class="topbar-name">Lamborghini</div><div class="topbar-meta">design tokens · 23 colors · 14 type styles · 6 components</div></div>
+    <nav class="topbar-links"><a href="#colors">Colors</a><a href="#typography">Type</a><a href="#buttons">Buttons</a><a href="#spacing">Spacing</a><a href="#radius">Radius</a><a href="#elevation">Depth</a><a href="#signature">Other</a><a href="#reference">Reference</a></nav>
+  </header>
+  <section class="hero">
+    <h1>Lamborghini</h1>
+    <p class="lede">Lamborghini&#x27;s website is a cathedral of darkness — a digital stage where jet-black surfaces stretch infinitely and every element emerges from the void like a machine under a spotlight. The page is almost entirely black. Not dark gray, not near-black — true, uncompromising black (`#000000`) that saturates the viewport and refuses to yield. Into this abyss, white type and Lamborghini Gold (`#FFC000`) are deployed with surgical precision, creating a visual language that feels like walking through a nighttime motorsport event where every surface absorbs light except the things that matter.</p>
+    <div class="meta">
+      <span class="chip solid">#FFC000</span>
+      <span class="chip">system-ui</span>
+      <span class="chip">dark canvas</span>
+      <span class="chip">source: DESIGN.md (markdown)</span>
+    </div>
+  </section>
+  <section id="colors">
+    <div class="sec-head"><h2>Color Palette</h2><span class="count">23 tokens</span></div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-lamborghini-gold">#FFC000</div><div class="info"><div class="nm">Lamborghini Gold</div><div class="hx">lamborghini-gold</div><div class="hx dim">The signature accent color — a warm, saturated amber-gold (rgb 255, 19</div></div></div>
+      <div class="swatch"><div class="fill sw-pure-white">#FFFFFF</div><div class="info"><div class="nm">Pure White</div><div class="hx">pure-white</div><div class="hx dim">Primary text color on dark surfaces, logo rendering, nav elements, and</div></div></div>
+    </div>
+    <div class="group-title">Secondary &amp; Accent</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-dark-gold">#917300</div><div class="info"><div class="nm">Dark Gold</div><div class="hx">dark-gold</div><div class="hx dim">Hover/pressed state for gold buttons — a deep amber (rgb 145, 115, 0) </div></div></div>
+      <div class="swatch"><div class="fill sw-gold-text">#FFCE3E</div><div class="info"><div class="nm">Gold Text</div><div class="hx">gold-text</div><div class="hx dim">Slightly lighter gold variant (rgb 255, 206, 62) used for inline text </div></div></div>
+      <div class="swatch"><div class="fill sw-cyan-pulse">#29ABE2</div><div class="info"><div class="nm">Cyan Pulse</div><div class="hx">cyan-pulse</div><div class="hx dim">Electric blue-cyan (rgb 41, 171, 226) appearing as an informational ac</div></div></div>
+      <div class="swatch"><div class="fill sw-link-blue">#3860BE</div><div class="info"><div class="nm">Link Blue</div><div class="hx">link-blue</div><div class="hx dim">Medium blue (rgb 56, 96, 190) used universally for link hover states a</div></div></div>
+    </div>
+    <div class="group-title">Surface &amp; Background</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-absolute-black">#000000</div><div class="info"><div class="nm">Absolute Black</div><div class="hx">absolute-black</div><div class="hx dim">The dominant surface color — used for page background, hero sections, </div></div></div>
+      <div class="swatch"><div class="fill sw-charcoal">#202020</div><div class="info"><div class="nm">Charcoal</div><div class="hx">charcoal</div><div class="hx dim">Elevated dark surface (rgb 32, 32, 32) — the primary &quot;dark gray&quot; for c</div></div></div>
+      <div class="swatch"><div class="fill sw-dark-iron">#181818</div><div class="info"><div class="nm">Dark Iron</div><div class="hx">dark-iron</div><div class="hx dim">Subtle surface variant (rgb 24, 24, 24) — barely distinguishable from </div></div></div>
+      <div class="swatch"><div class="fill sw-overlay-black">rgba(0,0,0,0.7)</div><div class="info"><div class="nm">Overlay Black</div><div class="hx">overlay-black</div><div class="hx dim">Semi-transparent overlay for modals and video dimming</div></div></div>
+      <div class="swatch"><div class="fill sw-near-white">#F8F8F8</div><div class="info"><div class="nm">Near White</div><div class="hx">near-white</div><div class="hx dim">Rare light surface (rgb 248, 248, 248) for content blocks in white-mod</div></div></div>
+      <div class="swatch"><div class="fill sw-mist">#E6E6E6</div><div class="info"><div class="nm">Mist</div><div class="hx">mist</div><div class="hx dim">Light gray surface for secondary light-mode containers</div></div></div>
+    </div>
+    <div class="group-title">Neutrals &amp; Text</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-pure-white">#FFFFFF</div><div class="info"><div class="nm">Pure White</div><div class="hx">pure-white</div><div class="hx dim">Primary text on dark backgrounds — headlines, body, nav labels</div></div></div>
+      <div class="swatch"><div class="fill sw-smoke">#F5F5F5</div><div class="info"><div class="nm">Smoke</div><div class="hx">smoke</div><div class="hx dim">Secondary text on dark surfaces — slightly softer than pure white</div></div></div>
+      <div class="swatch"><div class="fill sw-graphite">#494949</div><div class="info"><div class="nm">Graphite</div><div class="hx">graphite</div><div class="hx dim">Dark gray text on light surfaces (rgb 73, 73, 73)</div></div></div>
+      <div class="swatch"><div class="fill sw-ash">#7D7D7D</div><div class="info"><div class="nm">Ash</div><div class="hx">ash</div><div class="hx dim">Mid-range gray for muted text, timestamps, and metadata (rgb 125, 125,</div></div></div>
+      <div class="swatch"><div class="fill sw-steel">#969696</div><div class="info"><div class="nm">Steel</div><div class="hx">steel</div><div class="hx dim">Lighter gray for disabled text and subtle labels (rgb 150, 150, 150)</div></div></div>
+      <div class="swatch"><div class="fill sw-slate">#666666</div><div class="info"><div class="nm">Slate</div><div class="hx">slate</div><div class="hx dim">Alternative mid-gray for secondary content</div></div></div>
+      <div class="swatch"><div class="fill sw-iron">#555555</div><div class="info"><div class="nm">Iron</div><div class="hx">iron</div><div class="hx dim">Dark mid-gray for body text variants</div></div></div>
+      <div class="swatch"><div class="fill sw-shadow">#313131</div><div class="info"><div class="nm">Shadow</div><div class="hx">shadow</div><div class="hx dim">Very dark gray for text on dark surfaces where white is too strong</div></div></div>
+    </div>
+    <div class="group-title">Semantic &amp; Accent</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-cyan-pulse">#29ABE2</div><div class="info"><div class="nm">Cyan Pulse</div><div class="hx">cyan-pulse</div><div class="hx dim">Used for informational highlights and interactive feedback</div></div></div>
+      <div class="swatch"><div class="fill sw-link-blue">#3860BE</div><div class="info"><div class="nm">Link Blue</div><div class="hx">link-blue</div><div class="hx dim">Universal hover state for all hyperlinks</div></div></div>
+      <div class="swatch"><div class="fill sw-teal-action">#1EAEDB</div><div class="info"><div class="nm">Teal Action</div><div class="hx">teal-action</div><div class="hx dim">Button hover background for transparent/ghost variants (rgb 30, 174, 2</div></div></div>
+    </div>
+  </section>
+  <section id="typography">
+    <div class="sec-head"><h2>Typography Scale</h2><span class="count">14 styles</span></div>
+    <div class="type-row">
+      <div class="type-meta"><b>Hero Display</b>120px / 400<br>lh 0.92 · ls normal<br></div>
+      <div class="type-sample type-hero-display">Hero Display — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Display 2</b>80px / 400<br>lh 1.13 · ls normal<br></div>
+      <div class="type-sample type-display-2">Display 2 — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Section Title</b>54px / 400<br>lh 1.19 · ls normal<br></div>
+      <div class="type-sample type-section-title">Section Title — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Sub-section</b>40px / 400<br>lh 1.15 · ls normal<br></div>
+      <div class="type-sample type-sub-section">Sub-section — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Feature Heading</b>27px / 400<br>lh 1.37 · ls normal<br></div>
+      <div class="type-sample type-feature-heading">Feature Heading — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Card Title</b>24px / 400<br>lh 1.4 · ls normal<br></div>
+      <div class="type-sample type-card-title">Card Title — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Body Large</b>18px / 400<br>lh 1.56 · ls normal<br></div>
+      <div class="type-sample type-body-large">Body Large — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Body / UI</b>16px / 400<br>lh 1.50 · ls normal/0.16px<br></div>
+      <div class="type-sample type-body-ui">Body / UI — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Button Large</b>16px / 400<br>lh 1.50 · ls normal<br></div>
+      <div class="type-sample type-button-large">Button Large — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Button Standard</b>14.4px / 300<br>lh 1.00 · ls 0.14–0.2px<br></div>
+      <div class="type-sample type-button-standard">Button Standard — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Button Small</b>13px / 300<br>lh 1.20 · ls 0.13–0.2px<br></div>
+      <div class="type-sample type-button-small">Button Small — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Caption</b>14px / 600<br>lh 1.14–1.50 · ls -0.42px<br></div>
+      <div class="type-sample type-caption">Caption — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Label</b>12px / 400<br>lh 1.83 · ls 0.96px<br></div>
+      <div class="type-sample type-label">Label — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Micro</b>10px / 400<br>lh 1.00–2.00 · ls 0.225px<br></div>
+      <div class="type-sample type-micro">Micro — The quick brown fox jumps over the lazy dog</div>
+    </div>
+  </section>
+  <section id="buttons">
+    <div class="sec-head"><h2>Button Variants</h2><span class="count">1</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-gold-accent-cta">Gold Accent Cta</div><button class="demo-el demo-el-ghost spec-buttons-gold-accent-cta" type="button">Button</button></div>
+    </div></div>
+  </section>
+  <section id="signature">
+    <div class="sec-head"><h2>Other Components</h2><span class="count">5</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-black-filled">Black Filled</div><div class="demo-el demo-el-ghost spec-buttons-black-filled">Black Filled</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-gray-neutral">Gray Neutral</div><div class="demo-el demo-el-ghost spec-buttons-gray-neutral">Gray Neutral</div></div>
+      <div class="demo-col"><div class="lb" title="cards-containers">Containers</div><div class="demo-el spec-cards-containers">Containers</div></div>
+      <div class="demo-col"><div class="lb" title="inputs-forms">Forms</div><div class="demo-el spec-inputs-forms">Forms</div></div>
+      <div class="demo-col"><div class="lb" title="distinctive-components">Distinctive Components</div><div class="demo-el spec-distinctive-components">Distinctive Components</div></div>
+    </div></div>
+  </section>
+  <section id="spacing">
+    <div class="sec-head"><h2>Spacing Scale</h2><span class="count">17 steps</span></div>
+    <div class="bar-row"><span>s0-2px</span><span class="val">**: 2px</span><span class="bar bar-s0-2px"></span></div>
+    <div class="bar-row"><span>full-scale</span><span class="val">2px</span><span class="bar bar-full-scale"></span></div>
+    <div class="bar-row"><span>s1-4px</span><span class="val">4px</span><span class="bar bar-s1-4px"></span></div>
+    <div class="bar-row"><span>s2-5px</span><span class="val">5px</span><span class="bar bar-s2-5px"></span></div>
+    <div class="bar-row"><span>base-unit</span><span class="val">8px</span><span class="bar bar-base-unit"></span></div>
+    <div class="bar-row"><span>s3-8px</span><span class="val">8px</span><span class="bar bar-s3-8px"></span></div>
+    <div class="bar-row"><span>s4-10px</span><span class="val">10px</span><span class="bar bar-s4-10px"></span></div>
+    <div class="bar-row"><span>s5-12px</span><span class="val">12px</span><span class="bar bar-s5-12px"></span></div>
+    <div class="bar-row"><span>s6-15px</span><span class="val">15px</span><span class="bar bar-s6-15px"></span></div>
+    <div class="bar-row"><span>s7-16px</span><span class="val">16px</span><span class="bar bar-s7-16px"></span></div>
+    <div class="bar-row"><span>button-padding</span><span class="val">16px</span><span class="bar bar-button-padding"></span></div>
+    <div class="bar-row"><span>s8-20px</span><span class="val">20px</span><span class="bar bar-s8-20px"></span></div>
+    <div class="bar-row"><span>s9-24px</span><span class="val">24px</span><span class="bar bar-s9-24px"></span></div>
+    <div class="bar-row"><span>s10-32px</span><span class="val">32px</span><span class="bar bar-s10-32px"></span></div>
+    <div class="bar-row"><span>s11-40px</span><span class="val">40px</span><span class="bar bar-s11-40px"></span></div>
+    <div class="bar-row"><span>s12-48px</span><span class="val">48px</span><span class="bar bar-s12-48px"></span></div>
+    <div class="bar-row"><span>s13-56px</span><span class="val">56px</span><span class="bar bar-s13-56px"></span></div>
+  </section>
+  <section id="radius">
+    <div class="sec-head"><h2>Border Radius Scale</h2><span class="count">4 steps</span></div>
+    <div class="radius-grid">
+      <div class="radius-cell"><div class="box rd-radius-0px"></div><div class="lb">radius-0px · 0px</div></div>
+      <div class="radius-cell"><div class="box rd-subtle-span-elements"></div><div class="lb">subtle-span-elements · 1px</div></div>
+      <div class="radius-cell"><div class="box rd-radius-2px"></div><div class="lb">radius-2px · 2px</div></div>
+      <div class="radius-cell"><div class="box rd-radius-20px"></div><div class="lb">radius-20px · 20px</div></div>
+    </div>
+  </section>
+  <section id="elevation">
+    <div class="sec-head"><h2>Elevation &amp; Depth</h2><span class="count">5</span></div>
+    <div class="elev-grid">
+      <div class="elev-cell elev-level-0-abyss"><div class="lb">Level 0 (Abyss)</div><div class="vl">#000000 flat</div></div>
+      <div class="elev-cell elev-level-1-surface"><div class="lb">Level 1 (Surface)</div><div class="vl">#181818 or #202020</div></div>
+      <div class="elev-cell elev-level-2-overlay"><div class="lb">Level 2 (Overlay)</div><div class="vl">rgba(0,0,0,0.7)</div></div>
+      <div class="elev-cell elev-level-3-fog"><div class="lb">Level 3 (Fog)</div><div class="vl">rgba(0,0,0,0.5)</div></div>
+      <div class="elev-cell elev-level-4-mist"><div class="lb">Level 4 (Mist)</div><div class="vl">rgba(0,0,0,0.25)</div></div>
+    </div>
+  </section>
+  <section id="guidelines">
+    <div class="sec-head"><h2>Do&rsquo;s &amp; Don&rsquo;ts</h2></div>
+    <div class="guide">
+      <ul class="yes">
+        <li>Use absolute black (#000000) as the primary background — never dark gray as a substitute</li>
+        <li>Apply Lamborghini Gold (#FFC000) exclusively for primary CTA buttons — never for decorative purposes</li>
+        <li>Set all display headings in uppercase with LamboType — the brand voice is always SHOUTING</li>
+        <li>Use zero border-radius on buttons and cards — sharp angles are non-negotiable</li>
+        <li>Maintain tight line-heights (0.92–1.19) on display type to create dense, architectural text blocks</li>
+        <li>Use the transparent ghost button (white border, 50% opacity) as the secondary CTA on dark backgrounds</li>
+      </ul>
+      <ul class="no">
+        <li>Introduce additional accent colors beyond gold — the monochrome-plus-gold system is sacred</li>
+        <li>Apply border-radius to buttons or cards — curved edges contradict the angular vehicle aesthetic</li>
+        <li>Use LamboType in italic or decorative styles — the brand is always upright and direct</li>
+        <li>Add gradients to buttons or surfaces — depth comes from surface layering, not blending</li>
+        <li>Use light backgrounds as the primary canvas — darkness is the default state, light is the exception</li>
+        <li>Mix lowercase into display headings — the uppercase convention communicates authority and power</li>
+      </ul>
+    </div>
+  </section>
+  <section id="reference">
+    <div class="sec-head"><h2>Component Reference</h2><span class="count">6</span></div>
+    <table class="ref"><thead><tr><th>Component</th><th>Resolved properties</th></tr></thead><tbody>
+      <tr><td class="k">buttons-gold-accent-cta</td><td>Class: btn-accent btn-large</td></tr>
+      <tr><td class="k">buttons-black-filled</td><td>Default: bg #000000, text #202020</td></tr>
+      <tr><td class="k">buttons-gray-neutral</td><td>Default: bg #969696, text #202020; Used for: secondary/tertiary actions, badge-like buttons</td></tr>
+      <tr><td class="k">cards-containers</td><td>rounded: 0px; Border-radius: 0px</td></tr>
+      <tr><td class="k">inputs-forms</td><td>rounded: 20px</td></tr>
+      <tr><td class="k">distinctive-components</td><td>backgroundColor: #969696; textColor: white; padding: 8px; fontSize: 10px; rounded: 2px</td></tr>
+    </tbody></table>
+  </section>
+  <footer><span>Lamborghini — design tokens extracted from DESIGN.md</span><span>awesome-design-md / getdesign.md</span></footer>
+</div>
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script>
+</body></html>

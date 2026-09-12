@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design System Analysis of PlayStation</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #000000; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<div class="theme-layer" data-when="light">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#layout">Layout</a></li>
+  </ul>
+  <button class="nav-cta">Sign In</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of PlayStation</h1>
+    <p>A three-surface marketing system organized around alternating black, white, and PlayStation Blue chapters that scroll past the viewer like a console launch trailer. PlayStation SST display copy at signature weight 300 (light) gives the chrome an airy, premium feel; bright PlayStation Blue (#0070d1) carries every primary CTA as a fully-rounded pill; commerce orange (#d53b00) anchors store actions. The system never decorates — imagery does all the heavy lifting.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Learn More</button>
+      <button class="btn btn-commerce">Buy Now</button>
+    </div>
+  </div>
+</header>
+
+<!-- COLOR PALETTE -->
+<section id="colors">
+  <p class="section-eyebrow">01 — Color</p>
+  <h2 class="section-heading">Color Palette</h2>
+  <p class="section-desc">Three-canvas chapter system: black, white, and PlayStation Blue. Commerce orange is reserved for store actions; the gold gradient anchors only the PS Plus tier banner.</p>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Brand &amp; Accent</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#0070d1"></div><div class="swatch-meta"><p class="swatch-name">PlayStation Blue (primary)</p><p class="swatch-hex">#0070d1</p><p class="swatch-role">Primary CTA pill, footer surface, badge fills</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#0064b7"></div><div class="swatch-meta"><p class="swatch-name">Blue Pressed</p><p class="swatch-hex">#0064b7</p><p class="swatch-role">Pressed primary, link color on light canvas</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#004d8d"></div><div class="swatch-meta"><p class="swatch-name">Blue Active</p><p class="swatch-hex">#004d8d</p><p class="swatch-role">Deeply-pressed primary state</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#d53b00"></div><div class="swatch-meta"><p class="swatch-name">Commerce Orange</p><p class="swatch-hex">#d53b00</p><p class="swatch-role">Store/buy/pre-order CTAs only</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#aa2f00"></div><div class="swatch-meta"><p class="swatch-name">Commerce Pressed</p><p class="swatch-hex">#aa2f00</p><p class="swatch-role">Pressed commerce state</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Surface — Dark Canvas</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#000000"></div><div class="swatch-meta"><p class="swatch-name">Canvas Dark</p><p class="swatch-hex">#000000</p><p class="swatch-role">Pure black hero band, primary nav, footer base</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#121314"></div><div class="swatch-meta"><p class="swatch-name">Surface Dark Elevated</p><p class="swatch-hex">#121314</p><p class="swatch-role">PS Plus banner, ON PLAYSTATION gradient end</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#181818"></div><div class="swatch-meta"><p class="swatch-name">Surface Dark Card</p><p class="swatch-hex">#181818</p><p class="swatch-role">Game tile fill, dark product card background</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Surface — Light Canvas</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff;box-shadow:inset 0 0 0 1px var(--hairline-light)"></div><div class="swatch-meta"><p class="swatch-name">Canvas Light</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">True white console showcase, support page body</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f3f3f3"></div><div class="swatch-meta"><p class="swatch-name">Soft Surface</p><p class="swatch-hex">#f3f3f3</p><p class="swatch-role">Hairline-soft band fill on light pages</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f5f7fa"></div><div class="swatch-meta"><p class="swatch-name">Surface Card</p><p class="swatch-hex">#f5f7fa</p><p class="swatch-role">Cool-blue-tinted product card background</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Text Tiers</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#000000"></div><div class="swatch-meta"><p class="swatch-name">Ink</p><p class="swatch-hex">#000000</p><p class="swatch-role">Primary text on light canvas, headlines, button text</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(0,0,0,0.6)"></div><div class="swatch-meta"><p class="swatch-name">Body Light</p><p class="swatch-hex">rgba(0,0,0,0.6)</p><p class="swatch-role">Default paragraph text on light canvas</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#6b6b6b"></div><div class="swatch-meta"><p class="swatch-name">Mute Light</p><p class="swatch-hex">#6b6b6b</p><p class="swatch-role">Metadata, footer link captions</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#cccccc"></div><div class="swatch-meta"><p class="swatch-name">Ash Light</p><p class="swatch-hex">#cccccc</p><p class="swatch-role">Disabled text, lowest-emphasis utility</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff;box-shadow:inset 0 0 0 1px var(--hairline-light)"></div><div class="swatch-meta"><p class="swatch-name">On Dark</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Primary text on dark canvas</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.7);box-shadow:inset 0 0 0 1px var(--hairline-light)"></div><div class="swatch-meta"><p class="swatch-name">Body Dark</p><p class="swatch-hex">rgba(255,255,255,0.7)</p><p class="swatch-role">Translucent body text on dark canvas</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Semantic &amp; Brand Gradient</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#c81b3a"></div><div class="swatch-meta"><p class="swatch-name">Warning</p><p class="swatch-hex">#c81b3a</p><p class="swatch-role">Validation errors, destructive confirmation</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#53b1ff"></div><div class="swatch-meta"><p class="swatch-name">Link Dark</p><p class="swatch-hex">#53b1ff</p><p class="swatch-role">Inline link on dark canvas — brightened blue</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:linear-gradient(90deg, #ffce21 0%, #f5a623 50%, #ee8e00 100%)"></div><div class="swatch-meta"><p class="swatch-name">PS Plus Gold Gradient</p><p class="swatch-hex">#ffce21 → #ee8e00</p><p class="swatch-role">Reserved exclusively for PS Plus tier banner</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#deff20"></div><div class="swatch-meta"><p class="swatch-name">Marathon Yellow</p><p class="swatch-hex">#deff20</p><p class="swatch-role">Game-page-specific accent — Marathon only</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section id="typography">
+  <p class="section-eyebrow">02 — Typography</p>
+  <h2 class="section-heading">Typography Scale</h2>
+  <p class="section-desc">PlayStation SST renders display headlines at weight 300 (light) — the brand's signature airy editorial voice. Heading sizes drop in tight increments with +0.1 to +0.45px tracking on display and button tiers.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>PlayStation SST<br>54px / 300 / lh 1.25 / -0.1px</div><div class="type-sample" style="font-size:54px;font-weight:300;line-height:1.25;letter-spacing:-0.1px">Discover all PS5 consoles</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>PlayStation SST<br>44px / 300 / lh 1.25 / 0.1px</div><div class="type-sample" style="font-size:44px;font-weight:300;line-height:1.25;letter-spacing:0.1px">Great PS4 &amp; PS5 games out now</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>PlayStation SST<br>35px / 300 / lh 1.25</div><div class="type-sample" style="font-size:35px;font-weight:300;line-height:1.25">Mid-section headline</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-xl</strong>PlayStation SST<br>28px / 300 / lh 1.25 / 0.1px</div><div class="type-sample" style="font-size:28px;font-weight:300;line-height:1.25;letter-spacing:0.1px">30 Years of PlayStation</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-lg</strong>PlayStation SST<br>22px / 300 / lh 1.25 / 0.1px</div><div class="type-sample" style="font-size:22px;font-weight:300;line-height:1.25;letter-spacing:0.1px">News card title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-md</strong>PlayStation SST<br>18px / 600 / lh 1</div><div class="type-sample" style="font-size:18px;font-weight:600;line-height:1">Card label or strong title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>PlayStation SST<br>18px / 400 / lh 1.5 / 0.1px</div><div class="type-sample" style="font-size:18px;font-weight:400;line-height:1.5;letter-spacing:0.1px">Default body copy carries every paragraph at 18px regular weight with 1.5 line-height for comfortable reading.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-strong</strong>PlayStation SST<br>18px / 500 / lh 1.25 / 0.4px</div><div class="type-sample" style="font-size:18px;font-weight:500;line-height:1.25;letter-spacing:0.4px">Inline emphasis or primary nav link</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>PlayStation SST<br>16px / 400 / lh 1.5</div><div class="type-sample" style="font-size:16px;font-weight:400;line-height:1.5">Card description and secondary body</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-md</strong>PlayStation SST<br>14px / 400 / lh 1.5</div><div class="type-sample" style="font-size:14px;font-weight:400;line-height:1.5">Footer link, metadata, sub-nav text</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-sm</strong>PlayStation SST<br>12px / 500 / lh 1.5</div><div class="type-sample" style="font-size:12px;font-weight:500;line-height:1.5">Smallest utility text, badge label</div></div>
+  <div class="type-row"><div class="type-meta"><strong>link-md</strong>PlayStation SST<br>18px / 400 / lh 1.5</div><div class="type-sample" style="font-size:18px;font-weight:400;line-height:1.5;color:var(--link-light)">Inline body anchor link</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-lg</strong>PlayStation SST<br>18px / 700 / lh 1.25 / 0.45px</div><div class="type-sample" style="font-size:18px;font-weight:700;line-height:1.25;letter-spacing:0.45px">Add to bag</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-md</strong>PlayStation SST<br>14px / 700 / lh 1.25 / 0.324px</div><div class="type-sample" style="font-size:14px;font-weight:700;line-height:1.25;letter-spacing:0.324px">Compact CTA Label</div></div>
+</section>
+
+<!-- BUTTONS -->
+<section id="components">
+  <p class="section-eyebrow">03 — Components</p>
+  <h2 class="section-heading">Button Variants</h2>
+  <p class="section-desc">PlayStation Blue primary, commerce orange for store actions, transparent secondary on both light and dark canvases — all fully-rounded pills.</p>
+
+  <div class="button-grid">
+    <div class="button-cell">
+      <button class="btn btn-primary">Add to bag</button>
+      <p class="button-cell-label">button-primary</p>
+      <p class="button-cell-spec">bg primary · text on-primary · rounded full · 48px height</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-primary" style="background:var(--primary-pressed)">Pressed</button>
+      <p class="button-cell-label">button-primary-pressed</p>
+      <p class="button-cell-spec">bg primary-pressed · text on-primary</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-commerce">Buy Now</button>
+      <p class="button-cell-label">button-commerce</p>
+      <p class="button-cell-spec">bg commerce · text on-commerce · rounded full</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-commerce" style="background:var(--commerce-pressed)">Pressed</button>
+      <p class="button-cell-label">button-commerce-pressed</p>
+      <p class="button-cell-spec">bg commerce-pressed · text on-commerce</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-secondary-light">Learn More →</button>
+      <p class="button-cell-label">button-secondary-light</p>
+      <p class="button-cell-spec">transparent · text ink · 1px ash-light · rounded full</p>
+    </div>
+    <div class="button-cell on-dark">
+      <button class="btn btn-secondary-dark">Watch Trailer</button>
+      <p class="button-cell-label">button-secondary-dark</p>
+      <p class="button-cell-spec">transparent · text on-dark · 1px hairline-dark</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-disabled">Disabled</button>
+      <p class="button-cell-label">button-disabled</p>
+      <p class="button-cell-spec">bg surface-soft · text ash-light</p>
+    </div>
+    <div class="button-cell wide">
+      <div class="filter-pills">
+        <button class="filter-pill active">All</button>
+        <button class="filter-pill">Coming Soon</button>
+        <button class="filter-pill">PlayStation VR2</button>
+        <button class="filter-pill">Recently Released</button>
+      </div>
+      <p class="button-cell-label">filter-pill + filter-pill-active</p>
+      <p class="button-cell-spec">default: surface-filter translucent · active: canvas + 1px primary border</p>
+    </div>
+    <div class="button-cell">
+      <span class="badge-info">New</span>
+      <p class="button-cell-label">badge-info</p>
+      <p class="button-cell-spec">bg primary · text on-primary · rounded full · padding 4/10</p>
+    </div>
+    <div class="button-cell on-dark">
+      <div style="display:flex;gap:8px;align-items:center">
+        <button class="carousel-paddle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"></path></svg>
+        </button>
+        <button class="carousel-paddle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"></path></svg>
+        </button>
+        <div class="pagination">
+          <span class="pagination-dot active"></span>
+          <span class="pagination-dot"></span>
+          <span class="pagination-dot"></span>
+          <span class="pagination-dot"></span>
+        </div>
+      </div>
+      <p class="button-cell-label">carousel-paddle + pagination</p>
+      <p class="button-cell-spec">48px circle · rgba(255,255,255,0.16) · 8px dot indicator</p>
+    </div>
+  </div>
+</section>
+
+<!-- HERO BANDS -->
+<section>
+  <p class="section-eyebrow">04 — Surface Bands</p>
+  <h2 class="section-heading">Three-Canvas Chapter System</h2>
+  <p class="section-desc">Each section is a full-bleed band — pure black, true white, or PlayStation Blue — each owning one editorial moment. Section-color change IS the divider.</p>
+
+  <div style="display:flex;flex-direction:column;gap:24px">
+    <div class="hero-band-dark">
+      <h3>Discover all PS5 consoles and accessories</h3>
+      <button class="btn btn-secondary-dark">Learn More</button>
+    </div>
+    <div class="hero-band-light">
+      <h3>Great PS4 &amp; PS5 games out now or coming soon</h3>
+      <button class="btn btn-primary">Browse Games</button>
+    </div>
+    <div class="hero-band-blue">
+      <h3>This April, on PlayStation</h3>
+      <button class="btn btn-secondary-dark">View Releases</button>
+    </div>
+  </div>
+
+  <div style="margin-top:48px">
+    <p class="palette-block-label">PS Plus Banner</p>
+    <div class="ps-plus-banner">
+      <h3>Discover PlayStation Plus</h3>
+      <p style="color:var(--body-dark);margin:0 0 24px;font-size:18px;line-height:1.5">Get access to a curated library of games, online multiplayer, exclusive discounts, and more.</p>
+      <button class="btn btn-primary">Learn More</button>
+    </div>
+  </div>
+</section>
+
+<!-- CARDS -->
+<section>
+  <p class="section-eyebrow">05 — Cards</p>
+  <h2 class="section-heading">Card Examples</h2>
+  <p class="section-desc">Game tile, light product card, dark product card, and feature card — all at 8px radius, no resting shadow.</p>
+
+  <p class="palette-block-label">Game Tile Carousel (4-up at desktop)</p>
+  <div class="card-grid" style="margin-bottom:48px">
+    <div class="game-tile">
+      <div class="game-tile-art a"></div>
+      <div class="game-tile-meta">
+        <p class="game-tile-title">Game Title One</p>
+        <p class="game-tile-platform">PS5 · Coming Soon</p>
+      </div>
+    </div>
+    <div class="game-tile">
+      <div class="game-tile-art b"></div>
+      <div class="game-tile-meta">
+        <p class="game-tile-title">Game Title Two</p>
+        <p class="game-tile-platform">PS5 · Available Now</p>
+      </div>
+    </div>
+    <div class="game-tile">
+      <div class="game-tile-art c"></div>
+      <div class="game-tile-meta">
+        <p class="game-tile-title">Game Title Three</p>
+        <p class="game-tile-platform">PS4 · PS5 · Pre-order</p>
+      </div>
+    </div>
+    <div class="game-tile">
+      <div class="game-tile-art"></div>
+      <div class="game-tile-meta">
+        <p class="game-tile-title">Game Title Four</p>
+        <p class="game-tile-platform">PlayStation VR2</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="palette-block-label">Product &amp; Feature Cards</p>
+  <div class="card-grid">
+    <div class="product-card">
+      <p style="font-family:var(--font-ui);font-size:22px;font-weight:300;line-height:1.25;margin:0 0 12px;letter-spacing:0.1px">PlayStation Store</p>
+      <p style="font-family:var(--font-ui);font-size:16px;line-height:1.5;color:var(--body-light);margin:0 0 24px">Light canvas product card with cool-blue-tinted background.</p>
+      <button class="btn btn-primary">Visit Store</button>
+    </div>
+    <div class="product-card-dark">
+      <p style="font-family:var(--font-ui);font-size:22px;font-weight:300;line-height:1.25;margin:0 0 12px;letter-spacing:0.1px;color:var(--on-dark)">Game Detail</p>
+      <p style="font-family:var(--font-ui);font-size:16px;line-height:1.5;color:var(--body-dark);margin:0 0 24px">Dark canvas card for product detail and feature panels.</p>
+      <button class="btn btn-primary">Read More</button>
+    </div>
+    <div class="feature-card">
+      <p style="font-family:var(--font-ui);font-size:22px;font-weight:300;line-height:1.25;margin:0 0 12px;letter-spacing:0.1px">PlayStation Plus</p>
+      <p style="font-family:var(--font-ui);font-size:16px;line-height:1.5;color:var(--body-light);margin:0 0 24px">Light canvas marketing card with hairline border, 32px padding.</p>
+      <button class="btn btn-commerce">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORT -->
+<section>
+  <p class="section-eyebrow">06 — Support Page</p>
+  <h2 class="section-heading">Support Search &amp; Article Rows</h2>
+  <p class="section-desc">Light-canvas support page chrome with a 56px-tall fully-rounded search bar and stacked article rows separated by 1px Hairline rules.</p>
+
+  <div style="margin-bottom:48px">
+    <span class="support-search-bar">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+      Search the support center
+    </span>
+  </div>
+
+  <div>
+    <div class="support-row"><span>How to create or change your account email</span><span style="color:var(--body-light)">›</span></div>
+    <div class="support-row"><span>How to close your account</span><span style="color:var(--body-light)">›</span></div>
+    <div class="support-row"><span>How to update your sign-in ID</span><span style="color:var(--body-light)">›</span></div>
+    <div class="support-row"><span>Reset your password</span><span style="color:var(--body-light)">›</span></div>
+    <div class="support-row"><span>Add or change your two-step verification</span><span style="color:var(--body-light)">›</span></div>
+  </div>
+</section>
+
+<!-- FORMS -->
+<section>
+  <p class="section-eyebrow">07 — Forms</p>
+  <h2 class="section-heading">Form Elements</h2>
+  <p class="section-desc">4px-radius rectangle inputs at 48px height. Focus relies on a 2px solid PlayStation Blue border replacing the 1px ash default.</p>
+
+  <div class="form-grid">
+    <div class="form-cell">
+      <label class="form-label">Default Input</label>
+      <input class="text-input" placeholder="Email address">
+      <span class="form-spec">canvas-light bg · 1px ash · rounded 4px · 48px height</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Focused Input</label>
+      <input class="text-input focused" value="user@example.com">
+      <span class="form-spec">2px primary border</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Password</label>
+      <input class="text-input" type="password" placeholder="••••••••">
+      <span class="form-spec">standard text-input</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Submit</label>
+      <button class="btn btn-primary" style="width:100%">Sign In</button>
+      <span class="form-spec">button-primary · always full-width</span>
+    </div>
+  </div>
+</section>
+
+<!-- SPACING -->
+<section>
+  <p class="section-eyebrow">08 — Layout</p>
+  <h2 class="section-heading">Spacing Scale</h2>
+  <p class="section-desc">8px base. Section rhythm at 96px is the universal vertical gap between major chapters.</p>
+  <div class="spacing-row">
+    <div class="spacing-cell"><div class="spacing-bar" style="width:4px"></div><span class="spacing-label">xxs · 4</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:8px"></div><span class="spacing-label">xs · 8</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:12px"></div><span class="spacing-label">sm · 12</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:16px"></div><span class="spacing-label">md · 16</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:24px"></div><span class="spacing-label">lg · 24</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:32px"></div><span class="spacing-label">xl · 32</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:48px"></div><span class="spacing-label">xxl · 48</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:96px"></div><span class="spacing-label">section · 96</span></div>
+  </div>
+</section>
+
+<!-- RADIUS -->
+<section>
+  <p class="section-eyebrow">09 — Shapes</p>
+  <h2 class="section-heading">Border Radius Scale</h2>
+  <p class="section-desc">Three operative values: 4px for inputs, 8px for cards and tiles, pill (9999px) for every CTA. Hero bands stay flat at 0px.</p>
+  <div class="radius-row">
+    <div class="radius-cell"><div class="radius-box" style="border-radius:0"></div><span class="radius-label">none · 0</span><p class="radius-context">Hero bands, primary nav, footer, sub-nav</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:4px"></div><span class="radius-label">sm · 4</span><p class="radius-context">Text inputs, support search field</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:8px"></div><span class="radius-label">md · 8</span><p class="radius-context">Game tiles, product cards, PS Plus banner</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:16px"></div><span class="radius-label">lg · 16</span><p class="radius-context">Rare large container with extra-soft corners</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:9999px"></div><span class="radius-label">full · 9999</span><p class="radius-context">Every CTA pill, filter chips, paddles, dots</p></div>
+  </div>
+</section>
+
+<!-- ELEVATION -->
+<section>
+  <p class="section-eyebrow">10 — Depth</p>
+  <h2 class="section-heading">Elevation &amp; Depth</h2>
+  <p class="section-desc">No resting shadows. Cards lift only on press. Depth comes from alternating-band rhythm.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card level-0"><div class="elevation-name">Level 0 — Flat</div><div class="elevation-spec">no border / no shadow</div></div>
+    <div class="elevation-card level-1"><div class="elevation-name">Level 1 — Hairline</div><div class="elevation-spec">1px solid #f3f3f3</div></div>
+    <div class="elevation-card level-2"><div class="elevation-name">Level 2 — Soft Active</div><div class="elevation-spec">0 4px 12px rgba(0,0,0,0.16)</div></div>
+    <div class="elevation-card level-3"><div class="elevation-name">Level 3 — Section Gradient</div><div class="elevation-spec">#121314 → #000000 vertical</div></div>
+  </div>
+</section>
+
+<!-- RESPONSIVE -->
+<section id="layout">
+  <p class="section-eyebrow">11 — Responsive</p>
+  <h2 class="section-heading">Responsive Behavior</h2>
+  <p class="section-desc">7 breakpoint zones. Hero bands stay full-bleed at every breakpoint; only the internal column structure reflows.</p>
+
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>ultrawide</td><td>1920px+</td><td>Content max-width 1280px; gutters grow to ~80px</td></tr>
+      <tr><td>desktop-large</td><td>1440px</td><td>Default — 4-up game tile carousel, full primary nav</td></tr>
+      <tr><td>desktop</td><td>1280px</td><td>Same with narrower gutters</td></tr>
+      <tr><td>desktop-small</td><td>1024px</td><td>Game tiles → 3-up; sub-nav stays horizontal</td></tr>
+      <tr><td>tablet</td><td>768px</td><td>Game tiles → 2-up; primary nav becomes hamburger</td></tr>
+      <tr><td>mobile</td><td>480px</td><td>Single-column; hero 54px → ~32px</td></tr>
+      <tr><td>mobile-narrow</td><td>320px</td><td>Section padding tightens to 32px</td></tr>
+    </tbody>
+  </table>
+
+  <div class="device-ladder">
+    <div class="device phone"><span class="name">320</span><span class="label">m-narrow</span></div>
+    <div class="device phone-large"><span class="name">480</span><span class="label">mobile</span></div>
+    <div class="device tablet"><span class="name">768</span><span class="label">tablet</span></div>
+    <div class="device desktop-small"><span class="name">1024</span><span class="label">desktop-sm</span></div>
+    <div class="device desktop"><span class="name">1280</span><span class="label">desktop-lg</span></div>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Touch Targets</h3>
+    <ul>
+      <li><strong>WCAG AAA:</strong> button-primary and button-commerce at 48px height with 28px padding (~48×100px tappable).</li>
+      <li><strong>Text input:</strong> 48px height with 16px padding.</li>
+      <li><strong>Support search bar:</strong> 56px height with 24px padding.</li>
+      <li><strong>Carousel paddle:</strong> exactly 48×48 circular.</li>
+      <li><strong>Filter pill:</strong> ~36–40px extends to 44px tappable via padding.</li>
+    </ul>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Collapsing Strategy</h3>
+    <ul>
+      <li><strong>Primary nav:</strong> desktop horizontal cluster → tablet hamburger drawer at 768px.</li>
+      <li><strong>Sub-nav:</strong> desktop horizontal anchor row → tablet horizontal scroll → mobile select dropdown.</li>
+      <li><strong>Game carousel:</strong> 4-up → 3-up → 2-up at 1024 and 768px.</li>
+      <li><strong>Hero bands:</strong> stay full-bleed; internal column reflows from 2-col to single-col.</li>
+      <li><strong>Section padding:</strong> 96px → 64px → 48px.</li>
+      <li><strong>Hero headline:</strong> 54px → 44px → 32px → 28px down the breakpoint stack.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</div>
+<div class="theme-layer" data-when="dark">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#layout">Layout</a></li>
+  </ul>
+  <button class="nav-cta">Sign In</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of PlayStation</h1>
+    <p>The dark-canvas variant of the PlayStation system. Pure-black canvas (#000000) is the dominant editorial surface; the surface ladder steps through #121314 → #181818 → #1f2024 for elevated cards. PlayStation Blue and commerce orange CTAs stay exactly the same — they are brand assets, not surface tokens.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Learn More</button>
+      <button class="btn btn-commerce">Buy Now</button>
+    </div>
+  </div>
+</header>
+
+<!-- COLOR PALETTE -->
+<section data-sec="colors">
+  <p class="section-eyebrow">01 — Color</p>
+  <h2 class="section-heading">Color Palette</h2>
+  <p class="section-desc">Pure-black canvas with a 4-step surface ladder, translucent-white text and border tiers, PlayStation Blue and commerce orange preserved exactly.</p>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Brand &amp; Accent (preserved)</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#0070d1"></div><div class="swatch-meta"><p class="swatch-name">PlayStation Blue (primary)</p><p class="swatch-hex">#0070d1</p><p class="swatch-role">Primary CTA pill, footer surface — preserved exactly</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#0064b7"></div><div class="swatch-meta"><p class="swatch-name">Blue Pressed</p><p class="swatch-hex">#0064b7</p><p class="swatch-role">Pressed primary state — preserved</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#d53b00"></div><div class="swatch-meta"><p class="swatch-name">Commerce Orange</p><p class="swatch-hex">#d53b00</p><p class="swatch-role">Store CTAs only — preserved</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#aa2f00"></div><div class="swatch-meta"><p class="swatch-name">Commerce Pressed</p><p class="swatch-hex">#aa2f00</p><p class="swatch-role">Pressed commerce — preserved</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Canvas &amp; Surface Ladder</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#000000"></div><div class="swatch-meta"><p class="swatch-name">Canvas</p><p class="swatch-hex">#000000</p><p class="swatch-role">Pure black page background</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#121314"></div><div class="swatch-meta"><p class="swatch-name">Surface</p><p class="swatch-hex">#121314</p><p class="swatch-role">Cards, sub-nav, palette swatches</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#181818"></div><div class="swatch-meta"><p class="swatch-name">Surface Elevated</p><p class="swatch-hex">#181818</p><p class="swatch-role">Game tiles, dark product cards</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1f2024"></div><div class="swatch-meta"><p class="swatch-name">Surface Card</p><p class="swatch-hex">#1f2024</p><p class="swatch-role">Lightest surface for product callouts</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Translucent Borders</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:rgba(229,229,229,0.2)"></div><div class="swatch-meta"><p class="swatch-name">Hairline</p><p class="swatch-hex">rgba(229,229,229,0.2)</p><p class="swatch-role">1px row dividers, card borders</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(229,229,229,0.35)"></div><div class="swatch-meta"><p class="swatch-name">Hairline Strong</p><p class="swatch-hex">rgba(229,229,229,0.35)</p><p class="swatch-role">Stronger inline divider, secondary button border</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Text Tiers</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff"></div><div class="swatch-meta"><p class="swatch-name">Ink</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Headlines, button text, primary nav links</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.85)"></div><div class="swatch-meta"><p class="swatch-name">Body</p><p class="swatch-hex">rgba(255,255,255,0.85)</p><p class="swatch-role">Default paragraph text</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.6)"></div><div class="swatch-meta"><p class="swatch-name">Mute</p><p class="swatch-hex">rgba(255,255,255,0.6)</p><p class="swatch-role">Metadata, footer link text</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(229,229,229,0.45)"></div><div class="swatch-meta"><p class="swatch-name">Ash</p><p class="swatch-hex">rgba(229,229,229,0.45)</p><p class="swatch-role">Disabled text, lowest-emphasis utility</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Semantic &amp; Brand Gradient</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#c81b3a"></div><div class="swatch-meta"><p class="swatch-name">Warning</p><p class="swatch-hex">#c81b3a</p><p class="swatch-role">Validation errors</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#53b1ff"></div><div class="swatch-meta"><p class="swatch-name">Link Dark</p><p class="swatch-hex">#53b1ff</p><p class="swatch-role">Inline link on dark canvas</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:linear-gradient(90deg, #ffce21 0%, #f5a623 50%, #ee8e00 100%)"></div><div class="swatch-meta"><p class="swatch-name">PS Plus Gold Gradient</p><p class="swatch-hex">#ffce21 → #ee8e00</p><p class="swatch-role">PS Plus tier banner — preserved</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section data-sec="typography">
+  <p class="section-eyebrow">02 — Typography</p>
+  <h2 class="section-heading">Typography Scale</h2>
+  <p class="section-desc">Identical hierarchy to light mode. Display tier renders at weight 300 (light) — the brand's signature airy editorial voice.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>PlayStation SST<br>54px / 300 / lh 1.25 / -0.1px</div><div class="type-sample" style="font-size:54px;font-weight:300;line-height:1.25;letter-spacing:-0.1px">Discover all PS5 consoles</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>PlayStation SST<br>44px / 300 / lh 1.25 / 0.1px</div><div class="type-sample" style="font-size:44px;font-weight:300;line-height:1.25;letter-spacing:0.1px">Great PS4 &amp; PS5 games out now</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>PlayStation SST<br>35px / 300 / lh 1.25</div><div class="type-sample" style="font-size:35px;font-weight:300;line-height:1.25">Mid-section headline</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-xl</strong>PlayStation SST<br>28px / 300 / lh 1.25 / 0.1px</div><div class="type-sample" style="font-size:28px;font-weight:300;line-height:1.25;letter-spacing:0.1px">30 Years of PlayStation</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-lg</strong>PlayStation SST<br>22px / 300 / lh 1.25 / 0.1px</div><div class="type-sample" style="font-size:22px;font-weight:300;line-height:1.25;letter-spacing:0.1px">News card title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-md</strong>PlayStation SST<br>18px / 600 / lh 1</div><div class="type-sample" style="font-size:18px;font-weight:600;line-height:1">Card label or strong title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>PlayStation SST<br>18px / 400 / lh 1.5 / 0.1px</div><div class="type-sample" style="font-size:18px;font-weight:400;line-height:1.5;letter-spacing:0.1px">Default body copy at 18px regular weight on dark canvas.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-strong</strong>PlayStation SST<br>18px / 500 / lh 1.25 / 0.4px</div><div class="type-sample" style="font-size:18px;font-weight:500;line-height:1.25;letter-spacing:0.4px">Inline emphasis or primary nav link</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>PlayStation SST<br>16px / 400 / lh 1.5</div><div class="type-sample" style="font-size:16px;font-weight:400;line-height:1.5">Card description and secondary body</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-md</strong>PlayStation SST<br>14px / 400 / lh 1.5</div><div class="type-sample" style="font-size:14px;font-weight:400;line-height:1.5">Footer link, metadata, sub-nav text</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-sm</strong>PlayStation SST<br>12px / 500 / lh 1.5</div><div class="type-sample" style="font-size:12px;font-weight:500;line-height:1.5">Smallest utility text, badge label</div></div>
+  <div class="type-row"><div class="type-meta"><strong>link-md</strong>PlayStation SST<br>18px / 400 / lh 1.5</div><div class="type-sample" style="font-size:18px;font-weight:400;line-height:1.5;color:var(--link-dark)">Inline body anchor link</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-lg</strong>PlayStation SST<br>18px / 700 / lh 1.25 / 0.45px</div><div class="type-sample" style="font-size:18px;font-weight:700;line-height:1.25;letter-spacing:0.45px">Add to bag</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-md</strong>PlayStation SST<br>14px / 700 / lh 1.25 / 0.324px</div><div class="type-sample" style="font-size:14px;font-weight:700;line-height:1.25;letter-spacing:0.324px">Compact CTA Label</div></div>
+</section>
+
+<!-- BUTTONS -->
+<section data-sec="components">
+  <p class="section-eyebrow">03 — Components</p>
+  <h2 class="section-heading">Button Variants</h2>
+  <p class="section-desc">Same vocabulary as light mode — Primary blue and commerce orange stay identical; secondary borders flip to translucent-white hairlines.</p>
+
+  <div class="button-grid">
+    <div class="button-cell">
+      <button class="btn btn-primary">Add to bag</button>
+      <p class="button-cell-label">button-primary</p>
+      <p class="button-cell-spec">bg primary · text on-primary · rounded full · 48px height</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-primary" style="background:var(--primary-pressed)">Pressed</button>
+      <p class="button-cell-label">button-primary-pressed</p>
+      <p class="button-cell-spec">bg primary-pressed · text on-primary</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-commerce">Buy Now</button>
+      <p class="button-cell-label">button-commerce</p>
+      <p class="button-cell-spec">bg commerce · text on-commerce · rounded full</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-commerce" style="background:var(--commerce-pressed)">Pressed</button>
+      <p class="button-cell-label">button-commerce-pressed</p>
+      <p class="button-cell-spec">bg commerce-pressed · text on-commerce</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-secondary-dark">Watch Trailer</button>
+      <p class="button-cell-label">button-secondary-dark</p>
+      <p class="button-cell-spec">transparent · text ink · 1px hairline-strong · rounded full</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-disabled">Disabled</button>
+      <p class="button-cell-label">button-disabled</p>
+      <p class="button-cell-spec">bg surface · text ash</p>
+    </div>
+    <div class="button-cell wide">
+      <div class="filter-pills">
+        <button class="filter-pill active">All</button>
+        <button class="filter-pill">Coming Soon</button>
+        <button class="filter-pill">PlayStation VR2</button>
+        <button class="filter-pill">Recently Released</button>
+      </div>
+      <p class="button-cell-label">filter-pill + filter-pill-active</p>
+      <p class="button-cell-spec">default: translucent · active: surface + 1px primary border</p>
+    </div>
+    <div class="button-cell">
+      <span class="badge-info">New</span>
+      <p class="button-cell-label">badge-info</p>
+      <p class="button-cell-spec">bg primary · text on-primary · rounded full</p>
+    </div>
+    <div class="button-cell">
+      <div style="display:flex;gap:8px;align-items:center">
+        <button class="carousel-paddle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"></path></svg>
+        </button>
+        <button class="carousel-paddle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"></path></svg>
+        </button>
+        <div class="pagination">
+          <span class="pagination-dot active"></span>
+          <span class="pagination-dot"></span>
+          <span class="pagination-dot"></span>
+          <span class="pagination-dot"></span>
+        </div>
+      </div>
+      <p class="button-cell-label">carousel-paddle + pagination</p>
+      <p class="button-cell-spec">48px circle · rgba(255,255,255,0.16) · 8px dot indicator</p>
+    </div>
+  </div>
+</section>
+
+<!-- HERO BANDS -->
+<section>
+  <p class="section-eyebrow">04 — Surface Bands</p>
+  <h2 class="section-heading">Three-Canvas Chapter System</h2>
+  <p class="section-desc">Each section is a full-bleed band — black, white, or PlayStation Blue. The light band is preserved as a deliberate light-island within the dark catalog because it is part of the brand's three-mode chapter system.</p>
+
+  <div style="display:flex;flex-direction:column;gap:24px">
+    <div class="hero-band-dark">
+      <h3>Discover all PS5 consoles and accessories</h3>
+      <button class="btn btn-secondary-dark">Learn More</button>
+    </div>
+    <div class="hero-band-light">
+      <h3>Great PS4 &amp; PS5 games out now or coming soon</h3>
+      <button class="btn btn-primary">Browse Games</button>
+    </div>
+    <div class="hero-band-blue">
+      <h3>This April, on PlayStation</h3>
+      <button class="btn btn-secondary-dark" style="border-color:rgba(255,255,255,0.5)">View Releases</button>
+    </div>
+  </div>
+
+  <div style="margin-top:48px">
+    <p class="palette-block-label">PS Plus Banner</p>
+    <div class="ps-plus-banner">
+      <h3>Discover PlayStation Plus</h3>
+      <p style="color:var(--body);margin:0 0 24px;font-size:18px;line-height:1.5">Get access to a curated library of games, online multiplayer, exclusive discounts, and more.</p>
+      <button class="btn btn-primary">Learn More</button>
+    </div>
+  </div>
+</section>
+
+<!-- CARDS -->
+<section>
+  <p class="section-eyebrow">05 — Cards</p>
+  <h2 class="section-heading">Card Examples</h2>
+  <p class="section-desc">Game tile, dark product card, and feature card on dark canvas. All at 8px radius with no resting shadow.</p>
+
+  <p class="palette-block-label">Game Tile Carousel</p>
+  <div class="card-grid" style="margin-bottom:48px">
+    <div class="game-tile">
+      <div class="game-tile-art a"></div>
+      <div class="game-tile-meta">
+        <p class="game-tile-title">Game Title One</p>
+        <p class="game-tile-platform">PS5 · Coming Soon</p>
+      </div>
+    </div>
+    <div class="game-tile">
+      <div class="game-tile-art b"></div>
+      <div class="game-tile-meta">
+        <p class="game-tile-title">Game Title Two</p>
+        <p class="game-tile-platform">PS5 · Available Now</p>
+      </div>
+    </div>
+    <div class="game-tile">
+      <div class="game-tile-art c"></div>
+      <div class="game-tile-meta">
+        <p class="game-tile-title">Game Title Three</p>
+        <p class="game-tile-platform">PS4 · PS5 · Pre-order</p>
+      </div>
+    </div>
+    <div class="game-tile">
+      <div class="game-tile-art"></div>
+      <div class="game-tile-meta">
+        <p class="game-tile-title">Game Title Four</p>
+        <p class="game-tile-platform">PlayStation VR2</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="palette-block-label">Product &amp; Feature Cards</p>
+  <div class="card-grid">
+    <div class="product-card">
+      <p style="font-family:var(--font-ui);font-size:22px;font-weight:300;line-height:1.25;margin:0 0 12px;letter-spacing:0.1px">PlayStation Store</p>
+      <p style="font-family:var(--font-ui);font-size:16px;line-height:1.5;color:var(--body);margin:0 0 24px">Surface-card variant with cool tinted background.</p>
+      <button class="btn btn-primary">Visit Store</button>
+    </div>
+    <div class="product-card-dark">
+      <p style="font-family:var(--font-ui);font-size:22px;font-weight:300;line-height:1.25;margin:0 0 12px;letter-spacing:0.1px">Game Detail</p>
+      <p style="font-family:var(--font-ui);font-size:16px;line-height:1.5;color:var(--body);margin:0 0 24px">Surface-elevated card for product detail panels.</p>
+      <button class="btn btn-primary">Read More</button>
+    </div>
+    <div class="feature-card">
+      <p style="font-family:var(--font-ui);font-size:22px;font-weight:300;line-height:1.25;margin:0 0 12px;letter-spacing:0.1px">PlayStation Plus</p>
+      <p style="font-family:var(--font-ui);font-size:16px;line-height:1.5;color:var(--body);margin:0 0 24px">Marketing card with hairline border, 32px padding.</p>
+      <button class="btn btn-commerce">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORT -->
+<section>
+  <p class="section-eyebrow">06 — Support Page</p>
+  <h2 class="section-heading">Support Search &amp; Article Rows</h2>
+  <p class="section-desc">Dark-canvas adaptation of the support page chrome with the same 56px-tall fully-rounded search bar.</p>
+
+  <div style="margin-bottom:48px">
+    <span class="support-search-bar">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+      Search the support center
+    </span>
+  </div>
+
+  <div>
+    <div class="support-row"><span>How to create or change your account email</span><span style="color:var(--mute)">›</span></div>
+    <div class="support-row"><span>How to close your account</span><span style="color:var(--mute)">›</span></div>
+    <div class="support-row"><span>How to update your sign-in ID</span><span style="color:var(--mute)">›</span></div>
+    <div class="support-row"><span>Reset your password</span><span style="color:var(--mute)">›</span></div>
+    <div class="support-row"><span>Add or change your two-step verification</span><span style="color:var(--mute)">›</span></div>
+  </div>
+</section>
+
+<!-- FORMS -->
+<section>
+  <p class="section-eyebrow">07 — Forms</p>
+  <h2 class="section-heading">Form Elements</h2>
+  <p class="section-desc">4px-radius rectangle inputs at 48px height. Focus relies on a 2px solid PlayStation Blue border replacing the 1px hairline default.</p>
+
+  <div class="form-grid">
+    <div class="form-cell">
+      <label class="form-label">Default Input</label>
+      <input class="text-input" placeholder="Email address">
+      <span class="form-spec">surface bg · 1px hairline · rounded 4px · 48px height</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Focused Input</label>
+      <input class="text-input focused" value="user@example.com">
+      <span class="form-spec">2px primary border</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Password</label>
+      <input class="text-input" type="password" placeholder="••••••••">
+      <span class="form-spec">standard text-input</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Submit</label>
+      <button class="btn btn-primary" style="width:100%">Sign In</button>
+      <span class="form-spec">button-primary · always full-width</span>
+    </div>
+  </div>
+</section>
+
+<!-- SPACING -->
+<section>
+  <p class="section-eyebrow">08 — Layout</p>
+  <h2 class="section-heading">Spacing Scale</h2>
+  <p class="section-desc">8px base. Section rhythm at 96px is preserved across modes.</p>
+  <div class="spacing-row">
+    <div class="spacing-cell"><div class="spacing-bar" style="width:4px"></div><span class="spacing-label">xxs · 4</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:8px"></div><span class="spacing-label">xs · 8</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:12px"></div><span class="spacing-label">sm · 12</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:16px"></div><span class="spacing-label">md · 16</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:24px"></div><span class="spacing-label">lg · 24</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:32px"></div><span class="spacing-label">xl · 32</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:48px"></div><span class="spacing-label">xxl · 48</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:96px"></div><span class="spacing-label">section · 96</span></div>
+  </div>
+</section>
+
+<!-- RADIUS -->
+<section>
+  <p class="section-eyebrow">09 — Shapes</p>
+  <h2 class="section-heading">Border Radius Scale</h2>
+  <p class="section-desc">Identical to light mode: 4px inputs, 8px cards, pill CTAs.</p>
+  <div class="radius-row">
+    <div class="radius-cell"><div class="radius-box" style="border-radius:0"></div><span class="radius-label">none · 0</span><p class="radius-context">Hero bands, primary nav, footer</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:4px"></div><span class="radius-label">sm · 4</span><p class="radius-context">Text inputs</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:8px"></div><span class="radius-label">md · 8</span><p class="radius-context">Game tiles, product cards</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:16px"></div><span class="radius-label">lg · 16</span><p class="radius-context">Rare large container</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:9999px"></div><span class="radius-label">full · 9999</span><p class="radius-context">Every CTA pill</p></div>
+  </div>
+</section>
+
+<!-- ELEVATION -->
+<section>
+  <p class="section-eyebrow">10 — Depth</p>
+  <h2 class="section-heading">Elevation &amp; Depth</h2>
+  <p class="section-desc">No resting shadows. Cards lift only on press. Depth comes from the surface ladder.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card level-0"><div class="elevation-name">Level 0 — Flat</div><div class="elevation-spec">no border / no shadow</div></div>
+    <div class="elevation-card level-1"><div class="elevation-name">Level 1 — Hairline</div><div class="elevation-spec">1px solid rgba(229,229,229,0.2)</div></div>
+    <div class="elevation-card level-2"><div class="elevation-name">Level 2 — Soft Active</div><div class="elevation-spec">0 4px 12px rgba(0,0,0,0.5)</div></div>
+    <div class="elevation-card level-3"><div class="elevation-name">Level 3 — Section Gradient</div><div class="elevation-spec">#121314 → #000000 vertical</div></div>
+  </div>
+</section>
+
+<!-- RESPONSIVE -->
+<section data-sec="layout">
+  <p class="section-eyebrow">11 — Responsive</p>
+  <h2 class="section-heading">Responsive Behavior</h2>
+  <p class="section-desc">Identical breakpoint stack to light mode.</p>
+
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>ultrawide</td><td>1920px+</td><td>Content max-width 1280px</td></tr>
+      <tr><td>desktop-large</td><td>1440px</td><td>Default — 4-up game tile carousel</td></tr>
+      <tr><td>desktop</td><td>1280px</td><td>Same with narrower gutters</td></tr>
+      <tr><td>desktop-small</td><td>1024px</td><td>Game tiles → 3-up</td></tr>
+      <tr><td>tablet</td><td>768px</td><td>Game tiles → 2-up; nav becomes hamburger</td></tr>
+      <tr><td>mobile</td><td>480px</td><td>Single-column; hero 54px → ~32px</td></tr>
+    </tbody>
+  </table>
+
+  <div class="device-ladder">
+    <div class="device phone"><span class="name">320</span><span class="label">m-narrow</span></div>
+    <div class="device phone-large"><span class="name">480</span><span class="label">mobile</span></div>
+    <div class="device tablet"><span class="name">768</span><span class="label">tablet</span></div>
+    <div class="device desktop-small"><span class="name">1024</span><span class="label">desktop-sm</span></div>
+    <div class="device desktop"><span class="name">1280</span><span class="label">desktop-lg</span></div>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Touch Targets</h3>
+    <ul>
+      <li><strong>WCAG AAA:</strong> button-primary and button-commerce at 48px height with 28px padding.</li>
+      <li><strong>Text input:</strong> 48px height. <strong>Support search:</strong> 56px height.</li>
+      <li><strong>Carousel paddle:</strong> 48×48 circular.</li>
+      <li><strong>Filter pill:</strong> ~36–40px extends to 44px tappable via padding.</li>
+    </ul>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Collapsing Strategy</h3>
+    <ul>
+      <li><strong>Primary nav:</strong> desktop horizontal → tablet hamburger drawer.</li>
+      <li><strong>Game carousel:</strong> 4-up → 3-up → 2-up at 1024 and 768px.</li>
+      <li><strong>Hero bands:</strong> stay full-bleed; internal column reflows.</li>
+      <li><strong>Section padding:</strong> 96px → 64px → 48px.</li>
+      <li><strong>Hero headline:</strong> 54px → 44px → 32px → 28px.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</div>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

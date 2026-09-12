@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of ClickHouse</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #0c0c0e; } html[data-theme="dark"] { background: #0a0a0a; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#responsive">Responsive</a></li>
+  </ul>
+  <button class="nav-cta">Get Started</button>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of ClickHouse</h1>
+    <p>A high-performance database interface anchored on near-pure black canvas with electric yellow as the brand voltage. White typography in confident bold sans, yellow CTAs, and yellow stat numbers carry the brand voice.</p>
+    <div class="hero-actions">
+      <button class="btn-hero-primary">Get Started</button>
+      <button class="btn-hero-secondary">Read the docs</button>
+    </div>
+  </div>
+  <div class="hero-art">
+    <div class="code-header"><span class="filename">query.sql · clickhouse</span></div>
+    <pre><span class="comment">-- Aggregate billions of rows in milliseconds</span>
+<span class="keyword">SELECT</span>
+  toDate(event_time) <span class="keyword">AS</span> day,
+  uniqExact(user_id) <span class="keyword">AS</span> users,
+  count() <span class="keyword">AS</span> events
+<span class="keyword">FROM</span> analytics
+<span class="keyword">WHERE</span> event_time &gt;= <span class="string">'2026-01-01'</span>
+<span class="keyword">GROUP BY</span> day
+<span class="keyword">ORDER BY</span> day <span class="keyword">DESC</span>
+<span class="keyword">LIMIT</span> <span class="num">100</span>;</pre>
+  </div>
+</div>
+
+<section id="colors">
+  <div class="section-label">01 — Color Palette</div>
+  <h2 class="section-heading">Yellow + black + white</h2>
+  <p class="section-intro">Single-accent system. Electric yellow handles CTAs, stat numbers, and full-bleed yellow CTA bands. Everything else is black canvas + white type + dark surface cards.</p>
+
+  <div class="palette-group">
+    <h3>Brand</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#faff69;"></div><div class="swatch-meta"><div class="swatch-name">primary (yellow)</div><div class="swatch-hex">#faff69</div><div class="swatch-role">All primary CTAs, stat numbers, full-bleed yellow CTA bands.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#e6eb52;"></div><div class="swatch-meta"><div class="swatch-name">primary-active</div><div class="swatch-hex">#e6eb52</div><div class="swatch-role">Press / hover-darker variant.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#3a3a1f;"></div><div class="swatch-meta"><div class="swatch-name">primary-disabled</div><div class="swatch-hex">#3a3a1f</div><div class="swatch-role">Desaturated yellow on dark canvas.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Surface</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#0a0a0a;"></div><div class="swatch-meta"><div class="swatch-name">canvas</div><div class="swatch-hex">#0a0a0a</div><div class="swatch-role">Default page floor — near-pure black.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#121212;"></div><div class="swatch-meta"><div class="swatch-name">surface-soft</div><div class="swatch-hex">#121212</div><div class="swatch-role">Section dividers.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1a1a1a;"></div><div class="swatch-meta"><div class="swatch-name">surface-card</div><div class="swatch-hex">#1a1a1a</div><div class="swatch-role">Feature cards, code windows, pricing tiers.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#242424;"></div><div class="swatch-meta"><div class="swatch-name">surface-elevated</div><div class="swatch-hex">#242424</div><div class="swatch-role">Nested cards inside larger dark cards.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#2a2a2a;"></div><div class="swatch-meta"><div class="swatch-name">hairline</div><div class="swatch-hex">#2a2a2a</div><div class="swatch-role">1px borders on dark cards.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Text</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff;"></div><div class="swatch-meta"><div class="swatch-name">on-dark / ink</div><div class="swatch-hex">#ffffff</div><div class="swatch-role">All headlines and primary text.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#cccccc;"></div><div class="swatch-meta"><div class="swatch-name">body</div><div class="swatch-hex">#cccccc</div><div class="swatch-role">Default running-text. Cooler than pure white.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#888888;"></div><div class="swatch-meta"><div class="swatch-name">muted</div><div class="swatch-hex">#888888</div><div class="swatch-role">Footer links, captions.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#5a5a5a;"></div><div class="swatch-meta"><div class="swatch-name">muted-soft</div><div class="swatch-hex">#5a5a5a</div><div class="swatch-role">Tertiary text, fine-print.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="typography">
+  <div class="section-label">02 — Typography Scale</div>
+  <h2 class="section-heading">Inter-only · weight 700 display</h2>
+  <p class="section-intro">Single-family system. Inter at 700 for display (with -1 to -2.5px tracking), 600 for sub-titles + buttons, 400 for body. JetBrains Mono for code.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>72px / 700 / 1.05 / -2.5px</div><div class="type-sample" style="font-size:72px; font-weight:700; line-height:1.05; letter-spacing:-2.5px;">The leading database for AI</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>56px / 700 / 1.1 / -2px</div><div class="type-sample" style="font-size:56px; font-weight:700; letter-spacing:-2px;">Built for every modern data challenge</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>40px / 700 / 1.15 / -1.5px</div><div class="type-sample" style="font-size:40px; font-weight:700; letter-spacing:-1.5px;">Why ClickHouse is so fast</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-sm</strong>32px / 700 / 1.2 / -1px</div><div class="type-sample" style="font-size:32px; font-weight:700; letter-spacing:-1px;">Deploy your way</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-lg</strong>24px / 700 / 1.3 / -0.3px</div><div class="type-sample" style="font-size:24px; font-weight:700;">Pricing that scales with you</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-md</strong>18px / 600 / 1.4</div><div class="type-sample" style="font-size:18px; font-weight:600;">Real-time analytics</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-sm</strong>16px / 600 / 1.4</div><div class="type-sample" style="font-size:16px; font-weight:600;">Built for AI workloads</div></div>
+  <div class="type-row"><div class="type-meta"><strong>stat-display</strong>56px / 700 / 1.0 / -1.5px</div><div class="type-sample numeric" style="font-size:56px; font-weight:700; color:var(--primary); letter-spacing:-1.5px;">47k+</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>16px / 400 / 1.55</div><div class="type-sample" style="font-size:16px; line-height:1.55;">Process billions of rows per second with the open-source database that powers real-time analytics at scale.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>14px / 400 / 1.55</div><div class="type-sample" style="font-size:14px; color:var(--body);">Footer body, fine-print legal text.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption</strong>13px / 500 / 1.4</div><div class="type-sample" style="font-size:13px; font-weight:500; color:var(--muted);">Trusted by Uber, Cloudflare, and 100,000+ teams</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-uppercase</strong>12px / 600 / 1.5px</div><div class="type-sample" style="font-size:12px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase;">NEW · CLICKHOUSE CLOUD</div></div>
+  <div class="type-row"><div class="type-meta"><strong>code</strong>14px / 400 / 1.55<br>JetBrains Mono</div><div class="type-sample" style="font-family:var(--mono); font-size:14px;">SELECT count() FROM events WHERE ts &gt; now() - 1h</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button</strong>14px / 600 / 1.0</div><div class="type-sample" style="font-size:14px; font-weight:600;">Get Started</div></div>
+</section>
+
+<section id="components">
+  <div class="section-label">03 — Button Variants</div>
+  <h2 class="section-heading">Yellow primary, dark secondary</h2>
+
+  <div class="button-grid">
+    <div class="button-cell"><div class="button-label">button-primary</div><button class="btn btn-primary">Get Started</button><div class="button-meta">yellow / on-primary black / md radius</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-active</div><button class="btn btn-primary-active">Pressed</button><div class="button-meta">primary-active darker yellow</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-disabled</div><button class="btn btn-primary-disabled" disabled="">Disabled</button></div>
+    <div class="button-cell"><div class="button-label">button-secondary</div><button class="btn btn-secondary">Read the docs</button><div class="button-meta">surface-card / on-dark / hairline outline</div></div>
+    <div class="button-cell on-yellow"><div class="button-label">button on yellow band</div><button class="btn btn-secondary" style="background:var(--canvas); color:var(--ink); border:none;">Sign up</button><div class="button-meta">Black button on yellow CTA card.</div></div>
+    <div class="button-cell"><div class="button-label">button-text-link</div><button class="btn-text-link">Sign in</button></div>
+    <div class="button-cell"><div class="button-label">text-link-yellow</div><a href="#" class="text-link-yellow">View benchmarks →</a><div class="button-meta">Inline yellow link in body.</div></div>
+    <div class="button-cell"><div class="button-label">button-icon-circular</div><div style="display:flex; gap:12px;"><button class="btn-icon-circular">‹</button><button class="btn-icon-circular">›</button></div><div class="button-meta">36 × 36 / surface-card / hairline</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">04 — Cards &amp; Containers</div>
+
+  <div class="card-grid">
+    <div class="feature-card-yellow">
+      <h4>Built for every modern data challenge</h4>
+      <p>From real-time analytics to observability, ClickHouse handles workloads that make other databases buckle.</p>
+    </div>
+    <div class="feature-card-dark">
+      <div class="icon">⚡</div>
+      <h4>Fastest queries in production</h4>
+      <p>Petabyte-scale aggregations in milliseconds. Compressed columnar storage with vectorized execution.</p>
+    </div>
+    <div class="feature-card-dark">
+      <div class="icon">🌐</div>
+      <h4>Open source, deploy anywhere</h4>
+      <p>Self-host on bare metal, containers, or any cloud. Or run on ClickHouse Cloud with zero-ops.</p>
+    </div>
+    <div class="code-window-card">
+      <div class="code-header"><span class="filename">benchmark.sql</span></div>
+      <pre style="color:var(--on-dark);"><span style="color:var(--primary);">SELECT</span> uniqExact(user_id) <span style="color:var(--primary);">FROM</span> events
+<span style="color:var(--primary);">WHERE</span> ts <span style="color:#c898b9;">&gt;= now()</span> <span style="color:#c898b9;">- INTERVAL 1 DAY</span>
+<span style="color:var(--muted);">-- 32B rows scanned in 184ms</span></pre>
+    </div>
+    <div class="product-mockup-card">
+      <div class="ui-header">$ clickhouse-client --query</div>
+      <div class="ui-row"><div class="dot green"></div><span style="font-family:var(--mono); font-size:12px; color:var(--body);">events table · 32.8B rows · OK</span></div>
+      <div class="ui-row"><div class="dot yellow"></div><span style="font-family:var(--mono); font-size:12px; color:var(--body);">query latency · 184ms · INDEX</span></div>
+      <div class="ui-row"><div class="dot green"></div><span style="font-family:var(--mono); font-size:12px; color:var(--body);">compression ratio · 11x · LZ4</span></div>
+    </div>
+    <div class="feature-card-dark">
+      <div class="icon">🔧</div>
+      <h4>Works with everything</h4>
+      <p>Native integrations with Kafka, Postgres, S3, Snowflake, dbt, Grafana, and 100+ data tools.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">05 — Stat Callouts (Yellow Numbers)</div>
+
+  <div class="card-grid">
+    <div class="stat-callout"><div class="num">779+</div><div class="label">Contributors</div></div>
+    <div class="stat-callout"><div class="num">2.8k+</div><div class="label">Customers</div></div>
+    <div class="stat-callout"><div class="num">47k+</div><div class="label">GitHub stars</div></div>
+    <div class="stat-callout"><div class="num">74k+</div><div class="label">Community members</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">06 — Pricing Tiers</div>
+
+  <div class="pricing-grid">
+    <div class="pricing-tier"><h4>Development</h4><div class="price">$0</div><ul><li>Up to 1 TB</li><li>Single replica</li><li>Community support</li></ul><button class="btn btn-secondary" style="width:100%;">Get started</button></div>
+    <div class="pricing-tier"><h4>Production</h4><div class="price">$1k+</div><ul><li>Unlimited storage</li><li>Multi-replica HA</li><li>SLA + 24/7 support</li></ul><button class="btn btn-primary" style="width:100%;">Try ClickHouse Cloud</button></div>
+    <div class="pricing-tier featured"><h4>Scale</h4><div class="price">Custom</div><ul><li>Petabyte scale</li><li>Dedicated nodes</li><li>Custom SLA + TAM</li></ul><button class="btn" style="width:100%; background:var(--canvas); color:var(--primary); border:none;">Contact sales</button></div>
+    <div class="pricing-tier"><h4>Enterprise</h4><div class="price">Custom</div><ul><li>BYOC + on-prem</li><li>SOC 2 + HIPAA</li><li>Dedicated success</li></ul><button class="btn btn-secondary" style="width:100%;">Contact sales</button></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">07 — Yellow CTA Band</div>
+
+  <div class="cta-band-yellow">
+    <h3>Deploy your way</h3>
+    <p>Self-host on any cloud, or run on ClickHouse Cloud with zero-ops. Free trial — no credit card required.</p>
+    <button class="btn-black">Start free trial</button>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">08 — Events &amp; Form Elements</div>
+
+  <div class="card-grid">
+    <div class="events-card">
+      <div class="date">JAN 24 · SAN FRANCISCO</div>
+      <h5>ClickHouse Meetup</h5>
+      <div class="location">Open-source release party + roadmap walkthrough.</div>
+    </div>
+    <div class="events-card">
+      <div class="date">FEB 12 · BERLIN</div>
+      <h5>Real-Time Analytics Workshop</h5>
+      <div class="location">Hands-on workshop covering production deployments.</div>
+    </div>
+    <div class="events-card">
+      <div class="date">MAR 8 · LONDON</div>
+      <h5>ClickHouse for AI Workloads</h5>
+      <div class="location">Vector search + observability + agentic data pipelines.</div>
+    </div>
+  </div>
+
+  <div style="height:48px;"></div>
+
+  <div class="form-grid">
+    <div class="form-cell"><label class="form-label">Email address</label><input class="form-input" type="email" placeholder="you@company.com"></div>
+    <div class="form-cell"><label class="form-label">Email (focused)</label><input class="form-input focused" type="email" value="alex@studio.com"></div>
+    <div class="form-cell"><label class="form-label">Company</label><input class="form-input" type="text" placeholder="Acme Inc"></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">09 — Badges</div>
+
+  <div style="display:flex; flex-wrap:wrap; gap:12px; align-items:center;">
+    <span class="badge-pill">Featured</span>
+    <span class="badge-pill">Open Source</span>
+    <span class="badge-yellow">NEW</span>
+    <span class="badge-yellow">CLOUD</span>
+    <span class="badge-yellow">GET STARTED</span>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">10 — Spacing Scale</div>
+  <div class="spacing-row">
+    <div class="spacing-block"><div class="spacing-bar" style="width:4px;"></div><div class="spacing-label">xxs · 4px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:8px;"></div><div class="spacing-label">xs · 8px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:12px;"></div><div class="spacing-label">sm · 12px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:16px;"></div><div class="spacing-label">md · 16px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:24px;"></div><div class="spacing-label">lg · 24px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:32px;"></div><div class="spacing-label">xl · 32px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:48px;"></div><div class="spacing-label">xxl · 48px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:96px;"></div><div class="spacing-label">section · 96px</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">11 — Border Radius Scale</div>
+  <div class="radius-row">
+    <div class="radius-block" style="border-radius:4px;">4 · xs</div>
+    <div class="radius-block" style="border-radius:6px;">6 · sm</div>
+    <div class="radius-block" style="border-radius:8px;">8 · md</div>
+    <div class="radius-block" style="border-radius:12px;">12 · lg</div>
+    <div class="radius-block" style="border-radius:9999px;">pill</div>
+    <div class="radius-block" style="border-radius:50%;">full</div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">12 — Elevation &amp; Depth</div>
+  <p class="section-intro">No drop shadows. Depth comes from black-canvas vs surface-card subtle contrast and yellow-vs-black extreme contrast.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card elevation-flat"><h5>Flat / Canvas</h5><p>Body sections, top nav, hero.</p></div>
+    <div class="elevation-card elevation-soft"><h5>Surface soft</h5><p>Section dividers, very-soft tints.</p></div>
+    <div class="elevation-card elevation-card-surface"><h5>Surface card</h5><p>Feature cards, code windows, pricing tiers.</p></div>
+    <div class="elevation-card elevation-yellow"><h5>Yellow band</h5><p>Full-bleed yellow CTA fill — extreme contrast.</p></div>
+    <div class="elevation-card elevation-card-surface"><h5>Subtle hairline</h5><p>1px hairline #2a2a2a.</p></div>
+    <div class="elevation-card elevation-card-surface"><h5>Yellow focus ring</h5><p>3px yellow at 20% alpha.</p></div>
+  </div>
+</section>
+
+<section id="responsive">
+  <div class="section-label">13 — Responsive Behavior</div>
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Mobile</td><td>&lt; 768px</td><td>Hamburger nav; hero h1 72→36px; code-window-card stacks below; feature grids 1-up; pricing 1-up.</td></tr>
+      <tr><td>Tablet</td><td>768–1024px</td><td>Top nav tightens; feature cards 2-up; pricing 2-up.</td></tr>
+      <tr><td>Desktop</td><td>1024–1440px</td><td>Full top-nav; 3-up feature cards; 3-4 up pricing tiers.</td></tr>
+      <tr><td>Wide</td><td>&gt; 1440px</td><td>Same as desktop with more breathing room; max content 1280px.</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="device-bar" style="width:60px; height:120px;">375<br>mobile</div>
+    <div class="device-bar" style="width:90px; height:140px;">600<br>small phone</div>
+    <div class="device-bar" style="width:140px; height:160px;">768<br>tablet</div>
+    <div class="device-bar" style="width:200px; height:180px;">1024<br>laptop</div>
+    <div class="device-bar" style="width:260px; height:200px;">1280<br>desktop</div>
+    <div class="device-bar" style="width:320px; height:220px;">1440<br>wide</div>
+  </div>
+  <div class="responsive-sub"><h4>Touch Targets</h4><ul><li>Primary CTA at min 40 × 40px.</li><li>Icon button at 36 × 36 — visually centered.</li><li>Text input height 40px.</li></ul></div>
+  <div class="responsive-sub"><h4>Collapsing Strategy</h4><ul><li>Top nav collapses to hamburger at &lt; 768px.</li><li>Hero 7-5 grid → single-column on mobile.</li><li>Code blocks retain font-size; horizontal scroll inside the card on mobile.</li><li>Pricing tier cards collapse 4 → 2 → 1; featured yellow tier stays distinct.</li></ul></div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

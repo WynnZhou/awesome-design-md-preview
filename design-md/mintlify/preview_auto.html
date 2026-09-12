@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" data-native="light" data-theme="light"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mintlify-design-analysis — Design System Preview</title>
+  <link rel="stylesheet" href="preview_auto.css">
+</head>
+<body>
+
+<div class="page">
+  <header class="topbar">
+    <div><div class="topbar-name">Mintlify-design-analysis</div><div class="topbar-meta">design tokens · 32 colors · 20 type styles · 51 components</div></div>
+    <nav class="topbar-links"><a href="#colors">Colors</a><a href="#typography">Type</a><a href="#buttons">Buttons</a><a href="#badges">Badges</a><a href="#cards">Cards</a><a href="#forms">Forms</a><a href="#nav">Tabs</a><a href="#spacing">Spacing</a><a href="#radius">Radius</a><a href="#elevation">Depth</a><a href="#signature">Other</a><a href="#reference">Reference</a></nav>
+  </header>
+  <section class="hero">
+    <h1>Mintlify-design-analysis</h1>
+    <p class="lede">Mintlify presents documentation infrastructure with a dual-mode aesthetic — atmospheric sky-gradient marketing heroes (cloud illustration backdrops, soft cream-to-blue washes) paired with dense developer-grade documentation surfaces. The system uses Inter for UI prose, Geist Mono for code, and a signature Mintlify green ({colors.brand-green}) reserved for accent CTAs and active states. Black-pill primary buttons dominate marketing, white-on-dark inversions appear on dark hero bands, and a 3-column documentation layout (sidebar / prose / TOC) anchors the developer experience. Coverage spans homepage, startups program, pricing comparison, and the live tabs documentation page.</p>
+    <div class="meta">
+      <span class="chip solid">#0a0a0a</span>
+      <span class="chip">Inter</span>
+      <span class="chip">light canvas</span>
+      <span class="chip">source: DESIGN.md (frontmatter)</span>
+    </div>
+  </section>
+  <section id="colors">
+    <div class="sec-head"><h2>Color Palette</h2><span class="count">32 tokens</span></div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-primary">#0a0a0a</div><div class="info"><div class="nm">primary</div><div class="hx">primary</div></div></div>
+      <div class="swatch"><div class="fill sw-on-primary">#ffffff</div><div class="info"><div class="nm">on-primary</div><div class="hx">on-primary</div></div></div>
+      <div class="swatch"><div class="fill sw-brand-green">#00d4a4</div><div class="info"><div class="nm">brand-green</div><div class="hx">brand-green</div></div></div>
+      <div class="swatch"><div class="fill sw-brand-green-deep">#00b48a</div><div class="info"><div class="nm">brand-green-deep</div><div class="hx">brand-green-deep</div></div></div>
+      <div class="swatch"><div class="fill sw-brand-green-soft">#7cebcb</div><div class="info"><div class="nm">brand-green-soft</div><div class="hx">brand-green-soft</div></div></div>
+      <div class="swatch"><div class="fill sw-brand-tag">#3772cf</div><div class="info"><div class="nm">brand-tag</div><div class="hx">brand-tag</div></div></div>
+      <div class="swatch"><div class="fill sw-brand-warn">#c37d0d</div><div class="info"><div class="nm">brand-warn</div><div class="hx">brand-warn</div></div></div>
+      <div class="swatch"><div class="fill sw-brand-annotate">#1ba673</div><div class="info"><div class="nm">brand-annotate</div><div class="hx">brand-annotate</div></div></div>
+      <div class="swatch"><div class="fill sw-brand-error">#d45656</div><div class="info"><div class="nm">brand-error</div><div class="hx">brand-error</div></div></div>
+      <div class="swatch"><div class="fill sw-brand-cursor">#888888</div><div class="info"><div class="nm">brand-cursor</div><div class="hx">brand-cursor</div></div></div>
+      <div class="swatch"><div class="fill sw-hero-sky-from">#87a8c8</div><div class="info"><div class="nm">hero-sky-from</div><div class="hx">hero-sky-from</div></div></div>
+      <div class="swatch"><div class="fill sw-hero-sky-to">#f5e9d8</div><div class="info"><div class="nm">hero-sky-to</div><div class="hx">hero-sky-to</div></div></div>
+      <div class="swatch"><div class="fill sw-hero-dark-from">#1a3d4a</div><div class="info"><div class="nm">hero-dark-from</div><div class="hx">hero-dark-from</div></div></div>
+      <div class="swatch"><div class="fill sw-hero-dark-to">#2d5a4f</div><div class="info"><div class="nm">hero-dark-to</div><div class="hx">hero-dark-to</div></div></div>
+      <div class="swatch"><div class="fill sw-testimonial-orange">#f55a3c</div><div class="info"><div class="nm">testimonial-orange</div><div class="hx">testimonial-orange</div></div></div>
+      <div class="swatch"><div class="fill sw-testimonial-orange-deep">#cc3a1f</div><div class="info"><div class="nm">testimonial-orange-deep</div><div class="hx">testimonial-orange-deep</div></div></div>
+      <div class="swatch"><div class="fill sw-canvas">#ffffff</div><div class="info"><div class="nm">canvas</div><div class="hx">canvas</div></div></div>
+      <div class="swatch"><div class="fill sw-canvas-dark">#0a0a0a</div><div class="info"><div class="nm">canvas-dark</div><div class="hx">canvas-dark</div></div></div>
+      <div class="swatch"><div class="fill sw-surface">#f7f7f7</div><div class="info"><div class="nm">surface</div><div class="hx">surface</div></div></div>
+      <div class="swatch"><div class="fill sw-surface-soft">#fafafa</div><div class="info"><div class="nm">surface-soft</div><div class="hx">surface-soft</div></div></div>
+      <div class="swatch"><div class="fill sw-surface-code">#1c1c1e</div><div class="info"><div class="nm">surface-code</div><div class="hx">surface-code</div></div></div>
+      <div class="swatch"><div class="fill sw-hairline">#e5e5e5</div><div class="info"><div class="nm">hairline</div><div class="hx">hairline</div></div></div>
+      <div class="swatch"><div class="fill sw-hairline-soft">#ededed</div><div class="info"><div class="nm">hairline-soft</div><div class="hx">hairline-soft</div></div></div>
+      <div class="swatch"><div class="fill sw-hairline-dark">#1f1f1f</div><div class="info"><div class="nm">hairline-dark</div><div class="hx">hairline-dark</div></div></div>
+      <div class="swatch"><div class="fill sw-ink">#0a0a0a</div><div class="info"><div class="nm">ink</div><div class="hx">ink</div></div></div>
+      <div class="swatch"><div class="fill sw-charcoal">#1c1c1e</div><div class="info"><div class="nm">charcoal</div><div class="hx">charcoal</div></div></div>
+      <div class="swatch"><div class="fill sw-slate">#3a3a3c</div><div class="info"><div class="nm">slate</div><div class="hx">slate</div></div></div>
+      <div class="swatch"><div class="fill sw-steel">#5a5a5c</div><div class="info"><div class="nm">steel</div><div class="hx">steel</div></div></div>
+      <div class="swatch"><div class="fill sw-stone">#888888</div><div class="info"><div class="nm">stone</div><div class="hx">stone</div></div></div>
+      <div class="swatch"><div class="fill sw-muted">#a8a8aa</div><div class="info"><div class="nm">muted</div><div class="hx">muted</div></div></div>
+      <div class="swatch"><div class="fill sw-on-dark">#ffffff</div><div class="info"><div class="nm">on-dark</div><div class="hx">on-dark</div></div></div>
+      <div class="swatch"><div class="fill sw-on-dark-muted">#b3b3b3</div><div class="info"><div class="nm">on-dark-muted</div><div class="hx">on-dark-muted</div></div></div>
+    </div>
+  </section>
+  <section id="typography">
+    <div class="sec-head"><h2>Typography Scale</h2><span class="count">20 styles</span></div>
+    <div class="type-row">
+      <div class="type-meta"><b>hero-display</b>72px / 600<br>lh 1.05 · ls -2px<br>Inter</div>
+      <div class="type-sample type-hero-display">hero-display — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>display-lg</b>56px / 600<br>lh 1.10 · ls -1.5px<br>Inter</div>
+      <div class="type-sample type-display-lg">display-lg — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>heading-1</b>48px / 600<br>lh 1.10 · ls -1px<br>Inter</div>
+      <div class="type-sample type-heading-1">heading-1 — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>heading-2</b>36px / 600<br>lh 1.20 · ls -0.5px<br>Inter</div>
+      <div class="type-sample type-heading-2">heading-2 — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>heading-3</b>28px / 600<br>lh 1.25 · ls normal<br>Inter</div>
+      <div class="type-sample type-heading-3">heading-3 — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>heading-4</b>22px / 600<br>lh 1.30 · ls normal<br>Inter</div>
+      <div class="type-sample type-heading-4">heading-4 — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>heading-5</b>18px / 600<br>lh 1.40 · ls normal<br>Inter</div>
+      <div class="type-sample type-heading-5">heading-5 — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>subtitle</b>18px / 400<br>lh 1.50 · ls normal<br>Inter</div>
+      <div class="type-sample type-subtitle">subtitle — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>body-md</b>16px / 400<br>lh 1.50 · ls normal<br>Inter</div>
+      <div class="type-sample type-body-md">body-md — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>body-md-medium</b>16px / 500<br>lh 1.50 · ls normal<br>Inter</div>
+      <div class="type-sample type-body-md-medium">body-md-medium — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>body-sm</b>14px / 400<br>lh 1.50 · ls normal<br>Inter</div>
+      <div class="type-sample type-body-sm">body-sm — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>body-sm-medium</b>14px / 500<br>lh 1.50 · ls normal<br>Inter</div>
+      <div class="type-sample type-body-sm-medium">body-sm-medium — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>caption</b>13px / 400<br>lh 1.40 · ls normal<br>Inter</div>
+      <div class="type-sample type-caption">caption — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>caption-bold</b>13px / 600<br>lh 1.40 · ls normal<br>Inter</div>
+      <div class="type-sample type-caption-bold">caption-bold — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>micro</b>12px / 500<br>lh 1.40 · ls normal<br>Inter</div>
+      <div class="type-sample type-micro">micro — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>micro-uppercase</b>11px / 600<br>lh 1.40 · ls 0.5px<br>Inter</div>
+      <div class="type-sample type-micro-uppercase">micro-uppercase — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>button-md</b>14px / 500<br>lh 1.30 · ls normal<br>Inter</div>
+      <div class="type-sample type-button-md">button-md — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>code-md</b>14px / 400<br>lh 1.50 · ls normal<br>Geist Mono</div>
+      <div class="type-sample type-code-md">code-md — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>code-sm</b>13px / 400<br>lh 1.40 · ls normal<br>Geist Mono</div>
+      <div class="type-sample type-code-sm">code-sm — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>code-inline</b>13px / 500<br>lh 1.30 · ls normal<br>Geist Mono</div>
+      <div class="type-sample type-code-inline">code-inline — The quick brown fox jumps over the lazy dog</div>
+    </div>
+  </section>
+  <section id="buttons">
+    <div class="sec-head"><h2>Button Variants</h2><span class="count">10</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="button-primary">Primary</div><button class="demo-el spec-button-primary" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-primary-pressed">Primary Pressed</div><button class="demo-el spec-button-primary-pressed" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-primary-disabled">Primary Disabled</div><button class="demo-el spec-button-primary-disabled" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-accent-green">Accent Green</div><button class="demo-el spec-button-accent-green" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-on-dark">Button On Dark</div><button class="demo-el spec-button-on-dark" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-secondary">Secondary</div><button class="demo-el spec-button-secondary" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-ghost">Ghost</div><button class="demo-el spec-button-ghost" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-link">Link</div><button class="demo-el demo-el-ghost spec-button-link" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-icon-circular">Icon Circular</div><button class="demo-el spec-button-icon-circular" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="copy-code-button">Copy Code Button</div><button class="demo-el spec-copy-code-button" type="button">Button</button></div>
+    </div></div>
+  </section>
+  <section id="badges">
+    <div class="sec-head"><h2>Badges & Pills</h2><span class="count">7</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="search-pill">Search Pill</div><div class="demo-el spec-search-pill">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="pill-tab">Tab</div><div class="demo-el spec-pill-tab">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="pill-tab-active">Tab Active</div><div class="demo-el spec-pill-tab-active">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="badge-discount">Discount</div><div class="demo-el spec-badge-discount">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="badge-required">Required</div><div class="demo-el spec-badge-required">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="badge-type">Type</div><div class="demo-el spec-badge-type">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="badge-tag">Tag</div><div class="demo-el spec-badge-tag">Badge</div></div>
+    </div></div>
+  </section>
+  <section id="cards">
+    <div class="sec-head"><h2>Cards & Containers</h2><span class="count">16</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="card-base">Base</div><div class="demo-el spec-card-base"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="card-feature">Feature</div><div class="demo-el spec-card-feature"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="card-help">Help</div><div class="demo-el spec-card-help"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="card-startup-perk">Startup Perk</div><div class="demo-el spec-card-startup-perk"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="pricing-card">Pricing Card</div><div class="demo-el spec-pricing-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="pricing-card-featured">Pricing Card Featured</div><div class="demo-el spec-pricing-card-featured"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="testimonial-card-feature">Testimonial Card Feature</div><div class="demo-el spec-testimonial-card-feature"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="testimonial-card-quote">Testimonial Card Quote</div><div class="demo-el spec-testimonial-card-quote"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="promo-banner">Promo Banner</div><div class="demo-el spec-promo-banner"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="feature-comparison-table">Feature Comparison Table</div><div class="demo-el spec-feature-comparison-table"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="feature-comparison-row">Feature Comparison Row</div><div class="demo-el spec-feature-comparison-row"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="hero-band-sky">Hero Band Sky</div><div class="demo-el spec-hero-band-sky"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="hero-band-dark">Hero Band Dark</div><div class="demo-el spec-hero-band-dark"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="hero-product-mockup">Hero Product Mockup</div><div class="demo-el spec-hero-product-mockup"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="startup-program-card">Startup Program Card</div><div class="demo-el spec-startup-program-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="founder-quote-card">Founder Quote Card</div><div class="demo-el spec-founder-quote-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+    </div></div>
+  </section>
+  <section id="forms">
+    <div class="sec-head"><h2>Forms & Inputs</h2><span class="count">4</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="text-input">Text Input</div><div class="demo-el spec-text-input"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="text-input-focused">Text Input Focused</div><div class="demo-el spec-text-input-focused"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="search-pill">Search Pill</div><div class="demo-el spec-search-pill"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="toggle-monthly-yearly">Toggle Monthly Yearly</div><div class="demo-el spec-toggle-monthly-yearly"><span class="demo-el-b">Placeholder text</span></div></div>
+    </div></div>
+  </section>
+  <section id="nav">
+    <div class="sec-head"><h2>Navigation & Tabs</h2><span class="count">11</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="button-link">Link</div><div class="demo-el demo-el-ghost spec-button-link"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="segmented-tab">Segmented Tab</div><div class="demo-el demo-el-ghost spec-segmented-tab"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="segmented-tab-active">Segmented Tab Active</div><div class="demo-el demo-el-ghost spec-segmented-tab-active"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="pill-tab">Tab</div><div class="demo-el spec-pill-tab"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="pill-tab-active">Tab Active</div><div class="demo-el spec-pill-tab-active"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="code-block-header">Code Block Header</div><div class="demo-el spec-code-block-header"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="sidebar-nav-item">Sidebar Nav Item</div><div class="demo-el spec-sidebar-nav-item"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="sidebar-nav-item-active">Sidebar Nav Item Active</div><div class="demo-el spec-sidebar-nav-item-active"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="sidebar-section-header">Sidebar Section Header</div><div class="demo-el demo-el-ghost spec-sidebar-section-header"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="footer-region">Footer Region</div><div class="demo-el spec-footer-region"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="footer-link">Footer Link</div><div class="demo-el demo-el-ghost spec-footer-link"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+    </div></div>
+  </section>
+  <section id="signature">
+    <div class="sec-head"><h2>Other Components</h2><span class="count">7</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="code-block">Code Block</div><div class="demo-el spec-code-block">Code Block</div></div>
+      <div class="demo-col"><div class="lb" title="code-inline">Code Inline</div><div class="demo-el spec-code-inline">Code Inline</div></div>
+      <div class="demo-col"><div class="lb" title="property-row">Property Row</div><div class="demo-el demo-el-ghost spec-property-row">Property Row</div></div>
+      <div class="demo-col"><div class="lb" title="doc-toc-item">Doc Toc Item</div><div class="demo-el demo-el-ghost spec-doc-toc-item">Doc Toc Item</div></div>
+      <div class="demo-col"><div class="lb" title="doc-toc-item-active">Doc Toc Item Active</div><div class="demo-el demo-el-ghost spec-doc-toc-item-active">Doc Toc Item Active</div></div>
+      <div class="demo-col"><div class="lb" title="logo-wall-item">Logo Wall Item</div><div class="demo-el demo-el-ghost spec-logo-wall-item">Logo Wall Item</div></div>
+      <div class="demo-col"><div class="lb" title="faq-accordion-item">Faq Accordion Item</div><div class="demo-el spec-faq-accordion-item">Faq Accordion Item</div></div>
+    </div></div>
+  </section>
+  <section id="spacing">
+    <div class="sec-head"><h2>Spacing Scale</h2><span class="count">12 steps</span></div>
+    <div class="bar-row"><span>xxs</span><span class="val">4px</span><span class="bar bar-xxs"></span></div>
+    <div class="bar-row"><span>xs</span><span class="val">8px</span><span class="bar bar-xs"></span></div>
+    <div class="bar-row"><span>sm</span><span class="val">12px</span><span class="bar bar-sm"></span></div>
+    <div class="bar-row"><span>md</span><span class="val">16px</span><span class="bar bar-md"></span></div>
+    <div class="bar-row"><span>lg</span><span class="val">20px</span><span class="bar bar-lg"></span></div>
+    <div class="bar-row"><span>xl</span><span class="val">24px</span><span class="bar bar-xl"></span></div>
+    <div class="bar-row"><span>xxl</span><span class="val">32px</span><span class="bar bar-xxl"></span></div>
+    <div class="bar-row"><span>xxxl</span><span class="val">40px</span><span class="bar bar-xxxl"></span></div>
+    <div class="bar-row"><span>section-sm</span><span class="val">48px</span><span class="bar bar-section-sm"></span></div>
+    <div class="bar-row"><span>section</span><span class="val">64px</span><span class="bar bar-section"></span></div>
+    <div class="bar-row"><span>section-lg</span><span class="val">96px</span><span class="bar bar-section-lg"></span></div>
+    <div class="bar-row"><span>hero</span><span class="val">120px</span><span class="bar bar-hero"></span></div>
+  </section>
+  <section id="radius">
+    <div class="sec-head"><h2>Border Radius Scale</h2><span class="count">7 steps</span></div>
+    <div class="radius-grid">
+      <div class="radius-cell"><div class="box rd-xs"></div><div class="lb">xs · 4px</div></div>
+      <div class="radius-cell"><div class="box rd-sm"></div><div class="lb">sm · 6px</div></div>
+      <div class="radius-cell"><div class="box rd-md"></div><div class="lb">md · 8px</div></div>
+      <div class="radius-cell"><div class="box rd-lg"></div><div class="lb">lg · 12px</div></div>
+      <div class="radius-cell"><div class="box rd-xl"></div><div class="lb">xl · 16px</div></div>
+      <div class="radius-cell"><div class="box rd-xxl"></div><div class="lb">xxl · 24px</div></div>
+      <div class="radius-cell"><div class="box rd-full"></div><div class="lb">full · 9999px</div></div>
+    </div>
+  </section>
+  <section id="elevation">
+    <div class="sec-head"><h2>Elevation &amp; Depth</h2><span class="count">4</span></div>
+    <div class="elev-grid">
+      <div class="elev-cell elev-1-subtle"><div class="lb">1 (subtle)</div><div class="vl">rgba(0, 0, 0, 0.04) 0px 1px 2px 0px</div></div>
+      <div class="elev-cell elev-2-card"><div class="lb">2 (card)</div><div class="vl">rgba(0, 0, 0, 0.08) 0px 4px 12px 0px</div></div>
+      <div class="elev-cell elev-3-mockup"><div class="lb">3 (mockup)</div><div class="vl">rgba(0, 0, 0, 0.12) 0px 24px 48px -8px</div></div>
+      <div class="elev-cell elev-4-brand-tinted"><div class="lb">4 (brand-tinted)</div><div class="vl">rgba(0, 212, 164, 0.08) 0px 8px 24px</div></div>
+    </div>
+  </section>
+  <section id="guidelines">
+    <div class="sec-head"><h2>Do&rsquo;s &amp; Don&rsquo;ts</h2></div>
+    <div class="guide">
+      <ul class="yes">
+        <li>Reserve {colors.brand-green} (Mintlify mint) for accent CTAs and active state indicators only — even one accent button per viewport carries weight</li>
+        <li>Use {colors.primary} (black) as the dominant CTA on light backgrounds; switch to button-on-dark (white pill) on dark hero bands</li>
+        <li>Apply {rounded.full} to every button and pill; never soften pill corners</li>
+        <li>Pair Inter (UI prose) with Geist Mono (code) — never introduce a third typeface</li>
+        <li>Use atmospheric gradient hero bands sparingly (only the homepage and startups page); keep deeper surfaces flat and dense</li>
+        <li>Apply {rounded.lg} (12px) consistently on cards; use {rounded.md} (8px) only on compact UI like search pills and code blocks</li>
+      </ul>
+      <ul class="no">
+        <li>Don&#x27;t use {colors.brand-green} on body text or large surfaces — it loses signal</li>
+        <li>Don&#x27;t introduce additional accent colors beyond mint, tag-blue, error-red, and the testimonial orange</li>
+        <li>Don&#x27;t apply heavy shadows on flat documentation cards; reserve elevation for the hero product mockup</li>
+        <li>Don&#x27;t reduce documentation line-height below 1.50 — long-form readability suffers</li>
+        <li>Don&#x27;t combine atmospheric gradients with multiple competing color accents in the same hero — the sky/dark gradient is the brand mood; let it breathe</li>
+        <li>Don&#x27;t use Inter for code or Geist Mono for prose — the typeface assignment IS the brand voice</li>
+      </ul>
+    </div>
+  </section>
+  <section id="reference">
+    <div class="sec-head"><h2>Component Reference</h2><span class="count">51</span></div>
+    <table class="ref"><thead><tr><th>Component</th><th>Resolved properties</th></tr></thead><tbody>
+      <tr><td class="k">button-primary</td><td>backgroundColor: var(--c-primary); textColor: var(--c-on-primary); typography: var(--t-button-md-size); rounded: var(--r-full); padding: 10px 20px</td></tr>
+      <tr><td class="k">button-primary-pressed</td><td>backgroundColor: var(--c-charcoal); textColor: var(--c-on-primary)</td></tr>
+      <tr><td class="k">button-primary-disabled</td><td>backgroundColor: var(--c-hairline); textColor: var(--c-muted)</td></tr>
+      <tr><td class="k">button-accent-green</td><td>backgroundColor: var(--c-brand-green); textColor: var(--c-primary); typography: var(--t-button-md-size); rounded: var(--r-full); padding: 10px 20px</td></tr>
+      <tr><td class="k">button-on-dark</td><td>backgroundColor: var(--c-on-dark); textColor: var(--c-primary); typography: var(--t-button-md-size); rounded: var(--r-full); padding: 10px 20px</td></tr>
+      <tr><td class="k">button-secondary</td><td>backgroundColor: transparent; textColor: var(--c-ink); typography: var(--t-button-md-size); rounded: var(--r-full); padding: 10px 20px; border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">button-ghost</td><td>backgroundColor: transparent; textColor: var(--c-ink); typography: var(--t-button-md-size); rounded: var(--r-md); padding: 8px 12px</td></tr>
+      <tr><td class="k">button-link</td><td>backgroundColor: transparent; textColor: var(--c-ink); typography: var(--t-body-sm-medium-size); padding: 0</td></tr>
+      <tr><td class="k">button-icon-circular</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); rounded: var(--r-full); size: 32px; border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">card-base</td><td>backgroundColor: var(--c-canvas); rounded: var(--r-lg); padding: var(--s-xl); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">card-feature</td><td>backgroundColor: var(--c-surface); rounded: var(--r-lg); padding: var(--s-xxl)</td></tr>
+      <tr><td class="k">card-help</td><td>backgroundColor: var(--c-canvas); rounded: var(--r-lg); padding: var(--s-xl); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">card-startup-perk</td><td>backgroundColor: var(--c-canvas); rounded: var(--r-lg); padding: var(--s-xl); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">pricing-card</td><td>backgroundColor: var(--c-canvas); rounded: var(--r-lg); padding: var(--s-xxl); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">pricing-card-featured</td><td>backgroundColor: var(--c-canvas); rounded: var(--r-lg); padding: var(--s-xxl); border: 2px solid var(--c-brand-green); shadow: rgba(0, 212, 164, 0.08) 0px 8px 24px</td></tr>
+      <tr><td class="k">testimonial-card-feature</td><td>backgroundColor: var(--c-testimonial-orange); textColor: var(--c-on-dark); rounded: var(--r-lg); padding: var(--s-section)</td></tr>
+      <tr><td class="k">testimonial-card-quote</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); rounded: var(--r-lg); padding: var(--s-xxl); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">text-input</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); typography: var(--t-body-md-size); rounded: var(--r-md); padding: var(--s-sm) var(--s-md); border: 1px solid var(--c-hairline); height: 40px</td></tr>
+      <tr><td class="k">text-input-focused</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); border: 2px solid var(--c-brand-green)</td></tr>
+      <tr><td class="k">search-pill</td><td>backgroundColor: var(--c-surface); textColor: var(--c-steel); typography: var(--t-body-sm-size); rounded: var(--r-md); padding: var(--s-xs) var(--s-md); height: 36px; border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">segmented-tab</td><td>backgroundColor: transparent; textColor: var(--c-steel); typography: var(--t-body-sm-medium-size); padding: var(--s-sm) var(--s-md); border: 0 0 2px transparent solid</td></tr>
+      <tr><td class="k">segmented-tab-active</td><td>backgroundColor: transparent; textColor: var(--c-ink); typography: var(--t-body-sm-medium-size); border: 0 0 2px var(--c-ink) solid</td></tr>
+      <tr><td class="k">pill-tab</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-steel); typography: var(--t-body-sm-medium-size); rounded: var(--r-full); padding: 8px 16px; border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">pill-tab-active</td><td>backgroundColor: var(--c-primary); textColor: var(--c-on-primary); rounded: var(--r-full); border: 1px solid var(--c-primary)</td></tr>
+      <tr><td class="k">toggle-monthly-yearly</td><td>backgroundColor: var(--c-surface); textColor: var(--c-ink); rounded: var(--r-full); padding: 4px</td></tr>
+      <tr><td class="k">badge-discount</td><td>backgroundColor: var(--c-brand-green); textColor: var(--c-primary); typography: var(--t-caption-bold-size); rounded: var(--r-full); padding: 2px 8px</td></tr>
+      <tr><td class="k">badge-required</td><td>backgroundColor: var(--c-brand-error); textColor: var(--c-on-dark); typography: var(--t-micro-uppercase-size); rounded: var(--r-sm); padding: 2px 6px</td></tr>
+      <tr><td class="k">badge-type</td><td>backgroundColor: var(--c-surface); textColor: var(--c-steel); typography: var(--t-code-sm-size); rounded: var(--r-sm); padding: 2px 6px</td></tr>
+      <tr><td class="k">badge-tag</td><td>backgroundColor: rgba(55, 114, 207, 0.15); textColor: var(--c-brand-tag); typography: var(--t-caption-bold-size); rounded: var(--r-sm); padding: 2px 8px</td></tr>
+      <tr><td class="k">promo-banner</td><td>backgroundColor: var(--c-canvas-dark); textColor: var(--c-on-dark); typography: var(--t-body-sm-medium-size); padding: var(--s-sm) var(--s-md)</td></tr>
+      <tr><td class="k">code-block</td><td>backgroundColor: var(--c-surface-code); textColor: var(--c-on-dark); typography: var(--t-code-md-size); rounded: var(--r-md); padding: var(--s-md)</td></tr>
+      <tr><td class="k">code-block-header</td><td>backgroundColor: var(--c-surface-code); textColor: var(--c-on-dark-muted); typography: var(--t-caption-size); padding: var(--s-xs) var(--s-md); border: 0 0 1px var(--c-hairline-dark) solid</td></tr>
+      <tr><td class="k">code-inline</td><td>backgroundColor: var(--c-surface); textColor: var(--c-charcoal); typography: var(--t-code-inline-size); rounded: var(--r-xs); padding: 2px 6px; border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">property-row</td><td>backgroundColor: transparent; textColor: var(--c-ink); typography: var(--t-body-sm-size); padding: var(--s-md) 0; border: 0 0 1px var(--c-hairline-soft) solid</td></tr>
+      <tr><td class="k">feature-comparison-table</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); typography: var(--t-body-sm-size); rounded: var(--r-md); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">feature-comparison-row</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); padding: var(--s-md) var(--s-lg); border: 0 0 1px var(--c-hairline-soft) solid</td></tr>
+      <tr><td class="k">sidebar-nav-item</td><td>backgroundColor: transparent; textColor: var(--c-steel); typography: var(--t-body-sm-size); rounded: var(--r-sm); padding: var(--s-xs) var(--s-md)</td></tr>
+      <tr><td class="k">sidebar-nav-item-active</td><td>backgroundColor: var(--c-surface); textColor: var(--c-ink); typography: var(--t-body-sm-medium-size)</td></tr>
+      <tr><td class="k">sidebar-section-header</td><td>backgroundColor: transparent; textColor: var(--c-steel); typography: var(--t-micro-uppercase-size); padding: var(--s-md) var(--s-md) var(--s-xs)</td></tr>
+      <tr><td class="k">doc-toc-item</td><td>backgroundColor: transparent; textColor: var(--c-steel); typography: var(--t-body-sm-size); padding: var(--s-xxs) 0</td></tr>
+      <tr><td class="k">doc-toc-item-active</td><td>backgroundColor: transparent; textColor: var(--c-ink); typography: var(--t-body-sm-medium-size)</td></tr>
+      <tr><td class="k">copy-code-button</td><td>backgroundColor: transparent; textColor: var(--c-on-dark-muted); typography: var(--t-caption-size); rounded: var(--r-sm); padding: var(--s-xxs) var(--s-xs); border: 1px solid var(--c-hairline-dark)</td></tr>
+      <tr><td class="k">hero-band-sky</td><td>backgroundColor: var(--c-hero-sky-from); textColor: var(--c-on-dark); rounded: 0; padding: var(--s-hero)</td></tr>
+      <tr><td class="k">hero-band-dark</td><td>backgroundColor: var(--c-hero-dark-from); textColor: var(--c-on-dark); rounded: 0; padding: var(--s-hero)</td></tr>
+      <tr><td class="k">hero-product-mockup</td><td>backgroundColor: var(--c-canvas); rounded: var(--r-lg); padding: 0; border: 1px solid var(--c-hairline-soft); shadow: rgba(0, 0, 0, 0.12) 0px 24px 48px -8px</td></tr>
+      <tr><td class="k">logo-wall-item</td><td>backgroundColor: transparent; textColor: var(--c-steel); typography: var(--t-body-md-medium-size); padding: var(--s-lg)</td></tr>
+      <tr><td class="k">faq-accordion-item</td><td>backgroundColor: var(--c-canvas); rounded: var(--r-md); padding: var(--s-xl); border: 1px solid var(--c-hairline-soft)</td></tr>
+      <tr><td class="k">footer-region</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-steel); typography: var(--t-body-sm-size); padding: var(--s-section) var(--s-xxl); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">footer-link</td><td>backgroundColor: transparent; textColor: var(--c-steel); typography: var(--t-body-sm-size); padding: var(--s-xxs) 0</td></tr>
+      <tr><td class="k">startup-program-card</td><td>backgroundColor: var(--c-canvas); rounded: var(--r-lg); padding: var(--s-xxl); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">founder-quote-card</td><td>backgroundColor: var(--c-testimonial-orange); textColor: var(--c-on-dark); rounded: var(--r-lg); padding: var(--s-xxl)</td></tr>
+    </tbody></table>
+  </section>
+  <footer><span>Mintlify-design-analysis — design tokens extracted from DESIGN.md</span><span>awesome-design-md / getdesign.md</span></footer>
+</div>
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script>
+</body></html>

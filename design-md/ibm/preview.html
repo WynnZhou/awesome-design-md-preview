@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of IBM</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #161616; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#palette">Palette</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#cards">Cards</a></li>
+  </ul>
+  <button class="nav-cta">Sign in</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of IBM</h1>
+    <p>An enterprise-marketing canvas faithful to Carbon Design System: white surfaces, charcoal type, IBM Blue (#0f62fe) as the single confident accent, and a deliberately flat-square aesthetic where corners stay at 0–4px. Plex Sans at weight 300 carries display sizes — IBM's typographic signature.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Sign up</button>
+      <button class="btn btn-tertiary">Read the docs →</button>
+    </div>
+  </div>
+</header>
+
+<section id="palette">
+  <div class="section-eyebrow">01 — Color Palette</div>
+  <h2 class="section-heading">Palette</h2>
+
+  <div class="palette-group-heading">Brand &amp; Accent</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#0f62fe"></div><div class="swatch-info"><div class="swatch-name">IBM Blue</div><div class="swatch-hex">#0f62fe</div><div class="swatch-role">Single brand accent — primary CTAs, links, focus rings.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#0043ce"></div><div class="swatch-info"><div class="swatch-name">Blue 60</div><div class="swatch-hex">#0043ce</div><div class="swatch-role">Hovered link state.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#002d9c"></div><div class="swatch-info"><div class="swatch-name">Blue 80</div><div class="swatch-hex">#002d9c</div><div class="swatch-role">Pressed primary button.</div></div></div>
+  </div>
+
+  <div class="palette-group-heading">Surface</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#ffffff;border-bottom:1px solid var(--hairline)"></div><div class="swatch-info"><div class="swatch-name">Canvas</div><div class="swatch-hex">#ffffff</div><div class="swatch-role">Default page background.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#f4f4f4"></div><div class="swatch-info"><div class="swatch-name">Surface 1</div><div class="swatch-hex">#f4f4f4</div><div class="swatch-role">Light gray — input fields, alt-row stripes, subtle bands.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#e0e0e0"></div><div class="swatch-info"><div class="swatch-name">Surface 2 / Hairline</div><div class="swatch-hex">#e0e0e0</div><div class="swatch-role">Card borders, disabled fields, dividers.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#161616"></div><div class="swatch-info"><div class="swatch-name">Inverse Canvas</div><div class="swatch-hex">#161616</div><div class="swatch-role">Footer surface — only dark surface on the page.</div></div></div>
+  </div>
+
+  <div class="palette-group-heading">Text</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#161616"></div><div class="swatch-info"><div class="swatch-name">Ink</div><div class="swatch-hex">#161616</div><div class="swatch-role">Headlines and emphasized body type.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#525252"></div><div class="swatch-info"><div class="swatch-name">Ink Muted</div><div class="swatch-hex">#525252</div><div class="swatch-role">Secondary type — meta, sub-headlines.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#8c8c8c"></div><div class="swatch-info"><div class="swatch-name">Ink Subtle</div><div class="swatch-hex">#8c8c8c</div><div class="swatch-role">Tertiary type — disabled, helper text, captions.</div></div></div>
+  </div>
+
+  <div class="palette-group-heading">Semantic</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#24a148"></div><div class="swatch-info"><div class="swatch-name">Success Green</div><div class="swatch-hex">#24a148</div><div class="swatch-role">Carbon green-50 — success states.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#f1c21b"></div><div class="swatch-info"><div class="swatch-name">Warning Yellow</div><div class="swatch-hex">#f1c21b</div><div class="swatch-role">Carbon yellow-30 — warning states.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#da1e28"></div><div class="swatch-info"><div class="swatch-name">Error Red</div><div class="swatch-hex">#da1e28</div><div class="swatch-role">Carbon red-60 — error states; danger button.</div></div></div>
+  </div>
+</section>
+
+<section id="typography" style="background: var(--surface-1);">
+  <div class="section-eyebrow">02 — Typography Scale</div>
+  <h2 class="section-heading">Typography</h2>
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>76px · 300 · 1.17 · -0.5px · IBM Plex Sans</div><div class="type-sample" style="font-size:72px;font-weight:300;line-height:1.17;letter-spacing:-0.5px">Meet Bob, your SDLC partner</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>60px · 300 · 1.17 · -0.4px</div><div class="type-sample" style="font-size:56px;font-weight:300;line-height:1.17;letter-spacing:-0.4px">Smarter business. Real impact.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>42px · 300 · 1.20 · 0</div><div class="type-sample" style="font-size:42px;font-weight:300;line-height:1.20">Enterprise technology</div></div>
+  <div class="type-row"><div class="type-meta"><strong>headline</strong>32px · 400 · 1.25</div><div class="type-sample" style="font-size:32px;font-weight:400;line-height:1.25">Card collection heading</div></div>
+  <div class="type-row"><div class="type-meta"><strong>card-title</strong>24px · 400 · 1.33</div><div class="type-sample" style="font-size:24px;font-weight:400;line-height:1.33">Feature card title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>subhead</strong>20px · 400 · 1.40</div><div class="type-sample" style="font-size:20px;font-weight:400;line-height:1.40">Lead body next to display headlines</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-lg</strong>18px · 400 · 1.50</div><div class="type-sample" style="font-size:18px;font-weight:400;line-height:1.50">Hero subhead and lead paragraphs.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body</strong>16px · 400 · 1.50 · 0.16px</div><div class="type-sample" style="font-size:16px;font-weight:400;line-height:1.50;letter-spacing:0.16px">Default body — Carbon's signature 0.16px positive tracking is part of the typographic voice.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>14px · 400 · 1.29 · 0.16px</div><div class="type-sample" style="font-size:14px;font-weight:400;line-height:1.29;letter-spacing:0.16px">Card body, footer columns.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-emphasis</strong>14px · 600 · 1.29 · 0.16px</div><div class="type-sample" style="font-size:14px;font-weight:600;line-height:1.29;letter-spacing:0.16px">Selected tab label, emphasized body</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption</strong>12px · 400 · 1.33 · 0.32px</div><div class="type-sample" style="font-size:12px;font-weight:400;line-height:1.33;letter-spacing:0.32px">Captions and meta</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button</strong>14px · 400 · 1.29 · 0.16px</div><div class="type-sample" style="font-size:14px;font-weight:400;line-height:1.29;letter-spacing:0.16px">Sign up</div></div>
+</section>
+
+<section id="components">
+  <div class="section-eyebrow">03 — Button Variants</div>
+  <h2 class="section-heading">Buttons</h2>
+  <div class="button-grid">
+    <div class="button-cell"><span class="button-label">button-primary</span><button class="b-btn b-primary">Sign up</button></div>
+    <div class="button-cell"><span class="button-label">button-primary-pressed</span><button class="b-btn b-primary-pressed">Sign up</button></div>
+    <div class="button-cell"><span class="button-label">button-secondary</span><button class="b-btn b-secondary">Talk to sales</button></div>
+    <div class="button-cell"><span class="button-label">button-tertiary</span><button class="b-btn b-tertiary">Read the docs →</button></div>
+    <div class="button-cell"><span class="button-label">button-ghost</span><button class="b-btn b-ghost">Learn more →</button></div>
+    <div class="button-cell"><span class="button-label">button-danger</span><button class="b-btn b-danger">Delete</button></div>
+  </div>
+</section>
+
+<section id="cards" style="background: var(--surface-1);">
+  <div class="section-eyebrow">04 — Cards &amp; Containers</div>
+  <h2 class="section-heading">Cards</h2>
+  <div class="card-grid">
+    <div class="feature-card"><div><div class="feature-eyebrow">feature-card</div><h3 class="feature-heading">AI assistants</h3><p class="feature-body">Plan and drive complex projects with intelligent agents and assistants.</p></div><a href="#" style="font-size:14px;font-weight:600;letter-spacing:0.16px">Explore →</a></div>
+    <div class="feature-card"><div><div class="feature-eyebrow">feature-card</div><h3 class="feature-heading">Data management</h3><p class="feature-body">Trusted data you need to power your most-critical AI initiatives.</p></div><a href="#" style="font-size:14px;font-weight:600;letter-spacing:0.16px">Explore →</a></div>
+    <div class="feature-card"><div><div class="feature-eyebrow">feature-card</div><h3 class="feature-heading">Security &amp; governance</h3><p class="feature-body">AI safeguards to protect your most-critical data and scale with confidence.</p></div><a href="#" style="font-size:14px;font-weight:600;letter-spacing:0.16px">Explore →</a></div>
+    <div class="feature-card-elevated"><div><div class="feature-eyebrow">feature-card-elevated</div><h3 class="feature-heading">Integrated resilience</h3><p class="feature-body">Modernize and protect your business operations from cyber threats.</p></div><a href="#" style="font-size:14px;font-weight:600;letter-spacing:0.16px">Explore →</a></div>
+  </div>
+
+  <div style="margin-top:48px">
+    <div class="hero-card">
+      <h3>Hero composition card</h3>
+      <p>A larger atmospheric tile with light-weight title, body, and CTA. Used as the centerpiece of feature pages.</p>
+      <button class="b-btn b-primary">Get started</button>
+    </div>
+  </div>
+
+  <div style="margin-top:48px">
+    <div class="cta-banner">
+      <h3>Ready to do enterprise right?</h3>
+      <p>Get started in minutes with a free IBM Cloud account.</p>
+      <button class="b-btn b-primary">Sign up</button>
+    </div>
+  </div>
+
+  <div style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));gap:24px">
+    <div class="resource-tile"><div class="resource-tile-thumb"></div><div class="feature-eyebrow">resource-tile</div><div style="font-size:16px;font-weight:600;margin-bottom:4px">Resource title</div><div style="font-size:12px;color:var(--ink-muted);letter-spacing:0.32px">Article · 4 min read</div></div>
+    <div class="customer-logo-tile">FERRARI</div>
+    <div class="customer-logo-tile">PFIZER</div>
+    <div class="customer-logo-tile">US OPEN</div>
+  </div>
+
+  <div style="margin-top:48px">
+    <div class="feature-eyebrow" style="margin-bottom:12px">product-tab + product-tab-selected</div>
+    <div class="tab-row">
+      <div class="tab">Overview</div>
+      <div class="tab selected">Features</div>
+      <div class="tab">Pricing</div>
+      <div class="tab">Resources</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-eyebrow">05 — Form Elements</div>
+  <h2 class="section-heading">Forms</h2>
+  <div class="form-grid">
+    <div class="form-field"><label class="form-label">text-input · default</label><input class="form-input" type="email" placeholder="Work email"></div>
+    <div class="form-field"><label class="form-label">text-input · focused</label><input class="form-input focused" type="text" value="Jane Doe"></div>
+    <div class="form-field"><label class="form-label">text-input · error</label><input class="form-input error" type="email" value="jane@invalid"></div>
+    <div class="form-field"><label class="form-label">newsletter-input</label><input class="form-input" type="email" placeholder="Stay connected"></div>
+    <div class="form-field" style="grid-column:span 2;min-width:0"><label class="form-label">textarea</label><textarea class="form-input" placeholder="Tell us about your project..."></textarea></div>
+    <div class="form-field"><button class="b-btn b-primary">Submit</button></div>
+  </div>
+</section>
+
+<section style="background: var(--surface-1);">
+  <div class="section-eyebrow">06 — Spacing Scale</div>
+  <h2 class="section-heading">Spacing</h2>
+  <div class="spacing-row">
+    <div class="spacing-cell"><div class="spacing-bar" style="width:4px"></div><div class="spacing-meta">xxs · 4px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:8px"></div><div class="spacing-meta">xs · 8px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:12px"></div><div class="spacing-meta">sm · 12px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:16px"></div><div class="spacing-meta">md · 16px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:24px"></div><div class="spacing-meta">lg · 24px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:32px"></div><div class="spacing-meta">xl · 32px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:48px"></div><div class="spacing-meta">xxl · 48px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:96px"></div><div class="spacing-meta">section · 96px</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-eyebrow">07 — Border Radius Scale</div>
+  <h2 class="section-heading">Radius</h2>
+  <p style="color:var(--ink-muted);max-width:540px;font-size:16px;letter-spacing:0.16px;margin:0 0 32px">Carbon commits to flat 0px corners. The other tokens exist for product / mobile surfaces but rarely surface on marketing.</p>
+  <div class="radius-row">
+    <div class="radius-cell"><div class="radius-box" style="border-radius:0"></div><div class="radius-meta">none · 0px (default)</div></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:2px"></div><div class="radius-meta">xs · 2px</div></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:4px"></div><div class="radius-meta">sm · 4px</div></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:6px"></div><div class="radius-meta">md · 6px</div></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:8px"></div><div class="radius-meta">lg · 8px</div></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:9999px;width:96px"></div><div class="radius-meta">pill · 9999</div></div>
+  </div>
+</section>
+
+<section style="background: var(--surface-1);">
+  <div class="section-eyebrow">08 — Elevation &amp; Depth</div>
+  <h2 class="section-heading">Elevation</h2>
+  <div class="elevation-grid">
+    <div class="elev-card elev-0">Level 0 — flat</div>
+    <div class="elev-card elev-1">Level 1 — hairline</div>
+    <div class="elev-card elev-2">Level 2 — surface lift</div>
+    <div class="elev-card elev-3">Level 3 — focus ring</div>
+  </div>
+</section>
+
+<section>
+  <div class="section-eyebrow">09 — Responsive Behavior</div>
+  <h2 class="section-heading">Responsive</h2>
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Max</td><td>1584px</td><td>Carbon max grid; gutters expand</td></tr>
+      <tr><td>Desktop-XL</td><td>1312px</td><td>Default desktop layout</td></tr>
+      <tr><td>Desktop</td><td>1056px</td><td>Card grid 4-up maintained</td></tr>
+      <tr><td>Tablet</td><td>672px</td><td>Card grid 4-up → 2-up; nav becomes hamburger</td></tr>
+      <tr><td>Mobile</td><td>320px</td><td>Single-column; display-xl scales 76px → ~32px</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="device-cell" style="width:60px;height:120px">320</div>
+    <div class="device-cell" style="width:130px;height:170px">672</div>
+    <div class="device-cell" style="width:170px;height:200px">1056</div>
+    <div class="device-cell" style="width:220px;height:230px">1312</div>
+    <div class="device-cell" style="width:280px;height:260px">1584</div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:32px">
+    <div>
+      <div class="feature-eyebrow" style="margin-bottom:12px">Touch Targets</div>
+      <ul style="font-size:15px;line-height:1.6;padding-left:20px;margin:0;color:var(--ink-muted);letter-spacing:0.16px">
+        <li>Carbon spec: 48px minimum tap target across viewports.</li>
+        <li>Top-nav links grow from 36px to 48px on touch.</li>
+        <li>Tab strip rows hold 48px tap height.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="feature-eyebrow" style="margin-bottom:12px">Collapsing Strategy</div>
+      <ul style="font-size:15px;line-height:1.6;padding-left:20px;margin:0;color:var(--ink-muted);letter-spacing:0.16px">
+        <li>Top nav collapses to hamburger below 672px.</li>
+        <li>Utility bar hides below 672px.</li>
+        <li>Card grid: 4-up → 2-up at 1056px → 1-up below 672px.</li>
+        <li>Footer: 6-column → 3-column → 1-column.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

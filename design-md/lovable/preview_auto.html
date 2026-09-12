@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" data-native="light" data-theme="light"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lovable — Design System Preview</title>
+  <link rel="stylesheet" href="preview_auto.css">
+</head>
+<body>
+
+<div class="page">
+  <header class="topbar">
+    <div><div class="topbar-name">Lovable</div><div class="topbar-meta">design tokens · 12 colors · 12 type styles · 9 components</div></div>
+    <nav class="topbar-links"><a href="#colors">Colors</a><a href="#typography">Type</a><a href="#buttons">Buttons</a><a href="#badges">Badges</a><a href="#spacing">Spacing</a><a href="#radius">Radius</a><a href="#elevation">Depth</a><a href="#signature">Other</a><a href="#reference">Reference</a></nav>
+  </header>
+  <section class="hero">
+    <h1>Lovable</h1>
+    <p class="lede">Lovable&#x27;s website radiates warmth through restraint. The entire page sits on a creamy, parchment-toned background (`#f7f4ed`) that immediately separates it from the cold-white conventions of most developer tool sites. This isn&#x27;t minimalism for minimalism&#x27;s sake — it&#x27;s a deliberate choice to feel approachable, almost analog, like a well-crafted notebook. The near-black text (`#1c1c1c`) against this warm cream creates a contrast ratio that&#x27;s easy on the eyes while maintaining sharp readability.</p>
+    <div class="meta">
+      <span class="chip solid">#5f5f5d</span>
+      <span class="chip">Camera Plain Variable</span>
+      <span class="chip">light canvas</span>
+      <span class="chip">source: DESIGN.md (markdown)</span>
+    </div>
+  </section>
+  <section id="colors">
+    <div class="sec-head"><h2>Color Palette</h2><span class="count">12 tokens</span></div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-cream">#f7f4ed</div><div class="info"><div class="nm">Cream</div><div class="hx">cream</div><div class="hx dim">Page background, card surfaces, button surfaces. The foundation — warm</div></div></div>
+      <div class="swatch"><div class="fill sw-charcoal">#1c1c1c</div><div class="info"><div class="nm">Charcoal</div><div class="hx">charcoal</div><div class="hx dim">Primary text, headings, dark button backgrounds. Not pure black — orga</div></div></div>
+      <div class="swatch"><div class="fill sw-off-white">#fcfbf8</div><div class="info"><div class="nm">Off-White</div><div class="hx">off-white</div><div class="hx dim">Button text on dark backgrounds, subtle highlight. Barely distinguisha</div></div></div>
+    </div>
+    <div class="group-title">Neutral Scale (Opacity-Based)</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-charcoal-100">#1c1c1c</div><div class="info"><div class="nm">Charcoal 100%</div><div class="hx">charcoal-100</div><div class="hx dim">Primary text, headings, dark surfaces.</div></div></div>
+      <div class="swatch"><div class="fill sw-charcoal-83">rgba(28,28,28,0.83)</div><div class="info"><div class="nm">Charcoal 83%</div><div class="hx">charcoal-83</div><div class="hx dim">Strong secondary text.</div></div></div>
+      <div class="swatch"><div class="fill sw-charcoal-82">rgba(28,28,28,0.82)</div><div class="info"><div class="nm">Charcoal 82%</div><div class="hx">charcoal-82</div><div class="hx dim">Body copy.</div></div></div>
+      <div class="swatch"><div class="fill sw-muted-gray">#5f5f5d</div><div class="info"><div class="nm">Muted Gray</div><div class="hx">muted-gray</div><div class="hx dim">Secondary text, descriptions, captions.</div></div></div>
+      <div class="swatch"><div class="fill sw-charcoal-40">rgba(28,28,28,0.4)</div><div class="info"><div class="nm">Charcoal 40%</div><div class="hx">charcoal-40</div><div class="hx dim">Interactive borders, button outlines.</div></div></div>
+      <div class="swatch"><div class="fill sw-charcoal-4">rgba(28,28,28,0.04)</div><div class="info"><div class="nm">Charcoal 4%</div><div class="hx">charcoal-4</div><div class="hx dim">Subtle hover backgrounds, micro-tints.</div></div></div>
+      <div class="swatch"><div class="fill sw-charcoal-3">rgba(28,28,28,0.03)</div><div class="info"><div class="nm">Charcoal 3%</div><div class="hx">charcoal-3</div><div class="hx dim">Barely-visible overlays, background depth.</div></div></div>
+    </div>
+    <div class="group-title">Surface &amp; Border</div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-light-cream">#eceae4</div><div class="info"><div class="nm">Light Cream</div><div class="hx">light-cream</div><div class="hx dim">Card borders, dividers, image outlines. The warm divider line.</div></div></div>
+      <div class="swatch"><div class="fill sw-cream-surface">#f7f4ed</div><div class="info"><div class="nm">Cream Surface</div><div class="hx">cream-surface</div><div class="hx dim">Card backgrounds, section fills — same as page background for seamless</div></div></div>
+    </div>
+  </section>
+  <section id="typography">
+    <div class="sec-head"><h2>Typography Scale</h2><span class="count">12 styles</span></div>
+    <div class="type-row">
+      <div class="type-meta"><b>Display Hero</b>60px / 600<br>lh 1.00–1.10 (tight) · ls -1.5px<br>Camera Plain Variable</div>
+      <div class="type-sample type-display-hero">Display Hero — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Display Alt</b>60px / 480<br>lh 1.00 (tight) · ls normal<br>Camera Plain Variable</div>
+      <div class="type-sample type-display-alt">Display Alt — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Section Heading</b>48px / 600<br>lh 1.00 (tight) · ls -1.2px<br>Camera Plain Variable</div>
+      <div class="type-sample type-section-heading">Section Heading — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Sub-heading</b>36px / 600<br>lh 1.10 (tight) · ls -0.9px<br>Camera Plain Variable</div>
+      <div class="type-sample type-sub-heading">Sub-heading — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Card Title</b>20px / 400<br>lh 1.25 (tight) · ls normal<br>Camera Plain Variable</div>
+      <div class="type-sample type-card-title">Card Title — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Body Large</b>18px / 400<br>lh 1.38 · ls normal<br>Camera Plain Variable</div>
+      <div class="type-sample type-body-large">Body Large — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Body</b>16px / 400<br>lh 1.50 · ls normal<br>Camera Plain Variable</div>
+      <div class="type-sample type-body">Body — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Button</b>16px / 400<br>lh 1.50 · ls normal<br>Camera Plain Variable</div>
+      <div class="type-sample type-button">Button — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Button Small</b>14px / 400<br>lh 1.50 · ls normal<br>Camera Plain Variable</div>
+      <div class="type-sample type-button-small">Button Small — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Link</b>16px / 400<br>lh 1.50 · ls normal<br>Camera Plain Variable</div>
+      <div class="type-sample type-link">Link — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Link Small</b>14px / 400<br>lh 1.50 · ls normal<br>Camera Plain Variable</div>
+      <div class="type-sample type-link-small">Link Small — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>Caption</b>14px / 400<br>lh 1.50 · ls normal<br>Camera Plain Variable</div>
+      <div class="type-sample type-caption">Caption — The quick brown fox jumps over the lazy dog</div>
+    </div>
+  </section>
+  <section id="buttons">
+    <div class="sec-head"><h2>Button Variants</h2><span class="count">1</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-pill-icon-button">Pill Icon Button</div><button class="demo-el spec-buttons-pill-icon-button" type="button">Button</button></div>
+    </div></div>
+  </section>
+  <section id="badges">
+    <div class="sec-head"><h2>Badges & Pills</h2><span class="count">1</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-pill-icon-button">Pill Icon Button</div><div class="demo-el spec-buttons-pill-icon-button">Badge</div></div>
+    </div></div>
+  </section>
+  <section id="signature">
+    <div class="sec-head"><h2>Other Components</h2><span class="count">8</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="buttons-primary-dark-inset-shadow">Primary Dark Inset Shadow</div><div class="demo-el spec-buttons-primary-dark-inset-shadow">Primary Dark Inset Shadow</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-ghost-outline">Ghost Outline</div><div class="demo-el spec-buttons-ghost-outline">Ghost Outline</div></div>
+      <div class="demo-col"><div class="lb" title="buttons-cream-surface">Cream Surface</div><div class="demo-el spec-buttons-cream-surface">Cream Surface</div></div>
+      <div class="demo-col"><div class="lb" title="cards-containers">Containers</div><div class="demo-el spec-cards-containers">Containers</div></div>
+      <div class="demo-col"><div class="lb" title="inputs-forms">Forms</div><div class="demo-el spec-inputs-forms">Forms</div></div>
+      <div class="demo-col"><div class="lb" title="navigation">Navigation</div><div class="demo-el spec-navigation">Navigation</div></div>
+      <div class="demo-col"><div class="lb" title="links">Links</div><div class="demo-el demo-el-ghost spec-links">Links</div></div>
+      <div class="demo-col"><div class="lb" title="distinctive-components-template-gallery">Distinctive Components Template Gallery</div><div class="demo-el demo-el-ghost spec-distinctive-components-template-gallery">Distinctive Components Template Gallery</div></div>
+    </div></div>
+  </section>
+  <section id="spacing">
+    <div class="sec-head"><h2>Spacing Scale</h2><span class="count">15 steps</span></div>
+    <div class="bar-row"><span>s0-8px</span><span class="val">8px</span><span class="bar bar-s0-8px"></span></div>
+    <div class="bar-row"><span>s1-10px</span><span class="val">10px</span><span class="bar bar-s1-10px"></span></div>
+    <div class="bar-row"><span>s2-12px</span><span class="val">12px</span><span class="bar bar-s2-12px"></span></div>
+    <div class="bar-row"><span>s3-16px</span><span class="val">16px</span><span class="bar bar-s3-16px"></span></div>
+    <div class="bar-row"><span>s4-24px</span><span class="val">24px</span><span class="bar bar-s4-24px"></span></div>
+    <div class="bar-row"><span>s5-32px</span><span class="val">32px</span><span class="bar bar-s5-32px"></span></div>
+    <div class="bar-row"><span>s6-40px</span><span class="val">40px</span><span class="bar bar-s6-40px"></span></div>
+    <div class="bar-row"><span>s7-56px</span><span class="val">56px</span><span class="bar bar-s7-56px"></span></div>
+    <div class="bar-row"><span>s8-80px</span><span class="val">80px</span><span class="bar bar-s8-80px"></span></div>
+    <div class="bar-row"><span>s0-expands-generously-at-the-top-end-sections-use-80px-208px-vertical-spacing-for-editorial-breathing-room</span><span class="val">expands generously at the top end — sections use 80px–208px vertical spacing for editorial breathing room</span><span class="bar bar-s0-expands-generously-at-the-top-end-sections-use-80px-208px-vertical-spacing-for-editorial-breathing-room"></span></div>
+    <div class="bar-row"><span>s9-96px</span><span class="val">96px</span><span class="bar bar-s9-96px"></span></div>
+    <div class="bar-row"><span>s10-128px</span><span class="val">128px</span><span class="bar bar-s10-128px"></span></div>
+    <div class="bar-row"><span>s11-176px</span><span class="val">176px</span><span class="bar bar-s11-176px"></span></div>
+    <div class="bar-row"><span>s12-192px</span><span class="val">192px</span><span class="bar bar-s12-192px"></span></div>
+    <div class="bar-row"><span>s13-208px</span><span class="val">208px</span><span class="bar bar-s13-208px"></span></div>
+  </section>
+  <section id="radius">
+    <div class="sec-head"><h2>Border Radius Scale</h2><span class="count">6 steps</span></div>
+    <div class="radius-grid">
+      <div class="radius-cell"><div class="box rd-micro"></div><div class="lb">micro · 4px</div></div>
+      <div class="radius-cell"><div class="box rd-standard"></div><div class="lb">standard · 6px</div></div>
+      <div class="radius-cell"><div class="box rd-comfortable"></div><div class="lb">comfortable · 8px</div></div>
+      <div class="radius-cell"><div class="box rd-card"></div><div class="lb">card · 12px</div></div>
+      <div class="radius-cell"><div class="box rd-container"></div><div class="lb">container · 16px</div></div>
+      <div class="radius-cell"><div class="box rd-full-pill"></div><div class="lb">full-pill · 9999px</div></div>
+    </div>
+  </section>
+  <section id="elevation">
+    <div class="sec-head"><h2>Elevation &amp; Depth</h2><span class="count">7</span></div>
+    <div class="elev-grid">
+      <div class="elev-cell elev-focus-shadow"><div class="lb">Focus Shadow</div><div class="vl">rgba(0,0,0,0.1) 0px 4px 12px</div></div>
+      <div class="elev-cell elev-button-inset"><div class="lb">Button Inset</div><div class="vl">rgba(255,255,255,0.2) 0px 0.5px 0px 0px inset, rgba(0,0,0,0.2) 0</div></div>
+      <div class="elev-cell elev-flat-level-0"><div class="lb">Flat (Level 0)</div><div class="vl">No shadow, cream background</div></div>
+      <div class="elev-cell elev-bordered-level-1"><div class="lb">Bordered (Level 1)</div><div class="vl">1px solid #eceae4</div></div>
+      <div class="elev-cell elev-inset-level-2"><div class="lb">Inset (Level 2)</div><div class="vl">rgba(255,255,255,0.2) 0px 0.5px 0px inset, rgba(0,0,0,0.2) 0px 0</div></div>
+      <div class="elev-cell elev-focus-level-3"><div class="lb">Focus (Level 3)</div><div class="vl">rgba(0,0,0,0.1) 0px 4px 12px</div></div>
+      <div class="elev-cell elev-ring-accessibility"><div class="lb">Ring (Accessibility)</div><div class="vl">rgba(59,130,246,0.5) 2px ring</div></div>
+    </div>
+  </section>
+  <section id="guidelines">
+    <div class="sec-head"><h2>Do&rsquo;s &amp; Don&rsquo;ts</h2></div>
+    <div class="guide">
+      <ul class="yes">
+        <li>Use the warm cream background (#f7f4ed) as the page foundation — it&#x27;s the brand&#x27;s signature warmth</li>
+        <li>Use Camera Plain Variable at display sizes with negative letter-spacing (-0.9px to -1.5px)</li>
+        <li>Derive all grays from #1c1c1c at varying opacity levels for tonal unity</li>
+        <li>Use the inset shadow technique on dark buttons for tactile depth</li>
+        <li>Use #eceae4 borders instead of shadows for card containment</li>
+        <li>Keep the weight system narrow: 400 for body/UI, 600 for headings</li>
+      </ul>
+      <ul class="no">
+        <li>Don&#x27;t use pure white (#ffffff) as a page background — the cream is intentional</li>
+        <li>Don&#x27;t use heavy box-shadows for cards — borders are the containment mechanism</li>
+        <li>Don&#x27;t introduce saturated accent colors — the palette is intentionally warm-neutral</li>
+        <li>Don&#x27;t use weight 700 (bold) — 600 is the maximum weight in the system</li>
+        <li>Don&#x27;t apply 9999px radius on rectangular buttons — pills are for icon/action toggles</li>
+        <li>Don&#x27;t use sharp focus outlines — the system uses soft shadow-based focus indicators</li>
+      </ul>
+    </div>
+  </section>
+  <section id="reference">
+    <div class="sec-head"><h2>Component Reference</h2><span class="count">9</span></div>
+    <table class="ref"><thead><tr><th>Component</th><th>Resolved properties</th></tr></thead><tbody>
+      <tr><td class="k">buttons-primary-dark-inset-shadow</td><td>Background: #1c1c1c; Text: #fcfbf8; Padding: 8px 16px; Radius: 6px; Active: opacity 0.8; Use: Primary CTA</td></tr>
+      <tr><td class="k">buttons-ghost-outline</td><td>Background: transparent; Text: #1c1c1c; Padding: 8px 16px; Radius: 6px; Border: 1px solid rgba; Active: opacity 0.8; Use: Secondary actions</td></tr>
+      <tr><td class="k">buttons-cream-surface</td><td>Background: #f7f4ed; Text: #1c1c1c; Padding: 8px 16px; Radius: 6px; Active: opacity 0.8; Use: Tertiary actions, toolbar buttons</td></tr>
+      <tr><td class="k">buttons-pill-icon-button</td><td>Background: #f7f4ed; Text: #1c1c1c; Radius: 9999px</td></tr>
+      <tr><td class="k">cards-containers</td><td>rounded: 12px; Background: #f7f4ed; Border: 1px solid #eceae4</td></tr>
+      <tr><td class="k">inputs-forms</td><td>rounded: 6px; Background: #f7f4ed; Text: #1c1c1c; Border: 1px solid #eceae4; Radius: 6px; Placeholder: #5f5f5d</td></tr>
+      <tr><td class="k">navigation</td><td>rounded: 6px</td></tr>
+      <tr><td class="k">links</td><td>Color: #1c1c1c; Decoration: underline</td></tr>
+      <tr><td class="k">distinctive-components-template-gallery</td><td>Hover: subtle shadow</td></tr>
+    </tbody></table>
+  </section>
+  <footer><span>Lovable — design tokens extracted from DESIGN.md</span><span>awesome-design-md / getdesign.md</span></footer>
+</div>
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script>
+</body></html>

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design System Analysis of Miro</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #0a0a0a; }</style>
+  
+</head>
+<body>
+  <div class="promo-banner">Convo'25 registration is open. Get up to 70% off on Annual <span class="promo-pill">GET YOUR SPOT</span></div>
+  <nav class="nav">
+    <div class="nav-left">
+      <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+        <span class="nav-brand">getdesign.md</span>
+      </a>
+      <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+        awesome-design-md
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Solutions</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Pricing</a></li>
+    </ul>
+    <button class="nav-cta">Get started free</button>
+  </nav>
+
+  <div class="hero">
+    <h1>Design System Analysis of Miro</h1>
+    <p>Miro positions itself as the AI-powered visual workspace through a confident, slightly playful brand voice — anchored by a stark white canvas, signature canary yellow wordmark, black-pill primary CTAs, and pastel feature cards that echo the actual sticky-note palette of the live whiteboard.</p>
+    <div class="hero-actions">
+      <button class="btn-primary">Get started free</button>
+      <button class="btn-secondary">Book a demo</button>
+    </div>
+  </div>
+
+  <section id="colors">
+    <h2 class="section-heading">Color Palette</h2>
+    <p class="section-sub">Stark white canvas anchored by black-and-white CTA system, broken open by Miro's recognizable canary yellow wordmark and the pastel sticky-note palette (yellow, rose, coral, teal, orange).</p>
+
+    <div class="palette-group">
+      <h3>Brand &amp; Accent</h3>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #ffd02f;"></div><div class="swatch-name">Miro Yellow</div><div class="swatch-hex">#ffd02f</div><div class="swatch-role">Wordmark, promo banner</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #fcb900;"></div><div class="swatch-name">Yellow Deep</div><div class="swatch-hex">#fcb900</div><div class="swatch-role">Pressed yellow state</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #fff4c4;"></div><div class="swatch-name">Yellow Light</div><div class="swatch-hex">#fff4c4</div><div class="swatch-role">Tag chip background</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #4262ff;"></div><div class="swatch-name">Brand Blue</div><div class="swatch-hex">#4262ff</div><div class="swatch-role">Inline links, featured tier border</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #2a41b6;"></div><div class="swatch-name">Blue Pressed</div><div class="swatch-hex">#2a41b6</div><div class="swatch-role">Pressed-state blue</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #ff9999;"></div><div class="swatch-name">Brand Coral</div><div class="swatch-hex">#ff9999</div><div class="swatch-role">Coral accent</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #ffc6c6;"></div><div class="swatch-name">Coral Light</div><div class="swatch-hex">#ffc6c6</div><div class="swatch-role">Pastel feature card bg</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #ffd8f4;"></div><div class="swatch-name">Brand Rose</div><div class="swatch-hex">#ffd8f4</div><div class="swatch-role">Rose accent</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #fde0f0;"></div><div class="swatch-name">Rose Light</div><div class="swatch-hex">#fde0f0</div><div class="swatch-role">Pastel feature card bg</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #0fbcb0;"></div><div class="swatch-name">Brand Teal</div><div class="swatch-hex">#0fbcb0</div><div class="swatch-role">Teal accent</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #c3faf5;"></div><div class="swatch-name">Teal Light</div><div class="swatch-hex">#c3faf5</div><div class="swatch-role">Pastel feature card bg</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #ffe6cd;"></div><div class="swatch-name">Orange Light</div><div class="swatch-hex">#ffe6cd</div><div class="swatch-role">Pastel feature card bg</div></div>
+      </div>
+    </div>
+
+    <div class="palette-group">
+      <h3>Surface</h3>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #ffffff;"></div><div class="swatch-name">Canvas White</div><div class="swatch-hex">#ffffff</div><div class="swatch-role">Page + card background</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #f7f8fa;"></div><div class="swatch-name">Surface</div><div class="swatch-hex">#f7f8fa</div><div class="swatch-role">Stat row, search rest</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #fff8e0;"></div><div class="swatch-name">Surface Yellow</div><div class="swatch-hex">#fff8e0</div><div class="swatch-role">Yellow tag chip bg</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #f5f3ff;"></div><div class="swatch-name">Surface Pricing Featured</div><div class="swatch-hex">#f5f3ff</div><div class="swatch-role">Featured tier bg</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #e0e2e8;"></div><div class="swatch-name">Hairline</div><div class="swatch-hex">#e0e2e8</div><div class="swatch-role">Borders</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #c7cad5;"></div><div class="swatch-name">Hairline Strong</div><div class="swatch-hex">#c7cad5</div><div class="swatch-role">Input borders</div></div>
+      </div>
+    </div>
+
+    <div class="palette-group">
+      <h3>Text</h3>
+      <div class="palette-grid">
+        <div class="swatch"><div class="swatch-color" style="background: #1c1c1e;"></div><div class="swatch-name">Ink</div><div class="swatch-hex">#1c1c1e</div><div class="swatch-role">Headlines, body, CTAs</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #2c2c34;"></div><div class="swatch-name">Charcoal</div><div class="swatch-hex">#2c2c34</div><div class="swatch-role">Body emphasis</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #555a6a;"></div><div class="swatch-name">Slate</div><div class="swatch-hex">#555a6a</div><div class="swatch-role">Secondary text</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #6b6f7e;"></div><div class="swatch-name">Steel</div><div class="swatch-hex">#6b6f7e</div><div class="swatch-role">Tertiary, footer links</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #8e91a0;"></div><div class="swatch-name">Stone</div><div class="swatch-hex">#8e91a0</div><div class="swatch-role">Captions</div></div>
+        <div class="swatch"><div class="swatch-color" style="background: #a5a8b5;"></div><div class="swatch-name">Muted</div><div class="swatch-hex">#a5a8b5</div><div class="swatch-role">Disabled, placeholders</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="typography">
+    <h2 class="section-heading">Typography Scale</h2>
+    <p class="section-sub">Roobert PRO across every UI surface — from 80px hero displays to 11px micro labels. Geometric, slightly rounded character.</p>
+
+    <div class="type-row"><div class="type-meta"><span class="role">hero-display</span><span class="specs">80px / 500 / 1.05 / -2px</span></div><div class="type-sample" style="font-size: 80px; font-weight: 500; line-height: 1.05; letter-spacing: -2px;">Get great done</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">display-lg</span><span class="specs">60px / 500 / 1.10 / -1.5px</span></div><div class="type-sample" style="font-size: 60px; font-weight: 500; line-height: 1.10; letter-spacing: -1.5px;">Visual workspace</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">heading-1</span><span class="specs">48px / 500 / 1.15 / -1px</span></div><div class="type-sample" style="font-size: 48px; font-weight: 500; line-height: 1.15; letter-spacing: -1px;">Pricing on your terms</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">heading-2</span><span class="specs">36px / 500 / 1.20 / -0.5px</span></div><div class="type-sample" style="font-size: 36px; font-weight: 500; line-height: 1.20; letter-spacing: -0.5px;">Why choose Miro?</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">heading-3</span><span class="specs">28px / 500 / 1.25</span></div><div class="type-sample" style="font-size: 28px; font-weight: 500; line-height: 1.25;">Card title</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">stat-display</span><span class="specs">64px / 500 / 1.10 / -1.5px</span></div><div class="type-sample" style="font-size: 64px; font-weight: 500; line-height: 1.10; letter-spacing: -1.5px;">100M+</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">subtitle</span><span class="specs">18px / 400 / 1.50</span></div><div class="type-sample" style="font-size: 18px; font-weight: 400; line-height: 1.50;">Hero subtitle and lead body type</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">body-md</span><span class="specs">16px / 400 / 1.50</span></div><div class="type-sample" style="font-size: 16px; font-weight: 400; line-height: 1.50;">Primary body text used across documentation prose, marketing copy, and feature descriptions.</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">body-sm</span><span class="specs">14px / 400 / 1.50</span></div><div class="type-sample" style="font-size: 14px; font-weight: 400; line-height: 1.50;">Secondary body, table cells, navigation</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">caption-bold</span><span class="specs">13px / 600 / 1.40</span></div><div class="type-sample" style="font-size: 13px; font-weight: 600; line-height: 1.40;">BADGE LABEL / TAG CHIP</div></div>
+    <div class="type-row"><div class="type-meta"><span class="role">button-md</span><span class="specs">14px / 500 / 1.30</span></div><div class="type-sample" style="font-size: 14px; font-weight: 500; line-height: 1.30;">PILL BUTTON LABEL</div></div>
+  </section>
+
+  <section id="buttons">
+    <h2 class="section-heading">Button Variants</h2>
+    <p class="section-sub">Pill-shaped everywhere. Black-pill primary dominates marketing CTAs.</p>
+    <div class="button-grid">
+      <div class="button-cell"><button class="btn-primary">Get started free</button><span class="button-cell-name">button-primary</span><span class="button-cell-spec">Black pill — dominant CTA</span></div>
+      <div class="button-cell"><button class="btn-yellow">Brand emphasis</button><span class="button-cell-name">button-yellow</span><span class="button-cell-spec">Brand-yellow pill</span></div>
+      <div class="button-cell"><button class="btn-blue">Action callout</button><span class="button-cell-name">button-blue</span><span class="button-cell-spec">Brand-blue pill</span></div>
+      <div class="button-cell"><button class="btn-secondary">Book a demo</button><span class="button-cell-name">button-secondary</span><span class="button-cell-spec">Outlined pill</span></div>
+      <div class="button-cell" style="background: var(--primary);"><button class="btn-on-dark">Get started free</button><span class="button-cell-name" style="color: var(--on-dark);">button-on-dark</span><span class="button-cell-spec" style="color: var(--on-dark-muted);">White pill on dark</span></div>
+      <div class="button-cell"><button class="btn-ghost">View</button><span class="button-cell-name">button-ghost</span><span class="button-cell-spec">Quieter rect ghost</span></div>
+      <div class="button-cell"><button class="btn-link">Learn more →</button><span class="button-cell-name">button-link</span><span class="button-cell-spec">Inline blue text link</span></div>
+      <div class="button-cell"><button class="btn-icon-circular" aria-label="next">›</button><span class="button-cell-name">button-icon-circular</span><span class="button-cell-spec">36×36 utility</span></div>
+      <div class="button-cell"><button class="btn-disabled">Unavailable</button><span class="button-cell-name">button-primary-disabled</span><span class="button-cell-spec">Disabled state</span></div>
+    </div>
+  </section>
+
+  <section id="badges">
+    <h2 class="section-heading">Badges &amp; Status</h2>
+    <p class="section-sub">Pill-shaped status indicators alongside small rect tags. Yellow-promo, pastel-tag chips for product features.</p>
+    <div class="badge-row" style="margin-bottom: 32px;">
+      <span class="badge badge-promo">Limited time</span>
+      <span class="badge badge-yellow">Yellow</span>
+      <span class="badge badge-purple">AI agent</span>
+      <span class="badge badge-coral">Templates</span>
+      <span class="badge badge-success">Active</span>
+      <span class="badge badge-discount">Save 15%</span>
+    </div>
+    <div class="promo-banner" style="border-radius: 8px;">Convo'25 registration is open. Get up to 70% off on Annual <span class="promo-pill">GET YOUR SPOT</span></div>
+    <p style="font-size: 12px; color: var(--steel); margin-top: 8px; font-family: monospace;">promo-banner — sticky black strip with inline yellow pill above the top nav</p>
+  </section>
+
+  <section id="pastel-cards">
+    <h2 class="section-heading">Pastel Feature Cards</h2>
+    <p class="section-sub">Cards in the brand's sticky-note palette — yellow, coral, teal, rose, orange. 28px corner softening signals "this is a feature moment."</p>
+    <div class="pastel-grid">
+      <div class="pastel-card pcc-yellow">
+        <span class="badge" style="background: rgba(0,0,0,0.1); color: var(--primary);">Yellow</span>
+        <div><h4>AI Workflows</h4><p>Build out workflows that actually reduce workload — not add to it.</p></div>
+      </div>
+      <div class="pastel-card pcc-coral">
+        <span class="badge" style="background: rgba(0,0,0,0.1); color: var(--coral-dark);">Templates</span>
+        <div><h4>Templates</h4><p>Get started with thousands of templates ready to use.</p></div>
+      </div>
+      <div class="pastel-card pcc-teal">
+        <span class="badge" style="background: rgba(0,0,0,0.1); color: var(--moss-dark);">Boards</span>
+        <div><h4>Sidebars</h4><p>Track AI-built tasks with sidebars that consolidate context.</p></div>
+      </div>
+      <div class="pastel-card pcc-rose">
+        <span class="badge" style="background: rgba(0,0,0,0.1); color: var(--ink);">Spaces</span>
+        <div><h4>Spaces</h4><p>Connect your company knowledge to speed up the work.</p></div>
+      </div>
+      <div class="pastel-card pcc-orange">
+        <span class="badge" style="background: rgba(0,0,0,0.1); color: var(--ink);">Workshops</span>
+        <div><h4>Workshops</h4><p>Run real-time, inclusive retrospectives and team workshops.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="customer-stories">
+    <h2 class="section-heading">Customer Story Cards</h2>
+    <p class="section-sub">Brand-tinted photographic cards with full-bleed imagery and white quote overlays. PepsiCo coral, Red Hat dark, WebMD blue.</p>
+    <div class="story-grid">
+      <div class="card-customer-story">
+        <div class="photo">PepsiCo</div>
+        <div class="body">
+          <p class="quote">"With Miro, we went from project briefing to in-market launch in 10 months. That usually takes 3 years at PepsiCo."</p>
+          <div class="author">
+            <div class="avatar"></div>
+            <div><div class="author-name">Jordan Henley Hubble</div><div class="author-title">Director of Product at HBR</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="card-customer-story">
+        <div class="photo red-hat">Red Hat</div>
+        <div class="body">
+          <p class="quote">"I think Miro is a super unique opportunity to suddenly have engineering teams, marketing, creative people all on a single playing field."</p>
+          <div class="author">
+            <div class="avatar" style="background: linear-gradient(135deg, #d44b3a, #cc4422);"></div>
+            <div><div class="author-name">Jen Mark Reilly</div><div class="author-title">Distinguished Engineer at Red Hat</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="card-customer-story">
+        <div class="photo webmd">WebMD</div>
+        <div class="body">
+          <p class="quote">"Miro has unlocked a suite of AI-native products worldwide, including UltraMix Agent, Hailuo AI."</p>
+          <div class="author">
+            <div class="avatar" style="background: linear-gradient(135deg, #5b76fe, #4262ff);"></div>
+            <div><div class="author-name">WebMD Team</div><div class="author-title">Healthcare Leadership</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stats">
+    <h2 class="section-heading">Stat Row</h2>
+    <p class="section-sub">Stat-row callouts with 64px stat-display token: "100M+ users / 250+ companies / 6,200+".</p>
+    <div class="stat-row">
+      <div class="stat-cell"><span class="stat-num">100M+</span><span class="stat-label">Users worldwide</span></div>
+      <div class="stat-cell"><span class="stat-num">250+</span><span class="stat-label">Templates available</span></div>
+      <div class="stat-cell"><span class="stat-num">6,200+</span><span class="stat-label">Enterprise clients</span></div>
+    </div>
+  </section>
+
+  <section id="cards">
+    <h2 class="section-heading">Cards &amp; Containers</h2>
+    <p class="section-sub">Standard cards, industry tiles, and the dark CTA banner that anchors every feature page bottom.</p>
+    <div class="card-grid">
+      <div class="card-base">
+        <h5 style="font-size: 18px; font-weight: 500;">Standard Card</h5>
+        <p style="font-size: 14px; color: var(--steel); line-height: 1.5;">White canvas with hairline border and 16px corners. Used for documentation cards.</p>
+        <button class="btn-link" style="padding: 0; align-self: flex-start;">Read more →</button>
+      </div>
+      <div class="industry-tile">
+        <div class="icon-zone">📊</div>
+        <h5>Project Management</h5>
+        <p>Track progress, share updates, and drive accountability across your team.</p>
+      </div>
+      <div class="industry-tile">
+        <div class="icon-zone">🗺</div>
+        <h5>Roadmapping</h5>
+        <p>Plan, communicate, and align on a single source of truth.</p>
+      </div>
+      <div class="industry-tile">
+        <div class="icon-zone">🔄</div>
+        <h5>Process Mapping</h5>
+        <p>Map and document complex workflows with shared visibility.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="whiteboard">
+    <h2 class="section-heading">Whiteboard Mockup</h2>
+    <p class="section-sub">Real Miro-board UI rendered as feature illustration. Sticky notes in the brand pastel palette layered with subtle drop shadow.</p>
+    <div class="whiteboard-mockup">
+      <div class="sticky-note sn-yellow">Brainstorm ideas for Q4 launch</div>
+      <div class="sticky-note sn-coral">User research insights from interviews</div>
+      <div class="sticky-note sn-teal">Sprint planning · 2 weeks</div>
+      <div class="sticky-note sn-rose">Design review · Friday 3pm</div>
+      <div class="sticky-note sn-orange">Action items: prioritize</div>
+      <div class="sticky-note sn-yellow">Risk: timeline overlap</div>
+      <div class="sticky-note sn-teal">Stakeholder alignment</div>
+      <div class="sticky-note sn-coral">Customer feedback theme</div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2 class="section-heading">Pricing Cards</h2>
+    <p class="section-sub">4-tier comparison: Free / Starter / Business (featured) / Enterprise. Featured tier highlighted with lavender background + blue border. Enterprise card uses dark canvas.</p>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 32px;">
+      <div class="toggle-pill">
+        <button class="active">Monthly</button>
+        <button>Annual <span class="badge badge-discount" style="margin-left: 4px;">Save 15%</span></button>
+      </div>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <span class="tier-name">Free</span>
+        <div class="tier-price">$0<small>/mo</small></div>
+        <ul class="tier-feature-list">
+          <li>3 editable boards</li>
+          <li>Basic templates</li>
+          <li>Community support</li>
+        </ul>
+        <button class="btn-secondary">Sign up free</button>
+      </div>
+      <div class="pricing-card">
+        <span class="tier-name">Starter</span>
+        <div class="tier-price">$8<small>/mo</small></div>
+        <ul class="tier-feature-list">
+          <li>Unlimited boards</li>
+          <li>Premium templates</li>
+          <li>Email support</li>
+          <li>Custom branding</li>
+        </ul>
+        <button class="btn-primary">Start trial</button>
+      </div>
+      <div class="pricing-card featured">
+        <span class="tier-name">Business</span>
+        <div class="tier-price">$16<small>/mo</small></div>
+        <ul class="tier-feature-list">
+          <li>Everything in Starter</li>
+          <li>Single sign-on (SSO)</li>
+          <li>Advanced security</li>
+          <li>Priority support</li>
+          <li>Day passes for visitors</li>
+        </ul>
+        <button class="btn-blue">Start trial</button>
+      </div>
+      <div class="pricing-card enterprise">
+        <span class="tier-name">Enterprise</span>
+        <div class="tier-price" style="font-size: 28px;">Custom</div>
+        <ul class="tier-feature-list">
+          <li>Custom contracts</li>
+          <li>Enterprise security</li>
+          <li>Dedicated CSM</li>
+          <li>Advanced admin</li>
+        </ul>
+        <button class="btn-yellow">Contact sales</button>
+      </div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 500; margin: 48px 0 20px;">Feature Comparison Table</h3>
+    <table class="comparison-table">
+      <thead>
+        <tr><th>Feature</th><th style="text-align: center;">Free</th><th style="text-align: center;">Starter</th><th style="text-align: center;">Business</th><th style="text-align: center;">Enterprise</th></tr>
+      </thead>
+      <tbody>
+        <tr class="section-divider"><td colspan="5">CORE</td></tr>
+        <tr><td>Editable boards</td><td style="text-align: center;">3</td><td style="text-align: center;">∞</td><td style="text-align: center;">∞</td><td style="text-align: center;">∞</td></tr>
+        <tr><td>Templates</td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+        <tr><td>Custom branding</td><td style="text-align: center;">—</td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+        <tr class="section-divider"><td colspan="5">INTEGRATIONS</td></tr>
+        <tr><td>Slack &amp; Teams</td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+        <tr><td>Jira &amp; Asana</td><td style="text-align: center;">—</td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+        <tr class="section-divider"><td colspan="5">SECURITY &amp; ADMIN</td></tr>
+        <tr><td>Single sign-on (SSO)</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center;"><span class="check-mark">✓</span></td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+        <tr><td>SCIM provisioning</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+        <tr><td>Audit logs</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center;">—</td><td style="text-align: center;"><span class="check-mark">✓</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="forms">
+    <h2 class="section-heading">Forms &amp; Inputs</h2>
+    <p class="section-sub">44px-tall inputs with 8px rounded corners. Focus shifts to a 2px Brand Blue border. Pill-shaped filter dropdowns.</p>
+    <div class="form-row">
+      <div class="form-field">
+        <label class="form-label">Email</label>
+        <input class="text-input" type="text" value="default state" placeholder="you@email.com">
+      </div>
+      <div class="form-field">
+        <label class="form-label">Workspace name</label>
+        <input class="text-input" type="text" value="focused state" autofocus="" style="border: 2px solid var(--brand-blue); padding: 11px 15px;">
+      </div>
+      <div class="form-field">
+        <label class="form-label">Team size</label>
+        <input class="text-input" type="text" placeholder="1-10 people">
+      </div>
+    </div>
+    <div style="margin-top: 32px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+      <input class="search-pill" placeholder="🔍 Search templates">
+      <span style="font-size: 12px; color: var(--steel); font-family: monospace;">search-pill — 40px height, surface bg</span>
+    </div>
+    <div style="margin-top: 24px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+      <button class="filter-dropdown">Company use ⌄</button>
+      <button class="filter-dropdown">Industry ⌄</button>
+      <button class="filter-dropdown">Use case ⌄</button>
+      <span style="font-size: 12px; color: var(--steel); font-family: monospace;">filter-dropdown — pill-shaped filters</span>
+    </div>
+  </section>
+
+  <section id="tabs">
+    <h2 class="section-heading">Tabs &amp; Navigation</h2>
+    <p class="section-sub">Pill tabs for top-level switching (Pricing / Roadmap on the pricing page).</p>
+
+    <h3 style="font-size: 18px; font-weight: 500; margin-bottom: 16px;">Pill Tabs</h3>
+    <div class="pill-tabs">
+      <button class="pill-tab active">Pricing</button>
+      <button class="pill-tab">Roadmap</button>
+    </div>
+  </section>
+
+  <section id="cta-banner">
+    <h2 class="section-heading">Dark CTA Banner</h2>
+    <p class="section-sub">Page-bottom CTA banner with 32px corner softening.</p>
+    <div class="cta-banner-dark">
+      <h4>Try Miro for free with your team</h4>
+      <p>Join 100M+ users worldwide already using Miro to bring their best work to life.</p>
+      <div class="actions">
+        <button class="btn-on-dark">Get started free</button>
+        <button class="btn-secondary">Book a demo</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="logo-wall">
+    <h2 class="section-heading">Logo Wall</h2>
+    <p class="section-sub">Customer logo grid — wordmark presentation in trust-row sections.</p>
+    <div class="logo-wall">
+      <div class="logo-item">PepsiCo</div>
+      <div class="logo-item">Walmart</div>
+      <div class="logo-item">Atlassian</div>
+      <div class="logo-item">Slalom</div>
+      <div class="logo-item">vmware</div>
+      <div class="logo-item">Yamaha</div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2 class="section-heading">FAQ Accordion</h2>
+    <p class="section-sub">Frequently-asked-questions panel. Collapsed by default; chevron toggle.</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">How does Miro pricing work?</span>
+          <span class="chev">⌃</span>
+        </div>
+        <div class="faq-a">Miro offers a Free tier for individuals, Starter at $8/month, Business at $16/month, and Custom enterprise plans. Annual billing saves 15%.</div>
+      </div>
+      <div class="faq-item collapsed">
+        <div class="faq-q">
+          <span class="faq-q-text">Can I invite guests to my Miro workspace?</span>
+          <span class="chev">⌄</span>
+        </div>
+        <div class="faq-a">Yes — Business and Enterprise plans include day passes for visitors and external collaborators.</div>
+      </div>
+      <div class="faq-item collapsed">
+        <div class="faq-q">
+          <span class="faq-q-text">Is Miro SOC 2 compliant?</span>
+          <span class="chev">⌄</span>
+        </div>
+        <div class="faq-a">Yes — Miro is SOC 2 Type II certified. Enterprise plans include additional security and compliance features.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="spacing">
+    <h2 class="section-heading">Spacing Scale</h2>
+    <p class="section-sub">4px base unit, 8px primary increment. Section rhythm runs from 48px to 120px.</p>
+    <div class="spacing-grid">
+      <div class="spacing-box"><div class="spacing-visual" style="width: 4px; height: 16px;"></div><div class="spacing-label">4<small>xxs</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 8px; height: 16px;"></div><div class="spacing-label">8<small>xs</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 12px; height: 16px;"></div><div class="spacing-label">12<small>sm</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 16px; height: 16px;"></div><div class="spacing-label">16<small>md</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 20px; height: 16px;"></div><div class="spacing-label">20<small>lg</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 24px; height: 16px;"></div><div class="spacing-label">24<small>xl</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 32px; height: 16px;"></div><div class="spacing-label">32<small>xxl</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 40px; height: 16px;"></div><div class="spacing-label">40<small>xxxl</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 48px; height: 16px;"></div><div class="spacing-label">48<small>section-sm</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 64px; height: 16px;"></div><div class="spacing-label">64<small>section</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 96px; height: 16px;"></div><div class="spacing-label">96<small>section-lg</small></div></div>
+      <div class="spacing-box"><div class="spacing-visual" style="width: 120px; height: 16px;"></div><div class="spacing-label">120<small>hero</small></div></div>
+    </div>
+  </section>
+
+  <section id="radius">
+    <h2 class="section-heading">Border Radius Scale</h2>
+    <p class="section-sub">Pill buttons (9999px), 28px pastel feature cards, 32px CTA banners. Tightly controlled corner family.</p>
+    <div class="radius-grid">
+      <div class="radius-demo" style="border-radius: 4px;">4px<small>xs</small></div>
+      <div class="radius-demo" style="border-radius: 6px;">6px<small>sm</small></div>
+      <div class="radius-demo" style="border-radius: 8px;">8px<small>md</small></div>
+      <div class="radius-demo" style="border-radius: 12px;">12px<small>lg</small></div>
+      <div class="radius-demo" style="border-radius: 16px;">16px<small>xl</small></div>
+      <div class="radius-demo" style="border-radius: 20px;">20px<small>xxl</small></div>
+      <div class="radius-demo" style="border-radius: 28px;">28px<small>xxxl</small></div>
+      <div class="radius-demo" style="border-radius: 32px;">32px<small>feature</small></div>
+      <div class="radius-demo" style="border-radius: 9999px;">pill<small>full</small></div>
+    </div>
+  </section>
+
+  <section id="elevation">
+    <h2 class="section-heading">Elevation &amp; Depth</h2>
+    <p class="section-sub">Predominantly flat. Strategic atmospheric depth on whiteboard mockups.</p>
+    <div class="elevation-grid">
+      <div class="elev-cell elev-0"><span class="elev-name">Level 0 — Flat</span><span class="elev-meta">border + hairline</span></div>
+      <div class="elev-cell elev-1"><span class="elev-name">Level 1 — Subtle</span><span class="elev-meta">rgba(5,0,56,0.04) 0 1px 2px</span></div>
+      <div class="elev-cell elev-2"><span class="elev-name">Level 2 — Card</span><span class="elev-meta">rgba(5,0,56,0.06) 0 4px 12px</span></div>
+      <div class="elev-cell elev-3"><span class="elev-name">Level 3 — Mockup</span><span class="elev-meta">rgba(5,0,56,0.08) 0 12px 32px -4px</span></div>
+      <div class="elev-cell elev-4"><span class="elev-name">Level 4 — Modal</span><span class="elev-meta">rgba(5,0,56,0.12) 0 16px 48px -8px</span></div>
+    </div>
+  </section>
+
+  <section id="responsive">
+    <h2 class="section-heading">Responsive Behavior</h2>
+    <p class="section-sub">Hero scales from 80px → 36px on mobile. Pricing tiers stack from 4-column to 1-up. Customer story grid collapses to single column.</p>
+    <table class="breakpoint-table">
+      <thead><tr><th>Breakpoint</th><th>Width</th><th>Key Changes</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Mobile (small)</strong></td><td>&lt; 480px</td><td>Single column. Hero 36px. Pill nav collapses to hamburger. Pricing tiers stack 1-up.</td></tr>
+        <tr><td><strong>Mobile (large)</strong></td><td>480 – 767px</td><td>Feature tiles 2-up. Hero 48px.</td></tr>
+        <tr><td><strong>Tablet</strong></td><td>768 – 1023px</td><td>2-column feature grids. Pill-tab nav returns. Hero 60px.</td></tr>
+        <tr><td><strong>Desktop</strong></td><td>1024 – 1279px</td><td>4-tier pricing card row. Customer story grid 2-up. Hero 64px.</td></tr>
+        <tr><td><strong>Wide Desktop</strong></td><td>≥ 1280px</td><td>Full 80px hero presentation. Stat row at full width.</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size: 18px; font-weight: 500; margin-top: 32px;">Device Ladder</h3>
+    <div class="device-ladder">
+      <div class="device" style="width: 60px; height: 110px;">375px</div>
+      <div class="device" style="width: 90px; height: 130px;">480px</div>
+      <div class="device" style="width: 130px; height: 150px;">768px</div>
+      <div class="device" style="width: 200px; height: 170px;">1024px</div>
+      <div class="device" style="width: 280px; height: 200px;">1280+</div>
+    </div>
+
+    <h3 style="font-size: 18px; font-weight: 500; margin-top: 32px;">Touch Targets</h3>
+    <ul style="font-size: 14px; color: var(--charcoal); line-height: 1.7; padding-left: 20px;">
+      <li>Pill buttons render at 40–44px height — at WCAG AAA floor.</li>
+      <li>Circular icon buttons: 36×36px desktop → 44×44px mobile.</li>
+      <li>Form inputs render at 44px height.</li>
+      <li>Filter dropdowns render at ~36px tall — bumps to 44px mobile.</li>
+    </ul>
+
+    <h3 style="font-size: 18px; font-weight: 500; margin-top: 32px;">Collapsing Strategy</h3>
+    <ul style="font-size: 14px; color: var(--charcoal); line-height: 1.7; padding-left: 20px;">
+      <li><strong>Promo banner</strong> stays full-width; truncates at &lt; 480px.</li>
+      <li><strong>Top nav</strong> below 1024px collapses to hamburger.</li>
+      <li><strong>Pricing comparison</strong>: 4-column tiers → 2-column tablet → 1-column mobile.</li>
+      <li><strong>Customer story grid</strong>: 2-up → 1-up at &lt; 768px.</li>
+      <li><strong>Hero typography</strong>: 80px → 60px → 48px → 36px.</li>
+      <li><strong>Footer</strong>: 6-column desktop → 3-column tablet → accordion mobile.</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

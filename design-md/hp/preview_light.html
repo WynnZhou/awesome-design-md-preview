@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041) -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of HP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx3cwgknk-6nFg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwgknk-6nFg.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxPcwgknk-6nFg.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx_cwgknk-6nFg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx7cwgknk-6nFg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx3cwgknk-6nFg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwgknk-6nFg.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxPcwgknk-6nFg.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx_cwgknk-6nFg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx7cwgknk-6nFg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  :root {
+    --primary: #024ad8;
+    --primary-bright: #296ef9;
+    --primary-deep: #0e3191;
+    --primary-soft: #c9e0fc;
+    --on-primary: #ffffff;
+    --ink: #1a1a1a;
+    --ink-deep: #000000;
+    --ink-soft: #292929;
+    --on-ink: #ffffff;
+    --canvas: #ffffff;
+    --paper: #ffffff;
+    --cloud: #f7f7f7;
+    --fog: #e8e8e8;
+    --steel: #c2c2c2;
+    --graphite: #636363;
+    --charcoal: #3d3d3d;
+    --hairline: #e8e8e8;
+    --hairline-strong: #c2c2c2;
+    --bloom-coral: #ff5050;
+    --bloom-rose: #f9d4d2;
+    --bloom-deep: #b3262b;
+    --storm-mist: #8ebdce;
+    --storm-deep: #356373;
+    --shadow-sm: 0 1px 2px rgba(26, 26, 26, 0.04);
+    --shadow-md: 0 2px 8px rgba(26, 26, 26, 0.08);
+    --shadow-lg: 0 8px 24px rgba(26, 26, 26, 0.12);
+    --font-sans: 'Inter', 'Forma DJR Micro', system-ui, -apple-system, Arial, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: var(--font-sans);
+    background: var(--canvas);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.4;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  a { color: inherit; }
+
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    height: 64px; padding: 0 48px;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .nav-brand { font-weight: 600; font-size: 18px; color: var(--ink); letter-spacing: -0.36px; }
+  .nav-links { list-style: none; margin: 0; padding: 0; display: flex; gap: 28px; font-size: 14px; font-weight: 500; color: var(--ink); }
+  .nav-links a { text-decoration: none; color: var(--ink); }
+  .nav-cta {
+    display: inline-flex; align-items: center; justify-content: center;
+    height: 40px; padding: 0 18px;
+    background: var(--primary); color: var(--on-primary);
+    font: 600 13px/1 var(--font-sans);
+    letter-spacing: 0.5px; text-transform: uppercase;
+    border: none; border-radius: 4px; cursor: pointer;
+  }
+
+  .hero {
+    padding: 96px 48px;
+    background: var(--canvas);
+    display: block;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    left: -32px; top: 96px;
+    width: 96px; height: 280px;
+    background: var(--primary);
+    transform: skewX(-18deg);
+    z-index: 0;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    right: -32px; bottom: 64px;
+    width: 96px; height: 200px;
+    background: var(--primary);
+    transform: skewX(-18deg);
+    z-index: 0;
+  }
+  .hero-content { max-width: 1100px; position: relative; z-index: 1; }
+  .hero h1 {
+    font-family: var(--font-sans);
+    font-size: clamp(40px, 7vw, 72px);
+    font-weight: 500; line-height: 1.0;
+    letter-spacing: -1.5px;
+    color: var(--ink);
+    margin: 0 0 32px;
+    text-align: left;
+  }
+  .hero p {
+    font-size: 18px;
+    color: var(--ink);
+    max-width: 760px;
+    margin: 0 0 40px;
+    line-height: 1.4;
+    font-weight: 400;
+    text-align: left;
+  }
+  .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: flex-start; align-items: center; }
+
+  .btn-primary, .btn-ink, .btn-outline, .btn-outline-ink, .btn-disabled {
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: 12px 24px;
+    height: 44px;
+    font: 600 14px/1.4 var(--font-sans);
+    letter-spacing: 0.7px; text-transform: uppercase;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    cursor: pointer; text-decoration: none;
+  }
+  .btn-primary { background: var(--primary); color: var(--on-primary); border-color: var(--primary); }
+  .btn-pressed { background: var(--primary-deep); color: var(--on-primary); border-color: var(--primary-deep); }
+  .btn-ink { background: var(--ink); color: var(--on-primary); border-color: var(--ink); }
+  .btn-outline { background: var(--canvas); color: var(--primary); border-color: var(--primary); }
+  .btn-outline-ink { background: var(--canvas); color: var(--ink); border-color: var(--ink); }
+  .btn-disabled { background: var(--steel); color: var(--on-primary); cursor: not-allowed; border-color: var(--steel); }
+
+  section {
+    padding: 80px 48px;
+    max-width: 1440px;
+    margin: 0 auto;
+    border-top: 1px solid var(--hairline);
+  }
+  .section-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 13px; font-weight: 700;
+    letter-spacing: 1.3px; text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 12px;
+  }
+  .section-heading {
+    font-family: var(--font-sans);
+    font-size: clamp(36px, 4.5vw, 56px); font-weight: 500;
+    line-height: 1.0; letter-spacing: -1px;
+    margin: 0 0 16px; color: var(--ink);
+  }
+  .section-sub {
+    font-size: 18px; color: var(--ink);
+    max-width: 760px; margin: 0 0 48px;
+    line-height: 1.4; font-weight: 400;
+  }
+
+  .palette-group { margin-bottom: 40px; }
+  .palette-group h3 {
+    font-family: var(--font-sans);
+    font-size: 13px; font-weight: 700;
+    letter-spacing: 1px; text-transform: uppercase;
+    color: var(--graphite);
+    margin: 0 0 16px;
+  }
+  .palette-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+  .swatch { border-radius: 16px; overflow: hidden; border: 1px solid var(--hairline); background: var(--paper); box-shadow: var(--shadow-sm); }
+  .swatch-color { height: 96px; }
+  .swatch-meta { padding: 16px; }
+  .swatch-name { font-weight: 500; font-size: 16px; color: var(--ink); margin: 0 0 4px; }
+  .swatch-hex { font-family: var(--font-mono); font-size: 12px; color: var(--graphite); margin: 0 0 8px; }
+  .swatch-role { font-size: 13px; line-height: 1.4; color: var(--charcoal); margin: 0; }
+
+  .type-row {
+    display: grid; grid-template-columns: 280px 1fr;
+    gap: 32px; padding: 24px 0;
+    border-bottom: 1px solid var(--hairline);
+    align-items: baseline;
+  }
+  .type-row:last-child { border-bottom: none; }
+  .type-meta { font-family: var(--font-mono); font-size: 12px; color: var(--graphite); line-height: 1.5; }
+  .type-meta strong { color: var(--ink); display: block; margin-bottom: 4px; font-family: var(--font-sans); font-weight: 600; font-size: 13px; }
+  .ts-display-xxl { font-size: 72px; font-weight: 500; line-height: 1.0; }
+  .ts-display-xl { font-size: 56px; font-weight: 500; line-height: 1.0; }
+  .ts-display-lg { font-size: 44px; font-weight: 500; line-height: 1.0; }
+  .ts-display-md { font-size: 32px; font-weight: 500; line-height: 1.0; }
+  .ts-display-sm { font-size: 24px; font-weight: 500; line-height: 1.17; }
+  .ts-display-xs { font-size: 20px; font-weight: 500; line-height: 1.0; }
+  .ts-body-lg { font-size: 18px; font-weight: 400; line-height: 1.33; }
+  .ts-body-md { font-size: 16px; font-weight: 400; line-height: 1.38; }
+  .ts-body-em { font-size: 16px; font-weight: 500; line-height: 1.38; }
+  .ts-caption-md { font-size: 14px; font-weight: 400; line-height: 1.5; }
+  .ts-caption-bold { font-size: 14px; font-weight: 700; line-height: 1.3; }
+  .ts-caption-sm { font-size: 12px; font-weight: 400; line-height: 1.33; }
+  .ts-button-md { font-size: 14px; font-weight: 600; line-height: 1.4; letter-spacing: 0.7px; text-transform: uppercase; }
+  .ts-link-md { font-size: 16px; font-weight: 500; line-height: 1.38; color: var(--primary); text-decoration: underline; }
+  .ts-mono { font-family: var(--font-mono); font-size: 14px; font-weight: 400; }
+
+  .button-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+  .button-cell { border: 1px solid var(--hairline); border-radius: 16px; padding: 32px 24px; background: var(--paper); display: flex; flex-direction: column; align-items: flex-start; gap: 16px; box-shadow: var(--shadow-sm); }
+  .button-cell-label { font-family: var(--font-mono); font-size: 11px; color: var(--graphite); text-transform: uppercase; letter-spacing: 0.5px; }
+
+  .pill-tab-row { display: inline-flex; gap: 8px; flex-wrap: wrap; }
+  .pill-tab { padding: 8px 20px; font: 500 14px/1 var(--font-sans); color: var(--ink); border-radius: 9999px; background: var(--canvas); border: 1px solid var(--hairline-strong); }
+  .pill-tab.active { background: var(--ink); color: var(--on-primary); border-color: var(--ink); }
+
+  .badge-row { display: inline-flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .badge-ink, .badge-outline, .badge-coral { font-family: var(--font-sans); font-weight: 500; font-size: 14px; line-height: 1.38; }
+  .badge-ink { background: var(--ink); color: var(--on-primary); padding: 6px 12px; border-radius: 8px; }
+  .badge-outline { background: var(--canvas); color: var(--ink); padding: 6px 12px; border-radius: 8px; border: 1px solid var(--ink); }
+  .badge-coral { background: var(--bloom-coral); color: var(--on-primary); padding: 4px 8px; border-radius: 3px; font-weight: 700; font-size: 13px; letter-spacing: 0.3px; text-transform: uppercase; }
+
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
+  .card-product { background: var(--canvas); border-radius: 16px; padding: 24px; box-shadow: var(--shadow-md); display: flex; flex-direction: column; gap: 12px; }
+  .card-product .photo { aspect-ratio: 4 / 3; background: linear-gradient(135deg, var(--cloud), var(--fog)); border-radius: 16px; }
+  .card-product h4 { font-size: 20px; font-weight: 500; line-height: 1.0; margin: 4px 0 0; color: var(--ink); }
+  .card-product .meta { font-size: 14px; color: var(--charcoal); line-height: 1.5; margin: 0; }
+  .card-product .price { font-size: 24px; font-weight: 500; line-height: 1.17; color: var(--ink); margin: 4px 0; }
+  .card-product .cta { margin-top: auto; }
+
+  .card-pricing { background: var(--canvas); border-radius: 16px; padding: 24px; box-shadow: var(--shadow-md); display: flex; flex-direction: column; gap: 16px; border-top: 1px solid var(--hairline); }
+  .card-pricing.featured { border-top: 4px solid var(--primary); }
+  .card-pricing .tier-name { font-size: 24px; font-weight: 500; line-height: 1.17; color: var(--ink); margin: 0; }
+  .card-pricing .tier-price { font-size: 32px; font-weight: 500; line-height: 1.0; color: var(--ink); margin: 0; }
+  .card-pricing.featured .tier-price { color: var(--primary); }
+  .card-pricing .tier-cadence { font-size: 14px; color: var(--graphite); margin-left: 4px; }
+  .card-pricing ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; font-size: 14px; line-height: 1.5; color: var(--ink); }
+  .card-pricing ul li::before { content: "✓ "; color: var(--primary); margin-right: 4px; }
+
+  .category-icon-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; }
+  .category-icon { background: var(--canvas); border-radius: 8px; padding: 20px 16px; display: flex; flex-direction: column; align-items: center; gap: 12px; border: 1px solid var(--hairline); }
+  .category-icon .glyph { width: 48px; height: 48px; background: var(--cloud); border-radius: 8px; }
+  .category-icon .label { font-size: 16px; font-weight: 500; color: var(--ink); }
+
+  .promo-strip-dark { background: var(--ink); color: var(--on-ink); border-radius: 16px; padding: 48px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: center; }
+  .promo-strip-dark h3 { font-size: clamp(28px, 4vw, 44px); font-weight: 500; line-height: 1.0; margin: 0 0 16px; color: var(--on-ink); }
+  .promo-strip-dark p { font-size: 16px; line-height: 1.4; color: var(--on-ink); opacity: 0.85; margin: 0; }
+  .promo-strip-dark .photo { aspect-ratio: 16 / 10; background: linear-gradient(135deg, var(--storm-deep), var(--storm-mist)); border-radius: 16px; }
+
+  .form-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
+  .form-cell { display: flex; flex-direction: column; gap: 8px; }
+  .form-cell label { font-family: var(--font-sans); font-size: 13px; font-weight: 600; color: var(--ink); }
+  .form-input { padding: 12px 16px; height: 44px; background: var(--canvas); border: 1px solid var(--steel); border-radius: 4px; font: 400 16px/1.38 var(--font-sans); color: var(--ink); }
+  .form-input.focused { border: 2px solid var(--ink); padding: 11px 15px; }
+  .form-input.error { border-color: var(--bloom-deep); }
+  .form-input.search { padding: 10px 16px; height: 40px; }
+  .form-input::placeholder { color: var(--graphite); }
+  .form-help { font-size: 12px; line-height: 1.33; color: var(--graphite); margin: 0; }
+  .form-help.error { color: var(--bloom-deep); }
+  textarea.form-input { height: auto; resize: vertical; }
+
+  .spacing-row { display: flex; gap: 16px; align-items: flex-end; flex-wrap: wrap; }
+  .spacing-cell { display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
+  .spacing-block { background: var(--ink); height: 32px; border-radius: 4px; }
+  .spacing-cell .label { font-family: var(--font-mono); font-size: 12px; color: var(--ink); }
+
+  .radius-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px; }
+  .radius-cell { background: var(--canvas); border: 1px solid var(--hairline); padding: 24px; display: flex; flex-direction: column; gap: 12px; align-items: flex-start; border-radius: 16px; }
+  .radius-block { width: 64px; height: 64px; background: var(--ink); }
+  .radius-cell .label { font-family: var(--font-mono); font-size: 12px; color: var(--ink); }
+  .radius-cell .role { font-size: 13px; color: var(--charcoal); }
+
+  .elevation-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 24px; }
+  .elevation-cell { background: var(--canvas); padding: 32px; min-height: 140px; border-radius: 16px; display: flex; flex-direction: column; gap: 8px; }
+  .elev-flat { background: var(--cloud); }
+  .elev-hairline { background: var(--canvas); border: 1px solid var(--hairline); }
+  .elev-soft { background: var(--canvas); box-shadow: var(--shadow-md); }
+  .elev-floating { background: var(--canvas); box-shadow: var(--shadow-lg); }
+  .elevation-cell .label { font-family: var(--font-mono); font-size: 12px; color: var(--graphite); }
+  .elevation-cell h4 { font-size: 20px; font-weight: 500; margin: 4px 0 4px; color: var(--ink); }
+  .elevation-cell p { margin: 0; font-size: 14px; line-height: 1.5; color: var(--charcoal); }
+
+  .responsive-table { width: 100%; border-collapse: collapse; margin-bottom: 32px; font-size: 14px; }
+  .responsive-table th, .responsive-table td { text-align: left; padding: 14px 16px; border-bottom: 1px solid var(--hairline); }
+  .responsive-table th { font-family: var(--font-sans); font-size: 12px; font-weight: 700; letter-spacing: 0.7px; text-transform: uppercase; color: var(--graphite); }
+  .responsive-table td { color: var(--ink); }
+  .device-ladder { display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap; margin-bottom: 32px; }
+  .device-cell { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .device-block { background: var(--canvas); border: 1px solid var(--hairline); border-radius: 8px; }
+  .device-cell .label { font-family: var(--font-mono); font-size: 12px; color: var(--ink); }
+  .responsive-sub { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .responsive-sub h4 { font-family: var(--font-sans); font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--graphite); margin: 0 0 12px; }
+  .responsive-sub p, .responsive-sub li { font-size: 14px; line-height: 1.5; color: var(--ink); margin: 0 0 8px; }
+  .responsive-sub ul { padding-left: 18px; }
+
+  .footer { padding: 32px 48px; text-align: center; color: var(--graphite); font-size: 13px; }
+  .footer a { color: inherit; }
+
+  .cell, .cell > *, .demo, .button-cell, .component-cell, .form-cell { min-width: 0; }
+  .cell.wide, .button-cell.wide, .component-cell.wide { grid-column: span 2; }
+
+  @media (max-width: 1024px) {
+    section, .hero { padding: 64px 32px; }
+    .hero h1 { font-size: 48px; letter-spacing: -1px; }
+    .section-heading { font-size: 40px; letter-spacing: -0.8px; }
+    .nav { padding: 0 32px; }
+    .nav > :last-child { display: none; }
+    .type-row { grid-template-columns: 1fr; gap: 8px; }
+    .responsive-sub { grid-template-columns: 1fr; gap: 24px; }
+    .promo-strip-dark { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 720px) {
+    .cell.wide, .button-cell.wide, .component-cell.wide { grid-column: span 1; }
+    .nav { padding: 12px 20px; height: auto; min-height: 56px; }
+    .nav-links { display: none; }
+    .hero { padding: 48px 20px; }
+    .hero::before, .hero::after { display: none; }
+    .hero h1 { font-size: 36px; letter-spacing: -0.8px; }
+    .hero p { font-size: 16px; }
+    section { padding: 48px 20px; }
+    .section-heading { font-size: 28px; letter-spacing: -0.6px; }
+    .palette-grid, .button-grid, .card-grid, .form-grid, .elevation-grid, .category-icon-row { grid-template-columns: 1fr !important; gap: 16px; }
+    .radius-row { grid-template-columns: repeat(2, 1fr) !important; }
+    .responsive-table { font-size: 12px; }
+    .responsive-table th, .responsive-table td { padding: 10px 8px; }
+    .footer { padding: 24px 16px; font-size: 12px; }
+  }
+
+  /* getdesign.md nav additions */
+  .nav-left { display: flex; align-items: center; gap: 20px; }
+  .nav-brand-link,
+  .nav-brand-link:link,
+  .nav-brand-link:visited,
+  .nav-brand-link:hover,
+  .nav-brand-link:active { text-decoration: none; color: inherit; }
+  .nav-github,
+  .nav-github:link,
+  .nav-github:visited,
+  .nav-github:hover,
+  .nav-github:active {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 12px; font-weight: 600; color: inherit;
+    text-decoration: none; padding: 5px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.3); border-radius: 6px;
+    opacity: 0.75; transition: opacity 200ms ease, border-color 200ms ease;
+    font-family: inherit; line-height: 1; white-space: nowrap;
+  }
+  .nav-github:hover { opacity: 1; border-color: rgba(128, 128, 128, 0.55); }
+  .nav-github svg { display: block; flex-shrink: 0; }
+
+  /* getdesign.md nav centering */
+  .nav { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; }
+  .nav > .nav-left { justify-self: start; }
+  .nav > .nav-links { justify-self: center; }
+  .nav > :last-child { justify-self: end; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#type">Typography</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#cards">Cards</a></li>
+    <li><a href="#forms">Forms</a></li>
+    <li><a href="#responsive">Responsive</a></li>
+  </ul>
+  <button class="nav-cta">Shop Now</button>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of HP</h1>
+    <p>A white-paper enterprise-consumer system anchored by HP Electric Blue (#024ad8) as the lone signal CTA, near-black ink for headlines, geometric Forma DJR Micro across every surface, and angular blue-chevron decorations that nod to the HP wordmark's slashes. Cards round at 16px, photos sit in soft 16px frames, and dark-navy slabs anchor the closing customer-story and "how can we help" bands.</p>
+    <div class="hero-actions">
+      <button class="btn-primary">Shop Now</button>
+      <button class="btn-outline-ink">Learn More</button>
+    </div>
+  </div>
+</section>
+
+<section id="colors">
+  <div class="section-eyebrow">Foundation</div>
+  <h2 class="section-heading">Color Palette</h2>
+  <p class="section-sub">A pure-white canvas with deep ink ladder, HP Electric Blue as the lone signal, and supporting bloom + storm accent families for sale tags and lifestyle imagery.</p>
+
+  <div class="palette-group">
+    <h3>Brand &amp; Accent</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background: #024ad8;"></div><div class="swatch-meta"><div class="swatch-name">HP Electric Blue</div><div class="swatch-hex">#024ad8</div><p class="swatch-role">primary — lone signal CTA, link color, chevron-decoration fill</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #296ef9;"></div><div class="swatch-meta"><div class="swatch-name">Bright Blue</div><div class="swatch-hex">#296ef9</div><p class="swatch-role">primary-bright — CTA on dark slabs where the deep blue muddies</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #0e3191;"></div><div class="swatch-meta"><div class="swatch-name">Deep Navy</div><div class="swatch-hex">#0e3191</div><p class="swatch-role">primary-deep — pressed state, visited-link color</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #c9e0fc;"></div><div class="swatch-meta"><div class="swatch-name">Soft Blue</div><div class="swatch-hex">#c9e0fc</div><p class="swatch-role">primary-soft — selection chips, customer-story card backdrops</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Surface</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background: #ffffff; border-bottom: 1px solid var(--hairline);"></div><div class="swatch-meta"><div class="swatch-name">Canvas</div><div class="swatch-hex">#ffffff</div><p class="swatch-role">canvas — universal page background</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #f7f7f7;"></div><div class="swatch-meta"><div class="swatch-name">Cloud</div><div class="swatch-hex">#f7f7f7</div><p class="swatch-role">cloud — alternating section band, feature-card group surface</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #e8e8e8;"></div><div class="swatch-meta"><div class="swatch-name">Fog</div><div class="swatch-hex">#e8e8e8</div><p class="swatch-role">fog — slightly darker surface band, FAQ outer panel</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #c2c2c2;"></div><div class="swatch-meta"><div class="swatch-name">Steel</div><div class="swatch-hex">#c2c2c2</div><p class="swatch-role">steel — outlined element borders, focus rings</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #ff5050;"></div><div class="swatch-meta"><div class="swatch-name">Bloom Coral</div><div class="swatch-hex">#ff5050</div><p class="swatch-role">bloom-coral — sale-tag chip, "25% off" overlays</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #f9d4d2;"></div><div class="swatch-meta"><div class="swatch-name">Bloom Rose</div><div class="swatch-hex">#f9d4d2</div><p class="swatch-role">bloom-rose — soft pink lifestyle accent</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #8ebdce;"></div><div class="swatch-meta"><div class="swatch-name">Storm Mist</div><div class="swatch-hex">#8ebdce</div><p class="swatch-role">storm-mist — printer-plan illustration backdrop</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #356373;"></div><div class="swatch-meta"><div class="swatch-name">Storm Deep</div><div class="swatch-hex">#356373</div><p class="swatch-role">storm-deep — neutral status accent</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Text</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background: #1a1a1a;"></div><div class="swatch-meta"><div class="swatch-name">Ink</div><div class="swatch-hex">#1a1a1a</div><p class="swatch-role">ink — universal text on white surfaces</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #000000;"></div><div class="swatch-meta"><div class="swatch-name">Ink Deep</div><div class="swatch-hex">#000000</div><p class="swatch-role">ink-deep — wordmark, hairline strokes</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #3d3d3d;"></div><div class="swatch-meta"><div class="swatch-name">Charcoal</div><div class="swatch-hex">#3d3d3d</div><p class="swatch-role">charcoal — secondary descriptions, fine-print</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #636363;"></div><div class="swatch-meta"><div class="swatch-name">Graphite</div><div class="swatch-hex">#636363</div><p class="swatch-role">graphite — small-print, legal lines, timestamp meta</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #ffffff; border: 1px solid var(--hairline);"></div><div class="swatch-meta"><div class="swatch-name">On Ink</div><div class="swatch-hex">#ffffff</div><p class="swatch-role">on-ink — text on dark-navy slabs and footer</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Semantic</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background: #b3262b;"></div><div class="swatch-meta"><div class="swatch-name">Bloom Deep</div><div class="swatch-hex">#b3262b</div><p class="swatch-role">error / discount-emphasis</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background: #5a1313;"></div><div class="swatch-meta"><div class="swatch-name">Bloom Wine</div><div class="swatch-hex">#5a1313</div><p class="swatch-role">deep destructive accent</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="type">
+  <div class="section-eyebrow">Voice</div>
+  <h2 class="section-heading">Typography Scale</h2>
+  <p class="section-sub">Forma DJR Micro across every surface — display, body, button, caption — at weights 400 / 500 / 600 / 700. Inter is the closest open-source substitute.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xxl</strong>Forma DJR Micro · 72/1.0 · 500</div><div class="ts-display-xxl">Limited offer</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>Forma DJR Micro · 56/1.0 · 500</div><div class="ts-display-xl">Shop the catalog</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>Forma DJR Micro · 44/1.0 · 500</div><div class="ts-display-lg">A device for every workflow</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>Forma DJR Micro · 32/1.0 · 500</div><div class="ts-display-md">Why teams choose us</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-sm</strong>Forma DJR Micro · 24/1.17 · 500</div><div class="ts-display-sm">Featured catalog updates</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-xs</strong>Forma DJR Micro · 20/1.0 · 500</div><div class="ts-display-xs">Choose a printer</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-lg</strong>Forma DJR Micro · 18/1.33 · 400</div><div class="ts-body-lg">All-in-one subscription with hardware delivery, premium support, and supplies refresh.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>Forma DJR Micro · 16/1.38 · 400</div><div class="ts-body-md">Default body color. Most paragraph runs and table cells use this style with a 1.38 line-height that keeps catalog spec rows tight without crowding.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-emphasis</strong>Forma DJR Micro · 16/1.38 · 500</div><div class="ts-body-em">Bolded run-in word style — used inside paragraphs.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-md</strong>Forma DJR Micro · 14/1.5 · 400</div><div class="ts-caption-md">Specs row · 16GB RAM · 512GB SSD · 13.3-inch display</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-bold</strong>Forma DJR Micro · 14/1.3 · 700</div><div class="ts-caption-bold">SAVE $200 · LIMITED OFFER</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-sm</strong>Forma DJR Micro · 12/1.33 · 400</div><div class="ts-caption-sm">Footnote: pricing reflects in-cart adjustments before checkout.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>link-md</strong>Forma DJR Micro · 16/1.38 · 500 · #024ad8</div><div class="ts-link-md">View product details</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-md</strong>Forma DJR Micro · 14/1.4 · 600 · 0.7px · UPPER</div><div class="ts-button-md">SHOP NOW</div></div>
+</section>
+
+<section id="buttons">
+  <div class="section-eyebrow">Action</div>
+  <h2 class="section-heading">Button Variants</h2>
+  <p class="section-sub">Sharp 4px-rounded rectangles with uppercase 600 labels. The blue primary appears at most twice per viewport.</p>
+
+  <div class="button-grid">
+    <div class="button-cell"><span class="button-cell-label">button-primary</span><button class="btn-primary">Shop Now</button></div>
+    <div class="button-cell"><span class="button-cell-label">button-primary-pressed</span><button class="btn-primary btn-pressed">Shop Now</button></div>
+    <div class="button-cell"><span class="button-cell-label">button-primary-disabled</span><button class="btn-disabled">Shop Now</button></div>
+    <div class="button-cell"><span class="button-cell-label">button-ink</span><button class="btn-ink">Buy Now</button></div>
+    <div class="button-cell"><span class="button-cell-label">button-outline (blue)</span><button class="btn-outline">Compare</button></div>
+    <div class="button-cell"><span class="button-cell-label">button-outline-ink</span><button class="btn-outline-ink">View</button></div>
+    <div class="button-cell wide"><span class="button-cell-label">category-tab / active</span>
+      <div class="pill-tab-row">
+        <button class="pill-tab active">For Home</button>
+        <button class="pill-tab">For Business</button>
+        <button class="pill-tab">For Education</button>
+      </div>
+    </div>
+    <div class="button-cell"><span class="button-cell-label">badge-pill-ink</span>
+      <div class="badge-row">
+        <span class="badge-ink">New</span>
+        <span class="badge-ink">Featured</span>
+      </div>
+    </div>
+    <div class="button-cell"><span class="button-cell-label">badge-pill-outline</span>
+      <div class="badge-row">
+        <span class="badge-outline">In Stock</span>
+        <span class="badge-outline">Available</span>
+      </div>
+    </div>
+    <div class="button-cell"><span class="button-cell-label">badge-sale-coral</span>
+      <div class="badge-row">
+        <span class="badge-coral">Save $200</span>
+        <span class="badge-coral">25% Off</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cards">
+  <div class="section-eyebrow">Containers</div>
+  <h2 class="section-heading">Card Examples</h2>
+  <p class="section-sub">Cards round at 16px with Soft Lift shadow. Pricing tiers, product tiles, and category icons all share the same chrome vocabulary.</p>
+
+  <div class="card-grid" style="margin-bottom: 32px;">
+    <div class="card-product">
+      <div class="photo"></div>
+      <span class="ts-caption-md" style="color: var(--graphite);">Laptop · 13.3"</span>
+      <h4>Studio Laptop 13"</h4>
+      <p class="meta">Lightweight · 12-hour battery · Compact form</p>
+      <p class="price">$1,299</p>
+      <button class="btn-primary cta">Buy Now</button>
+    </div>
+    <div class="card-product">
+      <div class="photo"></div>
+      <span class="ts-caption-md" style="color: var(--graphite);">Laptop · 14"</span>
+      <h4>Studio Laptop 14"</h4>
+      <p class="meta">32GB RAM · 1TB SSD · Long battery</p>
+      <p class="price">$1,599</p>
+      <button class="btn-outline-ink cta">View</button>
+    </div>
+    <div class="card-product">
+      <div class="photo"></div>
+      <span class="ts-caption-md" style="color: var(--graphite);">Laptop · 17.3"</span>
+      <h4>Studio Laptop 17"</h4>
+      <p class="meta">16GB RAM · 1TB SSD · Compact form factor</p>
+      <p class="price">$1,799</p>
+      <button class="btn-outline-ink cta">View</button>
+    </div>
+  </div>
+
+  <div class="card-grid" style="margin-bottom: 32px;">
+    <div class="card-pricing">
+      <span class="section-eyebrow" style="margin: 0; color: var(--graphite);">Basic</span>
+      <h4 class="tier-name">Essential</h4>
+      <div class="tier-price">$8.99<span class="tier-cadence">/month</span></div>
+      <ul>
+        <li>Up to 100 pages/month</li>
+        <li>Original supplies delivered</li>
+        <li>Free shipping</li>
+      </ul>
+      <button class="btn-outline">Choose plan</button>
+    </div>
+    <div class="card-pricing featured">
+      <span class="section-eyebrow" style="margin: 0;">Most Popular</span>
+      <h4 class="tier-name">Versatile</h4>
+      <div class="tier-price">$15.99<span class="tier-cadence">/month</span></div>
+      <ul>
+        <li>Up to 500 pages/month</li>
+        <li>Premium supplies delivery</li>
+        <li>Free shipping + 24/7 support</li>
+        <li>Roll-over unused pages</li>
+      </ul>
+      <button class="btn-primary">Choose plan</button>
+    </div>
+    <div class="card-pricing">
+      <span class="section-eyebrow" style="margin: 0; color: var(--graphite);">High Volume</span>
+      <h4 class="tier-name">Frequent</h4>
+      <div class="tier-price">$24.99<span class="tier-cadence">/month</span></div>
+      <ul>
+        <li>Up to 1,500 pages/month</li>
+        <li>Priority ink shipping</li>
+        <li>24/7 phone support</li>
+      </ul>
+      <button class="btn-outline">Choose plan</button>
+    </div>
+  </div>
+
+  <div class="category-icon-row" style="margin-bottom: 32px;">
+    <div class="category-icon"><div class="glyph"></div><span class="label">Laptops</span></div>
+    <div class="category-icon"><div class="glyph"></div><span class="label">Desktops</span></div>
+    <div class="category-icon"><div class="glyph"></div><span class="label">Printers</span></div>
+    <div class="category-icon"><div class="glyph"></div><span class="label">Computer Tools</span></div>
+    <div class="category-icon"><div class="glyph"></div><span class="label">Accessories</span></div>
+    <div class="category-icon"><div class="glyph"></div><span class="label">Enterprise</span></div>
+  </div>
+
+  <div class="promo-strip-dark">
+    <div>
+      <h3>Work that fits the way teams actually work.</h3>
+      <p>A productivity-first design language with deep enterprise integration, AI-driven automation, and secure delivery across every device.</p>
+      <div style="margin-top: 24px;"><button class="btn-primary">Learn More</button></div>
+    </div>
+    <div class="photo"></div>
+  </div>
+</section>
+
+<section id="forms">
+  <div class="section-eyebrow">Inputs</div>
+  <h2 class="section-heading">Form Elements</h2>
+  <p class="section-sub">Inputs sit on white with steel-gray hairline borders, 4px corners, 44px height. Focused state thickens the stroke to 2px ink.</p>
+
+  <div class="form-grid">
+    <div class="form-cell">
+      <label>Email Address</label>
+      <input class="form-input" type="email" placeholder="you@company.com">
+      <p class="form-help">We'll never share your email.</p>
+    </div>
+    <div class="form-cell">
+      <label>Workspace Name (focused)</label>
+      <input class="form-input focused" type="text" value="Acme Marketing">
+      <p class="form-help">Focus state thickens the ink stroke; no halo.</p>
+    </div>
+    <div class="form-cell">
+      <label>Quantity (error)</label>
+      <input class="form-input error" type="number" value="0">
+      <p class="form-help error">Workspace requires at least 1 seat.</p>
+    </div>
+    <div class="form-cell">
+      <label>Search the catalog</label>
+      <input class="form-input search" type="search" placeholder="Search products…">
+      <p class="form-help">Compact search input — used inside the top nav.</p>
+    </div>
+    <div class="form-cell" style="grid-column: 1 / -1;">
+      <label>Notes</label>
+      <textarea class="form-input" rows="4" placeholder="Tell us about your workflow…"></textarea>
+    </div>
+  </div>
+</section>
+
+<section id="spacing">
+  <div class="section-eyebrow">Rhythm</div>
+  <h2 class="section-heading">Spacing Scale</h2>
+  <p class="section-sub">8px base unit. The 80px section gap is the universal rhythm constant — every full-bleed band is separated by it.</p>
+  <div class="spacing-row">
+    <div class="spacing-cell"><div class="spacing-block" style="width: 4px;"></div><span class="label">xxs · 4</span></div>
+    <div class="spacing-cell"><div class="spacing-block" style="width: 8px;"></div><span class="label">xs · 8</span></div>
+    <div class="spacing-cell"><div class="spacing-block" style="width: 12px;"></div><span class="label">sm · 12</span></div>
+    <div class="spacing-cell"><div class="spacing-block" style="width: 16px;"></div><span class="label">md · 16</span></div>
+    <div class="spacing-cell"><div class="spacing-block" style="width: 20px;"></div><span class="label">lg · 20</span></div>
+    <div class="spacing-cell"><div class="spacing-block" style="width: 24px;"></div><span class="label">xl · 24</span></div>
+    <div class="spacing-cell"><div class="spacing-block" style="width: 32px;"></div><span class="label">xxl · 32</span></div>
+    <div class="spacing-cell"><div class="spacing-block" style="width: 80px;"></div><span class="label">section · 80</span></div>
+  </div>
+</section>
+
+<section id="radius">
+  <div class="section-eyebrow">Geometry</div>
+  <h2 class="section-heading">Border Radius Scale</h2>
+  <p class="section-sub">Two-tier philosophy: buttons stay sharp at 4px while cards and photo frames soften at 16px.</p>
+  <div class="radius-row">
+    <div class="radius-cell"><div class="radius-block" style="border-radius: 0;"></div><span class="label">none · 0px</span><span class="role">chevron decorations, hero photos</span></div>
+    <div class="radius-cell"><div class="radius-block" style="border-radius: 2px;"></div><span class="label">xs · 2px</span><span class="role">sale tag pills</span></div>
+    <div class="radius-cell"><div class="radius-block" style="border-radius: 3px;"></div><span class="label">sm · 3px</span><span class="role">small CTA radius</span></div>
+    <div class="radius-cell"><div class="radius-block" style="border-radius: 4px;"></div><span class="label">md · 4px</span><span class="role">buttons, inputs (default)</span></div>
+    <div class="radius-cell"><div class="radius-block" style="border-radius: 8px;"></div><span class="label">lg · 8px</span><span class="role">badges, FAQ rows</span></div>
+    <div class="radius-cell"><div class="radius-block" style="border-radius: 16px;"></div><span class="label">xl · 16px</span><span class="role">cards, photo frames</span></div>
+    <div class="radius-cell"><div class="radius-block" style="border-radius: 9999px;"></div><span class="label">pill · 9999px</span><span class="role">filter chips, search</span></div>
+  </div>
+</section>
+
+<section id="elevation">
+  <div class="section-eyebrow">Depth</div>
+  <h2 class="section-heading">Elevation &amp; Depth</h2>
+  <p class="section-sub">Mostly flat. Soft Lift shadow is the workhorse for product cards and pricing tiers. Floating Modal is rare and reserved for transient overlays.</p>
+  <div class="elevation-grid">
+    <div class="elevation-cell elev-flat">
+      <span class="label">level 0 · flat</span>
+      <h4>Section band</h4>
+      <p>Full-bleed color block. No shadow, no border. Cloud + fog alternating bands rely on this.</p>
+    </div>
+    <div class="elevation-cell elev-hairline">
+      <span class="label">level 1 · hairline</span>
+      <h4>Hairline frame</h4>
+      <p>1px hairline border. FAQ accordions, outlined buttons, comparison-table cells.</p>
+    </div>
+    <div class="elevation-cell elev-soft">
+      <span class="label">level 2 · soft lift</span>
+      <h4>Soft Lift</h4>
+      <p>0 2px 8px rgba(26,26,26,0.08). The catalog workhorse — every product card gets it.</p>
+    </div>
+    <div class="elevation-cell elev-floating">
+      <span class="label">level 3 · floating</span>
+      <h4>Floating Modal</h4>
+      <p>0 8px 24px rgba(26,26,26,0.12). Reserved for transient overlays — add-to-cart drawer, image zoom.</p>
+    </div>
+  </div>
+</section>
+
+<section id="responsive">
+  <div class="section-eyebrow">Adapt</div>
+  <h2 class="section-heading">Responsive Behavior</h2>
+  <p class="section-sub">Five breakpoints. The blue chevron decorations vanish on mobile so the photo card centers cleanly.</p>
+
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Mobile</td><td>&lt; 480px</td><td>Single-column stack, hamburger nav, hero scales to ~36px, section padding ~48px, chevrons hidden</td></tr>
+      <tr><td>Mobile-Large</td><td>480–767px</td><td>Same column count, hero scales to ~44px, pricing tiers stack vertically</td></tr>
+      <tr><td>Tablet</td><td>768–1023px</td><td>2-column product grid, 2x2 pricing, full text nav, chevrons shrink to ~60%</td></tr>
+      <tr><td>Desktop</td><td>1024–1279px</td><td>3-column product grid, 4-column pricing, full nav</td></tr>
+      <tr><td>Desktop-Large</td><td>≥ 1280px</td><td>4-column product grid, 1366px content max-width with full-bleed bands</td></tr>
+    </tbody>
+  </table>
+
+  <div class="device-ladder">
+    <div class="device-cell"><div class="device-block" style="width: 56px; height: 96px;"></div><span class="label">320</span></div>
+    <div class="device-cell"><div class="device-block" style="width: 80px; height: 120px;"></div><span class="label">480</span></div>
+    <div class="device-cell"><div class="device-block" style="width: 140px; height: 160px;"></div><span class="label">768</span></div>
+    <div class="device-cell"><div class="device-block" style="width: 200px; height: 180px;"></div><span class="label">1024</span></div>
+    <div class="device-cell"><div class="device-block" style="width: 280px; height: 200px;"></div><span class="label">1280</span></div>
+    <div class="device-cell"><div class="device-block" style="width: 340px; height: 220px;"></div><span class="label">1366+</span></div>
+  </div>
+
+  <div class="responsive-sub">
+    <div>
+      <h4>Touch Targets</h4>
+      <p>button-primary at 44px height + 24px horizontal padding clears WCAG-AAA 44×44 touch target.</p>
+      <p>category-tab at 8px 20px padding bumps to 12px 24px on touch screens.</p>
+      <p>Top-nav icons use 44×44 invisible hit boxes around 24×24 glyphs.</p>
+    </div>
+    <div>
+      <h4>Collapsing Strategy</h4>
+      <ul>
+        <li>Utility strip stays visible on every breakpoint; account dropdowns collapse below 768px</li>
+        <li>Top nav middle category list collapses into hamburger drawer below 1024px</li>
+        <li>Hero chevrons shrink at tablet, vanish at mobile — photo card centers in viewport</li>
+        <li>Product family grid: 4 → 3 → 2 → 1 column as breakpoints shrink</li>
+        <li>Pricing comparison table 4-col → 2x2 → single-column accordion on mobile</li>
+        <li>Footer 5-col link grid → 2-col tablet → single-column accordion on mobile</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+
+
+
+</body></html>

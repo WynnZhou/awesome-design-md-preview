@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design System Analysis of Raycast</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #07080a; } html[data-theme="dark"] { background: #030405; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#layout">Layout</a></li>
+  </ul>
+  <button class="nav-cta">Download</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of Raycast</h1>
+    <p>A dark-canvas developer-tools system that treats the marketing page like an extended product screenshot — pure-near-black background, command-palette mockups as the hero, Inter typography with the ss03 stylistic set turned on site-wide, and a single white CTA pill that doesn't break the inky atmosphere. Surface ladder steps from #07080a → #0d0d0d → #101111 → #121212; hairline 1px borders in #242728 carry every card edge.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Download</button>
+      <button class="btn btn-secondary">Sign in</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO STRIPE BAND -->
+<section style="border-top:none;padding-top:0">
+  <p class="section-eyebrow">00 — Signature Hero</p>
+  <h2 class="section-heading">Hero Stripe Band</h2>
+  <p class="section-desc">The system's signature decorative moment — three diagonal red stripes layered across the very top of the hero band. Used once per page maximum.</p>
+  <div class="hero-stripe-band">
+    <span class="stripe3"></span>
+    <div class="hero-stripe-band-content">
+      <h3>Built for the<br>perfect tools</h3>
+      <p>Raycast is a blazingly fast, totally extendable launcher. It lets you complete tasks, calculate, share common links, and much more.</p>
+      <button class="btn btn-primary">Download</button>
+    </div>
+  </div>
+</section>
+
+<!-- COLOR PALETTE -->
+<section id="colors">
+  <p class="section-eyebrow">01 — Color</p>
+  <h2 class="section-heading">Color Palette</h2>
+  <p class="section-desc">Dark-only system with a 4-step surface ladder, single white CTA, hairline borders, and small saturated category accents reserved for extension illustrations.</p>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Brand &amp; Accent</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff"></div><div class="swatch-meta"><p class="swatch-name">White (primary)</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Universal primary CTA pill — every primary action</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#e8e8e8"></div><div class="swatch-meta"><p class="swatch-name">White Pressed</p><p class="swatch-hex">#e8e8e8</p><p class="swatch-role">Pressed-state for primary pill</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#000000"></div><div class="swatch-meta"><p class="swatch-name">On Primary</p><p class="swatch-hex">#000000</p><p class="swatch-role">Pure black text on white CTA</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Surface Ladder</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#07080a"></div><div class="swatch-meta"><p class="swatch-name">Canvas</p><p class="swatch-hex">#07080a</p><p class="swatch-role">Pure-near-black page background — dominant surface</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#0d0d0d"></div><div class="swatch-meta"><p class="swatch-name">Surface</p><p class="swatch-hex">#0d0d0d</p><p class="swatch-role">Card and elevated panel — one notch lighter</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#101111"></div><div class="swatch-meta"><p class="swatch-name">Surface Elevated</p><p class="swatch-hex">#101111</p><p class="swatch-role">Button-tertiary, text-input fill, store-search-bar</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#121212"></div><div class="swatch-meta"><p class="swatch-name">Surface Card</p><p class="swatch-hex">#121212</p><p class="swatch-role">App-icon-tile background, keycap fill, row hover</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Hairlines</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#242728"></div><div class="swatch-meta"><p class="swatch-name">Hairline</p><p class="swatch-hex">#242728</p><p class="swatch-role">Universal 1px card border — every card edge</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.08)"></div><div class="swatch-meta"><p class="swatch-name">Hairline Soft</p><p class="swatch-hex">rgba(255,255,255,0.08)</p><p class="swatch-role">Translucent over-image overlay border</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.16)"></div><div class="swatch-meta"><p class="swatch-name">Hairline Strong</p><p class="swatch-hex">rgba(255,255,255,0.16)</p><p class="swatch-role">Stronger inline divider, install-button border</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Text Tiers</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#f4f4f6"></div><div class="swatch-meta"><p class="swatch-name">Ink</p><p class="swatch-hex">#f4f4f6</p><p class="swatch-role">Primary headlines — slightly off-white</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#cdcdcd"></div><div class="swatch-meta"><p class="swatch-name">Body</p><p class="swatch-hex">#cdcdcd</p><p class="swatch-role">Default paragraph text and inline-link color</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#9c9c9d"></div><div class="swatch-meta"><p class="swatch-name">Mute</p><p class="swatch-hex">#9c9c9d</p><p class="swatch-role">Metadata, footer link text, secondary captions</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#6a6b6c"></div><div class="swatch-meta"><p class="swatch-name">Ash</p><p class="swatch-hex">#6a6b6c</p><p class="swatch-role">Disabled-state text, lowest-emphasis utility</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#434345"></div><div class="swatch-meta"><p class="swatch-name">Stone</p><p class="swatch-hex">#434345</p><p class="swatch-role">Least-emphasis caption text</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.72)"></div><div class="swatch-meta"><p class="swatch-name">On Dark Mute</p><p class="swatch-hex">rgba(255,255,255,0.72)</p><p class="swatch-role">Translucent secondary text on dark surfaces</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Category Accents (extension illustrations only)</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#57c1ff"></div><div class="swatch-meta"><p class="swatch-name">Accent Blue</p><p class="swatch-hex">#57c1ff</p><p class="swatch-role">Info / informational badge</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#ff6161"></div><div class="swatch-meta"><p class="swatch-name">Accent Red</p><p class="swatch-hex">#ff6161</p><p class="swatch-role">Destructive / Slack/Apple category accent</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#59d499"></div><div class="swatch-meta"><p class="swatch-name">Accent Green</p><p class="swatch-hex">#59d499</p><p class="swatch-role">Success / productivity category accent</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#ffc533"></div><div class="swatch-meta"><p class="swatch-name">Accent Yellow</p><p class="swatch-hex">#ffc533</p><p class="swatch-role">Hacker News orange-yellow accent</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Brand Gradient (Hero Stripe)</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:linear-gradient(180deg, #ff5757, #a1131a)"></div><div class="swatch-meta"><p class="swatch-name">Hero Stripe</p><p class="swatch-hex">#ff5757 → #a1131a</p><p class="swatch-role">Three diagonal stripes — once per page max</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section id="typography">
+  <p class="section-eyebrow">02 — Typography</p>
+  <h2 class="section-heading">Typography Scale</h2>
+  <p class="section-desc">Inter with font-feature-settings: "calt", "kern", "liga", "ss03" enabled site-wide. The ss03 alternate "g" is the brand's signature typographic detail.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>Inter<br>64px / 600 / lh 1.1 / +ss02 +ss08</div><div class="type-sample" style="font-size:64px;font-weight:600;line-height:1.1">Built for the perfect tools</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>Inter<br>56px / 500 / lh 1.17 / +0.2px</div><div class="type-sample" style="font-size:56px;font-weight:500;line-height:1.17;letter-spacing:0.2px">Section headline</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-xl</strong>Inter<br>24px / 500 / lh 1.6 / +0.2px</div><div class="type-sample" style="font-size:24px;font-weight:500;line-height:1.6;letter-spacing:0.2px">Sub-section heading</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-lg</strong>Inter<br>22px / 500 / lh 1.15</div><div class="type-sample" style="font-size:22px;font-weight:500;line-height:1.15">Mid-section feature heading</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-md</strong>Inter<br>20px / 500 / lh 1.4 / +0.2px</div><div class="type-sample" style="font-size:20px;font-weight:500;line-height:1.4;letter-spacing:0.2px">Card group title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-sm</strong>Inter<br>18px / 500 / lh 1.4 / +0.2px</div><div class="type-sample" style="font-size:18px;font-weight:500;line-height:1.4;letter-spacing:0.2px">Small heading, extension card title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-lg</strong>Inter<br>18px / 400 / lh 1.6</div><div class="type-sample" style="font-size:18px;font-weight:400;line-height:1.6">Pricing tier description, hero subtitle</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>Inter<br>16px / 400 / lh 1.6</div><div class="type-sample" style="font-size:16px;font-weight:400;line-height:1.6">Default body — paragraph text and inline content</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-strong</strong>Inter<br>16px / 500 / lh 1.4 / +0.2px</div><div class="type-sample" style="font-size:16px;font-weight:500;line-height:1.4;letter-spacing:0.2px">Inline emphasis, primary nav link</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>Inter<br>14px / 400 / lh 1.6</div><div class="type-sample" style="font-size:14px;font-weight:400;line-height:1.6">Card description, secondary copy</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm-strong</strong>Inter<br>14px / 500 / lh 1.6 / +0.2px</div><div class="type-sample" style="font-size:14px;font-weight:500;line-height:1.6;letter-spacing:0.2px">In-card label, table-header text</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-md</strong>Inter<br>13px / 400 / lh 1.4 / +0.1px</div><div class="type-sample" style="font-size:13px;font-weight:400;line-height:1.4;letter-spacing:0.1px">Caption, metadata</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-sm</strong>Inter<br>12px / 400 / lh 1.5 / +0.4px</div><div class="type-sample" style="font-size:12px;font-weight:400;line-height:1.5;letter-spacing:0.4px">Smallest utility text, badge label</div></div>
+  <div class="type-row"><div class="type-meta"><strong>link-md</strong>Inter<br>16px / 500 / lh 1.4 / +0.3px</div><div class="type-sample" style="font-size:16px;font-weight:500;line-height:1.4;letter-spacing:0.3px;color:var(--on-dark)">Inline body anchor link</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-md</strong>Inter<br>14px / 500 / lh 1.6 / +0.2px</div><div class="type-sample" style="font-size:14px;font-weight:500;line-height:1.6;letter-spacing:0.2px">Standard button label</div></div>
+</section>
+
+<!-- BUTTONS -->
+<section id="components">
+  <p class="section-eyebrow">03 — Components</p>
+  <h2 class="section-heading">Button Variants</h2>
+  <p class="section-desc">White primary, transparent secondary, surface-elevated tertiary, and the install-button outlined pill — all at 8px radius.</p>
+
+  <div class="button-grid">
+    <div class="button-cell">
+      <button class="btn btn-primary">Download</button>
+      <p class="button-cell-label">button-primary</p>
+      <p class="button-cell-spec">bg primary (white) · text on-primary (black) · rounded 8px · 36px height</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-primary" style="background:var(--primary-pressed)">Pressed</button>
+      <p class="button-cell-label">button-primary-pressed</p>
+      <p class="button-cell-spec">bg primary-pressed · text on-primary</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-secondary">Sign in</button>
+      <p class="button-cell-label">button-secondary</p>
+      <p class="button-cell-spec">transparent · text on-dark · rounded 8px</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-tertiary">Watch demo</button>
+      <p class="button-cell-label">button-tertiary</p>
+      <p class="button-cell-spec">bg surface-elevated · text on-dark</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-disabled">Disabled</button>
+      <p class="button-cell-label">button-disabled</p>
+      <p class="button-cell-spec">bg surface-elevated · text ash</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn install-button">Install Extension</button>
+      <p class="button-cell-label">install-button</p>
+      <p class="button-cell-spec">transparent · 1px hairline-strong · padding 6/14</p>
+    </div>
+    <div class="button-cell wide">
+      <div class="pill-tabs">
+        <button class="pill-tab active">All Extensions</button>
+        <button class="pill-tab">Recently Added</button>
+        <button class="pill-tab">Most Popular</button>
+        <button class="pill-tab">Featured</button>
+      </div>
+      <p class="button-cell-label">pill-tab + pill-tab-active</p>
+      <p class="button-cell-spec">default: transparent · active: surface-elevated lift</p>
+    </div>
+    <div class="button-cell">
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+        <span class="badge-pro">Pro</span>
+        <span class="badge-pro">Free</span>
+        <span class="badge-info-soft">New</span>
+        <span class="badge-info-soft">Beta</span>
+      </div>
+      <p class="button-cell-label">badge-pro + badge-info-soft</p>
+      <p class="button-cell-spec">small chip variants · rounded 4px</p>
+    </div>
+    <div class="button-cell">
+      <div style="display:flex;gap:6px;align-items:center">
+        <span class="keycap">⌘</span>
+        <span class="keycap">K</span>
+        <span style="color:var(--mute);font-size:13px;">to open</span>
+        <span class="keycap">⏎</span>
+        <span class="keycap">Esc</span>
+      </div>
+      <p class="button-cell-label">keycap</p>
+      <p class="button-cell-spec">linear-gradient bg · 1px hairline · physical-key feel</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMMAND PALETTE -->
+<section>
+  <p class="section-eyebrow">04 — Signature</p>
+  <h2 class="section-heading">Command Palette Card</h2>
+  <p class="section-desc">The system's load-bearing visual element — a full-fidelity command palette UI mockup with macOS traffic-light dots, a search input, command rows, and keycap shortcut hints.</p>
+
+  <div class="command-palette-card">
+    <div class="command-palette-header">
+      <div class="traffic-lights">
+        <span class="red"></span>
+        <span class="yellow"></span>
+        <span class="green"></span>
+      </div>
+      <div class="command-palette-search">Search for apps and commands…</div>
+    </div>
+    <div class="command-palette-body">
+      <div class="command-palette-row active">
+        <div class="icon yellow">Y</div>
+        <span class="label">Hacker News — Read latest stories</span>
+        <span class="meta">Extension</span>
+      </div>
+      <div class="command-palette-row">
+        <div class="icon red">S</div>
+        <span class="label">Slack — Search messages</span>
+        <span class="meta">Extension</span>
+      </div>
+      <div class="command-palette-row">
+        <div class="icon green">L</div>
+        <span class="label">Linear — Create new issue</span>
+        <span class="meta">Extension</span>
+      </div>
+      <div class="command-palette-row">
+        <div class="icon blue">F</div>
+        <span class="label">Figma — Open recent file</span>
+        <span class="meta">Extension</span>
+      </div>
+      <div class="command-palette-row">
+        <div class="icon" style="background:var(--surface-card)">⌘</div>
+        <span class="label">Calculator — 1024 × 768</span>
+        <span class="meta">Built-in</span>
+      </div>
+    </div>
+    <div class="command-palette-footer">
+      <span style="display:flex;align-items:center;gap:6px"><span class="keycap">↑</span><span class="keycap">↓</span> Navigate</span>
+      <span class="command-palette-footer-shortcuts">
+        <span>Open</span><span class="keycap">⏎</span>
+        <span style="margin-left:12px">Actions</span><span class="keycap">⌘</span><span class="keycap">K</span>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- CARDS -->
+<section>
+  <p class="section-eyebrow">05 — Cards</p>
+  <h2 class="section-heading">Card Examples</h2>
+  <p class="section-desc">Feature cards (default + elevated), store extension cards with horizontal app-icon layout, and pricing tier cards (default + featured-elevated variant).</p>
+
+  <p class="palette-block-label">Feature Cards</p>
+  <div class="card-grid" style="margin-bottom:48px">
+    <div class="feature-card-dark">
+      <div class="app-icon-tile-large">⚡</div>
+      <h3 style="font-family:var(--font-ui);font-size:20px;font-weight:500;margin:0;letter-spacing:0.2px">Lightning fast</h3>
+      <p style="font-family:var(--font-ui);font-size:14px;color:var(--body);margin:0;line-height:1.6">Find and run commands instantly with keyboard-first navigation.</p>
+    </div>
+    <div class="feature-card-elevated">
+      <div class="app-icon-tile-large">🔌</div>
+      <h3 style="font-family:var(--font-ui);font-size:20px;font-weight:500;margin:0;letter-spacing:0.2px">Extendable</h3>
+      <p style="font-family:var(--font-ui);font-size:14px;color:var(--body);margin:0;line-height:1.6">Build your own extensions or install from the community store.</p>
+    </div>
+    <div class="feature-card-dark">
+      <div class="app-icon-tile-large">🤖</div>
+      <h3 style="font-family:var(--font-ui);font-size:20px;font-weight:500;margin:0;letter-spacing:0.2px">AI-powered</h3>
+      <p style="font-family:var(--font-ui);font-size:14px;color:var(--body);margin:0;line-height:1.6">Generate, summarize, and answer with built-in AI commands.</p>
+    </div>
+  </div>
+
+  <p class="palette-block-label">Store Extension Cards</p>
+  <div class="card-grid" style="margin-bottom:48px">
+    <div class="store-extension-card">
+      <div class="app-icon-tile" style="background:var(--accent-yellow);color:#000">Y</div>
+      <div class="meta">
+        <span class="name">Hacker News</span>
+        <span class="author">by Thomas</span>
+        <span class="desc">Read the latest stories from Hacker News</span>
+      </div>
+      <button class="btn install-button">Install</button>
+    </div>
+    <div class="store-extension-card">
+      <div class="app-icon-tile" style="background:var(--accent-red);color:#fff">S</div>
+      <div class="meta">
+        <span class="name">Slack</span>
+        <span class="author">by Raycast</span>
+        <span class="desc">Search messages, send DMs, and more</span>
+      </div>
+      <button class="btn install-button">Install</button>
+    </div>
+    <div class="store-extension-card">
+      <div class="app-icon-tile" style="background:var(--accent-green);color:#000">L</div>
+      <div class="meta">
+        <span class="name">Linear</span>
+        <span class="author">by Linear</span>
+        <span class="desc">Create issues, track work, manage projects</span>
+      </div>
+      <button class="btn install-button">Install</button>
+    </div>
+    <div class="store-extension-card">
+      <div class="app-icon-tile" style="background:var(--accent-blue);color:#000">F</div>
+      <div class="meta">
+        <span class="name">Figma</span>
+        <span class="author">by Raycast</span>
+        <span class="desc">Open files, browse projects, search</span>
+      </div>
+      <button class="btn install-button">Install</button>
+    </div>
+  </div>
+
+  <p class="palette-block-label">Pricing Tier Cards</p>
+  <div class="card-grid">
+    <div class="pricing-tier-card">
+      <p class="pricing-name">Free</p>
+      <p class="pricing-price">$0</p>
+      <p class="pricing-desc">Get started with core features.</p>
+      <button class="btn btn-tertiary" style="width:100%">Download</button>
+      <ul class="pricing-features">
+        <li class="pricing-feature">All core features</li>
+        <li class="pricing-feature">Community extensions</li>
+        <li class="pricing-feature">Local AI commands</li>
+      </ul>
+    </div>
+    <div class="pricing-tier-card-featured">
+      <span class="badge-info-soft" style="align-self:flex-start">Featured</span>
+      <p class="pricing-name">Pro</p>
+      <p class="pricing-price">$8<span class="pricing-price-meta">/mo</span></p>
+      <p class="pricing-desc">For individuals who want it all.</p>
+      <button class="btn btn-primary" style="width:100%">Get Pro</button>
+      <ul class="pricing-features">
+        <li class="pricing-feature">Everything in Free</li>
+        <li class="pricing-feature">Cloud sync across devices</li>
+        <li class="pricing-feature">Pro-only extensions</li>
+        <li class="pricing-feature">Priority support</li>
+      </ul>
+    </div>
+    <div class="pricing-tier-card">
+      <p class="pricing-name">Pro + Advanced AI</p>
+      <p class="pricing-price">$16<span class="pricing-price-meta">/mo</span></p>
+      <p class="pricing-desc">All Pro features plus advanced AI.</p>
+      <button class="btn btn-tertiary" style="width:100%">Get Pro+</button>
+      <ul class="pricing-features">
+        <li class="pricing-feature">Everything in Pro</li>
+        <li class="pricing-feature">GPT-4 / Claude / Gemini access</li>
+        <li class="pricing-feature">Custom AI commands</li>
+        <li class="pricing-feature">Image generation</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FORMS -->
+<section>
+  <p class="section-eyebrow">06 — Forms</p>
+  <h2 class="section-heading">Form Elements</h2>
+  <p class="section-desc">Surface-elevated text inputs at 36px height with a 1px hairline border. Focus brightens to hairline-strong — no colored ring.</p>
+
+  <div class="form-grid">
+    <div class="form-cell">
+      <label class="form-label">Default Input</label>
+      <input class="text-input" placeholder="Email address">
+      <span class="form-spec">surface-elevated bg · 1px hairline · rounded 8px · 36px</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Focused Input</label>
+      <input class="text-input focused" value="user@example.com">
+      <span class="form-spec">1px hairline-strong border · subtle brightening</span>
+    </div>
+    <div class="form-cell wide">
+      <label class="form-label">Store Search Bar</label>
+      <span class="store-search-bar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+        Search the store…
+      </span>
+      <span class="form-spec">surface-elevated bg · 1px hairline · 44px height</span>
+    </div>
+    <div class="form-cell wide">
+      <label class="form-label">Textarea</label>
+      <textarea class="text-input" placeholder="Tell us about your team..."></textarea>
+      <span class="form-spec">min-height 96px · resize vertical</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Submit</label>
+      <button class="btn btn-primary" style="width:100%">Subscribe</button>
+      <span class="form-spec">button-primary · always full-width</span>
+    </div>
+  </div>
+</section>
+
+<!-- SPACING -->
+<section>
+  <p class="section-eyebrow">07 — Layout</p>
+  <h2 class="section-heading">Spacing Scale</h2>
+  <p class="section-desc">8px base. Section rhythm sits at 96px between major content blocks across every page.</p>
+  <div class="spacing-row">
+    <div class="spacing-cell"><div class="spacing-bar" style="width:2px"></div><span class="spacing-label">xxs · 2</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:4px"></div><span class="spacing-label">xs · 4</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:8px"></div><span class="spacing-label">sm · 8</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:12px"></div><span class="spacing-label">md · 12</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:16px"></div><span class="spacing-label">lg · 16</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:24px"></div><span class="spacing-label">xl · 24</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:32px"></div><span class="spacing-label">xxl · 32</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:96px"></div><span class="spacing-label">section · 96</span></div>
+  </div>
+</section>
+
+<!-- RADIUS -->
+<section>
+  <p class="section-eyebrow">08 — Shapes</p>
+  <h2 class="section-heading">Border Radius Scale</h2>
+  <p class="section-desc">Tight 4–16px range. The system never goes flat on cards and never above 16px except for fully-rounded pills.</p>
+  <div class="radius-row">
+    <div class="radius-cell"><div class="radius-box" style="border-radius:0"></div><span class="radius-label">none · 0</span><p class="radius-context">Hero band, primary nav, footer</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:4px"></div><span class="radius-label">xs · 4</span><p class="radius-context">Keycap glyphs, badge-pro chips</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:6px"></div><span class="radius-label">sm · 6</span><p class="radius-context">Command-palette row, inline buttons</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:8px"></div><span class="radius-label">md · 8</span><p class="radius-context">Buttons, text inputs, app-icon tiles</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:10px"></div><span class="radius-label">lg · 10</span><p class="radius-context">Feature cards, pricing tier cards</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:16px"></div><span class="radius-label">xl · 16</span><p class="radius-context">Hero command-palette mockup container</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:9999px"></div><span class="radius-label">full · 9999</span><p class="radius-context">Pill-tab chips, avatar circles</p></div>
+  </div>
+</section>
+
+<!-- ELEVATION -->
+<section>
+  <p class="section-eyebrow">09 — Depth</p>
+  <h2 class="section-heading">Elevation &amp; Depth</h2>
+  <p class="section-desc">No drop shadows. Elevation is built entirely from the surface-color ladder — each notch lighter on the dark scale reads as one step closer to the viewer.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card level-0"><div class="elevation-name">Canvas</div><div class="elevation-spec">#07080a · base layer</div></div>
+    <div class="elevation-card level-1"><div class="elevation-name">Surface</div><div class="elevation-spec">#0d0d0d · cards</div></div>
+    <div class="elevation-card level-2"><div class="elevation-name">Surface Elevated</div><div class="elevation-spec">#101111 · button-tertiary</div></div>
+    <div class="elevation-card level-3"><div class="elevation-name">Surface Card</div><div class="elevation-spec">#121212 · keycap, app-icon-tile</div></div>
+  </div>
+</section>
+
+<!-- RESPONSIVE -->
+<section id="layout">
+  <p class="section-eyebrow">10 — Responsive</p>
+  <h2 class="section-heading">Responsive Behavior</h2>
+  <p class="section-desc">7 breakpoint zones. Hero command-palette mockup stacks vertical on tablet; pricing collapses 3 → 2+1 → 1 down the breakpoint stack.</p>
+
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>ultrawide</td><td>1920px+</td><td>Content max-width 1240px</td></tr>
+      <tr><td>desktop-large</td><td>1440px</td><td>Default — 3-up pricing, 2-up store extensions</td></tr>
+      <tr><td>desktop</td><td>1280px</td><td>Same with narrower outer gutters</td></tr>
+      <tr><td>desktop-small</td><td>1024px</td><td>Pricing → 2+1; nav remains horizontal</td></tr>
+      <tr><td>tablet</td><td>768px</td><td>Pricing → 1-up; nav becomes hamburger; store cards 1-up</td></tr>
+      <tr><td>mobile</td><td>480px</td><td>Single-column; hero 64px → ~36px</td></tr>
+      <tr><td>mobile-narrow</td><td>320px</td><td>Section padding tightens to 48px</td></tr>
+    </tbody>
+  </table>
+
+  <div class="device-ladder">
+    <div class="device phone"><span class="name">320</span><span class="label">m-narrow</span></div>
+    <div class="device phone-large"><span class="name">480</span><span class="label">mobile</span></div>
+    <div class="device tablet"><span class="name">768</span><span class="label">tablet</span></div>
+    <div class="device desktop-small"><span class="name">1024</span><span class="label">desktop-sm</span></div>
+    <div class="device desktop"><span class="name">1280</span><span class="label">desktop-lg</span></div>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Touch Targets</h3>
+    <ul>
+      <li><strong>WCAG AA:</strong> button-primary and button-tertiary at 36px height with 16px padding.</li>
+      <li><strong>Text input:</strong> 36px height with 12px padding.</li>
+      <li><strong>Store search bar:</strong> 44px height (above AAA).</li>
+      <li><strong>Pill tab:</strong> ~24–28px height with 10px padding extending to 36–40px tappable.</li>
+      <li><strong>Install button:</strong> 32px height with 14px padding.</li>
+    </ul>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Collapsing Strategy</h3>
+    <ul>
+      <li><strong>Primary nav:</strong> desktop horizontal cluster → tablet hamburger drawer at 768px. White Download CTA stays visible.</li>
+      <li><strong>Hero command-palette mockup:</strong> 2-column desktop → vertical stack on tablet → ~80% width on mobile.</li>
+      <li><strong>Store extension grid:</strong> 2-up → 1-up at tablet.</li>
+      <li><strong>Pricing tier grid:</strong> 3-up → 2+1 at desktop-small → 1-up stacked at tablet.</li>
+      <li><strong>Section padding:</strong> 96px → 64px → 48px.</li>
+      <li><strong>Hero headline:</strong> 64px → 56px → 44px → 36px down the breakpoint stack.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

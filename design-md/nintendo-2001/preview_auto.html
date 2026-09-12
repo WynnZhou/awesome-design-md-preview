@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" data-native="dark" data-theme="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nintendo.com (2001) Analysis — Design System Preview</title>
+  <link rel="stylesheet" href="preview_auto.css">
+</head>
+<body>
+
+<div class="page">
+  <header class="topbar">
+    <div><div class="topbar-name">Nintendo.com (2001) Analysis</div><div class="topbar-meta">design tokens · 22 colors · 7 type styles · 41 components</div></div>
+    <nav class="topbar-links"><a href="#colors">Colors</a><a href="#typography">Type</a><a href="#buttons">Buttons</a><a href="#badges">Badges</a><a href="#cards">Cards</a><a href="#forms">Forms</a><a href="#nav">Tabs</a><a href="#spacing">Spacing</a><a href="#radius">Radius</a><a href="#signature">Other</a><a href="#reference">Reference</a></nav>
+  </header>
+  <section class="hero">
+    <h1>Nintendo.com (2001) Analysis</h1>
+    <p class="lede">An analysis of Nintendo.com&#x27;s 2001 design language — a brushed-periwinkle &quot;console chrome&quot; interface where every panel is a beveled metal plate, navigation glows amber over a halftone-dotted carbon bar, and bold outlined display type sits on circuit-board hero fields. A Y2K hardware aesthetic that treats the web page like the faceplate of a game system.</p>
+    <div class="meta">
+      <span class="chip solid">#e60012</span>
+      <span class="chip">Arial</span>
+      <span class="chip">dark canvas</span>
+      <span class="chip">source: DESIGN.md (frontmatter)</span>
+    </div>
+  </section>
+  <section id="colors">
+    <div class="sec-head"><h2>Color Palette</h2><span class="count">22 tokens</span></div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-primary">#e60012</div><div class="info"><div class="nm">primary</div><div class="hx">primary</div></div></div>
+      <div class="swatch"><div class="fill sw-signal">#f68d1f</div><div class="info"><div class="nm">signal</div><div class="hx">signal</div></div></div>
+      <div class="swatch"><div class="fill sw-amber">#ecab37</div><div class="info"><div class="nm">amber</div><div class="hx">amber</div></div></div>
+      <div class="swatch"><div class="fill sw-nav-gold">#e48600</div><div class="info"><div class="nm">nav-gold</div><div class="hx">nav-gold</div></div></div>
+      <div class="swatch"><div class="fill sw-canvas">#7a8aba</div><div class="info"><div class="nm">canvas</div><div class="hx">canvas</div></div></div>
+      <div class="swatch"><div class="fill sw-canvas-soft">#9fbee7</div><div class="info"><div class="nm">canvas-soft</div><div class="hx">canvas-soft</div></div></div>
+      <div class="swatch"><div class="fill sw-sky">#9fbee7</div><div class="info"><div class="nm">sky</div><div class="hx">sky</div></div></div>
+      <div class="swatch"><div class="fill sw-lavender">#acace7</div><div class="info"><div class="nm">lavender</div><div class="hx">lavender</div></div></div>
+      <div class="swatch"><div class="fill sw-ice">#c0d5e6</div><div class="info"><div class="nm">ice</div><div class="hx">ice</div></div></div>
+      <div class="swatch"><div class="fill sw-periwinkle">#8ba1d4</div><div class="info"><div class="nm">periwinkle</div><div class="hx">periwinkle</div></div></div>
+      <div class="swatch"><div class="fill sw-chrome-indigo">#3d4f97</div><div class="info"><div class="nm">chrome-indigo</div><div class="hx">chrome-indigo</div></div></div>
+      <div class="swatch"><div class="fill sw-muted-indigo">#60619c</div><div class="info"><div class="nm">muted-indigo</div><div class="hx">muted-indigo</div></div></div>
+      <div class="swatch"><div class="fill sw-platinum">#dedede</div><div class="info"><div class="nm">platinum</div><div class="hx">platinum</div></div></div>
+      <div class="swatch"><div class="fill sw-surface">#ffffff</div><div class="info"><div class="nm">surface</div><div class="hx">surface</div></div></div>
+      <div class="swatch"><div class="fill sw-carbon">#21242e</div><div class="info"><div class="nm">carbon</div><div class="hx">carbon</div></div></div>
+      <div class="swatch"><div class="fill sw-hairline">#5a5f8c</div><div class="info"><div class="nm">hairline</div><div class="hx">hairline</div></div></div>
+      <div class="swatch"><div class="fill sw-ink">#21242e</div><div class="info"><div class="nm">ink</div><div class="hx">ink</div></div></div>
+      <div class="swatch"><div class="fill sw-ink-soft">#3d4f97</div><div class="info"><div class="nm">ink-soft</div><div class="hx">ink-soft</div></div></div>
+      <div class="swatch"><div class="fill sw-on-primary">#ffffff</div><div class="info"><div class="nm">on-primary</div><div class="hx">on-primary</div></div></div>
+      <div class="swatch"><div class="fill sw-systems-teal">#206479</div><div class="info"><div class="nm">systems-teal</div><div class="hx">systems-teal</div></div></div>
+      <div class="swatch"><div class="fill sw-games-red">#a7282b</div><div class="info"><div class="nm">games-red</div><div class="hx">games-red</div></div></div>
+      <div class="swatch"><div class="fill sw-error">#e60012</div><div class="info"><div class="nm">error</div><div class="hx">error</div></div></div>
+    </div>
+  </section>
+  <section id="typography">
+    <div class="sec-head"><h2>Typography Scale</h2><span class="count">7 styles</span></div>
+    <div class="type-row">
+      <div class="type-meta"><b>nav-link</b>13px / 700<br>lh 1 · ls 0.5px<br>Arial</div>
+      <div class="type-sample type-nav-link">nav-link — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>ui-label</b>11px / 700<br>lh 1.1 · ls 0.5px<br>Arial</div>
+      <div class="type-sample type-ui-label">ui-label — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>display</b>44px / 900<br>lh 1 · ls 0<br>Arial Black</div>
+      <div class="type-sample type-display">display — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>hero-tagline</b>15px / 700<br>lh 1.3 · ls 0<br>Arial</div>
+      <div class="type-sample type-hero-tagline">hero-tagline — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>body</b>12px / 400<br>lh 1.4 · ls 0<br>Arial</div>
+      <div class="type-sample type-body">body — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>link</b>12px / 700<br>lh 1.4 · ls 0<br>Arial</div>
+      <div class="type-sample type-link">link — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>micro</b>10px / 400<br>lh 1.3 · ls 0<br>Arial</div>
+      <div class="type-sample type-micro">micro — The quick brown fox jumps over the lazy dog</div>
+    </div>
+  </section>
+  <section id="buttons">
+    <div class="sec-head"><h2>Button Variants</h2><span class="count">6</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="button-primary">Primary</div><button class="demo-el spec-button-primary" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-primary-pressed">Primary Pressed</div><button class="demo-el spec-button-primary-pressed" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-submit">Submit</div><button class="demo-el spec-button-submit" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-secondary">Secondary</div><button class="demo-el spec-button-secondary" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-icon-arrow">Icon Arrow</div><button class="demo-el spec-button-icon-arrow" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-arrow-chip">Arrow Chip</div><button class="demo-el spec-button-arrow-chip" type="button">Button</button></div>
+    </div></div>
+  </section>
+  <section id="badges">
+    <div class="sec-head"><h2>Badges & Pills</h2><span class="count">5</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="logo-pill">Logo Pill</div><div class="demo-el spec-logo-pill">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="button-arrow-chip">Arrow Chip</div><div class="demo-el spec-button-arrow-chip">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="field-label">Field Label</div><div class="demo-el spec-field-label">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="section-label-bar">Section Label Bar</div><div class="demo-el spec-section-label-bar">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="esrb-badge">Esrb Badge</div><div class="demo-el spec-esrb-badge">Badge</div></div>
+    </div></div>
+  </section>
+  <section id="cards">
+    <div class="sec-head"><h2>Cards & Containers</h2><span class="count">13</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="form-panel">Panel</div><div class="demo-el spec-form-panel"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="hero-panel">Hero Panel</div><div class="demo-el spec-hero-panel"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="featured-tile">Featured Tile</div><div class="demo-el spec-featured-tile"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="poll-panel">Poll Panel</div><div class="demo-el spec-poll-panel"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="promo-card">Promo Card</div><div class="demo-el spec-promo-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="system-tile">System Tile</div><div class="demo-el spec-system-tile"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="link-row-card">Row Card</div><div class="demo-el spec-link-row-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="ex-pricing-tier">Pricing Tier</div><div class="demo-el spec-ex-pricing-tier"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="ex-pricing-tier-featured">Pricing Tier Featured</div><div class="demo-el spec-ex-pricing-tier-featured"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="ex-product-selector">Product Selector</div><div class="demo-el spec-ex-product-selector"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="ex-auth-form-card">Auth Form Card</div><div class="demo-el spec-ex-auth-form-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="ex-modal-card">Modal Card</div><div class="demo-el spec-ex-modal-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="ex-empty-state-card">Empty State Card</div><div class="demo-el spec-ex-empty-state-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+    </div></div>
+  </section>
+  <section id="forms">
+    <div class="sec-head"><h2>Forms & Inputs</h2><span class="count">7</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="search-field">Search Field</div><div class="demo-el spec-search-field"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="text-input">Text Input</div><div class="demo-el spec-text-input"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="select-dropdown">Select Dropdown</div><div class="demo-el spec-select-dropdown"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="field-label">Field Label</div><div class="demo-el spec-field-label"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="form-panel">Panel</div><div class="demo-el spec-form-panel"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="radio-option">Radio Option</div><div class="demo-el spec-radio-option"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="ex-auth-form-card">Auth Form Card</div><div class="demo-el spec-ex-auth-form-card"><span class="demo-el-b">Placeholder text</span></div></div>
+    </div></div>
+  </section>
+  <section id="nav">
+    <div class="sec-head"><h2>Navigation & Tabs</h2><span class="count">4</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="nav-bar">Nav Bar</div><div class="demo-el spec-nav-bar"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="link-row-card">Row Card</div><div class="demo-el spec-link-row-card"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="left-rail-tab">Left Rail Tab</div><div class="demo-el spec-left-rail-tab"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="footer-bar">Footer Bar</div><div class="demo-el spec-footer-bar"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+    </div></div>
+  </section>
+  <section id="signature">
+    <div class="sec-head"><h2>Other Components</h2><span class="count">11</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="subnav-strip">Subnav Strip</div><div class="demo-el spec-subnav-strip">Subnav Strip</div></div>
+      <div class="demo-col"><div class="lb" title="dotted-divider">Dotted Divider</div><div class="demo-el spec-dotted-divider">Dotted Divider</div></div>
+      <div class="demo-col"><div class="lb" title="news-row">News Row</div><div class="demo-el spec-news-row">News Row</div></div>
+      <div class="demo-col"><div class="lb" title="info-box">Info Box</div><div class="demo-el spec-info-box">Info Box</div></div>
+      <div class="demo-col"><div class="lb" title="calendar-widget">Calendar Widget</div><div class="demo-el spec-calendar-widget">Calendar Widget</div></div>
+      <div class="demo-col"><div class="lb" title="esrb-rating-square">Esrb Rating Square</div><div class="demo-el spec-esrb-rating-square">Esrb Rating Square</div></div>
+      <div class="demo-col"><div class="lb" title="mascot-bubble">Mascot Bubble</div><div class="demo-el spec-mascot-bubble">Mascot Bubble</div></div>
+      <div class="demo-col"><div class="lb" title="ex-cart-drawer">Cart Drawer</div><div class="demo-el spec-ex-cart-drawer">Cart Drawer</div></div>
+      <div class="demo-col"><div class="lb" title="ex-app-shell-row">App Shell Row</div><div class="demo-el spec-ex-app-shell-row">App Shell Row</div></div>
+      <div class="demo-col"><div class="lb" title="ex-data-table-cell">Data Table Cell</div><div class="demo-el demo-el-ghost spec-ex-data-table-cell">Data Table Cell</div></div>
+      <div class="demo-col"><div class="lb" title="ex-toast">Toast</div><div class="demo-el spec-ex-toast">Toast</div></div>
+    </div></div>
+  </section>
+  <section id="spacing">
+    <div class="sec-head"><h2>Spacing Scale</h2><span class="count">8 steps</span></div>
+    <div class="bar-row"><span>xxs</span><span class="val">2px</span><span class="bar bar-xxs"></span></div>
+    <div class="bar-row"><span>xs</span><span class="val">4px</span><span class="bar bar-xs"></span></div>
+    <div class="bar-row"><span>sm</span><span class="val">8px</span><span class="bar bar-sm"></span></div>
+    <div class="bar-row"><span>md</span><span class="val">12px</span><span class="bar bar-md"></span></div>
+    <div class="bar-row"><span>lg</span><span class="val">16px</span><span class="bar bar-lg"></span></div>
+    <div class="bar-row"><span>xl</span><span class="val">24px</span><span class="bar bar-xl"></span></div>
+    <div class="bar-row"><span>xxl</span><span class="val">32px</span><span class="bar bar-xxl"></span></div>
+    <div class="bar-row"><span>section</span><span class="val">48px</span><span class="bar bar-section"></span></div>
+  </section>
+  <section id="radius">
+    <div class="sec-head"><h2>Border Radius Scale</h2><span class="count">6 steps</span></div>
+    <div class="radius-grid">
+      <div class="radius-cell"><div class="box rd-none"></div><div class="lb">none · 0px</div></div>
+      <div class="radius-cell"><div class="box rd-xs"></div><div class="lb">xs · 2px</div></div>
+      <div class="radius-cell"><div class="box rd-sm"></div><div class="lb">sm · 4px</div></div>
+      <div class="radius-cell"><div class="box rd-md"></div><div class="lb">md · 6px</div></div>
+      <div class="radius-cell"><div class="box rd-lg"></div><div class="lb">lg · 10px</div></div>
+      <div class="radius-cell"><div class="box rd-full"></div><div class="lb">full · 9999px</div></div>
+    </div>
+  </section>
+  <section id="guidelines">
+    <div class="sec-head"><h2>Do&rsquo;s &amp; Don&rsquo;ts</h2></div>
+    <div class="guide">
+      <ul class="yes">
+        <li>Build every region as a **beveled plate**: a {colors.canvas} body with a brighter top edge and a {colors.chrome-indigo} shadow line beneath. The &quot;assembled machine&quot; feel depends on it.</li>
+        <li>Reserve warm color for **wayfinding only** — {colors.nav-gold} for nav words, {colors.amber} for utility/badges, {colors.signal} for forward/Submit. Cool chrome never carries action color.</li>
+        <li>Keep structural labels **uppercase Arial Bold with 0.5px tracking** ({typography.ui-label}) — it is the silkscreen-legend voice of the whole system.</li>
+        <li>Render hero wordmarks as **outlined + drop-shadowed {typography.display}** over full-bleed photographic fields tinted per page.</li>
+        <li>Use {colors.carbon} with halftone texture for the **command layer** (nav, right rail, footer) to separate &quot;system controls&quot; from &quot;content.&quot;</li>
+        <li>Let panels **butt together** with thin bevel seams; density is the intended texture.</li>
+      </ul>
+      <ul class="no">
+        <li>Don&#x27;t soften every corner — turning the sharp chrome into a uniformly rounded card system erases the manufactured-faceplate identity.</li>
+        <li>Don&#x27;t introduce a **soft blurred drop-shadow** elevation language; depth here is hard bevels and pictorial photography, not Material elevation.</li>
+        <li>Don&#x27;t let {colors.signal} and {colors.amber} bleed into decorative use — warm color must always mean &quot;act here.&quot;</li>
+        <li>Don&#x27;t add accent colors outside the page-tint heroes ({colors.systems-teal}, {colors.games-red}); the steady-state chrome is strictly cool periwinkle + carbon.</li>
+        <li>Don&#x27;t widen body copy or whitespace into an airy modern layout; the packed, fixed-canvas density is the brand.</li>
+        <li>Don&#x27;t flatten the dual-nav structure (gold primary words over the pale secondary strip) into one bar — the layered command hierarchy is signature.</li>
+      </ul>
+    </div>
+  </section>
+  <section id="reference">
+    <div class="sec-head"><h2>Component Reference</h2><span class="count">41</span></div>
+    <table class="ref"><thead><tr><th>Component</th><th>Resolved properties</th></tr></thead><tbody>
+      <tr><td class="k">nav-bar</td><td>backgroundColor: var(--c-carbon); textColor: var(--c-nav-gold); typography: var(--t-nav-link-size); rounded: var(--r-none); padding: var(--s-sm); height: 28px</td></tr>
+      <tr><td class="k">subnav-strip</td><td>backgroundColor: var(--c-canvas-soft); textColor: var(--c-ink); typography: var(--t-ui-label-size); rounded: var(--r-none); padding: var(--s-xs)</td></tr>
+      <tr><td class="k">logo-pill</td><td>backgroundColor: var(--c-surface); textColor: var(--c-primary); typography: var(--t-display-size); rounded: var(--r-full); padding: var(--s-xs)</td></tr>
+      <tr><td class="k">button-primary</td><td>backgroundColor: var(--c-amber); textColor: var(--c-carbon); typography: var(--t-ui-label-size); rounded: var(--r-xs); padding: var(--s-md)</td></tr>
+      <tr><td class="k">button-primary-pressed</td><td>backgroundColor: var(--c-nav-gold); textColor: var(--c-carbon); typography: var(--t-ui-label-size); rounded: var(--r-xs); padding: var(--s-md)</td></tr>
+      <tr><td class="k">button-submit</td><td>backgroundColor: var(--c-signal); textColor: var(--c-on-primary); typography: var(--t-ui-label-size); rounded: var(--r-xs); padding: var(--s-lg)</td></tr>
+      <tr><td class="k">button-secondary</td><td>backgroundColor: var(--c-carbon); textColor: var(--c-on-primary); typography: var(--t-ui-label-size); rounded: var(--r-none); padding: var(--s-md)</td></tr>
+      <tr><td class="k">button-icon-arrow</td><td>backgroundColor: var(--c-signal); textColor: var(--c-on-primary); rounded: var(--r-full); size: 22px</td></tr>
+      <tr><td class="k">button-arrow-chip</td><td>backgroundColor: var(--c-signal); textColor: var(--c-on-primary); rounded: var(--r-xs); padding: var(--s-xs); size: 18px</td></tr>
+      <tr><td class="k">search-field</td><td>backgroundColor: var(--c-surface); textColor: var(--c-ink); typography: var(--t-body-size); rounded: var(--r-xs); padding: var(--s-xs); height: 20px</td></tr>
+      <tr><td class="k">text-input</td><td>backgroundColor: var(--c-surface); textColor: var(--c-ink); typography: var(--t-body-size); rounded: var(--r-xs); padding: var(--s-xs); height: 20px</td></tr>
+      <tr><td class="k">select-dropdown</td><td>backgroundColor: var(--c-surface); textColor: var(--c-ink); typography: var(--t-body-size); rounded: var(--r-xs); padding: var(--s-xs); height: 24px</td></tr>
+      <tr><td class="k">field-label</td><td>backgroundColor: var(--c-surface); textColor: var(--c-ink); typography: var(--t-link-size); rounded: var(--r-none); padding: var(--s-xxs)</td></tr>
+      <tr><td class="k">form-panel</td><td>backgroundColor: var(--c-platinum); textColor: var(--c-ink); typography: var(--t-body-size); rounded: var(--r-md); padding: var(--s-lg)</td></tr>
+      <tr><td class="k">dotted-divider</td><td>backgroundColor: var(--c-muted-indigo); textColor: var(--c-muted-indigo); rounded: var(--r-none); height: 1px</td></tr>
+      <tr><td class="k">hero-panel</td><td>backgroundColor: var(--c-lavender); textColor: var(--c-surface); typography: var(--t-display-size); rounded: var(--r-md); padding: var(--s-lg)</td></tr>
+      <tr><td class="k">section-label-bar</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); typography: var(--t-ui-label-size); rounded: var(--r-none); padding: var(--s-sm)</td></tr>
+      <tr><td class="k">news-row</td><td>backgroundColor: var(--c-platinum); textColor: var(--c-ink-soft); typography: var(--t-link-size); rounded: var(--r-sm); padding: var(--s-sm)</td></tr>
+      <tr><td class="k">featured-tile</td><td>backgroundColor: var(--c-carbon); textColor: var(--c-on-primary); typography: var(--t-micro-size); rounded: var(--r-sm); padding: var(--s-xxs)</td></tr>
+      <tr><td class="k">poll-panel</td><td>backgroundColor: var(--c-periwinkle); textColor: var(--c-ink); typography: var(--t-body-size); rounded: var(--r-md); padding: var(--s-md)</td></tr>
+      <tr><td class="k">radio-option</td><td>backgroundColor: var(--c-surface); textColor: var(--c-ink); typography: var(--t-body-size); rounded: var(--r-full); size: 12px</td></tr>
+      <tr><td class="k">info-box</td><td>backgroundColor: var(--c-surface); textColor: var(--c-ink); typography: var(--t-body-size); rounded: var(--r-sm); padding: var(--s-md)</td></tr>
+      <tr><td class="k">promo-card</td><td>backgroundColor: var(--c-lavender); textColor: var(--c-ink); typography: var(--t-display-size); rounded: var(--r-sm); padding: var(--s-md)</td></tr>
+      <tr><td class="k">system-tile</td><td>backgroundColor: var(--c-periwinkle); textColor: var(--c-ink); typography: var(--t-ui-label-size); rounded: var(--r-sm); padding: var(--s-sm)</td></tr>
+      <tr><td class="k">link-row-card</td><td>backgroundColor: var(--c-surface); textColor: var(--c-ink); typography: var(--t-body-size); rounded: var(--r-sm); padding: var(--s-sm)</td></tr>
+      <tr><td class="k">calendar-widget</td><td>backgroundColor: var(--c-surface); textColor: var(--c-ink); typography: var(--t-micro-size); rounded: var(--r-sm); padding: var(--s-sm)</td></tr>
+      <tr><td class="k">left-rail-tab</td><td>backgroundColor: var(--c-carbon); textColor: var(--c-canvas-soft); typography: var(--t-ui-label-size); rounded: var(--r-none); padding: var(--s-xs)</td></tr>
+      <tr><td class="k">footer-bar</td><td>backgroundColor: var(--c-carbon); textColor: var(--c-canvas-soft); typography: var(--t-micro-size); rounded: var(--r-none); padding: var(--s-lg)</td></tr>
+      <tr><td class="k">esrb-badge</td><td>backgroundColor: var(--c-amber); textColor: var(--c-carbon); typography: var(--t-micro-size); rounded: var(--r-xs); padding: var(--s-xxs)</td></tr>
+      <tr><td class="k">esrb-rating-square</td><td>backgroundColor: var(--c-surface); textColor: var(--c-carbon); typography: var(--t-ui-label-size); rounded: var(--r-xs); size: 20px</td></tr>
+      <tr><td class="k">mascot-bubble</td><td>backgroundColor: var(--c-surface); textColor: var(--c-carbon); typography: var(--t-micro-size); rounded: var(--r-lg); padding: var(--s-sm)</td></tr>
+      <tr><td class="k">ex-pricing-tier</td><td>description: Default Pricing tier card. Re-uses feature-card chrome with brand canvas-soft surface.; backgroundColor: var(--c-canvas-soft); textColor: var(--c-ink); borderColor: var(--c-hairline); rounded: var(--r-lg); padding: var(--s-md)</td></tr>
+      <tr><td class="k">ex-pricing-tier-featured</td><td>description: Featured/highlighted tier — polarity-flipped surface (dark fill + light text in light mode, light fill + dark text in dark mode).; backgroundColor: var(--c-ink); textColor: var(--c-on-primary); rounded: var(--r-lg); padding: var(--s-md)</td></tr>
+      <tr><td class="k">ex-product-selector</td><td>description: What&#x27;s Included summary card — re-purposed for SaaS / B2B verticals (NOT a literal product gallery).; backgroundColor: var(--c-surface); rounded: var(--r-lg); padding: var(--s-md)</td></tr>
+      <tr><td class="k">ex-cart-drawer</td><td>description: Subscription summary — re-purposed for SaaS / B2B (line items per add-on, not literal cart).; backgroundColor: var(--c-surface); rounded: var(--r-lg); padding: var(--s-md); item-divider: var(--c-hairline)</td></tr>
+      <tr><td class="k">ex-app-shell-row</td><td>description: Sidebar nav row inside the App Shell example. Active state uses brand primary as the indicator.; backgroundColor: var(--c-canvas); activeIndicator: var(--c-primary); rounded: var(--r-sm); padding: var(--s-sm) var(--s-md)</td></tr>
+      <tr><td class="k">ex-data-table-cell</td><td>description: Default data-table th + td chrome. Header uses mono-caps eyebrow typography; body uses body-sm.; headerBackground: var(--c-canvas-soft); headerTypography: var(--t-ui-label-size); bodyTypography: var(--t-body-size); cellPadding: var(--s-xs) var(--s-sm); rowBorder: var(--c-hairline)</td></tr>
+      <tr><td class="k">ex-auth-form-card</td><td>description: Sign-in / sign-up card. Re-uses feature-card chrome with text-input primitives inside.; backgroundColor: var(--c-surface); rounded: var(--r-lg); padding: var(--s-md)</td></tr>
+      <tr><td class="k">ex-modal-card</td><td>description: Modal dialog surface — same chrome as feature-card with elevated shadow.; backgroundColor: var(--c-surface); rounded: var(--r-lg); padding: var(--s-md)</td></tr>
+      <tr><td class="k">ex-empty-state-card</td><td>description: Empty-state illustration frame.; backgroundColor: var(--c-canvas-soft); rounded: var(--r-lg); padding: var(--s-xl); captionTypography: var(--t-body-size)</td></tr>
+      <tr><td class="k">ex-toast</td><td>description: Toast notification surface — feature-card shape + medium shadow.; backgroundColor: var(--c-surface); rounded: var(--r-md); padding: var(--s-sm) var(--s-md); typography: var(--t-body-size)</td></tr>
+    </tbody></table>
+  </section>
+  <footer><span>Nintendo.com (2001) Analysis — design tokens extracted from DESIGN.md</span><span>awesome-design-md / getdesign.md</span></footer>
+</div>
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script>
+</body></html>

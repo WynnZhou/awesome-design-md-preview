@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048) -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of Starbucks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kalam/v18/YA9dr0Wd4kDdMthQOCfhsCkAj7g.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kalam/v18/YA9dr0Wd4kDdMthfOCfhsCkAj7g.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kalam/v18/YA9dr0Wd4kDdMthROCfhsCkA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kalam/v18/YA9Qr0Wd4kDdMtDqHTLNkiQqtbGstvY.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kalam/v18/YA9Qr0Wd4kDdMtDqHTLCkiQqtbGstvY.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kalam/v18/YA9Qr0Wd4kDdMtDqHTLMkiQqtbGs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwf7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMw77I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* math */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuM3b7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuM2T7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwX7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwT7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwr7I_FMl_E.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwf7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMw77I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* math */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuM3b7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuM2T7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwX7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwT7I_FMl_GW8g.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwr7I_FMl_E.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+:root {
+  --green-starbucks: #006241;
+  --green-accent: #00754A;
+  --green-house: #1E3932;
+  --green-uplift: #2b5148;
+  --green-light: #d4e9e2;
+  --rewards-green: #33433d;
+  --gold: #cba258;
+  --gold-light: #dfc49d;
+  --gold-lightest: #faf6ee;
+  --white: #ffffff;
+  --neutral-cool: #f9f9f9;
+  --neutral-warm: #f2f0eb;
+  --ceramic: #edebe9;
+  --black: #000000;
+  --text-black: rgba(0, 0, 0, 0.87);
+  --text-black-soft: rgba(0, 0, 0, 0.58);
+  --red: #c82014;
+  --yellow: #fbbc05;
+  --card-shadow: 0 0 0.5px rgba(0,0,0,0.14), 0 1px 1px rgba(0,0,0,0.24);
+  --nav-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 2px 2px rgba(0,0,0,0.06), 0 0 2px rgba(0,0,0,0.07);
+  --frap-shadow: 0 0 6px rgba(0,0,0,0.24), 0 8px 12px rgba(0,0,0,0.14);
+  --font-primary: "Inter", "SoDoSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: "Lora", "Iowan Old Style", Georgia, serif;
+  --font-script: "Kalam", cursive;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: var(--font-primary);
+  background: var(--neutral-warm);
+  color: var(--text-black);
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+.nav {
+  background: var(--white);
+  box-shadow: var(--nav-shadow);
+  padding: 16px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-brand { font-weight: 700; font-size: 18px; color: var(--green-starbucks); }
+.nav-links { list-style: none; display: flex; gap: 32px; }
+.nav-links a { color: var(--text-black); text-decoration: none; font-size: 14px; font-weight: 600; }
+.nav-cta {
+  background: var(--black); color: var(--white); border: 1px solid var(--black);
+  border-radius: 50px; padding: 7px 16px; font-weight: 600;
+  font-family: inherit; font-size: 14px; cursor: pointer;
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+
+.hero { padding: 96px 40px 72px; background: var(--neutral-warm); }
+.hero h1 {
+  font-size: 50px; font-weight: 600; line-height: 1.2; letter-spacing: -0.016em;
+  max-width: 900px; margin: 0 auto 16px; text-align: center; color: var(--green-starbucks);
+}
+.hero .sub { font-size: 19px; color: var(--text-black); max-width: 640px; margin: 0 auto 32px; text-align: center; }
+.hero .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+.btn {
+  font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer;
+  border-radius: 50px; padding: 7px 16px; letter-spacing: -0.01em;
+  transition: transform 0.2s ease; border: 1px solid transparent;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.btn:active { transform: scale(0.95); }
+.btn-primary { background: var(--green-accent); color: var(--white); border-color: var(--green-accent); padding: 10px 20px; font-size: 16px; }
+.btn-outlined-green { background: transparent; color: var(--green-accent); border-color: var(--green-accent); padding: 10px 20px; font-size: 16px; }
+.btn-black { background: var(--black); color: var(--white); border-color: var(--black); }
+.btn-outlined-dark { background: transparent; color: var(--text-black); border-color: var(--text-black); }
+.btn-white-on-green { background: var(--white); color: var(--green-accent); border-color: var(--white); padding: 10px 20px; font-size: 16px; }
+.btn-outlined-white { background: transparent; color: var(--white); border-color: var(--white); padding: 10px 20px; font-size: 16px; }
+.btn-agree { background: rgb(0, 130, 72); color: var(--white); border: none; font-weight: 400; }
+
+section { padding: 72px 0; border-top: 1px solid var(--ceramic); background: var(--neutral-warm); }
+section.alt { background: var(--white); }
+section.house { background: var(--green-house); color: var(--white); }
+section.house h2.section-title { color: var(--white); }
+section.house .section-desc { color: rgba(255,255,255,0.70); }
+
+h2.section-title { font-size: 32px; font-weight: 600; margin-bottom: 8px; color: var(--green-starbucks); letter-spacing: -0.016em; }
+.section-desc { font-size: 16px; color: var(--text-black-soft); margin-bottom: 32px; max-width: 720px; }
+
+.palette-group { margin-bottom: 40px; }
+.palette-group h3 { font-size: 14px; font-weight: 700; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-black-soft); }
+.swatch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+.swatch { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: var(--card-shadow); }
+.swatch .fill { height: 80px; }
+.swatch .info { padding: 12px 16px; }
+.swatch .name { font-size: 14px; font-weight: 600; color: var(--text-black); }
+.swatch .hex { font-size: 12px; color: var(--text-black-soft); font-family: ui-monospace, monospace; margin-top: 2px; }
+.swatch .role { font-size: 12px; color: var(--text-black-soft); margin-top: 6px; line-height: 16px; }
+
+.type-row { display: grid; grid-template-columns: 260px 1fr; gap: 24px; padding: 16px 0; border-bottom: 1px solid var(--ceramic); align-items: baseline; }
+.type-label { font-size: 12px; color: var(--text-black-soft); font-family: ui-monospace, monospace; line-height: 16px; }
+
+.btn-showcase { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+.btn-item { display: flex; flex-direction: column; gap: 8px; }
+.btn-item .caption { font-size: 12px; color: var(--text-black-soft); }
+
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
+.card {
+  background: var(--white); border-radius: 12px; padding: 24px; box-shadow: var(--card-shadow);
+}
+.card h4 { font-size: 20px; font-weight: 600; margin-bottom: 8px; color: var(--text-black); }
+.card p { font-size: 14px; color: var(--text-black-soft); }
+
+.status-card {
+  background: var(--green-house); color: var(--white); border-radius: 12px;
+  padding: 24px; box-shadow: var(--card-shadow); position: relative;
+}
+.status-card::before {
+  content: ""; display: block; height: 6px; border-radius: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  margin-bottom: 20px;
+}
+.status-card h4 { font-size: 24px; font-weight: 600; margin-bottom: 12px; }
+.status-card ul { list-style: none; padding: 0; font-size: 14px; color: rgba(255,255,255,0.85); }
+.status-card li { padding: 4px 0; }
+.status-card .caption { font-size: 12px; color: rgba(255,255,255,0.70); margin-top: 12px; font-style: italic; }
+
+.frap-demo {
+  position: relative; background: var(--neutral-warm); border-radius: 12px;
+  padding: 60px 40px; min-height: 200px; display: flex; align-items: center; justify-content: center;
+  font-size: 14px; color: var(--text-black-soft);
+}
+.frap-button {
+  position: absolute; bottom: 24px; right: 24px; width: 56px; height: 56px;
+  border-radius: 50%; background: var(--green-accent); border: none; cursor: pointer;
+  box-shadow: var(--frap-shadow); display: inline-flex; align-items: center; justify-content: center;
+  color: var(--white); font-size: 22px; transition: transform 0.2s ease;
+}
+.frap-button:active { transform: scale(0.95); }
+
+.form-field { margin-bottom: 16px; max-width: 480px; }
+.form-field label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-black); letter-spacing: -0.01em; }
+.form-field input, .form-field textarea {
+  width: 100%; background: var(--white); border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 12px; padding: 12px; font-size: 16px; font-family: inherit; color: var(--text-black);
+}
+.form-field input:focus, .form-field textarea:focus { outline: none; border-color: var(--green-accent); }
+.form-field input.valid { background: hsl(160 32% 87% / 33%); border-color: var(--green-accent); }
+.form-field input.invalid { background: hsl(4 82% 43% / 5%); border-color: var(--red); }
+.form-field textarea { min-height: 96px; resize: vertical; }
+
+.spacing-row { display: flex; flex-direction: column; gap: 8px; }
+.spacing-item { display: flex; align-items: center; gap: 16px; }
+.spacing-bar { background: var(--green-accent); height: 24px; border-radius: 4px; }
+.spacing-label { font-size: 12px; font-family: ui-monospace, monospace; color: var(--text-black-soft); min-width: 160px; }
+
+.radius-row { display: flex; gap: 24px; flex-wrap: wrap; }
+.radius-item { width: 120px; }
+.radius-box { width: 120px; height: 80px; background: var(--white); box-shadow: var(--card-shadow); margin-bottom: 8px; }
+.radius-label { font-size: 12px; color: var(--text-black-soft); font-family: ui-monospace, monospace; }
+
+.elevation-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; background: var(--neutral-warm); padding: 32px; border-radius: 12px; }
+.elevation-card { background: var(--white); padding: 24px; border-radius: 12px; text-align: center; }
+
+.gift-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
+.gift-tile { aspect-ratio: 1.586 / 1; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 14px; font-weight: 600; text-align: center; padding: 16px; }
+
+.breakpoint-table { width: 100%; border-collapse: collapse; }
+.breakpoint-table th, .breakpoint-table td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--ceramic); font-size: 14px; }
+.breakpoint-table th { font-weight: 700; color: var(--text-black-soft); font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; }
+
+.viewport-ladder { display: flex; gap: 12px; align-items: flex-end; margin-top: 24px; flex-wrap: wrap; }
+.viewport-box { background: var(--white); box-shadow: var(--card-shadow); border-radius: 8px; padding: 12px; display: flex; flex-direction: column; justify-content: flex-end; }
+.viewport-box .w { font-weight: 700; font-size: 14px; color: var(--text-black); }
+.viewport-box .label { font-size: 11px; color: var(--text-black-soft); }
+
+.chip-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+.chip-row-item { display: flex; align-items: center; gap: 12px; padding: 12px; background: var(--white); border-radius: 12px; box-shadow: var(--card-shadow); }
+.chip-swatch { width: 28px; height: 28px; border-radius: 6px; flex-shrink: 0; }
+.chip-meta { flex: 1; }
+.chip-role { font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-black-soft); font-weight: 700; }
+.chip-name { font-size: 14px; font-weight: 600; color: var(--text-black); }
+.chip-hex { font-size: 12px; color: var(--text-black-soft); font-family: ui-monospace, monospace; }
+
+.footer {
+  background: var(--green-house); color: rgba(255,255,255,0.85);
+  text-align: center; padding: 24px; font-size: 14px;
+}
+
+/* getdesign.md nav additions */
+.nav-left { display: flex; align-items: center; gap: 20px; }
+.nav-brand-link,
+.nav-brand-link:link,
+.nav-brand-link:visited,
+.nav-brand-link:hover,
+.nav-brand-link:active { text-decoration: none; color: inherit; }
+.nav-github,
+.nav-github:link,
+.nav-github:visited,
+.nav-github:hover,
+.nav-github:active {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 600; color: inherit; text-decoration: none;
+  padding: 5px 10px; border: 1px solid rgba(128, 128, 128, 0.3); border-radius: 6px;
+  opacity: 0.75; transition: opacity 200ms ease, border-color 200ms ease;
+  font-family: inherit; line-height: 1; white-space: nowrap;
+}
+.nav-github:hover { opacity: 1; border-color: rgba(128, 128, 128, 0.55); }
+.nav-github svg { display: block; flex-shrink: 0; }
+
+/* getdesign.md nav centering */
+.nav { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; }
+.nav > .nav-left { justify-self: start; }
+.nav > .nav-links { justify-self: center; }
+.nav > :last-child { justify-self: end; }
+
+
+  /* Shared VoltAgent footer content */
+  .footer { text-align: left; }
+  .footer-shell { max-width: 1200px; margin: 0 auto; }
+  .footer-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; }
+  .footer-col h6 { margin: 0 0 14px; color: inherit; font: inherit; font-weight: 700; font-size: 14px; line-height: 1.2; }
+  .footer-col span { display: block; margin: 0 0 10px; color: inherit; opacity: 0.72; font-size: 14px; line-height: 1.35; }
+  .footer-credit { margin-top: 48px; padding-top: 24px; border-top: 1px solid currentColor; color: inherit; opacity: 0.78; font-size: 13px; line-height: 1.4; }
+  .footer-credit a { color: inherit; text-decoration: none; font-weight: 600; }
+  .footer-credit img { border-radius: 3px; vertical-align: -2px; margin-right: 3px; }
+  @media (max-width: 760px) {
+    .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#palette">Colors</a></li>
+    <li><a href="#type">Typography</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#components">Components</a></li>
+  </ul>
+  <button class="nav-cta">Join now</button>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <h1>Design System Analysis of Starbucks</h1>
+    <p class="sub">A visual catalog of the tokens, components, and layout principles extracted from Starbucks.com — generated from DESIGN.md.</p>
+    <div class="cta-row">
+      <button class="btn btn-primary">Join Starbucks Rewards</button>
+      <button class="btn btn-outlined-green">See the spring menu</button>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="palette">
+  <div class="container">
+    <h2 class="section-title">1. Color Palette</h2>
+    <p class="section-desc">Four-tier green brand system, warm-neutral cream canvas, gold reserved for Rewards ceremony only.</p>
+
+    <div class="palette-group"><h3>Primary — The Four Greens</h3>
+      <div class="swatch-grid">
+        <div class="swatch"><div class="fill" style="background:#006241"></div><div class="info"><div class="name">Starbucks Green</div><div class="hex">#006241</div><div class="role">Primary headings, brand signal</div></div></div>
+        <div class="swatch"><div class="fill" style="background:#00754A"></div><div class="info"><div class="name">Green Accent</div><div class="hex">#00754A</div><div class="role">Filled CTAs, Frap floating button</div></div></div>
+        <div class="swatch"><div class="fill" style="background:#1E3932"></div><div class="info"><div class="name">House Green</div><div class="hex">#1E3932</div><div class="role">Feature bands, footer, deep surfaces</div></div></div>
+        <div class="swatch"><div class="fill" style="background:#2b5148"></div><div class="info"><div class="name">Green Uplift</div><div class="hex">#2b5148</div><div class="role">Decorative accent, mid-dark</div></div></div>
+        <div class="swatch"><div class="fill" style="background:#d4e9e2"></div><div class="info"><div class="name">Green Light</div><div class="hex">#d4e9e2</div><div class="role">Valid-field tint, light utility</div></div></div>
+      </div>
+    </div>
+
+    <div class="palette-group"><h3>Gold (Rewards Ceremony Only)</h3>
+      <div class="swatch-grid">
+        <div class="swatch"><div class="fill" style="background:#cba258"></div><div class="info"><div class="name">Gold</div><div class="hex">#cba258</div><div class="role">Gold-tier status, premium accent</div></div></div>
+        <div class="swatch"><div class="fill" style="background:#dfc49d"></div><div class="info"><div class="name">Gold Light</div><div class="hex">#dfc49d</div><div class="role">Softer gold wash</div></div></div>
+        <div class="swatch"><div class="fill" style="background:#faf6ee"></div><div class="info"><div class="name">Gold Lightest</div><div class="hex">#faf6ee</div><div class="role">Partnership band cream-gold</div></div></div>
+      </div>
+    </div>
+
+    <div class="palette-group"><h3>Surface &amp; Background</h3>
+      <div class="swatch-grid">
+        <div class="swatch"><div class="fill" style="background:#ffffff;border:1px solid #edebe9"></div><div class="info"><div class="name">White</div><div class="hex">#ffffff</div><div class="role">Card and modal surface</div></div></div>
+        <div class="swatch"><div class="fill" style="background:#f9f9f9"></div><div class="info"><div class="name">Neutral Cool</div><div class="hex">#f9f9f9</div><div class="role">Dropdown menu, subtle gray</div></div></div>
+        <div class="swatch"><div class="fill" style="background:#f2f0eb"></div><div class="info"><div class="name">Neutral Warm</div><div class="hex">#f2f0eb</div><div class="role">Primary page canvas</div></div></div>
+        <div class="swatch"><div class="fill" style="background:#edebe9"></div><div class="info"><div class="name">Ceramic</div><div class="hex">#edebe9</div><div class="role">Zone separator, warm wash</div></div></div>
+        <div class="swatch"><div class="fill" style="background:#000000"></div><div class="info"><div class="name">Black</div><div class="hex">#000000</div><div class="role">"Join now" CTA, high-contrast</div></div></div>
+      </div>
+    </div>
+
+    <div class="palette-group"><h3>Text &amp; Semantic</h3>
+      <div class="swatch-grid">
+        <div class="swatch"><div class="fill" style="background:rgba(0,0,0,0.87)"></div><div class="info"><div class="name">Text Black</div><div class="hex">rgba(0,0,0,0.87)</div><div class="role">Body + heading on light</div></div></div>
+        <div class="swatch"><div class="fill" style="background:rgba(0,0,0,0.58)"></div><div class="info"><div class="name">Text Black Soft</div><div class="hex">rgba(0,0,0,0.58)</div><div class="role">Metadata, secondary text</div></div></div>
+        <div class="swatch"><div class="fill" style="background:#33433d"></div><div class="info"><div class="name">Rewards Green</div><div class="hex">#33433d</div><div class="role">Rewards-page body text</div></div></div>
+        <div class="swatch"><div class="fill" style="background:#c82014"></div><div class="info"><div class="name">Red</div><div class="hex">#c82014</div><div class="role">Error, destructive</div></div></div>
+        <div class="swatch"><div class="fill" style="background:#fbbc05"></div><div class="info"><div class="name">Yellow</div><div class="hex">#fbbc05</div><div class="role">Warning state</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="type">
+  <div class="container">
+    <h2 class="section-title">2. Typography Scale</h2>
+    <p class="section-desc">SoDoSans for everything with tight <code>-0.01em</code> tracking. Serif and script reserved for Rewards and Careers contexts.</p>
+
+    <div class="type-row"><div class="type-label">Display · text-10<br>50px / 600 / 1.2 / -0.16px</div><div style="font-size:50px;font-weight:600;line-height:1.2;letter-spacing:-0.016em;color:var(--green-starbucks)">Free coffee is just the beginning</div></div>
+    <div class="type-row"><div class="type-label">Jumbo · text-9<br>36px / 600 / 1.2</div><div style="font-size:36px;font-weight:600;line-height:1.2;letter-spacing:-0.016em;color:var(--green-starbucks)">Good afternoon</div></div>
+    <div class="type-row"><div class="type-label">Hero Large · text-8<br>28px / 600 / 1.2</div><div style="font-size:28px;font-weight:600;line-height:1.2;letter-spacing:-0.016em">Your afternoon reset</div></div>
+    <div class="type-row"><div class="type-label">H1<br>24px / 600 / 36 · Starbucks Green</div><div style="font-size:24px;font-weight:600;line-height:36px;color:var(--green-starbucks)">How it works</div></div>
+    <div class="type-row"><div class="type-label">H2<br>24px / 400 / 36 · Text Black</div><div style="font-size:24px;font-weight:400;line-height:36px">Get rewarded for your routine</div></div>
+    <div class="type-row"><div class="type-label">Body Large<br>19px / 400 / 1.75</div><div style="font-size:19px;font-weight:400;line-height:33.25px">Join Starbucks Rewards to earn Stars for free food and drinks, anytime you want.</div></div>
+    <div class="type-row"><div class="type-label">Body · text-3<br>16px / 400 / 24</div><div style="font-size:16px;font-weight:400;line-height:24px">Default body copy. Comfortable reading rhythm at 16/24 with warm near-black text.</div></div>
+    <div class="type-row"><div class="type-label">Small · text-2<br>14px / 600 / 21</div><div style="font-size:14px;font-weight:600;line-height:21px">Button label weight</div></div>
+    <div class="type-row"><div class="type-label">Micro · text-1<br>13px / 400</div><div style="font-size:13px;font-weight:400;color:var(--text-black-soft)">Active float-label / caption</div></div>
+    <div class="type-row"><div class="type-label">Rewards Serif<br>Lora / Iowan Old Style</div><div style="font-family:var(--font-serif);font-size:28px;font-weight:500;line-height:1.25;color:var(--rewards-green)">Earn stars. Enjoy perks.</div></div>
+    <div class="type-row"><div class="type-label">Careers Script<br>Kalam (cup-names)</div><div style="font-family:var(--font-script);font-size:28px;font-weight:700">Sarah</div></div>
+  </div>
+</section>
+
+<section class="alt" id="buttons">
+  <div class="container">
+    <h2 class="section-title">3. Button Variants</h2>
+    <p class="section-desc">Every button is a 50px full pill with <code>scale(0.95)</code> active press. Weight contrasts primary (green filled) vs signin (outlined dark) vs conversion (black filled).</p>
+    <div class="btn-showcase">
+      <div class="btn-item"><button class="btn btn-primary">Explore our afternoon menu</button><span class="caption">Primary Filled · Green Accent</span></div>
+      <div class="btn-item"><button class="btn btn-outlined-green">Give them a try</button><span class="caption">Primary Outlined · Green Accent border</span></div>
+      <div class="btn-item"><button class="btn btn-black">Join now</button><span class="caption">Black Filled · conversion</span></div>
+      <div class="btn-item"><button class="btn btn-outlined-dark">Sign in</button><span class="caption">Dark Outlined · sign-in</span></div>
+      <div class="btn-item" style="background:var(--green-house);padding:16px;border-radius:12px;display:flex;gap:12px"><button class="btn btn-white-on-green">See the spring menu</button><button class="btn btn-outlined-white">Learn more</button></div>
+      <div class="btn-item"><button class="btn btn-agree">Agree</button><span class="caption">Consent Agree variant</span></div>
+    </div>
+
+    <h3 style="margin-top:48px;margin-bottom:16px;font-size:20px;font-weight:600">Frap — Floating Circular Order Button</h3>
+    <div class="frap-demo">
+      Hover over this card — the Frap sits bottom-right
+      <button class="frap-button" aria-label="Start an order">🛒</button>
+    </div>
+  </div>
+</section>
+
+<section id="components">
+  <div class="container">
+    <h2 class="section-title">4. Signature Components</h2>
+    <p class="section-desc">Content cards, Rewards status panels, gift-card tiles, feature bands.</p>
+
+    <h3 style="margin:24px 0 12px;font-size:20px;font-weight:600">Content Cards</h3>
+    <div class="card-grid">
+      <div class="card"><h4>How it works</h4><p>12px radius with whisper-soft dual-shadow stack. Default content surface.</p></div>
+      <div class="card"><h4>Your afternoon reset</h4><p>Same baseline card, used for feature modules on the cream canvas.</p></div>
+      <div class="card"><h4>Partnership</h4><p>Gold-tint variant inherits the same 12px radius but on <code>#faf6ee</code> background for Rewards partnership band.</p></div>
+    </div>
+
+    <h3 style="margin:40px 0 12px;font-size:20px;font-weight:600">Rewards Status Cards (3-up)</h3>
+    <div class="card-grid">
+      <div class="status-card"><h4>Green Level</h4><ul><li>★ Earn Stars on every order</li><li>★ Personalized offers</li><li>★ Birthday reward</li></ul><p class="caption">As you earn more Stars, you unlock new benefits.</p></div>
+      <div class="status-card"><h4>Gold Level</h4><ul><li>★ Free refills of hot/iced coffee</li><li>★ Monthly Double-Star days</li><li>★ Personalized rewards</li></ul><p class="caption">Reach Gold status by earning 450 Stars in 12 months.</p></div>
+      <div class="status-card"><h4>Mission</h4><ul><li>★ Exclusive gifts</li><li>★ Double Star days</li><li>★ Free drink on your birthday</li></ul><p class="caption">Extra perks once you reach mission status.</p></div>
+    </div>
+
+    <h3 style="margin:40px 0 12px;font-size:20px;font-weight:600">Gift Card Tiles (photographed as physical product)</h3>
+    <div class="gift-grid">
+      <div class="gift-tile" style="background:linear-gradient(135deg,#f4c590,#e89a5e)">Happy Birthday</div>
+      <div class="gift-tile" style="background:linear-gradient(135deg,#cba258,#a87b3e)">Thank You</div>
+      <div class="gift-tile" style="background:linear-gradient(135deg,#006241,#00754A)">Celebrate</div>
+      <div class="gift-tile" style="background:linear-gradient(135deg,#c4a679,#8b6e4a)">Mother's Day</div>
+      <div class="gift-tile" style="background:linear-gradient(135deg,#d4e9e2,#80b5a2);color:var(--green-house)">Spring</div>
+      <div class="gift-tile" style="background:linear-gradient(135deg,#edebe9,#c2bfb9);color:var(--green-house)">Anytime</div>
+    </div>
+  </div>
+</section>
+
+<section class="house">
+  <div class="container">
+    <h2 class="section-title">5. Feature Band (House Green)</h2>
+    <p class="section-desc">Full-width dark-green zones for feature moments. White headline + translucent-white secondary + two-button CTA row.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:32px">
+      <div>
+        <h3 style="font-size:36px;font-weight:600;line-height:1.2;letter-spacing:-0.016em;margin-bottom:16px;color:var(--white)">Spring starts now</h3>
+        <p style="font-size:19px;color:rgba(255,255,255,0.85);margin-bottom:24px;line-height:1.6">Iced Lavender Cream Matcha and Iced Lavender Cream Oatmilk Matcha, now available.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <button class="btn btn-white-on-green">See the spring menu</button>
+          <button class="btn btn-outlined-white">Order now</button>
+        </div>
+      </div>
+      <div style="background:rgba(255,255,255,0.08);border-radius:12px;padding:60px;text-align:center;color:rgba(255,255,255,0.6)">Product photography</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">6. Product Detail Components (PDP)</h2>
+    <p class="section-desc">Size selector, add-in rows, customize flow, Rewards Cost pill, description band, nutrition table — the menu-product-page component cluster.</p>
+
+    <h3 style="margin:24px 0 12px;font-size:20px;font-weight:600;color:var(--ink)">PDP Breadcrumb</h3>
+    <div style="font-size:14px;color:var(--text-black-soft);margin-bottom:24px">
+      <a href="#" style="color:var(--green-accent);text-decoration:underline">Menu</a> &nbsp;/&nbsp; <a href="#" style="color:var(--green-accent);text-decoration:underline">Refreshers</a> &nbsp;/&nbsp; <span style="color:var(--text-black)">Pink Energy Drink</span>
+    </div>
+
+    <h3 style="margin:24px 0 12px;font-size:20px;font-weight:600;color:var(--ink)">Size Options Selector</h3>
+    <div style="display:flex;gap:16px;max-width:600px;margin-bottom:32px">
+      <div style="flex:1;text-align:center;padding:16px 8px">
+        <div style="width:48px;height:56px;margin:0 auto 8px;background:transparent;border:2px solid transparent;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--ink)">☕</div>
+        <div style="font-size:16px;font-weight:700;color:var(--green-starbucks)">Tall</div>
+        <div style="font-size:13px;color:var(--text-black-soft);margin-top:2px">12 fl oz</div>
+      </div>
+      <div style="flex:1;text-align:center;padding:16px 8px">
+        <div style="width:48px;height:56px;margin:0 auto 8px;border:2px solid var(--green-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--green-accent)">☕</div>
+        <div style="font-size:16px;font-weight:700;color:var(--green-starbucks)">Grande</div>
+        <div style="font-size:13px;color:var(--text-black-soft);margin-top:2px">16 fl oz</div>
+      </div>
+      <div style="flex:1;text-align:center;padding:16px 8px">
+        <div style="width:48px;height:56px;margin:0 auto 8px;background:transparent;border:2px solid transparent;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;color:var(--ink)">☕</div>
+        <div style="font-size:16px;font-weight:700;color:var(--green-starbucks)">Venti</div>
+        <div style="font-size:13px;color:var(--text-black-soft);margin-top:2px">24 fl oz</div>
+      </div>
+      <div style="flex:1;text-align:center;padding:16px 8px">
+        <div style="width:48px;height:56px;margin:0 auto 8px;background:transparent;border:2px solid transparent;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:36px;color:var(--ink)">☕</div>
+        <div style="font-size:16px;font-weight:700;color:var(--green-starbucks)">Trenta</div>
+        <div style="font-size:13px;color:var(--text-black-soft);margin-top:2px">30 fl oz</div>
+      </div>
+    </div>
+
+    <h3 style="margin:24px 0 12px;font-size:20px;font-weight:600;color:var(--ink)">Add-in / Milk Select Fields</h3>
+    <div style="max-width:520px;display:flex;flex-direction:column;gap:16px;margin-bottom:32px">
+      <div style="position:relative;border:1px solid var(--border);border-radius:4px;padding:20px 16px 12px;background:var(--white)">
+        <span style="position:absolute;top:4px;left:16px;font-size:11px;font-weight:700;color:var(--text-black);letter-spacing:0.325px;text-transform:uppercase">Add-ins</span>
+        <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:16px">Ice</span><span style="color:var(--text-black-soft)">▾</span></div>
+      </div>
+      <div style="position:relative;border:1px solid var(--border);border-radius:4px;padding:20px 16px 12px;background:var(--white)">
+        <span style="position:absolute;top:4px;left:16px;font-size:11px;font-weight:700;color:var(--text-black);letter-spacing:0.325px;text-transform:uppercase">Add-ins</span>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <span style="font-size:16px">Strawberry Fruit Inclusions scoop</span>
+          <div style="display:flex;align-items:center;gap:8px">
+            <button style="width:32px;height:32px;border-radius:50%;border:1px solid var(--border);background:var(--white);cursor:pointer">−</button>
+            <span style="font-size:16px;font-weight:700;min-width:20px;text-align:center">1</span>
+            <button style="width:32px;height:32px;border-radius:50%;border:1px solid var(--border);background:var(--white);cursor:pointer">+</button>
+          </div>
+        </div>
+      </div>
+      <div style="position:relative;border:1px solid var(--border);border-radius:4px;padding:20px 16px 12px;background:var(--white)">
+        <span style="position:absolute;top:4px;left:16px;font-size:11px;font-weight:700;color:var(--text-black);letter-spacing:0.325px;text-transform:uppercase">Milk</span>
+        <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:16px">Coconut</span><span style="color:var(--text-black-soft)">▾</span></div>
+      </div>
+    </div>
+
+    <h3 style="margin:24px 0 12px;font-size:20px;font-weight:600;color:var(--ink)">Customize + Add to Order (paired actions)</h3>
+    <div style="display:flex;gap:12px;align-items:center;margin-bottom:32px;flex-wrap:wrap">
+      <button style="background:var(--white);color:var(--green-accent);border:1.5px solid var(--green-accent);border-radius:50px;padding:14px 40px;font-size:16px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:8px;font-family:inherit"><span style="color:var(--gold)">✨</span> Customize</button>
+      <button class="btn btn-primary">Add to Order</button>
+    </div>
+
+    <h3 style="margin:24px 0 12px;font-size:20px;font-weight:600;color:var(--ink)">Rewards Cost Pill ("200★ item")</h3>
+    <div style="display:flex;gap:12px;margin-bottom:32px;flex-wrap:wrap">
+      <span style="display:inline-block;border:1px solid var(--gold);color:var(--gold);border-radius:50px;padding:4px 12px;font-size:13px;font-weight:700;letter-spacing:0.5px">200★ item</span>
+      <span style="display:inline-block;border:1px solid var(--gold);color:var(--gold);border-radius:50px;padding:4px 12px;font-size:13px;font-weight:700;letter-spacing:0.5px">150★ item</span>
+      <span style="display:inline-block;border:1px solid var(--gold);color:var(--gold);border-radius:50px;padding:4px 12px;font-size:13px;font-weight:700;letter-spacing:0.5px">75★ item</span>
+    </div>
+
+    <h3 style="margin:24px 0 12px;font-size:20px;font-weight:600;color:var(--ink)">Product Description Band (House Green)</h3>
+    <div style="background:var(--green-house);color:var(--white);padding:32px;border-radius:4px;margin-bottom:32px">
+      <span style="display:inline-block;border:1px solid var(--gold);color:var(--gold);border-radius:50px;padding:4px 12px;font-size:13px;font-weight:700;letter-spacing:0.5px;margin-bottom:16px">200★ item</span>
+      <p style="font-size:16px;line-height:1.5;margin-bottom:16px;color:rgba(255,255,255,0.85)">Crafted with crisp strawberry and smooth coconutmilk, then hand-shaken with ice and real freeze-dried strawberries. Your ultimate energizing pick-me-up — boosted with 125mg of caffeine in a grande and an excellent source of B vitamins.</p>
+      <p style="font-size:14px;font-weight:700;margin-bottom:20px">140 calories, 25g sugar, 2.5g fat <span style="opacity:0.7;font-weight:400">ⓘ</span></p>
+      <button class="btn btn-outlined-white">Full nutrition &amp; ingredients list</button>
+    </div>
+
+    <h3 style="margin:24px 0 12px;font-size:20px;font-weight:600;color:var(--ink)">Ingredients / Nutrition Table</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;background:var(--white);border:1px solid var(--hairline);border-radius:4px;padding:32px">
+      <div>
+        <h4 style="font-size:24px;font-weight:400;margin-bottom:16px;color:var(--ink)">Ingredients</h4>
+        <p style="font-size:14px;color:var(--text-black-soft);margin-bottom:8px;font-weight:700">Not available for this item</p>
+        <p style="font-size:14px;color:var(--text-black-soft);line-height:1.5">We cannot guarantee that any prepackaged products served in our stores are allergen-free because we use shared equipment to store, prepare, and serve them. Customers with allergies can find ingredient information for products on the labels of our packaged products or online at Starbucks.com/menu.</p>
+      </div>
+      <div>
+        <h4 style="font-size:24px;font-weight:400;margin-bottom:16px;color:var(--ink)">Nutrition</h4>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--hairline);font-size:14px"><span>Calories</span><span style="font-weight:700">5</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--hairline);font-size:14px"><span>Total Fat</span><span style="font-weight:700">0 g</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--hairline);font-size:14px"><span>Saturated Fat</span><span style="font-weight:700">0 g</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--hairline);font-size:14px"><span>Trans Fat</span><span style="font-weight:700">0 g</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--hairline);font-size:14px"><span>Cholesterol</span><span style="font-weight:700">0 mg</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--hairline);font-size:14px"><span>Sodium</span><span style="font-weight:700">15 mg</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--hairline);font-size:14px"><span>Total Carbohydrates</span><span style="font-weight:700">0 g</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--hairline);font-size:14px"><span>Protein</span><span style="font-weight:700">0 g</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;font-size:14px"><span>Caffeine</span><span style="font-weight:700">205 mg**</span></div>
+        <p style="font-size:12px;color:var(--text-black-soft);margin-top:12px;line-height:1.5">** Caffeine is an approximate value. 2,000 calories a day is used for general nutrition advice, but calorie needs vary.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <h2 class="section-title">7. Form Elements</h2>
+    <p class="section-desc">Floating labels animate size + position on focus. Valid-field gets mint tint, invalid gets pale red tint.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:800px">
+      <div>
+        <div class="form-field"><label>Email</label><input type="email" class="valid" value="sarah@example.com"></div>
+        <div class="form-field"><label>Password</label><input type="password" value="••••••••"></div>
+        <div class="form-field"><label>Confirm Password</label><input type="password" class="invalid" value="mismatch"></div>
+      </div>
+      <div>
+        <div class="form-field"><label>Message</label><textarea placeholder="Your feedback..."></textarea></div>
+        <button class="btn btn-primary" style="width:100%">Submit</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">8. Spacing Scale</h2>
+    <p class="section-desc">Rem-based (<code>1rem = 10px</code>). <code>--space-3</code> (16px) is the universal rhythm constant.</p>
+    <div class="spacing-row">
+      <div class="spacing-item"><span class="spacing-label">space-1 · 0.4rem · 4px</span><div class="spacing-bar" style="width:4px"></div></div>
+      <div class="spacing-item"><span class="spacing-label">space-2 · 0.8rem · 8px</span><div class="spacing-bar" style="width:8px"></div></div>
+      <div class="spacing-item"><span class="spacing-label">space-3 · 1.6rem · 16px ★</span><div class="spacing-bar" style="width:16px"></div></div>
+      <div class="spacing-item"><span class="spacing-label">space-4 · 2.4rem · 24px</span><div class="spacing-bar" style="width:24px"></div></div>
+      <div class="spacing-item"><span class="spacing-label">space-5 · 3.2rem · 32px</span><div class="spacing-bar" style="width:32px"></div></div>
+      <div class="spacing-item"><span class="spacing-label">space-6 · 4rem · 40px</span><div class="spacing-bar" style="width:40px"></div></div>
+      <div class="spacing-item"><span class="spacing-label">space-7 · 4.8rem · 48px</span><div class="spacing-bar" style="width:48px"></div></div>
+      <div class="spacing-item"><span class="spacing-label">space-8 · 5.6rem · 56px</span><div class="spacing-bar" style="width:56px"></div></div>
+      <div class="spacing-item"><span class="spacing-label">space-9 · 6.4rem · 64px</span><div class="spacing-bar" style="width:64px"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <h2 class="section-title">9. Border Radius &amp; Depth</h2>
+    <p class="section-desc">12px cards + 50px pills dominate. Shadows are layered low-alpha stacks, never heavy drop shadows.</p>
+    <div class="radius-row">
+      <div class="radius-item"><div class="radius-box" style="border-radius:12px"></div><div class="radius-label">12px · cards</div></div>
+      <div class="radius-item"><div class="radius-box" style="border-radius:12px 12px 0 0"></div><div class="radius-label">12px top · feedback tab</div></div>
+      <div class="radius-item"><div class="radius-box" style="border-radius:50px;height:48px"></div><div class="radius-label">50px · pills</div></div>
+      <div class="radius-item"><div class="radius-box" style="border-radius:50%;width:80px;height:80px"></div><div class="radius-label">50% · Frap, icons</div></div>
+    </div>
+
+    <h3 style="margin-top:32px;margin-bottom:16px;font-size:20px;font-weight:600">Elevation Tiers</h3>
+    <div class="elevation-row">
+      <div class="elevation-card" style="box-shadow:0 0 0.5px rgba(0,0,0,0.14), 0 1px 1px rgba(0,0,0,0.24)"><strong>Card</strong><div style="font-size:12px;color:var(--text-black-soft);margin-top:8px">2-layer whisper shadow</div></div>
+      <div class="elevation-card" style="box-shadow:0 1px 3px rgba(0,0,0,0.1), 0 2px 2px rgba(0,0,0,0.06), 0 0 2px rgba(0,0,0,0.07)"><strong>Global Nav</strong><div style="font-size:12px;color:var(--text-black-soft);margin-top:8px">3-layer soft lift</div></div>
+      <div class="elevation-card" style="box-shadow:0 0 6px rgba(0,0,0,0.24), 0 8px 12px rgba(0,0,0,0.14)"><strong>Frap</strong><div style="font-size:12px;color:var(--text-black-soft);margin-top:8px">Base + ambient stack</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">10. Responsive Behavior</h2>
+    <p class="section-desc">Progressive nav heights (64 → 72 → 83 → 99px). Gift grid scales 2-up → 5-up.</p>
+    <table class="breakpoint-table">
+      <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+      <tbody>
+        <tr><td>xs</td><td>&lt; 480px</td><td>Nav 64px · hamburger · single-column · gift grid 2-up</td></tr>
+        <tr><td>Mobile</td><td>480–767px</td><td>Nav 72px · 2-up gift · tightened padding</td></tr>
+        <tr><td>Tablet</td><td>768–1023px</td><td>Nav 83px · 3-up gift · hero split appears</td></tr>
+        <tr><td>Desktop</td><td>1024–1439px</td><td>Nav 99px · 4-up gift · full 40/60 hero</td></tr>
+        <tr><td>XLarge</td><td>1440px+</td><td>Content caps 1440px · 5-up gift · wide cream margins</td></tr>
+      </tbody>
+    </table>
+
+    <div class="viewport-ladder">
+      <div class="viewport-box" style="width:60px;height:80px"><div class="w">480</div><div class="label">xs</div></div>
+      <div class="viewport-box" style="width:96px;height:110px"><div class="w">768</div><div class="label">mobile/tablet</div></div>
+      <div class="viewport-box" style="width:140px;height:140px"><div class="w">1024</div><div class="label">desktop</div></div>
+      <div class="viewport-box" style="width:220px;height:175px"><div class="w">1440</div><div class="label">xlarge cap</div></div>
+    </div>
+
+    <h3 style="margin:32px 0 12px;font-size:20px;font-weight:600">Touch Targets</h3>
+    <p style="font-size:14px;color:var(--text-black-soft);margin-bottom:24px">Pill buttons at `7px 16px` padding are ~32px tall — typically expanded visually on mobile to meet 44px WCAG AAA. Frap at 56px clears the minimum with an extra <code>-0.8rem</code> tap offset.</p>
+
+    <h3 style="margin-bottom:12px;font-size:20px;font-weight:600">Collapsing Strategy</h3>
+    <ul style="padding-left:20px;font-size:14px;color:var(--text-black-soft);line-height:24px">
+      <li><strong style="color:var(--text-black)">Global nav:</strong> 64 → 72 → 83 → 99px across breakpoints; hamburger menu below tablet</li>
+      <li><strong style="color:var(--text-black)">Hero split:</strong> 40/60 asymmetric → stacked on mobile</li>
+      <li><strong style="color:var(--text-black)">Gift-card grid:</strong> 5 → 4 → 3 → 2 → 1 columns</li>
+      <li><strong style="color:var(--text-black)">Outer gutter:</strong> 16 → 24 → 40px</li>
+      <li><strong style="color:var(--text-black)">Rewards status panels:</strong> 3-up → single column on mobile</li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <h2 class="section-title">11. Agent Prompt Guide — Quick Color Reference</h2>
+    <p class="section-desc">Copy-paste names for AI agents generating Starbucks-style UI.</p>
+    <div class="chip-grid">
+      <div class="chip-row-item"><div class="chip-swatch" style="background:#00754A"></div><div class="chip-meta"><div class="chip-role">Primary CTA</div><div class="chip-name">Green Accent</div><div class="chip-hex">#00754A</div></div></div>
+      <div class="chip-row-item"><div class="chip-swatch" style="background:#006241"></div><div class="chip-meta"><div class="chip-role">Brand Heading</div><div class="chip-name">Starbucks Green</div><div class="chip-hex">#006241</div></div></div>
+      <div class="chip-row-item"><div class="chip-swatch" style="background:#1E3932"></div><div class="chip-meta"><div class="chip-role">Feature Band / Footer</div><div class="chip-name">House Green</div><div class="chip-hex">#1E3932</div></div></div>
+      <div class="chip-row-item"><div class="chip-swatch" style="background:#f2f0eb;border:1px solid #edebe9"></div><div class="chip-meta"><div class="chip-role">Page Canvas</div><div class="chip-name">Neutral Warm</div><div class="chip-hex">#f2f0eb</div></div></div>
+      <div class="chip-row-item"><div class="chip-swatch" style="background:#edebe9"></div><div class="chip-meta"><div class="chip-role">Zone Wash</div><div class="chip-name">Ceramic</div><div class="chip-hex">#edebe9</div></div></div>
+      <div class="chip-row-item"><div class="chip-swatch" style="background:#ffffff;border:1px solid #edebe9"></div><div class="chip-meta"><div class="chip-role">Card</div><div class="chip-name">White</div><div class="chip-hex">#ffffff</div></div></div>
+      <div class="chip-row-item"><div class="chip-swatch" style="background:rgba(0,0,0,0.87)"></div><div class="chip-meta"><div class="chip-role">Body + Heading</div><div class="chip-name">Text Black</div><div class="chip-hex">rgba(0,0,0,0.87)</div></div></div>
+      <div class="chip-row-item"><div class="chip-swatch" style="background:rgba(0,0,0,0.58)"></div><div class="chip-meta"><div class="chip-role">Secondary Text</div><div class="chip-name">Text Black Soft</div><div class="chip-hex">rgba(0,0,0,0.58)</div></div></div>
+      <div class="chip-row-item"><div class="chip-swatch" style="background:#cba258"></div><div class="chip-meta"><div class="chip-role">Rewards Status</div><div class="chip-name">Gold</div><div class="chip-hex">#cba258</div></div></div>
+      <div class="chip-row-item"><div class="chip-swatch" style="background:#33433d"></div><div class="chip-meta"><div class="chip-role">Rewards Body Text</div><div class="chip-name">Rewards Green</div><div class="chip-hex">#33433d</div></div></div>
+      <div class="chip-row-item"><div class="chip-swatch" style="background:#c82014"></div><div class="chip-meta"><div class="chip-role">Destructive</div><div class="chip-name">Red</div><div class="chip-hex">#c82014</div></div></div>
+      <div class="chip-row-item"><div class="chip-swatch" style="background:#000000"></div><div class="chip-meta"><div class="chip-role">Conversion CTA</div><div class="chip-name">Black</div><div class="chip-hex">#000000</div></div></div>
+    </div>
+    <div style="margin-top:24px;padding:16px;background:var(--white);box-shadow:var(--card-shadow);border-radius:12px;font-size:14px;color:var(--text-black-soft);line-height:22px">
+      <strong style="color:var(--text-black)">Note.</strong> Use Green Accent for most filled CTAs. Reserve Black for strong conversion moments only ("Join now"). Gold is Rewards-only — don't spend it elsewhere. Keep SoDoSans (or substitute Inter) at <code>-0.01em</code> tracking throughout.
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

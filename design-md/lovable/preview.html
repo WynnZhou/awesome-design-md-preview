@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Preview: Lovable</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #0b0b0c; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<div class="theme-layer" data-when="light">
+
+
+<nav class="nav">
+  <a class="nav-brand" href="#">awesome-design-md</a>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#cards">Cards</a></li>
+    <li><a href="#forms">Forms</a></li>
+    <li><a href="#spacing">Spacing</a></li>
+  </ul>
+  <a class="nav-cta" href="#">Start Building</a>
+</nav>
+
+<section class="hero">
+  <h1>Design System<br>Inspired by Lovable</h1>
+  <p>A design token catalog generated from DESIGN.md. Every color, font, component, and spacing value — visualized.</p>
+  <div class="hero-buttons">
+    <a class="btn-dark" href="#">Start Building</a>
+    <a class="btn-ghost" href="#">View Documentation</a>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="colors">
+  <div class="section-label">01 / Colors</div>
+  <h2 class="section-title">Color Palette</h2>
+
+  <div class="color-group-label">Primary</div>
+  <div class="color-grid">
+    <div class="color-swatch"><div class="color-swatch-block" style="background:#f7f4ed; border-bottom:1px solid #eceae4"></div><div class="color-swatch-info"><div class="color-swatch-name">Cream</div><div class="color-swatch-hex">#f7f4ed</div><div class="color-swatch-role">Page background</div></div></div>
+    <div class="color-swatch"><div class="color-swatch-block" style="background:#1c1c1c"></div><div class="color-swatch-info"><div class="color-swatch-name">Charcoal</div><div class="color-swatch-hex">#1c1c1c</div><div class="color-swatch-role">Primary text, headings</div></div></div>
+    <div class="color-swatch"><div class="color-swatch-block" style="background:#fcfbf8; border-bottom:1px solid #eceae4"></div><div class="color-swatch-info"><div class="color-swatch-name">Off-White</div><div class="color-swatch-hex">#fcfbf8</div><div class="color-swatch-role">Button text on dark</div></div></div>
+  </div>
+
+  <div class="color-group-label">Neutral Scale (Opacity-Based)</div>
+  <div class="color-grid">
+    <div class="color-swatch"><div class="color-swatch-block" style="background:rgba(28,28,28,0.83)"></div><div class="color-swatch-info"><div class="color-swatch-name">Charcoal 83%</div><div class="color-swatch-hex">rgba(28,28,28,0.83)</div><div class="color-swatch-role">Strong secondary</div></div></div>
+    <div class="color-swatch"><div class="color-swatch-block" style="background:#5f5f5d"></div><div class="color-swatch-info"><div class="color-swatch-name">Muted Gray</div><div class="color-swatch-hex">#5f5f5d</div><div class="color-swatch-role">Body text, captions</div></div></div>
+    <div class="color-swatch"><div class="color-swatch-block" style="background:rgba(28,28,28,0.4)"></div><div class="color-swatch-info"><div class="color-swatch-name">Charcoal 40%</div><div class="color-swatch-hex">rgba(28,28,28,0.4)</div><div class="color-swatch-role">Interactive borders</div></div></div>
+    <div class="color-swatch"><div class="color-swatch-block" style="background:rgba(28,28,28,0.04); border-bottom:1px solid #eceae4"></div><div class="color-swatch-info"><div class="color-swatch-name">Charcoal 4%</div><div class="color-swatch-hex">rgba(28,28,28,0.04)</div><div class="color-swatch-role">Hover tint</div></div></div>
+    <div class="color-swatch"><div class="color-swatch-block" style="background:rgba(28,28,28,0.03); border-bottom:1px solid #eceae4"></div><div class="color-swatch-info"><div class="color-swatch-name">Charcoal 3%</div><div class="color-swatch-hex">rgba(28,28,28,0.03)</div><div class="color-swatch-role">Subtle overlay</div></div></div>
+  </div>
+
+  <div class="color-group-label">Surface &amp; Border</div>
+  <div class="color-grid">
+    <div class="color-swatch"><div class="color-swatch-block" style="background:#eceae4"></div><div class="color-swatch-info"><div class="color-swatch-name">Light Cream</div><div class="color-swatch-hex">#eceae4</div><div class="color-swatch-role">Borders, dividers</div></div></div>
+  </div>
+
+  <div class="color-group-label">Interactive</div>
+  <div class="color-grid">
+    <div class="color-swatch"><div class="color-swatch-block" style="background:rgba(59,130,246,0.5)"></div><div class="color-swatch-info"><div class="color-swatch-name">Ring Blue</div><div class="color-swatch-hex">rgba(59,130,246,0.5)</div><div class="color-swatch-role">Focus ring</div></div></div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="typography">
+  <div class="section-label">02 / Typography</div>
+  <h2 class="section-title">Typography Scale</h2>
+
+  <div class="type-sample"><div style="font-size:60px; font-weight:600; line-height:1.10; letter-spacing:-1.5px;">Display Hero</div><div class="type-meta">Display Hero — 60px / 600 / 1.10 / -1.5px / Camera Plain Variable</div></div>
+  <div class="type-sample"><div style="font-size:48px; font-weight:600; line-height:1.00; letter-spacing:-1.2px;">Section Heading</div><div class="type-meta">Section Heading — 48px / 600 / 1.00 / -1.2px / Camera Plain Variable</div></div>
+  <div class="type-sample"><div style="font-size:36px; font-weight:600; line-height:1.10; letter-spacing:-0.9px;">Sub-heading</div><div class="type-meta">Sub-heading — 36px / 600 / 1.10 / -0.9px / Camera Plain Variable</div></div>
+  <div class="type-sample"><div style="font-size:20px; font-weight:400; line-height:1.25;">Card Title</div><div class="type-meta">Card Title — 20px / 400 / 1.25 / Camera Plain Variable</div></div>
+  <div class="type-sample"><div style="font-size:18px; font-weight:400; line-height:1.38;">Body Large — Build something lovable. Create web applications with AI-powered development tools.</div><div class="type-meta">Body Large — 18px / 400 / 1.38 / Camera Plain Variable</div></div>
+  <div class="type-sample"><div style="font-size:16px; font-weight:400; line-height:1.50;">Body — Standard reading text for descriptions, paragraphs, and UI content.</div><div class="type-meta">Body — 16px / 400 / 1.50 / Camera Plain Variable</div></div>
+  <div class="type-sample"><div style="font-size:14px; font-weight:400; line-height:1.50;">Button / Link — Interactive text</div><div class="type-meta">Button / Link — 14px / 400 / 1.50 / Camera Plain Variable</div></div>
+  <div class="type-sample"><div style="font-size:14px; font-weight:400; line-height:1.50; color:var(--muted);">Caption — Metadata and small labels</div><div class="type-meta">Caption — 14px / 400 / 1.50 / Camera Plain Variable</div></div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="buttons">
+  <div class="section-label">03 / Buttons</div>
+  <h2 class="section-title">Button Variants</h2>
+  <div class="button-row">
+    <div class="button-item"><a class="btn-dark" href="#">Start Building</a><div class="button-label">Primary Dark</div></div>
+    <div class="button-item"><a class="btn-ghost" href="#">Documentation</a><div class="button-label">Ghost / Outline</div></div>
+    <div class="button-item"><a class="btn-cream" href="#">Settings</a><div class="button-label">Cream Surface</div></div>
+    <div class="button-item"><button class="btn-pill">+</button><div class="button-label">Pill Icon</div></div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="cards">
+  <div class="section-label">04 / Cards</div>
+  <h2 class="section-title">Card Examples</h2>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-badge" style="background:var(--charcoal-04); color:var(--charcoal);">Template</div>
+      <h3>Portfolio Website</h3>
+      <p>A minimal portfolio template with project showcase, about section, and contact form. Built with modern design principles.</p>
+    </div>
+    <div class="card" style="border-color: var(--charcoal-40);">
+      <div class="card-badge" style="background:var(--charcoal-04); color:var(--charcoal);">Featured</div>
+      <h3>AI Chat Application</h3>
+      <p>Full-stack AI chat interface with streaming responses, conversation history, and customizable prompts. Hover-state border shown.</p>
+    </div>
+    <div class="card">
+      <div class="card-badge" style="background:var(--charcoal-04); color:var(--charcoal);">Starter</div>
+      <h3>SaaS Dashboard</h3>
+      <p>Analytics dashboard with charts, data tables, and user management. Integrates with common APIs and databases.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="forms">
+  <div class="section-label">05 / Forms</div>
+  <h2 class="section-title">Form Elements</h2>
+  <div class="form-group"><label class="form-label">Project Name</label><input class="form-input" type="text" placeholder="my-lovable-app"><div class="form-state-label">Default (border)</div></div>
+  <div class="form-group"><label class="form-label">Repository</label><input class="form-input form-input--focus" type="text" value="lovable/my-project"><div class="form-state-label">Focus (blue ring)</div></div>
+  <div class="form-group"><label class="form-label">Domain</label><input class="form-input form-input--error" type="text" value="invalid domain"><div class="form-state-label">Error (red ring)</div></div>
+  <div class="form-group"><label class="form-label">Description</label><textarea class="form-textarea" placeholder="Describe your project..."></textarea></div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="spacing">
+  <div class="section-label">06 / Spacing</div>
+  <h2 class="section-title">Spacing Scale</h2>
+  <div class="spacing-row">
+    <div class="spacing-item"><div class="spacing-block" style="width:8px"></div><div class="spacing-value">8</div></div>
+    <div class="spacing-item"><div class="spacing-block" style="width:10px"></div><div class="spacing-value">10</div></div>
+    <div class="spacing-item"><div class="spacing-block" style="width:12px"></div><div class="spacing-value">12</div></div>
+    <div class="spacing-item"><div class="spacing-block" style="width:16px"></div><div class="spacing-value">16</div></div>
+    <div class="spacing-item"><div class="spacing-block" style="width:24px"></div><div class="spacing-value">24</div></div>
+    <div class="spacing-item"><div class="spacing-block" style="width:32px"></div><div class="spacing-value">32</div></div>
+    <div class="spacing-item"><div class="spacing-block" style="width:40px"></div><div class="spacing-value">40</div></div>
+    <div class="spacing-item"><div class="spacing-block" style="width:56px"></div><div class="spacing-value">56</div></div>
+    <div class="spacing-item"><div class="spacing-block" style="width:80px"></div><div class="spacing-value">80</div></div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="radius">
+  <div class="section-label">07 / Radius</div>
+  <h2 class="section-title">Border Radius Scale</h2>
+  <div class="radius-row">
+    <div class="radius-item"><div class="radius-box" style="border-radius:4px"></div><div class="radius-label">4px</div><div class="radius-context">Small</div></div>
+    <div class="radius-item"><div class="radius-box" style="border-radius:6px"></div><div class="radius-label">6px</div><div class="radius-context">Buttons</div></div>
+    <div class="radius-item"><div class="radius-box" style="border-radius:8px"></div><div class="radius-label">8px</div><div class="radius-context">Compact</div></div>
+    <div class="radius-item"><div class="radius-box" style="border-radius:12px"></div><div class="radius-label">12px</div><div class="radius-context">Cards</div></div>
+    <div class="radius-item"><div class="radius-box" style="border-radius:16px"></div><div class="radius-label">16px</div><div class="radius-context">Containers</div></div>
+    <div class="radius-item"><div class="radius-box" style="border-radius:9999px"></div><div class="radius-label">9999px</div><div class="radius-context">Pills</div></div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="elevation">
+  <div class="section-label">08 / Elevation</div>
+  <h2 class="section-title">Elevation &amp; Depth</h2>
+  <div class="elevation-grid">
+    <div class="elevation-card" style="border: 1px solid var(--border-light);"><div class="elevation-label">Level 0: Flat</div><div class="elevation-desc">No shadow, cream bg</div></div>
+    <div class="elevation-card" style="border: 1px solid var(--border-light);"><div class="elevation-label">Level 1: Bordered</div><div class="elevation-desc">1px solid #eceae4</div></div>
+    <div class="elevation-card" style="background:var(--charcoal); color:var(--off-white); box-shadow: var(--shadow-inset);"><div class="elevation-label" style="color:var(--off-white);">Level 2: Inset</div><div class="elevation-desc" style="color:rgba(252,251,248,0.6);">Button inset shadow</div></div>
+    <div class="elevation-card" style="border: 1px solid var(--border-light); box-shadow: var(--focus-shadow);"><div class="elevation-label">Level 3: Focus</div><div class="elevation-desc">Focus shadow glow</div></div>
+    <div class="elevation-card" style="box-shadow: 0 0 0 2px rgba(59,130,246,0.5);"><div class="elevation-label">Ring</div><div class="elevation-desc">Accessibility ring</div></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</div>
+<div class="theme-layer" data-when="dark">
+
+
+<nav class="nav">
+  <a class="nav-brand" href="#">awesome-design-md</a>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#cards">Cards</a></li>
+    <li><a href="#forms">Forms</a></li>
+    <li><a href="#spacing">Spacing</a></li>
+  </ul>
+  <a class="nav-cta" href="#">Start Building</a>
+</nav>
+<div style="position:fixed;top:16px;right:16px;z-index:200;background:#e8e5de;color:#1a1916;font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;">Dark Mode</div>
+
+<section class="hero">
+  <h1>Design System<br>Inspired by Lovable</h1>
+  <p>A design token catalog generated from DESIGN.md. Every color, font, component, and spacing value — visualized.</p>
+  <div class="hero-buttons">
+    <a class="btn-dark" href="#">Start Building</a>
+    <a class="btn-ghost" href="#">View Documentation</a>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" data-sec="colors">
+  <div class="section-label">01 / Colors</div>
+  <h2 class="section-title">Color Palette</h2>
+
+  <div class="color-group-label">Primary</div>
+  <div class="color-grid">
+    <div class="color-swatch"><div class="color-swatch-block" style="background:#f7f4ed"></div><div class="color-swatch-info"><div class="color-swatch-name">Cream</div><div class="color-swatch-hex">#f7f4ed</div><div class="color-swatch-role">Page background</div></div></div>
+    <div class="color-swatch"><div class="color-swatch-block" style="background:#1c1c1c"></div><div class="color-swatch-info"><div class="color-swatch-name">Charcoal</div><div class="color-swatch-hex">#1c1c1c</div><div class="color-swatch-role">Primary text, headings</div></div></div>
+    <div class="color-swatch"><div class="color-swatch-block" style="background:#fcfbf8"></div><div class="color-swatch-info"><div class="color-swatch-name">Off-White</div><div class="color-swatch-hex">#fcfbf8</div><div class="color-swatch-role">Button text on dark</div></div></div>
+  </div>
+
+  <div class="color-group-label">Neutral Scale (Opacity-Based)</div>
+  <div class="color-grid">
+    <div class="color-swatch"><div class="color-swatch-block" style="background:rgba(28,28,28,0.83)"></div><div class="color-swatch-info"><div class="color-swatch-name">Charcoal 83%</div><div class="color-swatch-hex">rgba(28,28,28,0.83)</div><div class="color-swatch-role">Strong secondary</div></div></div>
+    <div class="color-swatch"><div class="color-swatch-block" style="background:#5f5f5d"></div><div class="color-swatch-info"><div class="color-swatch-name">Muted Gray</div><div class="color-swatch-hex">#5f5f5d</div><div class="color-swatch-role">Body text, captions</div></div></div>
+    <div class="color-swatch"><div class="color-swatch-block" style="background:rgba(28,28,28,0.4)"></div><div class="color-swatch-info"><div class="color-swatch-name">Charcoal 40%</div><div class="color-swatch-hex">rgba(28,28,28,0.4)</div><div class="color-swatch-role">Interactive borders</div></div></div>
+    <div class="color-swatch"><div class="color-swatch-block" style="background:rgba(28,28,28,0.04); border-bottom:1px solid var(--border-light)"></div><div class="color-swatch-info"><div class="color-swatch-name">Charcoal 4%</div><div class="color-swatch-hex">rgba(28,28,28,0.04)</div><div class="color-swatch-role">Hover tint</div></div></div>
+    <div class="color-swatch"><div class="color-swatch-block" style="background:rgba(28,28,28,0.03); border-bottom:1px solid var(--border-light)"></div><div class="color-swatch-info"><div class="color-swatch-name">Charcoal 3%</div><div class="color-swatch-hex">rgba(28,28,28,0.03)</div><div class="color-swatch-role">Subtle overlay</div></div></div>
+  </div>
+
+  <div class="color-group-label">Surface &amp; Border</div>
+  <div class="color-grid">
+    <div class="color-swatch"><div class="color-swatch-block" style="background:#eceae4"></div><div class="color-swatch-info"><div class="color-swatch-name">Light Cream</div><div class="color-swatch-hex">#eceae4</div><div class="color-swatch-role">Borders, dividers</div></div></div>
+  </div>
+
+  <div class="color-group-label">Interactive</div>
+  <div class="color-grid">
+    <div class="color-swatch"><div class="color-swatch-block" style="background:rgba(59,130,246,0.5)"></div><div class="color-swatch-info"><div class="color-swatch-name">Ring Blue</div><div class="color-swatch-hex">rgba(59,130,246,0.5)</div><div class="color-swatch-role">Focus ring</div></div></div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" data-sec="typography">
+  <div class="section-label">02 / Typography</div>
+  <h2 class="section-title">Typography Scale</h2>
+
+  <div class="type-sample"><div style="font-size:60px; font-weight:600; line-height:1.10; letter-spacing:-1.5px;">Display Hero</div><div class="type-meta">Display Hero — 60px / 600 / 1.10 / -1.5px / Camera Plain Variable</div></div>
+  <div class="type-sample"><div style="font-size:48px; font-weight:600; line-height:1.00; letter-spacing:-1.2px;">Section Heading</div><div class="type-meta">Section Heading — 48px / 600 / 1.00 / -1.2px / Camera Plain Variable</div></div>
+  <div class="type-sample"><div style="font-size:36px; font-weight:600; line-height:1.10; letter-spacing:-0.9px;">Sub-heading</div><div class="type-meta">Sub-heading — 36px / 600 / 1.10 / -0.9px / Camera Plain Variable</div></div>
+  <div class="type-sample"><div style="font-size:20px; font-weight:400; line-height:1.25;">Card Title</div><div class="type-meta">Card Title — 20px / 400 / 1.25 / Camera Plain Variable</div></div>
+  <div class="type-sample"><div style="font-size:18px; font-weight:400; line-height:1.38;">Body Large — Build something lovable. Create web applications with AI-powered development tools.</div><div class="type-meta">Body Large — 18px / 400 / 1.38 / Camera Plain Variable</div></div>
+  <div class="type-sample"><div style="font-size:16px; font-weight:400; line-height:1.50;">Body — Standard reading text for descriptions, paragraphs, and UI content.</div><div class="type-meta">Body — 16px / 400 / 1.50 / Camera Plain Variable</div></div>
+  <div class="type-sample"><div style="font-size:14px; font-weight:400; line-height:1.50;">Button / Link — Interactive text</div><div class="type-meta">Button / Link — 14px / 400 / 1.50 / Camera Plain Variable</div></div>
+  <div class="type-sample"><div style="font-size:14px; font-weight:400; line-height:1.50; color:var(--muted);">Caption — Metadata and small labels</div><div class="type-meta">Caption — 14px / 400 / 1.50 / Camera Plain Variable</div></div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" data-sec="buttons">
+  <div class="section-label">03 / Buttons</div>
+  <h2 class="section-title">Button Variants</h2>
+  <div class="button-row">
+    <div class="button-item"><a class="btn-dark" href="#">Start Building</a><div class="button-label">Primary Dark</div></div>
+    <div class="button-item"><a class="btn-ghost" href="#">Documentation</a><div class="button-label">Ghost / Outline</div></div>
+    <div class="button-item"><a class="btn-cream" href="#">Settings</a><div class="button-label">Cream Surface</div></div>
+    <div class="button-item"><button class="btn-pill">+</button><div class="button-label">Pill Icon</div></div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" data-sec="cards">
+  <div class="section-label">04 / Cards</div>
+  <h2 class="section-title">Card Examples</h2>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-badge" style="background:var(--charcoal-04); color:var(--charcoal);">Template</div>
+      <h3>Portfolio Website</h3>
+      <p>A minimal portfolio template with project showcase, about section, and contact form. Built with modern design principles.</p>
+    </div>
+    <div class="card" style="border-color: var(--charcoal-40);">
+      <div class="card-badge" style="background:var(--charcoal-04); color:var(--charcoal);">Featured</div>
+      <h3>AI Chat Application</h3>
+      <p>Full-stack AI chat interface with streaming responses, conversation history, and customizable prompts. Hover-state border shown.</p>
+    </div>
+    <div class="card">
+      <div class="card-badge" style="background:var(--charcoal-04); color:var(--charcoal);">Starter</div>
+      <h3>SaaS Dashboard</h3>
+      <p>Analytics dashboard with charts, data tables, and user management. Integrates with common APIs and databases.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" data-sec="forms">
+  <div class="section-label">05 / Forms</div>
+  <h2 class="section-title">Form Elements</h2>
+  <div class="form-group"><label class="form-label">Project Name</label><input class="form-input" type="text" placeholder="my-lovable-app"><div class="form-state-label">Default (border)</div></div>
+  <div class="form-group"><label class="form-label">Repository</label><input class="form-input form-input--focus" type="text" value="lovable/my-project"><div class="form-state-label">Focus (blue ring)</div></div>
+  <div class="form-group"><label class="form-label">Domain</label><input class="form-input form-input--error" type="text" value="invalid domain"><div class="form-state-label">Error (red ring)</div></div>
+  <div class="form-group"><label class="form-label">Description</label><textarea class="form-textarea" placeholder="Describe your project..."></textarea></div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" data-sec="spacing">
+  <div class="section-label">06 / Spacing</div>
+  <h2 class="section-title">Spacing Scale</h2>
+  <div class="spacing-row">
+    <div class="spacing-item"><div class="spacing-block" style="width:8px"></div><div class="spacing-value">8</div></div>
+    <div class="spacing-item"><div class="spacing-block" style="width:10px"></div><div class="spacing-value">10</div></div>
+    <div class="spacing-item"><div class="spacing-block" style="width:12px"></div><div class="spacing-value">12</div></div>
+    <div class="spacing-item"><div class="spacing-block" style="width:16px"></div><div class="spacing-value">16</div></div>
+    <div class="spacing-item"><div class="spacing-block" style="width:24px"></div><div class="spacing-value">24</div></div>
+    <div class="spacing-item"><div class="spacing-block" style="width:32px"></div><div class="spacing-value">32</div></div>
+    <div class="spacing-item"><div class="spacing-block" style="width:40px"></div><div class="spacing-value">40</div></div>
+    <div class="spacing-item"><div class="spacing-block" style="width:56px"></div><div class="spacing-value">56</div></div>
+    <div class="spacing-item"><div class="spacing-block" style="width:80px"></div><div class="spacing-value">80</div></div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" data-sec="radius">
+  <div class="section-label">07 / Radius</div>
+  <h2 class="section-title">Border Radius Scale</h2>
+  <div class="radius-row">
+    <div class="radius-item"><div class="radius-box" style="border-radius:4px"></div><div class="radius-label">4px</div><div class="radius-context">Small</div></div>
+    <div class="radius-item"><div class="radius-box" style="border-radius:6px"></div><div class="radius-label">6px</div><div class="radius-context">Buttons</div></div>
+    <div class="radius-item"><div class="radius-box" style="border-radius:8px"></div><div class="radius-label">8px</div><div class="radius-context">Compact</div></div>
+    <div class="radius-item"><div class="radius-box" style="border-radius:12px"></div><div class="radius-label">12px</div><div class="radius-context">Cards</div></div>
+    <div class="radius-item"><div class="radius-box" style="border-radius:16px"></div><div class="radius-label">16px</div><div class="radius-context">Containers</div></div>
+    <div class="radius-item"><div class="radius-box" style="border-radius:9999px"></div><div class="radius-label">9999px</div><div class="radius-context">Pills</div></div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" data-sec="elevation">
+  <div class="section-label">08 / Elevation</div>
+  <h2 class="section-title">Elevation &amp; Depth</h2>
+  <div class="elevation-grid">
+    <div class="elevation-card" style="border: 1px solid var(--border-light);"><div class="elevation-label">Level 0: Flat</div><div class="elevation-desc">No shadow, cream bg</div></div>
+    <div class="elevation-card" style="border: 1px solid var(--border-light);"><div class="elevation-label">Level 1: Bordered</div><div class="elevation-desc">1px solid #eceae4</div></div>
+    <div class="elevation-card" style="background:var(--charcoal); color:var(--off-white); box-shadow: var(--shadow-inset);"><div class="elevation-label" style="color:var(--off-white);">Level 2: Inset</div><div class="elevation-desc" style="color:rgba(26,25,22,0.6);">Button inset shadow</div></div>
+    <div class="elevation-card" style="border: 1px solid var(--border-light); box-shadow: var(--focus-shadow);"><div class="elevation-label">Level 3: Focus</div><div class="elevation-desc">Focus shadow glow</div></div>
+    <div class="elevation-card" style="box-shadow: 0 0 0 2px rgba(59,130,246,0.5);"><div class="elevation-label">Ring</div><div class="elevation-desc">Accessibility ring</div></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</div>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

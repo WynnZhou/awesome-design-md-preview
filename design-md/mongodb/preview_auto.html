@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" data-native="light" data-theme="light"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MongoDB-design-analysis — Design System Preview</title>
+  <link rel="stylesheet" href="preview_auto.css">
+</head>
+<body>
+
+<div class="page">
+  <header class="topbar">
+    <div><div class="topbar-name">MongoDB-design-analysis</div><div class="topbar-meta">design tokens · 34 colors · 18 type styles · 44 components</div></div>
+    <nav class="topbar-links"><a href="#colors">Colors</a><a href="#typography">Type</a><a href="#buttons">Buttons</a><a href="#badges">Badges</a><a href="#cards">Cards</a><a href="#forms">Forms</a><a href="#nav">Tabs</a><a href="#spacing">Spacing</a><a href="#radius">Radius</a><a href="#elevation">Depth</a><a href="#signature">Other</a><a href="#reference">Reference</a></nav>
+  </header>
+  <section class="hero">
+    <h1>MongoDB-design-analysis</h1>
+    <p class="lede">MongoDB carries a strong dual-mode visual identity — dark deep-teal hero bands with bright MongoDB green ({colors.brand-green}) CTAs paired with stark white documentation surfaces. The signature green pill button is unmistakable across product, pricing, learning, and AI use-case surfaces. The system uses Euclid Circular A as its display face, anchors a 3-tier pricing comparison (Free / Flex / Dedicated), and presents extensive course catalogs in card grids with colored category tags. Coverage spans homepage, Atlas product page, Community Edition, MongoDB University, AI use cases, and pricing.</p>
+    <div class="meta">
+      <span class="chip solid">#00ed64</span>
+      <span class="chip">Euclid Circular A</span>
+      <span class="chip">light canvas</span>
+      <span class="chip">source: DESIGN.md (frontmatter)</span>
+    </div>
+  </section>
+  <section id="colors">
+    <div class="sec-head"><h2>Color Palette</h2><span class="count">34 tokens</span></div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-primary">#00ed64</div><div class="info"><div class="nm">primary</div><div class="hx">primary</div></div></div>
+      <div class="swatch"><div class="fill sw-primary-deep">#00b545</div><div class="info"><div class="nm">primary-deep</div><div class="hx">primary-deep</div></div></div>
+      <div class="swatch"><div class="fill sw-primary-pressed">#008c34</div><div class="info"><div class="nm">primary-pressed</div><div class="hx">primary-pressed</div></div></div>
+      <div class="swatch"><div class="fill sw-on-primary">#001e2b</div><div class="info"><div class="nm">on-primary</div><div class="hx">on-primary</div></div></div>
+      <div class="swatch"><div class="fill sw-brand-green">#00ed64</div><div class="info"><div class="nm">brand-green</div><div class="hx">brand-green</div></div></div>
+      <div class="swatch"><div class="fill sw-brand-green-dark">#00684a</div><div class="info"><div class="nm">brand-green-dark</div><div class="hx">brand-green-dark</div></div></div>
+      <div class="swatch"><div class="fill sw-brand-green-mid">#00a35c</div><div class="info"><div class="nm">brand-green-mid</div><div class="hx">brand-green-mid</div></div></div>
+      <div class="swatch"><div class="fill sw-brand-green-soft">#c3f0d2</div><div class="info"><div class="nm">brand-green-soft</div><div class="hx">brand-green-soft</div></div></div>
+      <div class="swatch"><div class="fill sw-brand-teal-deep">#001e2b</div><div class="info"><div class="nm">brand-teal-deep</div><div class="hx">brand-teal-deep</div></div></div>
+      <div class="swatch"><div class="fill sw-brand-teal">#003d4f</div><div class="info"><div class="nm">brand-teal</div><div class="hx">brand-teal</div></div></div>
+      <div class="swatch"><div class="fill sw-brand-teal-mid">#00684a</div><div class="info"><div class="nm">brand-teal-mid</div><div class="hx">brand-teal-mid</div></div></div>
+      <div class="swatch"><div class="fill sw-accent-purple">#7b3ff2</div><div class="info"><div class="nm">accent-purple</div><div class="hx">accent-purple</div></div></div>
+      <div class="swatch"><div class="fill sw-accent-orange">#fa6e39</div><div class="info"><div class="nm">accent-orange</div><div class="hx">accent-orange</div></div></div>
+      <div class="swatch"><div class="fill sw-accent-pink">#f06bb8</div><div class="info"><div class="nm">accent-pink</div><div class="hx">accent-pink</div></div></div>
+      <div class="swatch"><div class="fill sw-accent-blue">#3d4f9f</div><div class="info"><div class="nm">accent-blue</div><div class="hx">accent-blue</div></div></div>
+      <div class="swatch"><div class="fill sw-semantic-warning-bg">#fff8e0</div><div class="info"><div class="nm">semantic-warning-bg</div><div class="hx">semantic-warning-bg</div></div></div>
+      <div class="swatch"><div class="fill sw-semantic-warning-text">#946f3f</div><div class="info"><div class="nm">semantic-warning-text</div><div class="hx">semantic-warning-text</div></div></div>
+      <div class="swatch"><div class="fill sw-canvas">#ffffff</div><div class="info"><div class="nm">canvas</div><div class="hx">canvas</div></div></div>
+      <div class="swatch"><div class="fill sw-canvas-dark">#001e2b</div><div class="info"><div class="nm">canvas-dark</div><div class="hx">canvas-dark</div></div></div>
+      <div class="swatch"><div class="fill sw-surface">#f9fbfa</div><div class="info"><div class="nm">surface</div><div class="hx">surface</div></div></div>
+      <div class="swatch"><div class="fill sw-surface-soft">#f4f7f6</div><div class="info"><div class="nm">surface-soft</div><div class="hx">surface-soft</div></div></div>
+      <div class="swatch"><div class="fill sw-surface-feature">#e3fcef</div><div class="info"><div class="nm">surface-feature</div><div class="hx">surface-feature</div></div></div>
+      <div class="swatch"><div class="fill sw-hairline">#e1e5e8</div><div class="info"><div class="nm">hairline</div><div class="hx">hairline</div></div></div>
+      <div class="swatch"><div class="fill sw-hairline-soft">#eceff1</div><div class="info"><div class="nm">hairline-soft</div><div class="hx">hairline-soft</div></div></div>
+      <div class="swatch"><div class="fill sw-hairline-strong">#c1ccd6</div><div class="info"><div class="nm">hairline-strong</div><div class="hx">hairline-strong</div></div></div>
+      <div class="swatch"><div class="fill sw-hairline-dark">#1c2d38</div><div class="info"><div class="nm">hairline-dark</div><div class="hx">hairline-dark</div></div></div>
+      <div class="swatch"><div class="fill sw-ink">#001e2b</div><div class="info"><div class="nm">ink</div><div class="hx">ink</div></div></div>
+      <div class="swatch"><div class="fill sw-charcoal">#1c2d38</div><div class="info"><div class="nm">charcoal</div><div class="hx">charcoal</div></div></div>
+      <div class="swatch"><div class="fill sw-slate">#3d4f5b</div><div class="info"><div class="nm">slate</div><div class="hx">slate</div></div></div>
+      <div class="swatch"><div class="fill sw-steel">#5c6c7a</div><div class="info"><div class="nm">steel</div><div class="hx">steel</div></div></div>
+      <div class="swatch"><div class="fill sw-stone">#7c8c9a</div><div class="info"><div class="nm">stone</div><div class="hx">stone</div></div></div>
+      <div class="swatch"><div class="fill sw-muted">#a8b3bc</div><div class="info"><div class="nm">muted</div><div class="hx">muted</div></div></div>
+      <div class="swatch"><div class="fill sw-on-dark">#ffffff</div><div class="info"><div class="nm">on-dark</div><div class="hx">on-dark</div></div></div>
+      <div class="swatch"><div class="fill sw-on-dark-muted">#a8b3bc</div><div class="info"><div class="nm">on-dark-muted</div><div class="hx">on-dark-muted</div></div></div>
+    </div>
+  </section>
+  <section id="typography">
+    <div class="sec-head"><h2>Typography Scale</h2><span class="count">18 styles</span></div>
+    <div class="type-row">
+      <div class="type-meta"><b>hero-display</b>72px / 500<br>lh 1.10 · ls -1.5px<br>Euclid Circular A</div>
+      <div class="type-sample type-hero-display">hero-display — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>display-lg</b>56px / 500<br>lh 1.15 · ls -1px<br>Euclid Circular A</div>
+      <div class="type-sample type-display-lg">display-lg — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>heading-1</b>48px / 500<br>lh 1.20 · ls -0.5px<br>Euclid Circular A</div>
+      <div class="type-sample type-heading-1">heading-1 — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>heading-2</b>36px / 500<br>lh 1.25 · ls -0.5px<br>Euclid Circular A</div>
+      <div class="type-sample type-heading-2">heading-2 — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>heading-3</b>28px / 500<br>lh 1.30 · ls normal<br>Euclid Circular A</div>
+      <div class="type-sample type-heading-3">heading-3 — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>heading-4</b>22px / 500<br>lh 1.35 · ls normal<br>Euclid Circular A</div>
+      <div class="type-sample type-heading-4">heading-4 — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>heading-5</b>18px / 600<br>lh 1.40 · ls normal<br>Euclid Circular A</div>
+      <div class="type-sample type-heading-5">heading-5 — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>subtitle</b>18px / 400<br>lh 1.50 · ls normal<br>Euclid Circular A</div>
+      <div class="type-sample type-subtitle">subtitle — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>body-md</b>16px / 400<br>lh 1.55 · ls normal<br>Euclid Circular A</div>
+      <div class="type-sample type-body-md">body-md — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>body-md-medium</b>16px / 500<br>lh 1.55 · ls normal<br>Euclid Circular A</div>
+      <div class="type-sample type-body-md-medium">body-md-medium — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>body-sm</b>14px / 400<br>lh 1.50 · ls normal<br>Euclid Circular A</div>
+      <div class="type-sample type-body-sm">body-sm — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>body-sm-medium</b>14px / 500<br>lh 1.50 · ls normal<br>Euclid Circular A</div>
+      <div class="type-sample type-body-sm-medium">body-sm-medium — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>caption</b>13px / 400<br>lh 1.40 · ls normal<br>Euclid Circular A</div>
+      <div class="type-sample type-caption">caption — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>caption-bold</b>13px / 600<br>lh 1.40 · ls normal<br>Euclid Circular A</div>
+      <div class="type-sample type-caption-bold">caption-bold — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>micro</b>12px / 500<br>lh 1.40 · ls normal<br>Euclid Circular A</div>
+      <div class="type-sample type-micro">micro — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>micro-uppercase</b>11px / 600<br>lh 1.40 · ls 1px<br>Euclid Circular A</div>
+      <div class="type-sample type-micro-uppercase">micro-uppercase — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>button-md</b>14px / 600<br>lh 1.30 · ls normal<br>Euclid Circular A</div>
+      <div class="type-sample type-button-md">button-md — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>code-md</b>14px / 400<br>lh 1.55 · ls normal<br>Source Code Pro</div>
+      <div class="type-sample type-code-md">code-md — The quick brown fox jumps over the lazy dog</div>
+    </div>
+  </section>
+  <section id="buttons">
+    <div class="sec-head"><h2>Button Variants</h2><span class="count">9</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="button-primary">Primary</div><button class="demo-el spec-button-primary" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-primary-pressed">Primary Pressed</div><button class="demo-el spec-button-primary-pressed" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-primary-disabled">Primary Disabled</div><button class="demo-el spec-button-primary-disabled" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-secondary">Secondary</div><button class="demo-el spec-button-secondary" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-on-dark">Button On Dark</div><button class="demo-el spec-button-on-dark" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-secondary-on-dark">Secondary On Dark</div><button class="demo-el spec-button-secondary-on-dark" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-ghost">Ghost</div><button class="demo-el spec-button-ghost" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-link">Link</div><button class="demo-el demo-el-ghost spec-button-link" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="cta-banner-dark">Cta Banner Dark</div><button class="demo-el spec-cta-banner-dark" type="button">Button</button></div>
+    </div></div>
+  </section>
+  <section id="badges">
+    <div class="sec-head"><h2>Badges & Pills</h2><span class="count">9</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="search-pill">Search Pill</div><div class="demo-el spec-search-pill">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="search-pill-large">Search Pill Large</div><div class="demo-el spec-search-pill-large">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="pill-tab">Tab</div><div class="demo-el spec-pill-tab">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="pill-tab-active">Tab Active</div><div class="demo-el spec-pill-tab-active">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="badge-green">Green</div><div class="demo-el spec-badge-green">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="badge-green-soft">Green Soft</div><div class="demo-el spec-badge-green-soft">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="badge-purple">Purple</div><div class="demo-el spec-badge-purple">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="badge-orange">Orange</div><div class="demo-el spec-badge-orange">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="badge-popular">Popular</div><div class="demo-el spec-badge-popular">Badge</div></div>
+    </div></div>
+  </section>
+  <section id="cards">
+    <div class="sec-head"><h2>Cards & Containers</h2><span class="count">16</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="card-base">Base</div><div class="demo-el spec-card-base"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="card-feature">Feature</div><div class="demo-el spec-card-feature"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="card-product-deploy">Product Deploy</div><div class="demo-el spec-card-product-deploy"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="card-feature-dark">Feature Dark</div><div class="demo-el spec-card-feature-dark"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="card-course">Course</div><div class="demo-el spec-card-course"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="card-cert">Cert</div><div class="demo-el spec-card-cert"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="pricing-card">Pricing Card</div><div class="demo-el spec-pricing-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="pricing-card-featured">Pricing Card Featured</div><div class="demo-el spec-pricing-card-featured"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="promo-banner">Promo Banner</div><div class="demo-el spec-promo-banner"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="hero-band-dark">Hero Band Dark</div><div class="demo-el spec-hero-band-dark"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="hero-platform-card">Hero Platform Card</div><div class="demo-el spec-hero-platform-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="cta-banner-dark">Cta Banner Dark</div><div class="demo-el spec-cta-banner-dark"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="code-mockup-card">Code Mockup Card</div><div class="demo-el spec-code-mockup-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="service-tile">Service Tile</div><div class="demo-el spec-service-tile"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="why-card">Why Card</div><div class="demo-el spec-why-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="customer-testimonial-card">Customer Testimonial Card</div><div class="demo-el spec-customer-testimonial-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+    </div></div>
+  </section>
+  <section id="forms">
+    <div class="sec-head"><h2>Forms & Inputs</h2><span class="count">4</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="text-input">Text Input</div><div class="demo-el spec-text-input"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="text-input-focused">Text Input Focused</div><div class="demo-el spec-text-input-focused"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="search-pill">Search Pill</div><div class="demo-el spec-search-pill"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="search-pill-large">Search Pill Large</div><div class="demo-el spec-search-pill-large"><span class="demo-el-b">Placeholder text</span></div></div>
+    </div></div>
+  </section>
+  <section id="nav">
+    <div class="sec-head"><h2>Navigation & Tabs</h2><span class="count">7</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="button-link">Link</div><div class="demo-el demo-el-ghost spec-button-link"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="pill-tab">Tab</div><div class="demo-el spec-pill-tab"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="pill-tab-active">Tab Active</div><div class="demo-el spec-pill-tab-active"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="segmented-tab">Segmented Tab</div><div class="demo-el demo-el-ghost spec-segmented-tab"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="segmented-tab-active">Segmented Tab Active</div><div class="demo-el demo-el-ghost spec-segmented-tab-active"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="footer-region">Footer Region</div><div class="demo-el spec-footer-region"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="footer-link">Footer Link</div><div class="demo-el demo-el-ghost spec-footer-link"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+    </div></div>
+  </section>
+  <section id="signature">
+    <div class="sec-head"><h2>Other Components</h2><span class="count">5</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="code-block">Code Block</div><div class="demo-el spec-code-block">Code Block</div></div>
+      <div class="demo-col"><div class="lb" title="comparison-table">Comparison Table</div><div class="demo-el spec-comparison-table">Comparison Table</div></div>
+      <div class="demo-col"><div class="lb" title="comparison-row">Comparison Row</div><div class="demo-el spec-comparison-row">Comparison Row</div></div>
+      <div class="demo-col"><div class="lb" title="logo-wall-item">Logo Wall Item</div><div class="demo-el demo-el-ghost spec-logo-wall-item">Logo Wall Item</div></div>
+      <div class="demo-col"><div class="lb" title="faq-accordion-item">Faq Accordion Item</div><div class="demo-el spec-faq-accordion-item">Faq Accordion Item</div></div>
+    </div></div>
+  </section>
+  <section id="spacing">
+    <div class="sec-head"><h2>Spacing Scale</h2><span class="count">12 steps</span></div>
+    <div class="bar-row"><span>xxs</span><span class="val">4px</span><span class="bar bar-xxs"></span></div>
+    <div class="bar-row"><span>xs</span><span class="val">8px</span><span class="bar bar-xs"></span></div>
+    <div class="bar-row"><span>sm</span><span class="val">12px</span><span class="bar bar-sm"></span></div>
+    <div class="bar-row"><span>md</span><span class="val">16px</span><span class="bar bar-md"></span></div>
+    <div class="bar-row"><span>lg</span><span class="val">20px</span><span class="bar bar-lg"></span></div>
+    <div class="bar-row"><span>xl</span><span class="val">24px</span><span class="bar bar-xl"></span></div>
+    <div class="bar-row"><span>xxl</span><span class="val">32px</span><span class="bar bar-xxl"></span></div>
+    <div class="bar-row"><span>xxxl</span><span class="val">40px</span><span class="bar bar-xxxl"></span></div>
+    <div class="bar-row"><span>section-sm</span><span class="val">48px</span><span class="bar bar-section-sm"></span></div>
+    <div class="bar-row"><span>section</span><span class="val">64px</span><span class="bar bar-section"></span></div>
+    <div class="bar-row"><span>section-lg</span><span class="val">96px</span><span class="bar bar-section-lg"></span></div>
+    <div class="bar-row"><span>hero</span><span class="val">120px</span><span class="bar bar-hero"></span></div>
+  </section>
+  <section id="radius">
+    <div class="sec-head"><h2>Border Radius Scale</h2><span class="count">7 steps</span></div>
+    <div class="radius-grid">
+      <div class="radius-cell"><div class="box rd-xs"></div><div class="lb">xs · 4px</div></div>
+      <div class="radius-cell"><div class="box rd-sm"></div><div class="lb">sm · 6px</div></div>
+      <div class="radius-cell"><div class="box rd-md"></div><div class="lb">md · 8px</div></div>
+      <div class="radius-cell"><div class="box rd-lg"></div><div class="lb">lg · 12px</div></div>
+      <div class="radius-cell"><div class="box rd-xl"></div><div class="lb">xl · 16px</div></div>
+      <div class="radius-cell"><div class="box rd-xxl"></div><div class="lb">xxl · 24px</div></div>
+      <div class="radius-cell"><div class="box rd-full"></div><div class="lb">full · 9999px</div></div>
+    </div>
+  </section>
+  <section id="elevation">
+    <div class="sec-head"><h2>Elevation &amp; Depth</h2><span class="count">4</span></div>
+    <div class="elev-grid">
+      <div class="elev-cell elev-1-subtle"><div class="lb">1 (subtle)</div><div class="vl">rgba(0, 30, 43, 0.04) 0px 1px 2px 0px</div></div>
+      <div class="elev-cell elev-2-card"><div class="lb">2 (card)</div><div class="vl">rgba(0, 30, 43, 0.08) 0px 4px 12px 0px</div></div>
+      <div class="elev-cell elev-3-mockup"><div class="lb">3 (mockup)</div><div class="vl">rgba(0, 30, 43, 0.12) 0px 12px 24px -4px</div></div>
+      <div class="elev-cell elev-4-modal"><div class="lb">4 (modal)</div><div class="vl">rgba(0, 30, 43, 0.16) 0px 16px 48px -8px</div></div>
+    </div>
+  </section>
+  <section id="guidelines">
+    <div class="sec-head"><h2>Do&rsquo;s &amp; Don&rsquo;ts</h2></div>
+    <div class="guide">
+      <ul class="yes">
+        <li>Use {colors.brand-green} (bright MongoDB green) for primary CTAs everywhere</li>
+        <li>Pair dark-teal hero bands with bright green CTA pills</li>
+        <li>Apply {rounded.full} to every button, every status badge</li>
+        <li>Apply {rounded.lg} (12px) to cards consistently</li>
+        <li>Use category accent colors (purple, orange, green, teal) ONLY for course tags</li>
+        <li>Maintain Euclid Circular A across every UI surface</li>
+      </ul>
+      <ul class="no">
+        <li>Don&#x27;t use the bright green for body text or large surfaces</li>
+        <li>Don&#x27;t introduce additional accent colors beyond the brand green and category-encoding palette</li>
+        <li>Don&#x27;t soften corners on buttons; the pill is a brand signature</li>
+        <li>Don&#x27;t replace deep teal hero bands with white hero bands</li>
+        <li>Don&#x27;t apply heavy shadows on flat documentation cards; reserve elevation for code mockups</li>
+        <li>Don&#x27;t use Source Code Pro for prose</li>
+      </ul>
+    </div>
+  </section>
+  <section id="reference">
+    <div class="sec-head"><h2>Component Reference</h2><span class="count">44</span></div>
+    <table class="ref"><thead><tr><th>Component</th><th>Resolved properties</th></tr></thead><tbody>
+      <tr><td class="k">button-primary</td><td>backgroundColor: var(--c-brand-green); textColor: var(--c-on-primary); typography: var(--t-button-md-size); rounded: var(--r-full); padding: 10px 22px</td></tr>
+      <tr><td class="k">button-primary-pressed</td><td>backgroundColor: var(--c-primary-pressed); textColor: var(--c-on-primary)</td></tr>
+      <tr><td class="k">button-primary-disabled</td><td>backgroundColor: var(--c-hairline); textColor: var(--c-muted)</td></tr>
+      <tr><td class="k">button-secondary</td><td>backgroundColor: transparent; textColor: var(--c-ink); typography: var(--t-button-md-size); rounded: var(--r-full); padding: 10px 22px; border: 1px solid var(--c-hairline-strong)</td></tr>
+      <tr><td class="k">button-on-dark</td><td>backgroundColor: var(--c-brand-green); textColor: var(--c-on-primary); typography: var(--t-button-md-size); rounded: var(--r-full); padding: 10px 22px</td></tr>
+      <tr><td class="k">button-secondary-on-dark</td><td>backgroundColor: transparent; textColor: var(--c-on-dark); typography: var(--t-button-md-size); rounded: var(--r-full); padding: 10px 22px; border: 1px solid var(--c-hairline-dark)</td></tr>
+      <tr><td class="k">button-ghost</td><td>backgroundColor: transparent; textColor: var(--c-ink); typography: var(--t-button-md-size); rounded: var(--r-md); padding: 8px 12px</td></tr>
+      <tr><td class="k">button-link</td><td>backgroundColor: transparent; textColor: var(--c-brand-green-dark); typography: var(--t-body-sm-medium-size); padding: 0</td></tr>
+      <tr><td class="k">card-base</td><td>backgroundColor: var(--c-canvas); rounded: var(--r-lg); padding: var(--s-xl); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">card-feature</td><td>backgroundColor: var(--c-canvas); rounded: var(--r-lg); padding: var(--s-xxl); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">card-product-deploy</td><td>backgroundColor: var(--c-canvas); rounded: var(--r-lg); padding: var(--s-xxl); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">card-feature-dark</td><td>backgroundColor: var(--c-brand-teal-deep); textColor: var(--c-on-dark); rounded: var(--r-lg); padding: var(--s-xxl)</td></tr>
+      <tr><td class="k">card-course</td><td>backgroundColor: var(--c-canvas); rounded: var(--r-lg); padding: var(--s-xl); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">card-cert</td><td>backgroundColor: var(--c-canvas); rounded: var(--r-lg); padding: var(--s-xl); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">pricing-card</td><td>backgroundColor: var(--c-canvas); rounded: var(--r-lg); padding: var(--s-xxl); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">pricing-card-featured</td><td>backgroundColor: var(--c-surface-feature); rounded: var(--r-lg); padding: var(--s-xxl); border: 2px solid var(--c-brand-green)</td></tr>
+      <tr><td class="k">text-input</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); typography: var(--t-body-md-size); rounded: var(--r-md); padding: var(--s-sm) var(--s-md); border: 1px solid var(--c-hairline-strong); height: 44px</td></tr>
+      <tr><td class="k">text-input-focused</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); border: 2px solid var(--c-brand-green-dark)</td></tr>
+      <tr><td class="k">search-pill</td><td>backgroundColor: var(--c-surface); textColor: var(--c-steel); typography: var(--t-body-md-size); rounded: var(--r-md); padding: var(--s-sm) var(--s-md); height: 44px; border: 1px solid var(--c-hairline-strong)</td></tr>
+      <tr><td class="k">search-pill-large</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-steel); typography: var(--t-body-md-size); rounded: var(--r-md); padding: var(--s-md); height: 56px; border: 1px solid var(--c-hairline-strong)</td></tr>
+      <tr><td class="k">pill-tab</td><td>backgroundColor: transparent; textColor: var(--c-steel); typography: var(--t-body-sm-medium-size); rounded: var(--r-full); padding: var(--s-xs) var(--s-md); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">pill-tab-active</td><td>backgroundColor: var(--c-ink); textColor: var(--c-on-dark); rounded: var(--r-full); border: 1px solid var(--c-ink)</td></tr>
+      <tr><td class="k">segmented-tab</td><td>backgroundColor: transparent; textColor: var(--c-steel); typography: var(--t-body-sm-medium-size); padding: var(--s-sm) var(--s-md); border: 0 0 2px transparent solid</td></tr>
+      <tr><td class="k">segmented-tab-active</td><td>backgroundColor: transparent; textColor: var(--c-brand-green-dark); typography: var(--t-body-sm-medium-size); border: 0 0 2px var(--c-brand-green-dark) solid</td></tr>
+      <tr><td class="k">badge-green</td><td>backgroundColor: var(--c-brand-green); textColor: var(--c-on-primary); typography: var(--t-caption-bold-size); rounded: var(--r-sm); padding: 2px 8px</td></tr>
+      <tr><td class="k">badge-green-soft</td><td>backgroundColor: var(--c-brand-green-soft); textColor: var(--c-brand-green-dark); typography: var(--t-caption-bold-size); rounded: var(--r-full); padding: 4px 10px</td></tr>
+      <tr><td class="k">badge-purple</td><td>backgroundColor: var(--c-accent-purple); textColor: var(--c-on-dark); typography: var(--t-caption-bold-size); rounded: var(--r-sm); padding: 2px 8px</td></tr>
+      <tr><td class="k">badge-orange</td><td>backgroundColor: var(--c-accent-orange); textColor: var(--c-on-dark); typography: var(--t-caption-bold-size); rounded: var(--r-sm); padding: 2px 8px</td></tr>
+      <tr><td class="k">badge-popular</td><td>backgroundColor: var(--c-brand-teal-deep); textColor: var(--c-brand-green); typography: var(--t-caption-bold-size); rounded: var(--r-full); padding: 4px 10px</td></tr>
+      <tr><td class="k">promo-banner</td><td>backgroundColor: var(--c-brand-teal-deep); textColor: var(--c-on-dark); typography: var(--t-body-sm-medium-size); padding: var(--s-sm) var(--s-md)</td></tr>
+      <tr><td class="k">hero-band-dark</td><td>backgroundColor: var(--c-brand-teal-deep); textColor: var(--c-on-dark); rounded: 0; padding: var(--s-hero)</td></tr>
+      <tr><td class="k">hero-platform-card</td><td>backgroundColor: var(--c-brand-teal-mid); textColor: var(--c-on-dark); rounded: var(--r-xl); padding: var(--s-xxl)</td></tr>
+      <tr><td class="k">cta-banner-dark</td><td>backgroundColor: var(--c-brand-teal-deep); textColor: var(--c-on-dark); rounded: var(--r-lg); padding: var(--s-section)</td></tr>
+      <tr><td class="k">code-block</td><td>backgroundColor: var(--c-canvas-dark); textColor: var(--c-on-dark); typography: var(--t-code-md-size); rounded: var(--r-md); padding: var(--s-md)</td></tr>
+      <tr><td class="k">code-mockup-card</td><td>backgroundColor: var(--c-canvas-dark); textColor: var(--c-on-dark); rounded: var(--r-lg); padding: var(--s-lg)</td></tr>
+      <tr><td class="k">comparison-table</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); typography: var(--t-body-sm-size); rounded: var(--r-md); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">comparison-row</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); padding: var(--s-md) var(--s-lg); border: 0 0 1px var(--c-hairline-soft) solid</td></tr>
+      <tr><td class="k">service-tile</td><td>backgroundColor: var(--c-canvas); rounded: var(--r-lg); padding: var(--s-xl); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">why-card</td><td>backgroundColor: var(--c-surface); rounded: var(--r-lg); padding: var(--s-xl)</td></tr>
+      <tr><td class="k">customer-testimonial-card</td><td>backgroundColor: var(--c-canvas); rounded: var(--r-lg); padding: var(--s-xxl); border: 1px solid var(--c-hairline)</td></tr>
+      <tr><td class="k">logo-wall-item</td><td>backgroundColor: transparent; textColor: var(--c-steel); typography: var(--t-body-md-medium-size); padding: var(--s-lg)</td></tr>
+      <tr><td class="k">faq-accordion-item</td><td>backgroundColor: var(--c-canvas); rounded: var(--r-md); padding: var(--s-xl); border: 0 0 1px var(--c-hairline) solid</td></tr>
+      <tr><td class="k">footer-region</td><td>backgroundColor: var(--c-brand-teal-deep); textColor: var(--c-on-dark); typography: var(--t-body-sm-size); padding: var(--s-section) var(--s-xxl)</td></tr>
+      <tr><td class="k">footer-link</td><td>backgroundColor: transparent; textColor: var(--c-on-dark-muted); typography: var(--t-body-sm-size); padding: var(--s-xxs) 0</td></tr>
+    </tbody></table>
+  </section>
+  <footer><span>MongoDB-design-analysis — design tokens extracted from DESIGN.md</span><span>awesome-design-md / getdesign.md</span></footer>
+</div>
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script>
+</body></html>

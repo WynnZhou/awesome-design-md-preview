@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" data-native="dark" data-theme="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HashiCorp-design-analysis — Design System Preview</title>
+  <link rel="stylesheet" href="preview_auto.css">
+</head>
+<body>
+
+<div class="page">
+  <header class="topbar">
+    <div><div class="topbar-name">HashiCorp-design-analysis</div><div class="topbar-meta">design tokens · 30 colors · 12 type styles · 22 components</div></div>
+    <nav class="topbar-links"><a href="#colors">Colors</a><a href="#typography">Type</a><a href="#buttons">Buttons</a><a href="#badges">Badges</a><a href="#cards">Cards</a><a href="#forms">Forms</a><a href="#nav">Tabs</a><a href="#spacing">Spacing</a><a href="#radius">Radius</a><a href="#elevation">Depth</a><a href="#signature">Other</a><a href="#reference">Reference</a></nav>
+  </header>
+  <section class="hero">
+    <h1>HashiCorp-design-analysis</h1>
+    <p class="lede">An enterprise-infrastructure marketing canvas built around a near-black ground (#000000) and a system of per-product accent colors — Terraform purple, Vault yellow, Consul pink, Waypoint cyan, Vagrant blue — that act as identity tokens rather than decorative palette. Display type is hashicorpSans set in 600/700 with tight 1.17–1.21 line-heights; body type runs the same family at 500 weight with relaxed 1.50–1.71 line-heights. Cards live as charcoal surfaces with 1px translucent gray borders; product showcase cards lift into per-product chromatic gradients. The system reads as confident, technical, and intentionally multi-product — every section quietly signals which HashiCorp tool it represents.</p>
+    <div class="meta">
+      <span class="chip solid">#000000</span>
+      <span class="chip">hashicorpSans</span>
+      <span class="chip">dark canvas</span>
+      <span class="chip">source: DESIGN.md (frontmatter)</span>
+    </div>
+  </section>
+  <section id="colors">
+    <div class="sec-head"><h2>Color Palette</h2><span class="count">30 tokens</span></div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-primary">#000000</div><div class="info"><div class="nm">primary</div><div class="hx">primary</div></div></div>
+      <div class="swatch"><div class="fill sw-on-primary">#ffffff</div><div class="info"><div class="nm">on-primary</div><div class="hx">on-primary</div></div></div>
+      <div class="swatch"><div class="fill sw-accent-blue">#2b89ff</div><div class="info"><div class="nm">accent-blue</div><div class="hx">accent-blue</div></div></div>
+      <div class="swatch"><div class="fill sw-ink">#ffffff</div><div class="info"><div class="nm">ink</div><div class="hx">ink</div></div></div>
+      <div class="swatch"><div class="fill sw-ink-muted">#b2b6bd</div><div class="info"><div class="nm">ink-muted</div><div class="hx">ink-muted</div></div></div>
+      <div class="swatch"><div class="fill sw-ink-subtle">#656a76</div><div class="info"><div class="nm">ink-subtle</div><div class="hx">ink-subtle</div></div></div>
+      <div class="swatch"><div class="fill sw-canvas">#000000</div><div class="info"><div class="nm">canvas</div><div class="hx">canvas</div></div></div>
+      <div class="swatch"><div class="fill sw-surface-1">#15181e</div><div class="info"><div class="nm">surface-1</div><div class="hx">surface-1</div></div></div>
+      <div class="swatch"><div class="fill sw-surface-2">#1f232b</div><div class="info"><div class="nm">surface-2</div><div class="hx">surface-2</div></div></div>
+      <div class="swatch"><div class="fill sw-surface-3">#3b3d45</div><div class="info"><div class="nm">surface-3</div><div class="hx">surface-3</div></div></div>
+      <div class="swatch"><div class="fill sw-hairline">#3b3d45</div><div class="info"><div class="nm">hairline</div><div class="hx">hairline</div></div></div>
+      <div class="swatch"><div class="fill sw-hairline-soft">#252830</div><div class="info"><div class="nm">hairline-soft</div><div class="hx">hairline-soft</div></div></div>
+      <div class="swatch"><div class="fill sw-inverse-canvas">#ffffff</div><div class="info"><div class="nm">inverse-canvas</div><div class="hx">inverse-canvas</div></div></div>
+      <div class="swatch"><div class="fill sw-inverse-ink">#000000</div><div class="info"><div class="nm">inverse-ink</div><div class="hx">inverse-ink</div></div></div>
+      <div class="swatch"><div class="fill sw-product-terraform">#7b42bc</div><div class="info"><div class="nm">product-terraform</div><div class="hx">product-terraform</div></div></div>
+      <div class="swatch"><div class="fill sw-product-terraform-bright">#911ced</div><div class="info"><div class="nm">product-terraform-bright</div><div class="hx">product-terraform-bright</div></div></div>
+      <div class="swatch"><div class="fill sw-product-vault">#ffcf25</div><div class="info"><div class="nm">product-vault</div><div class="hx">product-vault</div></div></div>
+      <div class="swatch"><div class="fill sw-product-consul">#e62b1e</div><div class="info"><div class="nm">product-consul</div><div class="hx">product-consul</div></div></div>
+      <div class="swatch"><div class="fill sw-product-waypoint">#14c6cb</div><div class="info"><div class="nm">product-waypoint</div><div class="hx">product-waypoint</div></div></div>
+      <div class="swatch"><div class="fill sw-product-waypoint-deep">#12b6bb</div><div class="info"><div class="nm">product-waypoint-deep</div><div class="hx">product-waypoint-deep</div></div></div>
+      <div class="swatch"><div class="fill sw-product-vagrant">#1868f2</div><div class="info"><div class="nm">product-vagrant</div><div class="hx">product-vagrant</div></div></div>
+      <div class="swatch"><div class="fill sw-product-nomad">#00ca8e</div><div class="info"><div class="nm">product-nomad</div><div class="hx">product-nomad</div></div></div>
+      <div class="swatch"><div class="fill sw-product-boundary">#f24c53</div><div class="info"><div class="nm">product-boundary</div><div class="hx">product-boundary</div></div></div>
+      <div class="swatch"><div class="fill sw-amber-100">#fbeabf</div><div class="info"><div class="nm">amber-100</div><div class="hx">amber-100</div></div></div>
+      <div class="swatch"><div class="fill sw-amber-200">#bb5a00</div><div class="info"><div class="nm">amber-200</div><div class="hx">amber-200</div></div></div>
+      <div class="swatch"><div class="fill sw-blue-7">#101a59</div><div class="info"><div class="nm">blue-7</div><div class="hx">blue-7</div></div></div>
+      <div class="swatch"><div class="fill sw-semantic-success">#00ca8e</div><div class="info"><div class="nm">semantic-success</div><div class="hx">semantic-success</div></div></div>
+      <div class="swatch"><div class="fill sw-semantic-warning">#ffcf25</div><div class="info"><div class="nm">semantic-warning</div><div class="hx">semantic-warning</div></div></div>
+      <div class="swatch"><div class="fill sw-semantic-error">#e62b1e</div><div class="info"><div class="nm">semantic-error</div><div class="hx">semantic-error</div></div></div>
+      <div class="swatch"><div class="fill sw-semantic-visited">#a737ff</div><div class="info"><div class="nm">semantic-visited</div><div class="hx">semantic-visited</div></div></div>
+    </div>
+  </section>
+  <section id="typography">
+    <div class="sec-head"><h2>Typography Scale</h2><span class="count">12 styles</span></div>
+    <div class="type-row">
+      <div class="type-meta"><b>display-xl</b>80px / 700<br>lh 1.17 · ls -2.5px<br>hashicorpSans</div>
+      <div class="type-sample type-display-xl">display-xl — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>display-lg</b>56px / 700<br>lh 1.18 · ls -1.6px<br>hashicorpSans</div>
+      <div class="type-sample type-display-lg">display-lg — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>display-md</b>40px / 600<br>lh 1.19 · ls -1.0px<br>hashicorpSans</div>
+      <div class="type-sample type-display-md">display-md — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>headline</b>28px / 600<br>lh 1.21 · ls -0.6px<br>hashicorpSans</div>
+      <div class="type-sample type-headline">headline — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>card-title</b>22px / 600<br>lh 1.18 · ls -0.4px<br>hashicorpSans</div>
+      <div class="type-sample type-card-title">card-title — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>subhead</b>20px / 600<br>lh 1.35 · ls -0.2px<br>hashicorpSans</div>
+      <div class="type-sample type-subhead">subhead — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>body-lg</b>18px / 500<br>lh 1.69 · ls 0<br>hashicorpSans</div>
+      <div class="type-sample type-body-lg">body-lg — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>body</b>16px / 500<br>lh 1.50 · ls 0<br>hashicorpSans</div>
+      <div class="type-sample type-body">body — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>body-sm</b>14px / 500<br>lh 1.71 · ls 0<br>hashicorpSans</div>
+      <div class="type-sample type-body-sm">body-sm — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>caption</b>13px / 500<br>lh 1.38 · ls 0.2px<br>hashicorpSans</div>
+      <div class="type-sample type-caption">caption — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>button</b>14px / 600<br>lh 1.29 · ls 0<br>hashicorpSans</div>
+      <div class="type-sample type-button">button — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>eyebrow</b>12px / 600<br>lh 1.23 · ls 0.6px<br>hashicorpSans</div>
+      <div class="type-sample type-eyebrow">eyebrow — The quick brown fox jumps over the lazy dog</div>
+    </div>
+  </section>
+  <section id="buttons">
+    <div class="sec-head"><h2>Button Variants</h2><span class="count">8</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="button-primary">Primary</div><button class="demo-el spec-button-primary" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-primary-pressed">Primary Pressed</div><button class="demo-el spec-button-primary-pressed" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-secondary">Secondary</div><button class="demo-el spec-button-secondary" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-tertiary">Tertiary</div><button class="demo-el spec-button-tertiary" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-product-terraform">Product Terraform</div><button class="demo-el spec-button-product-terraform" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-product-vault">Product Vault</div><button class="demo-el spec-button-product-vault" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-product-waypoint">Product Waypoint</div><button class="demo-el spec-button-product-waypoint" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="cta-banner">Cta Banner</div><button class="demo-el spec-cta-banner" type="button">Button</button></div>
+    </div></div>
+  </section>
+  <section id="badges">
+    <div class="sec-head"><h2>Badges & Pills</h2><span class="count">1</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="product-pill">Product Pill</div><div class="demo-el spec-product-pill">Badge</div></div>
+    </div></div>
+  </section>
+  <section id="cards">
+    <div class="sec-head"><h2>Cards & Containers</h2><span class="count">13</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="button-product-terraform">Product Terraform</div><div class="demo-el spec-button-product-terraform"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="button-product-vault">Product Vault</div><div class="demo-el spec-button-product-vault"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="button-product-waypoint">Product Waypoint</div><div class="demo-el spec-button-product-waypoint"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="product-card">Product Card</div><div class="demo-el spec-product-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="product-card-terraform">Product Card Terraform</div><div class="demo-el spec-product-card-terraform"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="product-card-vault">Product Card Vault</div><div class="demo-el spec-product-card-vault"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="product-card-waypoint">Product Card Waypoint</div><div class="demo-el spec-product-card-waypoint"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="feature-card">Feature Card</div><div class="demo-el spec-feature-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="pricing-card">Pricing Card</div><div class="demo-el spec-pricing-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="pricing-card-featured">Pricing Card Featured</div><div class="demo-el spec-pricing-card-featured"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="resource-card">Resource Card</div><div class="demo-el spec-resource-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="product-pill">Product Pill</div><div class="demo-el spec-product-pill"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="cta-banner">Cta Banner</div><div class="demo-el spec-cta-banner"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+    </div></div>
+  </section>
+  <section id="forms">
+    <div class="sec-head"><h2>Forms & Inputs</h2><span class="count">2</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="text-input">Text Input</div><div class="demo-el spec-text-input"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="text-input-focused">Text Input Focused</div><div class="demo-el spec-text-input-focused"><span class="demo-el-b">Placeholder text</span></div></div>
+    </div></div>
+  </section>
+  <section id="nav">
+    <div class="sec-head"><h2>Navigation & Tabs</h2><span class="count">2</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="top-nav">Top Nav</div><div class="demo-el spec-top-nav"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="footer">Footer</div><div class="demo-el spec-footer"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+    </div></div>
+  </section>
+  <section id="signature">
+    <div class="sec-head"><h2>Other Components</h2><span class="count">1</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="comparison-row">Comparison Row</div><div class="demo-el spec-comparison-row">Comparison Row</div></div>
+    </div></div>
+  </section>
+  <section id="spacing">
+    <div class="sec-head"><h2>Spacing Scale</h2><span class="count">9 steps</span></div>
+    <div class="bar-row"><span>hair</span><span class="val">1px</span><span class="bar bar-hair"></span></div>
+    <div class="bar-row"><span>xxs</span><span class="val">4px</span><span class="bar bar-xxs"></span></div>
+    <div class="bar-row"><span>xs</span><span class="val">8px</span><span class="bar bar-xs"></span></div>
+    <div class="bar-row"><span>sm</span><span class="val">12px</span><span class="bar bar-sm"></span></div>
+    <div class="bar-row"><span>md</span><span class="val">16px</span><span class="bar bar-md"></span></div>
+    <div class="bar-row"><span>lg</span><span class="val">24px</span><span class="bar bar-lg"></span></div>
+    <div class="bar-row"><span>xl</span><span class="val">32px</span><span class="bar bar-xl"></span></div>
+    <div class="bar-row"><span>xxl</span><span class="val">48px</span><span class="bar bar-xxl"></span></div>
+    <div class="bar-row"><span>section</span><span class="val">96px</span><span class="bar bar-section"></span></div>
+  </section>
+  <section id="radius">
+    <div class="sec-head"><h2>Border Radius Scale</h2><span class="count">8 steps</span></div>
+    <div class="radius-grid">
+      <div class="radius-cell"><div class="box rd-xs"></div><div class="lb">xs · 4px</div></div>
+      <div class="radius-cell"><div class="box rd-sm"></div><div class="lb">sm · 6px</div></div>
+      <div class="radius-cell"><div class="box rd-md"></div><div class="lb">md · 8px</div></div>
+      <div class="radius-cell"><div class="box rd-lg"></div><div class="lb">lg · 12px</div></div>
+      <div class="radius-cell"><div class="box rd-xl"></div><div class="lb">xl · 16px</div></div>
+      <div class="radius-cell"><div class="box rd-xxl"></div><div class="lb">xxl · 24px</div></div>
+      <div class="radius-cell"><div class="box rd-pill"></div><div class="lb">pill · 9999px</div></div>
+      <div class="radius-cell"><div class="box rd-full"></div><div class="lb">full · 9999px</div></div>
+    </div>
+  </section>
+  <section id="elevation">
+    <div class="sec-head"><h2>Elevation &amp; Depth</h2><span class="count">2</span></div>
+    <div class="elev-grid">
+      <div class="elev-cell elev-1-charcoal-lift"><div class="lb">1 (charcoal lift)</div><div class="vl">{colors.surface-1} background + 1px rgba(178,182,189,0.1) border</div></div>
+      <div class="elev-cell elev-2-surface-2-lift"><div class="lb">2 (surface-2 lift)</div><div class="vl">{colors.surface-2} background + 1px {colors.hairline} border</div></div>
+    </div>
+  </section>
+  <section id="guidelines">
+    <div class="sec-head"><h2>Do&rsquo;s &amp; Don&rsquo;ts</h2></div>
+    <div class="guide">
+      <ul class="yes">
+        <li>Reserve {colors.canvas} (black) and {colors.surface-1} (charcoal) as the system&#x27;s two anchor surfaces. Every band of the page is one or the other.</li>
+        <li>When introducing a section about a specific HashiCorp product, use that product&#x27;s {colors.product-*} token consistently — for the section pill, the CTA button, and (where appropriate) the showcase card background.</li>
+        <li>Use {rounded.md} 8px on CTA buttons; HashiCorp&#x27;s brand reads as engineered, not consumer.</li>
+        <li>Pair tight display line-heights (1.17–1.21) with relaxed body line-heights (1.50–1.71). The contrast IS the brand voice.</li>
+        <li>Use the eyebrow typography ({typography.eyebrow}, uppercase, 0.6px tracking) above every meaningful section.</li>
+        <li>Use surface lift (canvas → surface-1 → surface-2) to express hierarchy on dark.</li>
+      </ul>
+      <ul class="no">
+        <li>Don&#x27;t ship a light-mode marketing page. HashiCorp&#x27;s marketing brand IS dark.</li>
+        <li>Don&#x27;t introduce mid-tone gray text outside the documented ink / ink-muted / ink-subtle set.</li>
+        <li>Don&#x27;t square off CTA corners — use {rounded.md} 8px, not 0px.</li>
+        <li>Don&#x27;t use a product accent color for a CTA on a page that isn&#x27;t about that product. Terraform purple on the Vault page is a brand violation.</li>
+        <li>Don&#x27;t combine multiple product accents in the same viewport — the system says &quot;this section is about THIS tool&quot;, and mixing accents breaks that signal.</li>
+        <li>Don&#x27;t add drop shadows on dark; surface lift carries elevation.</li>
+      </ul>
+    </div>
+  </section>
+  <section id="reference">
+    <div class="sec-head"><h2>Component Reference</h2><span class="count">22</span></div>
+    <table class="ref"><thead><tr><th>Component</th><th>Resolved properties</th></tr></thead><tbody>
+      <tr><td class="k">button-primary</td><td>backgroundColor: var(--c-inverse-canvas); textColor: var(--c-inverse-ink); typography: var(--t-button-size); rounded: var(--r-md); padding: 10px 18px</td></tr>
+      <tr><td class="k">button-primary-pressed</td><td>backgroundColor: var(--c-inverse-canvas); textColor: var(--c-inverse-ink); typography: var(--t-button-size); rounded: var(--r-md)</td></tr>
+      <tr><td class="k">button-secondary</td><td>backgroundColor: var(--c-surface-2); textColor: var(--c-ink); typography: var(--t-button-size); rounded: var(--r-md); padding: 10px 18px</td></tr>
+      <tr><td class="k">button-tertiary</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); typography: var(--t-button-size); rounded: var(--r-md); padding: 10px 18px</td></tr>
+      <tr><td class="k">button-product-terraform</td><td>backgroundColor: var(--c-product-terraform); textColor: var(--c-ink); typography: var(--t-button-size); rounded: var(--r-md); padding: 10px 18px</td></tr>
+      <tr><td class="k">button-product-vault</td><td>backgroundColor: var(--c-product-vault); textColor: var(--c-inverse-ink); typography: var(--t-button-size); rounded: var(--r-md); padding: 10px 18px</td></tr>
+      <tr><td class="k">button-product-waypoint</td><td>backgroundColor: var(--c-product-waypoint); textColor: var(--c-inverse-ink); typography: var(--t-button-size); rounded: var(--r-md); padding: 10px 18px</td></tr>
+      <tr><td class="k">product-card</td><td>backgroundColor: var(--c-surface-1); textColor: var(--c-ink); typography: var(--t-body-size); rounded: var(--r-lg); padding: 24px</td></tr>
+      <tr><td class="k">product-card-terraform</td><td>backgroundColor: var(--c-product-terraform); textColor: var(--c-ink); typography: var(--t-body-size); rounded: var(--r-lg); padding: 24px</td></tr>
+      <tr><td class="k">product-card-vault</td><td>backgroundColor: var(--c-product-vault); textColor: var(--c-inverse-ink); typography: var(--t-body-size); rounded: var(--r-lg); padding: 24px</td></tr>
+      <tr><td class="k">product-card-waypoint</td><td>backgroundColor: var(--c-product-waypoint); textColor: var(--c-inverse-ink); typography: var(--t-body-size); rounded: var(--r-lg); padding: 24px</td></tr>
+      <tr><td class="k">feature-card</td><td>backgroundColor: var(--c-surface-1); textColor: var(--c-ink); typography: var(--t-body-size); rounded: var(--r-lg); padding: 24px</td></tr>
+      <tr><td class="k">pricing-card</td><td>backgroundColor: var(--c-surface-1); textColor: var(--c-ink); typography: var(--t-body-size); rounded: var(--r-lg); padding: 32px</td></tr>
+      <tr><td class="k">pricing-card-featured</td><td>backgroundColor: var(--c-surface-2); textColor: var(--c-ink); typography: var(--t-body-size); rounded: var(--r-lg); padding: 32px</td></tr>
+      <tr><td class="k">resource-card</td><td>backgroundColor: var(--c-surface-1); textColor: var(--c-ink); typography: var(--t-body-sm-size); rounded: var(--r-lg); padding: 16px</td></tr>
+      <tr><td class="k">text-input</td><td>backgroundColor: var(--c-surface-1); textColor: var(--c-ink); typography: var(--t-body-size); rounded: var(--r-md); padding: 10px 14px</td></tr>
+      <tr><td class="k">text-input-focused</td><td>backgroundColor: var(--c-surface-1); textColor: var(--c-ink); typography: var(--t-body-size); rounded: var(--r-md); padding: 10px 14px</td></tr>
+      <tr><td class="k">product-pill</td><td>backgroundColor: var(--c-surface-1); textColor: var(--c-ink-muted); typography: var(--t-caption-size); rounded: var(--r-pill); padding: 4px 10px</td></tr>
+      <tr><td class="k">top-nav</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink); typography: var(--t-body-sm-size); rounded: var(--r-xs); height: 64px</td></tr>
+      <tr><td class="k">comparison-row</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink-muted); typography: var(--t-body-sm-size); rounded: var(--r-xs)</td></tr>
+      <tr><td class="k">cta-banner</td><td>backgroundColor: var(--c-surface-1); textColor: var(--c-ink); typography: var(--t-subhead-size); rounded: var(--r-xxl); padding: 48px</td></tr>
+      <tr><td class="k">footer</td><td>backgroundColor: var(--c-canvas); textColor: var(--c-ink-muted); typography: var(--t-caption-size); rounded: var(--r-xs); padding: 64px 32px</td></tr>
+    </tbody></table>
+  </section>
+  <footer><span>HashiCorp-design-analysis — design tokens extracted from DESIGN.md</span><span>awesome-design-md / getdesign.md</span></footer>
+</div>
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script>
+</body></html>

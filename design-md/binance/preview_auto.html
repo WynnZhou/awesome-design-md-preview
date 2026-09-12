@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" data-native="light" data-theme="light"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Binance-design-analysis — Design System Preview</title>
+  <link rel="stylesheet" href="preview_auto.css">
+</head>
+<body>
+
+<div class="page">
+  <header class="topbar">
+    <div><div class="topbar-name">Binance-design-analysis</div><div class="topbar-meta">design tokens · 24 colors · 15 type styles · 35 components</div></div>
+    <nav class="topbar-links"><a href="#colors">Colors</a><a href="#typography">Type</a><a href="#buttons">Buttons</a><a href="#badges">Badges</a><a href="#cards">Cards</a><a href="#forms">Forms</a><a href="#nav">Tabs</a><a href="#spacing">Spacing</a><a href="#radius">Radius</a><a href="#elevation">Depth</a><a href="#signature">Other</a><a href="#reference">Reference</a></nav>
+  </header>
+  <section class="hero">
+    <h1>Binance-design-analysis</h1>
+    <p class="lede">A confident financial-platform interface anchored on a deep near-black canvas, where Binance&#x27;s iconic yellow (#FCD535) carries every primary CTA, brand accent, and value-claim moment. Type runs Binance&#x27;s custom BinanceNova / BinancePlex stack at modest weights — the system trusts size and yellow voltage over bold weight. Marketing and product surfaces default to the dark theme; transactional surfaces (buy crypto, deposit, exchange) flip to a light theme that shares the same yellow CTAs and gray-blue hairlines. Trading green (up) and red (down) accents thread through both modes for price-direction signals.</p>
+    <div class="meta">
+      <span class="chip solid">#fcd535</span>
+      <span class="chip">BinanceNova</span>
+      <span class="chip">light canvas</span>
+      <span class="chip">source: DESIGN.md (frontmatter)</span>
+    </div>
+  </section>
+  <section id="colors">
+    <div class="sec-head"><h2>Color Palette</h2><span class="count">24 tokens</span></div>
+    <div class="grid g-colors">
+      <div class="swatch"><div class="fill sw-primary">#fcd535</div><div class="info"><div class="nm">primary</div><div class="hx">primary</div></div></div>
+      <div class="swatch"><div class="fill sw-primary-active">#f0b90b</div><div class="info"><div class="nm">primary-active</div><div class="hx">primary-active</div></div></div>
+      <div class="swatch"><div class="fill sw-primary-disabled">#3a3a1f</div><div class="info"><div class="nm">primary-disabled</div><div class="hx">primary-disabled</div></div></div>
+      <div class="swatch"><div class="fill sw-ink">#181a20</div><div class="info"><div class="nm">ink</div><div class="hx">ink</div></div></div>
+      <div class="swatch"><div class="fill sw-body">#eaecef</div><div class="info"><div class="nm">body</div><div class="hx">body</div></div></div>
+      <div class="swatch"><div class="fill sw-body-on-light">#181a20</div><div class="info"><div class="nm">body-on-light</div><div class="hx">body-on-light</div></div></div>
+      <div class="swatch"><div class="fill sw-muted">#707a8a</div><div class="info"><div class="nm">muted</div><div class="hx">muted</div></div></div>
+      <div class="swatch"><div class="fill sw-muted-strong">#929aa5</div><div class="info"><div class="nm">muted-strong</div><div class="hx">muted-strong</div></div></div>
+      <div class="swatch"><div class="fill sw-hairline-on-light">#eaecef</div><div class="info"><div class="nm">hairline-on-light</div><div class="hx">hairline-on-light</div></div></div>
+      <div class="swatch"><div class="fill sw-hairline-on-dark">#2b3139</div><div class="info"><div class="nm">hairline-on-dark</div><div class="hx">hairline-on-dark</div></div></div>
+      <div class="swatch"><div class="fill sw-border-strong">#cdd1d6</div><div class="info"><div class="nm">border-strong</div><div class="hx">border-strong</div></div></div>
+      <div class="swatch"><div class="fill sw-canvas-light">#ffffff</div><div class="info"><div class="nm">canvas-light</div><div class="hx">canvas-light</div></div></div>
+      <div class="swatch"><div class="fill sw-canvas-dark">#0b0e11</div><div class="info"><div class="nm">canvas-dark</div><div class="hx">canvas-dark</div></div></div>
+      <div class="swatch"><div class="fill sw-surface-card-dark">#1e2329</div><div class="info"><div class="nm">surface-card-dark</div><div class="hx">surface-card-dark</div></div></div>
+      <div class="swatch"><div class="fill sw-surface-elevated-dark">#2b3139</div><div class="info"><div class="nm">surface-elevated-dark</div><div class="hx">surface-elevated-dark</div></div></div>
+      <div class="swatch"><div class="fill sw-surface-soft-light">#fafafa</div><div class="info"><div class="nm">surface-soft-light</div><div class="hx">surface-soft-light</div></div></div>
+      <div class="swatch"><div class="fill sw-surface-strong-light">#f5f5f5</div><div class="info"><div class="nm">surface-strong-light</div><div class="hx">surface-strong-light</div></div></div>
+      <div class="swatch"><div class="fill sw-on-primary">#181a20</div><div class="info"><div class="nm">on-primary</div><div class="hx">on-primary</div></div></div>
+      <div class="swatch"><div class="fill sw-on-dark">#ffffff</div><div class="info"><div class="nm">on-dark</div><div class="hx">on-dark</div></div></div>
+      <div class="swatch"><div class="fill sw-trading-up">#0ecb81</div><div class="info"><div class="nm">trading-up</div><div class="hx">trading-up</div></div></div>
+      <div class="swatch"><div class="fill sw-trading-down">#f6465d</div><div class="info"><div class="nm">trading-down</div><div class="hx">trading-down</div></div></div>
+      <div class="swatch"><div class="fill sw-accent-turquoise">#2dbdb6</div><div class="info"><div class="nm">accent-turquoise</div><div class="hx">accent-turquoise</div></div></div>
+      <div class="swatch"><div class="fill sw-info">#3b82f6</div><div class="info"><div class="nm">info</div><div class="hx">info</div></div></div>
+      <div class="swatch"><div class="fill sw-info-ring">#3b82f6</div><div class="info"><div class="nm">info-ring</div><div class="hx">info-ring</div></div></div>
+    </div>
+  </section>
+  <section id="typography">
+    <div class="sec-head"><h2>Typography Scale</h2><span class="count">15 styles</span></div>
+    <div class="type-row">
+      <div class="type-meta"><b>hero-display</b>64px / 700<br>lh 1.1 · ls -1px<br>BinanceNova, -apple-system, BlinkMacSystemFont, sans-serif</div>
+      <div class="type-sample type-hero-display">hero-display — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>display-lg</b>48px / 700<br>lh 1.1 · ls -0.5px<br>BinanceNova, sans-serif</div>
+      <div class="type-sample type-display-lg">display-lg — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>display-md</b>40px / 600<br>lh 1.15 · ls -0.3px<br>BinanceNova, sans-serif</div>
+      <div class="type-sample type-display-md">display-md — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>display-sm</b>32px / 600<br>lh 1.2 · ls 0<br>BinanceNova, sans-serif</div>
+      <div class="type-sample type-display-sm">display-sm — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>title-lg</b>24px / 600<br>lh 1.3 · ls 0<br>BinanceNova, sans-serif</div>
+      <div class="type-sample type-title-lg">title-lg — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>title-md</b>20px / 600<br>lh 1.35 · ls 0<br>BinanceNova, sans-serif</div>
+      <div class="type-sample type-title-md">title-md — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>title-sm</b>16px / 600<br>lh 1.4 · ls 0<br>BinanceNova, sans-serif</div>
+      <div class="type-sample type-title-sm">title-sm — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>number-display</b>40px / 700<br>lh 1.1 · ls -0.3px<br>BinancePlex, BinanceNova, sans-serif</div>
+      <div class="type-sample type-number-display">number-display — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>number-md</b>16px / 500<br>lh 1.4 · ls 0<br>BinancePlex, BinanceNova, sans-serif</div>
+      <div class="type-sample type-number-md">number-md — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>number-sm</b>14px / 500<br>lh 1.4 · ls 0<br>BinancePlex, BinanceNova, sans-serif</div>
+      <div class="type-sample type-number-sm">number-sm — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>body-md</b>14px / 400<br>lh 1.5 · ls 0<br>BinanceNova, sans-serif</div>
+      <div class="type-sample type-body-md">body-md — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>body-sm</b>13px / 400<br>lh 1.5 · ls 0<br>BinanceNova, sans-serif</div>
+      <div class="type-sample type-body-sm">body-sm — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>caption</b>12px / 500<br>lh 1.4 · ls 0<br>BinanceNova, sans-serif</div>
+      <div class="type-sample type-caption">caption — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>button</b>14px / 600<br>lh 1 · ls 0<br>BinanceNova, sans-serif</div>
+      <div class="type-sample type-button">button — The quick brown fox jumps over the lazy dog</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta"><b>nav-link</b>14px / 500<br>lh 1.4 · ls 0<br>BinanceNova, sans-serif</div>
+      <div class="type-sample type-nav-link">nav-link — The quick brown fox jumps over the lazy dog</div>
+    </div>
+  </section>
+  <section id="buttons">
+    <div class="sec-head"><h2>Button Variants</h2><span class="count">11</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="button-primary">Primary</div><button class="demo-el spec-button-primary" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-primary-active">Primary Active</div><button class="demo-el spec-button-primary-active" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-primary-disabled">Primary Disabled</div><button class="demo-el spec-button-primary-disabled" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-primary-pill">Primary Pill</div><button class="demo-el spec-button-primary-pill" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-secondary-on-dark">Secondary On Dark</div><button class="demo-el spec-button-secondary-on-dark" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-secondary-on-light">Secondary On Light</div><button class="demo-el spec-button-secondary-on-light" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-tertiary-text">Tertiary Text</div><button class="demo-el demo-el-ghost spec-button-tertiary-text" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-trading-up">Trading Up</div><button class="demo-el spec-button-trading-up" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-trading-down">Trading Down</div><button class="demo-el spec-button-trading-down" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="button-subscribe">Subscribe</div><button class="demo-el spec-button-subscribe" type="button">Button</button></div>
+      <div class="demo-col"><div class="lb" title="cta-band-dark">Cta Band Dark</div><button class="demo-el spec-cta-band-dark" type="button">Button</button></div>
+    </div></div>
+  </section>
+  <section id="badges">
+    <div class="sec-head"><h2>Badges & Pills</h2><span class="count">2</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="button-primary-pill">Primary Pill</div><div class="demo-el spec-button-primary-pill">Badge</div></div>
+      <div class="demo-col"><div class="lb" title="trust-badge">Trust Badge</div><div class="demo-el spec-trust-badge">Badge</div></div>
+    </div></div>
+  </section>
+  <section id="cards">
+    <div class="sec-head"><h2>Cards & Containers</h2><span class="count">10</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="hero-band-dark">Hero Band Dark</div><div class="demo-el spec-hero-band-dark"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="stat-callout-card">Stat Callout Card</div><div class="demo-el demo-el-ghost spec-stat-callout-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="markets-table-card">Markets Table Card</div><div class="demo-el spec-markets-table-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="feature-photo-card">Feature Photo Card</div><div class="demo-el spec-feature-photo-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="qr-promo-card">Qr Promo Card</div><div class="demo-el spec-qr-promo-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="arena-hero-gradient">Arena Hero Gradient</div><div class="demo-el spec-arena-hero-gradient"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="cookie-consent-card">Cookie Consent Card</div><div class="demo-el spec-cookie-consent-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="buy-crypto-amount-card">Buy Crypto Amount Card</div><div class="demo-el spec-buy-crypto-amount-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="steps-card">Steps Card</div><div class="demo-el spec-steps-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+      <div class="demo-col"><div class="lb" title="price-chart-card">Price Chart Card</div><div class="demo-el spec-price-chart-card"><div class="demo-el-h">Card</div><div class="demo-el-b">Body copy sits inside the padding.</div></div></div>
+    </div></div>
+  </section>
+  <section id="forms">
+    <div class="sec-head"><h2>Forms & Inputs</h2><span class="count">2</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="search-input-on-dark">Search Input On Dark</div><div class="demo-el spec-search-input-on-dark"><span class="demo-el-b">Placeholder text</span></div></div>
+      <div class="demo-col"><div class="lb" title="text-input-on-light">Text Input On Light</div><div class="demo-el spec-text-input-on-light"><span class="demo-el-b">Placeholder text</span></div></div>
+    </div></div>
+  </section>
+  <section id="nav">
+    <div class="sec-head"><h2>Navigation & Tabs</h2><span class="count">4</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="text-link">Text Link</div><div class="demo-el demo-el-ghost spec-text-link"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="top-nav-dark">Top Nav Dark</div><div class="demo-el spec-top-nav-dark"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="top-nav-light">Top Nav Light</div><div class="demo-el spec-top-nav-light"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+      <div class="demo-col"><div class="lb" title="footer-light">Footer Light</div><div class="demo-el spec-footer-light"><span class="demo-el-h">Home</span>&nbsp;&nbsp;<span class="demo-el-b">Docs</span>&nbsp;&nbsp;<span class="demo-el-b">Pricing</span></div></div>
+    </div></div>
+  </section>
+  <section id="signature">
+    <div class="sec-head"><h2>Other Components</h2><span class="count">7</span></div>
+    <div class="demo"><div class="demo-row">
+      <div class="demo-col"><div class="lb" title="markets-row">Markets Row</div><div class="demo-el demo-el-ghost spec-markets-row">Markets Row</div></div>
+      <div class="demo-col"><div class="lb" title="price-up-cell">Price Up Cell</div><div class="demo-el demo-el-ghost spec-price-up-cell">Price Up Cell</div></div>
+      <div class="demo-col"><div class="lb" title="price-down-cell">Price Down Cell</div><div class="demo-el demo-el-ghost spec-price-down-cell">Price Down Cell</div></div>
+      <div class="demo-col"><div class="lb" title="funds-safu-band">Funds Safu Band</div><div class="demo-el spec-funds-safu-band">Funds Safu Band</div></div>
+      <div class="demo-col"><div class="lb" title="faq-row">Faq Row</div><div class="demo-el spec-faq-row">Faq Row</div></div>
+      <div class="demo-col"><div class="lb" title="conversion-cell">Conversion Cell</div><div class="demo-el demo-el-ghost spec-conversion-cell">Conversion Cell</div></div>
+      <div class="demo-col"><div class="lb" title="trader-row">Trader Row</div><div class="demo-el demo-el-ghost spec-trader-row">Trader Row</div></div>
+    </div></div>
+  </section>
+  <section id="spacing">
+    <div class="sec-head"><h2>Spacing Scale</h2><span class="count">8 steps</span></div>
+    <div class="bar-row"><span>xxs</span><span class="val">4px</span><span class="bar bar-xxs"></span></div>
+    <div class="bar-row"><span>xs</span><span class="val">8px</span><span class="bar bar-xs"></span></div>
+    <div class="bar-row"><span>sm</span><span class="val">12px</span><span class="bar bar-sm"></span></div>
+    <div class="bar-row"><span>md</span><span class="val">16px</span><span class="bar bar-md"></span></div>
+    <div class="bar-row"><span>lg</span><span class="val">24px</span><span class="bar bar-lg"></span></div>
+    <div class="bar-row"><span>xl</span><span class="val">32px</span><span class="bar bar-xl"></span></div>
+    <div class="bar-row"><span>xxl</span><span class="val">48px</span><span class="bar bar-xxl"></span></div>
+    <div class="bar-row"><span>section</span><span class="val">80px</span><span class="bar bar-section"></span></div>
+  </section>
+  <section id="radius">
+    <div class="sec-head"><h2>Border Radius Scale</h2><span class="count">7 steps</span></div>
+    <div class="radius-grid">
+      <div class="radius-cell"><div class="box rd-xs"></div><div class="lb">xs · 2px</div></div>
+      <div class="radius-cell"><div class="box rd-sm"></div><div class="lb">sm · 4px</div></div>
+      <div class="radius-cell"><div class="box rd-md"></div><div class="lb">md · 6px</div></div>
+      <div class="radius-cell"><div class="box rd-lg"></div><div class="lb">lg · 8px</div></div>
+      <div class="radius-cell"><div class="box rd-xl"></div><div class="lb">xl · 12px</div></div>
+      <div class="radius-cell"><div class="box rd-pill"></div><div class="lb">pill · 9999px</div></div>
+      <div class="radius-cell"><div class="box rd-full"></div><div class="lb">full · 9999px</div></div>
+    </div>
+  </section>
+  <section id="elevation">
+    <div class="sec-head"><h2>Elevation &amp; Depth</h2><span class="count">2</span></div>
+    <div class="elev-grid">
+      <div class="elev-cell elev-soft-hairline"><div class="lb">Soft hairline</div><div class="vl">1px {colors.hairline-on-dark} or {colors.hairline-on-light}</div></div>
+      <div class="elev-cell elev-focus-ring"><div class="lb">Focus ring</div><div class="vl">0 0 0 2px {colors.info-ring} at 50% alpha</div></div>
+    </div>
+  </section>
+  <section id="guidelines">
+    <div class="sec-head"><h2>Do&rsquo;s &amp; Don&rsquo;ts</h2></div>
+    <div class="guide">
+      <ul class="yes">
+        <li>Reserve {colors.primary} (Binance Yellow) for primary actions, brand-claim headlines, and the wordmark. Never use it for secondary or decorative purposes — yellow&#x27;s scarcity is what makes it powerful.</li>
+        <li>Keep {component.button-primary} (yellow with black text) as the universal primary CTA across both dark and light modes. The same button appears identically on {colors.canvas-dark} and {colors.canvas-light}.</li>
+        <li>Use {component.button-trading-up} (green) and {component.button-trading-down} (red) only for explicit Buy/Sell or Long/Short actions. Never use them for general &quot;confirm&quot; or &quot;cancel&quot; because they carry semantic price-direction meaning.</li>
+        <li>Use BinancePlex for every number. Prices, volumes, percentages, stat counters — all BinancePlex. Mixing BinanceNova into a number ticker breaks the trading-platform character.</li>
+        <li>Choose canvas mode by surface intent: dark for marketing / product showcase / trading dashboards; light for transactional dialogs (buy / deposit / withdraw / form submission).</li>
+        <li>Anchor every editorial band with {spacing.section} (80px). Binance is denser than airy marketing sites — 80px is the right rhythm.</li>
+      </ul>
+      <ul class="no">
+        <li>Don&#x27;t introduce a second brand color. The system has exactly one accent ({colors.primary}) and any expansion dilutes the brand identity. The turquoise on Smart Money is a single-product experiment, not a system token.</li>
+        <li>Don&#x27;t use yellow for body text or large surface fills. It is for focal-point CTAs and headlines only.</li>
+        <li>Don&#x27;t use {colors.trading-up} / {colors.trading-down} as background fills on cards. They are price-direction signals, expressed as text color or small badge fill — never as a card surface.</li>
+        <li>Don&#x27;t soften display weight. {typography.hero-display} and {typography.display-lg} are intentionally weight 700 — going to 400 reads as design-portfolio, not trading platform.</li>
+        <li>Don&#x27;t add atmospheric gradients to the canvas (mesh, aurora, glow effects). Binance trusts color-block contrast — adding atmospheric depth muddies the trading-platform feel.</li>
+        <li>Don&#x27;t invert {component.button-primary}&#x27;s text color. Black on yellow is the system&#x27;s signature — white text on yellow loses contrast and brand recognition.</li>
+      </ul>
+    </div>
+  </section>
+  <section id="reference">
+    <div class="sec-head"><h2>Component Reference</h2><span class="count">35</span></div>
+    <table class="ref"><thead><tr><th>Component</th><th>Resolved properties</th></tr></thead><tbody>
+      <tr><td class="k">button-primary</td><td>backgroundColor: var(--c-primary); textColor: var(--c-on-primary); typography: var(--t-button-size); rounded: var(--r-md); padding: 12px 24px; height: 40px</td></tr>
+      <tr><td class="k">button-primary-active</td><td>backgroundColor: var(--c-primary-active); textColor: var(--c-on-primary); rounded: var(--r-md)</td></tr>
+      <tr><td class="k">button-primary-disabled</td><td>backgroundColor: var(--c-primary-disabled); textColor: var(--c-muted); rounded: var(--r-md)</td></tr>
+      <tr><td class="k">button-primary-pill</td><td>backgroundColor: var(--c-primary); textColor: var(--c-on-primary); typography: var(--t-button-size); rounded: var(--r-pill); padding: 14px 32px</td></tr>
+      <tr><td class="k">button-secondary-on-dark</td><td>backgroundColor: var(--c-surface-card-dark); textColor: var(--c-on-dark); typography: var(--t-button-size); rounded: var(--r-md); padding: 12px 24px</td></tr>
+      <tr><td class="k">button-secondary-on-light</td><td>backgroundColor: var(--c-canvas-light); textColor: var(--c-ink); typography: var(--t-button-size); rounded: var(--r-md); padding: 12px 24px</td></tr>
+      <tr><td class="k">button-tertiary-text</td><td>backgroundColor: transparent; textColor: var(--c-body); typography: var(--t-button-size)</td></tr>
+      <tr><td class="k">button-trading-up</td><td>backgroundColor: var(--c-trading-up); textColor: var(--c-on-dark); typography: var(--t-button-size); rounded: var(--r-sm); padding: 8px 20px</td></tr>
+      <tr><td class="k">button-trading-down</td><td>backgroundColor: var(--c-trading-down); textColor: var(--c-on-dark); typography: var(--t-button-size); rounded: var(--r-sm); padding: 8px 20px</td></tr>
+      <tr><td class="k">button-subscribe</td><td>backgroundColor: var(--c-primary); textColor: var(--c-on-primary); typography: var(--t-button-size); rounded: var(--r-sm); padding: 6px 16px; height: 28px</td></tr>
+      <tr><td class="k">text-link</td><td>backgroundColor: transparent; textColor: var(--c-primary); typography: var(--t-body-md-size)</td></tr>
+      <tr><td class="k">top-nav-dark</td><td>backgroundColor: var(--c-canvas-dark); textColor: var(--c-on-dark); typography: var(--t-nav-link-size); height: 64px</td></tr>
+      <tr><td class="k">top-nav-light</td><td>backgroundColor: var(--c-canvas-light); textColor: var(--c-ink); typography: var(--t-nav-link-size); height: 64px</td></tr>
+      <tr><td class="k">hero-band-dark</td><td>backgroundColor: var(--c-canvas-dark); textColor: var(--c-on-dark); typography: var(--t-hero-display-size); padding: 80px</td></tr>
+      <tr><td class="k">stat-callout-card</td><td>backgroundColor: transparent; textColor: var(--c-primary); typography: var(--t-number-display-size)</td></tr>
+      <tr><td class="k">trust-badge</td><td>backgroundColor: var(--c-surface-card-dark); textColor: var(--c-on-dark); typography: var(--t-title-sm-size); rounded: var(--r-lg); padding: 16px 20px</td></tr>
+      <tr><td class="k">markets-table-card</td><td>backgroundColor: var(--c-surface-card-dark); textColor: var(--c-on-dark); typography: var(--t-body-md-size); rounded: var(--r-xl); padding: 24px</td></tr>
+      <tr><td class="k">markets-row</td><td>backgroundColor: transparent; textColor: var(--c-on-dark); typography: var(--t-number-md-size); padding: 12px 0</td></tr>
+      <tr><td class="k">price-up-cell</td><td>backgroundColor: transparent; textColor: var(--c-trading-up); typography: var(--t-number-md-size)</td></tr>
+      <tr><td class="k">price-down-cell</td><td>backgroundColor: transparent; textColor: var(--c-trading-down); typography: var(--t-number-md-size)</td></tr>
+      <tr><td class="k">search-input-on-dark</td><td>backgroundColor: var(--c-surface-card-dark); textColor: var(--c-on-dark); typography: var(--t-body-md-size); rounded: var(--r-lg); padding: 10px 16px; height: 40px</td></tr>
+      <tr><td class="k">text-input-on-light</td><td>backgroundColor: var(--c-canvas-light); textColor: var(--c-ink); typography: var(--t-body-md-size); rounded: var(--r-md); padding: 10px 16px; height: 40px</td></tr>
+      <tr><td class="k">funds-safu-band</td><td>backgroundColor: var(--c-canvas-dark); textColor: var(--c-primary); typography: var(--t-display-lg-size); padding: 80px</td></tr>
+      <tr><td class="k">feature-photo-card</td><td>backgroundColor: var(--c-surface-card-dark); textColor: var(--c-on-dark); rounded: var(--r-xl)</td></tr>
+      <tr><td class="k">qr-promo-card</td><td>backgroundColor: var(--c-surface-card-dark); textColor: var(--c-on-dark); typography: var(--t-title-md-size); rounded: var(--r-xl); padding: 32px</td></tr>
+      <tr><td class="k">faq-row</td><td>backgroundColor: transparent; textColor: var(--c-on-dark); typography: var(--t-title-sm-size); rounded: var(--r-md); padding: 20px 0</td></tr>
+      <tr><td class="k">cta-band-dark</td><td>backgroundColor: var(--c-surface-card-dark); textColor: var(--c-on-dark); typography: var(--t-display-sm-size); rounded: var(--r-xl); padding: 48px</td></tr>
+      <tr><td class="k">arena-hero-gradient</td><td>backgroundColor: var(--c-canvas-dark); textColor: var(--c-primary); typography: var(--t-display-lg-size); padding: 80px</td></tr>
+      <tr><td class="k">cookie-consent-card</td><td>backgroundColor: var(--c-canvas-light); textColor: var(--c-ink); typography: var(--t-body-sm-size); rounded: var(--r-lg); padding: 16px</td></tr>
+      <tr><td class="k">buy-crypto-amount-card</td><td>backgroundColor: var(--c-canvas-light); textColor: var(--c-ink); typography: var(--t-number-display-size); rounded: var(--r-lg); padding: 24px</td></tr>
+      <tr><td class="k">steps-card</td><td>backgroundColor: var(--c-canvas-light); textColor: var(--c-ink); typography: var(--t-title-sm-size); rounded: var(--r-lg); padding: 24px</td></tr>
+      <tr><td class="k">price-chart-card</td><td>backgroundColor: var(--c-canvas-light); textColor: var(--c-ink); typography: var(--t-body-md-size); rounded: var(--r-lg); padding: 24px</td></tr>
+      <tr><td class="k">conversion-cell</td><td>backgroundColor: transparent; textColor: var(--c-body-on-light); typography: var(--t-body-md-size)</td></tr>
+      <tr><td class="k">trader-row</td><td>backgroundColor: transparent; textColor: var(--c-on-dark); typography: var(--t-body-md-size); padding: 12px 0</td></tr>
+      <tr><td class="k">footer-light</td><td>backgroundColor: var(--c-surface-soft-light); textColor: var(--c-body-on-light); typography: var(--t-body-md-size); padding: 64px</td></tr>
+    </tbody></table>
+  </section>
+  <footer><span>Binance-design-analysis — design tokens extracted from DESIGN.md</span><span>awesome-design-md / getdesign.md</span></footer>
+</div>
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script>
+</body></html>

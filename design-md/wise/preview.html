@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of Wise</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #0e0f0c; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<div class="theme-layer" data-when="light">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#cards">Cards</a></li>
+    <li><a href="#signature">Signature</a></li>
+  </ul>
+
+  <a class="nav-cta" href="#">Get started</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <p class="eyebrow">Design System</p>
+      <h1>Design System Analysis of Wise</h1>
+      <p>A global money-transfer brand whose surface combines an unusually heavy near-black display sans at weight 900 with a vivid lime-green CTA, sage-tinted canvas, and rounded white cards. The whole system reads more like a Scandinavian fintech magazine than a bank — generous whitespace, large 24 px radii, and a single chromatic signature in lime green.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#">Get started</a>
+        <a class="btn-secondary" href="#">See how it works</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="colors">
+  <p class="section-eyebrow">Color Palette</p>
+  <h2 class="section-heading">A lime-green CTA on sage canvas.</h2>
+  <p class="section-lead">The brand operates from a single chromatic signature — Wise green — used as every primary CTA and accent moment, set against a sage-tinted page background and ink near-black for body and headlines. A full semantic palette covers positive, warning, and negative states for in-product surfaces. Two tertiary accents — peach orange and sky cyan — appear only inside illustrative content. No second brand accent, no marketing gradient.</p>
+
+  <div class="palette-group">
+    <h3>Brand &amp; Accent — Wise Green Family</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#9fe870;"></span><div class="meta"><span class="name">Wise Green</span><span class="hex">#9fe870</span><span class="role">The brand's universal CTA color.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#cdffad;"></span><div class="meta"><span class="name">Green Active</span><span class="hex">#cdffad</span><span class="role">Lighter active state for hover / press.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#c5edab;"></span><div class="meta"><span class="name">Green Neutral</span><span class="hex">#c5edab</span><span class="role">Mid-saturation neutral active fill.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#e2f6d5;"></span><div class="meta"><span class="name">Green Pale</span><span class="hex">#e2f6d5</span><span class="role">Lightest green for soft tints / badges.</span></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Surface</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#ffffff; border-bottom:1px solid #e8ebe6;"></span><div class="meta"><span class="name">Canvas</span><span class="hex">#ffffff</span><span class="role">Pure white for card interiors.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#e8ebe6;"></span><div class="meta"><span class="name">Canvas Soft</span><span class="hex">#e8ebe6</span><span class="role">Sage-tinted page background — the brand mood.</span></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Text</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#0e0f0c;"></span><div class="meta"><span class="name">Ink</span><span class="hex">#0e0f0c</span><span class="role">Default text and headings.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#163300;"></span><div class="meta"><span class="name">Ink Deep</span><span class="hex">#163300</span><span class="role">Deep forest ink on positive surfaces.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#454745;"></span><div class="meta"><span class="name">Body</span><span class="hex">#454745</span><span class="role">Secondary body text.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#868685;"></span><div class="meta"><span class="name">Mute</span><span class="hex">#868685</span><span class="role">Captions, placeholder, fine print.</span></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Semantic — Positive Family</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#2ead4b;"></span><div class="meta"><span class="name">Positive</span><span class="hex">#2ead4b</span><span class="role">Success indicator.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#054d28;"></span><div class="meta"><span class="name">Positive Deep</span><span class="hex">#054d28</span><span class="role">Pressed positive state.</span></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Semantic — Warning Family</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#ffd11a;"></span><div class="meta"><span class="name">Warning</span><span class="hex">#ffd11a</span><span class="role">Caution indicator.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#b86700;"></span><div class="meta"><span class="name">Warning Deep</span><span class="hex">#b86700</span><span class="role">Pressed warning.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#4a3b1c;"></span><div class="meta"><span class="name">Warning Content</span><span class="hex">#4a3b1c</span><span class="role">Text on warning surfaces.</span></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Semantic — Negative Family</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#d03238;"></span><div class="meta"><span class="name">Negative</span><span class="hex">#d03238</span><span class="role">Destructive / error red.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#a72027;"></span><div class="meta"><span class="name">Negative Deep</span><span class="hex">#a72027</span><span class="role">Pressed destructive.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#a7000d;"></span><div class="meta"><span class="name">Negative Darkest</span><span class="hex">#a7000d</span><span class="role">Highest-emphasis destructive text.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#320707;"></span><div class="meta"><span class="name">Negative Bg</span><span class="hex">#320707</span><span class="role">Dark maroon callout background.</span></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Tertiary Accents</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#ffc091;"></span><div class="meta"><span class="name">Accent Orange</span><span class="hex">#ffc091</span><span class="role">Bright peach for illustration only.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#38c8ff;"></span><div class="meta"><span class="name">Accent Cyan</span><span class="hex">#38c8ff</span><span class="role">Sky-blue tertiary illustration accent.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="typography">
+  <p class="section-eyebrow">Typography</p>
+  <h2 class="section-heading">Weight 900 for hero, 600 for everything else.</h2>
+  <p class="section-lead">Two faces ladder the system. Inter (substitute for the proprietary Wise Sans) at weight 900 carries every hero display — the brand's typographic signature is the unusual heaviness combined with extreme display scale, 126 px at the largest hero. Inter at weight 600 handles all sub-displays, body, button labels, and nav. The role separation is strict: weight 900 is reserved for marketing display moments; everything else lives at weight 600 or weight 400.</p>
+
+  <div class="type-row"><div class="label"><span class="token">display-mega</span><span class="spec">Inter · 126 / 107.1 / 0 · w900</span></div><div class="sample" style="font-family:var(--font-display); font-size:clamp(64px, 9vw, 126px); font-weight:900; line-height:0.85; letter-spacing:-2px;">Send money.</div></div>
+  <div class="type-row"><div class="label"><span class="token">display-xxl</span><span class="spec">Inter · 96 / 81.6 / 0 · w900</span></div><div class="sample" style="font-family:var(--font-display); font-size:clamp(54px, 7vw, 96px); font-weight:900; line-height:0.85; letter-spacing:-1.6px;">Get the best rate.</div></div>
+  <div class="type-row"><div class="label"><span class="token">display-xl</span><span class="spec">Inter · 64 / 54.4 / 0 · w900</span></div><div class="sample" style="font-family:var(--font-display); font-size:64px; font-weight:900; line-height:0.85; letter-spacing:-1.2px;">A standard hero headline.</div></div>
+  <div class="type-row"><div class="label"><span class="token">display-lg</span><span class="spec">Inter · 47 / 70.5 / -0.108 · w400</span></div><div class="sample" style="font-family:var(--font-display); font-size:47px; font-weight:400; line-height:1.5; letter-spacing:-0.108px;">A lighter sub-display.</div></div>
+  <div class="type-row"><div class="label"><span class="token">display-md</span><span class="spec">Inter · 40 / 34 / 0 · w900</span></div><div class="sample" style="font-family:var(--font-display); font-size:40px; font-weight:900; line-height:0.85; letter-spacing:-1px;">Section / card headlines.</div></div>
+  <div class="type-row"><div class="label"><span class="token">display-sm</span><span class="spec">Inter · 32 / 38.4 / -0.96 · w600</span></div><div class="sample" style="font-family:var(--font-sans); font-size:32px; font-weight:600; line-height:1.2; letter-spacing:-0.96px;">Inter-rendered section heading.</div></div>
+  <div class="type-row"><div class="label"><span class="token">display-xs</span><span class="spec">Inter · 24 / 31.2 / -0.48 · w600</span></div><div class="sample" style="font-family:var(--font-sans); font-size:24px; font-weight:600; line-height:1.3; letter-spacing:-0.48px;">Sub-section display.</div></div>
+  <div class="type-row"><div class="label"><span class="token">body-lg</span><span class="spec">Inter · 20 / 30 / 0 · w400</span></div><div class="sample" style="font-family:var(--font-sans); font-size:20px; font-weight:400; line-height:1.5;">Lead paragraph for hero copy and section intros.</div></div>
+  <div class="type-row"><div class="label"><span class="token">body-md</span><span class="spec">Inter · 16 / 24 / 0 · w400</span></div><div class="sample" style="font-family:var(--font-sans); font-size:16px; font-weight:400; line-height:1.5;">Default body. Inter at the comfortable reading scale.</div></div>
+  <div class="type-row"><div class="label"><span class="token">body-md-strong</span><span class="spec">Inter · 16 / 24 / 0 · w600</span></div><div class="sample" style="font-family:var(--font-sans); font-size:16px; font-weight:600; line-height:1.5;">Bold inline body for emphasis.</div></div>
+  <div class="type-row"><div class="label"><span class="token">body-sm</span><span class="spec">Inter · 14 / 20 / 0 · w400</span></div><div class="sample" style="font-family:var(--font-sans); font-size:14px; font-weight:400; line-height:1.43;">Secondary body. Captions and helper text.</div></div>
+  <div class="type-row"><div class="label"><span class="token">body-sm-strong</span><span class="spec">Inter · 14 / 20 / 0 · w600</span></div><div class="sample" style="font-family:var(--font-sans); font-size:14px; font-weight:600; line-height:1.43;">Bold caption / nav-link.</div></div>
+  <div class="type-row"><div class="label"><span class="token">caption</span><span class="spec">Inter · 12 / 16 / 0 · w400</span></div><div class="sample" style="font-family:var(--font-sans); font-size:12px; font-weight:400; line-height:1.33;">Fine print and footnote.</div></div>
+  <div class="type-row"><div class="label"><span class="token">button-md</span><span class="spec">Inter · 16 / 24 / 0 · w600</span></div><div class="sample" style="font-family:var(--font-sans); font-size:16px; font-weight:600; line-height:1.5;">Get started</div></div>
+  <div class="type-row"><div class="label"><span class="token">family-system</span><span class="spec">Inter — w400 · w600 · w900</span></div><div class="sample"><span style="font-family:var(--font-display); font-weight:900; font-size:28px; letter-spacing:-0.5px;">Wise</span> &nbsp; <span style="font-family:var(--font-sans); font-weight:600; font-size:18px;">Inter Semibold</span> &nbsp; <span style="font-family:var(--font-sans); font-weight:400; font-size:16px;">Inter Regular</span></div></div>
+</section>
+
+<section id="buttons">
+  <p class="section-eyebrow">Buttons</p>
+  <h2 class="section-heading">Pill rectangles at 24 px.</h2>
+  <p class="section-lead">Every button on the brand is a generous 24 px pill rectangle — the geometric softness is non-negotiable across send-money CTAs, secondary actions, and tertiary outlines. The primary is the lime-green CTA that defines the brand identity; secondary lives on sage-tinted neutral; tertiary is the white outline with a 1 px ink border for low-priority actions. The circular icon button is the only round affordance, used for inline icon controls. Labels set in Inter weight 600. Touch targets land at 48–56 px tall.</p>
+  <div class="button-grid">
+    <div class="button-cell">
+      <span class="label">button-primary</span>
+      <button class="btn-primary" type="button">Get started</button>
+      <span class="desc">Wise green fill, ink label, 24 px pill. The universal CTA.</span>
+    </div>
+    <div class="button-cell">
+      <span class="label">button-secondary</span>
+      <button class="btn-secondary" type="button">See how it works</button>
+      <span class="desc">Sage canvas fill, ink label, 24 px pill. Secondary action.</span>
+    </div>
+    <div class="button-cell" style="background:var(--canvas-soft);">
+      <span class="label">button-tertiary</span>
+      <button class="btn-tertiary" type="button">Learn more</button>
+      <span class="desc">White fill with 1 px ink border, 24 px pill. Low-priority outline.</span>
+    </div>
+    <div class="button-cell">
+      <span class="label">button-icon-circular</span>
+      <button class="btn-icon-circular" type="button" aria-label="More">→</button>
+      <span class="desc">White circle for inline icon affordances.</span>
+    </div>
+  </div>
+</section>
+
+<section id="cards">
+  <p class="section-eyebrow">Cards &amp; Containers</p>
+  <h2 class="section-heading">Pill cards on sage canvas.</h2>
+  <p class="section-lead">Cards use the brand's canonical 24 px pill radius. Four feature variants ladder by surface: the white default sits inside sage bands, sage-tinted feature cards group related content, soft-green cards highlight a brand moment, and a polarity-flipped dark variant with green text carries promotional callouts. The brand's signature interactive component is the currency-converter card — a bordered white pill hosting amount inputs and currency selector pills.</p>
+  <div class="card-grid" style="margin-bottom:32px;">
+    <div class="feat-card content">
+      <span class="eyebrow">card-content</span>
+      <h4>Move money your way.</h4>
+      <p>The default white card. Sits on sage canvas. No border, surface contrast carries elevation.</p>
+    </div>
+    <div class="feat-card sage">
+      <span class="eyebrow">card-feature-sage</span>
+      <h4>Fair, mid-market rate.</h4>
+      <p>Sage-tinted card for grouping related features inside a content band.</p>
+    </div>
+    <div class="feat-card green">
+      <span class="eyebrow">card-feature-green</span>
+      <h4>Send to 160 countries.</h4>
+      <p>Soft-green pale card. Highlights a brand moment without using the bright CTA green.</p>
+    </div>
+    <div class="feat-card dark">
+      <span class="eyebrow">card-feature-dark</span>
+      <h4>The Wise account.</h4>
+      <p>Polarity-flipped dark card with Wise green text. Used for promotional moments.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:48px;">
+    <div style="font-family:var(--font-sans); font-weight:600; font-size:14px; color:var(--ink); margin-bottom:18px;">currency-converter-card</div>
+    <div class="converter-card">
+      <div class="converter-row">
+        <div>
+          <div class="col-label">You send</div>
+          <input class="amount" value="1,000.00" inputmode="decimal" aria-label="Send amount">
+        </div>
+        <span class="currency-pill"><span class="currency-flag flag-usd">US</span>USD ▾</span>
+      </div>
+      <div class="converter-row">
+        <div>
+          <div class="col-label">Recipient gets</div>
+          <input class="amount" value="924.31" inputmode="decimal" aria-label="Receive amount">
+        </div>
+        <span class="currency-pill"><span class="currency-flag flag-eur">EU</span>EUR ▾</span>
+      </div>
+      <div class="converter-meta">
+        <span>Fee <strong>2.55 USD</strong></span>
+        <span>Rate <strong>0.92745</strong></span>
+      </div>
+      <button class="btn-primary" type="button">Send money</button>
+    </div>
+  </div>
+</section>
+
+<section id="forms">
+  <p class="section-eyebrow">Form Elements</p>
+  <h2 class="section-heading">Inputs are 12 px rounded rectangles.</h2>
+  <p class="section-lead">Text inputs render with a 1 px solid ink border at 12 px radius — a slightly tighter softness than the 24 px button geometry. Labels in Inter weight 600, sentence-case. The brand never uses uppercase form labels.</p>
+  <div class="form-grid">
+    <div class="form-cell">
+      <label for="text-email">Email address</label>
+      <input id="text-email" type="email" placeholder="you@example.com">
+    </div>
+    <div class="form-cell">
+      <label for="text-search">Search</label>
+      <input id="text-search" type="text" placeholder="Search currencies">
+    </div>
+  </div>
+</section>
+
+<section id="spacing">
+  <p class="section-eyebrow">Spacing Scale</p>
+  <h2 class="section-heading">A 4 px rhythm from xxs to 3xl.</h2>
+  <p class="section-lead">Section padding lands at the 48 px step (3xl) on desktop. Card interiors live at 24 px (xl). The base unit is 4 px, and every step is a multiple of it. The scale ladders xxs (2) → xs (4) → sm (8) → md (12) → lg (16) → xl (24) → 2xl (32) → 3xl (48).</p>
+  <div class="scale-grid">
+    <div class="scale-row"><span class="token">xxs</span><span class="bar" style="width:2px;"></span><span class="value">2px</span></div>
+    <div class="scale-row"><span class="token">xs</span><span class="bar" style="width:4px;"></span><span class="value">4px</span></div>
+    <div class="scale-row"><span class="token">sm</span><span class="bar" style="width:8px;"></span><span class="value">8px</span></div>
+    <div class="scale-row"><span class="token">md</span><span class="bar" style="width:12px;"></span><span class="value">12px</span></div>
+    <div class="scale-row"><span class="token">lg</span><span class="bar" style="width:16px;"></span><span class="value">16px</span></div>
+    <div class="scale-row"><span class="token">xl</span><span class="bar" style="width:24px;"></span><span class="value">24px</span></div>
+    <div class="scale-row"><span class="token">2xl</span><span class="bar" style="width:32px;"></span><span class="value">32px</span></div>
+    <div class="scale-row"><span class="token">3xl</span><span class="bar" style="width:48px;"></span><span class="value">48px</span></div>
+  </div>
+</section>
+
+<section id="radius">
+  <p class="section-eyebrow">Border Radius Scale</p>
+  <h2 class="section-heading">Generous, friendly, never sharp.</h2>
+  <p class="section-lead">The brand softens every UI element with rounded geometry. 24 px is the canonical button + card radius — generous, friendly, defining the brand's calm fintech voice. Inputs land at 12 px, small chips at 8 px, and only badges + circular icon buttons use full pill geometry. The brand never uses sharp 0 px corners on UI elements.</p>
+  <div class="radius-grid">
+    <div class="radius-cell">
+      <div class="radius-shape sm"></div>
+      <div>
+        <div class="radius-label">rounded.sm</div>
+        <div class="radius-desc">8 px corners. Inline pills, small badges.</div>
+      </div>
+    </div>
+    <div class="radius-cell">
+      <div class="radius-shape md"></div>
+      <div>
+        <div class="radius-label">rounded.md</div>
+        <div class="radius-desc">12 px corners. Form inputs, smaller chrome.</div>
+      </div>
+    </div>
+    <div class="radius-cell">
+      <div class="radius-shape lg"></div>
+      <div>
+        <div class="radius-label">rounded.lg</div>
+        <div class="radius-desc">16 px corners. Mid-size cards.</div>
+      </div>
+    </div>
+    <div class="radius-cell">
+      <div class="radius-shape xl"></div>
+      <div>
+        <div class="radius-label">rounded.xl</div>
+        <div class="radius-desc">24 px corners. Canonical button + card radius.</div>
+      </div>
+    </div>
+    <div class="radius-cell">
+      <div class="radius-shape pill"></div>
+      <div>
+        <div class="radius-label">rounded.pill</div>
+        <div class="radius-desc">9999 px corners. Status pills and badges.</div>
+      </div>
+    </div>
+    <div class="radius-cell">
+      <div class="radius-shape full"></div>
+      <div>
+        <div class="radius-label">rounded.full</div>
+        <div class="radius-desc">9999 px corners. Circular icon containers.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="elevation">
+  <p class="section-eyebrow">Elevation &amp; Depth</p>
+  <h2 class="section-heading">Surface contrast over drop shadows.</h2>
+  <p class="section-lead">The brand uses surface contrast as the primary elevation cue. A white card sitting on sage canvas reads as elevated without any drop shadow at all. Three discrete states: flat (sage canvas, default mood), hairline (1 px solid ink border on tertiary buttons and inputs), and soft-card (a white card on sage canvas — surface contrast IS the elevation).</p>
+  <div class="elev-grid">
+    <div class="elev-cell flat">
+      <span class="label">Level 0 — Flat</span>
+      <span class="desc">No shadow, no border. Default — almost every surface lives here on sage canvas.</span>
+    </div>
+    <div class="elev-cell hairline">
+      <span class="label">Level 1 — Hairline on Ink</span>
+      <span class="desc">1 px solid ink border. Tertiary outline buttons and form inputs.</span>
+    </div>
+    <div class="elev-wrap-soft">
+      <div class="elev-cell softcard">
+        <span class="label">Level 2 — Soft Card</span>
+        <span class="desc">White card sitting on sage canvas. Surface contrast IS the elevation.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="signature">
+  <p class="section-eyebrow">Signature Components</p>
+  <h2 class="section-heading">The pieces that make this Wise.</h2>
+  <p class="section-lead">A sage-canvas hero band hosting the 126 px Inter weight 900 headline, a polarity-flipped dark hero where Wise green carries the headline on near-black, a white content band that follows hero, the currency-converter card with its signature from/to amount inputs and country-flag currency pills, and a pair of badges — positive on green-pale, negative on dark maroon — for in-product status moments.</p>
+
+  <div class="hero-band-demo">
+    <p class="eyebrow">hero-band — display-mega · Inter w900</p>
+    <h3>Send money.</h3>
+  </div>
+
+  <div class="hero-band-dark-demo">
+    <p class="eyebrow">hero-band-dark — polarity-flipped</p>
+    <h3>Save more.</h3>
+  </div>
+
+  <div class="content-band-demo">
+    <h3>A content band that follows hero.</h3>
+    <p>White surface, 1 px hairline border, 40 px Inter weight 900 section headline. Used for editorial content rows that sit beneath the sage hero.</p>
+  </div>
+
+  <div style="margin-top:24px;">
+    <div style="font-family:var(--font-sans); font-weight:600; font-size:14px; color:var(--ink); margin-bottom:14px;">currency-converter-card — the brand's signature widget</div>
+    <div class="converter-card">
+      <div class="converter-row">
+        <div>
+          <div class="col-label">You send</div>
+          <input class="amount" value="500.00" inputmode="decimal" aria-label="Send amount">
+        </div>
+        <span class="currency-pill"><span class="currency-flag flag-usd">US</span>USD ▾</span>
+      </div>
+      <div class="converter-row">
+        <div>
+          <div class="col-label">Recipient gets</div>
+          <input class="amount" value="462.15" inputmode="decimal" aria-label="Receive amount">
+        </div>
+        <span class="currency-pill"><span class="currency-flag flag-eur">EU</span>EUR ▾</span>
+      </div>
+      <div class="converter-meta">
+        <span>Fee <strong>1.28 USD</strong></span>
+        <span>Rate <strong>0.92745</strong></span>
+      </div>
+      <button class="btn-primary" type="button">Send money</button>
+    </div>
+  </div>
+
+  <div style="margin-top:48px;">
+    <div style="font-family:var(--font-sans); font-weight:600; font-size:14px; color:var(--ink); margin-bottom:14px;">badges — positive / negative</div>
+    <div class="badge-row">
+      <span class="badge positive"><span class="dot"></span>Payment received</span>
+      <span class="badge negative"><span class="dot"></span>Transfer failed</span>
+    </div>
+  </div>
+</section>
+
+<section id="responsive">
+  <p class="section-eyebrow">Responsive Behavior</p>
+  <h2 class="section-heading">Three breakpoints, one rhythm.</h2>
+  <p class="section-lead">The marketing grid collapses cleanly: hero stays text-first at every viewport, with the converter card stacking below the headline at mobile. Section padding steps from 48 px desktop to 32 px tablet to 20 px mobile.</p>
+  <table class="resp-table">
+    <thead>
+      <tr><th>Breakpoint</th><th>Width</th><th>Key changes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Mobile</td><td>&lt; 768 px</td><td>Hero scales 126 → 56 px. All grids 1-up. Converter card stacks below headline.</td></tr>
+      <tr><td>Tablet</td><td>768 – 1023 px</td><td>2-up feature grids. Section padding 72 / 32.</td></tr>
+      <tr><td>Desktop</td><td>≥ 1024 px</td><td>Full marketing grid. Section padding 96 / 48.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ============================== EXAMPLES (kit-mirror) ============================== -->
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Pricing Tiers</h2>
+    <p class="ex-intro">Three-up plan grid with the middle tier polarity-flipped. Mono uppercase tier name, display numeral price, hairline-divided feature list.</p>
+    <div class="ex-grid-pricing">
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">/0.1 · Starter</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$9</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For individuals getting started.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Core features</li>
+          <li><span class="ex-bullet"></span>Up to 3 projects</li>
+          <li><span class="ex-bullet"></span>Community support</li>
+        </ul>
+        <button class="ex-tier-cta ink">Get started</button>
+      </div>
+      <div class="ex-tier-card dark">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span class="ex-mono" style="color:rgba(255,255,255,0.55);">/0.2 · Pro</span>
+          <span style="font-family:var(--font-mono); font-size:10px; letter-spacing:0.5px; text-transform:uppercase; color:var(--color-accent); display:inline-flex; align-items:center; gap:6px;"><span style="width:6px; height:6px; background:var(--color-accent); border-radius:9999px;"></span>Most popular</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$29</span><span style="font-family:var(--font-mono); font-size:12px; color:rgba(255,255,255,0.55);">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:rgba(255,255,255,0.72); margin:0;">For teams ready to ship.</p>
+        <ul class="ex-features dark">
+          <li><span class="ex-bullet"></span>Everything in Starter</li>
+          <li><span class="ex-bullet"></span>Unlimited projects</li>
+          <li><span class="ex-bullet"></span>Email support</li>
+          <li><span class="ex-bullet"></span>Advanced analytics</li>
+        </ul>
+        <button class="ex-tier-cta invert">Start free trial</button>
+      </div>
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">/0.3 · Team</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$99</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For organizations operating at scale.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Everything in Pro</li>
+          <li><span class="ex-bullet"></span>SSO + audit log</li>
+          <li><span class="ex-bullet"></span>Priority support</li>
+          <li><span class="ex-bullet"></span>SLA &amp; onboarding</li>
+        </ul>
+        <button class="ex-tier-cta ink">Talk to sales</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Product Selector
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Product Selector</h2>
+    <p class="ex-intro">Image gallery + variant picker + add-to-bag CTA. Color swatches use a 1px ink ring for selection; size pills polarity-flip to ink fill.</p>
+    <div class="ex-grid-product">
+      <div class="ex-grid-gallery">
+        <div class="ex-tile tall"><span class="ex-mono" style="font-size:10px;">/IMG · 01</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG · 02</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG · 03</span></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <div class="ex-mono" style="display:flex; align-items:center; gap:8px;"><span style="width:8px; height:8px; background:var(--color-accent); border-radius:9999px;"></span>/0.1 · Goods</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(24px, 4.5vw, 34px); font-weight:900; line-height:1.06; letter-spacing:-1px; color:var(--color-foreground); margin:0;">Field Tee, 6-Pack</h3>
+        <div style="display:flex; align-items:baseline; gap:12px;">
+          <span style="font-family:var(--font-display); font-size:clamp(32px, 5vw, 40px); font-weight:900; line-height:1; letter-spacing:-1.5px; color:var(--color-foreground);">$192</span>
+          <span class="ex-mono">★★★★☆ &nbsp;·&nbsp; 117 reviews</span>
+        </div>
+        <p style="font-size:15px; color:var(--color-foreground-muted); line-height:1.5; margin:0;">Six tees in our default rotation: two bone, two stone, two ink. Ultra-soft 100% cotton, dyed with our proprietary palette, pre-washed so the first wear feels like the fiftieth.</p>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Hand cut and sewn locally</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Pre-washed, pre-shrunk cotton</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Reinforced collar and cuffs</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Carbon-neutral shipping</li>
+        </ul>
+        <div>
+          <div class="ex-mono" style="margin-bottom:10px;">Color · Bone</div>
+          <div style="display:flex; gap:10px;">
+            <button aria-label="Bone" style="width:32px; height:32px; border-radius:9999px; background:#ececec; border:1px solid var(--color-border-soft); box-shadow:0 0 0 2px var(--color-canvas), 0 0 0 3px var(--color-foreground); cursor:pointer; padding:0;"></button>
+            <button aria-label="Stone" style="width:32px; height:32px; border-radius:9999px; background:#aaaaaa; border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+            <button aria-label="Ink" style="width:32px; height:32px; border-radius:9999px; background:#1e2124; border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+          </div>
+        </div>
+        <div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+            <span class="ex-mono">Size</span>
+            <a href="#" style="font-family:var(--font-mono); font-size:11px; letter-spacing:0.5px; text-transform:uppercase; color:var(--color-foreground); text-decoration:underline;">Size guide</a>
+          </div>
+          <div class="ex-grid-sizes">
+            <button class="ex-size-btn" disabled>XXS</button>
+            <button class="ex-size-btn">XS</button>
+            <button class="ex-size-btn selected">S</button>
+            <button class="ex-size-btn">M</button>
+            <button class="ex-size-btn">L</button>
+            <button class="ex-size-btn">XL</button>
+            <button class="ex-size-btn">2XL</button>
+            <button class="ex-size-btn">3XL</button>
+          </div>
+        </div>
+        <button class="ex-primary" style="width:100%; margin-top:4px;">Add to bag</button>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Shopping Cart
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Shopping Cart</h2>
+    <p class="ex-intro">Right-anchored drawer over a 50% ink scrim. Each line is a thumb + name/variant/qty stack + price + Remove text-link. Subtotal sits above a full-width primary Checkout, with a Continue link below.</p>
+    <div class="ex-frame tall">
+      <div style="padding:32px; opacity:0.5; display:flex; flex-direction:column; gap:20px;">
+        <div style="height:14px; width:40%; background:var(--color-border-soft); border-radius:2px;"></div>
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px;">
+          <div style="height:120px; background:var(--color-border-soft); border-radius:4px;"></div>
+          <div style="height:120px; background:var(--color-border-soft); border-radius:4px;"></div>
+          <div style="height:120px; background:var(--color-border-soft); border-radius:4px;"></div>
+        </div>
+      </div>
+      <div class="ex-scrim"></div>
+      <aside class="ex-cart-drawer">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:20px 24px; border-bottom:1px solid var(--color-border-soft);">
+          <div>
+            <div class="ex-mono" style="margin-bottom:4px;">/0.1 · Cart</div>
+            <h4 style="font-family:var(--font-display); font-size:22px; font-weight:900; line-height:1.0; letter-spacing:-0.5px; color:var(--color-foreground); margin:0;">Shopping Cart</h4>
+          </div>
+          <button aria-label="Close" style="background:transparent; border:none; color:var(--color-foreground); font-size:18px; cursor:pointer; padding:4px 8px;">×</button>
+        </div>
+        <ul style="list-style:none; padding:0; margin:0; flex:1; overflow-y:auto;">
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px; border-bottom:1px solid var(--color-border-soft);">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border-soft); border-radius:4px; display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/01</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Field Tee, 6-Pack</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Bone · S</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$192.00</span>
+          </li>
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px; border-bottom:1px solid var(--color-border-soft);">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border-soft); border-radius:4px; display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/02</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Compass Hip Bag</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Salmon</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$90.00</span>
+          </li>
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px;">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border-soft); border-radius:4px; display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/03</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Range Tote</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Bone / Ink</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$140.00</span>
+          </li>
+        </ul>
+        <div style="border-top:1px solid var(--color-border-soft); padding:20px 24px;">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:4px;">
+            <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Subtotal</span>
+            <span style="font-family:var(--font-display); font-size:22px; font-weight:900; letter-spacing:-0.5px; color:var(--color-foreground);">$422.00</span>
+          </div>
+          <p style="font-size:12px; color:var(--color-foreground-muted); margin:0 0 16px;">Shipping and taxes calculated at checkout.</p>
+          <button class="ex-primary" style="width:100%;">Checkout</button>
+          <div style="margin-top:12px; text-align:center; font-size:13px; color:var(--color-foreground-muted);">or <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Continue Shopping →</a></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable App Shell
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">App Shell</h2>
+    <p class="ex-intro">Sidebar navigation + breadcrumb topbar + page heading + KPI strip + activity feed. The everyday product surface.</p>
+    <div class="ex-grid-appshell">
+      <aside style="background:var(--color-canvas-soft); border-right:1px solid var(--color-border-soft); padding:20px 12px; display:flex; flex-direction:column; gap:4px;">
+        <div class="ex-mono" style="padding:8px 12px 16px;">/Workspace</div>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◇</span>Overview</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; background:var(--color-foreground); color:var(--color-foreground-on-primary); font-weight:600; text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">▤</span>Operations</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◫</span>Datasets</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◐</span>Models</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◧</span>Settings</a>
+      </aside>
+      <div style="display:flex; flex-direction:column;">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 24px; border-bottom:1px solid var(--color-border-soft);">
+          <div style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--color-foreground-muted); font-family:var(--font-mono);">
+            <span>/Operations</span><span style="color:var(--color-foreground-tertiary);">›</span><span style="color:var(--color-foreground);">Decision Logs</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <span style="font-size:13px; color:var(--color-foreground-muted);">M. Reyes</span>
+            <div style="width:32px; height:32px; border-radius:9999px; background:var(--color-avatar-fill); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:600; color:var(--color-foreground);">MR</div>
+          </div>
+        </div>
+        <div style="padding:32px 24px; display:flex; flex-direction:column; gap:32px;">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+              <span style="width:8px; height:8px; background:var(--color-accent); border-radius:9999px;"></span>
+              <span class="ex-mono">Operations · Live</span>
+            </div>
+            <h3 style="font-family:var(--font-display); font-size:clamp(24px, 4.5vw, 34px); font-weight:900; line-height:1.06; letter-spacing:-1px; color:var(--color-foreground); margin:0;">Decision Logs</h3>
+          </div>
+          <div class="ex-grid-kpi">
+            <div style="border:1px solid var(--color-border-soft); border-radius:4px; padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Active operators</div>
+              <div style="font-family:var(--font-display); font-size:32px; font-weight:900; line-height:1; color:var(--color-foreground); letter-spacing:-1px;">2,481</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-success); font-family:var(--font-mono);">+4.1%</div>
+            </div>
+            <div style="border:1px solid var(--color-border-soft); border-radius:4px; padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Decisions / hr</div>
+              <div style="font-family:var(--font-display); font-size:32px; font-weight:900; line-height:1; color:var(--color-foreground); letter-spacing:-1px;">17,209</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-success); font-family:var(--font-mono);">+12.4%</div>
+            </div>
+            <div style="border:1px solid var(--color-border-soft); border-radius:4px; padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Pending reviews</div>
+              <div style="font-family:var(--font-display); font-size:32px; font-weight:900; line-height:1; color:var(--color-foreground); letter-spacing:-1px;">38</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-danger); font-family:var(--font-mono);">−9 vs. yesterday</div>
+            </div>
+          </div>
+          <div>
+            <div class="ex-mono" style="margin-bottom:12px;">Recent Activity</div>
+            <ul style="list-style:none; padding:0; margin:0; border:1px solid var(--color-border-soft); border-radius:4px; overflow:hidden;">
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:14px 16px; border-bottom:1px solid var(--color-border-soft); align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.1</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:42</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">M. Reyes</strong> · Promoted dataset v2024.11.21 to production</span>
+              </li>
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:14px 16px; border-bottom:1px solid var(--color-border-soft); align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.2</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:36</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">A. Park</strong> · Approved decision-rule "Northwind Triage"</span>
+              </li>
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:14px 16px; align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.3</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:29</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">System</strong> · Backfilled 412 records into operations log</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Data Table
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Data Table</h2>
+    <p class="ex-intro">Mono uppercase column headers, alternating canvas rows, status pills wired to semantic color tokens, hairline row dividers, and a footer pager.</p>
+    <div style="border:1px solid var(--color-border-soft); border-radius:4px; overflow:hidden;">
+      <div class="ex-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th class="ex-th" style="width:40px;"><input type="checkbox" aria-label="Select all"></th>
+              <th class="ex-th" style="width:120px;">ID</th>
+              <th class="ex-th" style="width:160px;">Actor</th>
+              <th class="ex-th">Target</th>
+              <th class="ex-th" style="width:140px;">Status</th>
+              <th class="ex-th" style="width:140px;">When ↓</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2401</td>
+              <td class="ex-td">M. Reyes</td>
+              <td class="ex-td">Northwind Triage</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:42 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2400</td>
+              <td class="ex-td">A. Park</td>
+              <td class="ex-td">Atlas Migration v3</td>
+              <td class="ex-td"><span class="ex-status pending">Pending</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:36 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2399</td>
+              <td class="ex-td">L. Okafor</td>
+              <td class="ex-td">Watchlist Sync</td>
+              <td class="ex-td"><span class="ex-status fail">Failed</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:21 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2398</td>
+              <td class="ex-td">S. Chen</td>
+              <td class="ex-td">Supply Chain Index</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:14 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2397</td>
+              <td class="ex-td">System</td>
+              <td class="ex-td">Nightly Backfill</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">07:55 UTC</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-top:1px solid var(--color-border-soft); background:var(--color-canvas-soft);">
+        <span style="font-size:12px; color:var(--color-foreground-muted); font-family:var(--font-mono);">1–5 of 412</span>
+        <div style="display:flex; gap:4px;">
+          <button class="ex-pager" aria-label="Previous">‹</button>
+          <button class="ex-pager active" aria-current="page">1</button>
+          <button class="ex-pager">2</button>
+          <button class="ex-pager">3</button>
+          <button class="ex-pager" aria-label="Next">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Auth Forms
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Auth Forms</h2>
+    <p class="ex-intro">Centered cards on canvas, full-width primary CTA, mono uppercase field labels, hairline-divided SSO fallback.</p>
+    <div class="ex-grid-auth">
+      <div style="background:var(--color-canvas); border:1px solid var(--color-border-soft); border-radius:24px; padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">/0.1 · Sign in</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:900; line-height:1.05; letter-spacing:-0.8px; color:var(--color-foreground); margin:0 0 24px;">Welcome back.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="••••••••" class="ex-input">
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-top:4px;">
+            <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--color-foreground);"><input type="checkbox"> Remember me</label>
+            <a href="#" style="font-size:13px; color:var(--color-foreground); text-decoration:underline;">Forgot password?</a>
+          </div>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Sign in</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border-soft);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border-soft);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">New here? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Create an account</a></div>
+      </div>
+      <div style="background:var(--color-canvas); border:1px solid var(--color-border-soft); border-radius:24px; padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">/0.2 · Create account</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:900; line-height:1.05; letter-spacing:-0.8px; color:var(--color-foreground); margin:0 0 24px;">Start building.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Full Name</label>
+            <input type="text" placeholder="Mira Reyes" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="••••••••" class="ex-input">
+          </div>
+          <label style="display:flex; align-items:flex-start; gap:8px; font-size:13px; color:var(--color-foreground-muted); margin-top:4px; line-height:1.5;">
+            <input type="checkbox" style="margin-top:3px;">
+            <span>I agree to the <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Terms</a> and <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Privacy Policy</a>.</span>
+          </label>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Create account</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border-soft);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border-soft);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">Already have an account? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Sign in</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Modal Dialog
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Modal Dialog</h2>
+    <p class="ex-intro">Centered card over a 50% ink scrim. Hairline divider above the action row, secondary text-button on the left, primary on the right.</p>
+    <div class="ex-frame short">
+      <div style="padding:24px; opacity:0.7;">
+        <div style="height:14px; width:40%; background:var(--color-border-soft); border-radius:2px; margin-bottom:12px;"></div>
+        <div style="height:12px; width:70%; background:var(--color-border-soft); border-radius:2px; margin-bottom:8px;"></div>
+        <div style="height:12px; width:60%; background:var(--color-border-soft); border-radius:2px;"></div>
+      </div>
+      <div class="ex-scrim"></div>
+      <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:24px;">
+        <div class="ex-modal-card">
+          <div style="padding:24px 28px 16px;">
+            <div class="ex-mono" style="margin-bottom:8px;">/0.1 · Confirm</div>
+            <h4 style="font-family:var(--font-display); font-size:22px; font-weight:900; line-height:1.1; letter-spacing:-0.8px; color:var(--color-foreground); margin:0;">Promote dataset to production?</h4>
+          </div>
+          <div style="padding:0 28px 20px; font-size:14px; color:var(--color-foreground-muted); line-height:1.5;">
+            This replaces <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.20</strong> with <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.21</strong> across all downstream consumers. The action is reversible within 24 hours.
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:16px 24px; border-top:1px solid var(--color-border-soft);">
+            <button class="ex-textlink">Cancel</button>
+            <button class="ex-primary" style="height:44px; padding:0 20px; font-size:14px;">Promote</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Empty State
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Empty State</h2>
+    <p class="ex-intro">Outlined icon tile, decimal index, declarative heading, one-sentence body, and a single primary CTA.</p>
+    <div class="ex-emptystate">
+      <div style="width:56px; height:56px; border:1px solid var(--color-border-soft); border-radius:12px; display:flex; align-items:center; justify-content:center; margin-bottom:20px; color:var(--color-foreground-muted);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="M3.5 9.5h17M8 5.5v13"/></svg>
+      </div>
+      <div class="ex-mono" style="margin-bottom:12px;">/0.1 · No datasets</div>
+      <h4 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:900; line-height:1.05; letter-spacing:-0.8px; color:var(--color-foreground); margin:0 0 8px;">Nothing here yet.</h4>
+      <p style="font-size:15px; color:var(--color-foreground-muted); max-width:380px; margin:0 0 24px; line-height:1.5;">Connect a source or upload a CSV to start ingesting records into this workspace.</p>
+      <button class="ex-primary">Connect a source</button>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Toast Stack
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Toast Stack</h2>
+    <p class="ex-intro">Four semantic variants — info, success, warning, error. Each is a 4px card with a 3px accent rule on the leading edge, a mono uppercase tag, and a single dismiss affordance.</p>
+    <div class="ex-grid-toasts">
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-foreground);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-foreground); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">info</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync in progress</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Backfilling 412 records into the operations log.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-success);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-success); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">success</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Dataset promoted</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">v2024.11.21 is live across all downstream consumers.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-warning);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-warning); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">warning</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Approaching quota</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">88% of your monthly compute has been used.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-danger);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-danger); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">error</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync failed</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Watchlist source returned 502. Retry queued.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+
+
+
+
+</div>
+<div class="theme-layer" data-when="dark">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#cards">Cards</a></li>
+    <li><a href="#signature">Signature</a></li>
+  </ul>
+
+  <a class="nav-cta" href="#">Get started</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <p class="eyebrow">Design System</p>
+      <h1>Design System Analysis of Wise</h1>
+      <p>A global money-transfer brand whose surface combines an unusually heavy near-black display sans at weight 900 with a vivid lime-green CTA, sage-tinted canvas, and rounded white cards. The whole system reads more like a Scandinavian fintech magazine than a bank — generous whitespace, large 24 px radii, and a single chromatic signature in lime green.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#">Get started</a>
+        <a class="btn-secondary" href="#">See how it works</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-sec="colors">
+  <p class="section-eyebrow">Color Palette</p>
+  <h2 class="section-heading">A lime-green CTA on sage canvas.</h2>
+  <p class="section-lead">The brand operates from a single chromatic signature — Wise green — used as every primary CTA and accent moment, set against a sage-tinted page background and ink near-black for body and headlines. A full semantic palette covers positive, warning, and negative states for in-product surfaces. Two tertiary accents — peach orange and sky cyan — appear only inside illustrative content. No second brand accent, no marketing gradient.</p>
+
+  <div class="palette-group">
+    <h3>Brand &amp; Accent — Wise Green Family</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#9fe870;"></span><div class="meta"><span class="name">Wise Green</span><span class="hex">#9fe870</span><span class="role">The brand's universal CTA color.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#cdffad;"></span><div class="meta"><span class="name">Green Active</span><span class="hex">#cdffad</span><span class="role">Lighter active state for hover / press.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#c5edab;"></span><div class="meta"><span class="name">Green Neutral</span><span class="hex">#c5edab</span><span class="role">Mid-saturation neutral active fill.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#e2f6d5;"></span><div class="meta"><span class="name">Green Pale</span><span class="hex">#e2f6d5</span><span class="role">Lightest green for soft tints / badges.</span></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Surface</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#0e0f0c;"></span><div class="meta"><span class="name">Canvas</span><span class="hex">#0e0f0c</span><span class="role">Ink near-black for dark-mode body.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#1a1a18;"></span><div class="meta"><span class="name">Canvas Soft</span><span class="hex">#1a1a18</span><span class="role">Slightly lighter ink for dark cards / bands.</span></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Text</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#e8ebe6;"></span><div class="meta"><span class="name">Ink</span><span class="hex">#e8ebe6</span><span class="role">Default text and headings on dark canvas.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#cdffad;"></span><div class="meta"><span class="name">Ink Deep</span><span class="hex">#cdffad</span><span class="role">Lifted positive ink on dark surfaces.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#a8aba6;"></span><div class="meta"><span class="name">Body</span><span class="hex">#a8aba6</span><span class="role">Secondary body text on dark canvas.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#6e716c;"></span><div class="meta"><span class="name">Mute</span><span class="hex">#6e716c</span><span class="role">Captions, placeholder, fine print.</span></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Semantic — Positive Family</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#2ead4b;"></span><div class="meta"><span class="name">Positive</span><span class="hex">#2ead4b</span><span class="role">Success indicator.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#054d28;"></span><div class="meta"><span class="name">Positive Deep</span><span class="hex">#054d28</span><span class="role">Pressed positive state.</span></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Semantic — Warning Family</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#ffd11a;"></span><div class="meta"><span class="name">Warning</span><span class="hex">#ffd11a</span><span class="role">Caution indicator.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#b86700;"></span><div class="meta"><span class="name">Warning Deep</span><span class="hex">#b86700</span><span class="role">Pressed warning.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#4a3b1c;"></span><div class="meta"><span class="name">Warning Content</span><span class="hex">#4a3b1c</span><span class="role">Text on warning surfaces.</span></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Semantic — Negative Family</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#d03238;"></span><div class="meta"><span class="name">Negative</span><span class="hex">#d03238</span><span class="role">Destructive / error red.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#a72027;"></span><div class="meta"><span class="name">Negative Deep</span><span class="hex">#a72027</span><span class="role">Pressed destructive.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#a7000d;"></span><div class="meta"><span class="name">Negative Darkest</span><span class="hex">#a7000d</span><span class="role">Highest-emphasis destructive text.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#320707;"></span><div class="meta"><span class="name">Negative Bg</span><span class="hex">#320707</span><span class="role">Dark maroon callout background.</span></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Tertiary Accents</h3>
+    <div class="palette-grid">
+      <div class="swatch"><span class="chip" style="background:#ffc091;"></span><div class="meta"><span class="name">Accent Orange</span><span class="hex">#ffc091</span><span class="role">Bright peach for illustration only.</span></div></div>
+      <div class="swatch"><span class="chip" style="background:#38c8ff;"></span><div class="meta"><span class="name">Accent Cyan</span><span class="hex">#38c8ff</span><span class="role">Sky-blue tertiary illustration accent.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section data-sec="typography">
+  <p class="section-eyebrow">Typography</p>
+  <h2 class="section-heading">Weight 900 for hero, 600 for everything else.</h2>
+  <p class="section-lead">Two faces ladder the system. Inter (substitute for the proprietary Wise Sans) at weight 900 carries every hero display — the brand's typographic signature is the unusual heaviness combined with extreme display scale, 126 px at the largest hero. Inter at weight 600 handles all sub-displays, body, button labels, and nav. The role separation is strict: weight 900 is reserved for marketing display moments; everything else lives at weight 600 or weight 400.</p>
+
+  <div class="type-row"><div class="label"><span class="token">display-mega</span><span class="spec">Inter · 126 / 107.1 / 0 · w900</span></div><div class="sample" style="font-family:var(--font-display); font-size:clamp(64px, 9vw, 126px); font-weight:900; line-height:0.85; letter-spacing:-2px;">Send money.</div></div>
+  <div class="type-row"><div class="label"><span class="token">display-xxl</span><span class="spec">Inter · 96 / 81.6 / 0 · w900</span></div><div class="sample" style="font-family:var(--font-display); font-size:clamp(54px, 7vw, 96px); font-weight:900; line-height:0.85; letter-spacing:-1.6px;">Get the best rate.</div></div>
+  <div class="type-row"><div class="label"><span class="token">display-xl</span><span class="spec">Inter · 64 / 54.4 / 0 · w900</span></div><div class="sample" style="font-family:var(--font-display); font-size:64px; font-weight:900; line-height:0.85; letter-spacing:-1.2px;">A standard hero headline.</div></div>
+  <div class="type-row"><div class="label"><span class="token">display-lg</span><span class="spec">Inter · 47 / 70.5 / -0.108 · w400</span></div><div class="sample" style="font-family:var(--font-display); font-size:47px; font-weight:400; line-height:1.5; letter-spacing:-0.108px;">A lighter sub-display.</div></div>
+  <div class="type-row"><div class="label"><span class="token">display-md</span><span class="spec">Inter · 40 / 34 / 0 · w900</span></div><div class="sample" style="font-family:var(--font-display); font-size:40px; font-weight:900; line-height:0.85; letter-spacing:-1px;">Section / card headlines.</div></div>
+  <div class="type-row"><div class="label"><span class="token">display-sm</span><span class="spec">Inter · 32 / 38.4 / -0.96 · w600</span></div><div class="sample" style="font-family:var(--font-sans); font-size:32px; font-weight:600; line-height:1.2; letter-spacing:-0.96px;">Inter-rendered section heading.</div></div>
+  <div class="type-row"><div class="label"><span class="token">display-xs</span><span class="spec">Inter · 24 / 31.2 / -0.48 · w600</span></div><div class="sample" style="font-family:var(--font-sans); font-size:24px; font-weight:600; line-height:1.3; letter-spacing:-0.48px;">Sub-section display.</div></div>
+  <div class="type-row"><div class="label"><span class="token">body-lg</span><span class="spec">Inter · 20 / 30 / 0 · w400</span></div><div class="sample" style="font-family:var(--font-sans); font-size:20px; font-weight:400; line-height:1.5;">Lead paragraph for hero copy and section intros.</div></div>
+  <div class="type-row"><div class="label"><span class="token">body-md</span><span class="spec">Inter · 16 / 24 / 0 · w400</span></div><div class="sample" style="font-family:var(--font-sans); font-size:16px; font-weight:400; line-height:1.5;">Default body. Inter at the comfortable reading scale.</div></div>
+  <div class="type-row"><div class="label"><span class="token">body-md-strong</span><span class="spec">Inter · 16 / 24 / 0 · w600</span></div><div class="sample" style="font-family:var(--font-sans); font-size:16px; font-weight:600; line-height:1.5;">Bold inline body for emphasis.</div></div>
+  <div class="type-row"><div class="label"><span class="token">body-sm</span><span class="spec">Inter · 14 / 20 / 0 · w400</span></div><div class="sample" style="font-family:var(--font-sans); font-size:14px; font-weight:400; line-height:1.43;">Secondary body. Captions and helper text.</div></div>
+  <div class="type-row"><div class="label"><span class="token">body-sm-strong</span><span class="spec">Inter · 14 / 20 / 0 · w600</span></div><div class="sample" style="font-family:var(--font-sans); font-size:14px; font-weight:600; line-height:1.43;">Bold caption / nav-link.</div></div>
+  <div class="type-row"><div class="label"><span class="token">caption</span><span class="spec">Inter · 12 / 16 / 0 · w400</span></div><div class="sample" style="font-family:var(--font-sans); font-size:12px; font-weight:400; line-height:1.33;">Fine print and footnote.</div></div>
+  <div class="type-row"><div class="label"><span class="token">button-md</span><span class="spec">Inter · 16 / 24 / 0 · w600</span></div><div class="sample" style="font-family:var(--font-sans); font-size:16px; font-weight:600; line-height:1.5;">Get started</div></div>
+  <div class="type-row"><div class="label"><span class="token">family-system</span><span class="spec">Inter — w400 · w600 · w900</span></div><div class="sample"><span style="font-family:var(--font-display); font-weight:900; font-size:28px; letter-spacing:-0.5px; color:var(--primary);">Wise</span> &nbsp; <span style="font-family:var(--font-sans); font-weight:600; font-size:18px;">Inter Semibold</span> &nbsp; <span style="font-family:var(--font-sans); font-weight:400; font-size:16px;">Inter Regular</span></div></div>
+</section>
+
+<section data-sec="buttons">
+  <p class="section-eyebrow">Buttons</p>
+  <h2 class="section-heading">Pill rectangles at 24 px.</h2>
+  <p class="section-lead">Every button on the brand is a generous 24 px pill rectangle — the geometric softness is non-negotiable across send-money CTAs, secondary actions, and tertiary outlines. The primary is the lime-green CTA that defines the brand identity; secondary lives on sage-tinted neutral; tertiary is the white outline with a 1 px ink border for low-priority actions. The circular icon button is the only round affordance, used for inline icon controls. Labels set in Inter weight 600. Touch targets land at 48–56 px tall.</p>
+  <div class="button-grid">
+    <div class="button-cell">
+      <span class="label">button-primary</span>
+      <button class="btn-primary" type="button">Get started</button>
+      <span class="desc">Wise green fill, ink label, 24 px pill. The universal CTA.</span>
+    </div>
+    <div class="button-cell">
+      <span class="label">button-secondary</span>
+      <button class="btn-secondary" type="button">See how it works</button>
+      <span class="desc">Sage canvas fill, ink label, 24 px pill. Secondary action.</span>
+    </div>
+    <div class="button-cell">
+      <span class="label">button-tertiary</span>
+      <button class="btn-tertiary" type="button">Learn more</button>
+      <span class="desc">Canvas fill with 1 px ink border, 24 px pill. Low-priority outline.</span>
+    </div>
+    <div class="button-cell">
+      <span class="label">button-icon-circular</span>
+      <button class="btn-icon-circular" type="button" aria-label="More">→</button>
+      <span class="desc">Circle button for inline icon affordances.</span>
+    </div>
+  </div>
+</section>
+
+<section data-sec="cards">
+  <p class="section-eyebrow">Cards &amp; Containers</p>
+  <h2 class="section-heading">Pill cards on sage canvas.</h2>
+  <p class="section-lead">Cards use the brand's canonical 24 px pill radius. Four feature variants ladder by surface: the default card sits inside dark bands, sage-tinted feature cards group related content, pale-green cards highlight a brand moment, and a polarity-flipped white variant carries promotional callouts. The brand's signature interactive component is the currency-converter card — a bordered pill hosting amount inputs and currency selector pills.</p>
+  <div class="card-grid" style="margin-bottom:32px;">
+    <div class="feat-card content">
+      <span class="eyebrow">card-content</span>
+      <h4>Move money your way.</h4>
+      <p>The default card. Sits on dark canvas. Surface contrast carries elevation.</p>
+    </div>
+    <div class="feat-card sage">
+      <span class="eyebrow">card-feature-sage</span>
+      <h4>Fair, mid-market rate.</h4>
+      <p>Lifted canvas-soft card for grouping related features inside a content band.</p>
+    </div>
+    <div class="feat-card green">
+      <span class="eyebrow">card-feature-green</span>
+      <h4>Send to 160 countries.</h4>
+      <p>Pale-green card with ink text. Highlights a brand moment without using the bright CTA green.</p>
+    </div>
+    <div class="feat-card dark">
+      <span class="eyebrow">card-feature-dark</span>
+      <h4>The Wise account.</h4>
+      <p>Polarity-flipped white card with ink text. Used for promotional moments on dark canvas.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:48px;">
+    <div style="font-family:var(--font-sans); font-weight:600; font-size:14px; color:var(--ink); margin-bottom:18px;">currency-converter-card</div>
+    <div class="converter-card">
+      <div class="converter-row">
+        <div>
+          <div class="col-label">You send</div>
+          <input class="amount" value="1,000.00" inputmode="decimal" aria-label="Send amount">
+        </div>
+        <span class="currency-pill"><span class="currency-flag flag-usd">US</span>USD ▾</span>
+      </div>
+      <div class="converter-row">
+        <div>
+          <div class="col-label">Recipient gets</div>
+          <input class="amount" value="924.31" inputmode="decimal" aria-label="Receive amount">
+        </div>
+        <span class="currency-pill"><span class="currency-flag flag-eur">EU</span>EUR ▾</span>
+      </div>
+      <div class="converter-meta">
+        <span>Fee <strong>2.55 USD</strong></span>
+        <span>Rate <strong>0.92745</strong></span>
+      </div>
+      <button class="btn-primary" type="button">Send money</button>
+    </div>
+  </div>
+</section>
+
+<section data-sec="forms">
+  <p class="section-eyebrow">Form Elements</p>
+  <h2 class="section-heading">Inputs are 12 px rounded rectangles.</h2>
+  <p class="section-lead">Text inputs render with a 1 px solid ink border at 12 px radius — a slightly tighter softness than the 24 px button geometry. Labels in Inter weight 600, sentence-case. The brand never uses uppercase form labels.</p>
+  <div class="form-grid">
+    <div class="form-cell">
+      <label for="text-email">Email address</label>
+      <input data-sec="text-email" type="email" placeholder="you@example.com">
+    </div>
+    <div class="form-cell">
+      <label for="text-search">Search</label>
+      <input data-sec="text-search" type="text" placeholder="Search currencies">
+    </div>
+  </div>
+</section>
+
+<section data-sec="spacing">
+  <p class="section-eyebrow">Spacing Scale</p>
+  <h2 class="section-heading">A 4 px rhythm from xxs to 3xl.</h2>
+  <p class="section-lead">Section padding lands at the 48 px step (3xl) on desktop. Card interiors live at 24 px (xl). The base unit is 4 px, and every step is a multiple of it. The scale ladders xxs (2) → xs (4) → sm (8) → md (12) → lg (16) → xl (24) → 2xl (32) → 3xl (48).</p>
+  <div class="scale-grid">
+    <div class="scale-row"><span class="token">xxs</span><span class="bar" style="width:2px;"></span><span class="value">2px</span></div>
+    <div class="scale-row"><span class="token">xs</span><span class="bar" style="width:4px;"></span><span class="value">4px</span></div>
+    <div class="scale-row"><span class="token">sm</span><span class="bar" style="width:8px;"></span><span class="value">8px</span></div>
+    <div class="scale-row"><span class="token">md</span><span class="bar" style="width:12px;"></span><span class="value">12px</span></div>
+    <div class="scale-row"><span class="token">lg</span><span class="bar" style="width:16px;"></span><span class="value">16px</span></div>
+    <div class="scale-row"><span class="token">xl</span><span class="bar" style="width:24px;"></span><span class="value">24px</span></div>
+    <div class="scale-row"><span class="token">2xl</span><span class="bar" style="width:32px;"></span><span class="value">32px</span></div>
+    <div class="scale-row"><span class="token">3xl</span><span class="bar" style="width:48px;"></span><span class="value">48px</span></div>
+  </div>
+</section>
+
+<section data-sec="radius">
+  <p class="section-eyebrow">Border Radius Scale</p>
+  <h2 class="section-heading">Generous, friendly, never sharp.</h2>
+  <p class="section-lead">The brand softens every UI element with rounded geometry. 24 px is the canonical button + card radius — generous, friendly, defining the brand's calm fintech voice. Inputs land at 12 px, small chips at 8 px, and only badges + circular icon buttons use full pill geometry. The brand never uses sharp 0 px corners on UI elements.</p>
+  <div class="radius-grid">
+    <div class="radius-cell">
+      <div class="radius-shape sm"></div>
+      <div>
+        <div class="radius-label">rounded.sm</div>
+        <div class="radius-desc">8 px corners. Inline pills, small badges.</div>
+      </div>
+    </div>
+    <div class="radius-cell">
+      <div class="radius-shape md"></div>
+      <div>
+        <div class="radius-label">rounded.md</div>
+        <div class="radius-desc">12 px corners. Form inputs, smaller chrome.</div>
+      </div>
+    </div>
+    <div class="radius-cell">
+      <div class="radius-shape lg"></div>
+      <div>
+        <div class="radius-label">rounded.lg</div>
+        <div class="radius-desc">16 px corners. Mid-size cards.</div>
+      </div>
+    </div>
+    <div class="radius-cell">
+      <div class="radius-shape xl"></div>
+      <div>
+        <div class="radius-label">rounded.xl</div>
+        <div class="radius-desc">24 px corners. Canonical button + card radius.</div>
+      </div>
+    </div>
+    <div class="radius-cell">
+      <div class="radius-shape pill"></div>
+      <div>
+        <div class="radius-label">rounded.pill</div>
+        <div class="radius-desc">9999 px corners. Status pills and badges.</div>
+      </div>
+    </div>
+    <div class="radius-cell">
+      <div class="radius-shape full"></div>
+      <div>
+        <div class="radius-label">rounded.full</div>
+        <div class="radius-desc">9999 px corners. Circular icon containers.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-sec="elevation">
+  <p class="section-eyebrow">Elevation &amp; Depth</p>
+  <h2 class="section-heading">Surface contrast over drop shadows.</h2>
+  <p class="section-lead">The brand uses surface contrast as the primary elevation cue. A lifted card sitting on dark canvas reads as elevated without any drop shadow at all. Three discrete states: flat (canvas-soft, default mood), hairline (1 px solid ink border on tertiary buttons and inputs), and soft-card (a lifted card on dark canvas — surface contrast IS the elevation).</p>
+  <div class="elev-grid">
+    <div class="elev-cell flat">
+      <span class="label">Level 0 — Flat</span>
+      <span class="desc">No shadow, no border. Default — almost every surface lives here on dark canvas.</span>
+    </div>
+    <div class="elev-cell hairline">
+      <span class="label">Level 1 — Hairline on Ink</span>
+      <span class="desc">1 px solid ink border. Tertiary outline buttons and form inputs.</span>
+    </div>
+    <div class="elev-wrap-soft">
+      <div class="elev-cell softcard">
+        <span class="label">Level 2 — Soft Card</span>
+        <span class="desc">Lifted card sitting on dark canvas. Surface contrast IS the elevation.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-sec="signature">
+  <p class="section-eyebrow">Signature Components</p>
+  <h2 class="section-heading">The pieces that make this Wise.</h2>
+  <p class="section-lead">A canvas-soft hero band hosting the 126 px Inter weight 900 headline, a polarity-flipped dark hero where Wise green carries the headline on near-black, a lifted content band that follows hero, the currency-converter card with its signature from/to amount inputs and country-flag currency pills, and a pair of badges — positive on green-pale, negative on dark maroon — for in-product status moments.</p>
+
+  <div class="hero-band-demo">
+    <p class="eyebrow">hero-band — display-mega · Inter w900</p>
+    <h3>Send money.</h3>
+  </div>
+
+  <div class="hero-band-dark-demo">
+    <p class="eyebrow">hero-band-dark — polarity-flipped</p>
+    <h3>Save more.</h3>
+  </div>
+
+  <div class="content-band-demo">
+    <h3>A content band that follows hero.</h3>
+    <p>Lifted surface, 1 px hairline border, 40 px Inter weight 900 section headline. Used for editorial content rows that sit beneath the hero.</p>
+  </div>
+
+  <div style="margin-top:24px;">
+    <div style="font-family:var(--font-sans); font-weight:600; font-size:14px; color:var(--ink); margin-bottom:14px;">currency-converter-card — the brand's signature widget</div>
+    <div class="converter-card">
+      <div class="converter-row">
+        <div>
+          <div class="col-label">You send</div>
+          <input class="amount" value="500.00" inputmode="decimal" aria-label="Send amount">
+        </div>
+        <span class="currency-pill"><span class="currency-flag flag-usd">US</span>USD ▾</span>
+      </div>
+      <div class="converter-row">
+        <div>
+          <div class="col-label">Recipient gets</div>
+          <input class="amount" value="462.15" inputmode="decimal" aria-label="Receive amount">
+        </div>
+        <span class="currency-pill"><span class="currency-flag flag-eur">EU</span>EUR ▾</span>
+      </div>
+      <div class="converter-meta">
+        <span>Fee <strong>1.28 USD</strong></span>
+        <span>Rate <strong>0.92745</strong></span>
+      </div>
+      <button class="btn-primary" type="button">Send money</button>
+    </div>
+  </div>
+
+  <div style="margin-top:48px;">
+    <div style="font-family:var(--font-sans); font-weight:600; font-size:14px; color:var(--ink); margin-bottom:14px;">badges — positive / negative</div>
+    <div class="badge-row">
+      <span class="badge positive"><span class="dot"></span>Payment received</span>
+      <span class="badge negative"><span class="dot"></span>Transfer failed</span>
+    </div>
+  </div>
+</section>
+
+<section data-sec="responsive">
+  <p class="section-eyebrow">Responsive Behavior</p>
+  <h2 class="section-heading">Three breakpoints, one rhythm.</h2>
+  <p class="section-lead">The marketing grid collapses cleanly: hero stays text-first at every viewport, with the converter card stacking below the headline at mobile. Section padding steps from 48 px desktop to 32 px tablet to 20 px mobile.</p>
+  <table class="resp-table">
+    <thead>
+      <tr><th>Breakpoint</th><th>Width</th><th>Key changes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Mobile</td><td>&lt; 768 px</td><td>Hero scales 126 → 56 px. All grids 1-up. Converter card stacks below headline.</td></tr>
+      <tr><td>Tablet</td><td>768 – 1023 px</td><td>2-up feature grids. Section padding 72 / 32.</td></tr>
+      <tr><td>Desktop</td><td>≥ 1024 px</td><td>Full marketing grid. Section padding 96 / 48.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ============================== EXAMPLES (kit-mirror) ============================== -->
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Pricing Tiers</h2>
+    <p class="ex-intro">Three-up plan grid with the middle tier polarity-flipped. Mono uppercase tier name, display numeral price, hairline-divided feature list.</p>
+    <div class="ex-grid-pricing">
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">/0.1 · Starter</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$9</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For individuals getting started.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Core features</li>
+          <li><span class="ex-bullet"></span>Up to 3 projects</li>
+          <li><span class="ex-bullet"></span>Community support</li>
+        </ul>
+        <button class="ex-tier-cta ink">Get started</button>
+      </div>
+      <div class="ex-tier-card dark">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span class="ex-mono">/0.2 · Pro</span>
+          <span style="font-family:var(--font-mono); font-size:10px; letter-spacing:0.5px; text-transform:uppercase; display:inline-flex; align-items:center; gap:6px;"><span style="width:6px; height:6px; background:#0e0f0c; border-radius:9999px;"></span>Most popular</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$29</span><span style="font-family:var(--font-mono); font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; margin:0;">For teams ready to ship.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Everything in Starter</li>
+          <li><span class="ex-bullet"></span>Unlimited projects</li>
+          <li><span class="ex-bullet"></span>Email support</li>
+          <li><span class="ex-bullet"></span>Advanced analytics</li>
+        </ul>
+        <button class="ex-tier-cta invert">Start free trial</button>
+      </div>
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">/0.3 · Team</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$99</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For organizations operating at scale.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Everything in Pro</li>
+          <li><span class="ex-bullet"></span>SSO + audit log</li>
+          <li><span class="ex-bullet"></span>Priority support</li>
+          <li><span class="ex-bullet"></span>SLA &amp; onboarding</li>
+        </ul>
+        <button class="ex-tier-cta ink">Talk to sales</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Product Selector
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Product Selector</h2>
+    <p class="ex-intro">Image gallery + variant picker + add-to-bag CTA. Color swatches use a 1px ink ring for selection; size pills polarity-flip to ink fill.</p>
+    <div class="ex-grid-product">
+      <div class="ex-grid-gallery">
+        <div class="ex-tile tall"><span class="ex-mono" style="font-size:10px;">/IMG · 01</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG · 02</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG · 03</span></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <div class="ex-mono" style="display:flex; align-items:center; gap:8px;"><span style="width:8px; height:8px; background:var(--color-accent); border-radius:9999px;"></span>/0.1 · Goods</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(24px, 4.5vw, 34px); font-weight:900; line-height:1.06; letter-spacing:-1px; color:var(--color-foreground); margin:0;">Field Tee, 6-Pack</h3>
+        <div style="display:flex; align-items:baseline; gap:12px;">
+          <span style="font-family:var(--font-display); font-size:clamp(32px, 5vw, 40px); font-weight:900; line-height:1; letter-spacing:-1.5px; color:var(--color-foreground);">$192</span>
+          <span class="ex-mono">★★★★☆ &nbsp;·&nbsp; 117 reviews</span>
+        </div>
+        <p style="font-size:15px; color:var(--color-foreground-muted); line-height:1.5; margin:0;">Six tees in our default rotation: two bone, two stone, two ink. Ultra-soft 100% cotton, dyed with our proprietary palette, pre-washed so the first wear feels like the fiftieth.</p>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Hand cut and sewn locally</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Pre-washed, pre-shrunk cotton</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Reinforced collar and cuffs</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Carbon-neutral shipping</li>
+        </ul>
+        <div>
+          <div class="ex-mono" style="margin-bottom:10px;">Color · Bone</div>
+          <div style="display:flex; gap:10px;">
+            <button aria-label="Bone" style="width:32px; height:32px; border-radius:9999px; background:#ececec; border:1px solid var(--color-border-soft); box-shadow:0 0 0 2px var(--color-canvas), 0 0 0 3px var(--color-foreground); cursor:pointer; padding:0;"></button>
+            <button aria-label="Stone" style="width:32px; height:32px; border-radius:9999px; background:#aaaaaa; border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+            <button aria-label="Ink" style="width:32px; height:32px; border-radius:9999px; background:#1e2124; border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+          </div>
+        </div>
+        <div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+            <span class="ex-mono">Size</span>
+            <a href="#" style="font-family:var(--font-mono); font-size:11px; letter-spacing:0.5px; text-transform:uppercase; color:var(--color-foreground); text-decoration:underline;">Size guide</a>
+          </div>
+          <div class="ex-grid-sizes">
+            <button class="ex-size-btn" disabled>XXS</button>
+            <button class="ex-size-btn">XS</button>
+            <button class="ex-size-btn selected">S</button>
+            <button class="ex-size-btn">M</button>
+            <button class="ex-size-btn">L</button>
+            <button class="ex-size-btn">XL</button>
+            <button class="ex-size-btn">2XL</button>
+            <button class="ex-size-btn">3XL</button>
+          </div>
+        </div>
+        <button class="ex-primary" style="width:100%; margin-top:4px;">Add to bag</button>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Shopping Cart
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Shopping Cart</h2>
+    <p class="ex-intro">Right-anchored drawer over a 50% ink scrim. Each line is a thumb + name/variant/qty stack + price + Remove text-link. Subtotal sits above a full-width primary Checkout, with a Continue link below.</p>
+    <div class="ex-frame tall">
+      <div style="padding:32px; opacity:0.5; display:flex; flex-direction:column; gap:20px;">
+        <div style="height:14px; width:40%; background:var(--color-border); border-radius:2px;"></div>
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px;">
+          <div style="height:120px; background:var(--color-border); border-radius:4px;"></div>
+          <div style="height:120px; background:var(--color-border); border-radius:4px;"></div>
+          <div style="height:120px; background:var(--color-border); border-radius:4px;"></div>
+        </div>
+      </div>
+      <div class="ex-scrim"></div>
+      <aside class="ex-cart-drawer">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:20px 24px; border-bottom:1px solid var(--color-border-soft);">
+          <div>
+            <div class="ex-mono" style="margin-bottom:4px;">/0.1 · Cart</div>
+            <h4 style="font-family:var(--font-display); font-size:22px; font-weight:900; line-height:1.0; letter-spacing:-0.5px; color:var(--color-foreground); margin:0;">Shopping Cart</h4>
+          </div>
+          <button aria-label="Close" style="background:transparent; border:none; color:var(--color-foreground); font-size:18px; cursor:pointer; padding:4px 8px;">×</button>
+        </div>
+        <ul style="list-style:none; padding:0; margin:0; flex:1; overflow-y:auto;">
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px; border-bottom:1px solid var(--color-border-soft);">
+            <div style="width:56px; height:56px; background:var(--color-canvas); border:1px solid var(--color-border-soft); border-radius:4px; display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/01</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Field Tee, 6-Pack</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Bone · S</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$192.00</span>
+          </li>
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px; border-bottom:1px solid var(--color-border-soft);">
+            <div style="width:56px; height:56px; background:var(--color-canvas); border:1px solid var(--color-border-soft); border-radius:4px; display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/02</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Compass Hip Bag</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Salmon</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$90.00</span>
+          </li>
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px;">
+            <div style="width:56px; height:56px; background:var(--color-canvas); border:1px solid var(--color-border-soft); border-radius:4px; display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/03</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Range Tote</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Bone / Ink</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$140.00</span>
+          </li>
+        </ul>
+        <div style="border-top:1px solid var(--color-border-soft); padding:20px 24px;">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:4px;">
+            <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Subtotal</span>
+            <span style="font-family:var(--font-display); font-size:22px; font-weight:900; letter-spacing:-0.5px; color:var(--color-foreground);">$422.00</span>
+          </div>
+          <p style="font-size:12px; color:var(--color-foreground-muted); margin:0 0 16px;">Shipping and taxes calculated at checkout.</p>
+          <button class="ex-primary" style="width:100%;">Checkout</button>
+          <div style="margin-top:12px; text-align:center; font-size:13px; color:var(--color-foreground-muted);">or <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Continue Shopping →</a></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable App Shell
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">App Shell</h2>
+    <p class="ex-intro">Sidebar navigation + breadcrumb topbar + page heading + KPI strip + activity feed. The everyday product surface.</p>
+    <div class="ex-grid-appshell">
+      <aside style="background:var(--color-canvas-soft); border-right:1px solid var(--color-border-soft); padding:20px 12px; display:flex; flex-direction:column; gap:4px;">
+        <div class="ex-mono" style="padding:8px 12px 16px;">/Workspace</div>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◇</span>Overview</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; background:var(--color-foreground); color:var(--color-foreground-on-primary); font-weight:600; text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">▤</span>Operations</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◫</span>Datasets</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◐</span>Models</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◧</span>Settings</a>
+      </aside>
+      <div style="display:flex; flex-direction:column;">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 24px; border-bottom:1px solid var(--color-border-soft);">
+          <div style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--color-foreground-muted); font-family:var(--font-mono);">
+            <span>/Operations</span><span style="color:var(--color-foreground-tertiary);">›</span><span style="color:var(--color-foreground);">Decision Logs</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <span style="font-size:13px; color:var(--color-foreground-muted);">M. Reyes</span>
+            <div style="width:32px; height:32px; border-radius:9999px; background:var(--color-avatar-fill); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:600; color:var(--color-foreground);">MR</div>
+          </div>
+        </div>
+        <div style="padding:32px 24px; display:flex; flex-direction:column; gap:32px;">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+              <span style="width:8px; height:8px; background:var(--color-accent); border-radius:9999px;"></span>
+              <span class="ex-mono">Operations · Live</span>
+            </div>
+            <h3 style="font-family:var(--font-display); font-size:clamp(24px, 4.5vw, 34px); font-weight:900; line-height:1.06; letter-spacing:-1px; color:var(--color-foreground); margin:0;">Decision Logs</h3>
+          </div>
+          <div class="ex-grid-kpi">
+            <div style="border:1px solid var(--color-border-soft); border-radius:4px; padding:20px; background:var(--color-canvas-soft);">
+              <div class="ex-mono" style="margin-bottom:12px;">Active operators</div>
+              <div style="font-family:var(--font-display); font-size:32px; font-weight:900; line-height:1; color:var(--color-foreground); letter-spacing:-1px;">2,481</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-success); font-family:var(--font-mono);">+4.1%</div>
+            </div>
+            <div style="border:1px solid var(--color-border-soft); border-radius:4px; padding:20px; background:var(--color-canvas-soft);">
+              <div class="ex-mono" style="margin-bottom:12px;">Decisions / hr</div>
+              <div style="font-family:var(--font-display); font-size:32px; font-weight:900; line-height:1; color:var(--color-foreground); letter-spacing:-1px;">17,209</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-success); font-family:var(--font-mono);">+12.4%</div>
+            </div>
+            <div style="border:1px solid var(--color-border-soft); border-radius:4px; padding:20px; background:var(--color-canvas-soft);">
+              <div class="ex-mono" style="margin-bottom:12px;">Pending reviews</div>
+              <div style="font-family:var(--font-display); font-size:32px; font-weight:900; line-height:1; color:var(--color-foreground); letter-spacing:-1px;">38</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-danger); font-family:var(--font-mono);">−9 vs. yesterday</div>
+            </div>
+          </div>
+          <div>
+            <div class="ex-mono" style="margin-bottom:12px;">Recent Activity</div>
+            <ul style="list-style:none; padding:0; margin:0; border:1px solid var(--color-border-soft); border-radius:4px; overflow:hidden;">
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:14px 16px; border-bottom:1px solid var(--color-border-soft); align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.1</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:42</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">M. Reyes</strong> · Promoted dataset v2024.11.21 to production</span>
+              </li>
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:14px 16px; border-bottom:1px solid var(--color-border-soft); align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.2</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:36</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">A. Park</strong> · Approved decision-rule "Northwind Triage"</span>
+              </li>
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:14px 16px; align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.3</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:29</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">System</strong> · Backfilled 412 records into operations log</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Data Table
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Data Table</h2>
+    <p class="ex-intro">Mono uppercase column headers, alternating canvas rows, status pills wired to semantic color tokens, hairline row dividers, and a footer pager.</p>
+    <div style="border:1px solid var(--color-border-soft); border-radius:4px; overflow:hidden;">
+      <div class="ex-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th class="ex-th" style="width:40px;"><input type="checkbox" aria-label="Select all"></th>
+              <th class="ex-th" style="width:120px;">ID</th>
+              <th class="ex-th" style="width:160px;">Actor</th>
+              <th class="ex-th">Target</th>
+              <th class="ex-th" style="width:140px;">Status</th>
+              <th class="ex-th" style="width:140px;">When ↓</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:var(--color-canvas-soft);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2401</td>
+              <td class="ex-td">M. Reyes</td>
+              <td class="ex-td">Northwind Triage</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:42 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2400</td>
+              <td class="ex-td">A. Park</td>
+              <td class="ex-td">Atlas Migration v3</td>
+              <td class="ex-td"><span class="ex-status pending">Pending</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:36 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas-soft);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2399</td>
+              <td class="ex-td">L. Okafor</td>
+              <td class="ex-td">Watchlist Sync</td>
+              <td class="ex-td"><span class="ex-status fail">Failed</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:21 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2398</td>
+              <td class="ex-td">S. Chen</td>
+              <td class="ex-td">Supply Chain Index</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:14 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas-soft);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2397</td>
+              <td class="ex-td">System</td>
+              <td class="ex-td">Nightly Backfill</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">07:55 UTC</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-top:1px solid var(--color-border-soft); background:var(--color-canvas-soft);">
+        <span style="font-size:12px; color:var(--color-foreground-muted); font-family:var(--font-mono);">1–5 of 412</span>
+        <div style="display:flex; gap:4px;">
+          <button class="ex-pager" aria-label="Previous">‹</button>
+          <button class="ex-pager active" aria-current="page">1</button>
+          <button class="ex-pager">2</button>
+          <button class="ex-pager">3</button>
+          <button class="ex-pager" aria-label="Next">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Auth Forms
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Auth Forms</h2>
+    <p class="ex-intro">Centered cards on canvas, full-width primary CTA, mono uppercase field labels, hairline-divided SSO fallback.</p>
+    <div class="ex-grid-auth">
+      <div style="background:var(--color-canvas-soft); border:1px solid var(--color-border-soft); border-radius:24px; padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">/0.1 · Sign in</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:900; line-height:1.05; letter-spacing:-0.8px; color:var(--color-foreground); margin:0 0 24px;">Welcome back.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="••••••••" class="ex-input">
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-top:4px;">
+            <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--color-foreground);"><input type="checkbox"> Remember me</label>
+            <a href="#" style="font-size:13px; color:var(--color-foreground); text-decoration:underline;">Forgot password?</a>
+          </div>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Sign in</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border-soft);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border-soft);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">New here? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Create an account</a></div>
+      </div>
+      <div style="background:var(--color-canvas-soft); border:1px solid var(--color-border-soft); border-radius:24px; padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">/0.2 · Create account</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:900; line-height:1.05; letter-spacing:-0.8px; color:var(--color-foreground); margin:0 0 24px;">Start building.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Full Name</label>
+            <input type="text" placeholder="Mira Reyes" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="••••••••" class="ex-input">
+          </div>
+          <label style="display:flex; align-items:flex-start; gap:8px; font-size:13px; color:var(--color-foreground-muted); margin-top:4px; line-height:1.5;">
+            <input type="checkbox" style="margin-top:3px;">
+            <span>I agree to the <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Terms</a> and <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Privacy Policy</a>.</span>
+          </label>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Create account</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border-soft);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border-soft);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">Already have an account? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Sign in</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Modal Dialog
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Modal Dialog</h2>
+    <p class="ex-intro">Centered card over a 50% ink scrim. Hairline divider above the action row, secondary text-button on the left, primary on the right.</p>
+    <div class="ex-frame short">
+      <div style="padding:24px; opacity:0.7;">
+        <div style="height:14px; width:40%; background:var(--color-border); border-radius:2px; margin-bottom:12px;"></div>
+        <div style="height:12px; width:70%; background:var(--color-border); border-radius:2px; margin-bottom:8px;"></div>
+        <div style="height:12px; width:60%; background:var(--color-border); border-radius:2px;"></div>
+      </div>
+      <div class="ex-scrim"></div>
+      <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:24px;">
+        <div class="ex-modal-card">
+          <div style="padding:24px 28px 16px;">
+            <div class="ex-mono" style="margin-bottom:8px;">/0.1 · Confirm</div>
+            <h4 style="font-family:var(--font-display); font-size:22px; font-weight:900; line-height:1.1; letter-spacing:-0.8px; color:var(--color-foreground); margin:0;">Promote dataset to production?</h4>
+          </div>
+          <div style="padding:0 28px 20px; font-size:14px; color:var(--color-foreground-muted); line-height:1.5;">
+            This replaces <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.20</strong> with <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.21</strong> across all downstream consumers. The action is reversible within 24 hours.
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:16px 24px; border-top:1px solid var(--color-border-soft);">
+            <button class="ex-textlink">Cancel</button>
+            <button class="ex-primary" style="height:44px; padding:0 20px; font-size:14px;">Promote</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Empty State
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Empty State</h2>
+    <p class="ex-intro">Outlined icon tile, decimal index, declarative heading, one-sentence body, and a single primary CTA.</p>
+    <div class="ex-emptystate">
+      <div style="width:56px; height:56px; border:1px solid var(--color-border); border-radius:12px; display:flex; align-items:center; justify-content:center; margin-bottom:20px; color:var(--color-foreground-muted);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="M3.5 9.5h17M8 5.5v13"/></svg>
+      </div>
+      <div class="ex-mono" style="margin-bottom:12px;">/0.1 · No datasets</div>
+      <h4 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:900; line-height:1.05; letter-spacing:-0.8px; color:var(--color-foreground); margin:0 0 8px;">Nothing here yet.</h4>
+      <p style="font-size:15px; color:var(--color-foreground-muted); max-width:380px; margin:0 0 24px; line-height:1.5;">Connect a source or upload a CSV to start ingesting records into this workspace.</p>
+      <button class="ex-primary">Connect a source</button>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Toast Stack
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Toast Stack</h2>
+    <p class="ex-intro">Four semantic variants — info, success, warning, error. Each is a 4px card with a 3px accent rule on the leading edge, a mono uppercase tag, and a single dismiss affordance.</p>
+    <div class="ex-grid-toasts">
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-foreground);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-foreground); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">info</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync in progress</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Backfilling 412 records into the operations log.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-success);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-success); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">success</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Dataset promoted</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">v2024.11.21 is live across all downstream consumers.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-warning);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-warning); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">warning</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Approaching quota</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">88% of your monthly compute has been used.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-danger);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-danger); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">error</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync failed</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Watchlist source returned 502. Retry queued.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+
+
+
+
+</div>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

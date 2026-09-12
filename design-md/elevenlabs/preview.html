@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Design System Analysis of ElevenLabs</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #f5f5f5; } html[data-theme="dark"] { background: #0c0c0e; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>awesome-design-md</a>
+  </div>
+  <ul class="nav-links"><li><a href="#colors">Colors</a></li><li><a href="#typography">Typography</a></li><li><a href="#components">Components</a></li><li><a href="#responsive">Responsive</a></li></ul>
+  <button class="nav-cta">Try free</button>
+</nav>
+<div class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of ElevenLabs</h1>
+    <p>Voice-AI brand reading like an editorial magazine. Off-white canvas, Waldenburg Light at weight 300, pastel gradient orbs as the only color moments.</p>
+    <div class="hero-actions">
+      <button class="btn-hero-primary">Try free</button>
+      <button class="btn-hero-secondary">Talk to sales</button>
+    </div>
+  </div>
+  </div>
+
+<section id="colors">
+  <div class="section-label">01 — Color Palette</div>
+  <h2 class="section-heading">Off-white canvas, ink primary, atmospheric pastels</h2>
+  <p class="section-intro">No saturated brand action color. Single ink-pill primary; five pastel gradient orbs as decorative atmosphere only.</p>
+  <div class="palette-group"><h3>Brand</h3><div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#292524"></div><div class="swatch-meta"><div class="swatch-name">primary (Ink)</div><div class="swatch-hex">#292524</div><div class="swatch-role">Ink pill — primary CTA.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#0c0a09"></div><div class="swatch-meta"><div class="swatch-name">primary-active</div><div class="swatch-hex">#0c0a09</div><div class="swatch-role">Press state.</div></div></div>
+  </div></div>
+  <div class="palette-group"><h3>Surface</h3><div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#f5f5f5"></div><div class="swatch-meta"><div class="swatch-name">canvas</div><div class="swatch-hex">#f5f5f5</div><div class="swatch-role">Off-white page floor.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#fafafa;border-bottom:1px solid #e7e5e4"></div><div class="swatch-meta"><div class="swatch-name">canvas-soft</div><div class="swatch-hex">#fafafa</div><div class="swatch-role">Subtle alternating band.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#fff;border-bottom:1px solid #e7e5e4"></div><div class="swatch-meta"><div class="swatch-name">surface-card</div><div class="swatch-hex">#ffffff</div><div class="swatch-role">Pure white card.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#f0efed"></div><div class="swatch-meta"><div class="swatch-name">surface-strong</div><div class="swatch-hex">#f0efed</div><div class="swatch-role">Badges, voice icon plates.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#0c0a09"></div><div class="swatch-meta"><div class="swatch-name">surface-dark</div><div class="swatch-hex">#0c0a09</div><div class="swatch-role">Dark CTA bands, featured pricing.</div></div></div>
+  </div></div>
+  <div class="palette-group"><h3>Text &amp; Hairlines</h3><div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#0c0a09"></div><div class="swatch-meta"><div class="swatch-name">ink</div><div class="swatch-hex">#0c0a09</div><div class="swatch-role">Display, primary text.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#4e4e4e"></div><div class="swatch-meta"><div class="swatch-name">body</div><div class="swatch-hex">#4e4e4e</div><div class="swatch-role">Default running-text.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#777169"></div><div class="swatch-meta"><div class="swatch-name">muted</div><div class="swatch-hex">#777169</div><div class="swatch-role">Sub-titles, captions.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#a8a29e"></div><div class="swatch-meta"><div class="swatch-name">muted-soft</div><div class="swatch-hex">#a8a29e</div><div class="swatch-role">Disabled text.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#e7e5e4"></div><div class="swatch-meta"><div class="swatch-name">hairline</div><div class="swatch-hex">#e7e5e4</div><div class="swatch-role">1px divider.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#d6d3d1"></div><div class="swatch-meta"><div class="swatch-name">hairline-strong</div><div class="swatch-hex">#d6d3d1</div><div class="swatch-role">Stronger panel outline.</div></div></div>
+  </div></div>
+  <div class="palette-group"><h3>Atmospheric Gradient Stops (signature)</h3><div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#a7e5d3"></div><div class="swatch-meta"><div class="swatch-name">gradient-mint</div><div class="swatch-hex">#a7e5d3</div><div class="swatch-role">Mint orb. Atmosphere only.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#f4c5a8"></div><div class="swatch-meta"><div class="swatch-name">gradient-peach</div><div class="swatch-hex">#f4c5a8</div><div class="swatch-role">Peach orb.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#c8b8e0"></div><div class="swatch-meta"><div class="swatch-name">gradient-lavender</div><div class="swatch-hex">#c8b8e0</div><div class="swatch-role">Lavender orb.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#a8c8e8"></div><div class="swatch-meta"><div class="swatch-name">gradient-sky</div><div class="swatch-hex">#a8c8e8</div><div class="swatch-role">Sky-blue orb.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#e8b8c4"></div><div class="swatch-meta"><div class="swatch-name">gradient-rose</div><div class="swatch-hex">#e8b8c4</div><div class="swatch-role">Rose orb.</div></div></div>
+  </div></div>
+  <div class="palette-group"><h3>Semantic</h3><div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#16a34a"></div><div class="swatch-meta"><div class="swatch-name">success</div><div class="swatch-hex">#16a34a</div><div class="swatch-role">Confirmation.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#dc2626"></div><div class="swatch-meta"><div class="swatch-name">error</div><div class="swatch-hex">#dc2626</div><div class="swatch-role">Validation errors.</div></div></div>
+  </div></div>
+</section>
+
+<section id="typography">
+  <div class="section-label">02 — Typography</div>
+  <h2 class="section-heading">Waldenburg Light 300 + Inter</h2>
+  <p class="section-intro">Display weight stays at 300. Body Inter at +0.15-0.18px tracking — slightly looser than default for an editorial dialect.</p>
+  <div class="type-row"><div class="type-meta"><strong>display-mega</strong>64px / 300 / 1.05 / -1.92px (Waldenburg)</div><div class="type-sample" style="font-family:var(--display);font-size:56px;font-weight:300;letter-spacing:-1.92px">Bringing technology to life</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>48px / 300 / 1.08 / -0.96px</div><div class="type-sample" style="font-family:var(--display);font-size:44px;font-weight:300;letter-spacing:-0.96px">Two patterns, built to the same research foundation</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>36px / 300 / 1.17 / -0.36px</div><div class="type-sample" style="font-family:var(--display);font-size:32px;font-weight:300;letter-spacing:-0.36px">Section heading</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>32px / 300 / 1.13 / -0.32px</div><div class="type-sample" style="font-family:var(--display);font-size:28px;font-weight:300;letter-spacing:-0.32px">Sub-section heading</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-md</strong>20px / 500 / 1.35 (Inter)</div><div class="type-sample" style="font-size:20px;font-weight:500">Component title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>16px / 400 / 1.5 / 0.16px</div><div class="type-sample" style="font-size:16px;letter-spacing:0.16px">Default body Inter at +0.16px tracking — slightly looser than default.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>15px / 400 / 1.47 / 0.15px</div><div class="type-sample" style="font-size:15px;letter-spacing:0.15px">Footer body.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-uppercase</strong>12px / 600 / 1.4 / 0.96px</div><div class="type-sample" style="font-size:12px;font-weight:600;letter-spacing:0.96px;text-transform:uppercase">Section label</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button</strong>15px / 500 / 1.0</div><div class="type-sample" style="font-size:15px;font-weight:500">Try free</div></div>
+  <div class="type-row"><div class="type-meta"><strong>nav-link</strong>15px / 500 / 1.4</div><div class="type-sample" style="font-size:15px;font-weight:500">Creative · Agents · Video · Pricing</div></div>
+</section>
+
+<section id="components">
+  <div class="section-label">03 — Buttons</div>
+  <h2 class="section-heading">Subtle pill geometry</h2>
+  <p class="section-intro">Ink pill primary, transparent outline secondary. No saturated CTA color.</p>
+  <div class="button-grid">
+    <div class="button-cell"><div class="button-label">button-primary</div><button class="btn btn-primary">Try free</button><div class="button-meta">Ink pill / 9999px / 40px</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-active</div><button class="btn btn-primary-active">Pressed</button><div class="button-meta">Pure black press state.</div></div>
+    <div class="button-cell"><div class="button-label">button-outline</div><button class="btn btn-outline">Talk to sales</button><div class="button-meta">Transparent + 1px hairline border.</div></div>
+    <div class="button-cell"><div class="button-label">button-tertiary-text</div><button class="btn btn-tertiary-text">Read research →</button><div class="button-meta">Inline ink text.</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">04 — Atmospheric Gradient Orbs (signature)</div>
+  <h2 class="section-heading">Pastel orbs as decoration only</h2>
+  <p class="section-intro">Five gradient stops drift through the page as soft radial blooms. Never used as button fills, text colors, or component backgrounds — pure atmosphere.</p>
+  <div class="gradient-orb-grid">
+    <div class="gradient-orb-card mint"><span>Mint orb</span></div>
+    <div class="gradient-orb-card peach"><span>Peach orb</span></div>
+    <div class="gradient-orb-card lavender"><span>Lavender orb</span></div>
+    <div class="gradient-orb-card sky"><span>Sky orb</span></div>
+    <div class="gradient-orb-card rose"><span>Rose orb</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">05 — Audio Waveform Card</div>
+  <h2 class="section-heading">Voice preview component</h2>
+  <p class="section-intro">A horizontal card with circular play button, ink-tinted waveform glyph, and voice metadata.</p>
+  <div class="audio-waveform-card">
+    <button class="play">▶</button>
+    <div style="flex:1">
+      <div class="info"><div class="name">Rachel — calm narrator</div><div class="meta">English (American) · Adult · Studio</div></div>
+      <div class="waveform">
+        <div class="bar" style="height:40%"></div><div class="bar" style="height:60%"></div><div class="bar" style="height:80%"></div><div class="bar" style="height:50%"></div><div class="bar" style="height:90%"></div><div class="bar" style="height:70%"></div><div class="bar" style="height:30%"></div><div class="bar" style="height:65%"></div><div class="bar" style="height:75%"></div><div class="bar" style="height:45%"></div><div class="bar" style="height:55%"></div><div class="bar" style="height:85%"></div><div class="bar" style="height:35%"></div><div class="bar" style="height:60%"></div><div class="bar" style="height:80%"></div><div class="bar" style="height:50%"></div><div class="bar" style="height:90%"></div><div class="bar" style="height:65%"></div><div class="bar" style="height:75%"></div><div class="bar" style="height:55%"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">06 — Voice List</div>
+  <h2 class="section-heading">Voice library rows</h2>
+  <p class="section-intro">Hairline-divided rows with circular voice icon, name + accent, and preview button.</p>
+  <div class="voice-list">
+    <div class="voice-row"><div class="voice-icon-circular">RA</div><div><div class="name">Rachel</div><div class="accent">English (American) · Adult</div></div><button class="play-btn">Preview</button></div>
+    <div class="voice-row"><div class="voice-icon-circular">DA</div><div><div class="name">Daniel</div><div class="accent">English (British) · Adult</div></div><button class="play-btn">Preview</button></div>
+    <div class="voice-row"><div class="voice-icon-circular">SO</div><div><div class="name">Sofia</div><div class="accent">Spanish · Young Adult</div></div><button class="play-btn">Preview</button></div>
+    <div class="voice-row"><div class="voice-icon-circular">YU</div><div><div class="name">Yuki</div><div class="accent">Japanese · Adult</div></div><button class="play-btn">Preview</button></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">07 — Feature Cards</div>
+  <h2 class="section-heading">3-up benefit grid</h2>
+  <div class="card-grid">
+    <div class="feature-card"><h4>Studio quality</h4><p>Generate broadcast-grade voice from a few seconds of reference audio.</p><button class="btn btn-tertiary-text">Learn more →</button></div>
+    <div class="feature-card"><h4>30+ languages</h4><p>One model, every language. Native fluency without retraining.</p><button class="btn btn-tertiary-text">Learn more →</button></div>
+    <div class="feature-card"><h4>Real-time API</h4><p>Stream voice with sub-300ms latency for live applications.</p><button class="btn btn-tertiary-text">Learn more →</button></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">08 — Pricing Tiers</div>
+  <h2 class="section-heading">Featured tier inverts to dark</h2>
+  <p class="section-intro">Visual inversion signals "highlighted choice" without colored ribbons.</p>
+  <div class="pricing-grid">
+    <div class="pricing-tier-card"><h4>Starter</h4><div class="price">$5<span style="font-size:18px;color:var(--muted-soft)">/mo</span></div><ul><li>30,000 characters</li><li>10 voices</li><li>Commercial license</li></ul><button class="btn btn-outline" style="width:100%">Get started</button></div>
+    <div class="pricing-tier-card featured"><h4>Creator</h4><div class="price">$22<span style="font-size:18px;color:var(--on-dark-soft)">/mo</span></div><ul><li>100,000 characters</li><li>30 voices</li><li>Voice cloning</li><li>Commercial license</li></ul><button class="btn btn-primary" style="width:100%;background:#fff;color:var(--ink)">Choose plan</button></div>
+    <div class="pricing-tier-card"><h4>Pro</h4><div class="price">$99</div><ul><li>500,000 characters</li><li>Unlimited voices</li><li>Pro voice cloning</li><li>96kHz studio quality</li></ul><button class="btn btn-outline" style="width:100%">Choose plan</button></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">09 — Forms</div>
+  <h2 class="section-heading">Inputs</h2>
+  <div class="form-grid">
+    <div class="form-cell"><label class="form-label">Email</label><input class="text-input" type="email" placeholder="you@example.com"></div>
+    <div class="form-cell"><label class="form-label">Workspace</label><input class="text-input focused" type="text" value="Acme Studio"></div>
+    <div class="form-cell"><label class="form-label">API key</label><input class="text-input" type="text" placeholder="sk_••••••••"></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">10 — Badges</div>
+  <p class="section-intro">Small uppercase pills.</p>
+  <div style="display:flex;gap:12px;flex-wrap:wrap"><span class="badge-pill">New</span><span class="badge-pill">Beta</span><span class="badge-pill">Pro</span><span class="badge-pill">Enterprise</span></div>
+</section>
+
+<section>
+  <div class="section-label">11 — Spacing Scale</div>
+  <p class="section-intro">4px base, 96px section rhythm.</p>
+  <div class="spacing-row">
+    <div class="spacing-block"><div class="spacing-bar" style="width:4px"></div><div class="spacing-label">xxs · 4</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:8px"></div><div class="spacing-label">xs · 8</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:12px"></div><div class="spacing-label">sm · 12</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:16px"></div><div class="spacing-label">base · 16</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:20px"></div><div class="spacing-label">md · 20</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:24px"></div><div class="spacing-label">lg · 24</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:32px"></div><div class="spacing-label">xl · 32</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:48px"></div><div class="spacing-label">xxl · 48</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:96px"></div><div class="spacing-label">section · 96</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">12 — Border Radius</div>
+  <p class="section-intro">Pill for CTAs and badges, 16-24px for cards, 9999px for voice icons.</p>
+  <div class="radius-row">
+    <div class="radius-block" style="border-radius:0">0 · none</div>
+    <div class="radius-block" style="border-radius:4px">4 · xs</div>
+    <div class="radius-block" style="border-radius:6px">6 · sm</div>
+    <div class="radius-block" style="border-radius:8px">8 · md</div>
+    <div class="radius-block" style="border-radius:12px">12 · lg</div>
+    <div class="radius-block" style="border-radius:16px">16 · xl</div>
+    <div class="radius-block" style="border-radius:24px">24 · xxl</div>
+    <div class="radius-block" style="border-radius:9999px">pill</div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">13 — Elevation &amp; Depth</div>
+  <p class="section-intro">Hairline + soft drop. Atmospheric depth comes from gradient orbs.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card"><h5>Flat / Canvas</h5><p>Body bands, footer.</p></div>
+    <div class="elevation-card"><h5>Card</h5><p>White card with 1px hairline border.</p></div>
+    <div class="elevation-card with-shadow"><h5>Soft drop</h5><p>0 4px 16px rgba(0,0,0,0.04). Single shadow tier.</p></div>
+    <div class="elevation-card" style="background:radial-gradient(circle at 50% 50%,var(--gradient-mint) 0%,transparent 70%)"><h5>Gradient orb</h5><p>Atmospheric depth — never a card surface.</p></div>
+  </div>
+</section>
+
+<section id="responsive">
+  <div class="section-label">14 — Responsive Behavior</div>
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Mobile</td><td>&lt; 640px</td><td>Hero h1 64→32px; feature cards 1-up; nav hamburger; gradient orbs shrink.</td></tr>
+      <tr><td>Tablet</td><td>640–1024px</td><td>Hero h1 48px; feature cards 2-up.</td></tr>
+      <tr><td>Desktop</td><td>1024–1280px</td><td>Full hero h1 64px; feature cards 3-up.</td></tr>
+      <tr><td>Wide</td><td>&gt; 1280px</td><td>Content caps at 1200px.</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="device-bar" style="width:60px;height:120px">375<br>mobile</div>
+    <div class="device-bar" style="width:90px;height:140px">640<br>small</div>
+    <div class="device-bar" style="width:140px;height:160px">768<br>tablet</div>
+    <div class="device-bar" style="width:200px;height:180px">1024<br>laptop</div>
+    <div class="device-bar" style="width:260px;height:200px">1280<br>desktop</div>
+  </div>
+  <div class="responsive-sub"><h4>Touch Targets</h4><ul><li>Primary pill at 40px height — at WCAG AA, padded for AAA.</li><li>Voice icon circles 32px — padded row creates effective 48px tap zone.</li></ul></div>
+  <div class="responsive-sub"><h4>Collapsing Strategy</h4><ul><li>Top nav switches to hamburger below 768px.</li><li>Feature grid: 3-up → 2-up → 1-up.</li><li>Gradient orbs reduce diameter at every breakpoint but never disappear.</li></ul></div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Design System Analysis of Mobbin</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #0b0b0c; }</style>
+</head>
+<body>
+<div class="theme-layer" data-when="light">
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>awesome-design-md</a>
+  </div>
+  <ul class="nav-links"><li>Pricing</li><li>Awards</li><li>Log in</li></ul>
+  <button class="nav-cta">Join for free</button>
+</nav>
+<div class="hero"><div class="hero-content">
+  <h1>Design System Analysis of Mobbin</h1>
+  <p>A gallery-white, monochrome system built to disappear behind the content it curates. Near-black ink on a pure white canvas, stadium-pill controls, a ladder of barely-there neutral tints instead of shadows, and the Saans typeface at unusual variable weights. One electric blue accent is reserved for commercial signals; every other color on screen belongs to the product screenshots being showcased.</p>
+  <div class="hero-actions"><button class="btn-primary">Join for free</button><button class="btn-secondary">See our plans</button></div>
+</div></div>
+<section><span class="section-eyebrow">01 — Foundations</span><h2 class="section-heading">Color Palette</h2><div class="palette-grid"><div class="swatch"><div class="swatch-fill" style="background:#141414;"></div><div class="swatch-meta"><p class="swatch-name">Ink Black · primary</p><p class="swatch-hex">#141414</p><p class="swatch-role">Primary CTA pill fill, footer band, all display type — the brand color.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#0066ff;"></div><div class="swatch-meta"><p class="swatch-name">Electric Blue · accent</p><p class="swatch-hex">#0066ff</p><p class="swatch-role">Popular badge and savings callouts — the only chromatic signal, never a CTA.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#ffffff;border-bottom:1px solid #e0e0e0;"></div><div class="swatch-meta"><p class="swatch-name">Canvas</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Default page and card background.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#f3f3f3;"></div><div class="swatch-meta"><p class="swatch-name">Soft Canvas · canvas-soft</p><p class="swatch-hex">#f3f3f3</p><p class="swatch-role">6% ink wash — nav pill, featured pricing card, FAQ rows, toggle tracks.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#f0f0f0;"></div><div class="swatch-meta"><p class="swatch-name">Field</p><p class="swatch-hex">#f0f0f0</p><p class="swatch-role">8% ink wash — form-input fill, no border needed.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#f0f0f0;"></div><div class="swatch-meta"><p class="swatch-name">Soft Hairline · hairline-soft</p><p class="swatch-hex">#f0f0f0</p><p class="swatch-role">1px outlines on white-on-white cards (pricing, testimonials).</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#e0e0e0;"></div><div class="swatch-meta"><p class="swatch-name">Hairline</p><p class="swatch-hex">#e0e0e0</p><p class="swatch-role">Stronger control border — outlined pill buttons, interactive chrome.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#141414;"></div><div class="swatch-meta"><p class="swatch-name">Ink · text</p><p class="swatch-hex">#141414</p><p class="swatch-role">Headings, body copy, nav links.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#262626;"></div><div class="swatch-meta"><p class="swatch-name">Soft Ink</p><p class="swatch-hex">#262626</p><p class="swatch-role">Secondary lockups and the awards wordmark.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#707070;"></div><div class="swatch-meta"><p class="swatch-name">Muted</p><p class="swatch-hex">#707070</p><p class="swatch-role">Secondary copy, plan descriptions, vote counts, underlined links.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#adadad;"></div><div class="swatch-meta"><p class="swatch-name">Faint</p><p class="swatch-hex">#adadad</p><p class="swatch-role">Placeholders, de-emphasized footer links, fine print.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#ffffff;border-bottom:1px solid #e0e0e0;"></div><div class="swatch-meta"><p class="swatch-name">On-Primary</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Labels on ink fills — CTA text, footer wordmark.</p></div></div></div></section>
+<section><span class="section-eyebrow">02 — Foundations</span><h2 class="section-heading">Typography</h2><p style="color:#707070;margin:-16px 0 28px;max-width:720px;">Saans — a contemporary neo-grotesque used exclusively (Inter shown as substitute). The voice comes from unusual variable-font weight positions: a chunky 652 for every heading, a bookish 456 for text, an airy 300 for hero subtitles. Zero letter-spacing at every size; headlines end with a period.</p><div class="type-row"><div class="type-meta">display<br>80px / 652 / lh 1.0 / tracking 0</div><div style="font-size:80px;font-weight:652;line-height:1.0;">Discover real-world design inspiration.</div></div><div class="type-row"><div class="type-meta">heading-1<br>56px / 652 / lh 1.0 / tracking 0</div><div style="font-size:56px;font-weight:652;line-height:1.0;">Design like a Pro.</div></div><div class="type-row"><div class="type-meta">heading-2<br>44px / 652 / lh 1.13 / tracking 0</div><div style="font-size:44px;font-weight:652;line-height:1.13;">The votes are in.</div></div><div class="type-row"><div class="type-meta">heading-3<br>32px / 652 / lh 1.13 / tracking 0</div><div style="font-size:32px;font-weight:652;line-height:1.13;">Create your free account</div></div><div class="type-row"><div class="type-meta">heading-4<br>24px / 652 / lh 1.25 / tracking 0</div><div style="font-size:24px;font-weight:652;line-height:1.25;">Find design patterns in seconds</div></div><div class="type-row"><div class="type-meta">title<br>20px / 600 / lh 1.3 / tracking 0</div><div style="font-size:20px;font-weight:600;line-height:1.3;">Frequently asked questions</div></div><div class="type-row"><div class="type-meta">body-lg<br>20px / 300 / lh 1.38 / tracking 0</div><div style="font-size:20px;font-weight:300;line-height:1.38;color:#707070;">Featuring over 1,000 iOS &amp; Web apps, and 200 sites — new content weekly.</div></div><div class="type-row"><div class="type-meta">body<br>16px / 456 / lh 1.38 / tracking 0</div><div style="font-size:16px;font-weight:456;line-height:1.38;">Get full access to all apps &amp; features. Cancel anytime.</div></div><div class="type-row"><div class="type-meta">body-sm<br>14px / 456 / lh 1.43 / tracking 0</div><div style="font-size:14px;font-weight:456;line-height:1.43;">For teams and agencies. Centralized billing, seat-based pricing.</div></div><div class="type-row"><div class="type-meta">link<br>16px / 600 / lh 1.38 / tracking 0</div><div style="font-size:16px;font-weight:600;line-height:1.38;">Pricing &nbsp;·&nbsp; Awards &nbsp;·&nbsp; Log in</div></div><div class="type-row"><div class="type-meta">label<br>12px / 600 / lh 1.33 / tracking 0</div><div style="font-size:12px;font-weight:600;line-height:1.33;">POPULAR</div></div><div class="type-row"><div class="type-meta">caption<br>12px / 456 / lh 1.33 / tracking 0</div><div style="font-size:12px;font-weight:456;line-height:1.33;color:#707070;">No credit card required.</div></div></section>
+<section><span class="section-eyebrow">03 — Components</span><h2 class="section-heading">Button Variants</h2><div class="button-grid">
+  <div class="demo-card"><span class="label">button-primary · ink pill</span><button class="btn-primary" style="height:44px;">Join for free</button><p style="font-size:12px;color:#707070;margin:12px 0 0;">The single CTA style everywhere — ink fill, white label, stadium shape.</p></div>
+  <div class="demo-card"><span class="label">button-outline · hairline pill</span><button class="btn-secondary" style="height:44px;">Continue with Google</button><p style="font-size:12px;color:#707070;margin:12px 0 0;">De-emphasized twin — white fill, 1px hairline, same pill geometry.</p></div>
+  <div class="demo-card"><span class="label">button-pill-soft · tint pill</span><button class="btn-secondary" style="height:44px;background:#f3f3f3;border-color:#f3f3f3;">Explore ↗</button><p style="font-size:12px;color:#707070;margin:12px 0 0;">Tertiary utility pill — borderless soft-canvas fill for outbound links.</p></div>
+  <div class="demo-card"><span class="label">badge-popular · accent chip</span><span style="display:inline-block;background:#0066ff;color:#ffffff;padding:4px 10px;font-size:12px;font-weight:600;border-radius:6px;">Popular</span><p style="font-size:12px;color:#707070;margin:12px 0 0;">The only blue element on the page — marks the featured pricing tier.</p></div>
+  <div class="demo-card"><span class="label">badge-overlay · scrim pill</span><div style="background:linear-gradient(135deg,#e8e8e8,#c9c9c9);border-radius:16px;padding:24px 16px;display:flex;align-items:center;justify-content:center;"><span style="display:inline-block;background:rgba(115,115,115,0.56);color:#ffffff;padding:4px 12px;font-size:12px;font-weight:600;border-radius:9999px;">iOS App of the Year</span></div><p style="font-size:12px;color:#707070;margin:12px 0 0;">Translucent gray pill laid over photography and screenshots.</p></div>
+  <div class="demo-card"><span class="label">link-default · underlined</span><div style="display:flex;gap:16px;font-size:15px;font-weight:500;"><a href="#" style="color:#141414;text-decoration:none;">Log in</a><a href="#" style="color:#707070;text-decoration:underline;">Read more</a></div></div>
+</div></section>
+<section><span class="section-eyebrow">04 — Components</span><h2 class="section-heading">Cards &amp; Surfaces</h2><div class="card-grid">
+  <div class="feature-card" style="border-color:#f0f0f0;border-radius:24px;"><h4>Pricing Card</h4><p>White surface, 1px soft hairline, 24px corners. The default plan tier.</p></div>
+  <div class="feature-card" style="background:#f3f3f3;border:none;border-radius:24px;"><h4>Featured Pricing Card</h4><p>Soft-canvas fill, borderless — emphasis by tint, not outline. Carries the blue Popular badge.</p></div>
+  <div class="feature-card" style="border-color:#f0f0f0;border-radius:16px;"><div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;"><span style="width:36px;height:36px;border-radius:9999px;background:#e0e0e0;display:inline-block;"></span><div><div style="font-size:14px;font-weight:600;">Testimonial Card</div><div style="font-size:12px;color:#707070;">Company</div></div></div><p>Avatar with overlapping company mini-badge, quote body in ink, 16px corners.</p></div>
+  <div class="feature-card" style="background:#141414;color:#fff;border:none;border-radius:24px 24px 16px 16px;"><h4 style="color:#fff;">Footer Band</h4><p style="color:#adadad;">Full-width ink surface with rounded top corners — the page's polarity-inverted end-stop.</p></div>
+</div></section>
+<section><span class="section-eyebrow">05 — Components</span><h2 class="section-heading">Form Elements</h2><div class="form-grid">
+  <div class="demo-card"><span class="label">text-input · field fill</span><input class="ex-input-demo" style="background:#f0f0f0;border:none;border-radius:16px;" placeholder="Enter email address"><p style="font-size:12px;color:#707070;margin:12px 0 0;">8% ink-wash fill, no border, 16px corners, faint placeholder.</p></div>
+  <div class="demo-card"><span class="label">text-input-focused · ink ring</span><input class="ex-input-demo" style="background:#f0f0f0;border:none;border-radius:16px;box-shadow:0 0 0 2px #141414;" placeholder="Enter email address"><p style="font-size:12px;color:#707070;margin:12px 0 0;">Focus is a 2px ink ring — signaled in monochrome, no accent color.</p></div>
+  <div class="demo-card"><span class="label">textarea</span><textarea class="ex-input-demo" style="background:#f0f0f0;border:none;border-radius:16px;" rows="3" placeholder="Message"></textarea></div>
+  <div class="demo-card"><span class="label">segmented-control · billing toggle</span><div style="display:inline-flex;background:#f3f3f3;border-radius:9999px;padding:4px;"><span style="background:#ffffff;border-radius:9999px;padding:8px 18px;font-size:14px;font-weight:600;">Yearly</span><span style="padding:8px 18px;font-size:14px;color:#707070;">Quarterly</span></div><p style="font-size:12px;color:#707070;margin:12px 0 0;">Soft-canvas stadium track; the active option is a white pill.</p></div>
+</div></section>
+<section><span class="section-eyebrow">06 — Components</span><h2 class="section-heading">Signature Components</h2><div class="card-grid">
+  <div class="demo-card" style="grid-column:1/-1;"><span class="label">nav-pill · floating navigation</span>
+    <div style="background:#f3f3f3;border-radius:9999px;padding:10px 12px 10px 24px;display:flex;align-items:center;justify-content:space-between;max-width:760px;">
+      <span style="font-weight:652;font-size:16px;">Mobbin</span>
+      <span style="display:flex;align-items:center;gap:20px;font-size:14px;font-weight:600;"><span>Pricing</span><span>Awards</span><span>Log in</span><span style="background:#141414;color:#ffffff;border-radius:9999px;padding:10px 16px;font-size:14px;">Join for free</span></span>
+    </div>
+    <p style="font-size:12px;color:#707070;margin:12px 0 0;">A horizontally-centered stadium bar detached from the viewport edge — soft-canvas fill, ink links, primary pill CTA. Persists on scroll.</p></div>
+  <div class="demo-card"><span class="label">app-icon-squircle · 30% radius</span>
+    <div style="display:flex;gap:12px;align-items:center;">
+      <span style="width:64px;height:64px;border-radius:30%;background:linear-gradient(135deg,#f3f3f3,#dcdcdc);display:inline-block;"></span>
+      <span style="width:48px;height:48px;border-radius:30%;background:linear-gradient(135deg,#e8e8e8,#c9c9c9);display:inline-block;"></span>
+      <span style="width:32px;height:32px;border-radius:30%;background:linear-gradient(135deg,#dcdcdc,#bdbdbd);display:inline-block;"></span>
+    </div>
+    <p style="font-size:12px;color:#707070;margin:12px 0 0;">The iOS icon silhouette at every size — library counters, nominee rows, brand marquees.</p></div>
+  <div class="demo-card"><span class="label">brand-chip · marquee lockup</span>
+    <div style="display:flex;align-items:center;gap:12px;"><span style="width:44px;height:44px;border-radius:30%;background:linear-gradient(135deg,#e8e8e8,#c4c4c4);display:inline-block;"></span><span style="font-size:32px;font-weight:652;line-height:1.13;">Brand Name</span></div>
+    <p style="font-size:12px;color:#707070;margin:12px 0 0;">Squircle icon + heading-3 wordmark, scrolling in full-bleed strips.</p></div>
+  <div class="demo-card"><span class="label">portrait-tile · grayscale grid cell</span>
+    <div style="background:linear-gradient(160deg,#d6d6d6,#8f8f8f);border-radius:24px;height:150px;display:flex;align-items:flex-end;justify-content:center;padding:12px;"><span style="color:#ffffff;font-size:13px;"><strong style="font-weight:600;">Name</strong> · Role, Studio</span></div>
+    <p style="font-size:12px;color:#707070;margin:12px 0 0;">Curator portraits stay strictly black-and-white; caption overlays the lower edge.</p></div>
+  <div class="demo-card"><span class="label">award-lockup · winner presentation</span>
+    <div style="text-align:center;padding:8px 0;"><div style="font-size:12px;color:#707070;margin-bottom:6px;">☙ iOS App of the Year ❧</div><div style="font-size:32px;font-weight:652;line-height:1.13;">Winner Name</div><div style="font-size:14px;color:#707070;margin:6px 0 12px;">28% of votes</div><span style="display:inline-block;background:#f3f3f3;border-radius:9999px;padding:10px 18px;font-size:14px;font-weight:600;">Explore ↗</span></div></div>
+  <div class="demo-card"><span class="label">faq-row · accordion item</span>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div style="background:#f3f3f3;border-radius:16px;padding:16px 20px;display:flex;justify-content:space-between;font-size:16px;"><span>What is included in the plan?</span><span style="color:#707070;">⌄</span></div>
+      <div style="background:#f3f3f3;border-radius:16px;padding:16px 20px;display:flex;justify-content:space-between;font-size:16px;"><span>Can I cancel my subscription?</span><span style="color:#707070;">⌄</span></div>
+    </div></div>
+  <div class="demo-card" style="grid-column:1/-1;"><span class="label">compare-table · plan comparison</span>
+    <div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:14px;min-width:520px;">
+      <tbody><tr><td style="padding:12px 14px;border-bottom:1px solid #f3f3f3;color:#707070;">Feature row</td><td style="padding:12px 14px;border-bottom:1px solid #f3f3f3;text-align:center;">✓</td><td style="padding:12px 14px;border-bottom:1px solid #f3f3f3;text-align:center;background:#f3f3f3;">✓</td><td style="padding:12px 14px;border-bottom:1px solid #f3f3f3;text-align:center;">✓</td></tr>
+      <tr><td style="padding:12px 14px;border-bottom:1px solid #f3f3f3;color:#707070;">Feature row</td><td style="padding:12px 14px;border-bottom:1px solid #f3f3f3;text-align:center;color:#adadad;">—</td><td style="padding:12px 14px;border-bottom:1px solid #f3f3f3;text-align:center;background:#f3f3f3;">✓</td><td style="padding:12px 14px;border-bottom:1px solid #f3f3f3;text-align:center;">✓</td></tr>
+      <tr><td style="padding:12px 14px;color:#707070;">Feature row</td><td style="padding:12px 14px;text-align:center;color:#adadad;">—</td><td style="padding:12px 14px;text-align:center;background:#f3f3f3;">✓</td><td style="padding:12px 14px;text-align:center;">✓</td></tr>
+    </tbody></table></div>
+    <p style="font-size:12px;color:#707070;margin:12px 0 0;">Feature rows divided by 1px soft-canvas rules; the recommended plan's column washed in soft canvas.</p></div>
+</div></section>
+<section><span class="section-eyebrow">07 — Foundations</span><h2 class="section-heading">Spacing Scale</h2><p style="color:#707070;margin:-16px 0 28px;">8px base unit with 4px half-steps. Card interiors use lg (24px); section gaps run section (80px) to section-lg (120px).</p><div class="spacing-row"><div style="text-align:center;"><div class="spacing-box" style="width:4px;"></div><div class="spacing-label">xxs · 4px</div></div><div style="text-align:center;"><div class="spacing-box" style="width:8px;"></div><div class="spacing-label">xs · 8px</div></div><div style="text-align:center;"><div class="spacing-box" style="width:12px;"></div><div class="spacing-label">sm · 12px</div></div><div style="text-align:center;"><div class="spacing-box" style="width:16px;"></div><div class="spacing-label">md · 16px</div></div><div style="text-align:center;"><div class="spacing-box" style="width:24px;"></div><div class="spacing-label">lg · 24px</div></div><div style="text-align:center;"><div class="spacing-box" style="width:32px;"></div><div class="spacing-label">xl · 32px</div></div><div style="text-align:center;"><div class="spacing-box" style="width:48px;"></div><div class="spacing-label">xxl · 48px</div></div><div style="text-align:center;"><div class="spacing-box" style="width:80px;"></div><div class="spacing-label">section · 80px</div></div><div style="text-align:center;"><div class="spacing-box" style="width:120px;"></div><div class="spacing-label">section-lg · 120px</div></div></div></section>
+<section><span class="section-eyebrow">08 — Foundations</span><h2 class="section-heading">Border Radius</h2><p style="color:#707070;margin:-16px 0 28px;">Pills for everything interactive (9999px), 16px on inputs and media tiles, 24px on content cards — plus the signature 30% squircle on app icons.</p><div class="radius-row"><div style="text-align:center;"><div class="radius-box" style="border-radius:0px;">0px</div><div class="radius-label">none · 0px</div></div><div style="text-align:center;"><div class="radius-box" style="border-radius:16px;">16px</div><div class="radius-label">sm · 16px</div></div><div style="text-align:center;"><div class="radius-box" style="border-radius:24px;">24px</div><div class="radius-label">md · 24px</div></div><div style="text-align:center;"><div class="radius-box" style="border-radius:9999px;">9999px</div><div class="radius-label">full · 9999px</div></div><div style="text-align:center;"><div class="radius-box" style="border-radius:30%;">30%</div><div class="radius-label">squircle · 30%</div></div></div></section>
+<section><span class="section-eyebrow">09 — Foundations</span><h2 class="section-heading">Elevation &amp; Depth</h2><div class="elevation-grid">
+  <div class="elev-card" style="border:none;background:#ffffff;outline:1px solid #f0f0f0;">Level 0 — flat white canvas. Most of every page.</div>
+  <div class="elev-card" style="border:none;background:#f3f3f3;">Level 1 — soft-canvas fill, no border. Nav pill, featured card, FAQ rows.</div>
+  <div class="elev-card elev-1" style="border-color:#f0f0f0;">Level 2 — 1px soft hairline on white. Pricing and testimonial cards.</div>
+  <div class="elev-card" style="border:none;background:#141414;color:#adadad;">Inverse — ink fill. Footer band and primary CTAs. The system ships no drop shadows.</div>
+</div></section>
+<section><span class="section-eyebrow">10 — Responsive</span><h2 class="section-heading">Responsive Behavior</h2>
+  <table class="responsive-table"><thead><tr><th>Name</th><th>Width</th><th>Key changes</th></tr></thead><tbody>
+  <tr><td>xs</td><td>&lt; 600px</td><td>Minimum layout; auth split-panel drops its screenshot marquee</td></tr>
+  <tr><td>sm</td><td>600–719px</td><td>Single-column layouts; display type scales down from 80px</td></tr>
+  <tr><td>md</td><td>768–840px</td><td>Pricing cards stack 1-up; portrait grid drops to 2-up; nav links collapse</td></tr>
+  <tr><td>lg</td><td>1024px</td><td>Comparison table condenses; testimonial masonry drops to 3 columns</td></tr>
+  <tr><td>xl</td><td>1280px</td><td>Default desktop grid</td></tr>
+  <tr><td>2xl</td><td>≥ 1536px</td><td>Max content width engaged; marquees widen</td></tr></tbody></table>
+  <div class="device-ladder">
+    <div class="device-box" style="width:60px;height:110px;">600</div>
+    <div class="device-box" style="width:110px;height:110px;">768</div>
+    <div class="device-box" style="width:160px;height:110px;">1024</div>
+    <div class="device-box" style="width:210px;height:110px;">1280</div>
+    <div class="device-box" style="width:270px;height:110px;">1536</div>
+  </div>
+  <p style="color:#707070;margin-top:24px;font-size:14px;"><strong style="color:#141414;">Touch targets:</strong> the fixed-height CTA pills and toggle segments clear 44×44 WCAG-AAA; inputs pad to a similar height. <strong style="color:#141414;">Collapsing:</strong> the floating nav pill persists across breakpoints, tightening to logomark + CTA; pricing 2-up, portrait 3-up, and testimonial 4-up grids collapse column-by-column; section padding compresses from section-lg (120px) toward section (80px); display type scales down while keeping weight 652.</p>
+</section>
+<!-- ============================== EXAMPLES (kit-mirror) ==============================
+ *
+ * 9 product-UI patterns themed with the brand's tokens via the alias bridge in
+ * preview-examples-block.css.
+ *
+ * Paste this verbatim into preview.html and preview-dark.html, immediately before
+ * the closing <footer>. Both light and dark variants use IDENTICAL HTML — only the
+ * `:root { ... }` alias map differs (see preview-design.md).
+ *
+ * Hardcoded radii (4px / 6px / 9999px) intentionally inherited from the
+ * /generate-kit base template. Hardcoded scrim opacity (rgba 26,24,22,0.5) is the
+ * kit default; do not tokenize without parallel update.
+ * ============================================================================ -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Pricing Tiers
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Pricing Tiers</h2>
+    <p class="ex-intro">Three-up plan grid with the middle tier polarity-flipped. Mono uppercase tier name, display numeral price, hairline-divided feature list.</p>
+    <div class="ex-grid-pricing">
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">Starter</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$9</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For individuals getting started.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Core features</li>
+          <li><span class="ex-bullet"></span>Up to 3 projects</li>
+          <li><span class="ex-bullet"></span>Community support</li>
+        </ul>
+        <button class="ex-tier-cta ink">Get started</button>
+      </div>
+      <div class="ex-tier-card dark">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span class="ex-mono" style="color:rgba(255,255,255,0.55);">Pro</span>
+          <span style="font-family:var(--font-mono); font-size:10px; letter-spacing: var(--ex-letter-eyebrow, 0); text-transform:uppercase; color:var(--color-accent); display:inline-flex; align-items:center; gap:6px;"><span style="width:6px; height:6px; background:var(--color-accent); border-radius:9999px;"></span>Most popular</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$29</span><span style="font-family:var(--font-mono); font-size:12px; color:rgba(255,255,255,0.55);">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:rgba(255,255,255,0.72); margin:0;">For teams ready to ship.</p>
+        <ul class="ex-features dark">
+          <li><span class="ex-bullet"></span>Everything in Starter</li>
+          <li><span class="ex-bullet"></span>Unlimited projects</li>
+          <li><span class="ex-bullet"></span>Email support</li>
+          <li><span class="ex-bullet"></span>Advanced analytics</li>
+        </ul>
+        <button class="ex-tier-cta invert">Start free trial</button>
+      </div>
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">Team</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$99</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For organizations operating at scale.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Everything in Pro</li>
+          <li><span class="ex-bullet"></span>SSO + audit log</li>
+          <li><span class="ex-bullet"></span>Priority support</li>
+          <li><span class="ex-bullet"></span>SLA &amp; onboarding</li>
+        </ul>
+        <button class="ex-tier-cta ink">Talk to sales</button>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Product Selector
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Product Selector</h2>
+    <p class="ex-intro">Plan summary + cadence picker + seat-count grid + start-trial CTA. Cadence chips use a 1px ink ring for selection; seat pills polarity-flip to ink fill.</p>
+    <div class="ex-grid-product">
+      <div class="ex-grid-gallery">
+        <div class="ex-tile tall"><span class="ex-mono" style="font-size:10px;">/IMG · 01</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG · 02</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG · 03</span></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <div class="ex-mono" style="display:flex; align-items:center; gap:8px;"><span style="width:8px; height:8px; background:var(--color-accent); border-radius:9999px;"></span>Plan</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(24px, 4vw, 24px); font-weight:700; line-height:1.06; letter-spacing:0; color:var(--color-foreground); margin:0;">Pro Plan, Annual</h3>
+        <div style="display:flex; align-items:baseline; gap:12px;">
+          <span style="font-family:var(--font-display); font-size:clamp(24px, 4vw, 32px); font-weight:700; line-height:1; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground);">$192</span>
+          <span class="ex-mono">★★★★☆ &nbsp;·&nbsp; 117 reviews</span>
+        </div>
+        <p style="font-size:15px; color:var(--color-foreground-muted); line-height:1.5; margin:0;">Everything in one workspace - projects, members, and automation across unlimited seats. Billed annually with a 14-day free trial, cancel anytime.</p>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Unlimited projects</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>SSO + SCIM provisioning</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Priority support</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>99.9% uptime SLA</li>
+        </ul>
+        <div>
+          <div class="ex-mono" style="margin-bottom:10px;">Cadence · Annual</div>
+          <div style="display:flex; gap:10px;">
+            <button aria-label="Monthly" style="width:32px; height:32px; border-radius:9999px; background:var(--color-border); border:1px solid var(--color-border-soft); box-shadow:0 0 0 2px var(--color-canvas), 0 0 0 3px var(--color-foreground); cursor:pointer; padding:0;"></button>
+            <button aria-label="Annual" style="width:32px; height:32px; border-radius:9999px; background:var(--color-foreground-muted); border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+            <button aria-label="Multi-year" style="width:32px; height:32px; border-radius:9999px; background:var(--color-foreground); border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+          </div>
+        </div>
+        <div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+            <span class="ex-mono">Seats</span>
+            <a href="#" style="font-family:var(--font-mono); font-size:11px; letter-spacing: var(--ex-letter-eyebrow, 0); text-transform:uppercase; color:var(--color-foreground); text-decoration:underline;">Seat guide</a>
+          </div>
+          <div class="ex-grid-sizes">
+            <button class="ex-size-btn" disabled>1</button>
+            <button class="ex-size-btn">5</button>
+            <button class="ex-size-btn selected">S</button>
+            <button class="ex-size-btn">25</button>
+            <button class="ex-size-btn">50</button>
+            <button class="ex-size-btn">100</button>
+            <button class="ex-size-btn">250</button>
+            <button class="ex-size-btn">500+</button>
+          </div>
+        </div>
+        <button class="ex-primary" style="width:100%; margin-top:4px;">Start free trial</button>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Shopping Cart
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Shopping Cart</h2>
+    <p class="ex-intro">Right-anchored drawer over a 50% ink scrim. Each line is a thumb + name/variant/qty stack + price + Remove text-link. Subtotal sits above a full-width primary Checkout, with a Continue link below.</p>
+    <div class="ex-frame tall">
+      <div style="padding:32px; opacity:0.5; display:flex; flex-direction:column; gap:20px;">
+        <div style="height:14px; width:40%; background:var(--color-border); border-radius: var(--ex-radius-status, 6px);"></div>
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px;">
+          <div style="height:120px; background:var(--color-border); border-radius: var(--ex-radius-tile, 12px);"></div>
+          <div style="height:120px; background:var(--color-border); border-radius: var(--ex-radius-tile, 12px);"></div>
+          <div style="height:120px; background:var(--color-border); border-radius: var(--ex-radius-tile, 12px);"></div>
+        </div>
+      </div>
+      <div class="ex-scrim"></div>
+      <aside class="ex-cart-drawer">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:20px 24px; border-bottom:1px solid var(--color-border);">
+          <div>
+            <div class="ex-mono" style="margin-bottom:4px;">Cart</div>
+            <h4 style="font-family:var(--font-display); font-size:24px; font-weight:700; line-height:1.0; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0;">Shopping Cart</h4>
+          </div>
+          <button aria-label="Close" style="background:transparent; border:none; color:var(--color-foreground); font-size:20px; cursor:pointer; padding:4px 8px;">×</button>
+        </div>
+        <ul style="list-style:none; padding:0; margin:0; flex:1; overflow-y:auto;">
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px; border-bottom:1px solid var(--color-border);">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border); border-radius: var(--ex-radius-tile, 12px); display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/01</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Pro Plan, Annual</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Bone · S</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$192.00</span>
+          </li>
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px; border-bottom:1px solid var(--color-border);">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border); border-radius: var(--ex-radius-tile, 12px); display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/02</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Compass Hip Bag</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Salmon</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$90.00</span>
+          </li>
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px;">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border); border-radius: var(--ex-radius-tile, 12px); display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/03</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Range Tote</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Bone / Ink</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$140.00</span>
+          </li>
+        </ul>
+        <div style="border-top:1px solid var(--color-border); padding:20px 24px;">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:4px;">
+            <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Subtotal</span>
+            <span style="font-family:var(--font-display); font-size:24px; font-weight:700; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground);">$422.00</span>
+          </div>
+          <p style="font-size:12px; color:var(--color-foreground-muted); margin:0 0 16px;">Shipping and taxes calculated at checkout.</p>
+          <button class="ex-primary" style="width:100%;">Checkout</button>
+          <div style="margin-top:12px; text-align:center; font-size:13px; color:var(--color-foreground-muted);">or <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Continue Shopping →</a></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable App Shell
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">App Shell</h2>
+    <p class="ex-intro">Sidebar navigation + breadcrumb topbar + page heading + KPI strip + activity feed. The everyday product surface.</p>
+    <div class="ex-grid-appshell">
+      <aside style="background:var(--color-canvas-soft); border-right:1px solid var(--color-border); padding:20px 12px; display:flex; flex-direction:column; gap:4px;">
+        <div class="ex-mono" style="padding:8px 12px 16px;">/Workspace</div>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius: var(--ex-radius-tile, 12px); color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◇</span>Overview</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius: var(--ex-radius-tile, 12px); background:var(--color-foreground); color:var(--color-foreground-on-primary); font-weight:600; text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">▤</span>Operations</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius: var(--ex-radius-tile, 12px); color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◫</span>Datasets</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius: var(--ex-radius-tile, 12px); color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◐</span>Models</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius: var(--ex-radius-tile, 12px); color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◧</span>Settings</a>
+      </aside>
+      <div style="display:flex; flex-direction:column;">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 24px; border-bottom:1px solid var(--color-border);">
+          <div style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--color-foreground-muted); font-family:var(--font-mono);">
+            <span>/Operations</span><span style="color:var(--color-foreground-tertiary);">›</span><span style="color:var(--color-foreground);">Activity</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <span style="font-size:13px; color:var(--color-foreground-muted);">M. Reyes</span>
+            <div style="width:32px; height:32px; border-radius:9999px; background:var(--color-avatar-fill); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:600; color:var(--color-foreground);">MR</div>
+          </div>
+        </div>
+        <div style="padding:32px 24px; display:flex; flex-direction:column; gap:32px;">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+              <span style="width:8px; height:8px; background:var(--color-accent); border-radius:9999px;"></span>
+              <span class="ex-mono">Workspace · Live</span>
+            </div>
+            <h3 style="font-family:var(--font-display); font-size:clamp(24px, 4vw, 24px); font-weight:700; line-height:1.06; letter-spacing:0; color:var(--color-foreground); margin:0;">Activity</h3>
+          </div>
+          <div class="ex-grid-kpi">
+            <div style="border:1px solid var(--color-border); border-radius: var(--ex-radius-tile, 12px); padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Active users</div>
+              <div style="font-family:var(--font-display); font-size:clamp(24px, 4vw, 32px); font-weight:700; line-height:1; color:var(--color-foreground); letter-spacing:0;">2,481</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-success); font-family:var(--font-mono);">+4.1%</div>
+            </div>
+            <div style="border:1px solid var(--color-border); border-radius: var(--ex-radius-tile, 12px); padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Events / hr</div>
+              <div style="font-family:var(--font-display); font-size:clamp(24px, 4vw, 32px); font-weight:700; line-height:1; color:var(--color-foreground); letter-spacing:0;">17,209</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-success); font-family:var(--font-mono);">+12.4%</div>
+            </div>
+            <div style="border:1px solid var(--color-border); border-radius: var(--ex-radius-tile, 12px); padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Pending reviews</div>
+              <div style="font-family:var(--font-display); font-size:clamp(24px, 4vw, 32px); font-weight:700; line-height:1; color:var(--color-foreground); letter-spacing:0;">38</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-danger); font-family:var(--font-mono);">−9 vs. yesterday</div>
+            </div>
+          </div>
+          <div>
+            <div class="ex-mono" style="margin-bottom:12px;">Recent Activity</div>
+            <ul style="list-style:none; padding:0; margin:0; border:1px solid var(--color-border); border-radius: var(--ex-radius-tile, 12px); overflow:hidden;">
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:12px 16px; border-bottom:1px solid var(--color-border); align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.1</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:42</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">M. Reyes</strong> · Shipped release v2024.11.21 to production</span>
+              </li>
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:12px 16px; border-bottom:1px solid var(--color-border); align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.2</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:36</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">A. Park</strong> · Assigned "Onboarding revamp" to the Growth team</span>
+              </li>
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:12px 16px; align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.3</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:29</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">System</strong> · Backfilled 412 records into the activity feed</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Data Table
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Data Table</h2>
+    <p class="ex-intro">Mono uppercase column headers, alternating canvas rows, status pills wired to semantic color tokens, hairline row dividers, and a footer pager.</p>
+    <div style="border:1px solid var(--color-border); border-radius: var(--ex-radius-card, 24px); overflow:hidden;">
+      <div class="ex-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th class="ex-th" style="width:40px;"><input type="checkbox" aria-label="Select all"></th>
+              <th class="ex-th" style="width:120px;">ID</th>
+              <th class="ex-th" style="width:160px;">Actor</th>
+              <th class="ex-th">Target</th>
+              <th class="ex-th" style="width:140px;">Status</th>
+              <th class="ex-th" style="width:140px;">When ↓</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2401</td>
+              <td class="ex-td">M. Reyes</td>
+              <td class="ex-td">Onboarding revamp</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:42 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2400</td>
+              <td class="ex-td">A. Park</td>
+              <td class="ex-td">Atlas Migration v3</td>
+              <td class="ex-td"><span class="ex-status pending">Pending</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:36 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2399</td>
+              <td class="ex-td">L. Okafor</td>
+              <td class="ex-td">Watchlist Sync</td>
+              <td class="ex-td"><span class="ex-status fail">Failed</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:21 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2398</td>
+              <td class="ex-td">S. Chen</td>
+              <td class="ex-td">Supply Chain Index</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:14 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2397</td>
+              <td class="ex-td">System</td>
+              <td class="ex-td">Nightly Backfill</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">07:55 UTC</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-top:1px solid var(--color-border); background:var(--color-canvas-soft);">
+        <span style="font-size:12px; color:var(--color-foreground-muted); font-family:var(--font-mono);">1–5 of 412</span>
+        <div style="display:flex; gap:4px;">
+          <button class="ex-pager" aria-label="Previous">‹</button>
+          <button class="ex-pager active" aria-current="page">1</button>
+          <button class="ex-pager">2</button>
+          <button class="ex-pager">3</button>
+          <button class="ex-pager" aria-label="Next">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Auth Forms
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Auth Forms</h2>
+    <p class="ex-intro">Centered cards on canvas, full-width primary CTA, mono uppercase field labels, hairline-divided SSO fallback.</p>
+    <div class="ex-grid-auth">
+      <div style="background:var(--color-canvas); border:1px solid var(--color-border); border-radius: var(--ex-radius-card, 20px); padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">Sign in</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(24px, 3.5vw, 24px); font-weight:700; line-height:1.05; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0 0 24px;">Welcome back.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="••••••••" class="ex-input">
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-top:4px;">
+            <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--color-foreground);"><input type="checkbox"> Remember me</label>
+            <a href="#" style="font-size:13px; color:var(--color-foreground); text-decoration:underline;">Forgot password?</a>
+          </div>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Sign in</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">New here? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Create an account</a></div>
+      </div>
+      <div style="background:var(--color-canvas); border:1px solid var(--color-border); border-radius: var(--ex-radius-card, 20px); padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">Create account</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(24px, 3.5vw, 24px); font-weight:700; line-height:1.05; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0 0 24px;">Start building.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Full Name</label>
+            <input type="text" placeholder="Mira Reyes" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="••••••••" class="ex-input">
+          </div>
+          <label style="display:flex; align-items:flex-start; gap:8px; font-size:13px; color:var(--color-foreground-muted); margin-top:4px; line-height:1.5;">
+            <input type="checkbox" style="margin-top:3px;">
+            <span>I agree to the <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Terms</a> and <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Privacy Policy</a>.</span>
+          </label>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Create account</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">Already have an account? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Sign in</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Modal Dialog
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Modal Dialog</h2>
+    <p class="ex-intro">Centered card over a 50% ink scrim. Hairline divider above the action row, secondary text-button on the left, primary on the right.</p>
+    <div class="ex-frame short">
+      <div style="padding:24px; opacity:0.7;">
+        <div style="height:14px; width:40%; background:var(--color-border); border-radius: var(--ex-radius-status, 6px); margin-bottom:12px;"></div>
+        <div style="height:12px; width:70%; background:var(--color-border); border-radius: var(--ex-radius-status, 6px); margin-bottom:8px;"></div>
+        <div style="height:12px; width:60%; background:var(--color-border); border-radius: var(--ex-radius-status, 6px);"></div>
+      </div>
+      <div class="ex-scrim"></div>
+      <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:24px;">
+        <div class="ex-modal-card">
+          <div style="padding:24px 28px 16px;">
+            <div class="ex-mono" style="margin-bottom:8px;">Confirm</div>
+            <h4 style="font-family:var(--font-display); font-size:24px; font-weight:700; line-height:1.1; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0;">Promote dataset to production?</h4>
+          </div>
+          <div style="padding:0 28px 20px; font-size:14px; color:var(--color-foreground-muted); line-height:1.5;">
+            This replaces <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.20</strong> with <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.21</strong> across all downstream consumers. The action is reversible within 24 hours.
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:16px 24px; border-top:1px solid var(--color-border);">
+            <button class="ex-textlink">Cancel</button>
+            <button class="ex-primary" style="height:40px; padding:10px 18px; font-size:14px;">Promote</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Empty State
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Empty State</h2>
+    <p class="ex-intro">Outlined icon tile, decimal index, declarative heading, one-sentence body, and a single primary CTA.</p>
+    <div class="ex-emptystate">
+      <div style="width:56px; height:56px; border:1px solid var(--color-border-soft); border-radius: var(--ex-radius-card, 20px); display:flex; align-items:center; justify-content:center; margin-bottom:20px; color:var(--color-foreground-muted);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="M3.5 9.5h17M8 5.5v13"/></svg>
+      </div>
+      <div class="ex-mono" style="margin-bottom:12px;">No datasets</div>
+      <h4 style="font-family:var(--font-display); font-size:clamp(24px, 3.5vw, 24px); font-weight:700; line-height:1.05; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0 0 8px;">Nothing here yet.</h4>
+      <p style="font-size:15px; color:var(--color-foreground-muted); max-width:380px; margin:0 0 24px; line-height:1.5;">Connect a source or upload a CSV to start ingesting records into this workspace.</p>
+      <button class="ex-primary">Connect a source</button>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Toast Stack
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Toast Stack</h2>
+    <p class="ex-intro">Four semantic variants — info, success, warning, error. Each is a 4px card with a 3px accent rule on the leading edge, a mono uppercase tag, and a single dismiss affordance.</p>
+    <div class="ex-grid-toasts">
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-foreground);"></div>
+        <div style="padding:12px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-foreground); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">info</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync in progress</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Backfilling 412 records into the operations log.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-success);"></div>
+        <div style="padding:12px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-success); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">success</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Dataset promoted</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">v2024.11.21 is live across all downstream consumers.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-warning);"></div>
+        <div style="padding:12px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-warning); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">warning</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Approaching quota</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">88% of your monthly compute has been used.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-danger);"></div>
+        <div style="padding:12px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-danger); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">error</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync failed</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Watchlist source returned 502. Retry queued.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+</div>
+<div class="theme-layer" data-when="dark">
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>awesome-design-md</a>
+  </div>
+  <ul class="nav-links"><li>Pricing</li><li>Awards</li><li>Log in</li></ul>
+  <button class="nav-cta">Join for free</button>
+</nav>
+<div class="hero"><div class="hero-content">
+  <h1>Design System Analysis of Mobbin</h1>
+  <p>The same monochrome, gallery-quiet system inverted onto a near-black canvas. White ink on deep neutral surfaces, stadium-pill controls that flip to white for primary actions, a ladder of low-lift dark tints instead of shadows, and Saans at unusual variable weights. The electric blue accent survives unchanged as the only chromatic signal.</p>
+  <div class="hero-actions"><button class="btn-primary">Join for free</button><button class="btn-secondary">See our plans</button></div>
+</div></div>
+<section><span class="section-eyebrow">01 — Foundations</span><h2 class="section-heading">Color Palette</h2><div class="palette-grid"><div class="swatch"><div class="swatch-fill" style="background:#ffffff;"></div><div class="swatch-meta"><p class="swatch-name">Polar White · primary</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Dark-mode action color — primary CTA pills and display headings.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#0066ff;"></div><div class="swatch-meta"><p class="swatch-name">Electric Blue · accent</p><p class="swatch-hex">#0066ff</p><p class="swatch-role">Kept verbatim from light mode — Popular badge and savings callouts only.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#0a0a0a;"></div><div class="swatch-meta"><p class="swatch-name">Canvas</p><p class="swatch-hex">#0a0a0a</p><p class="swatch-role">Default page background — neutral near-black, never pure #000.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#1a1a1a;"></div><div class="swatch-meta"><p class="swatch-name">Soft Canvas · canvas-soft</p><p class="swatch-hex">#1a1a1a</p><p class="swatch-role">Lifted tier — nav pill, featured card, FAQ rows, toggle tracks, footer band.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#2e2e2e;"></div><div class="swatch-meta"><p class="swatch-name">Raised Surface</p><p class="swatch-hex">#2e2e2e</p><p class="swatch-role">Brightest neutral fill — active toggle pills and lifted chrome.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#1e1e1e;"></div><div class="swatch-meta"><p class="swatch-name">Field</p><p class="swatch-hex">#1e1e1e</p><p class="swatch-role">Form-input fill, presence without borders.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#262626;"></div><div class="swatch-meta"><p class="swatch-name">Soft Hairline · hairline-soft</p><p class="swatch-hex">#262626</p><p class="swatch-role">1px outlines on dark-on-dark cards.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#333333;"></div><div class="swatch-meta"><p class="swatch-name">Hairline</p><p class="swatch-hex">#333333</p><p class="swatch-role">Stronger control border — outlined pills, interactive chrome.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#ffffff;"></div><div class="swatch-meta"><p class="swatch-name">Ink · text</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Headings, body copy, nav links — pure white.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#e2e2e2;"></div><div class="swatch-meta"><p class="swatch-name">Soft Ink</p><p class="swatch-hex">#e2e2e2</p><p class="swatch-role">Slightly dimmed white for secondary lockups.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#adadad;"></div><div class="swatch-meta"><p class="swatch-name">Muted</p><p class="swatch-hex">#adadad</p><p class="swatch-role">Secondary copy — plan descriptions, vote counts, underlined links.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#707070;"></div><div class="swatch-meta"><p class="swatch-name">Faint</p><p class="swatch-hex">#707070</p><p class="swatch-role">Placeholders, de-emphasized footer links, fine print.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#141414;"></div><div class="swatch-meta"><p class="swatch-name">On-Primary</p><p class="swatch-hex">#141414</p><p class="swatch-role">Near-black labels on the white primary pills.</p></div></div></div></section>
+<section><span class="section-eyebrow">02 — Foundations</span><h2 class="section-heading">Typography</h2><p style="color:#adadad;margin:-16px 0 28px;max-width:720px;">Saans — a contemporary neo-grotesque used exclusively (Inter shown as substitute). The voice comes from unusual variable-font weight positions: a chunky 652 for every heading, a bookish 456 for text, an airy 300 for hero subtitles. Zero letter-spacing at every size; headlines end with a period.</p><div class="type-row"><div class="type-meta">display<br>80px / 652 / lh 1.0 / tracking 0</div><div style="font-size:80px;font-weight:652;line-height:1.0;">Discover real-world design inspiration.</div></div><div class="type-row"><div class="type-meta">heading-1<br>56px / 652 / lh 1.0 / tracking 0</div><div style="font-size:56px;font-weight:652;line-height:1.0;">Design like a Pro.</div></div><div class="type-row"><div class="type-meta">heading-2<br>44px / 652 / lh 1.13 / tracking 0</div><div style="font-size:44px;font-weight:652;line-height:1.13;">The votes are in.</div></div><div class="type-row"><div class="type-meta">heading-3<br>32px / 652 / lh 1.13 / tracking 0</div><div style="font-size:32px;font-weight:652;line-height:1.13;">Create your free account</div></div><div class="type-row"><div class="type-meta">heading-4<br>24px / 652 / lh 1.25 / tracking 0</div><div style="font-size:24px;font-weight:652;line-height:1.25;">Find design patterns in seconds</div></div><div class="type-row"><div class="type-meta">title<br>20px / 600 / lh 1.3 / tracking 0</div><div style="font-size:20px;font-weight:600;line-height:1.3;">Frequently asked questions</div></div><div class="type-row"><div class="type-meta">body-lg<br>20px / 300 / lh 1.38 / tracking 0</div><div style="font-size:20px;font-weight:300;line-height:1.38;color:#adadad;">Featuring over 1,000 iOS &amp; Web apps, and 200 sites — new content weekly.</div></div><div class="type-row"><div class="type-meta">body<br>16px / 456 / lh 1.38 / tracking 0</div><div style="font-size:16px;font-weight:456;line-height:1.38;">Get full access to all apps &amp; features. Cancel anytime.</div></div><div class="type-row"><div class="type-meta">body-sm<br>14px / 456 / lh 1.43 / tracking 0</div><div style="font-size:14px;font-weight:456;line-height:1.43;">For teams and agencies. Centralized billing, seat-based pricing.</div></div><div class="type-row"><div class="type-meta">link<br>16px / 600 / lh 1.38 / tracking 0</div><div style="font-size:16px;font-weight:600;line-height:1.38;">Pricing &nbsp;·&nbsp; Awards &nbsp;·&nbsp; Log in</div></div><div class="type-row"><div class="type-meta">label<br>12px / 600 / lh 1.33 / tracking 0</div><div style="font-size:12px;font-weight:600;line-height:1.33;">POPULAR</div></div><div class="type-row"><div class="type-meta">caption<br>12px / 456 / lh 1.33 / tracking 0</div><div style="font-size:12px;font-weight:456;line-height:1.33;color:#adadad;">No credit card required.</div></div></section>
+<section><span class="section-eyebrow">03 — Components</span><h2 class="section-heading">Button Variants</h2><div class="button-grid">
+  <div class="demo-card"><span class="label">button-primary · polar pill</span><button class="btn-primary" style="height:44px;">Join for free</button><p style="font-size:12px;color:#adadad;margin:12px 0 0;">The polarity-flipped CTA — white fill, near-black label, same stadium shape.</p></div>
+  <div class="demo-card"><span class="label">button-outline · hairline pill</span><button class="btn-secondary" style="height:44px;">Continue with Google</button><p style="font-size:12px;color:#adadad;margin:12px 0 0;">Canvas fill, 1px hairline, white label — the de-emphasized twin.</p></div>
+  <div class="demo-card"><span class="label">button-pill-soft · tint pill</span><button class="btn-secondary" style="height:44px;background:#1a1a1a;border-color:#1a1a1a;">Explore ↗</button><p style="font-size:12px;color:#adadad;margin:12px 0 0;">Tertiary utility pill — borderless soft-canvas fill for outbound links.</p></div>
+  <div class="demo-card"><span class="label">badge-popular · accent chip</span><span style="display:inline-block;background:#0066ff;color:#ffffff;padding:4px 10px;font-size:12px;font-weight:600;border-radius:6px;">Popular</span><p style="font-size:12px;color:#adadad;margin:12px 0 0;">The accent survives dark mode unchanged — still the only blue on the page.</p></div>
+  <div class="demo-card"><span class="label">badge-overlay · scrim pill</span><div style="background:linear-gradient(135deg,#4a4a4a,#2a2a2a);border-radius:16px;padding:24px 16px;display:flex;align-items:center;justify-content:center;"><span style="display:inline-block;background:rgba(115,115,115,0.56);color:#ffffff;padding:4px 12px;font-size:12px;font-weight:600;border-radius:9999px;">iOS App of the Year</span></div><p style="font-size:12px;color:#adadad;margin:12px 0 0;">Translucent gray pill laid over photography — unchanged in dark mode.</p></div>
+  <div class="demo-card"><span class="label">link-default · underlined</span><div style="display:flex;gap:16px;font-size:15px;font-weight:500;"><a href="#" style="color:#ffffff;text-decoration:none;">Log in</a><a href="#" style="color:#adadad;text-decoration:underline;">Read more</a></div></div>
+</div></section>
+<section><span class="section-eyebrow">04 — Components</span><h2 class="section-heading">Cards &amp; Surfaces</h2><div class="card-grid">
+  <div class="feature-card" style="background:#0a0a0a;border-color:#262626;border-radius:24px;"><h4>Pricing Card</h4><p>Canvas surface, 1px soft hairline, 24px corners. The default plan tier.</p></div>
+  <div class="feature-card" style="background:#1a1a1a;border:none;border-radius:24px;"><h4>Featured Pricing Card</h4><p>Soft-canvas fill, borderless — emphasis by tint, not outline. Carries the blue Popular badge.</p></div>
+  <div class="feature-card" style="background:#0a0a0a;border-color:#262626;border-radius:16px;"><div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;"><span style="width:36px;height:36px;border-radius:9999px;background:#333333;display:inline-block;"></span><div><div style="font-size:14px;font-weight:600;color:#ffffff;">Testimonial Card</div><div style="font-size:12px;color:#adadad;">Company</div></div></div><p>Avatar with overlapping company mini-badge, quote body in white ink, 16px corners.</p></div>
+  <div class="feature-card" style="background:#1a1a1a;border:none;border-radius:24px 24px 16px 16px;"><h4 style="color:#ffffff;">Footer Band</h4><p style="color:#707070;">Lifted soft-canvas band with rounded top corners — the page's raised end-stop.</p></div>
+</div></section>
+<section><span class="section-eyebrow">05 — Components</span><h2 class="section-heading">Form Elements</h2><div class="form-grid">
+  <div class="demo-card"><span class="label">text-input · field fill</span><input class="ex-input-demo" style="background:#1e1e1e;border:none;border-radius:16px;" placeholder="Enter email address"><p style="font-size:12px;color:#adadad;margin:12px 0 0;">Dark field fill, no border, 16px corners, faint placeholder.</p></div>
+  <div class="demo-card"><span class="label">text-input-focused · ink ring</span><input class="ex-input-demo" style="background:#1e1e1e;border:none;border-radius:16px;box-shadow:0 0 0 2px #ffffff;" placeholder="Enter email address"><p style="font-size:12px;color:#adadad;margin:12px 0 0;">Focus is a 2px white ring — still signaled in monochrome.</p></div>
+  <div class="demo-card"><span class="label">textarea</span><textarea class="ex-input-demo" style="background:#1e1e1e;border:none;border-radius:16px;" rows="3" placeholder="Message"></textarea></div>
+  <div class="demo-card"><span class="label">segmented-control · billing toggle</span><div style="display:inline-flex;background:#1a1a1a;border-radius:9999px;padding:4px;"><span style="background:#2e2e2e;border-radius:9999px;padding:8px 18px;font-size:14px;font-weight:600;color:#ffffff;">Yearly</span><span style="padding:8px 18px;font-size:14px;color:#adadad;">Quarterly</span></div><p style="font-size:12px;color:#adadad;margin:12px 0 0;">Soft-canvas track; the active option lifts to the raised surface.</p></div>
+</div></section>
+<section><span class="section-eyebrow">06 — Components</span><h2 class="section-heading">Signature Components</h2><div class="card-grid">
+  <div class="demo-card" style="grid-column:1/-1;"><span class="label">nav-pill · floating navigation</span>
+    <div style="background:#1a1a1a;border-radius:9999px;padding:10px 12px 10px 24px;display:flex;align-items:center;justify-content:space-between;max-width:760px;">
+      <span style="font-weight:652;font-size:16px;color:#ffffff;">Mobbin</span>
+      <span style="display:flex;align-items:center;gap:20px;font-size:14px;font-weight:600;color:#ffffff;"><span>Pricing</span><span>Awards</span><span>Log in</span><span style="background:#ffffff;color:#141414;border-radius:9999px;padding:10px 16px;font-size:14px;">Join for free</span></span>
+    </div>
+    <p style="font-size:12px;color:#adadad;margin:12px 0 0;">The centered stadium bar on its lifted dark tier — white links, polar-white pill CTA.</p></div>
+  <div class="demo-card"><span class="label">app-icon-squircle · 30% radius</span>
+    <div style="display:flex;gap:12px;align-items:center;">
+      <span style="width:64px;height:64px;border-radius:30%;background:linear-gradient(135deg,#3a3a3a,#222222);display:inline-block;"></span>
+      <span style="width:48px;height:48px;border-radius:30%;background:linear-gradient(135deg,#333333,#1e1e1e);display:inline-block;"></span>
+      <span style="width:32px;height:32px;border-radius:30%;background:linear-gradient(135deg,#2e2e2e,#191919);display:inline-block;"></span>
+    </div>
+    <p style="font-size:12px;color:#adadad;margin:12px 0 0;">The iOS icon silhouette at every size — library counters, nominee rows, brand marquees.</p></div>
+  <div class="demo-card"><span class="label">brand-chip · marquee lockup</span>
+    <div style="display:flex;align-items:center;gap:12px;"><span style="width:44px;height:44px;border-radius:30%;background:linear-gradient(135deg,#3a3a3a,#1e1e1e);display:inline-block;"></span><span style="font-size:32px;font-weight:652;line-height:1.13;color:#ffffff;">Brand Name</span></div>
+    <p style="font-size:12px;color:#adadad;margin:12px 0 0;">Squircle icon + heading-3 wordmark, scrolling in full-bleed strips.</p></div>
+  <div class="demo-card"><span class="label">portrait-tile · grayscale grid cell</span>
+    <div style="background:linear-gradient(160deg,#4a4a4a,#1c1c1c);border-radius:24px;height:150px;display:flex;align-items:flex-end;justify-content:center;padding:12px;"><span style="color:#ffffff;font-size:13px;"><strong style="font-weight:600;">Name</strong> · Role, Studio</span></div>
+    <p style="font-size:12px;color:#adadad;margin:12px 0 0;">Curator portraits stay strictly black-and-white; caption overlays the lower edge.</p></div>
+  <div class="demo-card"><span class="label">award-lockup · winner presentation</span>
+    <div style="text-align:center;padding:8px 0;"><div style="font-size:12px;color:#adadad;margin-bottom:6px;">☙ iOS App of the Year ❧</div><div style="font-size:32px;font-weight:652;line-height:1.13;color:#ffffff;">Winner Name</div><div style="font-size:14px;color:#adadad;margin:6px 0 12px;">28% of votes</div><span style="display:inline-block;background:#1a1a1a;border-radius:9999px;padding:10px 18px;font-size:14px;font-weight:600;color:#ffffff;">Explore ↗</span></div></div>
+  <div class="demo-card"><span class="label">faq-row · accordion item</span>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div style="background:#1a1a1a;border-radius:16px;padding:16px 20px;display:flex;justify-content:space-between;font-size:16px;color:#ffffff;"><span>What is included in the plan?</span><span style="color:#adadad;">⌄</span></div>
+      <div style="background:#1a1a1a;border-radius:16px;padding:16px 20px;display:flex;justify-content:space-between;font-size:16px;color:#ffffff;"><span>Can I cancel my subscription?</span><span style="color:#adadad;">⌄</span></div>
+    </div></div>
+  <div class="demo-card" style="grid-column:1/-1;"><span class="label">compare-table · plan comparison</span>
+    <div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:14px;min-width:520px;">
+      <tbody><tr><td style="padding:12px 14px;border-bottom:1px solid #1a1a1a;color:#adadad;">Feature row</td><td style="padding:12px 14px;border-bottom:1px solid #1a1a1a;text-align:center;color:#ffffff;">✓</td><td style="padding:12px 14px;border-bottom:1px solid #1a1a1a;text-align:center;background:#1a1a1a;color:#ffffff;">✓</td><td style="padding:12px 14px;border-bottom:1px solid #1a1a1a;text-align:center;color:#ffffff;">✓</td></tr>
+      <tr><td style="padding:12px 14px;border-bottom:1px solid #1a1a1a;color:#adadad;">Feature row</td><td style="padding:12px 14px;border-bottom:1px solid #1a1a1a;text-align:center;color:#707070;">—</td><td style="padding:12px 14px;border-bottom:1px solid #1a1a1a;text-align:center;background:#1a1a1a;color:#ffffff;">✓</td><td style="padding:12px 14px;border-bottom:1px solid #1a1a1a;text-align:center;color:#ffffff;">✓</td></tr>
+      <tr><td style="padding:12px 14px;color:#adadad;">Feature row</td><td style="padding:12px 14px;text-align:center;color:#707070;">—</td><td style="padding:12px 14px;text-align:center;background:#1a1a1a;color:#ffffff;">✓</td><td style="padding:12px 14px;text-align:center;color:#ffffff;">✓</td></tr>
+    </tbody></table></div>
+    <p style="font-size:12px;color:#adadad;margin:12px 0 0;">Feature rows divided by 1px soft-canvas rules; the recommended plan's column washed in soft canvas.</p></div>
+</div></section>
+<section><span class="section-eyebrow">07 — Foundations</span><h2 class="section-heading">Spacing Scale</h2><p style="color:#adadad;margin:-16px 0 28px;">8px base unit with 4px half-steps. Card interiors use lg (24px); section gaps run section (80px) to section-lg (120px).</p><div class="spacing-row"><div style="text-align:center;"><div class="spacing-box" style="width:4px;"></div><div class="spacing-label">xxs · 4px</div></div><div style="text-align:center;"><div class="spacing-box" style="width:8px;"></div><div class="spacing-label">xs · 8px</div></div><div style="text-align:center;"><div class="spacing-box" style="width:12px;"></div><div class="spacing-label">sm · 12px</div></div><div style="text-align:center;"><div class="spacing-box" style="width:16px;"></div><div class="spacing-label">md · 16px</div></div><div style="text-align:center;"><div class="spacing-box" style="width:24px;"></div><div class="spacing-label">lg · 24px</div></div><div style="text-align:center;"><div class="spacing-box" style="width:32px;"></div><div class="spacing-label">xl · 32px</div></div><div style="text-align:center;"><div class="spacing-box" style="width:48px;"></div><div class="spacing-label">xxl · 48px</div></div><div style="text-align:center;"><div class="spacing-box" style="width:80px;"></div><div class="spacing-label">section · 80px</div></div><div style="text-align:center;"><div class="spacing-box" style="width:120px;"></div><div class="spacing-label">section-lg · 120px</div></div></div></section>
+<section><span class="section-eyebrow">08 — Foundations</span><h2 class="section-heading">Border Radius</h2><p style="color:#adadad;margin:-16px 0 28px;">Pills for everything interactive (9999px), 16px on inputs and media tiles, 24px on content cards — plus the signature 30% squircle on app icons.</p><div class="radius-row"><div style="text-align:center;"><div class="radius-box" style="border-radius:0px;">0px</div><div class="radius-label">none · 0px</div></div><div style="text-align:center;"><div class="radius-box" style="border-radius:16px;">16px</div><div class="radius-label">sm · 16px</div></div><div style="text-align:center;"><div class="radius-box" style="border-radius:24px;">24px</div><div class="radius-label">md · 24px</div></div><div style="text-align:center;"><div class="radius-box" style="border-radius:9999px;">9999px</div><div class="radius-label">full · 9999px</div></div><div style="text-align:center;"><div class="radius-box" style="border-radius:30%;">30%</div><div class="radius-label">squircle · 30%</div></div></div></section>
+<section><span class="section-eyebrow">09 — Foundations</span><h2 class="section-heading">Elevation &amp; Depth</h2><div class="elevation-grid">
+  <div class="elev-card" style="border:none;background:#0a0a0a;outline:1px solid #262626;">Level 0 — flat near-black canvas. Most of every page.</div>
+  <div class="elev-card" style="border:none;background:#1a1a1a;">Level 1 — soft-canvas fill, no border. Nav pill, featured card, FAQ rows, footer.</div>
+  <div class="elev-card" style="border:1px solid #262626;background:#0a0a0a;">Level 2 — 1px soft hairline on canvas. Pricing and testimonial cards.</div>
+  <div class="elev-card" style="border:none;background:#2e2e2e;color:#ffffff;">Raised — the brightest neutral fill. Active toggle pills. No drop shadows anywhere.</div>
+</div></section>
+<section><span class="section-eyebrow">10 — Responsive</span><h2 class="section-heading">Responsive Behavior</h2>
+  <table class="responsive-table"><thead><tr><th>Name</th><th>Width</th><th>Key changes</th></tr></thead><tbody>
+  <tr><td>xs</td><td>&lt; 600px</td><td>Minimum layout; auth split-panel drops its screenshot marquee</td></tr>
+  <tr><td>sm</td><td>600–719px</td><td>Single-column layouts; display type scales down from 80px</td></tr>
+  <tr><td>md</td><td>768–840px</td><td>Pricing cards stack 1-up; portrait grid drops to 2-up; nav links collapse</td></tr>
+  <tr><td>lg</td><td>1024px</td><td>Comparison table condenses; testimonial masonry drops to 3 columns</td></tr>
+  <tr><td>xl</td><td>1280px</td><td>Default desktop grid</td></tr>
+  <tr><td>2xl</td><td>≥ 1536px</td><td>Max content width engaged; marquees widen</td></tr></tbody></table>
+  <div class="device-ladder">
+    <div class="device-box" style="width:60px;height:110px;">600</div>
+    <div class="device-box" style="width:110px;height:110px;">768</div>
+    <div class="device-box" style="width:160px;height:110px;">1024</div>
+    <div class="device-box" style="width:210px;height:110px;">1280</div>
+    <div class="device-box" style="width:270px;height:110px;">1536</div>
+  </div>
+  <p style="color:#adadad;margin-top:24px;font-size:14px;"><strong style="color:#ffffff;">Touch targets:</strong> the fixed-height CTA pills and toggle segments clear 44×44 WCAG-AAA; inputs pad to a similar height. <strong style="color:#ffffff;">Collapsing:</strong> the floating nav pill persists across breakpoints, tightening to logomark + CTA; pricing 2-up, portrait 3-up, and testimonial 4-up grids collapse column-by-column; section padding compresses from section-lg (120px) toward section (80px); display type scales down while keeping weight 652.</p>
+</section>
+<!-- ============================== EXAMPLES (kit-mirror) ==============================
+ *
+ * 9 product-UI patterns themed with the brand's tokens via the alias bridge in
+ * preview-examples-block.css.
+ *
+ * Paste this verbatim into preview.html and preview-dark.html, immediately before
+ * the closing <footer>. Both light and dark variants use IDENTICAL HTML — only the
+ * `:root { ... }` alias map differs (see preview-design.md).
+ *
+ * Hardcoded radii (4px / 6px / 9999px) intentionally inherited from the
+ * /generate-kit base template. Hardcoded scrim opacity (rgba 26,24,22,0.5) is the
+ * kit default; do not tokenize without parallel update.
+ * ============================================================================ -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Pricing Tiers
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Pricing Tiers</h2>
+    <p class="ex-intro">Three-up plan grid with the middle tier polarity-flipped. Mono uppercase tier name, display numeral price, hairline-divided feature list.</p>
+    <div class="ex-grid-pricing">
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">Starter</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$9</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For individuals getting started.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Core features</li>
+          <li><span class="ex-bullet"></span>Up to 3 projects</li>
+          <li><span class="ex-bullet"></span>Community support</li>
+        </ul>
+        <button class="ex-tier-cta ink">Get started</button>
+      </div>
+      <div class="ex-tier-card dark">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span class="ex-mono" style="color:rgba(255,255,255,0.55);">Pro</span>
+          <span style="font-family:var(--font-mono); font-size:10px; letter-spacing: var(--ex-letter-eyebrow, 0); text-transform:uppercase; color:var(--color-accent); display:inline-flex; align-items:center; gap:6px;"><span style="width:6px; height:6px; background:var(--color-accent); border-radius:9999px;"></span>Most popular</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$29</span><span style="font-family:var(--font-mono); font-size:12px; color:rgba(255,255,255,0.55);">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:rgba(255,255,255,0.72); margin:0;">For teams ready to ship.</p>
+        <ul class="ex-features dark">
+          <li><span class="ex-bullet"></span>Everything in Starter</li>
+          <li><span class="ex-bullet"></span>Unlimited projects</li>
+          <li><span class="ex-bullet"></span>Email support</li>
+          <li><span class="ex-bullet"></span>Advanced analytics</li>
+        </ul>
+        <button class="ex-tier-cta invert">Start free trial</button>
+      </div>
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">Team</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$99</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For organizations operating at scale.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Everything in Pro</li>
+          <li><span class="ex-bullet"></span>SSO + audit log</li>
+          <li><span class="ex-bullet"></span>Priority support</li>
+          <li><span class="ex-bullet"></span>SLA &amp; onboarding</li>
+        </ul>
+        <button class="ex-tier-cta ink">Talk to sales</button>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Product Selector
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Product Selector</h2>
+    <p class="ex-intro">Plan summary + cadence picker + seat-count grid + start-trial CTA. Cadence chips use a 1px ink ring for selection; seat pills polarity-flip to ink fill.</p>
+    <div class="ex-grid-product">
+      <div class="ex-grid-gallery">
+        <div class="ex-tile tall"><span class="ex-mono" style="font-size:10px;">/IMG · 01</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG · 02</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG · 03</span></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <div class="ex-mono" style="display:flex; align-items:center; gap:8px;"><span style="width:8px; height:8px; background:var(--color-accent); border-radius:9999px;"></span>Plan</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(24px, 4vw, 24px); font-weight:700; line-height:1.06; letter-spacing:0; color:var(--color-foreground); margin:0;">Pro Plan, Annual</h3>
+        <div style="display:flex; align-items:baseline; gap:12px;">
+          <span style="font-family:var(--font-display); font-size:clamp(24px, 4vw, 32px); font-weight:700; line-height:1; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground);">$192</span>
+          <span class="ex-mono">★★★★☆ &nbsp;·&nbsp; 117 reviews</span>
+        </div>
+        <p style="font-size:15px; color:var(--color-foreground-muted); line-height:1.5; margin:0;">Everything in one workspace - projects, members, and automation across unlimited seats. Billed annually with a 14-day free trial, cancel anytime.</p>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Unlimited projects</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>SSO + SCIM provisioning</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Priority support</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>99.9% uptime SLA</li>
+        </ul>
+        <div>
+          <div class="ex-mono" style="margin-bottom:10px;">Cadence · Annual</div>
+          <div style="display:flex; gap:10px;">
+            <button aria-label="Monthly" style="width:32px; height:32px; border-radius:9999px; background:var(--color-border); border:1px solid var(--color-border-soft); box-shadow:0 0 0 2px var(--color-canvas), 0 0 0 3px var(--color-foreground); cursor:pointer; padding:0;"></button>
+            <button aria-label="Annual" style="width:32px; height:32px; border-radius:9999px; background:var(--color-foreground-muted); border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+            <button aria-label="Multi-year" style="width:32px; height:32px; border-radius:9999px; background:var(--color-foreground); border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+          </div>
+        </div>
+        <div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+            <span class="ex-mono">Seats</span>
+            <a href="#" style="font-family:var(--font-mono); font-size:11px; letter-spacing: var(--ex-letter-eyebrow, 0); text-transform:uppercase; color:var(--color-foreground); text-decoration:underline;">Seat guide</a>
+          </div>
+          <div class="ex-grid-sizes">
+            <button class="ex-size-btn" disabled>1</button>
+            <button class="ex-size-btn">5</button>
+            <button class="ex-size-btn selected">S</button>
+            <button class="ex-size-btn">25</button>
+            <button class="ex-size-btn">50</button>
+            <button class="ex-size-btn">100</button>
+            <button class="ex-size-btn">250</button>
+            <button class="ex-size-btn">500+</button>
+          </div>
+        </div>
+        <button class="ex-primary" style="width:100%; margin-top:4px;">Start free trial</button>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Shopping Cart
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Shopping Cart</h2>
+    <p class="ex-intro">Right-anchored drawer over a 50% ink scrim. Each line is a thumb + name/variant/qty stack + price + Remove text-link. Subtotal sits above a full-width primary Checkout, with a Continue link below.</p>
+    <div class="ex-frame tall">
+      <div style="padding:32px; opacity:0.5; display:flex; flex-direction:column; gap:20px;">
+        <div style="height:14px; width:40%; background:var(--color-border); border-radius: var(--ex-radius-status, 6px);"></div>
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px;">
+          <div style="height:120px; background:var(--color-border); border-radius: var(--ex-radius-tile, 12px);"></div>
+          <div style="height:120px; background:var(--color-border); border-radius: var(--ex-radius-tile, 12px);"></div>
+          <div style="height:120px; background:var(--color-border); border-radius: var(--ex-radius-tile, 12px);"></div>
+        </div>
+      </div>
+      <div class="ex-scrim"></div>
+      <aside class="ex-cart-drawer">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:20px 24px; border-bottom:1px solid var(--color-border);">
+          <div>
+            <div class="ex-mono" style="margin-bottom:4px;">Cart</div>
+            <h4 style="font-family:var(--font-display); font-size:24px; font-weight:700; line-height:1.0; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0;">Shopping Cart</h4>
+          </div>
+          <button aria-label="Close" style="background:transparent; border:none; color:var(--color-foreground); font-size:20px; cursor:pointer; padding:4px 8px;">×</button>
+        </div>
+        <ul style="list-style:none; padding:0; margin:0; flex:1; overflow-y:auto;">
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px; border-bottom:1px solid var(--color-border);">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border); border-radius: var(--ex-radius-tile, 12px); display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/01</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Pro Plan, Annual</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Bone · S</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$192.00</span>
+          </li>
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px; border-bottom:1px solid var(--color-border);">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border); border-radius: var(--ex-radius-tile, 12px); display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/02</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Compass Hip Bag</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Salmon</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$90.00</span>
+          </li>
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px;">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border); border-radius: var(--ex-radius-tile, 12px); display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/03</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Range Tote</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Bone / Ink</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$140.00</span>
+          </li>
+        </ul>
+        <div style="border-top:1px solid var(--color-border); padding:20px 24px;">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:4px;">
+            <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Subtotal</span>
+            <span style="font-family:var(--font-display); font-size:24px; font-weight:700; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground);">$422.00</span>
+          </div>
+          <p style="font-size:12px; color:var(--color-foreground-muted); margin:0 0 16px;">Shipping and taxes calculated at checkout.</p>
+          <button class="ex-primary" style="width:100%;">Checkout</button>
+          <div style="margin-top:12px; text-align:center; font-size:13px; color:var(--color-foreground-muted);">or <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Continue Shopping →</a></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable App Shell
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">App Shell</h2>
+    <p class="ex-intro">Sidebar navigation + breadcrumb topbar + page heading + KPI strip + activity feed. The everyday product surface.</p>
+    <div class="ex-grid-appshell">
+      <aside style="background:var(--color-canvas-soft); border-right:1px solid var(--color-border); padding:20px 12px; display:flex; flex-direction:column; gap:4px;">
+        <div class="ex-mono" style="padding:8px 12px 16px;">/Workspace</div>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius: var(--ex-radius-tile, 12px); color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◇</span>Overview</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius: var(--ex-radius-tile, 12px); background:var(--color-foreground); color:var(--color-foreground-on-primary); font-weight:600; text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">▤</span>Operations</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius: var(--ex-radius-tile, 12px); color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◫</span>Datasets</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius: var(--ex-radius-tile, 12px); color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◐</span>Models</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius: var(--ex-radius-tile, 12px); color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">◧</span>Settings</a>
+      </aside>
+      <div style="display:flex; flex-direction:column;">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 24px; border-bottom:1px solid var(--color-border);">
+          <div style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--color-foreground-muted); font-family:var(--font-mono);">
+            <span>/Operations</span><span style="color:var(--color-foreground-tertiary);">›</span><span style="color:var(--color-foreground);">Activity</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <span style="font-size:13px; color:var(--color-foreground-muted);">M. Reyes</span>
+            <div style="width:32px; height:32px; border-radius:9999px; background:var(--color-avatar-fill); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:600; color:var(--color-foreground);">MR</div>
+          </div>
+        </div>
+        <div style="padding:32px 24px; display:flex; flex-direction:column; gap:32px;">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+              <span style="width:8px; height:8px; background:var(--color-accent); border-radius:9999px;"></span>
+              <span class="ex-mono">Workspace · Live</span>
+            </div>
+            <h3 style="font-family:var(--font-display); font-size:clamp(24px, 4vw, 24px); font-weight:700; line-height:1.06; letter-spacing:0; color:var(--color-foreground); margin:0;">Activity</h3>
+          </div>
+          <div class="ex-grid-kpi">
+            <div style="border:1px solid var(--color-border); border-radius: var(--ex-radius-tile, 12px); padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Active users</div>
+              <div style="font-family:var(--font-display); font-size:clamp(24px, 4vw, 32px); font-weight:700; line-height:1; color:var(--color-foreground); letter-spacing:0;">2,481</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-success); font-family:var(--font-mono);">+4.1%</div>
+            </div>
+            <div style="border:1px solid var(--color-border); border-radius: var(--ex-radius-tile, 12px); padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Events / hr</div>
+              <div style="font-family:var(--font-display); font-size:clamp(24px, 4vw, 32px); font-weight:700; line-height:1; color:var(--color-foreground); letter-spacing:0;">17,209</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-success); font-family:var(--font-mono);">+12.4%</div>
+            </div>
+            <div style="border:1px solid var(--color-border); border-radius: var(--ex-radius-tile, 12px); padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Pending reviews</div>
+              <div style="font-family:var(--font-display); font-size:clamp(24px, 4vw, 32px); font-weight:700; line-height:1; color:var(--color-foreground); letter-spacing:0;">38</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-danger); font-family:var(--font-mono);">−9 vs. yesterday</div>
+            </div>
+          </div>
+          <div>
+            <div class="ex-mono" style="margin-bottom:12px;">Recent Activity</div>
+            <ul style="list-style:none; padding:0; margin:0; border:1px solid var(--color-border); border-radius: var(--ex-radius-tile, 12px); overflow:hidden;">
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:12px 16px; border-bottom:1px solid var(--color-border); align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.1</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:42</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">M. Reyes</strong> · Shipped release v2024.11.21 to production</span>
+              </li>
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:12px 16px; border-bottom:1px solid var(--color-border); align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.2</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:36</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">A. Park</strong> · Assigned "Onboarding revamp" to the Growth team</span>
+              </li>
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:12px 16px; align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.3</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:29</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">System</strong> · Backfilled 412 records into the activity feed</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Data Table
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Data Table</h2>
+    <p class="ex-intro">Mono uppercase column headers, alternating canvas rows, status pills wired to semantic color tokens, hairline row dividers, and a footer pager.</p>
+    <div style="border:1px solid var(--color-border); border-radius: var(--ex-radius-card, 24px); overflow:hidden;">
+      <div class="ex-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th class="ex-th" style="width:40px;"><input type="checkbox" aria-label="Select all"></th>
+              <th class="ex-th" style="width:120px;">ID</th>
+              <th class="ex-th" style="width:160px;">Actor</th>
+              <th class="ex-th">Target</th>
+              <th class="ex-th" style="width:140px;">Status</th>
+              <th class="ex-th" style="width:140px;">When ↓</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2401</td>
+              <td class="ex-td">M. Reyes</td>
+              <td class="ex-td">Onboarding revamp</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:42 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2400</td>
+              <td class="ex-td">A. Park</td>
+              <td class="ex-td">Atlas Migration v3</td>
+              <td class="ex-td"><span class="ex-status pending">Pending</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:36 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2399</td>
+              <td class="ex-td">L. Okafor</td>
+              <td class="ex-td">Watchlist Sync</td>
+              <td class="ex-td"><span class="ex-status fail">Failed</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:21 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2398</td>
+              <td class="ex-td">S. Chen</td>
+              <td class="ex-td">Supply Chain Index</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:14 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2397</td>
+              <td class="ex-td">System</td>
+              <td class="ex-td">Nightly Backfill</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">07:55 UTC</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-top:1px solid var(--color-border); background:var(--color-canvas-soft);">
+        <span style="font-size:12px; color:var(--color-foreground-muted); font-family:var(--font-mono);">1–5 of 412</span>
+        <div style="display:flex; gap:4px;">
+          <button class="ex-pager" aria-label="Previous">‹</button>
+          <button class="ex-pager active" aria-current="page">1</button>
+          <button class="ex-pager">2</button>
+          <button class="ex-pager">3</button>
+          <button class="ex-pager" aria-label="Next">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Auth Forms
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Auth Forms</h2>
+    <p class="ex-intro">Centered cards on canvas, full-width primary CTA, mono uppercase field labels, hairline-divided SSO fallback.</p>
+    <div class="ex-grid-auth">
+      <div style="background:var(--color-canvas); border:1px solid var(--color-border); border-radius: var(--ex-radius-card, 20px); padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">Sign in</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(24px, 3.5vw, 24px); font-weight:700; line-height:1.05; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0 0 24px;">Welcome back.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="••••••••" class="ex-input">
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-top:4px;">
+            <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--color-foreground);"><input type="checkbox"> Remember me</label>
+            <a href="#" style="font-size:13px; color:var(--color-foreground); text-decoration:underline;">Forgot password?</a>
+          </div>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Sign in</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">New here? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Create an account</a></div>
+      </div>
+      <div style="background:var(--color-canvas); border:1px solid var(--color-border); border-radius: var(--ex-radius-card, 20px); padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">Create account</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(24px, 3.5vw, 24px); font-weight:700; line-height:1.05; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0 0 24px;">Start building.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Full Name</label>
+            <input type="text" placeholder="Mira Reyes" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="••••••••" class="ex-input">
+          </div>
+          <label style="display:flex; align-items:flex-start; gap:8px; font-size:13px; color:var(--color-foreground-muted); margin-top:4px; line-height:1.5;">
+            <input type="checkbox" style="margin-top:3px;">
+            <span>I agree to the <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Terms</a> and <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Privacy Policy</a>.</span>
+          </label>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Create account</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">Already have an account? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Sign in</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Modal Dialog
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Modal Dialog</h2>
+    <p class="ex-intro">Centered card over a 50% ink scrim. Hairline divider above the action row, secondary text-button on the left, primary on the right.</p>
+    <div class="ex-frame short">
+      <div style="padding:24px; opacity:0.7;">
+        <div style="height:14px; width:40%; background:var(--color-border); border-radius: var(--ex-radius-status, 6px); margin-bottom:12px;"></div>
+        <div style="height:12px; width:70%; background:var(--color-border); border-radius: var(--ex-radius-status, 6px); margin-bottom:8px;"></div>
+        <div style="height:12px; width:60%; background:var(--color-border); border-radius: var(--ex-radius-status, 6px);"></div>
+      </div>
+      <div class="ex-scrim"></div>
+      <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:24px;">
+        <div class="ex-modal-card">
+          <div style="padding:24px 28px 16px;">
+            <div class="ex-mono" style="margin-bottom:8px;">Confirm</div>
+            <h4 style="font-family:var(--font-display); font-size:24px; font-weight:700; line-height:1.1; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0;">Promote dataset to production?</h4>
+          </div>
+          <div style="padding:0 28px 20px; font-size:14px; color:var(--color-foreground-muted); line-height:1.5;">
+            This replaces <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.20</strong> with <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.21</strong> across all downstream consumers. The action is reversible within 24 hours.
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:16px 24px; border-top:1px solid var(--color-border);">
+            <button class="ex-textlink">Cancel</button>
+            <button class="ex-primary" style="height:40px; padding:10px 18px; font-size:14px;">Promote</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Empty State
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Empty State</h2>
+    <p class="ex-intro">Outlined icon tile, decimal index, declarative heading, one-sentence body, and a single primary CTA.</p>
+    <div class="ex-emptystate">
+      <div style="width:56px; height:56px; border:1px solid var(--color-border-soft); border-radius: var(--ex-radius-card, 20px); display:flex; align-items:center; justify-content:center; margin-bottom:20px; color:var(--color-foreground-muted);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="M3.5 9.5h17M8 5.5v13"/></svg>
+      </div>
+      <div class="ex-mono" style="margin-bottom:12px;">No datasets</div>
+      <h4 style="font-family:var(--font-display); font-size:clamp(24px, 3.5vw, 24px); font-weight:700; line-height:1.05; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0 0 8px;">Nothing here yet.</h4>
+      <p style="font-size:15px; color:var(--color-foreground-muted); max-width:380px; margin:0 0 24px; line-height:1.5;">Connect a source or upload a CSV to start ingesting records into this workspace.</p>
+      <button class="ex-primary">Connect a source</button>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Toast Stack
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Toast Stack</h2>
+    <p class="ex-intro">Four semantic variants — info, success, warning, error. Each is a 4px card with a 3px accent rule on the leading edge, a mono uppercase tag, and a single dismiss affordance.</p>
+    <div class="ex-grid-toasts">
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-foreground);"></div>
+        <div style="padding:12px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-foreground); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">info</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync in progress</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Backfilling 412 records into the operations log.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-success);"></div>
+        <div style="padding:12px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-success); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">success</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Dataset promoted</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">v2024.11.21 is live across all downstream consumers.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-warning);"></div>
+        <div style="padding:12px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-warning); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">warning</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Approaching quota</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">88% of your monthly compute has been used.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-danger);"></div>
+        <div style="padding:12px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-danger); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">error</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync failed</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Watchlist source returned 502. Retry queued.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+</div>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

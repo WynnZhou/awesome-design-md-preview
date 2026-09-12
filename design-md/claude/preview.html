@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of Claude</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #faf9f5; } html[data-theme="dark"] { background: #0c0c0e; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#responsive">Responsive</a></li>
+  </ul>
+  <button class="nav-cta">Try Claude</button>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of Claude</h1>
+    <p>Anthropic's warm-canvas editorial interface. Cream + coral + dark navy as the trinity. Slab-serif display headlines, humanist sans body, and dark code-mockup cards as product chrome.</p>
+    <div class="hero-actions">
+      <button class="btn-hero-primary">Try Claude</button>
+      <button class="btn-hero-secondary">Read the docs</button>
+    </div>
+  </div>
+  <div class="hero-art">
+    <div class="terminal-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+    <pre><span class="comment"># Generate a thoughtful response</span>
+<span class="keyword">from</span> anthropic <span class="keyword">import</span> Anthropic
+
+client = Anthropic()
+message = client.messages.create(
+    model=<span class="string">"claude-opus-4"</span>,
+    max_tokens=<span class="num">1024</span>,
+    messages=[{
+        <span class="string">"role"</span>: <span class="string">"user"</span>,
+        <span class="string">"content"</span>: <span class="string">"Hello, Claude"</span>
+    }]
+)</pre>
+  </div>
+</div>
+
+<section id="colors">
+  <div class="section-label">01 — Color Palette</div>
+  <h2 class="section-heading">Cream + coral + dark navy</h2>
+  <p class="section-intro">The trinity. Cream canvas as the editorial floor, coral as the brand voltage, dark navy as the product-chrome surface. No fourth surface tone.</p>
+
+  <div class="palette-group">
+    <h3>Brand</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#cc785c;"></div><div class="swatch-meta"><div class="swatch-name">primary (coral)</div><div class="swatch-hex">#cc785c</div><div class="swatch-role">All primary CTAs and full-bleed callout cards.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#a9583e;"></div><div class="swatch-meta"><div class="swatch-name">primary-active</div><div class="swatch-hex">#a9583e</div><div class="swatch-role">Press state on coral buttons.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#5db8a6;"></div><div class="swatch-meta"><div class="swatch-name">accent-teal</div><div class="swatch-hex">#5db8a6</div><div class="swatch-role">Status indicators, "active connection" dots.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#e8a55a;"></div><div class="swatch-meta"><div class="swatch-name">accent-amber</div><div class="swatch-hex">#e8a55a</div><div class="swatch-role">Category badges, inline highlights.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Surface</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#faf9f5;"></div><div class="swatch-meta"><div class="swatch-name">canvas (cream)</div><div class="swatch-hex">#faf9f5</div><div class="swatch-role">Default page floor — tinted cream, deliberately not pure white.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f5f0e8;"></div><div class="swatch-meta"><div class="swatch-name">surface-soft</div><div class="swatch-hex">#f5f0e8</div><div class="swatch-role">Section dividers, soft band backgrounds.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#efe9de;"></div><div class="swatch-meta"><div class="swatch-name">surface-card</div><div class="swatch-hex">#efe9de</div><div class="swatch-role">Feature cards, content cards.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#181715;"></div><div class="swatch-meta"><div class="swatch-name">surface-dark</div><div class="swatch-hex">#181715</div><div class="swatch-role">Code editor mockups, model cards, footer.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#252320;"></div><div class="swatch-meta"><div class="swatch-name">surface-dark-elevated</div><div class="swatch-hex">#252320</div><div class="swatch-role">Elevated cards inside dark bands.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#e6dfd8;"></div><div class="swatch-meta"><div class="swatch-name">hairline</div><div class="swatch-hex">#e6dfd8</div><div class="swatch-role">1px borders on cream surfaces.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Text</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#141413;"></div><div class="swatch-meta"><div class="swatch-name">ink</div><div class="swatch-hex">#141413</div><div class="swatch-role">Headlines and primary text. Warm dark.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#3d3d3a;"></div><div class="swatch-meta"><div class="swatch-name">body</div><div class="swatch-hex">#3d3d3a</div><div class="swatch-role">Default running-text.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#6c6a64;"></div><div class="swatch-meta"><div class="swatch-name">muted</div><div class="swatch-hex">#6c6a64</div><div class="swatch-role">Sub-headings, breadcrumbs, footer.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#8e8b82;"></div><div class="swatch-meta"><div class="swatch-name">muted-soft</div><div class="swatch-hex">#8e8b82</div><div class="swatch-role">Captions, fine-print, copyright.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#faf9f5; border:1px solid var(--hairline);"></div><div class="swatch-meta"><div class="swatch-name">on-dark</div><div class="swatch-hex">#faf9f5</div><div class="swatch-role">Cream-tinted white on dark surfaces.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#a09d96;"></div><div class="swatch-meta"><div class="swatch-name">on-dark-soft</div><div class="swatch-hex">#a09d96</div><div class="swatch-role">Footer body — slightly muted on dark.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="typography">
+  <div class="section-label">02 — Typography</div>
+  <h2 class="section-heading">Copernicus serif + StyreneB sans</h2>
+  <p class="section-intro">Slab-serif display for headlines (substituted with EB Garamond), humanist sans for body (Inter). The serif character is the editorial brand voice — switching to sans display would flatten Anthropic into another AI tool.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>64px / 400 / 1.05 / -1.5px<br>Copernicus serif</div><div class="type-sample" style="font-family:var(--display); font-size:64px; font-weight:400; line-height:1.05; letter-spacing:-1.5px;">Meet your thinking partner</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>48px / 400 / 1.1 / -1px</div><div class="type-sample" style="font-family:var(--display); font-size:48px; font-weight:400; letter-spacing:-1px;">For the curious, the careful, the brilliant</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>36px / 400 / 1.15 / -0.5px</div><div class="type-sample" style="font-family:var(--display); font-size:36px; font-weight:400; letter-spacing:-0.5px;">Build with Claude</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-sm</strong>28px / 400 / 1.2 / -0.3px</div><div class="type-sample" style="font-family:var(--display); font-size:28px; font-weight:400; letter-spacing:-0.3px;">Pricing for every team</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-lg</strong>22px / 500 / 1.3<br>StyreneB sans</div><div class="type-sample" style="font-family:var(--text); font-size:22px; font-weight:500;">Pro · $20 / month</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-md</strong>18px / 500 / 1.4</div><div class="type-sample" style="font-family:var(--text); font-size:18px; font-weight:500;">Code understanding at depth</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-sm</strong>16px / 500 / 1.4</div><div class="type-sample" style="font-family:var(--text); font-size:16px; font-weight:500;">Connect Slack workspace</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>16px / 400 / 1.55</div><div class="type-sample" style="font-family:var(--text); font-size:16px; line-height:1.55;">Claude reasons through complex problems with the patience and care of a thoughtful colleague — drawing on context across long conversations and large codebases.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>14px / 400 / 1.55</div><div class="type-sample" style="font-family:var(--text); font-size:14px; color:var(--body);">Footer body, fine-print legal text — same Inter face at smaller size.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption</strong>13px / 500 / 1.4</div><div class="type-sample" style="font-family:var(--text); font-size:13px; font-weight:500; color:var(--muted);">Limited beta · Available in API</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-uppercase</strong>12px / 500 / 1.5px</div><div class="type-sample" style="font-family:var(--text); font-size:12px; font-weight:500; letter-spacing:1.5px; text-transform:uppercase;">NEW · CLAUDE OPUS 4</div></div>
+  <div class="type-row"><div class="type-meta"><strong>code</strong>14px / 400 / 1.6<br>JetBrains Mono</div><div class="type-sample" style="font-family:var(--mono); font-size:14px; line-height:1.6;">claude.messages.create({ model: "opus" })</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button</strong>14px / 500 / 1.0</div><div class="type-sample" style="font-family:var(--text); font-size:14px; font-weight:500;">Try Claude</div></div>
+  <div class="type-row"><div class="type-meta"><strong>nav-link</strong>14px / 500 / 1.4</div><div class="type-sample" style="font-family:var(--text); font-size:14px; font-weight:500;">Product · Solutions · Use Cases · Pricing · Research</div></div>
+</section>
+
+<section id="components">
+  <div class="section-label">03 — Button Variants</div>
+  <h2 class="section-heading">Coral primary, cream secondary</h2>
+  <p class="section-intro">Coral CTAs only. Secondary buttons are cream-canvas with hairline outline. Dark surfaces get a slightly elevated dark button.</p>
+
+  <div class="button-grid">
+    <div class="button-cell"><div class="button-label">button-primary</div><button class="btn btn-primary">Try Claude</button><div class="button-meta">primary coral / on-primary white / md radius</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-active</div><button class="btn btn-primary-active">Pressed</button><div class="button-meta">primary-active darker coral</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-disabled</div><button class="btn btn-primary-disabled" disabled="">Disabled</button><div class="button-meta">cream-tinted disabled fill</div></div>
+    <div class="button-cell"><div class="button-label">button-secondary</div><button class="btn btn-secondary">Read the docs</button><div class="button-meta">cream / ink / hairline outline</div></div>
+    <div class="button-cell on-dark"><div class="button-label">button-secondary-on-dark</div><button class="btn btn-secondary-on-dark">View example</button><div class="button-meta">surface-dark-elevated / on-dark</div></div>
+    <div class="button-cell"><div class="button-label">button-text-link</div><button class="btn-text-link">Sign in</button><div class="button-meta">No background; inline link-style</div></div>
+    <div class="button-cell"><div class="button-label">text-link-coral</div><a href="#" class="text-link-coral">Read the research →</a><div class="button-meta">Inline coral link in body. The signature small detail.</div></div>
+    <div class="button-cell"><div class="button-label">button-icon-circular</div><div style="display:flex; gap:12px;"><button class="btn-icon-circular">‹</button><button class="btn-icon-circular">›</button></div><div class="button-meta">36 × 36 / canvas / hairline / full radius</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">04 — Cards &amp; Containers</div>
+  <h2 class="section-heading">Cream cards + dark mockups + coral callouts</h2>
+
+  <div class="card-grid">
+    <div class="feature-card">
+      <div class="icon">⚡</div>
+      <h4>Reason through complexity</h4>
+      <p>Claude excels at multi-step reasoning, drawing on long context to think through problems carefully.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">📚</div>
+      <h4>Code understanding</h4>
+      <p>From small refactors to large codebase migrations, Claude reads code with the depth of a senior engineer.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">🛡️</div>
+      <h4>Safe by design</h4>
+      <p>Built with constitutional AI training to be helpful, harmless, and honest across diverse use cases.</p>
+    </div>
+    <div class="code-window-card">
+      <div class="code-header"><span class="filename">refactor.py · agent</span></div>
+      <pre style="background:var(--surface-dark-soft); padding:16px; border-radius:6px;"><span style="color:#c898b9;">async def</span> <span style="color:#87b8c4;">migrate</span>(file):
+    code = <span style="color:#d4a37c;">"""..."""</span>
+    <span style="color:var(--muted-soft);"># Claude reads, plans, and rewrites</span>
+    <span style="color:#c898b9;">return</span> claude.refactor(code)</pre>
+    </div>
+    <div class="model-comparison-card">
+      <h4>Opus 4</h4>
+      <p>Our most intelligent model for complex agentic tasks and long-horizon reasoning.</p>
+      <a href="#" class="text-link-coral">View capabilities →</a>
+    </div>
+    <div class="model-comparison-card">
+      <h4>Sonnet 4</h4>
+      <p>Balanced speed and capability — the everyday workhorse for production systems.</p>
+      <a href="#" class="text-link-coral">View capabilities →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">05 — Coral Callout Card</div>
+
+  <div class="callout-card-coral">
+    <h3>Start building with Claude</h3>
+    <p>Free API credits to get started. Production-grade reliability when you scale. Cream-button CTA on the coral surface.</p>
+    <button class="btn-cream">Get API access</button>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">06 — Connector Tile Grid</div>
+  <h2 class="section-heading">Connect everything Claude needs</h2>
+
+  <div class="card-grid" style="grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));">
+    <div class="connector-tile"><div class="logo">G</div><h5>Google Drive</h5><p>Read, summarize, draft — across all your Drive docs.</p></div>
+    <div class="connector-tile"><div class="logo">S</div><h5>Slack</h5><p>Bring Claude into your team conversations.</p></div>
+    <div class="connector-tile"><div class="logo">N</div><h5>Notion</h5><p>Search, edit, and reorganize your knowledge base.</p></div>
+    <div class="connector-tile"><div class="logo">G</div><h5>GitHub</h5><p>Review PRs, run agentic refactors, fix issues.</p></div>
+    <div class="connector-tile"><div class="logo">L</div><h5>Linear</h5><p>Triage tickets and draft responses in your team's voice.</p></div>
+    <div class="connector-tile"><div class="logo">F</div><h5>Figma</h5><p>Read design specs and translate them to working code.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">07 — Pricing Tiers</div>
+
+  <div class="pricing-grid">
+    <div class="pricing-tier"><h4>Free</h4><div class="price">$0</div><ul><li>Limited daily messages</li><li>Web access</li><li>Mobile + desktop apps</li></ul><button class="btn btn-secondary" style="width:100%;">Get started</button></div>
+    <div class="pricing-tier"><h4>Pro</h4><div class="price">$20</div><ul><li>5× more usage</li><li>Project workspaces</li><li>Advanced research</li></ul><button class="btn btn-primary" style="width:100%;">Upgrade to Pro</button></div>
+    <div class="pricing-tier featured"><h4>Team</h4><div class="price">$30 / user</div><ul><li>Centralized billing</li><li>Admin console</li><li>Priority bandwidth</li></ul><button class="btn btn-primary" style="width:100%;">Contact sales</button></div>
+    <div class="pricing-tier"><h4>Enterprise</h4><div class="price">Custom</div><ul><li>SOC 2 + HIPAA</li><li>SSO + IDP</li><li>Custom integrations</li></ul><button class="btn btn-secondary" style="width:100%;">Contact sales</button></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">08 — Form Elements</div>
+
+  <div class="form-grid">
+    <div class="form-cell"><label class="form-label">Email address</label><input class="form-input" type="email" placeholder="you@example.com"></div>
+    <div class="form-cell"><label class="form-label">Email (focused)</label><input class="form-input focused" type="email" value="alex@studio.com"></div>
+    <div class="form-cell"><label class="form-label">Use case</label><input class="form-input" type="text" placeholder="What will you build?"></div>
+    <div class="form-cell wide"><label class="form-label">Tell us more</label><input class="form-input" type="text" placeholder="Anything you want us to know..."></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">09 — Badges</div>
+  <p class="section-intro">Pill badges in cream-card or coral fill. Coral-uppercase for "NEW" / "BETA" emphasis.</p>
+
+  <div style="display:flex; flex-wrap:wrap; gap:12px; align-items:center;">
+    <span class="badge-pill">Featured</span>
+    <span class="badge-pill">Limited beta</span>
+    <span class="badge-coral">NEW</span>
+    <span class="badge-coral">BETA</span>
+    <span class="badge-coral">CLAUDE 4</span>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">10 — Spacing Scale</div>
+  <div class="spacing-row">
+    <div class="spacing-block"><div class="spacing-bar" style="width:4px;"></div><div class="spacing-label">xxs · 4px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:8px;"></div><div class="spacing-label">xs · 8px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:12px;"></div><div class="spacing-label">sm · 12px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:16px;"></div><div class="spacing-label">md · 16px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:24px;"></div><div class="spacing-label">lg · 24px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:32px;"></div><div class="spacing-label">xl · 32px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:48px;"></div><div class="spacing-label">xxl · 48px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:96px;"></div><div class="spacing-label">section · 96px</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">11 — Border Radius Scale</div>
+  <div class="radius-row">
+    <div class="radius-block" style="border-radius:4px;">4 · xs</div>
+    <div class="radius-block" style="border-radius:6px;">6 · sm</div>
+    <div class="radius-block" style="border-radius:8px;">8 · md</div>
+    <div class="radius-block" style="border-radius:12px;">12 · lg</div>
+    <div class="radius-block" style="border-radius:16px;">16 · xl</div>
+    <div class="radius-block" style="border-radius:9999px;">pill</div>
+    <div class="radius-block" style="border-radius:50%;">full</div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">12 — Elevation &amp; Depth</div>
+  <p class="section-intro">Color-block first, shadow rare. The cream-vs-dark contrast does most of the elevation work.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card elevation-flat"><h5>Flat / Canvas</h5><p>Body sections, top nav.</p></div>
+    <div class="elevation-card elevation-cream-card"><h5>Cream card</h5><p>Feature cards, content cards.</p></div>
+    <div class="elevation-card elevation-dark-card"><h5>Dark mockup card</h5><p>Code editors, model cards, footer.</p></div>
+    <div class="elevation-card elevation-coral"><h5>Coral callout</h5><p>Full-bleed CTA card with cream-button inside.</p></div>
+    <div class="elevation-card elevation-flat"><h5>Card with hairline</h5><p>Cream card with 1px hairline border.</p></div>
+    <div class="elevation-card elevation-flat"><h5>Coral focus ring</h5><p>3px coral at 20% alpha around focused inputs.</p></div>
+  </div>
+</section>
+
+<section id="responsive">
+  <div class="section-label">13 — Responsive Behavior</div>
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Mobile</td><td>&lt; 768px</td><td>Hamburger nav; hero h1 64→32px; hero-art stacks below; feature grids 1-up; pricing 1-up.</td></tr>
+      <tr><td>Tablet</td><td>768–1024px</td><td>Top nav tightens; feature cards 2-up; connector tiles 3-up; pricing 2-up.</td></tr>
+      <tr><td>Desktop</td><td>1024–1440px</td><td>Full top-nav; 3-up feature cards; 4-6 up connector tiles; 4-up pricing.</td></tr>
+      <tr><td>Wide</td><td>&gt; 1440px</td><td>Same as desktop with more breathing room; max content 1200px.</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="device-bar" style="width:60px; height:120px;">375<br>mobile</div>
+    <div class="device-bar" style="width:90px; height:140px;">600<br>small phone</div>
+    <div class="device-bar" style="width:140px; height:160px;">768<br>tablet</div>
+    <div class="device-bar" style="width:200px; height:180px;">1024<br>laptop</div>
+    <div class="device-bar" style="width:260px; height:200px;">1280<br>desktop</div>
+    <div class="device-bar" style="width:320px; height:220px;">1440<br>wide</div>
+  </div>
+  <div class="responsive-sub"><h4>Touch Targets</h4><ul><li>Primary CTA at min 40 × 40px.</li><li>Icon button at 36 × 36 — slightly under 44, visually centered.</li><li>Text input height 40px.</li></ul></div>
+  <div class="responsive-sub"><h4>Collapsing Strategy</h4><ul><li>Top nav collapses to hamburger at &lt; 768px; menu opens as full-screen cream sheet.</li><li>Hero 6-6 grid → single-column on mobile.</li><li>Feature grids reduce columns rather than scaling.</li><li>Code blocks retain font-size; horizontal scroll inside the card on mobile.</li><li>Pricing tier cards collapse 4 → 2 → 1; featured stays distinct.</li></ul></div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

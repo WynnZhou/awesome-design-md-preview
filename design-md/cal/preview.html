@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of Cal.com</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #0c0c0e; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#responsive">Responsive</a></li>
+  </ul>
+  <button class="nav-cta">Sign up free</button>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of Cal.com</h1>
+    <p>A clean, calendar-software-first interface anchored on white canvas with black primary CTAs and custom Cal Sans display typography. Friendly modern SaaS, generous whitespace, soft-rounded cards.</p>
+    <div class="hero-actions">
+      <button class="btn-hero-primary">Sign up free</button>
+      <button class="btn-hero-secondary">Watch demo</button>
+    </div>
+  </div>
+  <div class="hero-art">
+    <div class="booking-header">
+      <div class="avatar">A</div>
+      <div class="booking-meta">
+        <div class="name">Alex · Product Demo</div>
+        <div class="duration">30 min · Google Meet</div>
+      </div>
+    </div>
+    <div class="calendar-grid">
+      <div class="day head">M</div><div class="day head">T</div><div class="day head">W</div><div class="day head">T</div><div class="day head">F</div><div class="day head">S</div><div class="day head">S</div>
+      <div class="day available">10</div><div class="day available">11</div><div class="day available">12</div><div class="day available">13</div><div class="day selected">14</div><div class="day">15</div><div class="day">16</div>
+      <div class="day available">17</div><div class="day available">18</div><div class="day available">19</div><div class="day available">20</div><div class="day available">21</div><div class="day">22</div><div class="day">23</div>
+    </div>
+    <div class="slots-row">
+      <div class="slot">09:00</div>
+      <div class="slot active">10:30</div>
+      <div class="slot">14:00</div>
+    </div>
+  </div>
+</div>
+
+<section id="colors">
+  <div class="section-label">01 — Color Palette</div>
+  <h2 class="section-heading">Monochrome with badge pastels</h2>
+  <p class="section-intro">Black primary CTA + white canvas + light gray cards. Pastel badges add chromatic flourish on avatars and tags — never on hero CTAs.</p>
+
+  <div class="palette-group">
+    <h3>Brand</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#111111;"></div><div class="swatch-meta"><div class="swatch-name">primary / ink</div><div class="swatch-hex">#111111</div><div class="swatch-role">Primary CTA, h1/h2 type. Same hex serves both roles.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#242424;"></div><div class="swatch-meta"><div class="swatch-name">primary-active</div><div class="swatch-hex">#242424</div><div class="swatch-role">Press state on primary buttons.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#3b82f6;"></div><div class="swatch-meta"><div class="swatch-name">brand-accent</div><div class="swatch-hex">#3b82f6</div><div class="swatch-role">Inline links and rare highlights.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Surface</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff; border-bottom:1px solid var(--hairline);"></div><div class="swatch-meta"><div class="swatch-name">canvas</div><div class="swatch-hex">#ffffff</div><div class="swatch-role">Default page surface.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f8f9fa;"></div><div class="swatch-meta"><div class="swatch-name">surface-soft</div><div class="swatch-hex">#f8f9fa</div><div class="swatch-role">Nav-pill-group background.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f5f5f5;"></div><div class="swatch-meta"><div class="swatch-name">surface-card</div><div class="swatch-hex">#f5f5f5</div><div class="swatch-role">Feature cards, testimonials, badge pills.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#101010;"></div><div class="swatch-meta"><div class="swatch-name">surface-dark</div><div class="swatch-hex">#101010</div><div class="swatch-role">Footer + featured pricing tier.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#e5e7eb;"></div><div class="swatch-meta"><div class="swatch-name">hairline</div><div class="swatch-hex">#e5e7eb</div><div class="swatch-role">1px borders on inputs and content cards.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Text</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#111111;"></div><div class="swatch-meta"><div class="swatch-name">ink</div><div class="swatch-hex">#111111</div><div class="swatch-role">Headlines and primary text.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#374151;"></div><div class="swatch-meta"><div class="swatch-name">body</div><div class="swatch-hex">#374151</div><div class="swatch-role">Default running-text.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#6b7280;"></div><div class="swatch-meta"><div class="swatch-name">muted</div><div class="swatch-hex">#6b7280</div><div class="swatch-role">Sub-headings, breadcrumbs, footer.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#a1a1aa;"></div><div class="swatch-meta"><div class="swatch-name">on-dark-soft</div><div class="swatch-hex">#a1a1aa</div><div class="swatch-role">Footer body text — slightly muted white.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Badge Pastels</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#fb923c;"></div><div class="swatch-meta"><div class="swatch-name">badge-orange</div><div class="swatch-hex">#fb923c</div><div class="swatch-role">Avatar fills, rating stars.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#ec4899;"></div><div class="swatch-meta"><div class="swatch-name">badge-pink</div><div class="swatch-hex">#ec4899</div><div class="swatch-role">Avatar fills.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#8b5cf6;"></div><div class="swatch-meta"><div class="swatch-name">badge-violet</div><div class="swatch-hex">#8b5cf6</div><div class="swatch-role">Avatar fills, category tags.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#34d399;"></div><div class="swatch-meta"><div class="swatch-name">badge-emerald</div><div class="swatch-hex">#34d399</div><div class="swatch-role">Avatar fills, "available" indicators.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="typography">
+  <div class="section-label">02 — Typography Scale</div>
+  <h2 class="section-heading">Cal Sans + Inter</h2>
+  <p class="section-intro">Cal Sans (display, weight 600, negative letter-spacing) handles every headline. Inter (regular + medium) handles body, buttons, nav. Cal Sans substituted with Inter weight 600 here.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>64px / 600 / 1.05 / -2px<br>Cal Sans</div><div class="type-sample" style="font-size:64px; font-weight:600; line-height:1.05; letter-spacing:-2px;">The better way to schedule</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>48px / 600 / 1.1 / -1.5px</div><div class="type-sample" style="font-size:48px; font-weight:600; line-height:1.1; letter-spacing:-1.5px;">Your all-purpose scheduling app</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>36px / 600 / 1.15 / -1px</div><div class="type-sample" style="font-size:36px; font-weight:600; line-height:1.15; letter-spacing:-1px;">Don't just take our word for it</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-sm</strong>28px / 600 / 1.2 / -0.5px</div><div class="type-sample" style="font-size:28px; font-weight:600; line-height:1.2; letter-spacing:-0.5px;">Smarter, simpler scheduling</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-lg</strong>22px / 600 / 1.3 / -0.3px</div><div class="type-sample" style="font-size:22px; font-weight:600;">Teams · $15 / user / month</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-md</strong>18px / 600 / 1.4 / 0</div><div class="type-sample" style="font-size:18px; font-weight:600;">Round-robin scheduling</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-sm</strong>16px / 600 / 1.4 / 0</div><div class="type-sample" style="font-size:16px; font-weight:600;">Workflow automations</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>16px / 400 / 1.5 / 0</div><div class="type-sample" style="font-size:16px; line-height:1.5;">Set your availability across multiple time zones, sync with all your calendars, and let attendees book directly.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>14px / 400 / 1.5 / 0</div><div class="type-sample" style="font-size:14px; color:var(--body);">Footer body, fine-print legal text — same Inter face at smaller size.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption</strong>13px / 500 / 1.4 / 0</div><div class="type-sample" style="font-size:13px; font-weight:500; color:var(--muted);">FREE · 14-DAY TRIAL · NO CREDIT CARD REQUIRED</div></div>
+  <div class="type-row"><div class="type-meta"><strong>code</strong>14px / 400 / 1.5 / 0<br>JetBrains Mono</div><div class="type-sample" style="font-family:&#39;JetBrains Mono&#39;, monospace; font-size:14px;">cal.com/alex/30min</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button</strong>14px / 600 / 1.0 / 0</div><div class="type-sample" style="font-size:14px; font-weight:600;">Sign up free</div></div>
+  <div class="type-row"><div class="type-meta"><strong>nav-link</strong>14px / 500 / 1.4 / 0</div><div class="type-sample" style="font-size:14px; font-weight:500;">Product · Solutions · Resources · Pricing · Enterprise</div></div>
+</section>
+
+<section id="components">
+  <div class="section-label">03 — Button Variants</div>
+  <h2 class="section-heading">Black on white, monochrome action layer</h2>
+  <p class="section-intro">Primary stays #111111 with rounded-md corners and weight-600 labels. Secondary is white with hairline outline. The system has no colored buttons.</p>
+
+  <div class="button-grid">
+    <div class="button-cell"><div class="button-label">button-primary</div><button class="btn btn-primary">Sign up free</button><div class="button-meta">primary / on-primary / md radius / standard</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-active</div><button class="btn btn-primary-active">Pressed</button><div class="button-meta">primary-active background</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-disabled</div><button class="btn btn-primary-disabled" disabled="">Disabled</button><div class="button-meta">primary-disabled / muted text</div></div>
+    <div class="button-cell"><div class="button-label">button-secondary</div><button class="btn btn-secondary">Watch demo</button><div class="button-meta">canvas / ink / hairline outline</div></div>
+    <div class="button-cell"><div class="button-label">button-text-link</div><button class="btn-text-link">Read the docs</button><div class="button-meta">No background; inline link-style</div></div>
+    <div class="button-cell"><div class="button-label">button-icon-circular</div><div style="display:flex; gap:12px;"><button class="btn-icon-circular" aria-label="prev">‹</button><button class="btn-icon-circular" aria-label="next">›</button></div><div class="button-meta">36 × 36 / canvas / hairline / full radius</div></div>
+    <div class="button-cell wide"><div class="button-label">nav-pill-group</div>
+      <div class="nav-pill-group"><div class="pill active">Personal</div><div class="pill">Teams</div><div class="pill">Enterprise</div></div>
+      <div class="button-meta">Pill-in-pill sub-nav switcher. Active segment is white-canvas inside the surface-soft wrapper.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">04 — Cards &amp; Containers</div>
+  <h2 class="section-heading">Light gray feature cards + product UI fragments</h2>
+
+  <div class="card-grid">
+    <div class="feature-card">
+      <div class="icon">📅</div>
+      <h4>Calendar sync, unified</h4>
+      <p>Connect Google, Outlook, iCloud, and Exchange. Cal.com keeps your real-time availability in one place.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">⚡</div>
+      <h4>Workflow automations</h4>
+      <p>Send reminders, follow-up emails, and post-meeting forms automatically when bookings are confirmed.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">🤝</div>
+      <h4>Team round-robin</h4>
+      <p>Share a single link. Cal.com routes incoming bookings between teammates fairly.</p>
+    </div>
+    <div class="product-mockup-card">
+      <div class="ui-header">Today's bookings</div>
+      <div class="ui-row"><div class="dot" style="background:var(--badge-orange);"></div><div style="flex:1;"><div style="font-weight:600;">Product demo with Alex</div><div style="color:var(--muted); font-size:12px;">10:30 — 11:00 · Google Meet</div></div></div>
+      <div class="ui-row"><div class="dot" style="background:var(--badge-violet);"></div><div style="flex:1;"><div style="font-weight:600;">Design review</div><div style="color:var(--muted); font-size:12px;">14:00 — 15:00 · Zoom</div></div></div>
+      <div class="ui-row"><div class="dot" style="background:var(--badge-emerald);"></div><div style="flex:1;"><div style="font-weight:600;">1:1 with Yusuf</div><div style="color:var(--muted); font-size:12px;">16:30 — 17:00 · In-person</div></div></div>
+    </div>
+    <div class="testimonial-card">
+      <div class="head">
+        <div class="avatar">JM</div>
+        <div class="who"><div class="name">Jamie Morrison</div><div class="role">Head of Sales · Notion</div></div>
+      </div>
+      <p>"Cal.com replaced four scheduling tools overnight. The team round-robin alone saves us 12 hours / week of back-and-forth."</p>
+    </div>
+    <div class="testimonial-card">
+      <div class="head">
+        <div class="avatar" style="background:var(--badge-emerald);">RP</div>
+        <div class="who"><div class="name">Rachel Park</div><div class="role">Founder · Linear</div></div>
+      </div>
+      <p>"The cleanest scheduling product on the market. Open source, infinitely customizable, and just works."</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">05 — Pricing Tiers</div>
+
+  <div class="pricing-grid">
+    <div class="pricing-tier"><h4>Free</h4><div class="price">$0</div><ul><li>Personal scheduling link</li><li>Unlimited bookings</li><li>Up to 1 calendar</li></ul><button class="btn btn-primary" style="width:100%;">Get started</button></div>
+    <div class="pricing-tier"><h4>Pro</h4><div class="price">$15</div><ul><li>3 calendars + workflows</li><li>Custom branding</li><li>Round-robin scheduling</li></ul><button class="btn btn-primary" style="width:100%;">Try Pro free</button></div>
+    <div class="pricing-tier featured"><h4>Teams</h4><div class="price">$15 / user</div><ul><li>Team scheduling links</li><li>Round-robin and collective</li><li>SAML SSO</li></ul><button class="btn btn-primary" style="width:100%;">Try Teams free</button></div>
+    <div class="pricing-tier"><h4>Enterprise</h4><div class="price">Custom</div><ul><li>SOC 2 + HIPAA</li><li>SLA + dedicated success</li><li>Custom integrations</li></ul><button class="btn btn-secondary" style="width:100%;">Contact sales</button></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">06 — Form Elements</div>
+
+  <div class="form-grid">
+    <div class="form-cell"><label class="form-label">Email address</label><input class="form-input" type="email" placeholder="you@example.com"></div>
+    <div class="form-cell"><label class="form-label">Email (focused)</label><input class="form-input focused" type="email" value="alex@studio.com"></div>
+    <div class="form-cell"><label class="form-label">Booking title</label><input class="form-input" type="text" placeholder="30 min meeting"></div>
+    <div class="form-cell wide"><label class="form-label">Custom message</label><input class="form-input" type="text" placeholder="Anything you want guests to know..."></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">07 — Badges &amp; Avatars</div>
+  <p class="section-intro">Pastel badges and avatar fills are the system's only chromatic flourishes. They appear on tags, "available" indicators, and avatar substitutes.</p>
+
+  <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:32px;">
+    <span class="badge-pill orange">Featured</span>
+    <span class="badge-pill pink">New</span>
+    <span class="badge-pill violet">Beta</span>
+    <span class="badge-pill emerald">Available</span>
+    <span class="badge-pill">Default</span>
+  </div>
+
+  <div class="avatar-row">
+    <div class="avatar orange">A</div>
+    <div class="avatar pink">B</div>
+    <div class="avatar violet">C</div>
+    <div class="avatar emerald">D</div>
+    <div class="avatar" style="background:var(--surface-card); color:var(--ink);">E</div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">08 — Spacing Scale</div>
+  <p class="section-intro">Section rhythm 96px between major bands. Card internal padding 32px.</p>
+  <div class="spacing-row">
+    <div class="spacing-block"><div class="spacing-bar" style="width:4px;"></div><div class="spacing-label">xxs · 4px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:8px;"></div><div class="spacing-label">xs · 8px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:12px;"></div><div class="spacing-label">sm · 12px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:16px;"></div><div class="spacing-label">md · 16px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:24px;"></div><div class="spacing-label">lg · 24px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:32px;"></div><div class="spacing-label">xl · 32px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:48px;"></div><div class="spacing-label">xxl · 48px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:96px;"></div><div class="spacing-label">section · 96px</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">09 — Border Radius Scale</div>
+  <div class="radius-row">
+    <div class="radius-block" style="border-radius:4px;">4 · xs</div>
+    <div class="radius-block" style="border-radius:6px;">6 · sm</div>
+    <div class="radius-block" style="border-radius:8px;">8 · md</div>
+    <div class="radius-block" style="border-radius:12px;">12 · lg</div>
+    <div class="radius-block" style="border-radius:16px;">16 · xl</div>
+    <div class="radius-block" style="border-radius:9999px;">pill</div>
+    <div class="radius-block" style="border-radius:50%;">full</div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">10 — Elevation &amp; Depth</div>
+  <p class="section-intro">Soft modern shadows on elevated cards. Color-block contrast for the featured pricing tier. No glassmorphism, no neumorphism.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card elevation-flat"><h5>Flat</h5><p>Body sections, top nav, hero bands.</p></div>
+    <div class="elevation-card elevation-soft-card"><h5>Soft card</h5><p>Feature cards, testimonial cards (surface-card).</p></div>
+    <div class="elevation-card elevation-shadow"><h5>Subtle shadow</h5><p>Pricing tier cards. 0 1px 2px + 0 4px 12px at low alpha.</p></div>
+    <div class="elevation-card elevation-dark"><h5>Featured tier</h5><p>Dark surface inversion — color contrast does the elevation work.</p></div>
+    <div class="elevation-card elevation-flat"><h5>Card with hairline</h5><p>White card with 1px hairline outline. Used on product mockups.</p></div>
+    <div class="elevation-card elevation-flat"><h5>Focus ring</h5><p>3px ink-color at 8% alpha around focused inputs.</p></div>
+  </div>
+</section>
+
+<section id="responsive">
+  <div class="section-label">11 — Responsive Behavior</div>
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Mobile</td><td>&lt; 768px</td><td>Hamburger nav; hero h1 64→32px; hero-art stacks below; feature grids 1-up; pricing 1-up.</td></tr>
+      <tr><td>Tablet</td><td>768–1024px</td><td>Top nav tightens; nav-pill-group wraps; feature cards 2-up; pricing 2-up.</td></tr>
+      <tr><td>Desktop</td><td>1024–1440px</td><td>Full top-nav; 3-up feature cards; 4-up pricing tiers.</td></tr>
+      <tr><td>Wide</td><td>&gt; 1440px</td><td>Same as desktop with more breathing room; max content 1200px.</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="device-bar" style="width:60px; height:120px;">375<br>mobile</div>
+    <div class="device-bar" style="width:90px; height:140px;">600<br>small phone</div>
+    <div class="device-bar" style="width:140px; height:160px;">768<br>tablet</div>
+    <div class="device-bar" style="width:200px; height:180px;">1024<br>laptop</div>
+    <div class="device-bar" style="width:260px; height:200px;">1280<br>desktop</div>
+    <div class="device-bar" style="width:320px; height:220px;">1440<br>wide</div>
+  </div>
+  <div class="responsive-sub"><h4>Touch Targets</h4><ul><li>Primary CTA at min 40 × 40px.</li><li>Icon button at 36 × 36 — slightly under 44, visually centered.</li><li>Text input height 40px.</li></ul></div>
+  <div class="responsive-sub"><h4>Collapsing Strategy</h4><ul><li>Top nav collapses to hamburger at &lt; 768px.</li><li>Hero 7-5 grid → single-column on mobile.</li><li>Feature grids reduce columns rather than scaling.</li><li>Pricing tier cards collapse 4 → 2 → 1; featured stays distinct.</li><li>Nav-pill-group wraps to multi-row on tablet.</li></ul></div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

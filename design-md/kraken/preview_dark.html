@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050) -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Preview: Kraken (Dark)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans/ibm-plex-sans-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  :root { --white:#101114; --black:#e8e8ec; --purple:#7132f5; --purple-dark:#5741d8; --purple-subtle:rgba(133,91,251,0.16); --gray:#9497a9; --silver:#686b82; --border:#2a2c34; --green:rgba(20,158,97,0.16); --green-text:#026b3f; --font:'IBM Plex Sans',Helvetica,Arial,sans-serif; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--white); color:var(--black); font-family:var(--font); font-size:16px; line-height:1.38; -webkit-font-smoothing:antialiased; }
+
+  .nav { position:sticky; top:0; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:14px 24px; background:var(--white); border-bottom:1px solid var(--border); }
+  .nav-brand { font-size:16px; font-weight:700; color:var(--black); text-decoration:none; }
+  .nav-links { display:flex; gap:20px; list-style:none; }
+  .nav-links a { font-size:14px; font-weight:500; color:var(--gray); text-decoration:none; }
+  .nav-links a:hover { color:var(--purple); }
+  .nav-cta { display:inline-block; background:var(--purple); color:var(--white); padding:10px 20px; border-radius:12px; font-size:14px; font-weight:600; text-decoration:none; }
+
+  .hero { padding:64px 24px; text-align:center; }
+  .hero h1 { font-size:48px; font-weight:700; line-height:1.17; letter-spacing:-1px; margin-bottom:16px; }
+  .hero h1 span { color:var(--purple); }
+  .hero p { font-size:16px; color:var(--silver); max-width:480px; margin:0 auto 24px; }
+  .hero-buttons { display:flex; gap:12px; justify-content:center; }
+  .btn-purple { display:inline-block; background:var(--purple); color:var(--white); padding:13px 24px; border-radius:12px; font-size:16px; font-weight:600; text-decoration:none; border:none; cursor:pointer; }
+  .btn-outline { display:inline-block; background:var(--white); color:var(--purple-dark); padding:12px 24px; border-radius:12px; border:1px solid var(--purple-dark); font-size:16px; font-weight:600; text-decoration:none; cursor:pointer; }
+  .btn-subtle { display:inline-block; background:var(--purple-subtle); color:var(--purple); padding:8px 16px; border-radius:12px; font-size:14px; font-weight:500; text-decoration:none; }
+  .btn-white { display:inline-block; background:var(--white); color:var(--black); padding:8px 12px; border-radius:10px; font-size:14px; font-weight:500; text-decoration:none; box-shadow:rgba(0,0,0,0.03) 0px 4px 24px; }
+
+  .section { padding:48px 24px; max-width:1100px; margin:0 auto; }
+  .section-label { font-size:12px; font-weight:600; color:var(--silver); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:8px; }
+  .section-title { font-size:36px; font-weight:700; line-height:1.22; letter-spacing:-0.5px; margin-bottom:24px; }
+  .section-divider { border:none; border-top:1px solid var(--border); margin:0; }
+
+  .color-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(140px,1fr)); gap:10px; margin-bottom:20px; }
+  .color-swatch { border-radius:8px; overflow:hidden; border:1px solid var(--border); }
+  .color-swatch-block { height:60px; }
+  .color-swatch-info { padding:8px 10px; }
+  .color-swatch-name { font-size:12px; font-weight:600; margin-bottom:2px; }
+  .color-swatch-hex { font-size:10px; color:var(--silver); font-family:monospace; }
+  .color-swatch-role { font-size:9px; color:var(--silver); margin-top:2px; }
+  .color-group-label { font-size:12px; font-weight:600; color:var(--gray); margin:20px 0 8px; }
+
+  .type-sample { margin-bottom:20px; padding-bottom:16px; border-bottom:1px solid rgba(222,222,229,0.5); }
+  .type-sample:last-child { border-bottom:none; }
+  .type-meta { font-size:10px; color:var(--silver); margin-top:4px; font-family:monospace; }
+
+  .button-row { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+  .button-item { text-align:center; }
+  .button-label { font-size:10px; color:var(--silver); margin-top:6px; }
+
+  .card-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:12px; }
+  .card { background:var(--white); border:1px solid var(--border); border-radius:12px; padding:20px; }
+  .card h3 { font-size:18px; font-weight:600; margin-bottom:8px; }
+  .card p { font-size:14px; color:var(--silver); }
+
+  .form-group { margin-bottom:16px; max-width:400px; }
+  .form-label { display:block; font-size:14px; font-weight:600; margin-bottom:4px; }
+  .form-input { width:100%; background:var(--white); color:var(--black); border:1px solid var(--border); padding:12px 16px; border-radius:12px; font-family:var(--font); font-size:16px; outline:none; }
+  .form-input:focus { border-color:var(--purple); box-shadow:0 0 0 1px var(--purple); }
+  .form-input--focus { border-color:var(--purple); box-shadow:0 0 0 1px var(--purple); }
+  .form-input--error { border-color:#dc2626; box-shadow:0 0 0 1px #dc2626; }
+  .form-textarea { width:100%; min-height:80px; background:var(--white); color:var(--black); border:1px solid var(--border); padding:12px 16px; border-radius:12px; font-family:var(--font); font-size:16px; resize:vertical; outline:none; }
+  .form-state-label { font-size:9px; color:var(--silver); margin-top:4px; }
+
+  .spacing-row { display:flex; align-items:flex-end; gap:8px; flex-wrap:wrap; margin-bottom:16px; }
+  .spacing-item { text-align:center; }
+  .spacing-block { background:var(--purple); border-radius:3px; margin-bottom:4px; height:24px; }
+  .spacing-value { font-size:9px; color:var(--silver); font-family:monospace; }
+
+  .radius-row { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+  .radius-item { text-align:center; }
+  .radius-box { width:52px; height:52px; background:var(--purple-subtle); margin-bottom:4px; }
+  .radius-label { font-size:9px; color:var(--silver); font-family:monospace; }
+
+  .elevation-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:12px; }
+  .elevation-card { background:var(--white); border:1px solid var(--border); border-radius:12px; padding:16px; text-align:center; }
+  .elevation-label { font-size:13px; font-weight:600; margin-bottom:4px; }
+  .elevation-desc { font-size:9px; color:var(--silver); font-family:monospace; }
+
+  .footer { padding:24px; text-align:center; background:var(--black); color:var(--silver); font-size:12px; }
+  .footer a { color:var(--purple); text-decoration:underline; }
+
+  @media (max-width:768px) { .hero h1 { font-size:32px; } .nav-links { display:none; } .section { padding:32px 16px; } .card-grid { grid-template-columns:1fr; } }
+
+
+  /* Shared VoltAgent footer content */
+  .footer { text-align: left; }
+  .footer-shell { max-width: 1200px; margin: 0 auto; }
+  .footer-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; }
+  .footer-col h6 { margin: 0 0 14px; color: inherit; font: inherit; font-weight: 700; font-size: 14px; line-height: 1.2; }
+  .footer-col span { display: block; margin: 0 0 10px; color: inherit; opacity: 0.72; font-size: 14px; line-height: 1.35; }
+  .footer-credit { margin-top: 48px; padding-top: 24px; border-top: 1px solid currentColor; color: inherit; opacity: 0.78; font-size: 13px; line-height: 1.4; }
+  .footer-credit a { color: inherit; text-decoration: none; font-weight: 600; }
+  .footer-credit img { border-radius: 3px; vertical-align: -2px; margin-right: 3px; }
+  @media (max-width: 760px) {
+    .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav"><a class="nav-brand" href="#">awesome-design-md</a><ul class="nav-links"><li><a href="#colors">Colors</a></li><li><a href="#typography">Typography</a></li><li><a href="#buttons">Buttons</a></li><li><a href="#cards">Cards</a></li><li><a href="#forms">Forms</a></li></ul><a class="nav-cta" href="#">Sign Up</a></nav>
+<div style="position:fixed;top:16px;right:16px;z-index:200;background:#7132f5;color:#ffffff;font-size:10px;font-weight:600;padding:4px 12px;border-radius:12px;">Dark Mode</div>
+
+<section class="hero"><h1>Design System<br>Inspired by <span>Kraken</span></h1><p>Every color, font, and component — visualized with crypto-exchange precision.</p><div class="hero-buttons"><a class="btn-purple" href="#">Create Account</a><a class="btn-outline" href="#">Explore</a></div></section>
+
+<hr class="section-divider">
+
+<section class="section" id="colors"><div class="section-label">01 / Colors</div><h2 class="section-title">Color Palette</h2>
+<div class="color-group-label">Brand</div>
+<div class="color-grid">
+<div class="color-swatch"><div class="color-swatch-block" style="background:#7132f5"></div><div class="color-swatch-info"><div class="color-swatch-name">Kraken Purple</div><div class="color-swatch-hex">#7132f5</div><div class="color-swatch-role">Primary CTA</div></div></div>
+<div class="color-swatch"><div class="color-swatch-block" style="background:#5741d8"></div><div class="color-swatch-info"><div class="color-swatch-name">Purple Dark</div><div class="color-swatch-hex">#5741d8</div><div class="color-swatch-role">Borders, outlined</div></div></div>
+<div class="color-swatch"><div class="color-swatch-block" style="background:#5b1ecf"></div><div class="color-swatch-info"><div class="color-swatch-name">Purple Deep</div><div class="color-swatch-hex">#5b1ecf</div><div class="color-swatch-role">Deepest variant</div></div></div>
+<div class="color-swatch"><div class="color-swatch-block" style="background:rgba(133,91,251,0.16)"></div><div class="color-swatch-info"><div class="color-swatch-name">Purple Subtle</div><div class="color-swatch-hex">rgba(133,91,251,0.16)</div><div class="color-swatch-role">Subtle button bg</div></div></div>
+</div>
+<div class="color-group-label">Neutral</div>
+<div class="color-grid">
+<div class="color-swatch"><div class="color-swatch-block" style="background:#101114"></div><div class="color-swatch-info"><div class="color-swatch-name">Near Black</div><div class="color-swatch-hex">#101114</div><div class="color-swatch-role">Primary text</div></div></div>
+<div class="color-swatch"><div class="color-swatch-block" style="background:#686b82"></div><div class="color-swatch-info"><div class="color-swatch-name">Cool Gray</div><div class="color-swatch-hex">#686b82</div><div class="color-swatch-role">Borders</div></div></div>
+<div class="color-swatch"><div class="color-swatch-block" style="background:#9497a9"></div><div class="color-swatch-info"><div class="color-swatch-name">Silver Blue</div><div class="color-swatch-hex">#9497a9</div><div class="color-swatch-role">Secondary text</div></div></div>
+</div></section>
+
+<hr class="section-divider">
+
+<section class="section" id="typography"><div class="section-label">02 / Typography</div><h2 class="section-title">Typography Scale</h2>
+<div class="type-sample"><div style="font-size:48px; font-weight:700; line-height:1.17; letter-spacing:-1px;">Display Hero</div><div class="type-meta">Kraken-Brand — 48px / 700 / 1.17 / -1px</div></div>
+<div class="type-sample"><div style="font-size:36px; font-weight:700; line-height:1.22; letter-spacing:-0.5px;">Section Heading</div><div class="type-meta">Kraken-Brand — 36px / 700 / 1.22 / -0.5px</div></div>
+<div class="type-sample"><div style="font-size:22px; font-weight:600; line-height:1.20;">Feature Title</div><div class="type-meta">Kraken-Product — 22px / 600 / 1.20</div></div>
+<div class="type-sample"><div style="font-size:16px; font-weight:400; line-height:1.38; color:var(--silver);">Body — Buy, sell, and trade crypto with Kraken. Trusted by millions worldwide.</div><div class="type-meta">Kraken-Product — 16px / 400 / 1.38</div></div>
+<div class="type-sample"><div style="font-size:14px; font-weight:600; line-height:1.71; color:var(--silver);">Caption — Last updated 2 min ago</div><div class="type-meta">Kraken-Product — 14px / 600 / 1.71</div></div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="buttons"><div class="section-label">03 / Buttons</div><h2 class="section-title">Buttons</h2>
+<div class="button-row">
+<div class="button-item"><a class="btn-purple" href="#">Create Account</a><div class="button-label">Primary Purple</div></div>
+<div class="button-item"><a class="btn-outline" href="#">Explore</a><div class="button-label">Purple Outlined</div></div>
+<div class="button-item"><a class="btn-subtle" href="#">Learn</a><div class="button-label">Purple Subtle</div></div>
+<div class="button-item"><a class="btn-white" href="#">Details</a><div class="button-label">White Shadow</div></div>
+</div></section>
+
+<hr class="section-divider">
+
+<section class="section" id="cards"><div class="section-label">04 / Cards</div><h2 class="section-title">Cards</h2>
+<div class="card-grid">
+<div class="card"><h3>Bitcoin (BTC)</h3><p>The most trusted cryptocurrency. Buy and sell with low fees on Kraken.</p></div>
+<div class="card"><h3>Ethereum (ETH)</h3><p>Smart contracts and DeFi. Trade ETH and hundreds of tokens.</p></div>
+<div class="card"><h3>Staking</h3><p>Earn rewards by staking your crypto. Flexible and bonded options available.</p></div>
+</div></section>
+
+<hr class="section-divider">
+
+<section class="section" id="forms"><div class="section-label">05 / Forms</div><h2 class="section-title">Forms</h2>
+<div class="form-group"><label class="form-label">Email</label><input class="form-input" type="email" placeholder="you@email.com"><div class="form-state-label">Default</div></div>
+<div class="form-group"><label class="form-label">Amount</label><input class="form-input form-input--focus" type="text" value="0.25 BTC"><div class="form-state-label">Focus (purple ring)</div></div>
+<div class="form-group"><label class="form-label">Address</label><input class="form-input form-input--error" type="text" value="invalid"><div class="form-state-label">Error</div></div>
+<div class="form-group"><label class="form-label">Note</label><textarea class="form-textarea" placeholder="Add a note..."></textarea></div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section"><div class="section-label">06 / Spacing</div><h2 class="section-title">Spacing</h2>
+<div class="spacing-row"><div class="spacing-item"><div class="spacing-block" style="width:4px"></div><div class="spacing-value">4</div></div><div class="spacing-item"><div class="spacing-block" style="width:8px"></div><div class="spacing-value">8</div></div><div class="spacing-item"><div class="spacing-block" style="width:12px"></div><div class="spacing-value">12</div></div><div class="spacing-item"><div class="spacing-block" style="width:16px"></div><div class="spacing-value">16</div></div><div class="spacing-item"><div class="spacing-block" style="width:24px"></div><div class="spacing-value">24</div></div></div></section>
+
+<hr class="section-divider">
+
+<section class="section"><div class="section-label">07 / Radius</div><h2 class="section-title">Radius</h2>
+<div class="radius-row"><div class="radius-item"><div class="radius-box" style="border-radius:6px"></div><div class="radius-label">6px</div></div><div class="radius-item"><div class="radius-box" style="border-radius:8px"></div><div class="radius-label">8px</div></div><div class="radius-item"><div class="radius-box" style="border-radius:12px"></div><div class="radius-label">12px</div></div><div class="radius-item"><div class="radius-box" style="border-radius:16px"></div><div class="radius-label">16px</div></div><div class="radius-item"><div class="radius-box" style="border-radius:9999px; width:52px; height:52px;"></div><div class="radius-label">pill</div></div></div></section>
+
+<hr class="section-divider">
+
+<section class="section"><div class="section-label">08 / Elevation</div><h2 class="section-title">Depth</h2>
+<div class="elevation-grid"><div class="elevation-card"><div class="elevation-label">Flat</div><div class="elevation-desc">No shadow</div></div><div class="elevation-card" style="box-shadow:rgba(0,0,0,0.03) 0px 4px 24px;"><div class="elevation-label">Subtle</div><div class="elevation-desc">4px 24px at 0.03</div></div><div class="elevation-card" style="box-shadow:0 0 0 1px var(--purple);"><div class="elevation-label">Focus</div><div class="elevation-desc">Purple ring</div></div></div></section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

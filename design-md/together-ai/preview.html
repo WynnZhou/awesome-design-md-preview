@@ -1,0 +1,2075 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Design System Analysis of Together AI</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #010120; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<div class="theme-layer" data-when="light">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#colors">Products</a></li>
+    <li><a href="#typography">Models</a></li>
+    <li><a href="#components">Pricing</a></li>
+    <li><a href="#components">Research</a></li>
+    <li><a href="#components">Docs</a></li>
+  </ul>
+
+  <button class="nav-cta">Sign in</button>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <p class="hero-eyebrow">/ Design System / Catalog</p>
+    <h1>Design System Analysis of Together AI</h1>
+    <p>An inspired interpretation of Together AI’s design language — an AI cloud-infrastructure brand whose surface alternates between near-black hero bands (with a three-color orange-magenta-periwinkle gradient as the single piece of brand chrome) and bright white research / pricing / docs bands, knit together by a custom display sans and an uppercase mono eyebrow face.</p>
+    <div class="hero-actions">
+      <a href="#colors" class="btn-primary">Get started now</a>
+      <a href="#components" class="btn-secondary">Contact sales</a>
+    </div>
+  </div>
+</section>
+
+<!-- COLOR PALETTE -->
+<section id="colors">
+  <p class="section-eyebrow">/ 01 / Color Palette</p>
+  <h2 class="section-heading">Color Palette</h2>
+  <p class="section-lead">A single primary black, a three-color brand gradient drawn from orange → magenta → periwinkle, and a pastel mint accent. Surfaces alternate between bright canvas and near-black canvas-dark; hairline gray carries every divider.</p>
+
+  <div class="palette-group">
+    <p class="palette-group-title">/ Brand &amp; Accent</p>
+    <div class="palette-grid">
+      <div class="swatch"><span class="swatch-chip" style="background:#000000"></span><div class="swatch-body"><p class="swatch-name">Ink Black</p><p class="swatch-hex">#000000</p><p class="swatch-role">Single primary CTA color.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#fc4c02"></span><div class="swatch-body"><p class="swatch-name">Brand Orange</p><p class="swatch-hex">#fc4c02</p><p class="swatch-role">First stop of the brand gradient.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#ef2cc1"></span><div class="swatch-body"><p class="swatch-name">Brand Magenta</p><p class="swatch-hex">#ef2cc1</p><p class="swatch-role">Middle stop of the brand gradient.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#bdbbff"></span><div class="swatch-body"><p class="swatch-name">Brand Periwinkle</p><p class="swatch-hex">#bdbbff</p><p class="swatch-role">Last stop of the brand gradient.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#c8f6f9"></span><div class="swatch-body"><p class="swatch-name">Brand Mint</p><p class="swatch-hex">#c8f6f9</p><p class="swatch-role">Hero secondary CTA + tinted stat tiles.</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <p class="palette-group-title">/ Surface</p>
+    <div class="palette-grid">
+      <div class="swatch"><span class="swatch-chip" style="background:#ffffff;border-bottom:1px solid var(--hairline)"></span><div class="swatch-body"><p class="swatch-name">Canvas</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Default product / pricing background.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#ebebeb"></span><div class="swatch-body"><p class="swatch-name">Hairline / Canvas Soft</p><p class="swatch-hex">#ebebeb</p><p class="swatch-role">Data-table headers, toggle rails, 1 px dividers.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#010120"></span><div class="swatch-body"><p class="swatch-name">Canvas Dark</p><p class="swatch-hex">#010120</p><p class="swatch-role">Hero / research dark surface.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#26263a"></span><div class="swatch-body"><p class="swatch-name">Hairline On Dark</p><p class="swatch-hex">#26263a</p><p class="swatch-role">Dividers on canvas-dark surfaces.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#313641"></span><div class="swatch-body"><p class="swatch-name">Surface Dark Soft</p><p class="swatch-hex">#313641</p><p class="swatch-role">Inner dark cards / ghost buttons.</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <p class="palette-group-title">/ Text</p>
+    <div class="palette-grid">
+      <div class="swatch"><span class="swatch-chip" style="background:#000000"></span><div class="swatch-body"><p class="swatch-name">Ink</p><p class="swatch-hex">#000000</p><p class="swatch-role">Headings and body on light surfaces.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#959494"></span><div class="swatch-body"><p class="swatch-name">Body</p><p class="swatch-hex">#959494</p><p class="swatch-role">Captions, footer links, mono eyebrow text.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#ffffff;border-bottom:1px solid var(--hairline)"></span><div class="swatch-body"><p class="swatch-name">On Dark</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">All text on canvas-dark.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section id="typography">
+  <p class="section-eyebrow">/ 02 / Typography Scale</p>
+  <h2 class="section-heading">Typography</h2>
+  <p class="section-lead">Two faces: a custom geometric display sans (substituted with Geist) for headlines, lead paragraphs, body, and inline links; an uppercase monospace eyebrow (substituted with Geist Mono) for every section label, button, and table-header cell. Sentence-case for the display; uppercase for the mono.</p>
+
+  <div class="type-row">
+    <div class="type-meta"><strong>display-xxl</strong>64 / 500 / 70.4 / -1.92</div>
+    <div class="type-sample" style="font-family:var(--font-display);font-weight:500;font-size:64px;line-height:70.4px;letter-spacing:-1.92px;">Build what’s next.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>display-xl</strong>40 / 500 / 48 / -0.8</div>
+    <div class="type-sample" style="font-family:var(--font-display);font-weight:500;font-size:40px;line-height:48px;letter-spacing:-0.8px;">The Together AI Platform</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>display-lg</strong>28 / 500 / 32.2 / -0.42</div>
+    <div class="type-sample" style="font-family:var(--font-display);font-weight:500;font-size:28px;line-height:32.2px;letter-spacing:-0.42px;">Sub-section headline.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>display-md</strong>22 / 500 / 25.3 / -0.22</div>
+    <div class="type-sample" style="font-family:var(--font-display);font-weight:500;font-size:22px;line-height:25.3px;letter-spacing:-0.22px;">Card title example.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>body-lg</strong>18 / 400 / 23.4 / -0.18</div>
+    <div class="type-sample" style="font-family:var(--font-body);font-weight:400;font-size:18px;line-height:23.4px;letter-spacing:-0.18px;">Lead paragraph under a section headline. Long-form prose sits in the display sans at 400 weight.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>body-lg-strong</strong>18 / 500 / 23.4 / -0.18</div>
+    <div class="type-sample" style="font-family:var(--font-body);font-weight:500;font-size:18px;line-height:23.4px;letter-spacing:-0.18px;">Emphasis runs inside lead paragraphs.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>body-md</strong>16 / 400 / 20.8 / -0.16</div>
+    <div class="type-sample" style="font-family:var(--font-body);font-weight:400;font-size:16px;line-height:20.8px;letter-spacing:-0.16px;">Default body paragraph for product, pricing, docs.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>body-md-strong</strong>16 / 500 / 20.8 / -0.16</div>
+    <div class="type-sample" style="font-family:var(--font-body);font-weight:500;font-size:16px;line-height:20.8px;letter-spacing:-0.16px;">Bolded inline body text.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>caption</strong>14 / 400 / 19.6</div>
+    <div class="type-sample" style="font-family:var(--font-body);font-weight:400;font-size:14px;line-height:19.6px;">Fine print, footer secondary text.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>caption-strong</strong>14 / 500 / 19.6</div>
+    <div class="type-sample" style="font-family:var(--font-body);font-weight:500;font-size:14px;line-height:19.6px;">Bolded caption emphasis.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>mono-caps-button</strong>16 / 500 / 16 / 0.08</div>
+    <div class="type-sample" style="font-family:var(--font-mono);font-weight:500;font-size:16px;line-height:16px;letter-spacing:0.08px;text-transform:uppercase;">GET STARTED NOW</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>mono-caps-eyebrow</strong>11 / 500 / 11 / 0.55</div>
+    <div class="type-sample" style="font-family:var(--font-mono);font-weight:500;font-size:11px;line-height:11px;letter-spacing:0.55px;text-transform:uppercase;">/ INFERENCE / PRICING</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>mono-caps-label</strong>11 / 500 / 15.4 / 0.055</div>
+    <div class="type-sample" style="font-family:var(--font-mono);font-weight:500;font-size:11px;line-height:15.4px;letter-spacing:0.055px;text-transform:uppercase;">Inline tag labels inside text contexts.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>mono-caption</strong>10 / 400 / 14 / 0.05</div>
+    <div class="type-sample" style="font-family:var(--font-mono);font-weight:400;font-size:10px;line-height:14px;letter-spacing:0.05px;">Mono fine print used inside the code-editor mockup.</div>
+  </div>
+</section>
+
+<!-- BUTTONS -->
+<section id="buttons">
+  <p class="section-eyebrow">/ 03 / Button Variants</p>
+  <h2 class="section-heading">Button Variants</h2>
+  <p class="section-lead">One black 4&nbsp;px-rounded rectangle carries every primary CTA. The mint and white pills are reserved for hero contexts; the ghost-on-dark and outline variants handle dark-band and form contexts respectively. The circular orb is the only fully-pill shape in the system.</p>
+
+  <div class="button-grid">
+    <div class="button-cell">
+      <span class="button-cell-label">button-primary</span>
+      <div class="demo"><button class="btn btn-prim">Get started now</button></div>
+      <span class="button-cell-label" style="color:var(--ink);text-transform:none;font-family:var(--font-body);font-size:13px;letter-spacing:-0.13px;">Ink black fill / on-primary text / mono-caps-button label / radius 4&nbsp;px.</span>
+    </div>
+    <div class="button-cell">
+      <span class="button-cell-label">button-secondary-mint</span>
+      <div class="demo"><button class="btn btn-mint">Watch the announcement</button></div>
+      <span class="button-cell-label" style="color:var(--ink);text-transform:none;font-family:var(--font-body);font-size:13px;letter-spacing:-0.13px;">Mint fill / ink text / hero-only secondary.</span>
+    </div>
+    <div class="button-cell on-dark">
+      <span class="button-cell-label">button-secondary-white</span>
+      <div class="demo"><button class="btn btn-white">Read the docs</button></div>
+      <span class="button-cell-label">White fill / ink text / hero-only adjacent CTA.</span>
+    </div>
+    <div class="button-cell on-dark">
+      <span class="button-cell-label">button-ghost-on-dark</span>
+      <div class="demo"><button class="btn btn-ghost-dark">Read more</button></div>
+      <span class="button-cell-label">Surface-dark-soft fill / on-dark text / dark-band use only.</span>
+    </div>
+    <div class="button-cell">
+      <span class="button-cell-label">button-outline</span>
+      <div class="demo"><button class="btn btn-outline">Filter results</button></div>
+      <span class="button-cell-label" style="color:var(--ink);text-transform:none;font-family:var(--font-body);font-size:13px;letter-spacing:-0.13px;">Canvas fill / 1 px hairline border / radius 3.25&nbsp;px (tighter than canonical).</span>
+    </div>
+    <div class="button-cell">
+      <span class="button-cell-label">button-icon-circular</span>
+      <div class="demo"><button class="btn-icon-circle" aria-label="Open chat">●</button></div>
+      <span class="button-cell-label" style="color:var(--ink);text-transform:none;font-family:var(--font-body);font-size:13px;letter-spacing:-0.13px;">Floating chat-launcher orb — the only fully-pill shape in the system.</span>
+    </div>
+  </div>
+</section>
+
+<!-- CARDS & CONTAINERS -->
+<section id="components">
+  <p class="section-eyebrow">/ 04 / Cards &amp; Containers</p>
+  <h2 class="section-heading">Cards &amp; Containers</h2>
+  <p class="section-lead">Universally lightly rounded at 4&nbsp;px with hairline borders. Surface contrast does most of the elevation work — dark cards live on dark bands; light cards live on light bands; soft shadows belong only on the floating chat-launcher orb.</p>
+
+  <div class="card-grid">
+    <div class="component-cell" style="padding:0;border:none;">
+      <span class="component-label" style="padding:0 8px;">research-card (dark)</span>
+      <div class="research-card">
+        <p class="eyebrow">/ Inference research</p>
+        <h4>Speculative decoding at scale.</h4>
+        <p>A note on serving long-context models with parallel speculative draft passes — placeholder body copy mirrors the brand’s research-card chrome.</p>
+      </div>
+    </div>
+
+    <div class="component-cell" style="padding:0;border:none;">
+      <span class="component-label" style="padding:0 8px;">testimonial-card</span>
+      <div class="testimonial-card">
+        <div class="portrait"></div>
+        <h4>Operator A</h4>
+        <p class="quote">Placeholder quote from a customer about the platform’s reliability — the brand keeps testimonial copy short and stat-driven.</p>
+        <p class="stat-row">/ AI startup · founded 2023</p>
+      </div>
+    </div>
+
+    <div class="component-cell" style="padding:0;border:none;">
+      <span class="component-label" style="padding:0 8px;">article-card</span>
+      <div class="article-card">
+        <div class="thumb"></div>
+        <div class="body">
+          <p class="eyebrow">/ Product update</p>
+          <h4>Lower-latency inference is live.</h4>
+          <p>A short summary of the latest platform release — placeholder text follows the brand’s article-card chrome.</p>
+          <p class="byline">/ AUTHOR PLACEHOLDER · 5 MIN READ</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="component-cell" style="padding:0;border:none;">
+      <span class="component-label" style="padding:0 8px;">stats-card-tinted (mint)</span>
+      <div class="stat-tile">
+        <p class="big">2×</p>
+        <p class="label">Throughput placeholder</p>
+      </div>
+    </div>
+
+    <div class="component-cell" style="padding:0;border:none;">
+      <span class="component-label" style="padding:0 8px;">stats-card-tinted (periwinkle)</span>
+      <div class="stat-tile peri">
+        <p class="big">60%</p>
+        <p class="label">Latency placeholder</p>
+      </div>
+    </div>
+
+    <div class="component-cell" style="padding:0;border:none;">
+      <span class="component-label" style="padding:0 8px;">stats-card-tinted (peach)</span>
+      <div class="stat-tile peach">
+        <p class="big">90%</p>
+        <p class="label">Cost placeholder</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:32px;">
+    <span class="component-label" style="display:block;margin-bottom:12px;">code-editor-mockup</span>
+    <div class="code-editor-mockup">
+      <div class="line">// placeholder code</div>
+      <div class="line muted">// the brand uses this surface as a polarity-flip break</div>
+      <div class="line">function placeholder() {</div>
+      <div class="line">&nbsp;&nbsp;return "output";</div>
+      <div class="line">}</div>
+      <div class="grad-strip"></div>
+      <div class="line muted">// gradient strip acts as a section sign-off</div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM ELEMENTS -->
+<section id="forms">
+  <p class="section-eyebrow">/ 05 / Form Elements</p>
+  <h2 class="section-heading">Form Elements</h2>
+  <p class="section-lead">Inputs sit on canvas with a 1&nbsp;px translucent-black hairline border. Labels are uppercase mono in body-color; helper text drops to caption size. No invented focus color — focus collapses to the ink stroke.</p>
+
+  <div class="form-grid">
+    <div class="form-group">
+      <label class="form-label">/ Full name</label>
+      <input class="text-input" type="text" placeholder="Placeholder name">
+    </div>
+    <div class="form-group">
+      <label class="form-label">/ Work email</label>
+      <input class="text-input focus" type="email" value="placeholder@example.com">
+      <span class="form-label" style="text-transform:none;font-family:var(--font-body);color:var(--body);font-size:12px;letter-spacing:-0.12px;">Focused state — ink-stroke border.</span>
+    </div>
+    <div class="form-group">
+      <label class="form-label">/ Company size</label>
+      <input class="text-input" type="text" placeholder="Number of employees">
+    </div>
+    <div class="form-group" style="grid-column:1 / -1;">
+      <label class="form-label">/ Tell us about your workload</label>
+      <textarea class="text-input" placeholder="Placeholder workload description — the brand’s startup-accelerator form uses this primitive."></textarea>
+    </div>
+  </div>
+</section>
+
+<!-- SPACING -->
+<section id="spacing">
+  <p class="section-eyebrow">/ 06 / Spacing Scale</p>
+  <h2 class="section-heading">Spacing Scale</h2>
+  <p class="section-lead">A 4&nbsp;px base with two named outliers (7.2&nbsp;px, 55.2&nbsp;px). Marketing bands use the 80&nbsp;px section token top and bottom; card interiors sit at 24&nbsp;px; stat tiles open to 32&nbsp;px.</p>
+
+  <div class="spacing-row">
+    <div class="spacing-cell"><div class="spacing-bar" style="width:2px"></div><span class="spacing-label">xxs / 2</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:4px"></div><span class="spacing-label">xs / 4</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:8px"></div><span class="spacing-label">sm / 8</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:12px"></div><span class="spacing-label">md / 12</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:16px"></div><span class="spacing-label">lg / 16</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:20px"></div><span class="spacing-label">xl / 20</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:24px"></div><span class="spacing-label">2xl / 24</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:32px"></div><span class="spacing-label">3xl / 32</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:44px"></div><span class="spacing-label">4xl / 44</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:48px"></div><span class="spacing-label">5xl / 48</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:55.2px"></div><span class="spacing-label">6xl / 55.2</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:80px"></div><span class="spacing-label">section / 80</span></div>
+  </div>
+</section>
+
+<!-- RADIUS -->
+<section id="radius">
+  <p class="section-eyebrow">/ 07 / Border Radius Scale</p>
+  <h2 class="section-heading">Border Radius</h2>
+  <p class="section-lead">The canonical card / button radius is 4&nbsp;px. A tighter 3.25&nbsp;px appears inside pricing sub-tabs and outline buttons; 8&nbsp;px shows up only inside feature-tab pills. The fully-pill 9999&nbsp;px is reserved for the floating chat-launcher orb.</p>
+
+  <div class="radius-row">
+    <div class="radius-cell"><div class="radius-chip" style="border-radius:0"></div><span class="radius-label"><strong>none</strong><br>0 px</span></div>
+    <div class="radius-cell"><div class="radius-chip" style="border-radius:3.25px"></div><span class="radius-label"><strong>xs</strong><br>3.25 px</span></div>
+    <div class="radius-cell"><div class="radius-chip" style="border-radius:4px"></div><span class="radius-label"><strong>sm</strong><br>4 px</span></div>
+    <div class="radius-cell"><div class="radius-chip" style="border-radius:8px"></div><span class="radius-label"><strong>md</strong><br>8 px</span></div>
+    <div class="radius-cell"><div class="radius-chip" style="border-radius:9999px"></div><span class="radius-label"><strong>full</strong><br>9999 px</span></div>
+  </div>
+</section>
+
+<!-- ELEVATION -->
+<section id="elevation">
+  <p class="section-eyebrow">/ 08 / Elevation &amp; Depth</p>
+  <h2 class="section-heading">Elevation &amp; Depth</h2>
+  <p class="section-lead">Most light-surface cards lean on hairlines, not shadow. The single soft-drop shadow tints with the brand’s navy ink and applies only to floating affordances.</p>
+
+  <div class="elevation-grid">
+    <div class="elevation-cell flat"><strong>Level 0</strong><span class="elevation-label">Flat</span></div>
+    <div class="elevation-cell hairline"><strong>Level 1</strong><span class="elevation-label">Hairline border</span></div>
+    <div class="elevation-cell on-dark"><strong>Level 2</strong><span class="elevation-label">Hairline on dark</span></div>
+    <div class="elevation-cell soft"><strong>Level 3</strong><span class="elevation-label">Soft drop (navy)</span></div>
+  </div>
+</section>
+
+<!-- SIGNATURE COMPONENTS -->
+<section id="signature">
+  <p class="section-eyebrow">/ 09 / Signature Components</p>
+  <h2 class="section-heading">Signature Components</h2>
+  <p class="section-lead">Feature-tab pills, pricing sub-tabs, the toggle-pill segmented control, and the data-table chrome. Combined, these load the brand’s technical voice into product surfaces.</p>
+
+  <div style="display:flex;flex-direction:column;gap:32px;">
+    <div>
+      <span class="component-label" style="display:block;margin-bottom:12px;">feature-tab-pill (radius 8 px)</span>
+      <div class="feature-tab-pill-row">
+        <button class="feature-tab-pill">Inference</button>
+        <button class="feature-tab-pill muted">Fine-tuning</button>
+        <button class="feature-tab-pill muted">GPU clusters</button>
+        <button class="feature-tab-pill muted">Code interpreter</button>
+      </div>
+    </div>
+
+    <div>
+      <span class="component-label" style="display:block;margin-bottom:12px;">pricing-sub-tab (radius 3.25 px)</span>
+      <div class="pricing-sub-tab-row">
+        <button class="pricing-sub-tab">Text</button>
+        <button class="pricing-sub-tab muted">Vision</button>
+        <button class="pricing-sub-tab muted">Image</button>
+        <button class="pricing-sub-tab muted">Audio</button>
+        <button class="pricing-sub-tab muted">Video</button>
+      </div>
+    </div>
+
+    <div>
+      <span class="component-label" style="display:block;margin-bottom:12px;">toggle-pill-group (radius 4 px)</span>
+      <div class="toggle-pill-rail">
+        <button class="toggle-pill active">Standard Pricing</button>
+        <button class="toggle-pill">Wholesale Pricing</button>
+      </div>
+    </div>
+
+    <div>
+      <span class="component-label" style="display:block;margin-bottom:12px;">badge-neutral / badge-subtle-on-dark</span>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+        <span class="badge-neutral">GA-DEC ‘25</span>
+        <span class="badge-neutral">New</span>
+        <span class="badge-neutral">Beta</span>
+        <span class="badge-on-dark" style="background:var(--surface-dark-soft);">/ on dark</span>
+      </div>
+    </div>
+
+    <div>
+      <span class="component-label" style="display:block;margin-bottom:12px;">data-table-row + data-table-header (pricing chrome)</span>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>Input / 1M</th>
+            <th>Output / 1M</th>
+            <th>Context</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Model A</td>
+            <td class="mono">$X.XX</td>
+            <td class="mono">$X.XX</td>
+            <td class="mono">128K</td>
+          </tr>
+          <tr>
+            <td>Model B</td>
+            <td class="mono">$X.XX</td>
+            <td class="mono">$X.XX</td>
+            <td class="mono">200K</td>
+          </tr>
+          <tr>
+            <td>Model C</td>
+            <td class="mono">$X.XX</td>
+            <td class="mono">$X.XX</td>
+            <td class="mono">64K</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <span class="component-label" style="display:block;margin-bottom:12px;">stats-card-tinted grid (mint / periwinkle / peach)</span>
+      <div class="stats-grid">
+        <div class="stat-tile"><p class="big">2×</p><p class="label">Throughput</p></div>
+        <div class="stat-tile peri"><p class="big">60%</p><p class="label">Latency reduction</p></div>
+        <div class="stat-tile peach"><p class="big">90%</p><p class="label">Cost saved</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND GRADIENT -->
+<section id="brand-gradient">
+  <p class="section-eyebrow">/ 10 / Brand Gradient</p>
+  <h2 class="section-heading">Brand Gradient</h2>
+  <p class="section-lead">A three-stop gradient drawn from orange → magenta → periwinkle. It is the brand’s entire decorative system — rendered at hero scale, never reduced to icon size, never reordered, never extended with a fourth stop.</p>
+
+  <div class="brand-gradient-ribbon"></div>
+  <div class="gradient-stop-row">
+    <div class="gradient-stop"><div class="chip" style="background:#fc4c02"></div><div class="info"><p class="swatch-name">accent-orange</p><p class="swatch-hex">#fc4c02</p></div></div>
+    <div class="gradient-stop"><div class="chip" style="background:#ef2cc1"></div><div class="info"><p class="swatch-name">accent-magenta</p><p class="swatch-hex">#ef2cc1</p></div></div>
+    <div class="gradient-stop"><div class="chip" style="background:#bdbbff"></div><div class="info"><p class="swatch-name">accent-periwinkle</p><p class="swatch-hex">#bdbbff</p></div></div>
+  </div>
+</section>
+
+<!-- RESPONSIVE -->
+<section id="responsive">
+  <p class="section-eyebrow">/ 11 / Responsive Behavior</p>
+  <h2 class="section-heading">Responsive Behavior</h2>
+  <p class="section-lead">A 1280&nbsp;px max-width container, 5 breakpoints, and a strict "stack-don’t-scroll" policy. The brand gradient and the wordmark banner are the only edge-to-edge elements; everything else centers inside the container.</p>
+
+  <table class="responsive-table">
+    <thead>
+      <tr><th>Name</th><th>Width</th><th>Key Changes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Mobile</td><td>&lt; 479 px</td><td>Hero stacks; nav collapses to hamburger; multi-col grids drop to 1-up.</td></tr>
+      <tr><td>Mobile-Large</td><td>479–767 px</td><td>Same as Mobile; some tables enable horizontal scroll.</td></tr>
+      <tr><td>Tablet</td><td>768–991 px</td><td>Article grid moves to 2-up; testimonial grid 3-up only if container &gt; 900 px.</td></tr>
+      <tr><td>Desktop</td><td>992–1279 px</td><td>Full 3-up research grid, 2-up article grid, hero 50/50 split.</td></tr>
+      <tr><td>Desktop-Large</td><td>≥ 1280 px</td><td>Container caps at 1280 px; bands stay edge-to-edge while content centers.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="device-ladder">
+    <div class="device phone">375</div>
+    <div class="device phone-l">479</div>
+    <div class="device tablet">768</div>
+    <div class="device laptop">992</div>
+    <div class="device desktop">1280+</div>
+  </div>
+
+  <h3 class="sub-block-title">Touch Targets</h3>
+  <p style="font-size:14px;line-height:19.6px;color:var(--body);max-width:760px;margin:0 0 12px;">The mono-cap button label is set at 16&nbsp;px; combined with 4&nbsp;px top/bottom and 24&nbsp;px horizontal padding, the primary pill renders at roughly 32&nbsp;px tall on desktop. On mobile, vertical padding inflates the button to ≥ 44&nbsp;px — meeting WCAG AAA. The circular icon button renders at 44 × 44&nbsp;px minimum at all viewports.</p>
+
+  <h3 class="sub-block-title">Collapsing Strategy</h3>
+  <ul class="bullets">
+    <li>Nav collapses from full link row + dual CTA pills at desktop to logo + hamburger at mobile.</li>
+    <li>Hero stacks headline above the gradient ribbon on mobile; never below.</li>
+    <li>Research band drops from 4-up to 2-up at tablet, 1-up at mobile; card chrome stays identical.</li>
+    <li>Pricing data table enables horizontal scroll at tablet; cell rows stack model-name above price block at mobile.</li>
+    <li>Footer wordmark banner stays edge-to-edge regardless of viewport, scaling fluidly with the display-xxl token.</li>
+  </ul>
+</section>
+
+<!-- ============================== EXAMPLES (kit-mirror) ============================== -->
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Pricing Tiers</h2>
+    <p class="ex-intro">Three-up plan grid with the middle tier polarity-flipped. Mono uppercase tier name, display numeral price, hairline-divided feature list.</p>
+    <div class="ex-grid-pricing">
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">/0.1 · Starter</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$9</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For individuals getting started.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Core features</li>
+          <li><span class="ex-bullet"></span>Up to 3 projects</li>
+          <li><span class="ex-bullet"></span>Community support</li>
+        </ul>
+        <button class="ex-tier-cta ink">Get started</button>
+      </div>
+      <div class="ex-tier-card dark">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span class="ex-mono" style="color:rgba(255,255,255,0.55);">/0.2 · Pro</span>
+          <span style="font-family:var(--font-mono); font-size:10px; letter-spacing:0.5px; text-transform:uppercase; color:var(--color-accent); display:inline-flex; align-items:center; gap:6px;"><span style="width:6px; height:6px; background:var(--color-accent); border-radius:9999px;"></span>Most popular</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$29</span><span style="font-family:var(--font-mono); font-size:12px; color:rgba(255,255,255,0.55);">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:rgba(255,255,255,0.72); margin:0;">For teams ready to ship.</p>
+        <ul class="ex-features dark">
+          <li><span class="ex-bullet"></span>Everything in Starter</li>
+          <li><span class="ex-bullet"></span>Unlimited projects</li>
+          <li><span class="ex-bullet"></span>Email support</li>
+          <li><span class="ex-bullet"></span>Advanced analytics</li>
+        </ul>
+        <button class="ex-tier-cta invert">Start free trial</button>
+      </div>
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">/0.3 · Team</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$99</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For organizations operating at scale.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Everything in Pro</li>
+          <li><span class="ex-bullet"></span>SSO + audit log</li>
+          <li><span class="ex-bullet"></span>Priority support</li>
+          <li><span class="ex-bullet"></span>SLA &amp; onboarding</li>
+        </ul>
+        <button class="ex-tier-cta ink">Talk to sales</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Product Selector
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Product Selector</h2>
+    <p class="ex-intro">Image gallery + variant picker + add-to-bag CTA. Color swatches use a 1px ink ring for selection; size pills polarity-flip to ink fill.</p>
+    <div class="ex-grid-product">
+      <div class="ex-grid-gallery">
+        <div class="ex-tile tall"><span class="ex-mono" style="font-size:10px;">/IMG &middot; 01</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG &middot; 02</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG &middot; 03</span></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <div class="ex-mono" style="display:flex; align-items:center; gap:8px;"><span style="width:8px; height:8px; background:var(--color-accent); border-radius:9999px;"></span>/0.1 &middot; Goods</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(24px, 4.5vw, 34px); font-weight:700; line-height:1.06; letter-spacing:-1px; color:var(--color-foreground); margin:0;">Field Tee, 6-Pack</h3>
+        <div style="display:flex; align-items:baseline; gap:12px;">
+          <span style="font-family:var(--font-display); font-size:clamp(32px, 5vw, 40px); font-weight:700; line-height:1; letter-spacing:-1.5px; color:var(--color-foreground);">$192</span>
+          <span class="ex-mono">&starf;&starf;&starf;&starf;&star; &nbsp;&middot;&nbsp; 117 reviews</span>
+        </div>
+        <p style="font-size:15px; color:var(--color-foreground-muted); line-height:1.5; margin:0;">Six tees in our default rotation: two bone, two stone, two ink. Ultra-soft 100% cotton, dyed with our proprietary palette, pre-washed so the first wear feels like the fiftieth.</p>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Hand cut and sewn locally</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Pre-washed, pre-shrunk cotton</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Reinforced collar and cuffs</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Carbon-neutral shipping</li>
+        </ul>
+        <div>
+          <div class="ex-mono" style="margin-bottom:10px;">Color &middot; Bone</div>
+          <div style="display:flex; gap:10px;">
+            <button aria-label="Bone" style="width:32px; height:32px; border-radius:9999px; background:#ececec; border:1px solid var(--color-border-soft); box-shadow:0 0 0 2px var(--color-canvas), 0 0 0 3px var(--color-foreground); cursor:pointer; padding:0;"></button>
+            <button aria-label="Stone" style="width:32px; height:32px; border-radius:9999px; background:#aaaaaa; border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+            <button aria-label="Ink" style="width:32px; height:32px; border-radius:9999px; background:#1e2124; border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+          </div>
+        </div>
+        <div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+            <span class="ex-mono">Size</span>
+            <a href="#" style="font-family:var(--font-mono); font-size:11px; letter-spacing:0.5px; text-transform:uppercase; color:var(--color-foreground); text-decoration:underline;">Size guide</a>
+          </div>
+          <div class="ex-grid-sizes">
+            <button class="ex-size-btn" disabled>XXS</button>
+            <button class="ex-size-btn">XS</button>
+            <button class="ex-size-btn selected">S</button>
+            <button class="ex-size-btn">M</button>
+            <button class="ex-size-btn">L</button>
+            <button class="ex-size-btn">XL</button>
+            <button class="ex-size-btn">2XL</button>
+            <button class="ex-size-btn">3XL</button>
+          </div>
+        </div>
+        <button class="ex-primary" style="width:100%; margin-top:4px;">Add to bag</button>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Shopping Cart
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Shopping Cart</h2>
+    <p class="ex-intro">Right-anchored drawer over a 50% ink scrim. Each line is a thumb + name/variant/qty stack + price + Remove text-link. Subtotal sits above a full-width primary Checkout, with a Continue link below.</p>
+    <div class="ex-frame tall">
+      <div style="padding:32px; opacity:0.5; display:flex; flex-direction:column; gap:20px;">
+        <div style="height:14px; width:40%; background:var(--color-border); border-radius:2px;"></div>
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px;">
+          <div style="height:120px; background:var(--color-border); border-radius:4px;"></div>
+          <div style="height:120px; background:var(--color-border); border-radius:4px;"></div>
+          <div style="height:120px; background:var(--color-border); border-radius:4px;"></div>
+        </div>
+      </div>
+      <div class="ex-scrim"></div>
+      <aside class="ex-cart-drawer">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:20px 24px; border-bottom:1px solid var(--color-border);">
+          <div>
+            <div class="ex-mono" style="margin-bottom:4px;">/0.1 &middot; Cart</div>
+            <h4 style="font-family:var(--font-display); font-size:22px; font-weight:700; line-height:1.0; letter-spacing:-0.5px; color:var(--color-foreground); margin:0;">Shopping Cart</h4>
+          </div>
+          <button aria-label="Close" style="background:transparent; border:none; color:var(--color-foreground); font-size:18px; cursor:pointer; padding:4px 8px;">&times;</button>
+        </div>
+        <ul style="list-style:none; padding:0; margin:0; flex:1; overflow-y:auto;">
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px; border-bottom:1px solid var(--color-border);">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border); border-radius:4px; display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/01</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Field Tee, 6-Pack</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Bone &middot; S</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$192.00</span>
+          </li>
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px; border-bottom:1px solid var(--color-border);">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border); border-radius:4px; display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/02</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Compass Hip Bag</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Salmon</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$90.00</span>
+          </li>
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px;">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border); border-radius:4px; display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/03</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Range Tote</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Bone / Ink</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$140.00</span>
+          </li>
+        </ul>
+        <div style="border-top:1px solid var(--color-border); padding:20px 24px;">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:4px;">
+            <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Subtotal</span>
+            <span style="font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.5px; color:var(--color-foreground);">$422.00</span>
+          </div>
+          <p style="font-size:12px; color:var(--color-foreground-muted); margin:0 0 16px;">Shipping and taxes calculated at checkout.</p>
+          <button class="ex-primary" style="width:100%;">Checkout</button>
+          <div style="margin-top:12px; text-align:center; font-size:13px; color:var(--color-foreground-muted);">or <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Continue Shopping &rarr;</a></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable App Shell
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">App Shell</h2>
+    <p class="ex-intro">Sidebar navigation + breadcrumb topbar + page heading + KPI strip + activity feed. The everyday product surface.</p>
+    <div class="ex-grid-appshell">
+      <aside style="background:var(--color-canvas-soft); border-right:1px solid var(--color-border); padding:20px 12px; display:flex; flex-direction:column; gap:4px;">
+        <div class="ex-mono" style="padding:8px 12px 16px;">/Workspace</div>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">&diams;</span>Overview</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; background:var(--color-foreground); color:var(--color-foreground-on-primary); font-weight:600; text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">&#9636;</span>Operations</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">&#9707;</span>Datasets</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">&#9680;</span>Models</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">&#9703;</span>Settings</a>
+      </aside>
+      <div style="display:flex; flex-direction:column;">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 24px; border-bottom:1px solid var(--color-border);">
+          <div style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--color-foreground-muted); font-family:var(--font-mono);">
+            <span>/Operations</span><span style="color:var(--color-foreground-tertiary);">&rsaquo;</span><span style="color:var(--color-foreground);">Decision Logs</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <span style="font-size:13px; color:var(--color-foreground-muted);">M. Reyes</span>
+            <div style="width:32px; height:32px; border-radius:9999px; background:var(--color-avatar-fill); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:600; color:var(--color-foreground);">MR</div>
+          </div>
+        </div>
+        <div style="padding:32px 24px; display:flex; flex-direction:column; gap:32px;">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+              <span style="width:8px; height:8px; background:var(--color-accent); border-radius:9999px;"></span>
+              <span class="ex-mono">Operations &middot; Live</span>
+            </div>
+            <h3 style="font-family:var(--font-display); font-size:clamp(24px, 4.5vw, 34px); font-weight:700; line-height:1.06; letter-spacing:-1px; color:var(--color-foreground); margin:0;">Decision Logs</h3>
+          </div>
+          <div class="ex-grid-kpi">
+            <div style="border:1px solid var(--color-border); border-radius:4px; padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Active operators</div>
+              <div style="font-family:var(--font-display); font-size:32px; font-weight:700; line-height:1; color:var(--color-foreground); letter-spacing:-1px;">2,481</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-success); font-family:var(--font-mono);">+4.1%</div>
+            </div>
+            <div style="border:1px solid var(--color-border); border-radius:4px; padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Decisions / hr</div>
+              <div style="font-family:var(--font-display); font-size:32px; font-weight:700; line-height:1; color:var(--color-foreground); letter-spacing:-1px;">17,209</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-success); font-family:var(--font-mono);">+12.4%</div>
+            </div>
+            <div style="border:1px solid var(--color-border); border-radius:4px; padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Pending reviews</div>
+              <div style="font-family:var(--font-display); font-size:32px; font-weight:700; line-height:1; color:var(--color-foreground); letter-spacing:-1px;">38</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-danger); font-family:var(--font-mono);">&minus;9 vs. yesterday</div>
+            </div>
+          </div>
+          <div>
+            <div class="ex-mono" style="margin-bottom:12px;">Recent Activity</div>
+            <ul style="list-style:none; padding:0; margin:0; border:1px solid var(--color-border); border-radius:4px; overflow:hidden;">
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:14px 16px; border-bottom:1px solid var(--color-border); align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.1</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:42</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">M. Reyes</strong> &middot; Promoted dataset v2024.11.21 to production</span>
+              </li>
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:14px 16px; border-bottom:1px solid var(--color-border); align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.2</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:36</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">A. Park</strong> &middot; Approved decision-rule &quot;Northwind Triage&quot;</span>
+              </li>
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:14px 16px; align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.3</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:29</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">System</strong> &middot; Backfilled 412 records into operations log</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Data Table
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Data Table</h2>
+    <p class="ex-intro">Mono uppercase column headers, alternating canvas rows, status pills wired to semantic color tokens, hairline row dividers, and a footer pager.</p>
+    <div style="border:1px solid var(--color-border); border-radius:4px; overflow:hidden;">
+      <div class="ex-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th class="ex-th" style="width:40px;"><input type="checkbox" aria-label="Select all"></th>
+              <th class="ex-th" style="width:120px;">ID</th>
+              <th class="ex-th" style="width:160px;">Actor</th>
+              <th class="ex-th">Target</th>
+              <th class="ex-th" style="width:140px;">Status</th>
+              <th class="ex-th" style="width:140px;">When &darr;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2401</td>
+              <td class="ex-td">M. Reyes</td>
+              <td class="ex-td">Northwind Triage</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:42 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2400</td>
+              <td class="ex-td">A. Park</td>
+              <td class="ex-td">Atlas Migration v3</td>
+              <td class="ex-td"><span class="ex-status pending">Pending</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:36 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2399</td>
+              <td class="ex-td">L. Okafor</td>
+              <td class="ex-td">Watchlist Sync</td>
+              <td class="ex-td"><span class="ex-status fail">Failed</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:21 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2398</td>
+              <td class="ex-td">S. Chen</td>
+              <td class="ex-td">Supply Chain Index</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:14 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2397</td>
+              <td class="ex-td">System</td>
+              <td class="ex-td">Nightly Backfill</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">07:55 UTC</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-top:1px solid var(--color-border); background:var(--color-canvas-soft);">
+        <span style="font-size:12px; color:var(--color-foreground-muted); font-family:var(--font-mono);">1&ndash;5 of 412</span>
+        <div style="display:flex; gap:4px;">
+          <button class="ex-pager" aria-label="Previous">&lsaquo;</button>
+          <button class="ex-pager active" aria-current="page">1</button>
+          <button class="ex-pager">2</button>
+          <button class="ex-pager">3</button>
+          <button class="ex-pager" aria-label="Next">&rsaquo;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Auth Forms
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Auth Forms</h2>
+    <p class="ex-intro">Centered cards on canvas, full-width primary CTA, mono uppercase field labels, hairline-divided SSO fallback.</p>
+    <div class="ex-grid-auth">
+      <div style="background:var(--color-canvas); border:1px solid var(--color-border); border-radius:6px; padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">/0.1 &middot; Sign in</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:700; line-height:1.05; letter-spacing:-0.6px; color:var(--color-foreground); margin:0 0 24px;">Welcome back.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" class="ex-input">
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-top:4px;">
+            <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--color-foreground);"><input type="checkbox"> Remember me</label>
+            <a href="#" style="font-size:13px; color:var(--color-foreground); text-decoration:underline;">Forgot password?</a>
+          </div>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Sign in</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">New here? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Create an account</a></div>
+      </div>
+      <div style="background:var(--color-canvas); border:1px solid var(--color-border); border-radius:6px; padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">/0.2 &middot; Create account</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:700; line-height:1.05; letter-spacing:-0.6px; color:var(--color-foreground); margin:0 0 24px;">Start building.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Full Name</label>
+            <input type="text" placeholder="Mira Reyes" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" class="ex-input">
+          </div>
+          <label style="display:flex; align-items:flex-start; gap:8px; font-size:13px; color:var(--color-foreground-muted); margin-top:4px; line-height:1.5;">
+            <input type="checkbox" style="margin-top:3px;">
+            <span>I agree to the <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Terms</a> and <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Privacy Policy</a>.</span>
+          </label>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Create account</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">Already have an account? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Sign in</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Modal Dialog
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Modal Dialog</h2>
+    <p class="ex-intro">Centered card over a 50% ink scrim. Hairline divider above the action row, secondary text-button on the left, primary on the right.</p>
+    <div class="ex-frame short">
+      <div style="padding:24px; opacity:0.7;">
+        <div style="height:14px; width:40%; background:var(--color-border); border-radius:2px; margin-bottom:12px;"></div>
+        <div style="height:12px; width:70%; background:var(--color-border); border-radius:2px; margin-bottom:8px;"></div>
+        <div style="height:12px; width:60%; background:var(--color-border); border-radius:2px;"></div>
+      </div>
+      <div class="ex-scrim"></div>
+      <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:24px;">
+        <div class="ex-modal-card">
+          <div style="padding:24px 28px 16px;">
+            <div class="ex-mono" style="margin-bottom:8px;">/0.1 &middot; Confirm</div>
+            <h4 style="font-family:var(--font-display); font-size:22px; font-weight:700; line-height:1.1; letter-spacing:-0.5px; color:var(--color-foreground); margin:0;">Promote dataset to production?</h4>
+          </div>
+          <div style="padding:0 28px 20px; font-size:14px; color:var(--color-foreground-muted); line-height:1.5;">
+            This replaces <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.20</strong> with <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.21</strong> across all downstream consumers. The action is reversible within 24 hours.
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:16px 24px; border-top:1px solid var(--color-border);">
+            <button class="ex-textlink">Cancel</button>
+            <button class="ex-primary" style="height:40px; padding:10px 18px; font-size:14px;">Promote</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Empty State
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Empty State</h2>
+    <p class="ex-intro">Outlined icon tile, decimal index, declarative heading, one-sentence body, and a single primary CTA.</p>
+    <div class="ex-emptystate">
+      <div style="width:56px; height:56px; border:1px solid var(--color-border-soft); border-radius:6px; display:flex; align-items:center; justify-content:center; margin-bottom:20px; color:var(--color-foreground-muted);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="M3.5 9.5h17M8 5.5v13"/></svg>
+      </div>
+      <div class="ex-mono" style="margin-bottom:12px;">/0.1 &middot; No datasets</div>
+      <h4 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:700; line-height:1.05; letter-spacing:-0.6px; color:var(--color-foreground); margin:0 0 8px;">Nothing here yet.</h4>
+      <p style="font-size:15px; color:var(--color-foreground-muted); max-width:380px; margin:0 0 24px; line-height:1.5;">Connect a source or upload a CSV to start ingesting records into this workspace.</p>
+      <button class="ex-primary">Connect a source</button>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Toast Stack
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Toast Stack</h2>
+    <p class="ex-intro">Four semantic variants &mdash; info, success, warning, error. Each is a 4px card with a 3px accent rule on the leading edge, a mono uppercase tag, and a single dismiss affordance.</p>
+    <div class="ex-grid-toasts">
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-foreground);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-foreground); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">info</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync in progress</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Backfilling 412 records into the operations log.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">&times;</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-success);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-success); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">success</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Dataset promoted</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">v2024.11.21 is live across all downstream consumers.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">&times;</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-warning);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-warning); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">warning</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Approaching quota</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">88% of your monthly compute has been used.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">&times;</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-danger);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-danger); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">error</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync failed</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Watchlist source returned 502. Retry queued.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">&times;</button>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- WORDMARK BANNER -->
+<div class="wordmark-banner">
+  <p class="word">together.ai</p>
+</div>
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+
+
+
+
+</div>
+<div class="theme-layer" data-when="dark">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#colors">Products</a></li>
+    <li><a href="#typography">Models</a></li>
+    <li><a href="#components">Pricing</a></li>
+    <li><a href="#components">Research</a></li>
+    <li><a href="#components">Docs</a></li>
+  </ul>
+
+  <button class="nav-cta">Sign in</button>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <p class="hero-eyebrow">/ Design System / Dark Catalog</p>
+    <h1>Design System Analysis of Together AI</h1>
+    <p>An inspired interpretation of Together AI’s design language rendered against the brand’s dark canvas. The near-black canvas-dark hero surface becomes the global ground; the white pill polarity-flips to carry primary CTAs; the three-color brand gradient remains untouched.</p>
+    <div class="hero-actions">
+      <a href="#colors" class="btn-primary">Get started now</a>
+      <a href="#components" class="btn-secondary">Contact sales</a>
+    </div>
+  </div>
+</section>
+
+<!-- COLOR PALETTE -->
+<section data-sec="colors">
+  <p class="section-eyebrow">/ 01 / Color Palette</p>
+  <h2 class="section-heading">Color Palette</h2>
+  <p class="section-lead">In dark mode, primary inverts to a white pill on the dark canvas. The three-color brand gradient stays the same; the mint and periwinkle accents read brighter against the deeper ground.</p>
+
+  <div class="palette-group">
+    <p class="palette-group-title">/ Brand &amp; Accent</p>
+    <div class="palette-grid">
+      <div class="swatch"><span class="swatch-chip" style="background:#ffffff"></span><div class="swatch-body"><p class="swatch-name">Primary (inverted)</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Single primary CTA in dark mode.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#fc4c02"></span><div class="swatch-body"><p class="swatch-name">Brand Orange</p><p class="swatch-hex">#fc4c02</p><p class="swatch-role">First stop of the brand gradient.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#ef2cc1"></span><div class="swatch-body"><p class="swatch-name">Brand Magenta</p><p class="swatch-hex">#ef2cc1</p><p class="swatch-role">Middle stop of the brand gradient.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#bdbbff"></span><div class="swatch-body"><p class="swatch-name">Brand Periwinkle</p><p class="swatch-hex">#bdbbff</p><p class="swatch-role">Last stop of the brand gradient.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#c8f6f9"></span><div class="swatch-body"><p class="swatch-name">Brand Mint</p><p class="swatch-hex">#c8f6f9</p><p class="swatch-role">Hero secondary CTA + tinted stat tiles.</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <p class="palette-group-title">/ Surface</p>
+    <div class="palette-grid">
+      <div class="swatch"><span class="swatch-chip" style="background:#010120"></span><div class="swatch-body"><p class="swatch-name">Canvas Dark</p><p class="swatch-hex">#010120</p><p class="swatch-role">Global ground in dark mode.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#0c0c2a"></span><div class="swatch-body"><p class="swatch-name">Canvas Soft</p><p class="swatch-hex">#0c0c2a</p><p class="swatch-role">Alternating section / panel surface.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#1a1a32"></span><div class="swatch-body"><p class="swatch-name">Canvas Elevated</p><p class="swatch-hex">#1a1a32</p><p class="swatch-role">Card / tier surface.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#26263a"></span><div class="swatch-body"><p class="swatch-name">Hairline on Dark</p><p class="swatch-hex">#26263a</p><p class="swatch-role">1 px dividers on dark surfaces.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#313641"></span><div class="swatch-body"><p class="swatch-name">Surface Dark Soft</p><p class="swatch-hex">#313641</p><p class="swatch-role">Ghost-button + inner dark cards.</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <p class="palette-group-title">/ Text</p>
+    <div class="palette-grid">
+      <div class="swatch"><span class="swatch-chip" style="background:#ffffff"></span><div class="swatch-body"><p class="swatch-name">Ink (inverted)</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Headings and body on dark surfaces.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#b5b5c0"></span><div class="swatch-body"><p class="swatch-name">Body</p><p class="swatch-hex">#b5b5c0</p><p class="swatch-role">Captions, eyebrows, footer.</p></div></div>
+      <div class="swatch"><span class="swatch-chip" style="background:#000000"></span><div class="swatch-body"><p class="swatch-name">On Primary</p><p class="swatch-hex">#000000</p><p class="swatch-role">Text on white CTAs.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section data-sec="typography">
+  <p class="section-eyebrow">/ 02 / Typography Scale</p>
+  <h2 class="section-heading">Typography</h2>
+  <p class="section-lead">Two faces — Geist (substitute for the proprietary display sans) and Geist Mono (substitute for PP Neue Montreal Mono). Sentence-case for the display; uppercase for the mono.</p>
+
+  <div class="type-row">
+    <div class="type-meta"><strong>display-xxl</strong>64 / 500 / 70.4 / -1.92</div>
+    <div class="type-sample" style="font-family:var(--font-display);font-weight:500;font-size:64px;line-height:70.4px;letter-spacing:-1.92px;">Build what’s next.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>display-xl</strong>40 / 500 / 48 / -0.8</div>
+    <div class="type-sample" style="font-family:var(--font-display);font-weight:500;font-size:40px;line-height:48px;letter-spacing:-0.8px;">The Together AI Platform</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>display-lg</strong>28 / 500 / 32.2 / -0.42</div>
+    <div class="type-sample" style="font-family:var(--font-display);font-weight:500;font-size:28px;line-height:32.2px;letter-spacing:-0.42px;">Sub-section headline.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>display-md</strong>22 / 500 / 25.3 / -0.22</div>
+    <div class="type-sample" style="font-family:var(--font-display);font-weight:500;font-size:22px;line-height:25.3px;letter-spacing:-0.22px;">Card title example.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>body-lg</strong>18 / 400 / 23.4 / -0.18</div>
+    <div class="type-sample" style="font-family:var(--font-body);font-weight:400;font-size:18px;line-height:23.4px;letter-spacing:-0.18px;">Lead paragraph under a section headline. Long-form prose sits in the display sans at 400 weight.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>body-lg-strong</strong>18 / 500 / 23.4 / -0.18</div>
+    <div class="type-sample" style="font-family:var(--font-body);font-weight:500;font-size:18px;line-height:23.4px;letter-spacing:-0.18px;">Emphasis runs inside lead paragraphs.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>body-md</strong>16 / 400 / 20.8 / -0.16</div>
+    <div class="type-sample" style="font-family:var(--font-body);font-weight:400;font-size:16px;line-height:20.8px;letter-spacing:-0.16px;">Default body paragraph for product, pricing, docs.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>body-md-strong</strong>16 / 500 / 20.8 / -0.16</div>
+    <div class="type-sample" style="font-family:var(--font-body);font-weight:500;font-size:16px;line-height:20.8px;letter-spacing:-0.16px;">Bolded inline body text.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>caption</strong>14 / 400 / 19.6</div>
+    <div class="type-sample" style="font-family:var(--font-body);font-weight:400;font-size:14px;line-height:19.6px;">Fine print, footer secondary text.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>caption-strong</strong>14 / 500 / 19.6</div>
+    <div class="type-sample" style="font-family:var(--font-body);font-weight:500;font-size:14px;line-height:19.6px;">Bolded caption emphasis.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>mono-caps-button</strong>16 / 500 / 16 / 0.08</div>
+    <div class="type-sample" style="font-family:var(--font-mono);font-weight:500;font-size:16px;line-height:16px;letter-spacing:0.08px;text-transform:uppercase;">GET STARTED NOW</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>mono-caps-eyebrow</strong>11 / 500 / 11 / 0.55</div>
+    <div class="type-sample" style="font-family:var(--font-mono);font-weight:500;font-size:11px;line-height:11px;letter-spacing:0.55px;text-transform:uppercase;">/ INFERENCE / PRICING</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>mono-caps-label</strong>11 / 500 / 15.4 / 0.055</div>
+    <div class="type-sample" style="font-family:var(--font-mono);font-weight:500;font-size:11px;line-height:15.4px;letter-spacing:0.055px;text-transform:uppercase;">Inline tag labels inside text contexts.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>mono-caption</strong>10 / 400 / 14 / 0.05</div>
+    <div class="type-sample" style="font-family:var(--font-mono);font-weight:400;font-size:10px;line-height:14px;letter-spacing:0.05px;">Mono fine print used inside the code-editor mockup.</div>
+  </div>
+</section>
+
+<!-- BUTTONS -->
+<section data-sec="buttons">
+  <p class="section-eyebrow">/ 03 / Button Variants</p>
+  <h2 class="section-heading">Button Variants</h2>
+  <p class="section-lead">In dark mode the primary pill flips to white with ink-black text; mint and periwinkle pills carry their tints unchanged; the ghost-on-dark and outline variants tune to the deeper canvas.</p>
+
+  <div class="button-grid">
+    <div class="button-cell">
+      <span class="button-cell-label">button-primary (inverted)</span>
+      <div class="demo"><button class="btn btn-prim">Get started now</button></div>
+      <span class="button-cell-label" style="color:var(--ink);text-transform:none;font-family:var(--font-body);font-size:13px;letter-spacing:-0.13px;">White fill / ink-black text / mono-caps-button label / radius 4&nbsp;px.</span>
+    </div>
+    <div class="button-cell">
+      <span class="button-cell-label">button-secondary-mint</span>
+      <div class="demo"><button class="btn btn-mint">Watch the announcement</button></div>
+      <span class="button-cell-label" style="color:var(--ink);text-transform:none;font-family:var(--font-body);font-size:13px;letter-spacing:-0.13px;">Mint fill / ink text / hero-only secondary.</span>
+    </div>
+    <div class="button-cell">
+      <span class="button-cell-label">button-secondary-white</span>
+      <div class="demo"><button class="btn btn-white">Read the docs</button></div>
+      <span class="button-cell-label" style="color:var(--ink);text-transform:none;font-family:var(--font-body);font-size:13px;letter-spacing:-0.13px;">White fill / ink text / hero-only adjacent CTA.</span>
+    </div>
+    <div class="button-cell">
+      <span class="button-cell-label">button-ghost-on-dark</span>
+      <div class="demo"><button class="btn btn-ghost-dark">Read more</button></div>
+      <span class="button-cell-label" style="color:var(--ink);text-transform:none;font-family:var(--font-body);font-size:13px;letter-spacing:-0.13px;">Surface-dark-soft fill / on-dark text.</span>
+    </div>
+    <div class="button-cell">
+      <span class="button-cell-label">button-outline</span>
+      <div class="demo"><button class="btn btn-outline">Filter results</button></div>
+      <span class="button-cell-label" style="color:var(--ink);text-transform:none;font-family:var(--font-body);font-size:13px;letter-spacing:-0.13px;">Transparent fill / translucent-white border / radius 3.25&nbsp;px.</span>
+    </div>
+    <div class="button-cell">
+      <span class="button-cell-label">button-icon-circular</span>
+      <div class="demo"><button class="btn-icon-circle" aria-label="Open chat">●</button></div>
+      <span class="button-cell-label" style="color:var(--ink);text-transform:none;font-family:var(--font-body);font-size:13px;letter-spacing:-0.13px;">Floating chat-launcher orb — only fully-pill shape.</span>
+    </div>
+  </div>
+</section>
+
+<!-- CARDS & CONTAINERS -->
+<section data-sec="components">
+  <p class="section-eyebrow">/ 04 / Cards &amp; Containers</p>
+  <h2 class="section-heading">Cards &amp; Containers</h2>
+  <p class="section-lead">All cards keep their 4&nbsp;px radius; on dark canvas, surface contrast is provided by elevated panels and translucent hairlines.</p>
+
+  <div class="card-grid">
+    <div class="component-cell" style="padding:0;border:none;background:transparent;">
+      <span class="component-label" style="padding:0 8px;">research-card</span>
+      <div class="research-card">
+        <p class="eyebrow">/ Inference research</p>
+        <h4>Speculative decoding at scale.</h4>
+        <p>A note on serving long-context models with parallel speculative draft passes — placeholder body copy mirrors the brand’s research-card chrome.</p>
+      </div>
+    </div>
+
+    <div class="component-cell" style="padding:0;border:none;background:transparent;">
+      <span class="component-label" style="padding:0 8px;">testimonial-card</span>
+      <div class="testimonial-card">
+        <div class="portrait"></div>
+        <h4>Operator A</h4>
+        <p class="quote">Placeholder quote from a customer about the platform’s reliability — the brand keeps testimonial copy short and stat-driven.</p>
+        <p class="stat-row">/ AI startup · founded 2023</p>
+      </div>
+    </div>
+
+    <div class="component-cell" style="padding:0;border:none;background:transparent;">
+      <span class="component-label" style="padding:0 8px;">article-card</span>
+      <div class="article-card">
+        <div class="thumb"></div>
+        <div class="body">
+          <p class="eyebrow">/ Product update</p>
+          <h4>Lower-latency inference is live.</h4>
+          <p>A short summary of the latest platform release — placeholder text follows the brand’s article-card chrome.</p>
+          <p class="byline">/ AUTHOR PLACEHOLDER · 5 MIN READ</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="component-cell" style="padding:0;border:none;background:transparent;">
+      <span class="component-label" style="padding:0 8px;">stats-card-tinted (mint)</span>
+      <div class="stat-tile">
+        <p class="big">2×</p>
+        <p class="label">Throughput placeholder</p>
+      </div>
+    </div>
+
+    <div class="component-cell" style="padding:0;border:none;background:transparent;">
+      <span class="component-label" style="padding:0 8px;">stats-card-tinted (periwinkle)</span>
+      <div class="stat-tile peri">
+        <p class="big">60%</p>
+        <p class="label">Latency placeholder</p>
+      </div>
+    </div>
+
+    <div class="component-cell" style="padding:0;border:none;background:transparent;">
+      <span class="component-label" style="padding:0 8px;">stats-card-tinted (peach)</span>
+      <div class="stat-tile peach">
+        <p class="big">90%</p>
+        <p class="label">Cost placeholder</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:32px;">
+    <span class="component-label" style="display:block;margin-bottom:12px;">code-editor-mockup</span>
+    <div class="code-editor-mockup">
+      <div class="line">// placeholder code</div>
+      <div class="line muted">// the brand uses this surface as a polarity-flip break</div>
+      <div class="line">function placeholder() {</div>
+      <div class="line">&nbsp;&nbsp;return "output";</div>
+      <div class="line">}</div>
+      <div class="grad-strip"></div>
+      <div class="line muted">// gradient strip acts as a section sign-off</div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM ELEMENTS -->
+<section data-sec="forms">
+  <p class="section-eyebrow">/ 05 / Form Elements</p>
+  <h2 class="section-heading">Form Elements</h2>
+  <p class="section-lead">Inputs invert to a soft-dark fill with a translucent-white hairline border; labels remain uppercase mono in the body color.</p>
+
+  <div class="form-grid">
+    <div class="form-group">
+      <label class="form-label">/ Full name</label>
+      <input class="text-input" type="text" placeholder="Placeholder name">
+    </div>
+    <div class="form-group">
+      <label class="form-label">/ Work email</label>
+      <input class="text-input focus" type="email" value="placeholder@example.com">
+      <span class="form-label" style="text-transform:none;font-family:var(--font-body);color:var(--body);font-size:12px;letter-spacing:-0.12px;">Focused state — ink-white border.</span>
+    </div>
+    <div class="form-group">
+      <label class="form-label">/ Company size</label>
+      <input class="text-input" type="text" placeholder="Number of employees">
+    </div>
+    <div class="form-group" style="grid-column:1 / -1;">
+      <label class="form-label">/ Tell us about your workload</label>
+      <textarea class="text-input" placeholder="Placeholder workload description — the brand’s startup-accelerator form uses this primitive."></textarea>
+    </div>
+  </div>
+</section>
+
+<!-- SPACING -->
+<section data-sec="spacing">
+  <p class="section-eyebrow">/ 06 / Spacing Scale</p>
+  <h2 class="section-heading">Spacing Scale</h2>
+  <p class="section-lead">Same 4&nbsp;px base as the light mode — bars retint to periwinkle so they read against the dark canvas.</p>
+
+  <div class="spacing-row">
+    <div class="spacing-cell"><div class="spacing-bar" style="width:2px"></div><span class="spacing-label">xxs / 2</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:4px"></div><span class="spacing-label">xs / 4</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:8px"></div><span class="spacing-label">sm / 8</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:12px"></div><span class="spacing-label">md / 12</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:16px"></div><span class="spacing-label">lg / 16</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:20px"></div><span class="spacing-label">xl / 20</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:24px"></div><span class="spacing-label">2xl / 24</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:32px"></div><span class="spacing-label">3xl / 32</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:44px"></div><span class="spacing-label">4xl / 44</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:48px"></div><span class="spacing-label">5xl / 48</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:55.2px"></div><span class="spacing-label">6xl / 55.2</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:80px"></div><span class="spacing-label">section / 80</span></div>
+  </div>
+</section>
+
+<!-- RADIUS -->
+<section data-sec="radius">
+  <p class="section-eyebrow">/ 07 / Border Radius Scale</p>
+  <h2 class="section-heading">Border Radius</h2>
+  <p class="section-lead">The canonical radius stays 4&nbsp;px; 3.25&nbsp;px for sub-tabs; 8&nbsp;px for feature-tab pills; 9999&nbsp;px reserved for the floating chat-launcher orb.</p>
+
+  <div class="radius-row">
+    <div class="radius-cell"><div class="radius-chip" style="border-radius:0"></div><span class="radius-label"><strong>none</strong><br>0 px</span></div>
+    <div class="radius-cell"><div class="radius-chip" style="border-radius:3.25px"></div><span class="radius-label"><strong>xs</strong><br>3.25 px</span></div>
+    <div class="radius-cell"><div class="radius-chip" style="border-radius:4px"></div><span class="radius-label"><strong>sm</strong><br>4 px</span></div>
+    <div class="radius-cell"><div class="radius-chip" style="border-radius:8px"></div><span class="radius-label"><strong>md</strong><br>8 px</span></div>
+    <div class="radius-cell"><div class="radius-chip" style="border-radius:9999px"></div><span class="radius-label"><strong>full</strong><br>9999 px</span></div>
+  </div>
+</section>
+
+<!-- ELEVATION -->
+<section data-sec="elevation">
+  <p class="section-eyebrow">/ 08 / Elevation &amp; Depth</p>
+  <h2 class="section-heading">Elevation &amp; Depth</h2>
+  <p class="section-lead">In dark mode, hairlines render as translucent white; the brand’s navy soft-drop shadow becomes a soft periwinkle-tinted glow.</p>
+
+  <div class="elevation-grid">
+    <div class="elevation-cell flat"><strong>Level 0</strong><span class="elevation-label">Flat</span></div>
+    <div class="elevation-cell hairline"><strong>Level 1</strong><span class="elevation-label">Hairline border</span></div>
+    <div class="elevation-cell on-light"><strong>Level 2</strong><span class="elevation-label">Light-island card</span></div>
+    <div class="elevation-cell soft"><strong>Level 3</strong><span class="elevation-label">Soft glow (periwinkle)</span></div>
+  </div>
+</section>
+
+<!-- SIGNATURE COMPONENTS -->
+<section data-sec="signature">
+  <p class="section-eyebrow">/ 09 / Signature Components</p>
+  <h2 class="section-heading">Signature Components</h2>
+  <p class="section-lead">Feature-tab pills, pricing sub-tabs, the toggle-pill segmented control, and the data-table chrome — rendered against the dark canvas.</p>
+
+  <div style="display:flex;flex-direction:column;gap:32px;">
+    <div>
+      <span class="component-label" style="display:block;margin-bottom:12px;">feature-tab-pill (radius 8 px)</span>
+      <div class="feature-tab-pill-row">
+        <button class="feature-tab-pill">Inference</button>
+        <button class="feature-tab-pill muted">Fine-tuning</button>
+        <button class="feature-tab-pill muted">GPU clusters</button>
+        <button class="feature-tab-pill muted">Code interpreter</button>
+      </div>
+    </div>
+
+    <div>
+      <span class="component-label" style="display:block;margin-bottom:12px;">pricing-sub-tab (radius 3.25 px)</span>
+      <div class="pricing-sub-tab-row">
+        <button class="pricing-sub-tab">Text</button>
+        <button class="pricing-sub-tab muted">Vision</button>
+        <button class="pricing-sub-tab muted">Image</button>
+        <button class="pricing-sub-tab muted">Audio</button>
+        <button class="pricing-sub-tab muted">Video</button>
+      </div>
+    </div>
+
+    <div>
+      <span class="component-label" style="display:block;margin-bottom:12px;">toggle-pill-group (radius 4 px)</span>
+      <div class="toggle-pill-rail">
+        <button class="toggle-pill active">Standard Pricing</button>
+        <button class="toggle-pill">Wholesale Pricing</button>
+      </div>
+    </div>
+
+    <div>
+      <span class="component-label" style="display:block;margin-bottom:12px;">badge-neutral / badge-subtle-on-dark</span>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+        <span class="badge-neutral">GA-DEC ‘25</span>
+        <span class="badge-neutral">New</span>
+        <span class="badge-neutral">Beta</span>
+        <span class="badge-on-dark">/ on dark</span>
+      </div>
+    </div>
+
+    <div>
+      <span class="component-label" style="display:block;margin-bottom:12px;">data-table-row + data-table-header (pricing chrome)</span>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>Input / 1M</th>
+            <th>Output / 1M</th>
+            <th>Context</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Model A</td>
+            <td class="mono">$X.XX</td>
+            <td class="mono">$X.XX</td>
+            <td class="mono">128K</td>
+          </tr>
+          <tr>
+            <td>Model B</td>
+            <td class="mono">$X.XX</td>
+            <td class="mono">$X.XX</td>
+            <td class="mono">200K</td>
+          </tr>
+          <tr>
+            <td>Model C</td>
+            <td class="mono">$X.XX</td>
+            <td class="mono">$X.XX</td>
+            <td class="mono">64K</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <span class="component-label" style="display:block;margin-bottom:12px;">stats-card-tinted grid (mint / periwinkle / peach)</span>
+      <div class="stats-grid">
+        <div class="stat-tile"><p class="big">2×</p><p class="label">Throughput</p></div>
+        <div class="stat-tile peri"><p class="big">60%</p><p class="label">Latency reduction</p></div>
+        <div class="stat-tile peach"><p class="big">90%</p><p class="label">Cost saved</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND GRADIENT -->
+<section data-sec="brand-gradient">
+  <p class="section-eyebrow">/ 10 / Brand Gradient</p>
+  <h2 class="section-heading">Brand Gradient</h2>
+  <p class="section-lead">The three-stop gradient stays exactly as it does in light mode — orange → magenta → periwinkle. Against the dark canvas it reads as a glowing horizon line.</p>
+
+  <div class="brand-gradient-ribbon"></div>
+  <div class="gradient-stop-row">
+    <div class="gradient-stop"><div class="chip" style="background:#fc4c02"></div><div class="info"><p class="swatch-name">accent-orange</p><p class="swatch-hex">#fc4c02</p></div></div>
+    <div class="gradient-stop"><div class="chip" style="background:#ef2cc1"></div><div class="info"><p class="swatch-name">accent-magenta</p><p class="swatch-hex">#ef2cc1</p></div></div>
+    <div class="gradient-stop"><div class="chip" style="background:#bdbbff"></div><div class="info"><p class="swatch-name">accent-periwinkle</p><p class="swatch-hex">#bdbbff</p></div></div>
+  </div>
+</section>
+
+<!-- RESPONSIVE -->
+<section data-sec="responsive">
+  <p class="section-eyebrow">/ 11 / Responsive Behavior</p>
+  <h2 class="section-heading">Responsive Behavior</h2>
+  <p class="section-lead">A 1280&nbsp;px max-width container, 5 breakpoints, and a strict "stack-don’t-scroll" policy. The brand gradient and the wordmark banner are the only edge-to-edge elements; everything else centers inside the container.</p>
+
+  <table class="responsive-table">
+    <thead>
+      <tr><th>Name</th><th>Width</th><th>Key Changes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Mobile</td><td>&lt; 479 px</td><td>Hero stacks; nav collapses to hamburger; multi-col grids drop to 1-up.</td></tr>
+      <tr><td>Mobile-Large</td><td>479–767 px</td><td>Same as Mobile; some tables enable horizontal scroll.</td></tr>
+      <tr><td>Tablet</td><td>768–991 px</td><td>Article grid moves to 2-up; testimonial grid 3-up only if container &gt; 900 px.</td></tr>
+      <tr><td>Desktop</td><td>992–1279 px</td><td>Full 3-up research grid, 2-up article grid, hero 50/50 split.</td></tr>
+      <tr><td>Desktop-Large</td><td>≥ 1280 px</td><td>Container caps at 1280 px; bands stay edge-to-edge while content centers.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="device-ladder">
+    <div class="device phone">375</div>
+    <div class="device phone-l">479</div>
+    <div class="device tablet">768</div>
+    <div class="device laptop">992</div>
+    <div class="device desktop">1280+</div>
+  </div>
+
+  <h3 class="sub-block-title">Touch Targets</h3>
+  <p style="font-size:14px;line-height:19.6px;color:var(--body);max-width:760px;margin:0 0 12px;">The mono-cap button label is 16&nbsp;px; combined with 4&nbsp;px top/bottom and 24&nbsp;px horizontal padding, the primary pill is ~32&nbsp;px tall on desktop. Mobile vertical padding inflates the button to ≥ 44&nbsp;px — WCAG AAA. The circular icon button is 44 × 44&nbsp;px minimum.</p>
+
+  <h3 class="sub-block-title">Collapsing Strategy</h3>
+  <ul class="bullets">
+    <li>Nav collapses from full link row + dual CTA pills at desktop to logo + hamburger at mobile.</li>
+    <li>Hero stacks headline above the gradient ribbon on mobile; never below.</li>
+    <li>Research band drops from 4-up to 2-up at tablet, 1-up at mobile; card chrome stays identical.</li>
+    <li>Pricing data table enables horizontal scroll at tablet; cell rows stack model-name above price block at mobile.</li>
+    <li>Footer wordmark banner stays edge-to-edge regardless of viewport.</li>
+  </ul>
+</section>
+
+<!-- ============================== EXAMPLES (kit-mirror) ============================== -->
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Pricing Tiers</h2>
+    <p class="ex-intro">Three-up plan grid with the middle tier polarity-flipped. Mono uppercase tier name, display numeral price, hairline-divided feature list.</p>
+    <div class="ex-grid-pricing">
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">/0.1 · Starter</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$9</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For individuals getting started.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Core features</li>
+          <li><span class="ex-bullet"></span>Up to 3 projects</li>
+          <li><span class="ex-bullet"></span>Community support</li>
+        </ul>
+        <button class="ex-tier-cta ink">Get started</button>
+      </div>
+      <div class="ex-tier-card dark">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span class="ex-mono" style="color:rgba(255,255,255,0.55);">/0.2 · Pro</span>
+          <span style="font-family:var(--font-mono); font-size:10px; letter-spacing:0.5px; text-transform:uppercase; color:var(--color-accent); display:inline-flex; align-items:center; gap:6px;"><span style="width:6px; height:6px; background:var(--color-accent); border-radius:9999px;"></span>Most popular</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$29</span><span style="font-family:var(--font-mono); font-size:12px; color:rgba(255,255,255,0.55);">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:rgba(255,255,255,0.72); margin:0;">For teams ready to ship.</p>
+        <ul class="ex-features dark">
+          <li><span class="ex-bullet"></span>Everything in Starter</li>
+          <li><span class="ex-bullet"></span>Unlimited projects</li>
+          <li><span class="ex-bullet"></span>Email support</li>
+          <li><span class="ex-bullet"></span>Advanced analytics</li>
+        </ul>
+        <button class="ex-tier-cta invert">Start free trial</button>
+      </div>
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">/0.3 · Team</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$99</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For organizations operating at scale.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Everything in Pro</li>
+          <li><span class="ex-bullet"></span>SSO + audit log</li>
+          <li><span class="ex-bullet"></span>Priority support</li>
+          <li><span class="ex-bullet"></span>SLA &amp; onboarding</li>
+        </ul>
+        <button class="ex-tier-cta ink">Talk to sales</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Product Selector
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Product Selector</h2>
+    <p class="ex-intro">Image gallery + variant picker + add-to-bag CTA. Color swatches use a 1px ink ring for selection; size pills polarity-flip to ink fill.</p>
+    <div class="ex-grid-product">
+      <div class="ex-grid-gallery">
+        <div class="ex-tile tall"><span class="ex-mono" style="font-size:10px;">/IMG &middot; 01</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG &middot; 02</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG &middot; 03</span></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <div class="ex-mono" style="display:flex; align-items:center; gap:8px;"><span style="width:8px; height:8px; background:var(--color-accent); border-radius:9999px;"></span>/0.1 &middot; Goods</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(24px, 4.5vw, 34px); font-weight:700; line-height:1.06; letter-spacing:-1px; color:var(--color-foreground); margin:0;">Field Tee, 6-Pack</h3>
+        <div style="display:flex; align-items:baseline; gap:12px;">
+          <span style="font-family:var(--font-display); font-size:clamp(32px, 5vw, 40px); font-weight:700; line-height:1; letter-spacing:-1.5px; color:var(--color-foreground);">$192</span>
+          <span class="ex-mono">&starf;&starf;&starf;&starf;&star; &nbsp;&middot;&nbsp; 117 reviews</span>
+        </div>
+        <p style="font-size:15px; color:var(--color-foreground-muted); line-height:1.5; margin:0;">Six tees in our default rotation: two bone, two stone, two ink. Ultra-soft 100% cotton, dyed with our proprietary palette, pre-washed so the first wear feels like the fiftieth.</p>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Hand cut and sewn locally</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Pre-washed, pre-shrunk cotton</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Reinforced collar and cuffs</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Carbon-neutral shipping</li>
+        </ul>
+        <div>
+          <div class="ex-mono" style="margin-bottom:10px;">Color &middot; Bone</div>
+          <div style="display:flex; gap:10px;">
+            <button aria-label="Bone" style="width:32px; height:32px; border-radius:9999px; background:#ececec; border:1px solid var(--color-border-soft); box-shadow:0 0 0 2px var(--color-canvas), 0 0 0 3px var(--color-foreground); cursor:pointer; padding:0;"></button>
+            <button aria-label="Stone" style="width:32px; height:32px; border-radius:9999px; background:#aaaaaa; border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+            <button aria-label="Ink" style="width:32px; height:32px; border-radius:9999px; background:#1e2124; border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+          </div>
+        </div>
+        <div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+            <span class="ex-mono">Size</span>
+            <a href="#" style="font-family:var(--font-mono); font-size:11px; letter-spacing:0.5px; text-transform:uppercase; color:var(--color-foreground); text-decoration:underline;">Size guide</a>
+          </div>
+          <div class="ex-grid-sizes">
+            <button class="ex-size-btn" disabled>XXS</button>
+            <button class="ex-size-btn">XS</button>
+            <button class="ex-size-btn selected">S</button>
+            <button class="ex-size-btn">M</button>
+            <button class="ex-size-btn">L</button>
+            <button class="ex-size-btn">XL</button>
+            <button class="ex-size-btn">2XL</button>
+            <button class="ex-size-btn">3XL</button>
+          </div>
+        </div>
+        <button class="ex-primary" style="width:100%; margin-top:4px;">Add to bag</button>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Shopping Cart
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Shopping Cart</h2>
+    <p class="ex-intro">Right-anchored drawer over a 50% ink scrim. Each line is a thumb + name/variant/qty stack + price + Remove text-link. Subtotal sits above a full-width primary Checkout, with a Continue link below.</p>
+    <div class="ex-frame tall">
+      <div style="padding:32px; opacity:0.5; display:flex; flex-direction:column; gap:20px;">
+        <div style="height:14px; width:40%; background:var(--color-border); border-radius:2px;"></div>
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px;">
+          <div style="height:120px; background:var(--color-border); border-radius:4px;"></div>
+          <div style="height:120px; background:var(--color-border); border-radius:4px;"></div>
+          <div style="height:120px; background:var(--color-border); border-radius:4px;"></div>
+        </div>
+      </div>
+      <div class="ex-scrim"></div>
+      <aside class="ex-cart-drawer">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:20px 24px; border-bottom:1px solid var(--color-border);">
+          <div>
+            <div class="ex-mono" style="margin-bottom:4px;">/0.1 &middot; Cart</div>
+            <h4 style="font-family:var(--font-display); font-size:22px; font-weight:700; line-height:1.0; letter-spacing:-0.5px; color:var(--color-foreground); margin:0;">Shopping Cart</h4>
+          </div>
+          <button aria-label="Close" style="background:transparent; border:none; color:var(--color-foreground); font-size:18px; cursor:pointer; padding:4px 8px;">&times;</button>
+        </div>
+        <ul style="list-style:none; padding:0; margin:0; flex:1; overflow-y:auto;">
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px; border-bottom:1px solid var(--color-border);">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border); border-radius:4px; display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/01</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Field Tee, 6-Pack</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Bone &middot; S</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$192.00</span>
+          </li>
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px; border-bottom:1px solid var(--color-border);">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border); border-radius:4px; display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/02</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Compass Hip Bag</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Salmon</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$90.00</span>
+          </li>
+          <li style="display:grid; grid-template-columns:56px 1fr auto; gap:14px; padding:16px 24px;">
+            <div style="width:56px; height:56px; background:var(--color-canvas-soft); border:1px solid var(--color-border); border-radius:4px; display:flex; align-items:flex-end; padding:4px;"><span class="ex-mono" style="font-size:9px;">/03</span></div>
+            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
+              <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Range Tote</span>
+              <span style="font-size:12px; color:var(--color-foreground-muted);">Bone / Ink</span>
+              <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                <span style="font-family:var(--font-mono); font-size:11px; color:var(--color-foreground-muted);">Qty 1</span>
+                <button style="background:transparent; border:none; color:var(--color-foreground); font-size:12px; cursor:pointer; text-decoration:underline; padding:0;">Remove</button>
+              </div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:14px; color:var(--color-foreground); white-space:nowrap;">$140.00</span>
+          </li>
+        </ul>
+        <div style="border-top:1px solid var(--color-border); padding:20px 24px;">
+          <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:4px;">
+            <span style="font-size:14px; font-weight:600; color:var(--color-foreground);">Subtotal</span>
+            <span style="font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.5px; color:var(--color-foreground);">$422.00</span>
+          </div>
+          <p style="font-size:12px; color:var(--color-foreground-muted); margin:0 0 16px;">Shipping and taxes calculated at checkout.</p>
+          <button class="ex-primary" style="width:100%;">Checkout</button>
+          <div style="margin-top:12px; text-align:center; font-size:13px; color:var(--color-foreground-muted);">or <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Continue Shopping &rarr;</a></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable App Shell
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">App Shell</h2>
+    <p class="ex-intro">Sidebar navigation + breadcrumb topbar + page heading + KPI strip + activity feed. The everyday product surface.</p>
+    <div class="ex-grid-appshell">
+      <aside style="background:var(--color-canvas); border-right:1px solid var(--color-border); padding:20px 12px; display:flex; flex-direction:column; gap:4px;">
+        <div class="ex-mono" style="padding:8px 12px 16px;">/Workspace</div>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">&diams;</span>Overview</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; background:var(--color-foreground); color:var(--color-foreground-on-primary); font-weight:600; text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">&#9636;</span>Operations</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">&#9707;</span>Datasets</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">&#9680;</span>Models</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:10px 12px; font-size:14px; border-radius:4px; color:var(--color-foreground); text-decoration:none;"><span style="width:14px; text-align:center; opacity:0.75;">&#9703;</span>Settings</a>
+      </aside>
+      <div style="display:flex; flex-direction:column;">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 24px; border-bottom:1px solid var(--color-border);">
+          <div style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--color-foreground-muted); font-family:var(--font-mono);">
+            <span>/Operations</span><span style="color:var(--color-foreground-tertiary);">&rsaquo;</span><span style="color:var(--color-foreground);">Decision Logs</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <span style="font-size:13px; color:var(--color-foreground-muted);">M. Reyes</span>
+            <div style="width:32px; height:32px; border-radius:9999px; background:var(--color-avatar-fill); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:600; color:var(--color-foreground);">MR</div>
+          </div>
+        </div>
+        <div style="padding:32px 24px; display:flex; flex-direction:column; gap:32px;">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+              <span style="width:8px; height:8px; background:var(--color-accent); border-radius:9999px;"></span>
+              <span class="ex-mono">Operations &middot; Live</span>
+            </div>
+            <h3 style="font-family:var(--font-display); font-size:clamp(24px, 4.5vw, 34px); font-weight:700; line-height:1.06; letter-spacing:-1px; color:var(--color-foreground); margin:0;">Decision Logs</h3>
+          </div>
+          <div class="ex-grid-kpi">
+            <div style="border:1px solid var(--color-border); border-radius:4px; padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Active operators</div>
+              <div style="font-family:var(--font-display); font-size:32px; font-weight:700; line-height:1; color:var(--color-foreground); letter-spacing:-1px;">2,481</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-success); font-family:var(--font-mono);">+4.1%</div>
+            </div>
+            <div style="border:1px solid var(--color-border); border-radius:4px; padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Decisions / hr</div>
+              <div style="font-family:var(--font-display); font-size:32px; font-weight:700; line-height:1; color:var(--color-foreground); letter-spacing:-1px;">17,209</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-success); font-family:var(--font-mono);">+12.4%</div>
+            </div>
+            <div style="border:1px solid var(--color-border); border-radius:4px; padding:20px; background:var(--color-canvas);">
+              <div class="ex-mono" style="margin-bottom:12px;">Pending reviews</div>
+              <div style="font-family:var(--font-display); font-size:32px; font-weight:700; line-height:1; color:var(--color-foreground); letter-spacing:-1px;">38</div>
+              <div style="margin-top:8px; font-size:12px; color:var(--color-danger); font-family:var(--font-mono);">&minus;9 vs. yesterday</div>
+            </div>
+          </div>
+          <div>
+            <div class="ex-mono" style="margin-bottom:12px;">Recent Activity</div>
+            <ul style="list-style:none; padding:0; margin:0; border:1px solid var(--color-border); border-radius:4px; overflow:hidden;">
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:14px 16px; border-bottom:1px solid var(--color-border); align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.1</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:42</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">M. Reyes</strong> &middot; Promoted dataset v2024.11.21 to production</span>
+              </li>
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:14px 16px; border-bottom:1px solid var(--color-border); align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.2</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:36</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">A. Park</strong> &middot; Approved decision-rule &quot;Northwind Triage&quot;</span>
+              </li>
+              <li style="display:grid; grid-template-columns:60px 80px 1fr; gap:16px; padding:14px 16px; align-items:center;">
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-tertiary);">/0.3</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--color-foreground-muted);">08:29</span>
+                <span style="font-size:14px; color:var(--color-foreground);"><strong style="font-weight:600;">System</strong> &middot; Backfilled 412 records into operations log</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Data Table
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Data Table</h2>
+    <p class="ex-intro">Mono uppercase column headers, alternating canvas rows, status pills wired to semantic color tokens, hairline row dividers, and a footer pager.</p>
+    <div style="border:1px solid var(--color-border); border-radius:4px; overflow:hidden;">
+      <div class="ex-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th class="ex-th" style="width:40px;"><input type="checkbox" aria-label="Select all"></th>
+              <th class="ex-th" style="width:120px;">ID</th>
+              <th class="ex-th" style="width:160px;">Actor</th>
+              <th class="ex-th">Target</th>
+              <th class="ex-th" style="width:140px;">Status</th>
+              <th class="ex-th" style="width:140px;">When &darr;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2401</td>
+              <td class="ex-td">M. Reyes</td>
+              <td class="ex-td">Northwind Triage</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:42 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2400</td>
+              <td class="ex-td">A. Park</td>
+              <td class="ex-td">Atlas Migration v3</td>
+              <td class="ex-td"><span class="ex-status pending">Pending</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:36 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2399</td>
+              <td class="ex-td">L. Okafor</td>
+              <td class="ex-td">Watchlist Sync</td>
+              <td class="ex-td"><span class="ex-status fail">Failed</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:21 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2398</td>
+              <td class="ex-td">S. Chen</td>
+              <td class="ex-td">Supply Chain Index</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:14 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2397</td>
+              <td class="ex-td">System</td>
+              <td class="ex-td">Nightly Backfill</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">07:55 UTC</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-top:1px solid var(--color-border); background:var(--color-canvas-soft);">
+        <span style="font-size:12px; color:var(--color-foreground-muted); font-family:var(--font-mono);">1&ndash;5 of 412</span>
+        <div style="display:flex; gap:4px;">
+          <button class="ex-pager" aria-label="Previous">&lsaquo;</button>
+          <button class="ex-pager active" aria-current="page">1</button>
+          <button class="ex-pager">2</button>
+          <button class="ex-pager">3</button>
+          <button class="ex-pager" aria-label="Next">&rsaquo;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Auth Forms
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Auth Forms</h2>
+    <p class="ex-intro">Centered cards on canvas, full-width primary CTA, mono uppercase field labels, hairline-divided SSO fallback.</p>
+    <div class="ex-grid-auth">
+      <div style="background:var(--color-canvas-soft); border:1px solid var(--color-border); border-radius:6px; padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">/0.1 &middot; Sign in</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:700; line-height:1.05; letter-spacing:-0.6px; color:var(--color-foreground); margin:0 0 24px;">Welcome back.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" class="ex-input">
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-top:4px;">
+            <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--color-foreground);"><input type="checkbox"> Remember me</label>
+            <a href="#" style="font-size:13px; color:var(--color-foreground); text-decoration:underline;">Forgot password?</a>
+          </div>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Sign in</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">New here? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Create an account</a></div>
+      </div>
+      <div style="background:var(--color-canvas-soft); border:1px solid var(--color-border); border-radius:6px; padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">/0.2 &middot; Create account</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:700; line-height:1.05; letter-spacing:-0.6px; color:var(--color-foreground); margin:0 0 24px;">Start building.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Full Name</label>
+            <input type="text" placeholder="Mira Reyes" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" class="ex-input">
+          </div>
+          <label style="display:flex; align-items:flex-start; gap:8px; font-size:13px; color:var(--color-foreground-muted); margin-top:4px; line-height:1.5;">
+            <input type="checkbox" style="margin-top:3px;">
+            <span>I agree to the <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Terms</a> and <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Privacy Policy</a>.</span>
+          </label>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Create account</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">Already have an account? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Sign in</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Modal Dialog
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Modal Dialog</h2>
+    <p class="ex-intro">Centered card over a 50% ink scrim. Hairline divider above the action row, secondary text-button on the left, primary on the right.</p>
+    <div class="ex-frame short">
+      <div style="padding:24px; opacity:0.7;">
+        <div style="height:14px; width:40%; background:var(--color-border); border-radius:2px; margin-bottom:12px;"></div>
+        <div style="height:12px; width:70%; background:var(--color-border); border-radius:2px; margin-bottom:8px;"></div>
+        <div style="height:12px; width:60%; background:var(--color-border); border-radius:2px;"></div>
+      </div>
+      <div class="ex-scrim"></div>
+      <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:24px;">
+        <div class="ex-modal-card">
+          <div style="padding:24px 28px 16px;">
+            <div class="ex-mono" style="margin-bottom:8px;">/0.1 &middot; Confirm</div>
+            <h4 style="font-family:var(--font-display); font-size:22px; font-weight:700; line-height:1.1; letter-spacing:-0.5px; color:var(--color-foreground); margin:0;">Promote dataset to production?</h4>
+          </div>
+          <div style="padding:0 28px 20px; font-size:14px; color:var(--color-foreground-muted); line-height:1.5;">
+            This replaces <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.20</strong> with <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.21</strong> across all downstream consumers. The action is reversible within 24 hours.
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:16px 24px; border-top:1px solid var(--color-border);">
+            <button class="ex-textlink">Cancel</button>
+            <button class="ex-primary" style="height:40px; padding:10px 18px; font-size:14px;">Promote</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Empty State
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Empty State</h2>
+    <p class="ex-intro">Outlined icon tile, decimal index, declarative heading, one-sentence body, and a single primary CTA.</p>
+    <div class="ex-emptystate">
+      <div style="width:56px; height:56px; border:1px solid var(--color-border-soft); border-radius:6px; display:flex; align-items:center; justify-content:center; margin-bottom:20px; color:var(--color-foreground-muted);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="M3.5 9.5h17M8 5.5v13"/></svg>
+      </div>
+      <div class="ex-mono" style="margin-bottom:12px;">/0.1 &middot; No datasets</div>
+      <h4 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:700; line-height:1.05; letter-spacing:-0.6px; color:var(--color-foreground); margin:0 0 8px;">Nothing here yet.</h4>
+      <p style="font-size:15px; color:var(--color-foreground-muted); max-width:380px; margin:0 0 24px; line-height:1.5;">Connect a source or upload a CSV to start ingesting records into this workspace.</p>
+      <button class="ex-primary">Connect a source</button>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- BEGIN HIDDEN — uncomment to re-enable Toast Stack
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Toast Stack</h2>
+    <p class="ex-intro">Four semantic variants &mdash; info, success, warning, error. Each is a 4px card with a 3px accent rule on the leading edge, a mono uppercase tag, and a single dismiss affordance.</p>
+    <div class="ex-grid-toasts">
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-foreground);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-foreground); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">info</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync in progress</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Backfilling 412 records into the operations log.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">&times;</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-success);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-success); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">success</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Dataset promoted</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">v2024.11.21 is live across all downstream consumers.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">&times;</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-warning);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-warning); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">warning</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Approaching quota</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">88% of your monthly compute has been used.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">&times;</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-danger);"></div>
+        <div style="padding:14px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-danger); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">error</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync failed</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Watchlist source returned 502. Retry queued.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">&times;</button>
+      </div>
+    </div>
+  </div>
+</section>
+END HIDDEN -->
+
+<!-- WORDMARK BANNER -->
+<div class="wordmark-banner">
+  <p class="word">together.ai</p>
+</div>
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+
+
+
+
+</div>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

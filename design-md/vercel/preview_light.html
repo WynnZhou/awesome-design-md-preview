@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045) -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Design System Analysis of Vercel</title><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style><style>
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Geist','Inter','Helvetica Neue',Arial,sans-serif;background:#ffffff;color:#171717;-webkit-font-smoothing:antialiased;}
+  .nav{padding:0 48px;height:64px;background:#ffffff;border-bottom:1px solid #ebebeb;position:sticky;top:0;z-index:50;}
+  .nav-brand{font-weight:700;font-size:16px;}
+  .nav-links{list-style:none;display:flex;gap:28px;margin:0;padding:0;font-size:15px;font-weight:500;}
+  .nav-cta{background:#171717;color:#ffffff;border:2px solid #171717;border-radius:100px;padding:8px 22px;font-weight:600;font-size:15px;cursor:pointer;font-family:inherit;}
+  .hero{padding:96px 48px;background:#ffffff;max-width:1440px;margin:0 auto;display:block;}
+  .hero-content{max-width:1200px;}
+  .hero h1{font-family:'Geist','Inter','Helvetica Neue',Arial,sans-serif;font-size:72px;font-weight:600;line-height:1.05;color:#171717;margin:0 0 32px;letter-spacing:-1.3px;}
+  .hero p{font-size:19px;color:#8f8f8f;max-width:840px;margin:0 0 36px;line-height:1.5;}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn-primary{background:#171717;color:#ffffff;border:2px solid #171717;border-radius:100px;height:48px;padding:0 27px;font-size:16px;font-weight:600;cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;justify-content:center;}
+  .btn-secondary{background:#ffffff;color:#171717;border:1px solid #ebebeb;border-radius:100px;height:48px;padding:0 27px;font-size:16px;font-weight:600;cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;justify-content:center;}
+  section{padding:80px 48px;max-width:1440px;margin:0 auto;}
+  .section-eyebrow{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#8f8f8f;margin-bottom:8px;}
+  .section-heading{font-family:'Geist','Inter','Helvetica Neue',Arial,sans-serif;font-size:36px;font-weight:600;letter-spacing:-1px;margin:0 0 32px;}
+  .palette-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;}
+  .swatch{border:1px solid #ebebeb;border-radius:8px;overflow:hidden;}
+  .swatch-fill{height:90px;}
+  .swatch-meta{padding:12px;}
+  .swatch-name{font-weight:600;font-size:14px;margin:0 0 2px;}
+  .swatch-hex{font-family:var(--font-mono,monospace);font-size:12px;color:#8f8f8f;margin:0 0 6px;}
+  .swatch-role{font-size:12px;color:#8f8f8f;margin:0;line-height:1.4;}
+  .type-row{display:grid;grid-template-columns:240px 1fr;gap:24px;padding:18px 0;border-top:1px solid #ebebeb;align-items:baseline;}
+  .type-meta{font-family:var(--font-mono,monospace);font-size:11px;color:#8f8f8f;line-height:1.5;}
+  .button-grid,.card-grid,.form-grid,.elevation-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;}
+  .demo-card{border:1px solid #ebebeb;border-radius:12px;padding:24px;background:#ffffff;}
+  .label{font-size:12px;color:#8f8f8f;display:block;margin-bottom:12px;font-weight:600;}
+  .feature-card{background:#ffffff;border:1px solid #ebebeb;border-radius:16px;padding:24px;}
+  .feature-card h4{margin:0 0 8px;font-size:19px;font-weight:600;}
+  .feature-card p{margin:0;color:#8f8f8f;font-size:14px;line-height:1.5;}
+  .ex-input-demo{width:100%;background:#ffffff;border:1px solid #ebebeb;color:#171717;padding:12px 14px;font-family:inherit;font-size:15px;border-radius:0;}
+  .spacing-row,.radius-row{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-end;}
+  .spacing-box{background:#171717;height:40px;border-radius:6px;}
+  .spacing-label,.radius-label{font-family:var(--font-mono,monospace);font-size:11px;color:#8f8f8f;margin-top:6px;text-align:center;}
+  .radius-box{width:90px;height:90px;background:#ffffff;border:2px solid #171717;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono,monospace);font-size:11px;}
+  .elev-card{background:#ffffff;border:1px solid #ebebeb;border-radius:12px;padding:24px;font-size:13px;color:#8f8f8f;}
+  .elev-1{border:1px solid #ebebeb;}
+  .elev-2{box-shadow:var(--shadow-md);border:none;}
+  .responsive-table{width:100%;border-collapse:collapse;font-size:14px;}
+  .responsive-table th,.responsive-table td{text-align:left;padding:12px 14px;border-bottom:1px solid #ebebeb;}
+  .responsive-table th{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#8f8f8f;}
+  .device-ladder{display:flex;gap:12px;align-items:flex-end;margin-top:24px;flex-wrap:wrap;}
+  .device-box{background:#ffffff;border:1px solid #ebebeb;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#8f8f8f;}
+  .footer{padding:32px 48px;border-top:1px solid #ebebeb;font-size:13px;color:#8f8f8f;text-align:center;}
+  .footer a{color:inherit;}
+  @media (max-width:1024px){section{padding:64px 32px;}.section-heading{font-size:28px;}.nav>:last-child{display:none;}.type-row{grid-template-columns:1fr;gap:8px;}}
+  @media (max-width:720px){.nav{padding:12px 20px;height:auto;min-height:56px;}.nav-links{display:none;}.hero{padding:48px 20px;}.hero h1{font-size:38px;letter-spacing:-1px;}.hero p{font-size:16px;}section{padding:48px 20px;}.section-heading{font-size:24px;}.palette-grid,.button-grid,.card-grid,.form-grid,.elevation-grid{grid-template-columns:1fr !important;gap:16px;}.footer{padding:24px 16px;}}
+  /* getdesign.md nav additions */
+  .nav-left { display: flex; align-items: center; gap: 20px; }
+  .nav-brand-link,.nav-brand-link:link,.nav-brand-link:visited,.nav-brand-link:hover,.nav-brand-link:active { text-decoration: none; color: inherit; }
+  .nav-github,.nav-github:link,.nav-github:visited,.nav-github:hover,.nav-github:active { display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600; color:inherit; text-decoration:none; padding:5px 10px; border:1px solid rgba(128,128,128,0.3); border-radius:6px; opacity:0.75; transition:opacity 200ms ease,border-color 200ms ease; font-family:inherit; line-height:1; white-space:nowrap; }
+  .nav-github:hover { opacity:1; border-color:rgba(128,128,128,0.55); }
+  .nav-github svg { display:block; flex-shrink:0; }
+  /* getdesign.md nav centering */
+  .nav { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; }
+  .nav > .nav-left { justify-self:start; }
+  .nav > .nav-links { justify-self:center; }
+  .nav > :last-child { justify-self:end; }
+  :root{
+    --color-primary:#171717; --color-primary-foreground:#ffffff;
+    --color-foreground:#171717; --color-foreground-muted:#8f8f8f; --color-foreground-tertiary:#9a9aa1;
+    --color-foreground-disabled:#ebebeb; --color-foreground-on-primary:#ffffff;
+    --color-canvas:#ffffff; --color-canvas-soft:#f2f2f2; --color-surface-elevated:#ffffff;
+    --color-border:#ebebeb; --color-border-soft:#ebebeb;
+    --color-accent:#0070f3; --color-accent-soft:rgba(0,112,243,0.10);
+    --color-success:#8f8f8f; --color-warning:#8f8f8f; --color-danger:#ee0000;
+    --color-silver:#9a9aa1; --color-avatar-fill:rgba(128,128,128,0.16); --color-chip-bg:rgba(128,128,128,0.12);
+    --font-display:'Geist','Inter','Helvetica Neue',Arial,sans-serif; --font-sans:'Geist','Inter',sans-serif; --font-mono:'Geist','Inter',sans-serif;
+    --shadow-md:0 8px 24px rgba(0,0,0,0.10); --shadow-lg:0 16px 40px rgba(0,0,0,0.16);
+  }
+</style></head><body>
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>awesome-design-md</a>
+  </div>
+  <ul class="nav-links"><li>Products</li><li>Solutions</li><li>Resources</li><li>Enterprise</li><li>Pricing</li></ul>
+  <button class="nav-cta">Sign Up</button>
+</nav>
+<div class="hero"><div class="hero-content">
+  <h1>Design System Analysis of Vercel</h1>
+  <p>Vercel's Geist system is an exercise in subtraction: near-black ink on a near-white sheet, where a single tone carries every heading, CTA, and 1px border, and the only color allowed is a multi-stop mesh gradient confined to the hero. Geist Sans drives tightly-tracked display type, Geist Mono labels the technical eyebrows, and black pill buttons mark the marketing CTAs.</p>
+  <div class="hero-actions"><button class="btn-primary">Start Deploying</button><button class="btn-secondary">Get a Demo</button></div>
+</div></div>
+<section><span class="section-eyebrow">01 — Foundations</span><h2 class="section-heading">Color Palette</h2><div class="palette-grid"><div class="swatch"><div class="swatch-fill" style="background:#171717;"></div><div class="swatch-meta"><p class="swatch-name">Ink</p><p class="swatch-hex">#171717</p><p class="swatch-role">Primary text, CTA fill, logo, borders' darkest tone.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#4d4d4d;"></div><div class="swatch-meta"><p class="swatch-name">Body</p><p class="swatch-hex">#4d4d4d</p><p class="swatch-role">Standard paragraph &amp; secondary copy, nav links.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#8f8f8f;"></div><div class="swatch-meta"><p class="swatch-name">Mute</p><p class="swatch-hex">#8f8f8f</p><p class="swatch-role">Lower-emphasis captions, logo-strip labels.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#ebebeb;"></div><div class="swatch-meta"><p class="swatch-name">Hairline</p><p class="swatch-hex">#ebebeb</p><p class="swatch-role">The 1px border on every card, input, divider.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#fafafa;"></div><div class="swatch-meta"><p class="swatch-name">Canvas</p><p class="swatch-hex">#fafafa</p><p class="swatch-role">Near-white page background.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#ffffff;"></div><div class="swatch-meta"><p class="swatch-name">Elevated</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Pure white for cards, buttons, inputs.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#0070f3;"></div><div class="swatch-meta"><p class="swatch-name">Vercel Blue</p><p class="swatch-hex">#0070f3</p><p class="swatch-role">Links, focus, pricing highlights.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#7928ca;"></div><div class="swatch-meta"><p class="swatch-name">Violet</p><p class="swatch-hex">#7928ca</p><p class="swatch-role">Gradient stop / illustration accent.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#50e3c2;"></div><div class="swatch-meta"><p class="swatch-name">Cyan</p><p class="swatch-hex">#50e3c2</p><p class="swatch-role">Gradient stop / illustration accent.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#ff0080;"></div><div class="swatch-meta"><p class="swatch-name">Pink</p><p class="swatch-hex">#ff0080</p><p class="swatch-role">Gradient stop / illustration accent.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#ee0000;"></div><div class="swatch-meta"><p class="swatch-name">Error</p><p class="swatch-hex">#ee0000</p><p class="swatch-role">Validation / destructive.</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#f5a623;"></div><div class="swatch-meta"><p class="swatch-name">Warning</p><p class="swatch-hex">#f5a623</p><p class="swatch-role">Caution states.</p></div></div></div></section>
+<section><span class="section-eyebrow">02 — Foundations</span><h2 class="section-heading">Typography</h2><p style="color:#8f8f8f;margin:-16px 0 28px;max-width:720px;">Geist Sans for UI and tightly-tracked display type, Geist Mono for code and uppercase section eyebrows (Inter shown as substitute). Hierarchy is built from size + negative tracking; weight is binary — 600 headings, 500 buttons, 400 body.</p><div class="type-row"><div class="type-meta">display-xl<br>48px · 600 · lh 48px · ls -2.4px</div><div style="font-family:&#39;Geist&#39;,&#39;Inter&#39;,&#39;Helvetica Neue&#39;,Arial,sans-serif;font-size:64px;font-weight:600;line-height:48px;letter-spacing:-2.4px;color:#171717;">Build and deploy on the AI Cloud.</div></div><div class="type-row"><div class="type-meta">heading-lg<br>32px · 600 · lh 40px · ls -1.28px</div><div style="font-family:&#39;Geist&#39;,&#39;Inter&#39;,&#39;Helvetica Neue&#39;,Arial,sans-serif;font-size:32px;font-weight:600;line-height:40px;letter-spacing:-1.28px;color:#171717;">Your app, delivered.</div></div><div class="type-row"><div class="type-meta">heading-md<br>20px · 600 · lh 28px · ls -0.4px</div><div style="font-family:&#39;Geist&#39;,&#39;Inter&#39;,&#39;Helvetica Neue&#39;,Arial,sans-serif;font-size:20px;font-weight:600;line-height:28px;letter-spacing:-0.4px;color:#171717;">Composable Commerce</div></div><div class="type-row"><div class="type-meta">label-sm<br>14px · 500 · lh 20px · ls -0.28px</div><div style="font-family:&#39;Geist&#39;,&#39;Inter&#39;,sans-serif;font-size:14px;font-weight:500;line-height:20px;letter-spacing:-0.28px;color:#171717;">Frameworks</div></div><div class="type-row"><div class="type-meta">mono-eyebrow<br>12px · 500 · lh 16px · ls 0</div><div style="font-family:&#39;Geist Mono&#39;,ui-monospace,Menlo,monospace;font-size:12px;font-weight:500;line-height:16px;letter-spacing:0;color:#171717;text-transform:uppercase;">DEPLOY · PREVIEW · SHIP</div></div><div class="type-row"><div class="type-meta">body-lg<br>16px · 400 · lh 24px · ls 0</div><div style="font-family:&#39;Geist&#39;,&#39;Inter&#39;,sans-serif;font-size:16px;font-weight:400;line-height:24px;letter-spacing:0;color:#171717;">Deploy your first app in seconds with zero configuration.</div></div><div class="type-row"><div class="type-meta">body-md<br>14px · 400 · lh 20px · ls 0</div><div style="font-family:&#39;Geist&#39;,&#39;Inter&#39;,sans-serif;font-size:14px;font-weight:400;line-height:20px;letter-spacing:0;color:#171717;">Vercel provides the developer tools and cloud infrastructure to build, scale, and secure a faster, more personalized web.</div></div><div class="type-row"><div class="type-meta">body-sm<br>12px · 400 · lh 16px · ls 0</div><div style="font-family:&#39;Geist&#39;,&#39;Inter&#39;,sans-serif;font-size:12px;font-weight:400;line-height:16px;letter-spacing:0;color:#171717;">Trusted by the best frontend teams.</div></div><div class="type-row"><div class="type-meta">code<br>14px · 400 · lh 20px · ls 0</div><div style="font-family:&#39;Geist Mono&#39;,ui-monospace,Menlo,monospace;font-size:14px;font-weight:400;line-height:20px;letter-spacing:0;color:#171717;">vercel deploy --prod</div></div></section>
+<section><span class="section-eyebrow">03 — Components</span><h2 class="section-heading">Button Variants</h2><div class="button-grid"><div class="demo-card"><span class="label">button-primary · black pill, 100px</span><button class="btn-primary" style="height:40px;border-radius:100px;padding:0 18px;">Start Deploying</button><p style="font-size:12px;color:#8f8f8f;margin:12px 0 0;">The signature marketing CTA — fully-rounded ink pill, white label.</p></div><div class="demo-card"><span class="label">button-secondary · white pill</span><button class="btn-secondary" style="height:40px;border-radius:100px;padding:0 18px;">Get a Demo</button><p style="font-size:12px;color:#8f8f8f;margin:12px 0 0;">Inverted pill — white fill, ink label, hairline edge.</p></div><div class="demo-card"><span class="label">button-primary-sm · 6px square</span><button class="btn-primary" style="height:32px;border-radius:6px;padding:0 12px;font-size:14px;">Sign Up</button><p style="font-size:12px;color:#8f8f8f;margin:12px 0 0;">The nav / app CTA — tight 6px square, not a pill.</p></div><div class="demo-card"><span class="label">button-category-pill · 64px</span><button class="btn-secondary" style="height:32px;border-radius:64px;padding:0 16px;font-size:14px;border-color:#ebebeb;">AI Apps</button><p style="font-size:12px;color:#8f8f8f;margin:12px 0 0;">Category-tab pill.</p></div><div class="demo-card"><span class="label">link-default</span><div style="display:flex;gap:16px;font-size:15px;font-weight:500;"><a href="#" style="color:#0070f3;">Documentation</a><a href="#" style="color:#0070f3;text-decoration:underline;">Pricing</a></div></div></div></section>
+<section><span class="section-eyebrow">04 — Components</span><h2 class="section-heading">Cards &amp; Surfaces</h2><div class="card-grid"><div class="feature-card"><h4>feature-card</h4><p>White surface, 1px hairline, 12px corners. The workhorse grid tile — often holding a node-graph or code illustration.</p></div><div class="feature-card" style="box-shadow:var(--shadow-md);"><h4>feature-card-elevated</h4><p>Same chrome lifted on a finely-layered, very-low-alpha shadow — menus and featured tiles.</p></div><div class="feature-card" style="background:#171717;color:#ffffff;border:none;"><h4 style="color:#ffffff;">ink surface</h4><p style="color:#ffffff;opacity:0.7;">The near-black ink used for the CTA band and inverted featured tiers.</p></div></div></section>
+<section><span class="section-eyebrow">05 — Components</span><h2 class="section-heading">Form Elements</h2><div class="form-grid">
+  <div class="demo-card"><span class="label">text-input · 6px</span><input class="ex-input-demo" style="border-radius:6px;" placeholder="you@example.com"><p style="font-size:12px;color:#8f8f8f;margin:12px 0 0;">White field, 1px hairline, tight 6px corners.</p></div>
+  <div class="demo-card"><span class="label">code-block · Geist Mono</span><textarea class="ex-input-demo" rows="3" style="border-radius:12px;font-family:&#39;Geist Mono&#39;,ui-monospace,Menlo,monospace;" placeholder="vercel deploy --prod"></textarea></div>
+</div></section>
+<section><span class="section-eyebrow">06 — Foundations</span><h2 class="section-heading">Spacing Scale</h2><p style="color:#8f8f8f;margin:-16px 0 28px;">4px base unit. Card interiors sit at lg–xl (24–32px); section bands run 4xl (96px) up to section (128px).</p><div class="spacing-row"><div><div class="spacing-box" style="width:4px;"></div><div class="spacing-label">xxs · 4px</div></div><div><div class="spacing-box" style="width:8px;"></div><div class="spacing-label">xs · 8px</div></div><div><div class="spacing-box" style="width:12px;"></div><div class="spacing-label">sm · 12px</div></div><div><div class="spacing-box" style="width:16px;"></div><div class="spacing-label">md · 16px</div></div><div><div class="spacing-box" style="width:24px;"></div><div class="spacing-label">lg · 24px</div></div><div><div class="spacing-box" style="width:32px;"></div><div class="spacing-label">xl · 32px</div></div><div><div class="spacing-box" style="width:40px;"></div><div class="spacing-label">2xl · 40px</div></div><div><div class="spacing-box" style="width:64px;"></div><div class="spacing-label">3xl · 64px</div></div><div><div class="spacing-box" style="width:96px;"></div><div class="spacing-label">4xl · 96px</div></div><div><div class="spacing-box" style="width:128px;"></div><div class="spacing-label">section · 128px</div></div></div></section>
+<section><span class="section-eyebrow">07 — Foundations</span><h2 class="section-heading">Border Radius</h2><p style="color:#8f8f8f;margin:-16px 0 28px;">Bimodal: tight 6px squares for functional chrome (nav buttons, inputs), full pills (100px) for marketing CTAs and 64px for category tabs, with 12–16px on content cards in between.</p><div class="radius-row"><div><div class="radius-box" style="border-radius:0px;">0px</div><div class="radius-label">none · 0px</div></div><div><div class="radius-box" style="border-radius:6px;">6px</div><div class="radius-label">sm · 6px</div></div><div><div class="radius-box" style="border-radius:12px;">12px</div><div class="radius-label">md · 12px</div></div><div><div class="radius-box" style="border-radius:16px;">16px</div><div class="radius-label">lg · 16px</div></div><div><div class="radius-box" style="border-radius:32px;">64</div><div class="radius-label">pill-category · 64px</div></div><div><div class="radius-box" style="border-radius:45px;">100</div><div class="radius-label">pill · 100px</div></div><div><div class="radius-box" style="border-radius:45px;">∞</div><div class="radius-label">full · 9999px</div></div></div></section>
+<section><span class="section-eyebrow">08 — Foundations</span><h2 class="section-heading">Elevation &amp; Depth</h2><div class="elevation-grid"><div class="elev-card elev-1">Level 0 — flat, 1px hairline only. Default feature cards, inputs, dividers.</div><div class="elev-card elev-2">Level 2 — finely-layered, very-low-alpha shadow stack (never one heavy drop). Menus, modals, tooltips.</div></div></section>
+<section><span class="section-eyebrow">09 — Responsive</span><h2 class="section-heading">Responsive Behavior</h2>
+  <table class="responsive-table"><thead><tr><th>Name</th><th>Width</th><th>Key changes</th></tr></thead><tbody>
+  <tr><td>Mobile</td><td>&lt; 768px</td><td>Single column; nav → hamburger; CTAs + pricing tiers stack full-width</td></tr>
+  <tr><td>Tablet</td><td>768–1023px</td><td>Grids collapse toward 2-up / 1-up; nav condenses</td></tr>
+  <tr><td>Laptop</td><td>1024–1279px</td><td>Tightened gutters; 3-col grids retained</td></tr>
+  <tr><td>Desktop</td><td>≥ 1280px</td><td>Full multi-column grids; centred ~1200px column</td></tr></tbody></table>
+  <div class="device-ladder">
+    <div class="device-box" style="width:60px;height:110px;">375</div>
+    <div class="device-box" style="width:120px;height:110px;">768</div>
+    <div class="device-box" style="width:170px;height:110px;">1024</div>
+    <div class="device-box" style="width:220px;height:110px;">1280</div>
+    <div class="device-box" style="width:280px;height:110px;">1440</div>
+  </div>
+  <p style="color:#8f8f8f;margin-top:24px;font-size:14px;"><strong style="color:#171717;">Touch targets:</strong> pill CTAs and nav buttons clear 44×44 WCAG-AAA via line-height-driven height. <strong style="color:#171717;">Collapsing:</strong> nav collapses to a menu; hairline-card grids reflow to one column; code-editor and node-graph illustrations scale or scroll; pricing tiers stack.</p>
+</section>
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+</body></html>

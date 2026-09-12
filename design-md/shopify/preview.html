@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Design System Analysis of Shopifi</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #fbfbf5; } html[data-theme="dark"] { background: #000000; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<div class="theme-layer" data-when="light">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#palette">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#cards">Cards</a></li>
+    <li><a href="#responsive">Responsive</a></li>
+  </ul>
+  <button class="nav-cta">Start free trial</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of Shopifi</h1>
+    <p>An inspired interpretation of Shopifi's design language — a cinematic commerce platform that runs two parallel design tracks: near-black canvases with thin-weight Neue Haas Grotesk display, and cream-mint transactional surfaces with the same pill button vocabulary in inverse polarity.</p>
+    <div class="hero-actions">
+      <button class="btn btn-outline-dark">Start free trial</button>
+      <button class="btn btn-outline-dark">Talk to sales</button>
+    </div>
+  </div>
+</header>
+
+<section id="palette">
+  <p class="section-eyebrow">01 — Colors</p>
+  <h2 class="section-heading">Color Palette</h2>
+  <p class="section-sub">A near-monochrome system with mint and pistachio greens reserved for the transactional track. Black is canonical; greens signal commerce.</p>
+
+  <h3 class="subhead">Brand &amp; Accent</h3>
+  <div class="palette-grid">
+    <div class="swatch"><div class="chip" style="background:#c1fbd4"></div><div class="meta"><div class="name">Aloe</div><div class="hex">#c1fbd4</div><div class="role">Featured pricing tier and growth accent.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#d4f9e0"></div><div class="meta"><div class="name">Pistachio</div><div class="hex">#d4f9e0</div><div class="role">Wide section band on the light track.</div></div></div>
+  </div>
+
+  <h3 class="subhead">Surface</h3>
+  <div class="palette-grid">
+    <div class="swatch"><div class="chip" style="background:#000000"></div><div class="meta"><div class="name">Canvas Night</div><div class="hex">#000000</div><div class="role">Cinematic hero, feature pages, footer.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#0a0a0a"></div><div class="meta"><div class="name">Night Elevated</div><div class="hex">#0a0a0a</div><div class="role">Cards on cinematic surfaces.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#1e2c31"></div><div class="meta"><div class="name">Surface Elev Dark</div><div class="hex">#1e2c31</div><div class="role">Teal-shifted dark surface accent.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#ffffff;border:1px solid #e4e4e7"></div><div class="meta"><div class="name">Canvas Light</div><div class="hex">#ffffff</div><div class="role">Pricing, signup, comparison.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#fbfbf5"></div><div class="meta"><div class="name">Canvas Cream</div><div class="hex">#fbfbf5</div><div class="role">Editorial off-white on transactional.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#e4e4e7"></div><div class="meta"><div class="name">Hairline Light</div><div class="hex">#e4e4e7</div><div class="role">Card borders, table dividers.</div></div></div>
+  </div>
+
+  <h3 class="subhead">Shade Ladder</h3>
+  <div class="palette-grid">
+    <div class="swatch"><div class="chip" style="background:#d4d4d8"></div><div class="meta"><div class="name">Shade 30</div><div class="hex">#d4d4d8</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#a1a1aa"></div><div class="meta"><div class="name">Shade 40</div><div class="hex">#a1a1aa</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#71717a"></div><div class="meta"><div class="name">Shade 50</div><div class="hex">#71717a</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#52525b"></div><div class="meta"><div class="name">Shade 60</div><div class="hex">#52525b</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#3f3f46"></div><div class="meta"><div class="name">Shade 70</div><div class="hex">#3f3f46</div></div></div>
+  </div>
+</section>
+
+<section id="typography">
+  <p class="section-eyebrow">02 — Typography</p>
+  <h2 class="section-heading">Typography Scale</h2>
+  <p class="section-sub">Neue Haas Grotesk Display at thin weights (330) for every display tier. Inter Variable at 420–550 for UI body. ss03 stylistic set enabled across both.</p>
+  <div class="type-row"><div class="type-meta"><strong>display-xxl</strong>96 / 330 / 1.0 / 2.4px</div><div style="font-family:var(--font-display);font-size:96px;font-weight:300;line-height:1.0;letter-spacing:2.4px">Build it</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>70 / 330 / 1.0</div><div style="font-family:var(--font-display);font-size:70px;font-weight:300;line-height:1.0">Sell more places</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>55 / 330 / 1.16</div><div style="font-family:var(--font-display);font-size:55px;font-weight:300;line-height:1.16">Pricing plans for every stage</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>48 / 330 / 1.14</div><div style="font-family:var(--font-display);font-size:48px;font-weight:300;line-height:1.14">$39 / month</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-xl</strong>28 / 500 / 1.28 / 0.42px</div><div style="font-family:var(--font-display);font-size:28px;font-weight:500;letter-spacing:0.42px">Tier name</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-md</strong>20 / 500 / 1.4 / 0.3px</div><div style="font-family:var(--font-display);font-size:20px;font-weight:500;letter-spacing:0.3px">Section sub-heading</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-lg</strong>18 / 550 / 1.56</div><div style="font-family:var(--font-body);font-size:18px;font-weight:550;line-height:1.56">Marketing body lead — moderately weighted Inter for readability without losing presence.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>16 / 420 / 1.5</div><div style="font-family:var(--font-body);font-size:16px;font-weight:420;line-height:1.5">Default UI body and pill-button labels. Inter at 420 weight reads quietly without disappearing.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption</strong>14 / 500 / 1.49 / 0.28px</div><div style="font-family:var(--font-body);font-size:14px;font-weight:500;letter-spacing:0.28px">Helper copy, footnotes, fine print.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>eyebrow-cap</strong>12 / 400 / 1.2 / 0.72px</div><div style="font-family:var(--font-body);font-size:12px;letter-spacing:0.72px;text-transform:uppercase">Section eyebrow</div></div>
+</section>
+
+<section id="buttons">
+  <p class="section-eyebrow">03 — Components</p>
+  <h2 class="section-heading">Button Variants</h2>
+  <p class="section-sub">Pill geometry for every variant. Polarity flips per canvas: filled black on light, white-stroked outline on dark, mint-fill for the featured tier.</p>
+  <div class="button-grid">
+    <div class="button-cell"><span class="label">button-primary-pill · light</span><button class="btn btn-primary">Start free trial</button></div>
+    <div class="button-cell"><span class="label">button-outline-on-light</span><button class="btn btn-outline-light">Sign in</button></div>
+    <div class="button-cell"><span class="label">button-aloe-pill · featured</span><button class="btn btn-aloe">Choose plan</button></div>
+    <div class="button-cell dark"><span class="label">button-outline-on-dark · cinematic</span><button class="btn btn-outline-dark">Start free trial</button></div>
+  </div>
+</section>
+
+<section id="cards">
+  <p class="section-eyebrow">04 — Components</p>
+  <h2 class="section-heading">Card Examples</h2>
+  <p class="section-sub">Four pricing tiers + a featured aloe tier. Cinematic feature card and pistachio band carry the brand's two surface-treatment moods.</p>
+  <div class="card-grid">
+    <div class="card pricing-light"><h3>Basic</h3><div class="price">$19</div><p>Per month, billed annually.</p><ul><li>Online store</li><li>2 staff accounts</li><li>Basic reports</li></ul><button class="btn btn-primary">Choose Basic</button></div>
+    <div class="card pricing-light"><h3>Shopify</h3><div class="price">$49</div><p>Best for growing businesses.</p><ul><li>Online store</li><li>5 staff accounts</li><li>Professional reports</li></ul><button class="btn btn-primary">Choose Shopify</button></div>
+    <div class="card pricing-featured"><h3>Advanced</h3><div class="price">$299</div><p>Scale with custom analytics.</p><ul><li>Online store</li><li>15 staff accounts</li><li>Custom reports</li></ul><button class="btn btn-primary">Choose Advanced</button></div>
+  </div>
+  <div class="card-grid" style="margin-top:32px">
+    <div class="card feature-cinematic"><h3 style="color:#fff">Sell anywhere</h3><p style="color:rgba(255,255,255,0.85)">Online, in person, on social — one platform behind every checkout.</p></div>
+    <div class="card pistachio-band"><h3>Built-in payments</h3><p>Lower transaction fees with the platform's native payment rails.</p></div>
+  </div>
+</section>
+
+<section id="forms">
+  <p class="section-eyebrow">05 — Components</p>
+  <h2 class="section-heading">Form Elements</h2>
+  <p class="section-sub">8px-radius inputs sitting on white. Focus replaces the hairline border with the ink color — no colored ring.</p>
+  <div class="form-grid">
+    <div class="field"><label>Email address</label><input class="input" type="email" placeholder="you@example.com"></div>
+    <div class="field"><label>Store name</label><input class="input" placeholder="My Store"></div>
+    <div class="field"><label>Country</label><select class="input"><option>United States</option><option>United Kingdom</option><option>Canada</option></select></div>
+    <div class="field"><label>Tell us about your business</label><textarea class="input" rows="3"></textarea></div>
+  </div>
+</section>
+
+<section id="signature">
+  <p class="section-eyebrow">06 — Signature Components</p>
+  <h2 class="section-heading">Signature Components</h2>
+  <p class="section-sub">Pill tags, cinematic photo frames, and the layered tiny-shadow card halo — the brand's distinguishing visual moves.</p>
+  <div class="signature-grid">
+    <div class="sig-card"><h4>pill-tag-mint</h4><span class="pill mint">New</span> <span class="pill mint">Featured</span><p style="margin-top:12px">Aloe-fill pill for category labeling on the light track.</p></div>
+    <div class="sig-card"><h4>pill-tag-shade</h4><span class="pill shade">Beta</span> <span class="pill shade">Coming Soon</span><p style="margin-top:12px">Neutral shade pill for status / availability.</p></div>
+    <div class="sig-card"><h4>card-photo-frame</h4><div style="background:#0a0a0a;color:#fff;height:120px;border-radius:20px 20px 0 0;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:300;font-size:18px;letter-spacing:0.3px">Photography Frame</div><p style="margin-top:12px">Full-bleed cinematic photo container; top-only rounded corners on some asymmetric cards.</p></div>
+    <div class="sig-card"><h4>Stacked tiny shadows</h4><div style="height:80px;background:#fff;border-radius:12px;box-shadow:0 8px 8px rgba(0,0,0,0.06),0 4px 4px rgba(0,0,0,0.06),0 2px 2px rgba(0,0,0,0.06),0 0 0 1px rgba(0,0,0,0.05);margin:8px 0"></div><p>Layered 4-stop tiny shadows produce a soft paper halo on light pricing cards.</p></div>
+  </div>
+</section>
+
+<section id="spacing">
+  <p class="section-eyebrow">07 — Foundations</p>
+  <h2 class="section-heading">Spacing Scale</h2>
+  <p class="section-sub">8px base with denser sub-units for editorial fine work; 64px section gap on transactional surfaces, 128–192px on cinematic.</p>
+  <div class="spacing-row">
+    <div class="stack"><div class="bar" style="width:2px"></div><div class="lbl">xxs · 2px</div></div>
+    <div class="stack"><div class="bar" style="width:4px"></div><div class="lbl">xs · 4px</div></div>
+    <div class="stack"><div class="bar" style="width:8px"></div><div class="lbl">sm · 8px</div></div>
+    <div class="stack"><div class="bar" style="width:12px"></div><div class="lbl">md · 12px</div></div>
+    <div class="stack"><div class="bar" style="width:16px"></div><div class="lbl">lg · 16px</div></div>
+    <div class="stack"><div class="bar" style="width:24px"></div><div class="lbl">xl · 24px</div></div>
+    <div class="stack"><div class="bar" style="width:32px"></div><div class="lbl">xxl · 32px</div></div>
+    <div class="stack"><div class="bar" style="width:64px"></div><div class="lbl">huge · 64px</div></div>
+  </div>
+</section>
+
+<section id="radius">
+  <p class="section-eyebrow">08 — Foundations</p>
+  <h2 class="section-heading">Border Radius Scale</h2>
+  <p class="section-sub">Pill is canonical for buttons (9999px). Cards land at 12px, photo frames at 20px (often top-only), inputs at 8px.</p>
+  <div class="radius-row">
+    <div class="stack"><div class="box" style="border-radius:4px"></div><div class="lbl">xs · 4px</div></div>
+    <div class="stack"><div class="box" style="border-radius:5px"></div><div class="lbl">sm · 5px</div></div>
+    <div class="stack"><div class="box" style="border-radius:8px"></div><div class="lbl">md · 8px</div></div>
+    <div class="stack"><div class="box" style="border-radius:12px"></div><div class="lbl">lg · 12px</div></div>
+    <div class="stack"><div class="box" style="border-radius:20px 20px 0 0"></div><div class="lbl">xl · 20px (top)</div></div>
+    <div class="stack"><div class="box" style="border-radius:9999px"></div><div class="lbl">pill · 9999px</div></div>
+  </div>
+</section>
+
+<section id="elevation">
+  <p class="section-eyebrow">09 — Foundations</p>
+  <h2 class="section-heading">Elevation &amp; Depth</h2>
+  <p class="section-sub">Cinematic cards use subtle inset top-edge highlights; light cards use stacked tiny shadows; modals use a single deep drop.</p>
+  <div class="elevation-grid" style="background:#fafafa">
+    <div class="elev-cell elev-0"><span class="lbl">L0 · Flat</span></div>
+    <div class="elev-cell elev-1"><span class="lbl" style="color:rgba(255,255,255,0.7)">L1 · Inset highlight</span></div>
+    <div class="elev-cell elev-2"><span class="lbl" style="color:rgba(255,255,255,0.7)">L2 · Dark elevated</span></div>
+    <div class="elev-cell elev-3"><span class="lbl">L3 · Stacked tiny</span></div>
+    <div class="elev-cell elev-4"><span class="lbl">L4 · Modal drop</span></div>
+  </div>
+</section>
+
+<section id="responsive">
+  <p class="section-eyebrow">10 — Responsive</p>
+  <h2 class="section-heading">Responsive Behavior</h2>
+  <p class="section-sub">Display sizes scale through 96 → 70 → 55 → 48 → 36px; pricing tiers stair from 4-up to 1-up; cinematic photography crops to focal subject on mobile.</p>
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Wide</td><td>≥ 1440px</td><td>Cinematic edge-bleeding photography; pricing 4-up</td></tr>
+      <tr><td>Desktop</td><td>1024–1440px</td><td>Default content max-width; pricing 4-up tightens</td></tr>
+      <tr><td>Tablet</td><td>768–1023px</td><td>Pricing 2-up; cinematic photography crops</td></tr>
+      <tr><td>Mobile</td><td>&lt; 768px</td><td>Pricing 1-up; hamburger nav; display-xxl drops to 56–64px</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="stack"><div class="device" style="width:60px;height:96px"></div><div class="lbl">375</div></div>
+    <div class="stack"><div class="device" style="width:120px;height:144px"></div><div class="lbl">768</div></div>
+    <div class="stack"><div class="device" style="width:160px;height:160px"></div><div class="lbl">1024</div></div>
+    <div class="stack"><div class="device" style="width:240px;height:160px"></div><div class="lbl">1440</div></div>
+  </div>
+  <h3 class="subhead">Touch Targets</h3>
+  <p>Pill buttons hit ≥44×44px on mobile. Form fields stay at the 44px minimum. WCAG AAA compliant.</p>
+  <h3 class="subhead">Collapsing Strategy</h3>
+  <ul style="line-height:1.8;font-weight:500">
+    <li>Display sizes scale through the breakpoint stair: 96 → 70 → 55 → 48 → 36px.</li>
+    <li>Cinematic photography re-crops to focal subject at smaller widths.</li>
+    <li>Pricing tiers stair-step 4-up → 2-up → 1-up; aloe featured tier always distinguished.</li>
+    <li>Top nav collapses to hamburger below 768px; menu inherits canvas polarity.</li>
+  </ul>
+</section>
+
+<!-- ============================== EXAMPLES (kit-mirror) ==============================
+ *
+ * 9 product-UI patterns themed with the brand's tokens via the alias bridge in
+ * preview-examples-block.css.
+ *
+ * Paste this verbatim into preview.html and preview-dark.html, immediately before
+ * the closing <footer>. Both light and dark variants use IDENTICAL HTML — only the
+ * `:root { ... }` alias map differs (see preview-design.md).
+ *
+ * Hardcoded radii (4px / 6px / 9999px) intentionally inherited from the
+ * /generate-kit base template. Hardcoded scrim opacity (rgba 26,24,22,0.5) is the
+ * kit default; do not tokenize without parallel update.
+ * ============================================================================ -->
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Pricing Tiers</h2>
+    <p class="ex-intro">Three-up plan grid with the middle tier polarity-flipped. Mono uppercase tier name, display numeral price, hairline-divided feature list.</p>
+    <div class="ex-grid-pricing">
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">/0.1 · Starter</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$9</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For individuals getting started.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Core features</li>
+          <li><span class="ex-bullet"></span>Up to 3 projects</li>
+          <li><span class="ex-bullet"></span>Community support</li>
+        </ul>
+        <button class="ex-tier-cta ink">Get started</button>
+      </div>
+      <div class="ex-tier-card dark">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span class="ex-mono" style="color:rgba(255,255,255,0.55);">/0.2 · Pro</span>
+          <span style="font-family:var(--font-mono); font-size:10px; letter-spacing:0.5px; text-transform:uppercase; color:var(--color-accent); display:inline-flex; align-items:center; gap:6px;"><span style="width:6px; height:6px; background:var(--color-accent); border-radius:9999px;"></span>Most popular</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$29</span><span style="font-family:var(--font-mono); font-size:12px; color:rgba(255,255,255,0.55);">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:rgba(255,255,255,0.72); margin:0;">For teams ready to ship.</p>
+        <ul class="ex-features dark">
+          <li><span class="ex-bullet"></span>Everything in Starter</li>
+          <li><span class="ex-bullet"></span>Unlimited projects</li>
+          <li><span class="ex-bullet"></span>Email support</li>
+          <li><span class="ex-bullet"></span>Advanced analytics</li>
+        </ul>
+        <button class="ex-tier-cta invert">Start free trial</button>
+      </div>
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">/0.3 · Team</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$99</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For organizations operating at scale.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Everything in Pro</li>
+          <li><span class="ex-bullet"></span>SSO + audit log</li>
+          <li><span class="ex-bullet"></span>Priority support</li>
+          <li><span class="ex-bullet"></span>SLA &amp; onboarding</li>
+        </ul>
+        <button class="ex-tier-cta ink">Talk to sales</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+
+
+
+
+</div>
+<div class="theme-layer" data-when="dark">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#palette">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#cards">Cards</a></li>
+    <li><a href="#responsive">Responsive</a></li>
+  </ul>
+  <button class="nav-cta">Start free trial</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of Shopifi</h1>
+    <p>An inspired interpretation of Shopifi's design language — a cinematic commerce platform that runs two parallel design tracks: near-black canvases with thin-weight Neue Haas Grotesk display, and cream-mint transactional surfaces with the same pill button vocabulary in inverse polarity.</p>
+    <div class="hero-actions">
+      <button class="btn btn-outline-dark">Start free trial</button>
+      <button class="btn btn-outline-dark">Talk to sales</button>
+    </div>
+  </div>
+</header>
+
+<section data-sec="palette">
+  <p class="section-eyebrow">01 — Colors</p>
+  <h2 class="section-heading">Color Palette</h2>
+  <p class="section-sub">A near-monochrome system with mint and pistachio greens reserved for the transactional track. Black is canonical; greens signal commerce.</p>
+
+  <h3 class="subhead">Brand &amp; Accent</h3>
+  <div class="palette-grid">
+    <div class="swatch"><div class="chip" style="background:#c1fbd4"></div><div class="meta"><div class="name">Aloe</div><div class="hex">#c1fbd4</div><div class="role">Featured pricing tier and growth accent.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#d4f9e0"></div><div class="meta"><div class="name">Pistachio</div><div class="hex">#d4f9e0</div><div class="role">Wide section band on the light track.</div></div></div>
+  </div>
+
+  <h3 class="subhead">Surface</h3>
+  <div class="palette-grid">
+    <div class="swatch"><div class="chip" style="background:#000000"></div><div class="meta"><div class="name">Canvas Night</div><div class="hex">#000000</div><div class="role">Cinematic hero, feature pages, footer.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#0a0a0a"></div><div class="meta"><div class="name">Night Elevated</div><div class="hex">#0a0a0a</div><div class="role">Cards on cinematic surfaces.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#1e2c31"></div><div class="meta"><div class="name">Surface Elev Dark</div><div class="hex">#1e2c31</div><div class="role">Teal-shifted dark surface accent.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#ffffff;border:1px solid #1e2c31"></div><div class="meta"><div class="name">Canvas Light</div><div class="hex">#ffffff</div><div class="role">Pricing, signup, comparison.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#fbfbf5"></div><div class="meta"><div class="name">Canvas Cream</div><div class="hex">#fbfbf5</div><div class="role">Editorial off-white on transactional.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#e4e4e7"></div><div class="meta"><div class="name">Hairline Light</div><div class="hex">#e4e4e7</div><div class="role">Card borders, table dividers.</div></div></div>
+  </div>
+
+  <h3 class="subhead">Shade Ladder</h3>
+  <div class="palette-grid">
+    <div class="swatch"><div class="chip" style="background:#d4d4d8"></div><div class="meta"><div class="name">Shade 30</div><div class="hex">#d4d4d8</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#a1a1aa"></div><div class="meta"><div class="name">Shade 40</div><div class="hex">#a1a1aa</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#71717a"></div><div class="meta"><div class="name">Shade 50</div><div class="hex">#71717a</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#52525b"></div><div class="meta"><div class="name">Shade 60</div><div class="hex">#52525b</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#3f3f46"></div><div class="meta"><div class="name">Shade 70</div><div class="hex">#3f3f46</div></div></div>
+  </div>
+</section>
+
+<section data-sec="typography">
+  <p class="section-eyebrow">02 — Typography</p>
+  <h2 class="section-heading">Typography Scale</h2>
+  <p class="section-sub">Neue Haas Grotesk Display at thin weights (330) for every display tier. Inter Variable at 420–550 for UI body. ss03 stylistic set enabled across both.</p>
+  <div class="type-row"><div class="type-meta"><strong>display-xxl</strong>96 / 330 / 1.0 / 2.4px</div><div style="font-family:var(--font-display);font-size:96px;font-weight:300;line-height:1.0;letter-spacing:2.4px">Build it</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>70 / 330 / 1.0</div><div style="font-family:var(--font-display);font-size:70px;font-weight:300;line-height:1.0">Sell more places</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>55 / 330 / 1.16</div><div style="font-family:var(--font-display);font-size:55px;font-weight:300;line-height:1.16">Pricing plans for every stage</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>48 / 330 / 1.14</div><div style="font-family:var(--font-display);font-size:48px;font-weight:300;line-height:1.14">$39 / month</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-xl</strong>28 / 500 / 1.28 / 0.42px</div><div style="font-family:var(--font-display);font-size:28px;font-weight:500;letter-spacing:0.42px">Tier name</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-md</strong>20 / 500 / 1.4 / 0.3px</div><div style="font-family:var(--font-display);font-size:20px;font-weight:500;letter-spacing:0.3px">Section sub-heading</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-lg</strong>18 / 550 / 1.56</div><div style="font-family:var(--font-body);font-size:18px;font-weight:550;line-height:1.56">Marketing body lead — moderately weighted Inter for readability without losing presence.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>16 / 420 / 1.5</div><div style="font-family:var(--font-body);font-size:16px;font-weight:420;line-height:1.5">Default UI body and pill-button labels. Inter at 420 weight reads quietly without disappearing.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption</strong>14 / 500 / 1.49 / 0.28px</div><div style="font-family:var(--font-body);font-size:14px;font-weight:500;letter-spacing:0.28px">Helper copy, footnotes, fine print.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>eyebrow-cap</strong>12 / 400 / 1.2 / 0.72px</div><div style="font-family:var(--font-body);font-size:12px;letter-spacing:0.72px;text-transform:uppercase">Section eyebrow</div></div>
+</section>
+
+<section data-sec="buttons">
+  <p class="section-eyebrow">03 — Components</p>
+  <h2 class="section-heading">Button Variants</h2>
+  <p class="section-sub">Pill geometry for every variant. Polarity flips per canvas: filled black on light, white-stroked outline on dark, mint-fill for the featured tier.</p>
+  <div class="button-grid">
+    <div class="button-cell"><span class="label">button-primary-pill · light</span><button class="btn btn-primary">Start free trial</button></div>
+    <div class="button-cell"><span class="label">button-outline-on-light</span><button class="btn btn-outline-light">Sign in</button></div>
+    <div class="button-cell"><span class="label">button-aloe-pill · featured</span><button class="btn btn-aloe">Choose plan</button></div>
+    <div class="button-cell dark"><span class="label">button-outline-on-dark · cinematic</span><button class="btn btn-outline-dark">Start free trial</button></div>
+  </div>
+</section>
+
+<section data-sec="cards">
+  <p class="section-eyebrow">04 — Components</p>
+  <h2 class="section-heading">Card Examples</h2>
+  <p class="section-sub">Four pricing tiers + a featured aloe tier. Cinematic feature card and pistachio band carry the brand's two surface-treatment moods.</p>
+  <div class="card-grid">
+    <div class="card pricing-light"><h3>Basic</h3><div class="price">$19</div><p>Per month, billed annually.</p><ul><li>Online store</li><li>2 staff accounts</li><li>Basic reports</li></ul><button class="btn btn-primary">Choose Basic</button></div>
+    <div class="card pricing-light"><h3>Shopify</h3><div class="price">$49</div><p>Best for growing businesses.</p><ul><li>Online store</li><li>5 staff accounts</li><li>Professional reports</li></ul><button class="btn btn-primary">Choose Shopify</button></div>
+    <div class="card pricing-featured"><h3>Advanced</h3><div class="price">$299</div><p>Scale with custom analytics.</p><ul><li>Online store</li><li>15 staff accounts</li><li>Custom reports</li></ul><button class="btn btn-primary">Choose Advanced</button></div>
+  </div>
+  <div class="card-grid" style="margin-top:32px">
+    <div class="card feature-cinematic"><h3 style="color:#fff">Sell anywhere</h3><p style="color:rgba(255,255,255,0.85)">Online, in person, on social — one platform behind every checkout.</p></div>
+    <div class="card pistachio-band"><h3>Built-in payments</h3><p>Lower transaction fees with the platform's native payment rails.</p></div>
+  </div>
+</section>
+
+<section data-sec="forms">
+  <p class="section-eyebrow">05 — Components</p>
+  <h2 class="section-heading">Form Elements</h2>
+  <p class="section-sub">8px-radius inputs sitting on white. Focus replaces the hairline border with the ink color — no colored ring.</p>
+  <div class="form-grid">
+    <div class="field"><label>Email address</label><input class="input" type="email" placeholder="you@example.com"></div>
+    <div class="field"><label>Store name</label><input class="input" placeholder="My Store"></div>
+    <div class="field"><label>Country</label><select class="input"><option>United States</option><option>United Kingdom</option><option>Canada</option></select></div>
+    <div class="field"><label>Tell us about your business</label><textarea class="input" rows="3"></textarea></div>
+  </div>
+</section>
+
+<section data-sec="signature">
+  <p class="section-eyebrow">06 — Signature Components</p>
+  <h2 class="section-heading">Signature Components</h2>
+  <p class="section-sub">Pill tags, cinematic photo frames, and the layered tiny-shadow card halo — the brand's distinguishing visual moves.</p>
+  <div class="signature-grid">
+    <div class="sig-card"><h4>pill-tag-mint</h4><span class="pill mint">New</span> <span class="pill mint">Featured</span><p style="margin-top:12px">Aloe-fill pill for category labeling on the light track.</p></div>
+    <div class="sig-card"><h4>pill-tag-shade</h4><span class="pill shade">Beta</span> <span class="pill shade">Coming Soon</span><p style="margin-top:12px">Neutral shade pill for status / availability.</p></div>
+    <div class="sig-card"><h4>card-photo-frame</h4><div style="background:#0a0a0a;color:#fff;height:120px;border-radius:20px 20px 0 0;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:300;font-size:18px;letter-spacing:0.3px">Photography Frame</div><p style="margin-top:12px">Full-bleed cinematic photo container; top-only rounded corners on some asymmetric cards.</p></div>
+    <div class="sig-card"><h4>Stacked tiny shadows</h4><div style="height:80px;background:#fff;border-radius:12px;box-shadow:0 8px 8px rgba(0,0,0,0.06),0 4px 4px rgba(0,0,0,0.06),0 2px 2px rgba(0,0,0,0.06),0 0 0 1px rgba(0,0,0,0.05);margin:8px 0"></div><p>Layered 4-stop tiny shadows produce a soft paper halo on light pricing cards.</p></div>
+  </div>
+</section>
+
+<section data-sec="spacing">
+  <p class="section-eyebrow">07 — Foundations</p>
+  <h2 class="section-heading">Spacing Scale</h2>
+  <p class="section-sub">8px base with denser sub-units for editorial fine work; 64px section gap on transactional surfaces, 128–192px on cinematic.</p>
+  <div class="spacing-row">
+    <div class="stack"><div class="bar" style="width:2px"></div><div class="lbl">xxs · 2px</div></div>
+    <div class="stack"><div class="bar" style="width:4px"></div><div class="lbl">xs · 4px</div></div>
+    <div class="stack"><div class="bar" style="width:8px"></div><div class="lbl">sm · 8px</div></div>
+    <div class="stack"><div class="bar" style="width:12px"></div><div class="lbl">md · 12px</div></div>
+    <div class="stack"><div class="bar" style="width:16px"></div><div class="lbl">lg · 16px</div></div>
+    <div class="stack"><div class="bar" style="width:24px"></div><div class="lbl">xl · 24px</div></div>
+    <div class="stack"><div class="bar" style="width:32px"></div><div class="lbl">xxl · 32px</div></div>
+    <div class="stack"><div class="bar" style="width:64px"></div><div class="lbl">huge · 64px</div></div>
+  </div>
+</section>
+
+<section data-sec="radius">
+  <p class="section-eyebrow">08 — Foundations</p>
+  <h2 class="section-heading">Border Radius Scale</h2>
+  <p class="section-sub">Pill is canonical for buttons (9999px). Cards land at 12px, photo frames at 20px (often top-only), inputs at 8px.</p>
+  <div class="radius-row">
+    <div class="stack"><div class="box" style="border-radius:4px"></div><div class="lbl">xs · 4px</div></div>
+    <div class="stack"><div class="box" style="border-radius:5px"></div><div class="lbl">sm · 5px</div></div>
+    <div class="stack"><div class="box" style="border-radius:8px"></div><div class="lbl">md · 8px</div></div>
+    <div class="stack"><div class="box" style="border-radius:12px"></div><div class="lbl">lg · 12px</div></div>
+    <div class="stack"><div class="box" style="border-radius:20px 20px 0 0"></div><div class="lbl">xl · 20px (top)</div></div>
+    <div class="stack"><div class="box" style="border-radius:9999px"></div><div class="lbl">pill · 9999px</div></div>
+  </div>
+</section>
+
+<section data-sec="elevation">
+  <p class="section-eyebrow">09 — Foundations</p>
+  <h2 class="section-heading">Elevation &amp; Depth</h2>
+  <p class="section-sub">Cinematic cards use subtle inset top-edge highlights; light cards use stacked tiny shadows; modals use a single deep drop.</p>
+  <div class="elevation-grid" style="background:#0a0a0a">
+    <div class="elev-cell elev-0"><span class="lbl">L0 · Flat</span></div>
+    <div class="elev-cell elev-1"><span class="lbl" style="color:rgba(255,255,255,0.7)">L1 · Inset highlight</span></div>
+    <div class="elev-cell elev-2"><span class="lbl" style="color:rgba(255,255,255,0.7)">L2 · Dark elevated</span></div>
+    <div class="elev-cell elev-3"><span class="lbl">L3 · Stacked tiny</span></div>
+    <div class="elev-cell elev-4"><span class="lbl">L4 · Modal drop</span></div>
+  </div>
+</section>
+
+<section data-sec="responsive">
+  <p class="section-eyebrow">10 — Responsive</p>
+  <h2 class="section-heading">Responsive Behavior</h2>
+  <p class="section-sub">Display sizes scale through 96 → 70 → 55 → 48 → 36px; pricing tiers stair from 4-up to 1-up; cinematic photography crops to focal subject on mobile.</p>
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Wide</td><td>≥ 1440px</td><td>Cinematic edge-bleeding photography; pricing 4-up</td></tr>
+      <tr><td>Desktop</td><td>1024–1440px</td><td>Default content max-width; pricing 4-up tightens</td></tr>
+      <tr><td>Tablet</td><td>768–1023px</td><td>Pricing 2-up; cinematic photography crops</td></tr>
+      <tr><td>Mobile</td><td>&lt; 768px</td><td>Pricing 1-up; hamburger nav; display-xxl drops to 56–64px</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="stack"><div class="device" style="width:60px;height:96px"></div><div class="lbl">375</div></div>
+    <div class="stack"><div class="device" style="width:120px;height:144px"></div><div class="lbl">768</div></div>
+    <div class="stack"><div class="device" style="width:160px;height:160px"></div><div class="lbl">1024</div></div>
+    <div class="stack"><div class="device" style="width:240px;height:160px"></div><div class="lbl">1440</div></div>
+  </div>
+  <h3 class="subhead">Touch Targets</h3>
+  <p>Pill buttons hit ≥44×44px on mobile. Form fields stay at the 44px minimum. WCAG AAA compliant.</p>
+  <h3 class="subhead">Collapsing Strategy</h3>
+  <ul style="line-height:1.8;font-weight:500">
+    <li>Display sizes scale through the breakpoint stair: 96 → 70 → 55 → 48 → 36px.</li>
+    <li>Cinematic photography re-crops to focal subject at smaller widths.</li>
+    <li>Pricing tiers stair-step 4-up → 2-up → 1-up; aloe featured tier always distinguished.</li>
+    <li>Top nav collapses to hamburger below 768px; menu inherits canvas polarity.</li>
+  </ul>
+</section>
+
+<!-- ============================== EXAMPLES (kit-mirror) ==============================
+ *
+ * 9 product-UI patterns themed with the brand's tokens via the alias bridge in
+ * preview-examples-block.css.
+ *
+ * Paste this verbatim into preview.html and preview-dark.html, immediately before
+ * the closing <footer>. Both light and dark variants use IDENTICAL HTML — only the
+ * `:root { ... }` alias map differs (see preview-design.md).
+ *
+ * Hardcoded radii (4px / 6px / 9999px) intentionally inherited from the
+ * /generate-kit base template. Hardcoded scrim opacity (rgba 26,24,22,0.5) is the
+ * kit default; do not tokenize without parallel update.
+ * ============================================================================ -->
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Pricing Tiers</h2>
+    <p class="ex-intro">Three-up plan grid with the middle tier polarity-flipped. Mono uppercase tier name, display numeral price, hairline-divided feature list.</p>
+    <div class="ex-grid-pricing">
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">/0.1 · Starter</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$9</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For individuals getting started.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Core features</li>
+          <li><span class="ex-bullet"></span>Up to 3 projects</li>
+          <li><span class="ex-bullet"></span>Community support</li>
+        </ul>
+        <button class="ex-tier-cta ink">Get started</button>
+      </div>
+      <div class="ex-tier-card dark">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span class="ex-mono" style="color:rgba(255,255,255,0.55);">/0.2 · Pro</span>
+          <span style="font-family:var(--font-mono); font-size:10px; letter-spacing:0.5px; text-transform:uppercase; color:var(--color-accent); display:inline-flex; align-items:center; gap:6px;"><span style="width:6px; height:6px; background:var(--color-accent); border-radius:9999px;"></span>Most popular</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$29</span><span style="font-family:var(--font-mono); font-size:12px; color:rgba(255,255,255,0.55);">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:rgba(255,255,255,0.72); margin:0;">For teams ready to ship.</p>
+        <ul class="ex-features dark">
+          <li><span class="ex-bullet"></span>Everything in Starter</li>
+          <li><span class="ex-bullet"></span>Unlimited projects</li>
+          <li><span class="ex-bullet"></span>Email support</li>
+          <li><span class="ex-bullet"></span>Advanced analytics</li>
+        </ul>
+        <button class="ex-tier-cta invert">Start free trial</button>
+      </div>
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">/0.3 · Team</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$99</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For organizations operating at scale.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Everything in Pro</li>
+          <li><span class="ex-bullet"></span>SSO + audit log</li>
+          <li><span class="ex-bullet"></span>Priority support</li>
+          <li><span class="ex-bullet"></span>SLA &amp; onboarding</li>
+        </ul>
+        <button class="ex-tier-cta ink">Talk to sales</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+
+
+
+
+</div>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

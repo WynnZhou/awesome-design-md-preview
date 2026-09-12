@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design System Analysis of Revolut</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #0b0b0c; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#palette">Personal</a></li>
+    <li><a href="#typography">Business</a></li>
+    <li><a href="#components">Company</a></li>
+  </ul>
+  <button class="nav-cta">Get started</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of Revolut</h1>
+    <p>Two-mode canvas system — black for storytelling, white for catalogue — with Aeonik Pro display headlines, Inter body, and a single cobalt-violet brand stamp reserved for featured plan cards.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Choose your subscription</button>
+      <button class="btn btn-outline-dark">Learn more</button>
+    </div>
+  </div>
+</header>
+
+<section id="palette">
+  <h2>Color Palette</h2>
+  <p class="lead">Black canvas, white catalogue, cobalt-violet brand stamp, and a wide product-illustration palette of teal, deep pink, light green, warning orange, yellow, brown.</p>
+
+  <div class="palette-group-title">Brand &amp; Accent</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--primary);"></div><div class="swatch-meta"><p class="swatch-name">Cobalt Violet</p><p class="swatch-hex">#494fdf</p><p class="swatch-role">Featured plan card, brand wordmark.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--primary-bright);"></div><div class="swatch-meta"><p class="swatch-name">Cobalt Bright</p><p class="swatch-hex">#4f55f1</p><p class="swatch-role">Inline link in dark photo headers.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--primary-deep);"></div><div class="swatch-meta"><p class="swatch-name">Cobalt Deep</p><p class="swatch-hex">#3a40c4</p><p class="swatch-role">Pressed state.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--on-primary); border: 1px solid var(--hairline-light);"></div><div class="swatch-meta"><p class="swatch-name">On-Primary</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Label on cobalt.</p></div></div>
+  </div>
+
+  <div class="palette-group-title">Surface</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--canvas-light); border: 1px solid var(--hairline-light);"></div><div class="swatch-meta"><p class="swatch-name">Canvas Light</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">White catalogue mode.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--canvas-dark);"></div><div class="swatch-meta"><p class="swatch-name">Canvas Dark</p><p class="swatch-hex">#000000</p><p class="swatch-role">Storytelling canvas.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--surface-soft);"></div><div class="swatch-meta"><p class="swatch-name">Surface Soft</p><p class="swatch-hex">#f4f4f4</p><p class="swatch-role">Soft buttons, download tiles.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--surface-deep);"></div><div class="swatch-meta"><p class="swatch-name">Surface Deep</p><p class="swatch-hex">#0a0a0a</p><p class="swatch-role">Inset cards in dark bands.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--surface-elevated);"></div><div class="swatch-meta"><p class="swatch-name">Surface Elevated</p><p class="swatch-hex">#16181a</p><p class="swatch-role">Plan cards in dark.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--hairline-light);"></div><div class="swatch-meta"><p class="swatch-name">Hairline Light</p><p class="swatch-hex">#e2e2e7</p><p class="swatch-role">Dividers in white bands.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--hairline-strong);"></div><div class="swatch-meta"><p class="swatch-name">Hairline Strong</p><p class="swatch-hex">#191c1f</p><p class="swatch-role">Card outlines, structural rules.</p></div></div>
+  </div>
+
+  <div class="palette-group-title">Text</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--ink);"></div><div class="swatch-meta"><p class="swatch-name">Ink</p><p class="swatch-hex">#191c1f</p><p class="swatch-role">Primary text.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--body);"></div><div class="swatch-meta"><p class="swatch-name">Body</p><p class="swatch-hex">#1f2226</p><p class="swatch-role">Long-form body.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--charcoal);"></div><div class="swatch-meta"><p class="swatch-name">Charcoal</p><p class="swatch-hex">#3a3d40</p><p class="swatch-role">Captions.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--mute);"></div><div class="swatch-meta"><p class="swatch-name">Mute</p><p class="swatch-hex">#505a63</p><p class="swatch-role">Supporting text.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--ash);"></div><div class="swatch-meta"><p class="swatch-name">Ash</p><p class="swatch-hex">#5c5e60</p><p class="swatch-role">Footer copy.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--stone);"></div><div class="swatch-meta"><p class="swatch-name">Stone</p><p class="swatch-hex">#8d969e</p><p class="swatch-role">Metadata.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--faint);"></div><div class="swatch-meta"><p class="swatch-name">Faint</p><p class="swatch-hex">#c9c9cd</p><p class="swatch-role">Disabled foreground.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--on-dark); border: 1px solid var(--hairline-light);"></div><div class="swatch-meta"><p class="swatch-name">On-Dark</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Text on canvas-dark.</p></div></div>
+  </div>
+
+  <div class="palette-group-title">Product Accent Palette</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--teal);"></div><div class="swatch-meta"><p class="swatch-name">Teal</p><p class="swatch-hex">#00a87e</p><p class="swatch-role">Product illustrations.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--light-blue);"></div><div class="swatch-meta"><p class="swatch-name">Light Blue</p><p class="swatch-hex">#007bc2</p><p class="swatch-role">Inline link in dark photo headers.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--blue-link);"></div><div class="swatch-meta"><p class="swatch-name">Blue Link</p><p class="swatch-hex">#376cd5</p><p class="swatch-role">Default inline link on white.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--light-green);"></div><div class="swatch-meta"><p class="swatch-name">Light Green</p><p class="swatch-hex">#428619</p><p class="swatch-role">Success / positive callouts.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--green-text);"></div><div class="swatch-meta"><p class="swatch-name">Green Text</p><p class="swatch-hex">#006400</p><p class="swatch-role">Inline success text.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--yellow);"></div><div class="swatch-meta"><p class="swatch-name">Yellow</p><p class="swatch-hex">#b09000</p><p class="swatch-role">Caution / pending state.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--warning);"></div><div class="swatch-meta"><p class="swatch-name">Warning</p><p class="swatch-hex">#ec7e00</p><p class="swatch-role">Warning illustrations.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--pink);"></div><div class="swatch-meta"><p class="swatch-name">Deep Pink</p><p class="swatch-hex">#e61e49</p><p class="swatch-role">Photography accents, icons.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--danger);"></div><div class="swatch-meta"><p class="swatch-name">Danger</p><p class="swatch-hex">#e23b4a</p><p class="swatch-role">Destructive / error.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--deep-red);"></div><div class="swatch-meta"><p class="swatch-name">Deep Red</p><p class="swatch-hex">#8b0000</p><p class="swatch-role">Inline error text.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--brown);"></div><div class="swatch-meta"><p class="swatch-name">Brown</p><p class="swatch-hex">#936d62</p><p class="swatch-role">Metals tier card chrome.</p></div></div>
+  </div>
+</section>
+
+<section id="typography">
+  <h2>Typography</h2>
+  <p class="lead">Aeonik Pro 500 for display, Inter for body. Inter Tight substitutes for Aeonik Pro when proprietary licensing is unavailable.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xxl</strong>136 · 500 · 1.0 · -2.72px</div><div class="type-sample" style="font-family:var(--font-display); font-size:96px; font-weight:500; line-height:1.0; letter-spacing:-1.9px;">Banking &amp; Beyond</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>80 · 500 · 1.0 · -0.8px</div><div class="type-sample" style="font-family:var(--font-display); font-size:64px; font-weight:500; line-height:1.0; letter-spacing:-0.6px;">Choose your subscription</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>48 · 500 · 1.21 · -0.48px</div><div class="type-sample" style="font-family:var(--font-display); font-size:48px; font-weight:500; line-height:1.21; letter-spacing:-0.48px;">Join the 70+ million using Revolut</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>40 · 500 · 1.2 · -0.4px</div><div class="type-sample" style="font-family:var(--font-display); font-size:40px; font-weight:500; line-height:1.2; letter-spacing:-0.4px;">Premium plan benefits</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-lg</strong>32 · 500 · 1.19 · -0.32px</div><div class="type-sample" style="font-family:var(--font-display); font-size:32px; font-weight:500; line-height:1.19; letter-spacing:-0.32px;">Standard</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-md</strong>24 · 500 · 1.33</div><div class="type-sample" style="font-family:var(--font-display); font-size:24px; font-weight:500; line-height:1.33;">Send money worldwide</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-lg</strong>18 · 400 · 1.56 · -0.09px</div><div class="type-sample" style="font-size:18px; line-height:1.56; letter-spacing:-0.09px;">A complete personal banking experience for managing your money.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>16 · 400 · 1.5 · 0.24px</div><div class="type-sample" style="font-size:16px; letter-spacing:0.24px;">Marketing prose with the small mechanical tracking that gives Inter its fintech precision.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md-bold</strong>16 · 600 · 1.5 · 0.16px</div><div class="type-sample" style="font-size:16px; font-weight:600; letter-spacing:0.16px;">Emphatic body copy for callouts and highlights.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>14 · 400 · 1.43</div><div class="type-sample" style="font-size:14px;">Captions and metadata.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-lg</strong>20 · 500 · 1.4 (Aeonik)</div><div class="type-sample" style="font-family:var(--font-display); font-size:20px; font-weight:500;">Get started</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-md</strong>16 · 600 · 1.5 · 0.24px</div><div class="type-sample" style="font-size:16px; font-weight:600; letter-spacing:0.24px;">Choose your subscription</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption</strong>13 · 400 · 1.4</div><div class="type-sample" style="font-size:13px; color:var(--mute);">© Revolut Bank UAB 2026 — design system catalogue.</div></div>
+</section>
+
+<section id="components">
+  <h2>Buttons</h2>
+  <p class="lead">All buttons are pill-shaped (`rounded.full`). White-on-dark is the brand's primary CTA pattern.</p>
+  <div class="button-grid">
+    <button class="btn btn-primary">button-primary</button>
+    <button class="btn btn-primary-pressed">button-primary-pressed</button>
+    <button class="btn btn-dark">button-dark</button>
+    <button class="btn btn-soft">button-soft</button>
+    <button class="btn btn-outline-light">button-outline-light</button>
+    <button class="btn-pill-sm">button-pill-sm</button>
+  </div>
+  <div class="button-grid" style="margin-top:24px; padding:32px; background:var(--canvas-dark); border-radius:20px;">
+    <button class="btn btn-primary">button-primary</button>
+    <button class="btn btn-outline-dark">button-outline-dark</button>
+  </div>
+</section>
+
+<section>
+  <h2>Feature Cards (Light)</h2>
+  <p class="lead">Feature cards on white canvas use `rounded.lg` (20px) corners and `hairline-light` 1px outlines.</p>
+  <div class="card-grid">
+    <div class="feature-card-light">
+      <h3>Send money worldwide</h3>
+      <p>Transfer money in 30+ currencies at the interbank exchange rate.</p>
+    </div>
+    <div class="feature-card-light">
+      <h3>Save effortlessly</h3>
+      <p>Round up purchases and earn interest on your spare change.</p>
+    </div>
+    <div class="feature-card-light">
+      <h3>Invest in stocks</h3>
+      <p>Buy fractional shares in over 1,500 stocks with no commission.</p>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="dark-inner">
+    <h2>Feature Cards (Dark)</h2>
+    <p class="lead">Inside dark sections, feature cards swap to `surface-elevated` (`#16181a`) — slightly luminous, lifts off canvas-dark.</p>
+    <div class="card-grid">
+      <div class="feature-card-dark">
+        <h3>Beyond banking</h3>
+        <p>An account that goes far beyond traditional banking.</p>
+      </div>
+      <div class="feature-card-dark">
+        <h3>Premium experience</h3>
+        <p>Lounge access, travel insurance, premium card materials.</p>
+      </div>
+      <div class="feature-card-dark">
+        <h3>Crypto &amp; investing</h3>
+        <p>Buy, hold, and trade cryptocurrencies and stocks alongside cash.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="dark-inner">
+    <h2>Plan Grid</h2>
+    <p class="lead">4-up plan grid with the recommended tier flipped to cobalt violet (`{component.plan-card-featured}`).</p>
+    <div class="plan-grid">
+      <div class="plan-card">
+        <p class="plan-name">Standard</p>
+        <p class="plan-price">Free</p>
+        <ul class="plan-features">
+          <li>Free GBP &amp; EUR account</li>
+          <li>Send money to 30+ currencies</li>
+          <li>Spend abroad in any currency</li>
+        </ul>
+        <button class="btn btn-primary" style="width:100%; height:44px;">Get Standard</button>
+      </div>
+      <div class="plan-card">
+        <p class="plan-name">Plus</p>
+        <p class="plan-price">£3.99/month</p>
+        <ul class="plan-features">
+          <li>Everything in Standard</li>
+          <li>Buyer protection</li>
+          <li>Plus card, plastic</li>
+        </ul>
+        <button class="btn btn-outline-dark" style="width:100%; height:44px;">Get Plus</button>
+      </div>
+      <div class="plan-card plan-card-featured">
+        <p class="plan-name">Premium</p>
+        <p class="plan-price">£8.99/month</p>
+        <ul class="plan-features">
+          <li>Everything in Plus</li>
+          <li>Premium metal card</li>
+          <li>Lounge access via DragonPass</li>
+        </ul>
+        <button class="btn btn-primary" style="width:100%; height:44px;">Get Premium</button>
+      </div>
+      <div class="plan-card">
+        <p class="plan-name">Metal</p>
+        <p class="plan-price">£14.99/month</p>
+        <ul class="plan-features">
+          <li>Everything in Premium</li>
+          <li>1% cashback outside Europe</li>
+          <li>Metal card, choice of finishes</li>
+        </ul>
+        <button class="btn btn-outline-dark" style="width:100%; height:44px;">Get Metal</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Product Mockup Band</h2>
+  <p class="lead">A full-bleed phone mockup against `canvas-dark` — the asset itself is the section, no chrome, no caption overlay.</p>
+  <div class="product-mockup">
+    <div class="device-frame">
+      <div class="device-screen">£105.50</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Download Tiles</h2>
+  <p class="lead">App store download buttons use `rounded.md` (12px) and `surface-soft` background.</p>
+  <div class="download-row">
+    <span class="download-tile">▼ App Store</span>
+    <span class="download-tile">▶ Google Play</span>
+  </div>
+</section>
+
+<section>
+  <h2>Form Elements</h2>
+  <p class="lead">Generous 56px input height for fintech accessibility.</p>
+  <div class="form-grid">
+    <div class="field">
+      <label>Email</label>
+      <input type="email" placeholder="you@example.com">
+    </div>
+    <div class="field">
+      <label>Phone</label>
+      <input type="tel" placeholder="+44 20 0000 0000">
+    </div>
+    <div class="field">
+      <label>Country</label>
+      <input type="text" placeholder="United Kingdom">
+    </div>
+    <div class="field">
+      <label>Plan</label>
+      <input type="text" placeholder="Premium">
+    </div>
+    <div class="field" style="grid-column: 1 / -1;">
+      <label>Notes</label>
+      <textarea placeholder="Optional notes"></textarea>
+    </div>
+  </div>
+  <div style="margin-top: 32px; display: flex; gap: 12px; align-items: center;">
+    <span class="badge-tag">Standard</span>
+    <span class="badge-tag">Plus</span>
+    <span class="badge-feature">Most popular</span>
+  </div>
+</section>
+
+<section id="layout">
+  <h2>Spacing Scale</h2>
+  <p class="lead">A 4px base, with `section: 88px` and `band: 120px` driving the editorial dual-canvas rhythm.</p>
+  <div class="spacing-row">
+    <div><div class="spacing-block" style="width:4px;"></div><div class="spacing-label">xxs · 4</div></div>
+    <div><div class="spacing-block" style="width:6px;"></div><div class="spacing-label">xs · 6</div></div>
+    <div><div class="spacing-block" style="width:8px;"></div><div class="spacing-label">sm · 8</div></div>
+    <div><div class="spacing-block" style="width:14px;"></div><div class="spacing-label">md · 14</div></div>
+    <div><div class="spacing-block" style="width:16px;"></div><div class="spacing-label">lg · 16</div></div>
+    <div><div class="spacing-block" style="width:24px;"></div><div class="spacing-label">xl · 24</div></div>
+    <div><div class="spacing-block" style="width:32px;"></div><div class="spacing-label">xxl · 32</div></div>
+    <div><div class="spacing-block" style="width:48px;"></div><div class="spacing-label">xxxl · 48</div></div>
+    <div><div class="spacing-block" style="width:80px;"></div><div class="spacing-label">block · 80</div></div>
+    <div><div class="spacing-block" style="width:88px;"></div><div class="spacing-label">section · 88</div></div>
+    <div><div class="spacing-block" style="width:120px;"></div><div class="spacing-label">band · 120</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Border Radius</h2>
+  <p class="lead">Pill for buttons, lg-20px for cards, xl-28px for product mockups.</p>
+  <div class="radius-grid">
+    <div class="radius-card"><div class="radius-box" style="border-radius:0;"></div><div class="radius-meta">none · 0</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:8px;"></div><div class="radius-meta">sm · 8</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:12px;"></div><div class="radius-meta">md · 12</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:20px;"></div><div class="radius-meta">lg · 20</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:28px;"></div><div class="radius-meta">xl · 28</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:9999px; height:120px; width:120px;"></div><div class="radius-meta">full · pill</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Elevation &amp; Depth</h2>
+  <p class="lead">Depth is canvas-switching + surface-luminance shifts. The featured tier is its own elevation step in cobalt violet.</p>
+  <div class="elev-grid">
+    <div class="elev-card elev-flat">Level 0 — Flat</div>
+    <div class="elev-card elev-card-light">Level 1 — Card on Light</div>
+    <div class="elev-card elev-elevated-dark">Level 2 — Elevated Dark</div>
+    <div class="elev-card elev-featured">Level 3 — Featured</div>
+  </div>
+</section>
+
+<section>
+  <h2>Responsive Behavior</h2>
+  <p class="lead">Six breakpoints from desktop XL (≥1440) to small mobile (≤425). Hero clamps from 136px down to 48px across the ladder.</p>
+  <table class="breakpoint-table">
+    <thead><tr><th>Breakpoint</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Desktop XL</td><td>≥ 1440px</td><td>4-up plan grid, full-bleed product mockups, max content 1200.</td></tr>
+      <tr><td>Desktop</td><td>1280–1439px</td><td>Container shrinks; xl side padding.</td></tr>
+      <tr><td>Tablet Large</td><td>1024–1279px</td><td>Plan grid 4-up; feature grid 3-up.</td></tr>
+      <tr><td>Tablet</td><td>768–1023px</td><td>Plan grid 2-up; feature grid 2-up; sub-nav scroll-rail.</td></tr>
+      <tr><td>Mobile Large</td><td>426–767px</td><td>Plan grid 1-up; nav hamburger; hero clamps to 64px.</td></tr>
+      <tr><td>Mobile</td><td>≤ 425px</td><td>All grids 1-up; hero 48px; section padding 64px.</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="device" style="width:60px; height:120px;">390</div>
+    <div class="device" style="width:90px; height:140px;">600</div>
+    <div class="device" style="width:130px; height:170px;">800</div>
+    <div class="device" style="width:200px; height:200px;">1024</div>
+    <div class="device" style="width:280px; height:220px;">1280</div>
+    <div class="device" style="width:340px; height:240px;">1440</div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

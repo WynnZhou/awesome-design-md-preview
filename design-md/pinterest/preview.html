@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design System Analysis of Pinterest</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #161310; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<div class="theme-layer" data-when="light">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#layout">Layout</a></li>
+  </ul>
+  <button class="nav-cta">Sign up</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of Pinterest</h1>
+    <p>A photography-first discovery system organized around the Pinterest Red CTA, the masonry pin grid, and a soft warm-cream chrome that gets out of the imagery's way. Pin Sans typography, fully-rounded pill buttons (16px) on a cream-tinted neutral palette, and a sticky red "Sign up" CTA that anchors every viewport. The chrome is otherwise quiet: warm grays, true whites, and a single saturated red — no decorative gradients, no atmospheric backgrounds, no shadows beyond a soft modal scrim.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Sign up</button>
+      <button class="btn btn-secondary">Already have an account</button>
+    </div>
+  </div>
+</header>
+
+<!-- COLOR PALETTE -->
+<section id="colors">
+  <p class="section-eyebrow">01 — Color</p>
+  <h2 class="section-heading">Color Palette</h2>
+  <p class="section-desc">Pinterest Red on a quiet warm-cream chrome. The brand red carries every primary action; everything else is monochrome neutral with a faint warm cast.</p>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Brand &amp; Accent</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#e60023"></div><div class="swatch-meta"><p class="swatch-name">Pinterest Red (primary)</p><p class="swatch-hex">#e60023</p><p class="swatch-role">Sign-up CTA, brand wordmark, active-tab indicator</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#cc001f"></div><div class="swatch-meta"><p class="swatch-name">Pinterest Red Pressed</p><p class="swatch-hex">#cc001f</p><p class="swatch-role">Pressed state for primary button</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Surface</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff;box-shadow:inset 0 0 0 1px var(--hairline)"></div><div class="swatch-meta"><p class="swatch-name">Canvas</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">True white — primary nav, modals, feature cards</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#fbfbf9"></div><div class="swatch-meta"><p class="swatch-name">Soft Surface</p><p class="swatch-hex">#fbfbf9</p><p class="swatch-role">Faintly cream-tinted off-white page wash</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#f6f6f3"></div><div class="swatch-meta"><p class="swatch-name">Surface Card</p><p class="swatch-hex">#f6f6f3</p><p class="swatch-role">Pin tile background, search-bar default fill</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#e5e5e0"></div><div class="swatch-meta"><p class="swatch-name">Secondary BG</p><p class="swatch-hex">#e5e5e0</p><p class="swatch-role">Secondary button fill</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#262622"></div><div class="swatch-meta"><p class="swatch-name">Surface Dark</p><p class="swatch-hex">#262622</p><p class="swatch-role">Warm near-black for rare dark CTA strips</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#dadad3"></div><div class="swatch-meta"><p class="swatch-name">Hairline</p><p class="swatch-hex">#dadad3</p><p class="swatch-role">1px row dividers, footer column rules</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Text</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#000000"></div><div class="swatch-meta"><p class="swatch-name">Ink</p><p class="swatch-hex">#000000</p><p class="swatch-role">Headlines, button text, primary nav links</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#211922"></div><div class="swatch-meta"><p class="swatch-name">Ink Soft</p><p class="swatch-hex">#211922</p><p class="swatch-role">Inline-link color in body prose — warm near-black</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#33332e"></div><div class="swatch-meta"><p class="swatch-name">Body</p><p class="swatch-hex">#33332e</p><p class="swatch-role">Default paragraph text</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#62625b"></div><div class="swatch-meta"><p class="swatch-name">Mute</p><p class="swatch-hex">#62625b</p><p class="swatch-role">Metadata, footer links, secondary captions</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#91918c"></div><div class="swatch-meta"><p class="swatch-name">Ash</p><p class="swatch-hex">#91918c</p><p class="swatch-role">Disabled button text, placeholder text</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#c8c8c1"></div><div class="swatch-meta"><p class="swatch-name">Stone</p><p class="swatch-hex">#c8c8c1</p><p class="swatch-role">Least-emphasis utility text, disabled-state borders</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Semantic</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#9e0a0a"></div><div class="swatch-meta"><p class="swatch-name">Error</p><p class="swatch-hex">#9e0a0a</p><p class="swatch-role">Validation messages</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#103c25"></div><div class="swatch-meta"><p class="swatch-name">Success Deep</p><p class="swatch-hex">#103c25</p><p class="swatch-role">In-product success messaging</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#c7f0da"></div><div class="swatch-meta"><p class="swatch-name">Success Pale</p><p class="swatch-hex">#c7f0da</p><p class="swatch-role">Pale success-pill background</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#435ee5"></div><div class="swatch-meta"><p class="swatch-name">Focus Outer</p><p class="swatch-hex">#435ee5</p><p class="swatch-role">2px outer focus ring around inputs and buttons</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#7e238b"></div><div class="swatch-meta"><p class="swatch-name">Accent Purple</p><p class="swatch-hex">#7e238b</p><p class="swatch-role">Editorial recommendation badge</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section id="typography">
+  <p class="section-eyebrow">02 — Typography</p>
+  <h2 class="section-heading">Typography Scale</h2>
+  <p class="section-desc">Pin Sans across every text role with -1.2px tracking on display tiers. Steep hierarchy: 70px display drops directly to 16px body with no intermediate.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>Pin Sans<br>70px / 600 / lh 1.1 / -1.2px</div><div class="type-sample" style="font-size:70px;font-weight:600;line-height:1.1;letter-spacing:-1.2px">Create the life you love</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>Pin Sans<br>44px / 700 / lh 1.15 / -0.8px</div><div class="type-sample" style="font-size:44px;font-weight:700;line-height:1.15;letter-spacing:-0.8px">Where your content can thrive</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-xl</strong>Pin Sans<br>28px / 700 / lh 1.2 / -1.2px</div><div class="type-sample" style="font-size:28px;font-weight:700;line-height:1.2;letter-spacing:-1.2px">Bring your favorite ideas to life</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-lg</strong>Pin Sans<br>22px / 600 / lh 1.25</div><div class="type-sample" style="font-size:22px;font-weight:600;line-height:1.25">Welcome to Pinterest</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-md</strong>Pin Sans<br>18px / 600 / lh 1.3</div><div class="type-sample" style="font-size:18px;font-weight:600;line-height:1.3">Card title or in-grid pin label</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>Pin Sans<br>16px / 400 / lh 1.4</div><div class="type-sample" style="font-size:16px;font-weight:400;line-height:1.4">Default body copy carries every paragraph and modal text at 16px regular weight.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-strong</strong>Pin Sans<br>16px / 600 / lh 1.4</div><div class="type-sample" style="font-size:16px;font-weight:600;line-height:1.4">Inline emphasis or primary nav link</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>Pin Sans<br>14px / 400 / lh 1.4</div><div class="type-sample" style="font-size:14px;font-weight:400;line-height:1.4">Footer copy, in-grid pin metadata, helper text</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm-strong</strong>Pin Sans<br>14px / 700 / lh 1.4</div><div class="type-sample" style="font-size:14px;font-weight:700;line-height:1.4">Search-result count label</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-md</strong>Pin Sans<br>12px / 500 / lh 1.5</div><div class="type-sample" style="font-size:12px;font-weight:500;line-height:1.5">Caption text, link metadata</div></div>
+  <div class="type-row"><div class="type-meta"><strong>link-md</strong>Pin Sans<br>16px / 600 / lh 1.4</div><div class="type-sample" style="font-size:16px;font-weight:600;line-height:1.4;color:var(--ink-soft)">Inline body anchor link</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-md</strong>Pin Sans<br>14px / 700 / lh 1</div><div class="type-sample" style="font-size:14px;font-weight:700;line-height:1">Sign up</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-sm</strong>Pin Sans<br>12px / 700 / lh 1</div><div class="type-sample" style="font-size:12px;font-weight:700;line-height:1">Compact pill chip</div></div>
+</section>
+
+<!-- BUTTONS -->
+<section id="components">
+  <p class="section-eyebrow">03 — Components</p>
+  <h2 class="section-heading">Button Variants</h2>
+  <p class="section-desc">Pinterest Red primary, gray-cream secondary, transparent tertiary, plus pill-on-image and circular-icon variants for in-pin chrome.</p>
+
+  <div class="button-grid">
+    <div class="button-cell">
+      <button class="btn btn-primary">Sign up</button>
+      <p class="button-cell-label">button-primary</p>
+      <p class="button-cell-spec">bg primary · text on-primary · rounded 16px · 40px height</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-primary" style="background:var(--primary-pressed)">Pressed</button>
+      <p class="button-cell-label">button-primary-pressed</p>
+      <p class="button-cell-spec">bg primary-pressed · text on-primary</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-secondary">Already have an account</button>
+      <p class="button-cell-label">button-secondary</p>
+      <p class="button-cell-spec">bg secondary-bg · text ink · rounded 16px</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-secondary" style="background:var(--secondary-pressed)">Pressed</button>
+      <p class="button-cell-label">button-secondary-pressed</p>
+      <p class="button-cell-spec">bg secondary-pressed · text ink</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-tertiary">Read the docs</button>
+      <p class="button-cell-label">button-tertiary</p>
+      <p class="button-cell-spec">transparent · text ink · rounded 16px</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-icon-circular">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"></path></svg>
+      </button>
+      <p class="button-cell-label">button-icon-circular</p>
+      <p class="button-cell-spec">bg surface-card · 40px circle · rounded full</p>
+    </div>
+    <div class="button-cell on-image">
+      <button class="btn btn-pill-on-image">Cherry red</button>
+      <p class="button-cell-label">button-pill-on-image</p>
+      <p class="button-cell-spec">bg canvas · text ink · rounded full · sits on photography</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-disabled">Disabled</button>
+      <p class="button-cell-label">button-disabled</p>
+      <p class="button-cell-spec">bg surface-card · text ash</p>
+    </div>
+    <div class="button-cell wide">
+      <div class="filter-chips">
+        <button class="chip active">All Pins</button>
+        <button class="chip">Beauty makeup</button>
+        <button class="chip">Lipstick</button>
+        <button class="chip">Editorial</button>
+        <button class="chip">Tutorials</button>
+      </div>
+      <p class="button-cell-label">filter-chip + filter-chip-active</p>
+      <p class="button-cell-spec">default: surface-card bg · active: ink fill + on-dark text</p>
+    </div>
+    <div class="button-cell wide">
+      <div style="display:flex;gap:24px;flex-wrap:wrap">
+        <span class="search-bar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+          Search for ideas
+        </span>
+        <span class="search-bar focused">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+          bold lip
+        </span>
+      </div>
+      <p class="button-cell-label">search-bar + search-bar-focused</p>
+      <p class="button-cell-spec">surface-card bg · rounded full · 48px height · canvas + 1px ash on focus</p>
+    </div>
+  </div>
+</section>
+
+<!-- PIN MASONRY -->
+<section>
+  <p class="section-eyebrow">04 — Signature</p>
+  <h2 class="section-heading">Pin Masonry Grid</h2>
+  <p class="section-desc">Column-based layout where each pin's natural aspect ratio is preserved. Tiles are 16px-radius cards (32px for large) with 8px gutters — the imagery effectively touches across columns.</p>
+
+  <div class="masonry">
+    <div class="pin-card"><div class="pin-image color1"></div><span class="pin-overlay-pill">Cherry red</span></div>
+    <div class="pin-card"><div class="pin-image color2 sq"></div></div>
+    <div class="pin-card large"><div class="pin-image color3 tall"></div><span class="pin-overlay-pill">Editorial</span></div>
+    <div class="pin-card"><div class="pin-image color4 short"></div></div>
+    <div class="pin-card"><div class="pin-image color5"></div><span class="pin-overlay-pill">Preppy look</span></div>
+    <div class="pin-card"><div class="pin-image color6 sq"></div></div>
+    <div class="pin-card"><div class="pin-image color1 short"></div></div>
+    <div class="pin-card"><div class="pin-image color3"></div></div>
+    <div class="pin-card"><div class="pin-image color4 tall"></div><span class="pin-overlay-pill">Bold lip</span></div>
+    <div class="pin-card"><div class="pin-image color2"></div></div>
+    <div class="pin-card"><div class="pin-image color5 sq"></div></div>
+    <div class="pin-card"><div class="pin-image color6 short"></div></div>
+  </div>
+</section>
+
+<!-- CATEGORY TILES -->
+<section>
+  <p class="section-eyebrow">05 — Tiles</p>
+  <h2 class="section-heading">Category Tiles</h2>
+  <p class="section-desc">Square 1:1 tiles with a 16px radius and a category label anchored at the bottom over a darkened image gradient.</p>
+
+  <div class="category-grid">
+    <div class="category-tile t1">Search by skin tone</div>
+    <div class="category-tile t2">Group boards</div>
+    <div class="category-tile t3">Visual search</div>
+    <div class="category-tile t4">Trending now</div>
+    <div class="category-tile t1">Bold lip</div>
+    <div class="category-tile t2">Editorial</div>
+  </div>
+</section>
+
+<!-- FEATURE CARDS + MODAL + CTA STRIP -->
+<section>
+  <p class="section-eyebrow">06 — Cards</p>
+  <h2 class="section-heading">Feature Cards · Modal · CTA Strip</h2>
+  <p class="section-desc">Three card families: a standard feature card on canvas, a soft variant on cream, the modal-card overlay, and the dark hero CTA strip on create.pinterest.com.</p>
+
+  <div class="feature-grid" style="margin-bottom:32px">
+    <div class="feature-card">
+      <h3 class="feature-card-title">Search by skin tone</h3>
+      <p class="feature-card-desc">Search with skin tone ranges for beauty ideas that represent you.</p>
+      <button class="btn btn-primary" style="align-self:flex-start">Sign up</button>
+    </div>
+    <div class="feature-card soft">
+      <h3 class="feature-card-title">Collaborate with group boards</h3>
+      <p class="feature-card-desc">Visualize your ideas with others, using a Pinterest account.</p>
+      <button class="btn btn-primary" style="align-self:flex-start">Sign up</button>
+    </div>
+    <div class="feature-card">
+      <h3 class="feature-card-title">Search visually with images</h3>
+      <p class="feature-card-desc">Search objects within an image to find more styles you'll love.</p>
+      <button class="btn btn-primary" style="align-self:flex-start">Sign up</button>
+    </div>
+  </div>
+
+  <div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start">
+    <div style="flex:1;min-width:280px">
+      <p class="palette-block-label">Modal Card (login overlay)</p>
+      <div class="modal-card">
+        <h3 class="modal-title">Welcome to Pinterest</h3>
+        <p class="modal-subtitle">Find new ideas to try</p>
+        <input class="text-input" placeholder="Email" style="width:100%;margin-bottom:8px">
+        <input class="text-input" placeholder="Password" type="password" style="width:100%;margin-bottom:16px">
+        <button class="btn btn-primary" style="width:100%">Continue</button>
+      </div>
+    </div>
+    <div style="flex:1;min-width:280px">
+      <p class="palette-block-label">Hero CTA Strip (create.pinterest.com)</p>
+      <div class="hero-cta-strip">
+        <h3 class="hero-cta-title">Where your content can thrive</h3>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMS -->
+<section>
+  <p class="section-eyebrow">07 — Forms</p>
+  <h2 class="section-heading">Form Elements</h2>
+  <p class="section-desc">16px-radius rectangle inputs with the signature double-ring focus signal: 2px ink inner border + 4px focus-blue outer outline.</p>
+
+  <div class="form-grid">
+    <div class="form-cell">
+      <label class="form-label">Default Input</label>
+      <input class="text-input" placeholder="Email">
+      <span class="form-spec">canvas bg · 1px ash · rounded 16px · 44px height</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Focused Input</label>
+      <input class="text-input focused" value="user@example.com">
+      <span class="form-spec">2px ink inner + 4px focus-blue outer ring</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Birthdate</label>
+      <input class="text-input" placeholder="MM/DD/YYYY">
+      <span class="form-spec">standard text-input</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Submit</label>
+      <button class="btn btn-primary" style="width:100%">Continue</button>
+      <span class="form-spec">button-primary · always full-width below stacked fields</span>
+    </div>
+  </div>
+</section>
+
+<!-- SPACING -->
+<section>
+  <p class="section-eyebrow">08 — Layout</p>
+  <h2 class="section-heading">Spacing Scale</h2>
+  <p class="section-desc">8px base with finer 4/6/7px steps for tight inline gaps. Section rhythm sits at 64px; pin grid gutters tighten to 8px so imagery effectively touches.</p>
+  <div class="spacing-row">
+    <div class="spacing-cell"><div class="spacing-bar" style="width:4px"></div><span class="spacing-label">xxs · 4</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:6px"></div><span class="spacing-label">xs · 6</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:8px"></div><span class="spacing-label">sm · 8</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:12px"></div><span class="spacing-label">md · 12</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:16px"></div><span class="spacing-label">lg · 16</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:24px"></div><span class="spacing-label">xl · 24</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:32px"></div><span class="spacing-label">xxl · 32</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:64px"></div><span class="spacing-label">section · 64</span></div>
+  </div>
+</section>
+
+<!-- RADIUS -->
+<section>
+  <p class="section-eyebrow">09 — Shapes</p>
+  <h2 class="section-heading">Border Radius Scale</h2>
+  <p class="section-desc">Three values do all the work: 16px for most components, 32px for large cards and modals, pill (9999px) for circular elements. No mid-radius value between md and lg.</p>
+  <div class="radius-row">
+    <div class="radius-cell"><div class="radius-box" style="border-radius:0"></div><span class="radius-label">none · 0</span><p class="radius-context">Footer, primary nav, page sections</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:8px"></div><span class="radius-label">sm · 8</span><p class="radius-context">Rare medium-radius surface (e.g., editorial tooltip)</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:16px"></div><span class="radius-label">md · 16</span><p class="radius-context">Buttons, inputs, pin cards, feature cards</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:32px"></div><span class="radius-label">lg · 32</span><p class="radius-context">Large pin cards, modal cards</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:9999px"></div><span class="radius-label">full · 9999</span><p class="radius-context">Search bar, filter chips, pin overlay pills, avatars</p></div>
+  </div>
+</section>
+
+<!-- ELEVATION -->
+<section>
+  <p class="section-eyebrow">10 — Depth</p>
+  <h2 class="section-heading">Elevation &amp; Depth</h2>
+  <p class="section-desc">No drop-shadow elevation in content surfaces. Pin cards sit flat. The only shadow appears on the modal layer.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card level-0"><div class="elevation-name">Level 0 — Flat</div><div class="elevation-spec">no border / no shadow</div></div>
+    <div class="elevation-card level-1"><div class="elevation-name">Level 1 — Hairline</div><div class="elevation-spec">1px solid #dadad3</div></div>
+    <div class="elevation-card level-2"><div class="elevation-name">Level 2 — Modal</div><div class="elevation-spec">0 16px 32px rgba(0,0,0,0.16) over scrim</div></div>
+  </div>
+</section>
+
+<!-- RESPONSIVE -->
+<section id="layout">
+  <p class="section-eyebrow">11 — Responsive</p>
+  <h2 class="section-heading">Responsive Behavior</h2>
+  <p class="section-desc">Pin masonry collapses from 5–6 columns at ultrawide down to 1 column at mobile while preserving each tile's natural aspect ratio.</p>
+
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>ultrawide</td><td>1920px+</td><td>Pin grid 5–6 columns; max-width holds at 1280px</td></tr>
+      <tr><td>desktop-large</td><td>1440px</td><td>Default — 4-column pin grid, full primary nav</td></tr>
+      <tr><td>desktop</td><td>1280px</td><td>Same layout with narrower outer gutters</td></tr>
+      <tr><td>desktop-small</td><td>1024px</td><td>Pin grid → 3 columns</td></tr>
+      <tr><td>tablet</td><td>768px</td><td>Pin grid → 2 columns; nav becomes hamburger; search collapses</td></tr>
+      <tr><td>mobile</td><td>480px</td><td>1-column grid; hero 70px → ~44px</td></tr>
+      <tr><td>mobile-narrow</td><td>320px</td><td>Hero → ~36px; section padding 32px</td></tr>
+    </tbody>
+  </table>
+
+  <div class="device-ladder">
+    <div class="device phone"><span class="name">320</span><span class="label">m-narrow</span></div>
+    <div class="device phone-large"><span class="name">480</span><span class="label">mobile</span></div>
+    <div class="device tablet"><span class="name">768</span><span class="label">tablet</span></div>
+    <div class="device desktop-small"><span class="name">1024</span><span class="label">desktop-sm</span></div>
+    <div class="device desktop"><span class="name">1280</span><span class="label">desktop-lg</span></div>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Touch Targets</h3>
+    <ul>
+      <li><strong>WCAG AA:</strong> button-primary and button-secondary at 40px height with 14px padding (~40×80px).</li>
+      <li><strong>Search bar:</strong> 48px height with 15px padding.</li>
+      <li><strong>Text input:</strong> 44px height with 15px padding.</li>
+      <li><strong>Filter chip:</strong> ~36–40px height extends to 44px tappable via inline padding.</li>
+      <li><strong>Icon-circular button:</strong> exactly 40×40 with extended hit-target padding to 48×48.</li>
+    </ul>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Collapsing Strategy</h3>
+    <ul>
+      <li><strong>Primary nav:</strong> desktop horizontal → tablet hamburger drawer at 768px. Red Sign-up CTA stays visible.</li>
+      <li><strong>Search bar:</strong> 480px wide → 320px → magnifier icon overlay on mobile.</li>
+      <li><strong>Pin masonry:</strong> 5–6 → 4 → 3 → 2 → 1 columns; gutters drop 8px → 6px on mobile.</li>
+      <li><strong>Home feature row:</strong> alternating left/right 2-column → vertical stack on tablet.</li>
+      <li><strong>Modal:</strong> centered ~480px desktop → full-width sheet on mobile.</li>
+      <li><strong>Section padding:</strong> 64px → 48px → 32px.</li>
+      <li><strong>Hero headline:</strong> 70px → 56px → 44px → 36px down the breakpoint stack.</li>
+      <li><strong>Footer:</strong> 4-up → 2-up → accordion.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</div>
+<div class="theme-layer" data-when="dark">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#layout">Layout</a></li>
+  </ul>
+  <button class="nav-cta">Sign up</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of Pinterest</h1>
+    <p>A photography-first discovery system. In dark mode the warm-cream chrome inverts to a warm-tinted near-black canvas while Pinterest Red stays untouched as the brand anchor. Pin masonry, 16px-radius cards, and the same sticky red Sign-up CTA — only the surface ladder changes.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Sign up</button>
+      <button class="btn btn-secondary">Already have an account</button>
+    </div>
+  </div>
+</header>
+
+<!-- COLOR PALETTE -->
+<section data-sec="colors">
+  <p class="section-eyebrow">01 — Color</p>
+  <h2 class="section-heading">Color Palette</h2>
+  <p class="section-desc">Warm-tinted near-black canvas with a 4-step surface ladder, translucent-white text and border tiers. Pinterest Red preserved exactly.</p>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Brand &amp; Accent (preserved)</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#e60023"></div><div class="swatch-meta"><p class="swatch-name">Pinterest Red (primary)</p><p class="swatch-hex">#e60023</p><p class="swatch-role">Sign-up CTA, brand wordmark — preserved exactly</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#cc001f"></div><div class="swatch-meta"><p class="swatch-name">Pinterest Red Pressed</p><p class="swatch-hex">#cc001f</p><p class="swatch-role">Pressed state — preserved</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Canvas &amp; Surface Ladder</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#161310"></div><div class="swatch-meta"><p class="swatch-name">Canvas</p><p class="swatch-hex">#161310</p><p class="swatch-role">Warm near-black page background</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#211e1b"></div><div class="swatch-meta"><p class="swatch-name">Surface</p><p class="swatch-hex">#211e1b</p><p class="swatch-role">Cards, feature cards, modal background</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#2d2926"></div><div class="swatch-meta"><p class="swatch-name">Surface Card</p><p class="swatch-hex">#2d2926</p><p class="swatch-role">Pin tile background, search-bar default fill</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#3a3531"></div><div class="swatch-meta"><p class="swatch-name">Secondary BG</p><p class="swatch-hex">#3a3531</p><p class="swatch-role">Secondary button fill</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Translucent Borders</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.12)"></div><div class="swatch-meta"><p class="swatch-name">Hairline</p><p class="swatch-hex">rgba(255,255,255,0.12)</p><p class="swatch-role">1px row dividers, footer column rules</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.24)"></div><div class="swatch-meta"><p class="swatch-name">Hairline Strong</p><p class="swatch-hex">rgba(255,255,255,0.24)</p><p class="swatch-role">Stronger inline divider</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Text Tiers</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff"></div><div class="swatch-meta"><p class="swatch-name">Ink</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Headlines, button text, primary nav links</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.85)"></div><div class="swatch-meta"><p class="swatch-name">Body</p><p class="swatch-hex">rgba(255,255,255,0.85)</p><p class="swatch-role">Default paragraph text</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.6)"></div><div class="swatch-meta"><p class="swatch-name">Mute</p><p class="swatch-hex">rgba(255,255,255,0.6)</p><p class="swatch-role">Metadata, footer links</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:rgba(255,255,255,0.45)"></div><div class="swatch-meta"><p class="swatch-name">Ash</p><p class="swatch-hex">rgba(255,255,255,0.45)</p><p class="swatch-role">Disabled text, placeholder</p></div></div>
+    </div>
+  </div>
+
+  <div class="palette-block">
+    <p class="palette-block-label">Semantic (brightened)</p>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ff5b50"></div><div class="swatch-meta"><p class="swatch-name">Error</p><p class="swatch-hex">#ff5b50</p><p class="swatch-role">Validation — brightened from #9e0a0a</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#30d158"></div><div class="swatch-meta"><p class="swatch-name">Success</p><p class="swatch-hex">#30d158</p><p class="swatch-role">In-product success — brightened</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#6a85ff"></div><div class="swatch-meta"><p class="swatch-name">Focus Outer</p><p class="swatch-hex">#6a85ff</p><p class="swatch-role">2px outer focus ring — brightened</p></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#c060e0"></div><div class="swatch-meta"><p class="swatch-name">Accent Purple</p><p class="swatch-hex">#c060e0</p><p class="swatch-role">Editorial recommendation badge — brightened</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section data-sec="typography">
+  <p class="section-eyebrow">02 — Typography</p>
+  <h2 class="section-heading">Typography Scale</h2>
+  <p class="section-desc">Identical hierarchy to light mode. Type tokens don't change between modes — only colors shift.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>Pin Sans<br>70px / 600 / lh 1.1 / -1.2px</div><div class="type-sample" style="font-size:70px;font-weight:600;line-height:1.1;letter-spacing:-1.2px">Create the life you love</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>Pin Sans<br>44px / 700 / lh 1.15 / -0.8px</div><div class="type-sample" style="font-size:44px;font-weight:700;line-height:1.15;letter-spacing:-0.8px">Where your content can thrive</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-xl</strong>Pin Sans<br>28px / 700 / lh 1.2 / -1.2px</div><div class="type-sample" style="font-size:28px;font-weight:700;line-height:1.2;letter-spacing:-1.2px">Bring your favorite ideas to life</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-lg</strong>Pin Sans<br>22px / 600 / lh 1.25</div><div class="type-sample" style="font-size:22px;font-weight:600;line-height:1.25">Welcome to Pinterest</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-md</strong>Pin Sans<br>18px / 600 / lh 1.3</div><div class="type-sample" style="font-size:18px;font-weight:600;line-height:1.3">Card title or in-grid pin label</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>Pin Sans<br>16px / 400 / lh 1.4</div><div class="type-sample" style="font-size:16px;font-weight:400;line-height:1.4">Default body copy on dark canvas at 16px regular weight.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-strong</strong>Pin Sans<br>16px / 600 / lh 1.4</div><div class="type-sample" style="font-size:16px;font-weight:600;line-height:1.4">Inline emphasis or primary nav link</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>Pin Sans<br>14px / 400 / lh 1.4</div><div class="type-sample" style="font-size:14px;font-weight:400;line-height:1.4">Footer copy, in-grid pin metadata</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm-strong</strong>Pin Sans<br>14px / 700 / lh 1.4</div><div class="type-sample" style="font-size:14px;font-weight:700;line-height:1.4">Search-result count label</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption-md</strong>Pin Sans<br>12px / 500 / lh 1.5</div><div class="type-sample" style="font-size:12px;font-weight:500;line-height:1.5">Caption text, link metadata</div></div>
+  <div class="type-row"><div class="type-meta"><strong>link-md</strong>Pin Sans<br>16px / 600 / lh 1.4</div><div class="type-sample" style="font-size:16px;font-weight:600;line-height:1.4;color:var(--ink-soft)">Inline body anchor link</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-md</strong>Pin Sans<br>14px / 700 / lh 1</div><div class="type-sample" style="font-size:14px;font-weight:700;line-height:1">Sign up</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-sm</strong>Pin Sans<br>12px / 700 / lh 1</div><div class="type-sample" style="font-size:12px;font-weight:700;line-height:1">Compact pill chip</div></div>
+</section>
+
+<!-- BUTTONS -->
+<section data-sec="components">
+  <p class="section-eyebrow">03 — Components</p>
+  <h2 class="section-heading">Button Variants</h2>
+  <p class="section-desc">Same vocabulary as light mode — Pinterest Red primary stays exactly the same; secondary inverts to a deepened gray-charcoal.</p>
+
+  <div class="button-grid">
+    <div class="button-cell">
+      <button class="btn btn-primary">Sign up</button>
+      <p class="button-cell-label">button-primary</p>
+      <p class="button-cell-spec">bg primary · text on-primary · rounded 16px · 40px height</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-primary" style="background:var(--primary-pressed)">Pressed</button>
+      <p class="button-cell-label">button-primary-pressed</p>
+      <p class="button-cell-spec">bg primary-pressed · text on-primary</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-secondary">Already have an account</button>
+      <p class="button-cell-label">button-secondary</p>
+      <p class="button-cell-spec">bg secondary-bg · text ink · rounded 16px</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-secondary" style="background:var(--secondary-pressed)">Pressed</button>
+      <p class="button-cell-label">button-secondary-pressed</p>
+      <p class="button-cell-spec">bg secondary-pressed · text ink</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-tertiary">Read the docs</button>
+      <p class="button-cell-label">button-tertiary</p>
+      <p class="button-cell-spec">transparent · text ink</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-icon-circular">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"></path></svg>
+      </button>
+      <p class="button-cell-label">button-icon-circular</p>
+      <p class="button-cell-spec">bg surface-card · 40px circle</p>
+    </div>
+    <div class="button-cell on-image">
+      <button class="btn btn-pill-on-image">Cherry red</button>
+      <p class="button-cell-label">button-pill-on-image</p>
+      <p class="button-cell-spec">bg canvas · text ink · 1px hairline · rounded full</p>
+    </div>
+    <div class="button-cell">
+      <button class="btn btn-disabled">Disabled</button>
+      <p class="button-cell-label">button-disabled</p>
+      <p class="button-cell-spec">bg surface · text ash</p>
+    </div>
+    <div class="button-cell wide">
+      <div class="filter-chips">
+        <button class="chip active">All Pins</button>
+        <button class="chip">Beauty makeup</button>
+        <button class="chip">Lipstick</button>
+        <button class="chip">Editorial</button>
+        <button class="chip">Tutorials</button>
+      </div>
+      <p class="button-cell-label">filter-chip + filter-chip-active</p>
+      <p class="button-cell-spec">default: surface-card · active: ink fill + canvas text</p>
+    </div>
+    <div class="button-cell wide">
+      <div style="display:flex;gap:24px;flex-wrap:wrap">
+        <span class="search-bar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+          Search for ideas
+        </span>
+        <span class="search-bar focused">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+          bold lip
+        </span>
+      </div>
+      <p class="button-cell-label">search-bar + search-bar-focused</p>
+      <p class="button-cell-spec">surface-card bg · rounded full · 48px height</p>
+    </div>
+  </div>
+</section>
+
+<!-- PIN MASONRY -->
+<section>
+  <p class="section-eyebrow">04 — Signature</p>
+  <h2 class="section-heading">Pin Masonry Grid</h2>
+  <p class="section-desc">Column-based layout preserved exactly from light mode — only the imagery's underlying tonal range shifts to deeper saturations on dark canvas.</p>
+
+  <div class="masonry">
+    <div class="pin-card"><div class="pin-image color1"></div><span class="pin-overlay-pill">Cherry red</span></div>
+    <div class="pin-card"><div class="pin-image color2 sq"></div></div>
+    <div class="pin-card large"><div class="pin-image color3 tall"></div><span class="pin-overlay-pill">Editorial</span></div>
+    <div class="pin-card"><div class="pin-image color4 short"></div></div>
+    <div class="pin-card"><div class="pin-image color5"></div><span class="pin-overlay-pill">Preppy look</span></div>
+    <div class="pin-card"><div class="pin-image color6 sq"></div></div>
+    <div class="pin-card"><div class="pin-image color1 short"></div></div>
+    <div class="pin-card"><div class="pin-image color3"></div></div>
+    <div class="pin-card"><div class="pin-image color4 tall"></div><span class="pin-overlay-pill">Bold lip</span></div>
+    <div class="pin-card"><div class="pin-image color2"></div></div>
+    <div class="pin-card"><div class="pin-image color5 sq"></div></div>
+    <div class="pin-card"><div class="pin-image color6 short"></div></div>
+  </div>
+</section>
+
+<!-- CATEGORY TILES -->
+<section>
+  <p class="section-eyebrow">05 — Tiles</p>
+  <h2 class="section-heading">Category Tiles</h2>
+  <p class="section-desc">Square 1:1 tiles with a 16px radius and a category label anchored at the bottom.</p>
+
+  <div class="category-grid">
+    <div class="category-tile t1">Search by skin tone</div>
+    <div class="category-tile t2">Group boards</div>
+    <div class="category-tile t3">Visual search</div>
+    <div class="category-tile t4">Trending now</div>
+    <div class="category-tile t1">Bold lip</div>
+    <div class="category-tile t2">Editorial</div>
+  </div>
+</section>
+
+<!-- FEATURE CARDS + MODAL + CTA STRIP -->
+<section>
+  <p class="section-eyebrow">06 — Cards</p>
+  <h2 class="section-heading">Feature Cards · Modal · CTA Strip</h2>
+  <p class="section-desc">Three card families on dark canvas — the modal-card uses a deeper shadow to cut through translucent surfaces.</p>
+
+  <div class="feature-grid" style="margin-bottom:32px">
+    <div class="feature-card">
+      <h3 class="feature-card-title">Search by skin tone</h3>
+      <p class="feature-card-desc">Search with skin tone ranges for beauty ideas that represent you.</p>
+      <button class="btn btn-primary" style="align-self:flex-start">Sign up</button>
+    </div>
+    <div class="feature-card soft">
+      <h3 class="feature-card-title">Collaborate with group boards</h3>
+      <p class="feature-card-desc">Visualize your ideas with others, using a Pinterest account.</p>
+      <button class="btn btn-primary" style="align-self:flex-start">Sign up</button>
+    </div>
+    <div class="feature-card">
+      <h3 class="feature-card-title">Search visually with images</h3>
+      <p class="feature-card-desc">Search objects within an image to find more styles you'll love.</p>
+      <button class="btn btn-primary" style="align-self:flex-start">Sign up</button>
+    </div>
+  </div>
+
+  <div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start">
+    <div style="flex:1;min-width:280px">
+      <p class="palette-block-label">Modal Card</p>
+      <div class="modal-card">
+        <h3 class="modal-title">Welcome to Pinterest</h3>
+        <p class="modal-subtitle">Find new ideas to try</p>
+        <input class="text-input" placeholder="Email" style="width:100%;margin-bottom:8px">
+        <input class="text-input" placeholder="Password" type="password" style="width:100%;margin-bottom:16px">
+        <button class="btn btn-primary" style="width:100%">Continue</button>
+      </div>
+    </div>
+    <div style="flex:1;min-width:280px">
+      <p class="palette-block-label">Hero CTA Strip</p>
+      <div class="hero-cta-strip">
+        <h3 class="hero-cta-title">Where your content can thrive</h3>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMS -->
+<section>
+  <p class="section-eyebrow">07 — Forms</p>
+  <h2 class="section-heading">Form Elements</h2>
+  <p class="section-desc">16px-radius rectangle inputs on surface fill with translucent-white border and brightened blue focus ring.</p>
+
+  <div class="form-grid">
+    <div class="form-cell">
+      <label class="form-label">Default Input</label>
+      <input class="text-input" placeholder="Email">
+      <span class="form-spec">surface bg · 1px hairline · rounded 16px · 44px height</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Focused Input</label>
+      <input class="text-input focused" value="user@example.com">
+      <span class="form-spec">2px ink inner + 4px brightened-blue outer ring</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Birthdate</label>
+      <input class="text-input" placeholder="MM/DD/YYYY">
+      <span class="form-spec">standard text-input</span>
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Submit</label>
+      <button class="btn btn-primary" style="width:100%">Continue</button>
+      <span class="form-spec">button-primary · always full-width</span>
+    </div>
+  </div>
+</section>
+
+<!-- SPACING -->
+<section>
+  <p class="section-eyebrow">08 — Layout</p>
+  <h2 class="section-heading">Spacing Scale</h2>
+  <p class="section-desc">8px base. Section rhythm at 64px is preserved across modes.</p>
+  <div class="spacing-row">
+    <div class="spacing-cell"><div class="spacing-bar" style="width:4px"></div><span class="spacing-label">xxs · 4</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:6px"></div><span class="spacing-label">xs · 6</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:8px"></div><span class="spacing-label">sm · 8</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:12px"></div><span class="spacing-label">md · 12</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:16px"></div><span class="spacing-label">lg · 16</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:24px"></div><span class="spacing-label">xl · 24</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:32px"></div><span class="spacing-label">xxl · 32</span></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:64px"></div><span class="spacing-label">section · 64</span></div>
+  </div>
+</section>
+
+<!-- RADIUS -->
+<section>
+  <p class="section-eyebrow">09 — Shapes</p>
+  <h2 class="section-heading">Border Radius Scale</h2>
+  <p class="section-desc">Identical to light mode: 16px for most, 32px for large cards and modals, pill for circular elements.</p>
+  <div class="radius-row">
+    <div class="radius-cell"><div class="radius-box" style="border-radius:0"></div><span class="radius-label">none · 0</span><p class="radius-context">Footer, primary nav, page sections</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:8px"></div><span class="radius-label">sm · 8</span><p class="radius-context">Rare medium-radius surface</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:16px"></div><span class="radius-label">md · 16</span><p class="radius-context">Buttons, inputs, pin cards</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:32px"></div><span class="radius-label">lg · 32</span><p class="radius-context">Large pin cards, modal cards</p></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:9999px"></div><span class="radius-label">full · 9999</span><p class="radius-context">Search bar, filter chips, avatars</p></div>
+  </div>
+</section>
+
+<!-- ELEVATION -->
+<section>
+  <p class="section-eyebrow">10 — Depth</p>
+  <h2 class="section-heading">Elevation &amp; Depth</h2>
+  <p class="section-desc">No drop-shadow elevation in pin cards. The only shadow appears on the modal layer at deepened opacity.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card level-0"><div class="elevation-name">Level 0 — Flat</div><div class="elevation-spec">no border / no shadow</div></div>
+    <div class="elevation-card level-1"><div class="elevation-name">Level 1 — Hairline</div><div class="elevation-spec">1px solid rgba(255,255,255,0.12)</div></div>
+    <div class="elevation-card level-2"><div class="elevation-name">Level 2 — Modal</div><div class="elevation-spec">0 16px 32px rgba(0,0,0,0.5)</div></div>
+  </div>
+</section>
+
+<!-- RESPONSIVE -->
+<section data-sec="layout">
+  <p class="section-eyebrow">11 — Responsive</p>
+  <h2 class="section-heading">Responsive Behavior</h2>
+  <p class="section-desc">Identical breakpoint stack to light mode.</p>
+
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>ultrawide</td><td>1920px+</td><td>Pin grid 5–6 columns</td></tr>
+      <tr><td>desktop-large</td><td>1440px</td><td>Default — 4-column pin grid</td></tr>
+      <tr><td>desktop</td><td>1280px</td><td>Same with narrower gutters</td></tr>
+      <tr><td>desktop-small</td><td>1024px</td><td>Pin grid → 3 columns</td></tr>
+      <tr><td>tablet</td><td>768px</td><td>Pin grid → 2; nav becomes hamburger</td></tr>
+      <tr><td>mobile</td><td>480px</td><td>1-column grid; hero 70px → ~44px</td></tr>
+    </tbody>
+  </table>
+
+  <div class="device-ladder">
+    <div class="device phone"><span class="name">320</span><span class="label">m-narrow</span></div>
+    <div class="device phone-large"><span class="name">480</span><span class="label">mobile</span></div>
+    <div class="device tablet"><span class="name">768</span><span class="label">tablet</span></div>
+    <div class="device desktop-small"><span class="name">1024</span><span class="label">desktop-sm</span></div>
+    <div class="device desktop"><span class="name">1280</span><span class="label">desktop-lg</span></div>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Touch Targets</h3>
+    <ul>
+      <li><strong>WCAG AA:</strong> button-primary at 40px height with 14px padding (~40×80px).</li>
+      <li><strong>Search bar:</strong> 48px height. <strong>Text input:</strong> 44px.</li>
+      <li><strong>Filter chip:</strong> ~36–40px extends to 44px tappable via padding.</li>
+      <li><strong>Icon-circular button:</strong> 40×40 with 48×48 hit-target padding.</li>
+    </ul>
+  </div>
+
+  <div class="responsive-sub-block">
+    <h3>Collapsing Strategy</h3>
+    <ul>
+      <li><strong>Primary nav:</strong> desktop horizontal → tablet hamburger drawer.</li>
+      <li><strong>Search bar:</strong> 480px → 320px → magnifier icon overlay.</li>
+      <li><strong>Pin masonry:</strong> 5–6 → 4 → 3 → 2 → 1 columns.</li>
+      <li><strong>Modal:</strong> centered ~480px → full-width sheet on mobile.</li>
+      <li><strong>Section padding:</strong> 64px → 48px → 32px.</li>
+      <li><strong>Hero headline:</strong> 70px → 56px → 44px → 36px.</li>
+      <li><strong>Footer:</strong> 4-up → 2-up → accordion.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</div>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Design System Analysis of Notion</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #0b0b0c; }</style><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+</head>
+<body>
+<div class="theme-layer" data-when="light">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>awesome-design-md</a>
+  </div>
+  <ul class="nav-links"><li>Product</li><li>Solutions</li><li>Enterprise</li><li>Pricing</li></ul>
+  <button class="nav-cta">Get Notion free</button>
+</nav>
+<div class="hero"><div class="hero-content">
+  <h1>Design System Analysis of Notion</h1>
+  <p>A warm, paper-calm productivity system: an off-white canvas under near-black Inter type, structured by a single confident blue. A playful multi-colour sticker palette carries the personality while the chrome stays quiet — with one inverted deep-indigo hero band.</p>
+  <div class="hero-actions"><button class="btn-primary">Get Notion free</button><button class="btn-secondary">Request a demo</button></div>
+</div></div>
+<section><span class="section-eyebrow">01 — Foundations</span><h2 class="section-heading">Color Palette</h2><div class="palette-grid"><div class="swatch"><div class="swatch-fill" style="background:#0075de;"></div><div class="swatch-meta"><p class="swatch-name">primary</p><p class="swatch-hex">#0075de</p><p class="swatch-role">Primary CTA, links, active signal</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#005bab;"></div><div class="swatch-meta"><p class="swatch-name">primary-active</p><p class="swatch-hex">#005bab</p><p class="swatch-role">Pressed primary state</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#213183;"></div><div class="swatch-meta"><p class="swatch-name">secondary</p><p class="swatch-hex">#213183</p><p class="swatch-role">Deep-indigo hero “night” band</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#000000;"></div><div class="swatch-meta"><p class="swatch-name">ink</p><p class="swatch-hex">#000000</p><p class="swatch-role">Headings &amp; body text</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#31302e;"></div><div class="swatch-meta"><p class="swatch-name">ink-secondary</p><p class="swatch-hex">#31302e</p><p class="swatch-role">Secondary copy / footer</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#615d59;"></div><div class="swatch-meta"><p class="swatch-name">ink-muted</p><p class="swatch-hex">#615d59</p><p class="swatch-role">Muted supporting copy</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#a39e98;"></div><div class="swatch-meta"><p class="swatch-name">ink-faint</p><p class="swatch-hex">#a39e98</p><p class="swatch-role">Captions / placeholder</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#ffffff;"></div><div class="swatch-meta"><p class="swatch-name">canvas</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">White card / panel surface</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#f6f5f4;"></div><div class="swatch-meta"><p class="swatch-name">canvas-soft</p><p class="swatch-hex">#f6f5f4</p><p class="swatch-role">Warm paper page canvas</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#e6e6e6;"></div><div class="swatch-meta"><p class="swatch-name">hairline</p><p class="swatch-hex">#e6e6e6</p><p class="swatch-role">1px borders &amp; dividers</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#62aef0;"></div><div class="swatch-meta"><p class="swatch-name">accent-sky</p><p class="swatch-hex">#62aef0</p><p class="swatch-role">Sticker accent (decorative)</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#d6b6f6;"></div><div class="swatch-meta"><p class="swatch-name">accent-purple</p><p class="swatch-hex">#d6b6f6</p><p class="swatch-role">Sticker accent (decorative)</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#ff64c8;"></div><div class="swatch-meta"><p class="swatch-name">accent-pink</p><p class="swatch-hex">#ff64c8</p><p class="swatch-role">Sticker accent (decorative)</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#dd5b00;"></div><div class="swatch-meta"><p class="swatch-name">accent-orange</p><p class="swatch-hex">#dd5b00</p><p class="swatch-role">Sticker accent (decorative)</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#2a9d99;"></div><div class="swatch-meta"><p class="swatch-name">accent-teal</p><p class="swatch-hex">#2a9d99</p><p class="swatch-role">Sticker accent (decorative)</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#1aae39;"></div><div class="swatch-meta"><p class="swatch-name">accent-green</p><p class="swatch-hex">#1aae39</p><p class="swatch-role">Sticker accent (decorative)</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#523410;"></div><div class="swatch-meta"><p class="swatch-name">accent-brown</p><p class="swatch-hex">#523410</p><p class="swatch-role">Sticker accent (decorative)</p></div></div></div></section>
+<section><span class="section-eyebrow">02 — Foundations</span><h2 class="section-heading">Typography</h2><p style="color:#615d59;margin:-16px 0 28px;max-width:720px;">NotionInter - Notion's tuned cut of Inter (Inter shown as substitute). Hierarchy comes from size and increasingly-tight negative tracking on the display end (-2.125px at 64px); headlines run heavy at 700 while body stays calm at 400 for document readability.</p><div class="type-row"><div class="type-meta">display-1<br>64px / 700 / 1.0 / -2.125px</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:64px;font-weight:700;line-height:1.0;letter-spacing:-2.125px;color:#000000;">Notion</div></div><div class="type-row"><div class="type-meta">display-2<br>54px / 700 / 1.04 / -1.875px</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:54px;font-weight:700;line-height:1.04;letter-spacing:-1.875px;color:#000000;">Meet the night shift</div></div><div class="type-row"><div class="type-meta">heading-1<br>40px / 700 / 1.1 / -1px</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:40px;font-weight:700;line-height:1.1;letter-spacing:-1px;color:#000000;">Plans and features</div></div><div class="type-row"><div class="type-meta">heading-2<br>26px / 700 / 1.23 / -0.625px</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:26px;font-weight:700;line-height:1.23;letter-spacing:-0.625px;color:#000000;">One workspace. Every team.</div></div><div class="type-row"><div class="type-meta">heading-3<br>22px / 700 / 1.27 / -0.25px</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:22px;font-weight:700;line-height:1.27;letter-spacing:-0.25px;color:#000000;">Bring all your work together</div></div><div class="type-row"><div class="type-meta">title<br>20px / 600 / 1.4 / -0.125px</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:20px;font-weight:600;line-height:1.4;letter-spacing:-0.125px;color:#000000;">Ask your on-demand assistants</div></div><div class="type-row"><div class="type-meta">body-md<br>16px / 400 / 1.5 / 0</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:16px;font-weight:400;line-height:1.5;letter-spacing:0;color:#000000;">Write, plan, and organize all in one connected workspace.</div></div><div class="type-row"><div class="type-meta">body-sm<br>15px / 400 / 1.33 / 0</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:15px;font-weight:400;line-height:1.33;letter-spacing:0;color:#000000;">Dense body copy, table rows, and navigation labels.</div></div><div class="type-row"><div class="type-meta">button<br>16px / 500 / 1.5 / 0</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:16px;font-weight:500;line-height:1.5;letter-spacing:0;color:#000000;">Get Notion free</div></div><div class="type-row"><div class="type-meta">caption<br>14px / 400 / 1.43 / 0</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:14px;font-weight:400;line-height:1.43;letter-spacing:0;color:#000000;">Captions, metadata, and footnotes.</div></div><div class="type-row"><div class="type-meta">eyebrow<br>12px / 600 / 1.33 / 0.125px</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:12px;font-weight:600;line-height:1.33;letter-spacing:0.125px;color:#000000;">ESSENTIAL FOR STAYING ORGANIZED</div></div></section>
+<section><span class="section-eyebrow">03 — Components</span><h2 class="section-heading">Button Variants</h2><div class="button-grid">
+  <div class="demo-card"><span class="label">button-primary · blue pill</span><button class="btn-primary" style="height:44px;">Get Notion free</button><p style="font-size:12px;color:#615d59;margin:12px 0 0;">The single blue action, fully pill-shaped (9999px) with a white label. The only colour that ever paints a CTA.</p></div>
+  <div class="demo-card"><span class="label">button-utility · 8px rect</span><button style="height:36px;background:#ffffff;border:1px solid #e6e6e6;color:#000000;border-radius:8px;padding:0 14px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;">Get Notion free</button><p style="font-size:12px;color:#615d59;margin:12px 0 0;">Compact nav / plan-select button: white fill, 8px corners, hairline border. Tighter than the marketing pill.</p></div>
+  <div class="demo-card"><span class="label">button-secondary · white pill</span><button class="btn-secondary" style="height:44px;box-shadow:0 1px 4px rgba(0,0,0,0.06);">Request a demo</button><p style="font-size:12px;color:#615d59;margin:12px 0 0;">Pairs beside the blue primary in the hero: a white pill lifted on a soft layered shadow.</p></div>
+  <div class="demo-card"><span class="label">badge-pill · eyebrow</span><span style="display:inline-block;background:#ffffff;color:#0075de;border:1px solid #e6e6e6;border-radius:9999px;padding:4px 10px;font-size:12px;font-weight:600;">New</span><p style="font-size:12px;color:#615d59;margin:12px 0 0;">Small pill label: white fill, brand-blue text, full pill radius.</p></div>
+  <div class="demo-card"><span class="label">link · inline</span><div style="display:flex;gap:16px;font-size:15px;font-weight:500;"><a href="#" style="color:#0075de;">Pricing</a><a href="#" style="color:#0075de;text-decoration:underline;">Help center</a></div></div>
+</div></section>
+<section><span class="section-eyebrow">04 — Components</span><h2 class="section-heading">Cards &amp; Surfaces</h2><div class="card-grid">
+  <div class="feature-card"><h4>Feature Card</h4><p>White surface, hairline border, 12px corners. The workhorse marketing card, often topped by a colour-blocked sticker illustration band.</p></div>
+  <div class="feature-card" style="background:#213183;color:#fff;border:none;border-radius:12px;"><h4 style="color:#fff;">Dark Hero Band</h4><p style="color:rgba(255,255,255,0.72);">The deep-indigo night hero: the single inverted dark island, carrying white display type and a sticker constellation.</p></div>
+  <div class="feature-card" style="box-shadow:var(--shadow-md);border:none;"><h4>Elevated Card</h4><p>A feature card lifted on Notion barely-there layered shadow: many near-transparent stops, never a hard cast.</p></div>
+</div></section>
+<section><span class="section-eyebrow">05 — Components</span><h2 class="section-heading">Form Elements</h2><div class="form-grid">
+  <div class="demo-card"><span class="label">text-input · 4px</span><input class="ex-input-demo" style="border-radius:4px;" placeholder="you@example.com"></div>
+  <div class="demo-card"><span class="label">textarea · 4px</span><textarea class="ex-input-demo" style="border-radius:4px;" rows="3" placeholder="Write something..."></textarea></div>
+</div></section>
+<section><span class="section-eyebrow">06 — Foundations</span><h2 class="section-heading">Spacing Scale</h2><p style="color:#615d59;margin:-16px 0 28px;">8px base unit. Card interiors land around lg (24px); section gaps stack the larger steps for an airy, document-like rhythm.</p><div class="spacing-row"><div><div class="spacing-box" style="width:16px;"></div><div class="spacing-label">xxs<br>4px</div></div><div><div class="spacing-box" style="width:16px;"></div><div class="spacing-label">xs<br>8px</div></div><div><div class="spacing-box" style="width:24px;"></div><div class="spacing-label">sm<br>12px</div></div><div><div class="spacing-box" style="width:32px;"></div><div class="spacing-label">md<br>16px</div></div><div><div class="spacing-box" style="width:48px;"></div><div class="spacing-label">lg<br>24px</div></div><div><div class="spacing-box" style="width:56px;"></div><div class="spacing-label">xl<br>28px</div></div><div><div class="spacing-box" style="width:64px;"></div><div class="spacing-label">xxl<br>32px</div></div></div></section>
+<section><span class="section-eyebrow">07 — Foundations</span><h2 class="section-heading">Border Radius</h2><p style="color:#615d59;margin:-16px 0 28px;">A deliberate split: tight 4px on form fields, 8px on utility buttons, 12px on content cards, and a full 9999px pill on marketing CTAs and badges.</p><div class="radius-row"><div><div class="radius-box" style="border-radius:4px;">4</div><div class="radius-label">xs<br>4px</div></div><div><div class="radius-box" style="border-radius:5px;">5</div><div class="radius-label">sm<br>5px</div></div><div><div class="radius-box" style="border-radius:8px;">8</div><div class="radius-label">md<br>8px</div></div><div><div class="radius-box" style="border-radius:12px;">12</div><div class="radius-label">lg<br>12px</div></div><div><div class="radius-box" style="border-radius:16px;">16</div><div class="radius-label">xl<br>16px</div></div><div><div class="radius-box" style="border-radius:9999px;">∞</div><div class="radius-label">full<br>9999px</div></div></div></section>
+<section><span class="section-eyebrow">08 — Foundations</span><h2 class="section-heading">Elevation &amp; Depth</h2><div class="elevation-grid">
+  <div class="elev-card elev-1">Level 0 - 1px hairline only. The default card on the warm canvas.</div>
+  <div class="elev-card elev-2">Level 1 / 2 - soft layered micro-shadow. Floating cards and modals, built from many near-transparent stops.</div>
+</div></section>
+<section><span class="section-eyebrow">09 — Responsive</span><h2 class="section-heading">Responsive Behavior</h2>
+  <table class="responsive-table"><thead><tr><th>Name</th><th>Width</th><th>Key changes</th></tr></thead><tbody>
+  <tr><td>Mobile</td><td>&lt; 768px</td><td>Single column; nav → hamburger; CTAs + pricing tiers stack full-width</td></tr>
+  <tr><td>Tablet</td><td>768–1023px</td><td>Grids collapse toward 2-up / 1-up; nav condenses</td></tr>
+  <tr><td>Laptop</td><td>1024–1279px</td><td>Tightened gutters; 3-col grids retained</td></tr>
+  <tr><td>Desktop</td><td>≥ 1280px</td><td>Full multi-column grids; centred ~1200px column</td></tr></tbody></table>
+  <div class="device-ladder">
+    <div class="device-box" style="width:60px;height:110px;">375</div>
+    <div class="device-box" style="width:120px;height:110px;">768</div>
+    <div class="device-box" style="width:170px;height:110px;">1024</div>
+    <div class="device-box" style="width:220px;height:110px;">1280</div>
+    <div class="device-box" style="width:280px;height:110px;">1440</div>
+  </div>
+  <p style="color:#615d59;margin-top:24px;font-size:14px;"><strong style="color:#000000;">Touch targets:</strong> the pill CTAs clear 44x44 WCAG-AAA. <strong style="color:#000000;">Collapsing:</strong> the top nav condenses to a hamburger below the tablet breakpoint (blue CTA stays); multi-column feature grids reflow to a single stacked column; the 4-column pricing table reflows into stacked plan cards; display type scales down while headlines keep weight 700.</p>
+</section>
+
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Pricing Tiers</h2>
+    <p class="ex-intro">Three-up plan grid with the middle tier polarity-flipped. Mono uppercase tier name, display numeral price, hairline-divided feature list.</p>
+    <div class="ex-grid-pricing">
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">Starter</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$9</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For individuals getting started.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Core features</li>
+          <li><span class="ex-bullet"></span>Up to 3 projects</li>
+          <li><span class="ex-bullet"></span>Community support</li>
+        </ul>
+        <button class="ex-tier-cta ink">Get started</button>
+      </div>
+      <div class="ex-tier-card dark">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span class="ex-mono" style="color:rgba(255,255,255,0.55);">Pro</span>
+          <span style="font-family:var(--font-mono); font-size:10px; letter-spacing: var(--ex-letter-eyebrow, 0); text-transform:uppercase; color:var(--color-accent); display:inline-flex; align-items:center; gap:6px;"><span style="width:6px; height:6px; background:var(--color-accent); border-radius:9999px;"></span>Most popular</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$29</span><span style="font-family:var(--font-mono); font-size:12px; color:rgba(255,255,255,0.55);">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:rgba(255,255,255,0.72); margin:0;">For teams ready to ship.</p>
+        <ul class="ex-features dark">
+          <li><span class="ex-bullet"></span>Everything in Starter</li>
+          <li><span class="ex-bullet"></span>Unlimited projects</li>
+          <li><span class="ex-bullet"></span>Email support</li>
+          <li><span class="ex-bullet"></span>Advanced analytics</li>
+        </ul>
+        <button class="ex-tier-cta invert">Start free trial</button>
+      </div>
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">Team</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$99</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For organizations operating at scale.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Everything in Pro</li>
+          <li><span class="ex-bullet"></span>SSO + audit log</li>
+          <li><span class="ex-bullet"></span>Priority support</li>
+          <li><span class="ex-bullet"></span>SLA &amp; onboarding</li>
+        </ul>
+        <button class="ex-tier-cta ink">Talk to sales</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Product Selector</h2>
+    <p class="ex-intro">Plan summary + cadence picker + seat-count grid + start-trial CTA. Cadence chips use a 1px ink ring for selection; seat pills polarity-flip to ink fill.</p>
+    <div class="ex-grid-product">
+      <div class="ex-grid-gallery">
+        <div class="ex-tile tall"><span class="ex-mono" style="font-size:10px;">/IMG · 01</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG · 02</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG · 03</span></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <div class="ex-mono" style="display:flex; align-items:center; gap:8px;"><span style="width:8px; height:8px; background:var(--color-accent); border-radius:9999px;"></span>Plan</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(22px, 4vw, 28px); font-weight:700; line-height:1.06; letter-spacing:-1px; color:var(--color-foreground); margin:0;">Pro Plan, Annual</h3>
+        <div style="display:flex; align-items:baseline; gap:12px;">
+          <span style="font-family:var(--font-display); font-size:clamp(28px, 4vw, 36px); font-weight:700; line-height:1; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground);">$192</span>
+          <span class="ex-mono">★★★★☆ &nbsp;·&nbsp; 117 reviews</span>
+        </div>
+        <p style="font-size:15px; color:var(--color-foreground-muted); line-height:1.5; margin:0;">Everything in one workspace - projects, members, and automation across unlimited seats. Billed annually with a 14-day free trial, cancel anytime.</p>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Unlimited projects</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>SSO + SCIM provisioning</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Priority support</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>99.9% uptime SLA</li>
+        </ul>
+        <div>
+          <div class="ex-mono" style="margin-bottom:10px;">Cadence · Annual</div>
+          <div style="display:flex; gap:10px;">
+            <button aria-label="Monthly" style="width:32px; height:32px; border-radius:9999px; background:var(--color-border); border:1px solid var(--color-border-soft); box-shadow:0 0 0 2px var(--color-canvas), 0 0 0 3px var(--color-foreground); cursor:pointer; padding:0;"></button>
+            <button aria-label="Annual" style="width:32px; height:32px; border-radius:9999px; background:var(--color-foreground-muted); border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+            <button aria-label="Multi-year" style="width:32px; height:32px; border-radius:9999px; background:var(--color-foreground); border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+          </div>
+        </div>
+        <div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+            <span class="ex-mono">Seats</span>
+            <a href="#" style="font-family:var(--font-mono); font-size:11px; letter-spacing: var(--ex-letter-eyebrow, 0); text-transform:uppercase; color:var(--color-foreground); text-decoration:underline;">Seat guide</a>
+          </div>
+          <div class="ex-grid-sizes">
+            <button class="ex-size-btn" disabled="">1</button>
+            <button class="ex-size-btn">5</button>
+            <button class="ex-size-btn selected">S</button>
+            <button class="ex-size-btn">25</button>
+            <button class="ex-size-btn">50</button>
+            <button class="ex-size-btn">100</button>
+            <button class="ex-size-btn">250</button>
+            <button class="ex-size-btn">500+</button>
+          </div>
+        </div>
+        <button class="ex-primary" style="width:100%; margin-top:4px;">Start free trial</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Data Table</h2>
+    <p class="ex-intro">Mono uppercase column headers, alternating canvas rows, status pills wired to semantic color tokens, hairline row dividers, and a footer pager.</p>
+    <div style="border:1px solid var(--color-border); border-radius: var(--ex-radius-tile, 12px); overflow:hidden;">
+      <div class="ex-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th class="ex-th" style="width:40px;"><input type="checkbox" aria-label="Select all"></th>
+              <th class="ex-th" style="width:120px;">ID</th>
+              <th class="ex-th" style="width:160px;">Actor</th>
+              <th class="ex-th">Target</th>
+              <th class="ex-th" style="width:140px;">Status</th>
+              <th class="ex-th" style="width:140px;">When ↓</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2401</td>
+              <td class="ex-td">M. Reyes</td>
+              <td class="ex-td">Onboarding revamp</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:42 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2400</td>
+              <td class="ex-td">A. Park</td>
+              <td class="ex-td">Atlas Migration v3</td>
+              <td class="ex-td"><span class="ex-status pending">Pending</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:36 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2399</td>
+              <td class="ex-td">L. Okafor</td>
+              <td class="ex-td">Watchlist Sync</td>
+              <td class="ex-td"><span class="ex-status fail">Failed</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:21 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2398</td>
+              <td class="ex-td">S. Chen</td>
+              <td class="ex-td">Supply Chain Index</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:14 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2397</td>
+              <td class="ex-td">System</td>
+              <td class="ex-td">Nightly Backfill</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">07:55 UTC</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-top:1px solid var(--color-border); background:var(--color-canvas-soft);">
+        <span style="font-size:12px; color:var(--color-foreground-muted); font-family:var(--font-mono);">1–5 of 412</span>
+        <div style="display:flex; gap:4px;">
+          <button class="ex-pager" aria-label="Previous">‹</button>
+          <button class="ex-pager active" aria-current="page">1</button>
+          <button class="ex-pager">2</button>
+          <button class="ex-pager">3</button>
+          <button class="ex-pager" aria-label="Next">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Auth Forms</h2>
+    <p class="ex-intro">Centered cards on canvas, full-width primary CTA, mono uppercase field labels, hairline-divided SSO fallback.</p>
+    <div class="ex-grid-auth">
+      <div style="background:var(--color-canvas); border:1px solid var(--color-border); border-radius: var(--ex-radius-card, 20px); padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">Sign in</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:700; line-height:1.05; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0 0 24px;">Welcome back.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="••••••••" class="ex-input">
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-top:4px;">
+            <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--color-foreground);"><input type="checkbox"> Remember me</label>
+            <a href="#" style="font-size:13px; color:var(--color-foreground); text-decoration:underline;">Forgot password?</a>
+          </div>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Sign in</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">New here? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Create an account</a></div>
+      </div>
+      <div style="background:var(--color-canvas); border:1px solid var(--color-border); border-radius: var(--ex-radius-card, 20px); padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">Create account</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:700; line-height:1.05; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0 0 24px;">Start building.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Full Name</label>
+            <input type="text" placeholder="Mira Reyes" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="••••••••" class="ex-input">
+          </div>
+          <label style="display:flex; align-items:flex-start; gap:8px; font-size:13px; color:var(--color-foreground-muted); margin-top:4px; line-height:1.5;">
+            <input type="checkbox" style="margin-top:3px;">
+            <span>I agree to the <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Terms</a> and <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Privacy Policy</a>.</span>
+          </label>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Create account</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">Already have an account? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Sign in</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Modal Dialog</h2>
+    <p class="ex-intro">Centered card over a 50% ink scrim. Hairline divider above the action row, secondary text-button on the left, primary on the right.</p>
+    <div class="ex-frame short">
+      <div style="padding:24px; opacity:0.7;">
+        <div style="height:14px; width:40%; background:var(--color-border); border-radius: var(--ex-radius-status, 6px); margin-bottom:12px;"></div>
+        <div style="height:12px; width:70%; background:var(--color-border); border-radius: var(--ex-radius-status, 6px); margin-bottom:8px;"></div>
+        <div style="height:12px; width:60%; background:var(--color-border); border-radius: var(--ex-radius-status, 6px);"></div>
+      </div>
+      <div class="ex-scrim"></div>
+      <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:24px;">
+        <div class="ex-modal-card">
+          <div style="padding:24px 28px 16px;">
+            <div class="ex-mono" style="margin-bottom:8px;">Confirm</div>
+            <h4 style="font-family:var(--font-display); font-size:22px; font-weight:700; line-height:1.1; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0;">Promote dataset to production?</h4>
+          </div>
+          <div style="padding:0 28px 20px; font-size:14px; color:var(--color-foreground-muted); line-height:1.5;">
+            This replaces <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.20</strong> with <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.21</strong> across all downstream consumers. The action is reversible within 24 hours.
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:16px 24px; border-top:1px solid var(--color-border);">
+            <button class="ex-textlink">Cancel</button>
+            <button class="ex-primary" style="height:40px; padding:10px 18px; font-size:14px;">Promote</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Empty State</h2>
+    <p class="ex-intro">Outlined icon tile, decimal index, declarative heading, one-sentence body, and a single primary CTA.</p>
+    <div class="ex-emptystate">
+      <div style="width:56px; height:56px; border:1px solid var(--color-border-soft); border-radius: var(--ex-radius-card, 20px); display:flex; align-items:center; justify-content:center; margin-bottom:20px; color:var(--color-foreground-muted);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="5.5" width="17" height="13" rx="1"></rect><path d="M3.5 9.5h17M8 5.5v13"></path></svg>
+      </div>
+      <div class="ex-mono" style="margin-bottom:12px;">No datasets</div>
+      <h4 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:700; line-height:1.05; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0 0 8px;">Nothing here yet.</h4>
+      <p style="font-size:15px; color:var(--color-foreground-muted); max-width:380px; margin:0 0 24px; line-height:1.5;">Connect a source or upload a CSV to start ingesting records into this workspace.</p>
+      <button class="ex-primary">Connect a source</button>
+    </div>
+  </div>
+</section>
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Toast Stack</h2>
+    <p class="ex-intro">Four semantic variants — info, success, warning, error. Each is a 4px card with a 3px accent rule on the leading edge, a mono uppercase tag, and a single dismiss affordance.</p>
+    <div class="ex-grid-toasts">
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-foreground);"></div>
+        <div style="padding:12px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-foreground); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">info</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync in progress</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Backfilling 412 records into the operations log.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-success);"></div>
+        <div style="padding:12px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-success); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">success</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Dataset promoted</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">v2024.11.21 is live across all downstream consumers.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-warning);"></div>
+        <div style="padding:12px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-warning); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">warning</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Approaching quota</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">88% of your monthly compute has been used.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-danger);"></div>
+        <div style="padding:12px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-danger); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">error</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync failed</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Watchlist source returned 502. Retry queued.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+</div>
+<div class="theme-layer" data-when="dark">
+
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>awesome-design-md</a>
+  </div>
+  <ul class="nav-links"><li>Product</li><li>Solutions</li><li>Enterprise</li><li>Pricing</li></ul>
+  <button class="nav-cta">Get Notion free</button>
+</nav>
+<div class="hero"><div class="hero-content">
+  <h1>Design System Analysis of Notion</h1>
+  <p>A warm, paper-calm productivity system: an off-white canvas under near-black Inter type, structured by a single confident blue. A playful multi-colour sticker palette carries the personality while the chrome stays quiet — with one inverted deep-indigo hero band.</p>
+  <div class="hero-actions"><button class="btn-primary">Get Notion free</button><button class="btn-secondary">Request a demo</button></div>
+</div></div>
+<section><span class="section-eyebrow">01 — Foundations</span><h2 class="section-heading">Color Palette</h2><div class="palette-grid"><div class="swatch"><div class="swatch-fill" style="background:#0075de;"></div><div class="swatch-meta"><p class="swatch-name">primary</p><p class="swatch-hex">#0075de</p><p class="swatch-role">Primary CTA, links, active signal</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#005bab;"></div><div class="swatch-meta"><p class="swatch-name">primary-active</p><p class="swatch-hex">#005bab</p><p class="swatch-role">Pressed primary state</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#213183;"></div><div class="swatch-meta"><p class="swatch-name">secondary</p><p class="swatch-hex">#213183</p><p class="swatch-role">Deep-indigo hero “night” band</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#000000;"></div><div class="swatch-meta"><p class="swatch-name">ink</p><p class="swatch-hex">#000000</p><p class="swatch-role">Headings &amp; body text</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#31302e;"></div><div class="swatch-meta"><p class="swatch-name">ink-secondary</p><p class="swatch-hex">#31302e</p><p class="swatch-role">Secondary copy / footer</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#615d59;"></div><div class="swatch-meta"><p class="swatch-name">ink-muted</p><p class="swatch-hex">#615d59</p><p class="swatch-role">Muted supporting copy</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#a39e98;"></div><div class="swatch-meta"><p class="swatch-name">ink-faint</p><p class="swatch-hex">#a39e98</p><p class="swatch-role">Captions / placeholder</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#ffffff;"></div><div class="swatch-meta"><p class="swatch-name">canvas</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">White card / panel surface</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#f6f5f4;"></div><div class="swatch-meta"><p class="swatch-name">canvas-soft</p><p class="swatch-hex">#f6f5f4</p><p class="swatch-role">Warm paper page canvas</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#e6e6e6;"></div><div class="swatch-meta"><p class="swatch-name">hairline</p><p class="swatch-hex">#e6e6e6</p><p class="swatch-role">1px borders &amp; dividers</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#62aef0;"></div><div class="swatch-meta"><p class="swatch-name">accent-sky</p><p class="swatch-hex">#62aef0</p><p class="swatch-role">Sticker accent (decorative)</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#d6b6f6;"></div><div class="swatch-meta"><p class="swatch-name">accent-purple</p><p class="swatch-hex">#d6b6f6</p><p class="swatch-role">Sticker accent (decorative)</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#ff64c8;"></div><div class="swatch-meta"><p class="swatch-name">accent-pink</p><p class="swatch-hex">#ff64c8</p><p class="swatch-role">Sticker accent (decorative)</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#dd5b00;"></div><div class="swatch-meta"><p class="swatch-name">accent-orange</p><p class="swatch-hex">#dd5b00</p><p class="swatch-role">Sticker accent (decorative)</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#2a9d99;"></div><div class="swatch-meta"><p class="swatch-name">accent-teal</p><p class="swatch-hex">#2a9d99</p><p class="swatch-role">Sticker accent (decorative)</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#1aae39;"></div><div class="swatch-meta"><p class="swatch-name">accent-green</p><p class="swatch-hex">#1aae39</p><p class="swatch-role">Sticker accent (decorative)</p></div></div><div class="swatch"><div class="swatch-fill" style="background:#523410;"></div><div class="swatch-meta"><p class="swatch-name">accent-brown</p><p class="swatch-hex">#523410</p><p class="swatch-role">Sticker accent (decorative)</p></div></div></div></section>
+<section><span class="section-eyebrow">02 — Foundations</span><h2 class="section-heading">Typography</h2><p style="color:rgba(255,255,255,0.6);margin:-16px 0 28px;max-width:720px;">NotionInter - Notion's tuned cut of Inter (Inter shown as substitute). Hierarchy comes from size and increasingly-tight negative tracking on the display end (-2.125px at 64px); headlines run heavy at 700 while body stays calm at 400 for document readability.</p><div class="type-row"><div class="type-meta">display-1<br>64px / 700 / 1.0 / -2.125px</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:64px;font-weight:700;line-height:1.0;letter-spacing:-2.125px;color:#ffffff;">Notion</div></div><div class="type-row"><div class="type-meta">display-2<br>54px / 700 / 1.04 / -1.875px</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:54px;font-weight:700;line-height:1.04;letter-spacing:-1.875px;color:#ffffff;">Meet the night shift</div></div><div class="type-row"><div class="type-meta">heading-1<br>40px / 700 / 1.1 / -1px</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:40px;font-weight:700;line-height:1.1;letter-spacing:-1px;color:#ffffff;">Plans and features</div></div><div class="type-row"><div class="type-meta">heading-2<br>26px / 700 / 1.23 / -0.625px</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:26px;font-weight:700;line-height:1.23;letter-spacing:-0.625px;color:#ffffff;">One workspace. Every team.</div></div><div class="type-row"><div class="type-meta">heading-3<br>22px / 700 / 1.27 / -0.25px</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:22px;font-weight:700;line-height:1.27;letter-spacing:-0.25px;color:#ffffff;">Bring all your work together</div></div><div class="type-row"><div class="type-meta">title<br>20px / 600 / 1.4 / -0.125px</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:20px;font-weight:600;line-height:1.4;letter-spacing:-0.125px;color:#ffffff;">Ask your on-demand assistants</div></div><div class="type-row"><div class="type-meta">body-md<br>16px / 400 / 1.5 / 0</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:16px;font-weight:400;line-height:1.5;letter-spacing:0;color:#ffffff;">Write, plan, and organize all in one connected workspace.</div></div><div class="type-row"><div class="type-meta">body-sm<br>15px / 400 / 1.33 / 0</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:15px;font-weight:400;line-height:1.33;letter-spacing:0;color:#ffffff;">Dense body copy, table rows, and navigation labels.</div></div><div class="type-row"><div class="type-meta">button<br>16px / 500 / 1.5 / 0</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:16px;font-weight:500;line-height:1.5;letter-spacing:0;color:#ffffff;">Get Notion free</div></div><div class="type-row"><div class="type-meta">caption<br>14px / 400 / 1.43 / 0</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:14px;font-weight:400;line-height:1.43;letter-spacing:0;color:#ffffff;">Captions, metadata, and footnotes.</div></div><div class="type-row"><div class="type-meta">eyebrow<br>12px / 600 / 1.33 / 0.125px</div><div style="font-family:&#39;NotionInter&#39;,&#39;Inter&#39;,sans-serif;font-size:12px;font-weight:600;line-height:1.33;letter-spacing:0.125px;color:#ffffff;">ESSENTIAL FOR STAYING ORGANIZED</div></div></section>
+<section><span class="section-eyebrow">03 — Components</span><h2 class="section-heading">Button Variants</h2><div class="button-grid">
+  <div class="demo-card"><span class="label">button-primary · blue pill</span><button class="btn-primary" style="height:44px;">Get Notion free</button><p style="font-size:12px;color:rgba(255,255,255,0.6);margin:12px 0 0;">The single blue action, fully pill-shaped (9999px) with a white label. The only colour that ever paints a CTA.</p></div>
+  <div class="demo-card"><span class="label">button-utility · 8px rect</span><button style="height:36px;background:#ffffff;border:1px solid rgba(255,255,255,0.12);color:#ffffff;border-radius:8px;padding:0 14px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;">Get Notion free</button><p style="font-size:12px;color:rgba(255,255,255,0.6);margin:12px 0 0;">Compact nav / plan-select button: white fill, 8px corners, hairline border. Tighter than the marketing pill.</p></div>
+  <div class="demo-card"><span class="label">button-secondary · white pill</span><button class="btn-secondary" style="height:44px;box-shadow:0 1px 4px rgba(0,0,0,0.06);">Request a demo</button><p style="font-size:12px;color:rgba(255,255,255,0.6);margin:12px 0 0;">Pairs beside the blue primary in the hero: a white pill lifted on a soft layered shadow.</p></div>
+  <div class="demo-card"><span class="label">badge-pill · eyebrow</span><span style="display:inline-block;background:#ffffff;color:#62aef0;border:1px solid rgba(255,255,255,0.12);border-radius:9999px;padding:4px 10px;font-size:12px;font-weight:600;">New</span><p style="font-size:12px;color:rgba(255,255,255,0.6);margin:12px 0 0;">Small pill label: white fill, brand-blue text, full pill radius.</p></div>
+  <div class="demo-card"><span class="label">link · inline</span><div style="display:flex;gap:16px;font-size:15px;font-weight:500;"><a href="#" style="color:#62aef0;">Pricing</a><a href="#" style="color:#62aef0;text-decoration:underline;">Help center</a></div></div>
+</div></section>
+<section><span class="section-eyebrow">04 — Components</span><h2 class="section-heading">Cards &amp; Surfaces</h2><div class="card-grid">
+  <div class="feature-card"><h4>Feature Card</h4><p>White surface, hairline border, 12px corners. The workhorse marketing card, often topped by a colour-blocked sticker illustration band.</p></div>
+  <div class="feature-card" style="background:#213183;color:#fff;border:none;border-radius:12px;"><h4 style="color:#fff;">Dark Hero Band</h4><p style="color:rgba(255,255,255,0.72);">The deep-indigo night hero: the single inverted dark island, carrying white display type and a sticker constellation.</p></div>
+  <div class="feature-card" style="box-shadow:var(--shadow-md);border:none;"><h4>Elevated Card</h4><p>A feature card lifted on Notion barely-there layered shadow: many near-transparent stops, never a hard cast.</p></div>
+</div></section>
+<section><span class="section-eyebrow">05 — Components</span><h2 class="section-heading">Form Elements</h2><div class="form-grid">
+  <div class="demo-card"><span class="label">text-input · 4px</span><input class="ex-input-demo" style="border-radius:4px;" placeholder="you@example.com"></div>
+  <div class="demo-card"><span class="label">textarea · 4px</span><textarea class="ex-input-demo" style="border-radius:4px;" rows="3" placeholder="Write something..."></textarea></div>
+</div></section>
+<section><span class="section-eyebrow">06 — Foundations</span><h2 class="section-heading">Spacing Scale</h2><p style="color:rgba(255,255,255,0.6);margin:-16px 0 28px;">8px base unit. Card interiors land around lg (24px); section gaps stack the larger steps for an airy, document-like rhythm.</p><div class="spacing-row"><div><div class="spacing-box" style="width:16px;"></div><div class="spacing-label">xxs<br>4px</div></div><div><div class="spacing-box" style="width:16px;"></div><div class="spacing-label">xs<br>8px</div></div><div><div class="spacing-box" style="width:24px;"></div><div class="spacing-label">sm<br>12px</div></div><div><div class="spacing-box" style="width:32px;"></div><div class="spacing-label">md<br>16px</div></div><div><div class="spacing-box" style="width:48px;"></div><div class="spacing-label">lg<br>24px</div></div><div><div class="spacing-box" style="width:56px;"></div><div class="spacing-label">xl<br>28px</div></div><div><div class="spacing-box" style="width:64px;"></div><div class="spacing-label">xxl<br>32px</div></div></div></section>
+<section><span class="section-eyebrow">07 — Foundations</span><h2 class="section-heading">Border Radius</h2><p style="color:rgba(255,255,255,0.6);margin:-16px 0 28px;">A deliberate split: tight 4px on form fields, 8px on utility buttons, 12px on content cards, and a full 9999px pill on marketing CTAs and badges.</p><div class="radius-row"><div><div class="radius-box" style="border-radius:4px;">4</div><div class="radius-label">xs<br>4px</div></div><div><div class="radius-box" style="border-radius:5px;">5</div><div class="radius-label">sm<br>5px</div></div><div><div class="radius-box" style="border-radius:8px;">8</div><div class="radius-label">md<br>8px</div></div><div><div class="radius-box" style="border-radius:12px;">12</div><div class="radius-label">lg<br>12px</div></div><div><div class="radius-box" style="border-radius:16px;">16</div><div class="radius-label">xl<br>16px</div></div><div><div class="radius-box" style="border-radius:9999px;">∞</div><div class="radius-label">full<br>9999px</div></div></div></section>
+<section><span class="section-eyebrow">08 — Foundations</span><h2 class="section-heading">Elevation &amp; Depth</h2><div class="elevation-grid">
+  <div class="elev-card elev-1">Level 0 - 1px hairline only. The default card on the warm canvas.</div>
+  <div class="elev-card elev-2">Level 1 / 2 - soft layered micro-shadow. Floating cards and modals, built from many near-transparent stops.</div>
+</div></section>
+<section><span class="section-eyebrow">09 — Responsive</span><h2 class="section-heading">Responsive Behavior</h2>
+  <table class="responsive-table"><thead><tr><th>Name</th><th>Width</th><th>Key changes</th></tr></thead><tbody>
+  <tr><td>Mobile</td><td>&lt; 768px</td><td>Single column; nav → hamburger; CTAs + pricing tiers stack full-width</td></tr>
+  <tr><td>Tablet</td><td>768–1023px</td><td>Grids collapse toward 2-up / 1-up; nav condenses</td></tr>
+  <tr><td>Laptop</td><td>1024–1279px</td><td>Tightened gutters; 3-col grids retained</td></tr>
+  <tr><td>Desktop</td><td>≥ 1280px</td><td>Full multi-column grids; centred ~1200px column</td></tr></tbody></table>
+  <div class="device-ladder">
+    <div class="device-box" style="width:60px;height:110px;">375</div>
+    <div class="device-box" style="width:120px;height:110px;">768</div>
+    <div class="device-box" style="width:170px;height:110px;">1024</div>
+    <div class="device-box" style="width:220px;height:110px;">1280</div>
+    <div class="device-box" style="width:280px;height:110px;">1440</div>
+  </div>
+  <p style="color:rgba(255,255,255,0.6);margin-top:24px;font-size:14px;"><strong style="color:#ffffff;">Touch targets:</strong> the pill CTAs clear 44x44 WCAG-AAA. <strong style="color:#ffffff;">Collapsing:</strong> the top nav condenses to a hamburger below the tablet breakpoint (blue CTA stays); multi-column feature grids reflow to a single stacked column; the 4-column pricing table reflows into stacked plan cards; display type scales down while headlines keep weight 700.</p>
+</section>
+
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Pricing Tiers</h2>
+    <p class="ex-intro">Three-up plan grid with the middle tier polarity-flipped. Mono uppercase tier name, display numeral price, hairline-divided feature list.</p>
+    <div class="ex-grid-pricing">
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">Starter</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$9</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For individuals getting started.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Core features</li>
+          <li><span class="ex-bullet"></span>Up to 3 projects</li>
+          <li><span class="ex-bullet"></span>Community support</li>
+        </ul>
+        <button class="ex-tier-cta ink">Get started</button>
+      </div>
+      <div class="ex-tier-card dark">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span class="ex-mono" style="color:rgba(255,255,255,0.55);">Pro</span>
+          <span style="font-family:var(--font-mono); font-size:10px; letter-spacing: var(--ex-letter-eyebrow, 0); text-transform:uppercase; color:var(--color-accent); display:inline-flex; align-items:center; gap:6px;"><span style="width:6px; height:6px; background:var(--color-accent); border-radius:9999px;"></span>Most popular</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$29</span><span style="font-family:var(--font-mono); font-size:12px; color:rgba(255,255,255,0.55);">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:rgba(255,255,255,0.72); margin:0;">For teams ready to ship.</p>
+        <ul class="ex-features dark">
+          <li><span class="ex-bullet"></span>Everything in Starter</li>
+          <li><span class="ex-bullet"></span>Unlimited projects</li>
+          <li><span class="ex-bullet"></span>Email support</li>
+          <li><span class="ex-bullet"></span>Advanced analytics</li>
+        </ul>
+        <button class="ex-tier-cta invert">Start free trial</button>
+      </div>
+      <div class="ex-tier-card">
+        <div style="display:flex; justify-content:space-between;"><span class="ex-mono">Team</span></div>
+        <div style="display:flex; align-items:baseline; gap:6px;"><span class="ex-tier-price">$99</span><span class="ex-mono" style="font-size:12px;">/month</span></div>
+        <p style="font-size:14px; line-height:1.5; color:var(--color-foreground-muted); margin:0;">For organizations operating at scale.</p>
+        <ul class="ex-features">
+          <li><span class="ex-bullet"></span>Everything in Pro</li>
+          <li><span class="ex-bullet"></span>SSO + audit log</li>
+          <li><span class="ex-bullet"></span>Priority support</li>
+          <li><span class="ex-bullet"></span>SLA &amp; onboarding</li>
+        </ul>
+        <button class="ex-tier-cta ink">Talk to sales</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Product Selector</h2>
+    <p class="ex-intro">Plan summary + cadence picker + seat-count grid + start-trial CTA. Cadence chips use a 1px ink ring for selection; seat pills polarity-flip to ink fill.</p>
+    <div class="ex-grid-product">
+      <div class="ex-grid-gallery">
+        <div class="ex-tile tall"><span class="ex-mono" style="font-size:10px;">/IMG · 01</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG · 02</span></div>
+        <div class="ex-tile"><span class="ex-mono" style="font-size:10px;">/IMG · 03</span></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <div class="ex-mono" style="display:flex; align-items:center; gap:8px;"><span style="width:8px; height:8px; background:var(--color-accent); border-radius:9999px;"></span>Plan</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(22px, 4vw, 28px); font-weight:700; line-height:1.06; letter-spacing:-1px; color:var(--color-foreground); margin:0;">Pro Plan, Annual</h3>
+        <div style="display:flex; align-items:baseline; gap:12px;">
+          <span style="font-family:var(--font-display); font-size:clamp(28px, 4vw, 36px); font-weight:700; line-height:1; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground);">$192</span>
+          <span class="ex-mono">★★★★☆ &nbsp;·&nbsp; 117 reviews</span>
+        </div>
+        <p style="font-size:15px; color:var(--color-foreground-muted); line-height:1.5; margin:0;">Everything in one workspace - projects, members, and automation across unlimited seats. Billed annually with a 14-day free trial, cancel anytime.</p>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Unlimited projects</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>SSO + SCIM provisioning</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>Priority support</li>
+          <li style="display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-foreground); padding:4px 0;"><span style="margin-top:6px; width:6px; height:6px; background:var(--color-accent); border-radius:9999px; flex-shrink:0;"></span>99.9% uptime SLA</li>
+        </ul>
+        <div>
+          <div class="ex-mono" style="margin-bottom:10px;">Cadence · Annual</div>
+          <div style="display:flex; gap:10px;">
+            <button aria-label="Monthly" style="width:32px; height:32px; border-radius:9999px; background:var(--color-border); border:1px solid var(--color-border-soft); box-shadow:0 0 0 2px var(--color-canvas), 0 0 0 3px var(--color-foreground); cursor:pointer; padding:0;"></button>
+            <button aria-label="Annual" style="width:32px; height:32px; border-radius:9999px; background:var(--color-foreground-muted); border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+            <button aria-label="Multi-year" style="width:32px; height:32px; border-radius:9999px; background:var(--color-foreground); border:1px solid var(--color-border-soft); cursor:pointer; padding:0;"></button>
+          </div>
+        </div>
+        <div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+            <span class="ex-mono">Seats</span>
+            <a href="#" style="font-family:var(--font-mono); font-size:11px; letter-spacing: var(--ex-letter-eyebrow, 0); text-transform:uppercase; color:var(--color-foreground); text-decoration:underline;">Seat guide</a>
+          </div>
+          <div class="ex-grid-sizes">
+            <button class="ex-size-btn" disabled="">1</button>
+            <button class="ex-size-btn">5</button>
+            <button class="ex-size-btn selected">S</button>
+            <button class="ex-size-btn">25</button>
+            <button class="ex-size-btn">50</button>
+            <button class="ex-size-btn">100</button>
+            <button class="ex-size-btn">250</button>
+            <button class="ex-size-btn">500+</button>
+          </div>
+        </div>
+        <button class="ex-primary" style="width:100%; margin-top:4px;">Start free trial</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Data Table</h2>
+    <p class="ex-intro">Mono uppercase column headers, alternating canvas rows, status pills wired to semantic color tokens, hairline row dividers, and a footer pager.</p>
+    <div style="border:1px solid var(--color-border); border-radius: var(--ex-radius-tile, 12px); overflow:hidden;">
+      <div class="ex-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th class="ex-th" style="width:40px;"><input type="checkbox" aria-label="Select all"></th>
+              <th class="ex-th" style="width:120px;">ID</th>
+              <th class="ex-th" style="width:160px;">Actor</th>
+              <th class="ex-th">Target</th>
+              <th class="ex-th" style="width:140px;">Status</th>
+              <th class="ex-th" style="width:140px;">When ↓</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2401</td>
+              <td class="ex-td">M. Reyes</td>
+              <td class="ex-td">Onboarding revamp</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:42 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2400</td>
+              <td class="ex-td">A. Park</td>
+              <td class="ex-td">Atlas Migration v3</td>
+              <td class="ex-td"><span class="ex-status pending">Pending</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:36 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2399</td>
+              <td class="ex-td">L. Okafor</td>
+              <td class="ex-td">Watchlist Sync</td>
+              <td class="ex-td"><span class="ex-status fail">Failed</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:21 UTC</td>
+            </tr>
+            <tr>
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2398</td>
+              <td class="ex-td">S. Chen</td>
+              <td class="ex-td">Supply Chain Index</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">08:14 UTC</td>
+            </tr>
+            <tr style="background:var(--color-canvas);">
+              <td class="ex-td"><input type="checkbox"></td>
+              <td class="ex-td" style="font-family:var(--font-mono);">OP-2397</td>
+              <td class="ex-td">System</td>
+              <td class="ex-td">Nightly Backfill</td>
+              <td class="ex-td"><span class="ex-status ok">Approved</span></td>
+              <td class="ex-td" style="font-family:var(--font-mono); color:var(--color-foreground-muted);">07:55 UTC</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-top:1px solid var(--color-border); background:var(--color-canvas-soft);">
+        <span style="font-size:12px; color:var(--color-foreground-muted); font-family:var(--font-mono);">1–5 of 412</span>
+        <div style="display:flex; gap:4px;">
+          <button class="ex-pager" aria-label="Previous">‹</button>
+          <button class="ex-pager active" aria-current="page">1</button>
+          <button class="ex-pager">2</button>
+          <button class="ex-pager">3</button>
+          <button class="ex-pager" aria-label="Next">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Auth Forms</h2>
+    <p class="ex-intro">Centered cards on canvas, full-width primary CTA, mono uppercase field labels, hairline-divided SSO fallback.</p>
+    <div class="ex-grid-auth">
+      <div style="background:var(--color-canvas); border:1px solid var(--color-border); border-radius: var(--ex-radius-card, 20px); padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">Sign in</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:700; line-height:1.05; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0 0 24px;">Welcome back.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="••••••••" class="ex-input">
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-top:4px;">
+            <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--color-foreground);"><input type="checkbox"> Remember me</label>
+            <a href="#" style="font-size:13px; color:var(--color-foreground); text-decoration:underline;">Forgot password?</a>
+          </div>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Sign in</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">New here? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Create an account</a></div>
+      </div>
+      <div style="background:var(--color-canvas); border:1px solid var(--color-border); border-radius: var(--ex-radius-card, 20px); padding:32px;">
+        <div class="ex-mono" style="margin-bottom:12px;">Create account</div>
+        <h3 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:700; line-height:1.05; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0 0 24px;">Start building.</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div class="ex-field">
+            <label class="ex-field-label">Full Name</label>
+            <input type="text" placeholder="Mira Reyes" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Work Email</label>
+            <input type="email" placeholder="you@company.com" class="ex-input">
+          </div>
+          <div class="ex-field">
+            <label class="ex-field-label">Password</label>
+            <input type="password" placeholder="••••••••" class="ex-input">
+          </div>
+          <label style="display:flex; align-items:flex-start; gap:8px; font-size:13px; color:var(--color-foreground-muted); margin-top:4px; line-height:1.5;">
+            <input type="checkbox" style="margin-top:3px;">
+            <span>I agree to the <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Terms</a> and <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Privacy Policy</a>.</span>
+          </label>
+          <button class="ex-primary" style="width:100%; margin-top:8px;">Create account</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+          <span class="ex-mono" style="font-size:10px;">or</span>
+          <span style="flex:1; height:1px; background:var(--color-border);"></span>
+        </div>
+        <button class="ex-outlined" style="width:100%;">Continue with SSO</button>
+        <div style="margin-top:20px; font-size:13px; color:var(--color-foreground-muted); text-align:center;">Already have an account? <a href="#" style="color:var(--color-foreground); text-decoration:underline;">Sign in</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Modal Dialog</h2>
+    <p class="ex-intro">Centered card over a 50% ink scrim. Hairline divider above the action row, secondary text-button on the left, primary on the right.</p>
+    <div class="ex-frame short">
+      <div style="padding:24px; opacity:0.7;">
+        <div style="height:14px; width:40%; background:var(--color-border); border-radius: var(--ex-radius-status, 6px); margin-bottom:12px;"></div>
+        <div style="height:12px; width:70%; background:var(--color-border); border-radius: var(--ex-radius-status, 6px); margin-bottom:8px;"></div>
+        <div style="height:12px; width:60%; background:var(--color-border); border-radius: var(--ex-radius-status, 6px);"></div>
+      </div>
+      <div class="ex-scrim"></div>
+      <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:24px;">
+        <div class="ex-modal-card">
+          <div style="padding:24px 28px 16px;">
+            <div class="ex-mono" style="margin-bottom:8px;">Confirm</div>
+            <h4 style="font-family:var(--font-display); font-size:22px; font-weight:700; line-height:1.1; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0;">Promote dataset to production?</h4>
+          </div>
+          <div style="padding:0 28px 20px; font-size:14px; color:var(--color-foreground-muted); line-height:1.5;">
+            This replaces <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.20</strong> with <strong style="color:var(--color-foreground); font-weight:600;">v2024.11.21</strong> across all downstream consumers. The action is reversible within 24 hours.
+          </div>
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:16px 24px; border-top:1px solid var(--color-border);">
+            <button class="ex-textlink">Cancel</button>
+            <button class="ex-primary" style="height:40px; padding:10px 18px; font-size:14px;">Promote</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Empty State</h2>
+    <p class="ex-intro">Outlined icon tile, decimal index, declarative heading, one-sentence body, and a single primary CTA.</p>
+    <div class="ex-emptystate">
+      <div style="width:56px; height:56px; border:1px solid var(--color-border-soft); border-radius: var(--ex-radius-card, 20px); display:flex; align-items:center; justify-content:center; margin-bottom:20px; color:var(--color-foreground-muted);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="5.5" width="17" height="13" rx="1"></rect><path d="M3.5 9.5h17M8 5.5v13"></path></svg>
+      </div>
+      <div class="ex-mono" style="margin-bottom:12px;">No datasets</div>
+      <h4 style="font-family:var(--font-display); font-size:clamp(22px, 3.5vw, 28px); font-weight:700; line-height:1.05; letter-spacing: var(--ex-letter-display, 0); color:var(--color-foreground); margin:0 0 8px;">Nothing here yet.</h4>
+      <p style="font-size:15px; color:var(--color-foreground-muted); max-width:380px; margin:0 0 24px; line-height:1.5;">Connect a source or upload a CSV to start ingesting records into this workspace.</p>
+      <button class="ex-primary">Connect a source</button>
+    </div>
+  </div>
+</section>
+
+<section class="ex-section">
+  <div class="container">
+    <h2 class="ex-h2">Toast Stack</h2>
+    <p class="ex-intro">Four semantic variants — info, success, warning, error. Each is a 4px card with a 3px accent rule on the leading edge, a mono uppercase tag, and a single dismiss affordance.</p>
+    <div class="ex-grid-toasts">
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-foreground);"></div>
+        <div style="padding:12px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-foreground); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">info</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync in progress</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Backfilling 412 records into the operations log.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-success);"></div>
+        <div style="padding:12px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-success); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">success</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Dataset promoted</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">v2024.11.21 is live across all downstream consumers.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-warning);"></div>
+        <div style="padding:12px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-warning); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">warning</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Approaching quota</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">88% of your monthly compute has been used.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+      <div class="ex-toast" role="status">
+        <div style="background:var(--color-danger);"></div>
+        <div style="padding:12px 16px;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;"><span style="width:6px; height:6px; background:var(--color-danger); border-radius:9999px;"></span><span class="ex-mono" style="font-size:10px;">error</span></div>
+          <div style="font-size:14px; font-weight:600; color:var(--color-foreground); margin-bottom:2px;">Sync failed</div>
+          <div style="font-size:13px; color:var(--color-foreground-muted); line-height:1.43;">Watchlist source returned 502. Retry queued.</div>
+        </div>
+        <button style="background:transparent; border:none; color:var(--color-foreground-muted); padding:12px 14px; font-size:14px; cursor:pointer;" aria-label="Dismiss">×</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+</div>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

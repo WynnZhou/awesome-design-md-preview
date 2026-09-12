@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of HashiCorp</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #000000; } html[data-theme="dark"] { background: #000000; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#palette">Palette</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#products">Products</a></li>
+  </ul>
+  <button class="nav-cta">Sign up</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of HashiCorp</h1>
+    <p>An enterprise-infrastructure marketing canvas built around a near-black ground and a system of per-product accent colors — Terraform purple, Vault yellow, Consul red, Waypoint cyan, Vagrant blue — that act as identity tokens rather than decorative palette. Display type is hashicorpSans set tight; body type runs the same family with deliberately relaxed line-heights.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Sign up</button>
+      <button class="btn btn-secondary">Talk to sales</button>
+    </div>
+  </div>
+</header>
+
+<section id="palette">
+  <div class="section-eyebrow">01 — Color Palette</div>
+  <h2 class="section-heading">Palette</h2>
+
+  <div class="palette-group-heading">Brand &amp; Accent</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#000000;border:1px solid var(--hairline)"></div><div class="swatch-info"><div class="swatch-name">Black (canvas)</div><div class="swatch-hex">#000000</div><div class="swatch-role">System primary surface — every page background.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#ffffff"></div><div class="swatch-info"><div class="swatch-name">White</div><div class="swatch-hex">#ffffff</div><div class="swatch-role">Inverse text on black; surface of button-primary.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#2b89ff"></div><div class="swatch-info"><div class="swatch-name">Accent Blue</div><div class="swatch-hex">#2b89ff</div><div class="swatch-role">Hyperlinks across the marketing surface.</div></div></div>
+  </div>
+
+  <div class="palette-group-heading">Surface</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#15181e"></div><div class="swatch-info"><div class="swatch-name">Surface 1</div><div class="swatch-hex">#15181e</div><div class="swatch-role">Default cards, resource tiles, pricing cards.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#1f232b"></div><div class="swatch-info"><div class="swatch-name">Surface 2</div><div class="swatch-hex">#1f232b</div><div class="swatch-role">Featured pricing card, secondary buttons.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#3b3d45"></div><div class="swatch-info"><div class="swatch-name">Surface 3</div><div class="swatch-hex">#3b3d45</div><div class="swatch-role">Small chips, badges, sub-nav backgrounds.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:rgba(178,182,189,0.12)"></div><div class="swatch-info"><div class="swatch-name">Hairline</div><div class="swatch-hex">rgba(178,182,189,0.12)</div><div class="swatch-role">1px borders on cards and dividers.</div></div></div>
+  </div>
+
+  <div class="palette-group-heading">Text</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#ffffff"></div><div class="swatch-info"><div class="swatch-name">Ink</div><div class="swatch-hex">#ffffff</div><div class="swatch-role">All headlines and emphasized body type.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#b2b6bd"></div><div class="swatch-info"><div class="swatch-name">Ink Muted</div><div class="swatch-hex">#b2b6bd</div><div class="swatch-role">Secondary type — meta info, footer columns.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#656a76"></div><div class="swatch-info"><div class="swatch-name">Ink Subtle</div><div class="swatch-hex">#656a76</div><div class="swatch-role">Tertiary type — form helper text, footnotes.</div></div></div>
+  </div>
+
+  <div class="palette-group-heading">Per-Product Identity (signature)</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#7b42bc"></div><div class="swatch-info"><div class="swatch-name">Terraform Purple</div><div class="swatch-hex">#7b42bc</div><div class="swatch-role">Terraform sections, terraform CTAs.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#ffcf25"></div><div class="swatch-info"><div class="swatch-name">Vault Yellow</div><div class="swatch-hex">#ffcf25</div><div class="swatch-role">Vault sections and CTAs.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#e62b1e"></div><div class="swatch-info"><div class="swatch-name">Consul Red</div><div class="swatch-hex">#e62b1e</div><div class="swatch-role">Consul sections.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#14c6cb"></div><div class="swatch-info"><div class="swatch-name">Waypoint Cyan</div><div class="swatch-hex">#14c6cb</div><div class="swatch-role">Waypoint sections and CTAs.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#1868f2"></div><div class="swatch-info"><div class="swatch-name">Vagrant Blue</div><div class="swatch-hex">#1868f2</div><div class="swatch-role">Vagrant sections.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#00ca8e"></div><div class="swatch-info"><div class="swatch-name">Nomad Green</div><div class="swatch-hex">#00ca8e</div><div class="swatch-role">Nomad sections.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#f24c53"></div><div class="swatch-info"><div class="swatch-name">Boundary Coral</div><div class="swatch-hex">#f24c53</div><div class="swatch-role">Boundary sections.</div></div></div>
+  </div>
+
+  <div class="palette-group-heading">Semantic</div>
+  <div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#00ca8e"></div><div class="swatch-info"><div class="swatch-name">Success</div><div class="swatch-hex">#00ca8e</div><div class="swatch-role">Positive states; reused as Nomad green.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#ffcf25"></div><div class="swatch-info"><div class="swatch-name">Warning</div><div class="swatch-hex">#ffcf25</div><div class="swatch-role">Warning states; reused as Vault yellow.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#e62b1e"></div><div class="swatch-info"><div class="swatch-name">Error</div><div class="swatch-hex">#e62b1e</div><div class="swatch-role">Error states; reused as Consul red.</div></div></div>
+  </div>
+</section>
+
+<section id="typography" style="background: var(--surface-1);">
+  <div class="section-eyebrow">02 — Typography Scale</div>
+  <h2 class="section-heading">Typography</h2>
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>80px · 700 · 1.17 · -2.5px · hashicorpSans</div><div class="type-sample" style="font-size:72px;font-weight:700;line-height:1.17;letter-spacing:-2.5px">Do cloud right</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>56px · 700 · 1.18 · -1.6px</div><div class="type-sample" style="font-size:52px;font-weight:700;line-height:1.18;letter-spacing:-1.6px">A smarter approach to infrastructure</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>40px · 600 · 1.19 · -1.0px</div><div class="type-sample" style="font-size:40px;font-weight:600;line-height:1.19;letter-spacing:-1.0px">Get started in minutes</div></div>
+  <div class="type-row"><div class="type-meta"><strong>headline</strong>28px · 600 · 1.21 · -0.6px</div><div class="type-sample" style="font-size:28px;font-weight:600;line-height:1.21;letter-spacing:-0.6px">Pricing tier headline</div></div>
+  <div class="type-row"><div class="type-meta"><strong>card-title</strong>22px · 600 · 1.18 · -0.4px</div><div class="type-sample" style="font-size:22px;font-weight:600;line-height:1.18;letter-spacing:-0.4px">Feature card title</div></div>
+  <div class="type-row"><div class="type-meta"><strong>subhead</strong>20px · 600 · 1.35 · -0.2px</div><div class="type-sample" style="font-size:20px;font-weight:600;line-height:1.35;letter-spacing:-0.2px">Long-form intro paragraphs</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-lg</strong>18px · 500 · 1.69</div><div class="type-sample" style="font-size:18px;font-weight:500;line-height:1.69">Hero subhead and lead body — relaxed line-height intentional.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body</strong>16px · 500 · 1.50</div><div class="type-sample" style="font-size:16px;font-weight:500;line-height:1.50">Default body copy across feature cards and pricing descriptions.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>14px · 500 · 1.71</div><div class="type-sample" style="font-size:14px;font-weight:500;line-height:1.71">Card body, footer columns, dense data.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption</strong>13px · 500 · 1.38 · 0.2px</div><div class="type-sample" style="font-size:13px;font-weight:500;line-height:1.38;letter-spacing:0.2px">Meta and comparison-cell labels</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button</strong>14px · 600 · 1.29</div><div class="type-sample" style="font-size:14px;font-weight:600;line-height:1.29">Sign up</div></div>
+  <div class="type-row"><div class="type-meta"><strong>eyebrow</strong>12px · 600 · 1.23 · 0.6px · UPPER</div><div class="type-sample" style="font-size:12px;font-weight:600;line-height:1.23;letter-spacing:0.6px;text-transform:uppercase">Section eyebrow label</div></div>
+</section>
+
+<section id="components">
+  <div class="section-eyebrow">03 — Button Variants</div>
+  <h2 class="section-heading">Buttons</h2>
+  <div class="button-grid">
+    <div class="button-cell"><span class="button-label">button-primary</span><button class="b-btn b-primary">Sign up</button></div>
+    <div class="button-cell"><span class="button-label">button-secondary</span><button class="b-btn b-secondary">Talk to sales</button></div>
+    <div class="button-cell"><span class="button-label">button-tertiary</span><button class="b-btn b-tertiary">Read docs</button></div>
+    <div class="button-cell"><span class="button-label">button-product-terraform</span><button class="b-btn b-tf">Terraform CTA</button></div>
+    <div class="button-cell"><span class="button-label">button-product-vault</span><button class="b-btn b-vault">Vault CTA</button></div>
+    <div class="button-cell"><span class="button-label">button-product-waypoint</span><button class="b-btn b-waypoint">Waypoint CTA</button></div>
+    <div class="button-cell"><span class="button-label">button-product-vagrant</span><button class="b-btn b-vagrant">Vagrant CTA</button></div>
+    <div class="button-cell"><span class="button-label">button-primary-pressed</span><button class="b-btn b-primary" style="transform:scale(0.97)">Sign up</button></div>
+  </div>
+</section>
+
+<section id="products" style="background: var(--surface-1);">
+  <div class="section-eyebrow">04 — Product Identity Cards (signature)</div>
+  <h2 class="section-heading">Products</h2>
+  <p style="max-width:720px;margin:0 0 32px;color:var(--ink-muted)">Each HashiCorp product has its own colored card variant. The color is identity, not decoration — a reader scrolling the page can tell which product a section is about from the corner of their eye.</p>
+  <div class="card-grid">
+    <div class="product-card pc-default"><div><div class="pc-eyebrow">product-card</div><h3 class="pc-heading">Generic feature card</h3><p class="pc-body">Default surface-1 charcoal — used when the section isn't tied to a specific product.</p></div></div>
+    <div class="product-card pc-tf"><div><div class="pc-eyebrow">product-card-terraform</div><h3 class="pc-heading">Terraform</h3><p class="pc-body">Provision and manage any infrastructure as code.</p></div></div>
+    <div class="product-card pc-vault"><div><div class="pc-eyebrow">product-card-vault</div><h3 class="pc-heading">Vault</h3><p class="pc-body">Secure, store, and tightly control access to secrets.</p></div></div>
+    <div class="product-card pc-waypoint"><div><div class="pc-eyebrow">product-card-waypoint</div><h3 class="pc-heading">Waypoint</h3><p class="pc-body">A consistent workflow for application deployment.</p></div></div>
+    <div class="product-card pc-vagrant"><div><div class="pc-eyebrow">product-card-vagrant</div><h3 class="pc-heading">Vagrant</h3><p class="pc-body">Build and manage portable development environments.</p></div></div>
+    <div class="product-card pc-consul"><div><div class="pc-eyebrow">product-card-consul</div><h3 class="pc-heading">Consul</h3><p class="pc-body">Service networking across any cloud or runtime.</p></div></div>
+    <div class="product-card pc-nomad"><div><div class="pc-eyebrow">product-card-nomad</div><h3 class="pc-heading">Nomad</h3><p class="pc-body">A flexible, performant scheduler.</p></div></div>
+    <div class="product-card pc-boundary"><div><div class="pc-eyebrow">product-card-boundary</div><h3 class="pc-heading">Boundary</h3><p class="pc-body">Identity-driven access for distributed systems.</p></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-eyebrow">05 — Cards &amp; Containers</div>
+  <h2 class="section-heading">Cards</h2>
+  <div class="card-grid">
+    <div class="pricing-card"><div class="button-label" style="margin-bottom:12px">pricing-card · Standard</div><div class="pricing-card-tier">Standard</div><div class="pricing-card-price">$XX</div><ul class="pricing-card-list"><li>Standard support</li><li>Per-resource pricing</li><li>Self-service onboarding</li></ul><button class="b-btn b-primary">Sign up</button></div>
+    <div class="pricing-card-featured"><div class="button-label" style="margin-bottom:12px">pricing-card-featured · Plus</div><div class="pricing-card-tier">Plus</div><div class="pricing-card-price">$XX</div><ul class="pricing-card-list"><li>Premium support</li><li>SSO &amp; advanced auth</li><li>Audit logging</li></ul><button class="b-btn b-primary">Sign up</button></div>
+    <div class="pricing-card"><div class="button-label" style="margin-bottom:12px">pricing-card · Enterprise</div><div class="pricing-card-tier">Enterprise</div><div class="pricing-card-price">Talk to us</div><ul class="pricing-card-list"><li>Custom volume pricing</li><li>White-glove support</li><li>Dedicated solutions architect</li></ul><button class="b-btn b-secondary">Contact sales</button></div>
+    <div class="resource-card"><div class="resource-card-thumb"></div><div class="button-label" style="margin-bottom:6px">resource-card</div><div style="font-size:14px;font-weight:600;margin-bottom:4px">Resource title</div><div style="font-size:13px;color:var(--ink-muted)">PDF · Whitepaper</div></div>
+    <div class="resource-card"><span class="product-pill">Terraform</span><div class="resource-card-thumb" style="margin-top:12px"></div><div style="font-size:14px;font-weight:600">Tagged resource</div></div>
+  </div>
+  <div style="margin-top:48px">
+    <div class="button-label" style="margin-bottom:12px">cta-banner</div>
+    <div class="cta-banner">
+      <h3>Ready to do cloud right?</h3>
+      <p>Get started in minutes with a free HashiCorp Cloud Platform account.</p>
+      <button class="b-btn b-primary">Sign up</button>
+    </div>
+  </div>
+</section>
+
+<section style="background: var(--surface-1);">
+  <div class="section-eyebrow">06 — Form Elements</div>
+  <h2 class="section-heading">Forms</h2>
+  <div class="form-grid">
+    <div class="form-field"><label class="form-label">text-input · default</label><input class="form-input" type="email" placeholder="Work email"></div>
+    <div class="form-field"><label class="form-label">text-input · focused</label><input class="form-input focused" type="text" value="Jane Doe"></div>
+    <div class="form-field"><label class="form-label">text-input · disabled</label><input class="form-input" type="text" value="—" disabled="" style="opacity:0.5"></div>
+    <div class="form-field" style="grid-column:span 2;min-width:0"><label class="form-label">textarea</label><textarea class="form-input" placeholder="Tell us about your team..."></textarea></div>
+    <div class="form-field"><button class="b-btn b-primary">Submit</button></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-eyebrow">07 — Spacing Scale</div>
+  <h2 class="section-heading">Spacing</h2>
+  <div class="spacing-row">
+    <div class="spacing-cell"><div class="spacing-bar" style="width:1px"></div><div class="spacing-meta">hair · 1px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:4px"></div><div class="spacing-meta">xxs · 4px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:8px"></div><div class="spacing-meta">xs · 8px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:12px"></div><div class="spacing-meta">sm · 12px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:16px"></div><div class="spacing-meta">md · 16px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:24px"></div><div class="spacing-meta">lg · 24px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:32px"></div><div class="spacing-meta">xl · 32px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:48px"></div><div class="spacing-meta">xxl · 48px</div></div>
+    <div class="spacing-cell"><div class="spacing-bar" style="width:96px"></div><div class="spacing-meta">section · 96px</div></div>
+  </div>
+</section>
+
+<section style="background: var(--surface-1);">
+  <div class="section-eyebrow">08 — Border Radius Scale</div>
+  <h2 class="section-heading">Radius</h2>
+  <div class="radius-row">
+    <div class="radius-cell"><div class="radius-box" style="border-radius:4px"></div><div class="radius-meta">xs · 4px</div></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:6px"></div><div class="radius-meta">sm · 6px</div></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:8px"></div><div class="radius-meta">md · 8px</div></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:12px"></div><div class="radius-meta">lg · 12px</div></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:16px"></div><div class="radius-meta">xl · 16px</div></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:24px"></div><div class="radius-meta">xxl · 24px</div></div>
+    <div class="radius-cell"><div class="radius-box" style="border-radius:9999px;width:96px"></div><div class="radius-meta">pill · 9999</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-eyebrow">09 — Elevation &amp; Depth</div>
+  <h2 class="section-heading">Elevation</h2>
+  <div class="elevation-grid">
+    <div class="elev-card elev-0">Level 0 — flat</div>
+    <div class="elev-card elev-1">Level 1 — charcoal</div>
+    <div class="elev-card elev-2">Level 3 — Terraform</div>
+    <div class="elev-card elev-3">Level 3 — Vault</div>
+  </div>
+</section>
+
+<section style="background: var(--surface-1);">
+  <div class="section-eyebrow">10 — Responsive Behavior</div>
+  <h2 class="section-heading">Responsive</h2>
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Desktop-XL</td><td>1440px</td><td>Default desktop layout</td></tr>
+      <tr><td>Desktop</td><td>1280px</td><td>Pricing 3-up grid maintained</td></tr>
+      <tr><td>Tablet</td><td>1024px</td><td>Product card grid 3-up → 2-up</td></tr>
+      <tr><td>Mobile-Lg</td><td>768px</td><td>Pricing comparison becomes accordion; nav hamburger</td></tr>
+      <tr><td>Mobile</td><td>480px</td><td>Single-column; display-xl scales 80px → ~36px</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="device-cell" style="width:60px;height:120px">375</div>
+    <div class="device-cell" style="width:130px;height:170px">768</div>
+    <div class="device-cell" style="width:170px;height:200px">1024</div>
+    <div class="device-cell" style="width:220px;height:230px">1280</div>
+    <div class="device-cell" style="width:280px;height:260px">1440</div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:32px">
+    <div>
+      <div class="button-label" style="margin-bottom:12px">Touch Targets</div>
+      <ul style="font-size:15px;line-height:1.6;padding-left:20px;margin:0;color:var(--ink-muted)">
+        <li>CTA buttons hold ≥40px tap height across viewports.</li>
+        <li>Product pills grow from 24px to 28px on touch viewports.</li>
+        <li>Form inputs hold ≥44px tap target on touch.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="button-label" style="margin-bottom:12px">Collapsing Strategy</div>
+      <ul style="font-size:15px;line-height:1.6;padding-left:20px;margin:0;color:var(--ink-muted)">
+        <li>Nav: links collapse to hamburger below 768px; primary CTA stays.</li>
+        <li>Product card grid: 3-up → 2-up at 1024px → 1-up below 768px.</li>
+        <li>Pricing comparison table: per-tier accordion below 768px.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

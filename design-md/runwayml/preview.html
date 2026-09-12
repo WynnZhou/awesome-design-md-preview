@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design System Analysis of Runwai</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #0a0a0a; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link">
+      <span class="nav-brand">getdesign.md</span>
+    </a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#palette">Research</a></li>
+    <li><a href="#typography">Product</a></li>
+    <li><a href="#components">Resources</a></li>
+    <li><a href="#layout">Solutions</a></li>
+    <li><a href="#layout">Company</a></li>
+  </ul>
+  <button class="nav-cta">Try Runwai</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">Design System</p>
+    <h1>Design System Analysis of Runwai</h1>
+    <p>An editorial, gallery-grade marketing system for an AI creative-tools company. Cinematic photographic heroes, paper-white reading bands, a single proprietary sans, and pure black pill CTAs across every action.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Try Runwai</button>
+      <button class="btn btn-ghost">Schedule a Demo</button>
+    </div>
+  </div>
+</header>
+
+<section id="palette">
+  <p class="section-eyebrow">Color</p>
+  <h2>Color Palette</h2>
+  <p class="lead">Black ink on paper-white, with five tiers of grey carrying every nuance from caption to divider, and a single slate-blue reserved for tertiary metadata.</p>
+
+  <div class="palette-group-title">Brand &amp; Action</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--primary);"></div><div class="swatch-meta"><p class="swatch-name">Primary</p><p class="swatch-hex">#000000</p><p class="swatch-role">Every primary CTA, footer canvas.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--on-primary);"></div><div class="swatch-meta"><p class="swatch-name">On Primary</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Type on primary surfaces.</p></div></div>
+  </div>
+
+  <div class="palette-group-title">Surface</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--canvas);"></div><div class="swatch-meta"><p class="swatch-name">Canvas</p><p class="swatch-hex">#ffffff</p><p class="swatch-role">Primary reading-page background.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--canvas-warm);"></div><div class="swatch-meta"><p class="swatch-name">Canvas Warm</p><p class="swatch-hex">#fefefe</p><p class="swatch-role">Studios tiles, half-tone lift.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--hairline);"></div><div class="swatch-meta"><p class="swatch-name">Hairline</p><p class="swatch-hex">#e7eaf0</p><p class="swatch-role">Featured pricing infill, dividers.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--hairline-soft);"></div><div class="swatch-meta"><p class="swatch-name">Hairline Soft</p><p class="swatch-hex">#c9ccd1</p><p class="swatch-role">Column separators, form rules.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--surface-cool);"></div><div class="swatch-meta"><p class="swatch-name">Surface Cool</p><p class="swatch-hex">#d0d4d4</p><p class="swatch-role">Media thumbnail placeholder.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--scrim);"></div><div class="swatch-meta"><p class="swatch-name">Scrim</p><p class="swatch-hex">#1a1a1a</p><p class="swatch-role">Cinematic dark stage.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--footer);"></div><div class="swatch-meta"><p class="swatch-name">Footer</p><p class="swatch-hex">#030303</p><p class="swatch-role">Footer canvas.</p></div></div>
+  </div>
+
+  <div class="palette-group-title">Text</div>
+  <div class="palette">
+    <div class="swatch"><div class="swatch-color" style="background: var(--ink);"></div><div class="swatch-meta"><p class="swatch-name">Ink</p><p class="swatch-hex">#030303</p><p class="swatch-role">Headings, primary copy.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--ink-soft);"></div><div class="swatch-meta"><p class="swatch-name">Ink Soft</p><p class="swatch-hex">#1a1a1a</p><p class="swatch-role">Nav links, body emphasis.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--graphite);"></div><div class="swatch-meta"><p class="swatch-name">Graphite</p><p class="swatch-hex">#404040</p><p class="swatch-role">Standard body copy.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--slate);"></div><div class="swatch-meta"><p class="swatch-name">Slate</p><p class="swatch-hex">#676f7b</p><p class="swatch-role">Tertiary metadata.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--slate-soft);"></div><div class="swatch-meta"><p class="swatch-name">Slate Soft</p><p class="swatch-hex">#727a85</p><p class="swatch-role">Footer headings on dark.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--mute);"></div><div class="swatch-meta"><p class="swatch-name">Mute</p><p class="swatch-hex">#6b7280</p><p class="swatch-role">Disabled, fine-print.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--stone);"></div><div class="swatch-meta"><p class="swatch-name">Stone</p><p class="swatch-hex">#939393</p><p class="swatch-role">Footer eyebrow caps.</p></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: var(--ash);"></div><div class="swatch-meta"><p class="swatch-name">Ash</p><p class="swatch-hex">#999999</p><p class="swatch-role">Captions, fine-print.</p></div></div>
+  </div>
+</section>
+
+<section id="typography">
+  <p class="section-eyebrow">Typography</p>
+  <h2>Typography</h2>
+  <p class="lead">A single proprietary sans, abcNormal, carries every level from 11px micro-caps to 48px editorial display. Inter substitutes when abcNormal is unavailable.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display</strong>48 · 400 · 1.0 · -1.2px</div><div class="type-sample" style="font-size:48px; line-height:1; letter-spacing:-1.2px; font-weight:400;">Runwai Pricing</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-sm</strong>40 · 400 · 1.0 · -1px</div><div class="type-sample" style="font-size:40px; line-height:1; letter-spacing:-1px; font-weight:400;">Looking to get in touch?</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-md</strong>36 · 400 · 1.0 · -0.9px</div><div class="type-sample" style="font-size:36px; line-height:1; letter-spacing:-0.9px; font-weight:400;">Our latest Research</div></div>
+  <div class="type-row"><div class="type-meta"><strong>heading-sm</strong>24 · 400 · 1.0 · 0</div><div class="type-sample" style="font-size:24px; line-height:1; font-weight:400;">Card titles and sub-section heads</div></div>
+  <div class="type-row"><div class="type-meta"><strong>subtitle</strong>20 · 400 · 1.0</div><div class="type-sample" style="font-size:20px; line-height:1; font-weight:400;">Hero sub-copy and lead paragraphs</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body</strong>16 · 400 · 1.5</div><div class="type-sample" style="font-size:16px; line-height:1.5; font-weight:400;">Default body copy across marketing sections, form fields, and footer link list.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-strong</strong>16 · 600 · 1.5</div><div class="type-sample" style="font-size:16px; line-height:1.5; font-weight:600;">Inline emphasis and Get Started label text.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-tight</strong>16 · 400 · 1.3 · -0.16px</div><div class="type-sample" style="font-size:16px; line-height:1.3; letter-spacing:-0.16px; font-weight:400;">Tight-leading body for marketing cards and CTA cards.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>link-sm</strong>14 · 600 · 1.43</div><div class="type-sample" style="font-size:14px; line-height:1.43; font-weight:600;">Nav links, button labels, Learn More text links</div></div>
+  <div class="type-row"><div class="type-meta"><strong>eyebrow</strong>14 · 500 · 1.43 · 0.35px</div><div class="type-sample" style="font-size:14px; line-height:1.43; letter-spacing:0.35px; text-transform:uppercase; font-weight:500;">Section Eyebrow Label</div></div>
+  <div class="type-row"><div class="type-meta"><strong>meta</strong>13 · 400 · 1.3 · -0.26px</div><div class="type-sample" style="font-size:13px; line-height:1.3; letter-spacing:-0.26px; font-weight:400;">Tertiary metadata — dates, fine print, table footnotes.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>micro-caps</strong>11 · 450 · 1.3 · 0.2px</div><div class="type-sample" style="font-size:11px; line-height:1.3; letter-spacing:0.2px; text-transform:uppercase; font-weight:500;">PRESS · RESOURCES · COMPANY</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button</strong>14 · 600 · 1.43</div><div class="type-sample" style="font-size:14px; line-height:1.43; font-weight:600;">Try Runwai</div></div>
+</section>
+
+<section id="components">
+  <p class="section-eyebrow">Buttons</p>
+  <h2>Button Variants</h2>
+  <p class="lead">Every primary action is a black solid pill. Ghost and text-link variants take secondary roles. No size variants, no gradients, no shadows.</p>
+
+  <div class="button-grid">
+    <button class="btn btn-primary">button-primary</button>
+    <button class="btn btn-ghost">button-ghost</button>
+    <button class="btn btn-text-link">button-text-link</button>
+  </div>
+  <div class="button-grid on-dark" style="margin-top: 24px;">
+    <button class="btn btn-primary-on-dark">button-primary-on-dark</button>
+  </div>
+</section>
+
+<section>
+  <p class="section-eyebrow">Pricing</p>
+  <h2>Pricing 5-Column Slab</h2>
+  <p class="lead">A 5-tier slab with no coloured borders, no shadow, no badge ribbon. The featured tier is signalled by a single tonal step (hairline infill).</p>
+
+  <div class="card-grid">
+    <div class="pricing-card">
+      <p class="pricing-tier-name">Free</p>
+      <p class="pricing-desc">For exploring the platform.</p>
+      <p class="pricing-amount">$0</p>
+      <p class="pricing-unit">per user / month</p>
+      <button class="btn btn-ghost">Sign Up</button>
+      <ul class="pricing-features">
+        <li>125 credits</li>
+        <li>Basic features</li>
+        <li>Community support</li>
+      </ul>
+    </div>
+    <div class="pricing-card">
+      <p class="pricing-tier-name">Standard</p>
+      <p class="pricing-desc">For individual creators.</p>
+      <p class="pricing-amount">$15</p>
+      <p class="pricing-unit">per user / month</p>
+      <button class="btn btn-primary">Subscribe Now</button>
+      <ul class="pricing-features">
+        <li>625 credits</li>
+        <li>Standard tools</li>
+        <li>Email support</li>
+      </ul>
+    </div>
+    <div class="pricing-card pricing-card-featured">
+      <p class="pricing-tier-name">Pro</p>
+      <p class="pricing-desc">For professionals.</p>
+      <p class="pricing-amount">$35</p>
+      <p class="pricing-unit">per user / month</p>
+      <button class="btn btn-primary">Subscribe Now</button>
+      <ul class="pricing-features">
+        <li>2,250 credits</li>
+        <li>Pro tools</li>
+        <li>Priority support</li>
+      </ul>
+    </div>
+    <div class="pricing-card">
+      <p class="pricing-tier-name">Unlimited</p>
+      <p class="pricing-desc">For heavy creators.</p>
+      <p class="pricing-amount">$95</p>
+      <p class="pricing-unit">per user / month</p>
+      <button class="btn btn-primary">Subscribe Now</button>
+      <ul class="pricing-features">
+        <li>Unlimited credits</li>
+        <li>Explore mode</li>
+        <li>Dedicated support</li>
+      </ul>
+    </div>
+    <div class="pricing-card">
+      <p class="pricing-tier-name">Enterprise</p>
+      <p class="pricing-desc">Custom for teams.</p>
+      <p class="pricing-amount">Custom</p>
+      <p class="pricing-unit">contact us</p>
+      <button class="btn btn-ghost">Contact Sales</button>
+      <ul class="pricing-features">
+        <li>Custom volumes</li>
+        <li>SOC 2 + SSO</li>
+        <li>Account manager</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="section-eyebrow">Research</p>
+  <h2>Research Cards</h2>
+  <p class="lead">A 5/7 split: media thumbnail on the left, aligned text block on the right. Hairline-divided rows in editorial cadence.</p>
+
+  <div class="research-card">
+    <div class="media-thumbnail"></div>
+    <div>
+      <h3>Gen-Foundation Models</h3>
+      <p>We are building foundational simulation World Models for the next era of creative tooling. Cinematic motion, controllable scenes, and editable continuity.</p>
+      <a href="#">Learn More</a>
+    </div>
+  </div>
+  <div class="research-card">
+    <div class="media-thumbnail"></div>
+    <div>
+      <h3>Frames</h3>
+      <p>The most stylistically controllable image-generation system. Built for filmmakers, designers, and visual artists who need consistent aesthetics.</p>
+      <a href="#">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="section-eyebrow">Studios</p>
+  <h2>Studios Tiles</h2>
+  <p class="lead">A dense, irregular masonry of editorial poster tiles, captioned in body-tight. Tiles are deliberately heterogeneous in aspect ratio.</p>
+
+  <div class="studios-grid">
+    <div class="studios-tile">
+      <div class="studios-tile-poster"></div>
+      <p class="studios-tile-caption">A short film exploring memory and architecture, rendered with Gen-3.</p>
+      <span class="studios-tag">Film</span>
+    </div>
+    <div class="studios-tile">
+      <div class="studios-tile-poster" style="aspect-ratio: 1 / 1;"></div>
+      <p class="studios-tile-caption">An editorial campaign for a contemporary fashion house — entirely model-generated.</p>
+      <span class="studios-tag">Campaign</span>
+    </div>
+    <div class="studios-tile">
+      <div class="studios-tile-poster" style="aspect-ratio: 16 / 9;"></div>
+      <p class="studios-tile-caption">Music video produced with controllable scene continuity across cuts.</p>
+      <span class="studios-tag">Music</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="section-eyebrow">Hero Photo</p>
+  <h2>Cinematic Atmospheric Interlude</h2>
+  <p class="lead">Mid-document interludes use a contained scrim panel with rounded.lg corners. They function as pacing breaks, not promotional units.</p>
+
+  <div class="hero-photo">
+    <p class="eyebrow">World Models</p>
+    <h3>We are building foundational simulation World Models</h3>
+    <p>A new generation of AI systems that understand and re-render the visual world.</p>
+    <button class="btn btn-primary-on-dark">Read the paper</button>
+  </div>
+</section>
+
+<section>
+  <p class="section-eyebrow">Forms</p>
+  <h2>Form Elements</h2>
+  <p class="lead">Bottom-rule-only fields — no full border, no background fill, no focus ring. Focused state deepens the bottom rule from hairline-soft to ink.</p>
+
+  <div class="form-grid">
+    <div class="field">
+      <label>Full Name</label>
+      <input type="text" placeholder="Type your full name">
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <input type="email" placeholder="you@example.com">
+    </div>
+    <div class="field" style="grid-column: 1 / -1;">
+      <label>Message</label>
+      <textarea placeholder="Tell us a bit about your project"></textarea>
+      <p class="field-help">We'll get back to you within 2 business days.</p>
+    </div>
+  </div>
+</section>
+
+<section id="layout">
+  <p class="section-eyebrow">Layout</p>
+  <h2>Spacing Scale</h2>
+  <p class="lead">An 8px base with 4 / 6 / 12px micro-steps for inline gaps. Section vertical rhythm alternates between 64px and 96px for editorial breaks.</p>
+
+  <div class="spacing-row">
+    <div><div class="spacing-block" style="width:4px;"></div><div class="spacing-label">xxs · 4</div></div>
+    <div><div class="spacing-block" style="width:8px;"></div><div class="spacing-label">xs · 8</div></div>
+    <div><div class="spacing-block" style="width:12px;"></div><div class="spacing-label">sm · 12</div></div>
+    <div><div class="spacing-block" style="width:16px;"></div><div class="spacing-label">md · 16</div></div>
+    <div><div class="spacing-block" style="width:24px;"></div><div class="spacing-label">lg · 24</div></div>
+    <div><div class="spacing-block" style="width:32px;"></div><div class="spacing-label">xl · 32</div></div>
+    <div><div class="spacing-block" style="width:48px;"></div><div class="spacing-label">xxl · 48</div></div>
+    <div><div class="spacing-block" style="width:64px;"></div><div class="spacing-label">section · 64</div></div>
+    <div><div class="spacing-block" style="width:96px;"></div><div class="spacing-label">section-lg · 96</div></div>
+  </div>
+</section>
+
+<section>
+  <p class="section-eyebrow">Shape</p>
+  <h2>Border Radius</h2>
+  <p class="lead">Pricing cells, table rows, and form fields use 0. Cards round at 8px. Hero panels and alert banners at 16px. Buttons go full pill.</p>
+
+  <div class="radius-grid">
+    <div class="radius-card"><div class="radius-box" style="border-radius:0;"></div><div class="radius-meta">none · 0</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:4px;"></div><div class="radius-meta">xs · 4</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:6px;"></div><div class="radius-meta">sm · 6</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:8px;"></div><div class="radius-meta">md · 8</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:16px;"></div><div class="radius-meta">lg · 16</div></div>
+    <div class="radius-card"><div class="radius-box" style="border-radius:9999px; height:120px; width:120px;"></div><div class="radius-meta">full · pill</div></div>
+  </div>
+</section>
+
+<section>
+  <p class="section-eyebrow">Elevation</p>
+  <h2>Elevation &amp; Depth</h2>
+  <p class="lead">No drop shadows. Depth is created by photographic layering and tonal surface shifts.</p>
+
+  <div class="elev-grid">
+    <div class="elev-card elev-flat">Flat — 1px hairline, default for cards and rows</div>
+    <div class="elev-card elev-photographic">Photographic — scrim panel, rounded.lg</div>
+    <div class="elev-card elev-surface-lift">Subtle Surface Lift — hairline infill</div>
+  </div>
+</section>
+
+<section>
+  <p class="section-eyebrow">Responsive</p>
+  <h2>Responsive Behavior</h2>
+  <p class="lead">Seven breakpoints from 2xl (1600) to xxs (640). Pricing 5-up collapses to single-column at xxs; the featured infill is preserved on stack.</p>
+
+  <table class="breakpoint-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>2xl</td><td>1600px</td><td>Full editorial container; pricing 5-up; research 5/7 split.</td></tr>
+      <tr><td>xl</td><td>1536px</td><td>Same layout, marginally tighter gutters.</td></tr>
+      <tr><td>lg</td><td>1280px</td><td>Default desktop reading view.</td></tr>
+      <tr><td>md</td><td>1200px</td><td>Pricing grid still 5-up but tier text tightens.</td></tr>
+      <tr><td>sm</td><td>1024px</td><td>Pricing collapses to 3 → 2 tier rows; research stacks.</td></tr>
+      <tr><td>xs</td><td>768px</td><td>Top nav collapses to a hamburger; section padding drops to 64px.</td></tr>
+      <tr><td>xxs</td><td>640px</td><td>Single-column reading; hero drops to display-sm; pricing stacks 1-up.</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="device" style="width:60px; height:120px;">390</div>
+    <div class="device" style="width:90px; height:140px;">600</div>
+    <div class="device" style="width:130px; height:170px;">800</div>
+    <div class="device" style="width:200px; height:200px;">1024</div>
+    <div class="device" style="width:280px; height:220px;">1280</div>
+    <div class="device" style="width:340px; height:240px;">1600</div>
+  </div>
+</section>
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

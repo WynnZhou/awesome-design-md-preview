@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of Lumora</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #ffffff; } html[data-theme="dark"] { background: #0c0c0e; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#responsive">Responsive</a></li>
+  </ul>
+  <button class="nav-cta">Buy</button>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of Lumora</h1>
+    <p>Photography-first interface that turns marketing into a museum gallery. Edge-to-edge tiles alternate light and dark; one Action Blue carries every interactive moment.</p>
+    <div class="hero-actions">
+      <button class="btn-hero-primary">Learn more</button>
+      <button class="btn-hero-secondary">Buy</button>
+    </div>
+  </div>
+  <div class="hero-art">
+    <div class="device-mock"></div>
+    <div class="device-label">Product render with system shadow</div>
+  </div>
+</div>
+
+<section id="colors">
+  <div class="section-label">01 — Color Palette</div>
+  <h2 class="section-heading">One blue. Three near-blacks. Two whites.</h2>
+  <p class="section-intro">The single brand-level interactive color is Action Blue. Surfaces alternate White / Parchment / Near-Black tiles. No gradients.</p>
+
+  <div class="palette-group"><h3>Brand &amp; Accent</h3><div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#0066cc;"></div><div class="swatch-meta"><div class="swatch-name">primary (Action Blue)</div><div class="swatch-hex">#0066cc</div><div class="swatch-role">Every interactive element. Links, pill CTAs.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#0071e3;"></div><div class="swatch-meta"><div class="swatch-name">primary-focus</div><div class="swatch-hex">#0071e3</div><div class="swatch-role">Keyboard focus ring on buttons.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#2997ff;"></div><div class="swatch-meta"><div class="swatch-name">primary-on-dark</div><div class="swatch-hex">#2997ff</div><div class="swatch-role">Inline links on dark tiles.</div></div></div>
+  </div></div>
+
+  <div class="palette-group"><h3>Surface</h3><div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#ffffff; border-bottom:1px solid var(--hairline);"></div><div class="swatch-meta"><div class="swatch-name">canvas</div><div class="swatch-hex">#ffffff</div><div class="swatch-role">Default page surface.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#f5f5f7;"></div><div class="swatch-meta"><div class="swatch-name">canvas-parchment</div><div class="swatch-hex">#f5f5f7</div><div class="swatch-role">Signature off-white. Footer, tiles.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#fafafc;"></div><div class="swatch-meta"><div class="swatch-name">surface-pearl</div><div class="swatch-hex">#fafafc</div><div class="swatch-role">Pearl Button capsule fill.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#272729;"></div><div class="swatch-meta"><div class="swatch-name">surface-tile-1</div><div class="swatch-hex">#272729</div><div class="swatch-role">Primary dark tile.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#2a2a2c;"></div><div class="swatch-meta"><div class="swatch-name">surface-tile-2</div><div class="swatch-hex">#2a2a2c</div><div class="swatch-role">Micro-step lighter.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#252527;"></div><div class="swatch-meta"><div class="swatch-name">surface-tile-3</div><div class="swatch-hex">#252527</div><div class="swatch-role">Micro-step darker.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#000000;"></div><div class="swatch-meta"><div class="swatch-name">surface-black</div><div class="swatch-hex">#000000</div><div class="swatch-role">True void. Global nav, video.</div></div></div>
+  </div></div>
+
+  <div class="palette-group"><h3>Text &amp; Hairlines</h3><div class="palette-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#1d1d1f;"></div><div class="swatch-meta"><div class="swatch-name">ink</div><div class="swatch-hex">#1d1d1f</div><div class="swatch-role">All headlines, body, dark utility fill.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#333333;"></div><div class="swatch-meta"><div class="swatch-name">ink-muted-80</div><div class="swatch-hex">#333333</div><div class="swatch-role">Body on Pearl Button.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#7a7a7a;"></div><div class="swatch-meta"><div class="swatch-name">ink-muted-48</div><div class="swatch-hex">#7a7a7a</div><div class="swatch-role">Disabled, fine-print.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#cccccc;"></div><div class="swatch-meta"><div class="swatch-name">body-muted</div><div class="swatch-hex">#cccccc</div><div class="swatch-role">Secondary copy on dark tiles.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#e0e0e0;"></div><div class="swatch-meta"><div class="swatch-name">hairline</div><div class="swatch-hex">#e0e0e0</div><div class="swatch-role">1px borders on store cards.</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#f0f0f0;"></div><div class="swatch-meta"><div class="swatch-name">divider-soft</div><div class="swatch-hex">#f0f0f0</div><div class="swatch-role">Pearl Button soft ring.</div></div></div>
+  </div></div>
+</section>
+
+<section id="typography">
+  <div class="section-label">02 — Typography Scale</div>
+  <h2 class="section-heading">SF Pro Display + SF Pro Text</h2>
+  <p class="section-intro">Inter substituted here. Negative letter-spacing at display sizes is the signature; weight 500 is deliberately absent.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>hero-display</strong>56px / 600 / 1.07 / -0.28px</div><div class="type-sample" style="font-size:56px; font-weight:600; line-height:1.07; letter-spacing:-0.28px;">There's never been a better Pulse</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>40px / 600 / 1.10 / 0</div><div class="type-sample" style="font-size:40px; font-weight:600; line-height:1.1;">Pulse 17 Pro</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>34px / 600 / 1.47 / -0.374px</div><div class="type-sample" style="font-size:34px; font-weight:600; line-height:1.47; letter-spacing:-0.374px;">All-day battery. All-screen display.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>lead</strong>28px / 400 / 1.14 / 0.196px</div><div class="type-sample" style="font-size:28px; font-weight:400; line-height:1.14; letter-spacing:0.196px;">Built for Lumora Intelligence.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>lead-airy</strong>24px / 300 / 1.5 / 0</div><div class="type-sample" style="font-size:24px; font-weight:300; line-height:1.5;">Carbon neutral. From the materials we use to the way we make them.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>tagline</strong>21px / 600 / 1.19 / 0.231px</div><div class="type-sample" style="font-size:21px; font-weight:600; line-height:1.19; letter-spacing:0.231px;">From $999</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-strong</strong>17px / 600 / 1.24 / -0.374px</div><div class="type-sample" style="font-size:17px; font-weight:600; line-height:1.24; letter-spacing:-0.374px;">Pro. Beyond.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body</strong>17px / 400 / 1.47 / -0.374px</div><div class="type-sample" style="font-size:17px; font-weight:400; line-height:1.47; letter-spacing:-0.374px;">Lumora runs body copy at 17px, not 16px. The extra pixel gives the page an unmistakable "reading, not scanning" pace.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-large</strong>18px / 300 / 1.0 / 0</div><div class="type-sample" style="font-size:18px; font-weight:300;">Pre-order now</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button-utility</strong>14px / 400 / 1.29 / -0.224px</div><div class="type-sample" style="font-size:14px; font-weight:400; line-height:1.29; letter-spacing:-0.224px;">Sign In</div></div>
+  <div class="type-row"><div class="type-meta"><strong>nav-link</strong>12px / 400 / 1.0 / -0.12px</div><div class="type-sample" style="font-size:12px; font-weight:400; letter-spacing:-0.12px;">Store · Studio · Slate · Pulse · Orbit</div></div>
+</section>
+
+<section id="components">
+  <div class="section-label">03 — Button Variants</div>
+  <h2 class="section-heading">Two grammars: pills and rectangles</h2>
+  <p class="section-intro">Pills for actions; rectangles for utility. The pill IS the brand action signal.</p>
+
+  <div class="button-grid">
+    <div class="button-cell"><div class="button-label">button-primary</div><button class="btn btn-primary">Buy</button><div class="button-meta">Action Blue / pill / 17px / 400</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-focus</div><button class="btn btn-primary-focus">Learn more</button><div class="button-meta">2px Focus Blue outline ring</div></div>
+    <div class="button-cell"><div class="button-label">button-primary-active</div><button class="btn btn-primary-active">Pressed</button><div class="button-meta">scale(0.95) — system-wide press</div></div>
+    <div class="button-cell"><div class="button-label">button-secondary-pill</div><button class="btn btn-secondary-pill">Learn more</button><div class="button-meta">Transparent + 1px Action Blue border</div></div>
+    <div class="button-cell on-tile"><div class="button-label">button-dark-utility</div><button class="btn btn-dark-utility">Sign In</button><div class="button-meta">Ink fill / 8px radius / 14px</div></div>
+    <div class="button-cell"><div class="button-label">button-pearl-capsule</div><button class="btn btn-pearl-capsule">Compare</button><div class="button-meta">Pearl fill / 11px radius / soft 3px ring</div></div>
+    <div class="button-cell"><div class="button-label">button-store-hero</div><button class="btn btn-store-hero">Pre-order now</button><div class="button-meta">18px / weight 300 — the rare airy weight</div></div>
+    <div class="button-cell on-photo"><div class="button-label">button-icon-circular</div><div style="display:flex; gap:12px;"><button class="btn-icon-circular">‹</button><button class="btn-icon-circular">×</button></div><div class="button-meta">44 × 44 / chip-translucent / full radius</div></div>
+    <div class="button-cell"><div class="button-label">text-link</div><button class="text-link">Read environmental report ›</button><div class="button-meta">Action Blue inline body link</div></div>
+    <div class="button-cell on-tile"><div class="button-label">text-link-on-dark</div><button class="text-link-on-dark">Read environmental report ›</button><div class="button-meta">Sky Link Blue on dark tiles</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">04 — Product Tiles</div>
+  <h2 class="section-heading">Edge-to-edge alternation</h2>
+  <p class="section-intro">Tiles touch edges with no gap. The color change IS the divider.</p>
+
+  <div class="tiles-row" style="margin: 32px -48px 0;">
+    <div class="product-tile light"><h3>Pulse 17 Pro</h3><p>Pro. Beyond.</p><div class="ctas"><button class="btn btn-primary">Learn more</button><button class="btn btn-secondary-pill">Buy</button></div><div class="render"></div></div>
+    <div class="product-tile dark"><h3>Orbit Ultra</h3><p>Adventure awaits.</p><div class="ctas"><button class="btn btn-primary">Learn more</button><button class="text-link-on-dark">Buy ›</button></div><div class="render"></div></div>
+  </div>
+  <div class="tiles-row" style="margin: 0 -48px;">
+    <div class="product-tile parchment"><h3>Studio Pro</h3><p>Mind-blowing. Head-turning.</p><div class="ctas"><button class="btn btn-primary">Learn more</button><button class="btn btn-secondary-pill">Buy</button></div><div class="render"></div></div>
+    <div class="product-tile dark-2"><h3>Echo Buds Pro 3</h3><p>Personalized spatial audio.</p><div class="ctas"><button class="btn btn-primary">Learn more</button><button class="text-link-on-dark">Buy ›</button></div><div class="render"></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">05 — Store Grid Cards</div>
+  <h2 class="section-heading">White cards at 18px radius</h2>
+
+  <div class="store-grid">
+    <div class="store-utility-card"><div class="img-block"><div class="render"></div></div><div class="name">MagSafe Charger</div><div class="price">$39</div><button class="text-link">Buy ›</button></div>
+    <div class="store-utility-card"><div class="img-block"><div class="render"></div></div><div class="name">AirTag (4-pack)</div><div class="price">$99</div><button class="text-link">Buy ›</button></div>
+    <div class="store-utility-card"><div class="img-block"><div class="render"></div></div><div class="name">Stylus Pro</div><div class="price">$129</div><button class="text-link">Buy ›</button></div>
+    <div class="store-utility-card"><div class="img-block"><div class="render"></div></div><div class="name">USB-C Cable</div><div class="price">$29</div><button class="text-link">Buy ›</button></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">06 — Configurator + Search + Sticky Bar</div>
+
+  <div style="margin-bottom: 32px;">
+    <h4 style="font-size:17px; font-weight:600; color:var(--ink); margin-bottom:16px; letter-spacing:-0.374px;">Choose a finish</h4>
+    <div class="config-row">
+      <button class="configurator-option-chip selected"><span class="swatch-dot" style="background:#5a5a5a;"></span>Natural Titanium</button>
+      <button class="configurator-option-chip"><span class="swatch-dot" style="background:#1a1a1a;"></span>Black Titanium</button>
+      <button class="configurator-option-chip"><span class="swatch-dot" style="background:#bdc3cc;"></span>White Titanium</button>
+      <button class="configurator-option-chip"><span class="swatch-dot" style="background:#3d4754;"></span>Blue Titanium</button>
+    </div>
+  </div>
+
+  <div style="margin-bottom: 32px;">
+    <h4 style="font-size:17px; font-weight:600; color:var(--ink); margin-bottom:16px; letter-spacing:-0.374px;">Search</h4>
+    <input class="search-input" type="text" placeholder="Search lumora.com">
+  </div>
+
+  <div>
+    <h4 style="font-size:17px; font-weight:600; color:var(--ink); margin-bottom:16px; letter-spacing:-0.374px;">Floating sticky bar</h4>
+    <div class="sticky-bar">
+      <div class="price">From <strong>$999</strong> or $41.62/mo. for 24 mo.</div>
+      <button class="btn btn-primary">Add to Bag</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">07 — Navigation</div>
+  <h2 class="section-heading">Two-row nav stack</h2>
+
+  <div class="global-nav-demo">
+    <div class="links"><span></span><span>Store</span><span>Studio</span><span>Slate</span><span>Pulse</span><span>Orbit</span><span>Echo Buds</span><span>Lens</span></div>
+    <div class="links"><span>🔍</span><span>🛍</span></div>
+  </div>
+
+  <div class="sub-nav-demo">
+    <div class="category">Pulse</div>
+    <div class="links"><a>Explore</a><a>Compare</a><a>Shop</a><a>Switch</a><button class="btn btn-primary" style="font-size:14px; padding:8px 16px;">Buy</button></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">08 — Form Elements</div>
+  <div class="form-grid">
+    <div class="form-cell"><label class="form-label">Search lumora.com</label><input class="search-input" type="text" placeholder="Try Pulse 17 Pro"></div>
+    <div class="form-cell"><label class="form-label">Email address</label><input class="search-input" type="email" placeholder="you@icloud.com"></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">09 — Spacing Scale</div>
+  <p class="section-intro">Base 8px. Universal rhythm constants: 17px and 21px.</p>
+  <div class="spacing-row">
+    <div class="spacing-block"><div class="spacing-bar" style="width:4px;"></div><div class="spacing-label">xxs · 4px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:8px;"></div><div class="spacing-label">xs · 8px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:12px;"></div><div class="spacing-label">sm · 12px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:17px;"></div><div class="spacing-label">md · 17px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:24px;"></div><div class="spacing-label">lg · 24px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:32px;"></div><div class="spacing-label">xl · 32px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:48px;"></div><div class="spacing-label">xxl · 48px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:80px;"></div><div class="spacing-label">section · 80px</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">10 — Border Radius Scale</div>
+  <p class="section-intro">0 (tiles) → 8 (utility) → 11 (Pearl) → 18 (cards) → 9999 (pills + circles).</p>
+  <div class="radius-row">
+    <div class="radius-block" style="border-radius:0;">0 · none</div>
+    <div class="radius-block" style="border-radius:5px;">5 · xs</div>
+    <div class="radius-block" style="border-radius:8px;">8 · sm</div>
+    <div class="radius-block" style="border-radius:11px;">11 · md</div>
+    <div class="radius-block" style="border-radius:18px;">18 · lg</div>
+    <div class="radius-block" style="border-radius:9999px;">pill</div>
+    <div class="radius-block" style="border-radius:50%;">full</div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">11 — Elevation &amp; Depth</div>
+  <p class="section-intro">Exactly one drop-shadow in the entire system, applied to product imagery only.</p>
+  <div class="elevation-grid">
+    <div class="elevation-card elevation-flat"><h5>Flat</h5><p>Tiles, global nav, footer. No shadow.</p></div>
+    <div class="elevation-card elevation-hairline"><h5>Soft hairline</h5><p>1px rgba(0,0,0,0.08) border. Utility cards.</p></div>
+    <div class="elevation-card elevation-blur"><h5>Backdrop blur</h5><p>Parchment 80% + blur(20px). Sub-nav, sticky bar.</p></div>
+    <div class="elevation-card elevation-product-shadow"><div class="render"></div></div>
+    <div class="elevation-card elevation-flat"><h5>Surface change</h5><p>Light tile ↔ dark tile IS the elevation.</p></div>
+    <div class="elevation-card elevation-flat"><h5>No card shadow</h5><p>Cards never carry drop shadows.</p></div>
+  </div>
+</section>
+
+<section id="responsive">
+  <div class="section-label">12 — Responsive Behavior</div>
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Phone</td><td>≤ 640px</td><td>Single-column tiles; hero h1 → 34px.</td></tr>
+      <tr><td>Tablet</td><td>736–833px</td><td>Global nav collapses to hamburger.</td></tr>
+      <tr><td>Tablet landscape</td><td>834–1023px</td><td>Global nav fully expanded; 3-col → 2-col grids.</td></tr>
+      <tr><td>Desktop</td><td>1069–1440px</td><td>Full layout; 4–5 col store grids.</td></tr>
+      <tr><td>Wide</td><td>≥ 1441px</td><td>Content locks at 1440px.</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="device-bar" style="width:60px; height:120px;">375<br>mobile</div>
+    <div class="device-bar" style="width:90px; height:140px;">640<br>phone</div>
+    <div class="device-bar" style="width:140px; height:160px;">834<br>tablet</div>
+    <div class="device-bar" style="width:200px; height:180px;">1068<br>laptop</div>
+    <div class="device-bar" style="width:260px; height:200px;">1440<br>desktop</div>
+    <div class="device-bar" style="width:320px; height:220px;">1441<br>wide</div>
+  </div>
+  <div class="responsive-sub"><h4>Touch Targets</h4><ul><li>Pill CTAs at ~44 × 100px.</li><li>Circular control chips exactly 44 × 44.</li><li>Global nav utility links at ~32 × 80 (precision desktop only).</li></ul></div>
+  <div class="responsive-sub"><h4>Collapsing Strategy</h4><ul><li>Global nav: full row → Brand logo + hamburger + bag at 834px.</li><li>Product tiles: 2-col → 1-col at 834px.</li><li>Hero typography: 56px → 40px → 34px → 28px.</li></ul></div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

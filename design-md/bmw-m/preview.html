@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<!-- merged by _generator/merge_themes.py from preview_light.html + preview_dark.html -->
+<html data-native="light" data-theme="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Analysis of BMW M</title>
+<link rel="stylesheet" href="preview.css">
+<script>
+(function () {
+  var m = /[?&#]theme=(light|dark)/.exec(location.href), t = m && m[1];
+  if (!t) { try { t = localStorage.getItem('design-md:theme'); } catch (e) {} }
+  if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+})();
+</script><style>html { background: #000000; } html[data-theme="dark"] { background: #000000; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#responsive">Responsive</a></li>
+  </ul>
+  <button class="nav-cta">Discover M</button>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <div class="m-stripe"></div>
+    <h1>Design System Analysis of BMW M</h1>
+    <p>A motorsport-engineering interface anchored on a near-black canvas with white BMW Type Next Latin display headlines in confident UPPERCASE. Brand voltage comes from full-bleed automotive photography.</p>
+    <div class="hero-actions">
+      <button class="btn-hero-primary">Discover M</button>
+      <button class="btn-hero-secondary">Configure</button>
+    </div>
+  </div>
+  <div class="hero-art-photo">
+    <div class="stripe"></div>
+  </div>
+</div>
+
+<section id="colors">
+  <div class="section-label">01 — Color Palette</div>
+  <h2 class="section-heading">Black canvas, white type, M tricolor accent</h2>
+  <p class="section-intro">The system has no decorative voltage — energy comes from full-bleed photography. The M tricolor stripe is the only true brand-identity color signal; it never appears as a button fill.</p>
+
+  <div class="palette-group">
+    <h3>M Tricolor (Brand Signature)</h3>
+    <div class="m-stripe-display"></div>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#0066b1;"></div><div class="swatch-meta"><div class="swatch-name">m-blue-light</div><div class="swatch-hex">#0066b1</div><div class="swatch-role">First stop in M tricolor stripe.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1c69d4;"></div><div class="swatch-meta"><div class="swatch-name">m-blue-dark / bmw-blue</div><div class="swatch-hex">#1c69d4</div><div class="swatch-role">Middle stop. Same as heritage corporate blue.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#e22718;"></div><div class="swatch-meta"><div class="swatch-name">m-red</div><div class="swatch-hex">#e22718</div><div class="swatch-role">Third stop. M-power red.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#0653b6;"></div><div class="swatch-meta"><div class="swatch-name">electric-blue</div><div class="swatch-hex">#0653b6</div><div class="swatch-role">M xDrive electric model accent.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Surface</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#000000;"></div><div class="swatch-meta"><div class="swatch-name">canvas</div><div class="swatch-hex">#000000</div><div class="swatch-role">Default page floor across every surface.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#0d0d0d;"></div><div class="swatch-meta"><div class="swatch-name">surface-soft</div><div class="swatch-hex">#0d0d0d</div><div class="swatch-role">Spec table cells, footer-adjacent strips.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1a1a1a;"></div><div class="swatch-meta"><div class="swatch-name">surface-card</div><div class="swatch-hex">#1a1a1a</div><div class="swatch-role">Cards, secondary buttons, icon backgrounds.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#262626;"></div><div class="swatch-meta"><div class="swatch-name">surface-elevated</div><div class="swatch-hex">#262626</div><div class="swatch-role">Nested cards inside dark bands.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#2b2b2b;"></div><div class="swatch-meta"><div class="swatch-name">carbon-gray</div><div class="swatch-hex">#2b2b2b</div><div class="swatch-role">Carbon-fiber technical-spec surfaces.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#3c3c3c;"></div><div class="swatch-meta"><div class="swatch-name">hairline</div><div class="swatch-hex">#3c3c3c</div><div class="swatch-role">1px dividers and outlines.</div></div></div>
+    </div>
+  </div>
+
+  <div class="palette-group">
+    <h3>Text</h3>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#ffffff;"></div><div class="swatch-meta"><div class="swatch-name">ink / on-dark</div><div class="swatch-hex">#ffffff</div><div class="swatch-role">All headline and primary text.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#e6e6e6;"></div><div class="swatch-meta"><div class="swatch-name">body-strong</div><div class="swatch-hex">#e6e6e6</div><div class="swatch-role">Emphasized body / lead paragraph.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#bbbbbb;"></div><div class="swatch-meta"><div class="swatch-name">body</div><div class="swatch-hex">#bbbbbb</div><div class="swatch-role">Default running-text. Cooler than pure white.</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#7e7e7e;"></div><div class="swatch-meta"><div class="swatch-name">muted</div><div class="swatch-hex">#7e7e7e</div><div class="swatch-role">Footer links, captions.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="typography">
+  <div class="section-label">02 — Typography Scale</div>
+  <h2 class="section-heading">BMW Type Next Latin · 700 / 300 contrast</h2>
+  <p class="section-intro">Display at weight 700, body at weight 300 (Light). The contrast between heavy display and light body is the editorial signature. UPPERCASE for h1/h2 with 1.5px letter-spacing on labels.</p>
+
+  <div class="type-row"><div class="type-meta"><strong>display-xl</strong>80px / 700 / 1.0 / 0</div><div class="type-sample" style="font-size:80px; font-weight:700; line-height:1; text-transform:uppercase;">THE ULTIMATE</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-lg</strong>56px / 700 / 1.05 / 0</div><div class="type-sample" style="font-size:56px; font-weight:700; line-height:1.05; text-transform:uppercase;">More from BMW M</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-md</strong>40px / 700 / 1.1 / 0</div><div class="type-sample" style="font-size:40px; font-weight:700; line-height:1.1; text-transform:uppercase;">BMW M3 Sedan</div></div>
+  <div class="type-row"><div class="type-meta"><strong>display-sm</strong>32px / 700 / 1.15 / 0</div><div class="type-sample" style="font-size:32px; font-weight:700; line-height:1.15; text-transform:uppercase;">Race-bred for the road</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-lg</strong>24px / 700 / 1.3 / 0</div><div class="type-sample" style="font-size:24px; font-weight:700; line-height:1.3; text-transform:uppercase;">XM 50e: Plug-in Hybrid</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-md</strong>20px / 400 / 1.4 / 0</div><div class="type-sample" style="font-size:20px; font-weight:400; line-height:1.4;">Test yourself for the race</div></div>
+  <div class="type-row"><div class="type-meta"><strong>title-sm</strong>18px / 400 / 1.4 / 0</div><div class="type-sample" style="font-size:18px; font-weight:400; line-height:1.4;">From racing to series production</div></div>
+  <div class="type-row"><div class="type-meta"><strong>label-uppercase</strong>14px / 700 / 1.3 / 1.5px</div><div class="type-sample" style="font-size:14px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase;">VIEW ALL MODELS</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-md</strong>16px / 300 (Light) / 1.5</div><div class="type-sample" style="font-size:16px; font-weight:300; line-height:1.5;">Engineered to deliver an unprecedented driving experience that combines pure motorsport DNA with everyday usability.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>body-sm</strong>14px / 300 (Light) / 1.5</div><div class="type-sample" style="font-size:14px; font-weight:300; line-height:1.5; color:var(--body);">Footer body, cookie consent, fine-print legal text — even legal text stays at light weight.</div></div>
+  <div class="type-row"><div class="type-meta"><strong>caption</strong>12px / 400 / 1.4 / 0.5px</div><div class="type-sample" style="font-size:12px; font-weight:400; letter-spacing:0.5px; color:var(--muted);">Photo: BMW M Press · 2026</div></div>
+  <div class="type-row"><div class="type-meta"><strong>button</strong>14px / 700 / 1.0 / 1.5px</div><div class="type-sample" style="font-size:14px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase;">Discover M</div></div>
+  <div class="type-row"><div class="type-meta"><strong>nav-link</strong>14px / 400 / 1.4 / 0.5px</div><div class="type-sample" style="font-size:14px; font-weight:400; letter-spacing:0.5px;">Models · Topics · Magazine · Configurator · Fastlane</div></div>
+</section>
+
+<section id="components">
+  <div class="section-label">03 — Button Variants</div>
+  <h2 class="section-heading">Rectangular silhouettes, uppercase tracking</h2>
+  <p class="section-intro">All buttons render at 0px radius with 1.5px letter-spacing on uppercase labels. The "machined precision" feel is non-negotiable — rounded corners read as consumer-tech, not motorsport.</p>
+
+  <div class="button-grid">
+    <div class="button-cell"><div class="button-label">button-primary</div><button class="btn btn-primary">Discover M</button><div class="button-meta">canvas / on-dark inverted / 0px radius</div></div>
+    <div class="button-cell on-photo"><div class="button-label">button-primary-outline</div><button class="btn btn-primary-outline">Configure</button><div class="button-meta">Transparent over photography. White outline only.</div></div>
+    <div class="button-cell"><div class="button-label">button-icon (carousel)</div><div style="display:flex; gap:12px;"><button class="btn-icon" aria-label="prev">‹</button><button class="btn-icon" aria-label="next">›</button></div><div class="button-meta">48 × 48 / surface-card / full radius</div></div>
+    <div class="button-cell"><div class="button-label">text-link</div><button class="btn-text-link">View All Models</button><div class="button-meta">Uppercase 1.5px tracking with chevron</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">04 — Cards &amp; Containers</div>
+  <h2 class="section-heading">Photo-led card grid</h2>
+  <p class="section-intro">Cards lead with edge-to-edge photography. Chrome around the photos backs off — small uppercase tags, heavy display titles, light-weight body excerpts.</p>
+
+  <div class="card-grid">
+    <div class="feature-photo-card">
+      <div class="photo"></div>
+      <div class="meta">
+        <div class="tag">Magazine · Lifestyle</div>
+        <h4>Test yourself for the race</h4>
+        <p>An M Driver Training day at the M Track. Drive an M car at the limit on a closed circuit.</p>
+      </div>
+    </div>
+    <div class="feature-photo-card">
+      <div class="photo" style="background:linear-gradient(135deg, #1c69d4 0%, #0a0a0a 100%);"></div>
+      <div class="meta">
+        <div class="tag">Models · 2026</div>
+        <h4>The new BMW M xM 50e</h4>
+        <p>Plug-in hybrid M Performance. 469 kW (637 hp) combined output and electric-only range.</p>
+      </div>
+    </div>
+    <div class="feature-photo-card">
+      <div class="photo" style="background:linear-gradient(135deg, #2b2b2b 0%, #e22718 200%);"></div>
+      <div class="meta">
+        <div class="tag">Motorsport · Racing</div>
+        <h4>From racing to series production</h4>
+        <p>How motorsport innovation flows into every M car you can drive on the road.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">05 — Model Cards</div>
+  <h2 class="section-heading">More new M models</h2>
+
+  <div class="card-grid">
+    <div class="model-card">
+      <div class="photo" style="background:linear-gradient(180deg, #1c69d4 0%, #0a0a0a 100%);"></div>
+      <h4>BMW M3</h4>
+      <div class="specs">3.0L · 530 hp · 0–100 km/h in 3.5s</div>
+      <button class="btn-text-link">Explore this model</button>
+    </div>
+    <div class="model-card">
+      <div class="photo" style="background:linear-gradient(180deg, #e22718 0%, #0a0a0a 100%);"></div>
+      <h4>BMW M4</h4>
+      <div class="specs">3.0L Twin-Turbo · 543 hp · 0–100 km/h in 3.4s</div>
+      <button class="btn-text-link">Explore this model</button>
+    </div>
+    <div class="model-card">
+      <div class="photo" style="background:linear-gradient(180deg, #2b2b2b 0%, #0a0a0a 100%);"></div>
+      <h4>BMW XM 50e</h4>
+      <div class="specs">Plug-in Hybrid · 469 kW · Electric-only range</div>
+      <button class="btn-text-link">Explore this model</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">06 — Spec Cells</div>
+  <h2 class="section-heading">Engineered numbers, no ornamentation</h2>
+  <p class="section-intro">Spec table cells display vehicle technical data. Sharp corners, large display numbers, uppercase labels. No card chrome — values sit in a 4-up grid with hairline dividers.</p>
+
+  <div class="spec-grid">
+    <div class="spec-cell"><div class="value">530</div><div class="label">Horsepower</div></div>
+    <div class="spec-cell"><div class="value">3.5s</div><div class="label">0 – 100 km/h</div></div>
+    <div class="spec-cell"><div class="value">290</div><div class="label">Top speed (km/h)</div></div>
+    <div class="spec-cell"><div class="value">3.0L</div><div class="label">Engine displacement</div></div>
+    <div class="spec-cell"><div class="value">650</div><div class="label">Nm torque</div></div>
+    <div class="spec-cell"><div class="value">8</div><div class="label">M Steptronic gears</div></div>
+    <div class="spec-cell"><div class="value">M xDrive</div><div class="label">Drive system</div></div>
+    <div class="spec-cell"><div class="value">M Compound</div><div class="label">Brakes</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">07 — Magazine Article + Motorsport Photo</div>
+
+  <div class="card-grid">
+    <div class="magazine-article-card">
+      <div class="thumb"></div>
+      <div class="tag">Magazine</div>
+      <h4>40 years of M5 Touring</h4>
+      <p>From the original 1986 prototype to the V8 hybrid of 2025 — how the wagon became the canvas for M's wildest experiments.</p>
+    </div>
+    <div class="motorsport-photo-card">
+      <div class="label">Motorsport · DTM</div>
+      <h4>Made for the racetrack</h4>
+    </div>
+    <div class="motorsport-photo-card" style="background:linear-gradient(180deg, #0a0a0a 0%, rgba(226,39,24,0.4) 100%);">
+      <div class="label">Motorsport · Le Mans</div>
+      <h4>BMW M Hybrid V8</h4>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">08 — Category Tabs + Chatbot Launcher</div>
+
+  <div class="category-tabs">
+    <div class="category-tab active">All</div>
+    <div class="category-tab">Magazine</div>
+    <div class="category-tab">Models</div>
+    <div class="category-tab">Lifestyle</div>
+    <div class="category-tab">Motorsport</div>
+  </div>
+
+  <div class="card-grid" style="margin-top:32px;">
+    <div class="chatbot-launcher">
+      <h3>BMW M Chatbot</h3>
+      <p>Ask anything about M cars, models, motorsport history, or technology.</p>
+      <button class="btn btn-primary">Launch chatbot</button>
+    </div>
+    <div class="chatbot-launcher">
+      <h3>M Track booking</h3>
+      <p>Book your M Track Days experience at the Nürburgring or M Driving Academy.</p>
+      <button class="btn btn-primary">Find a date</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">09 — Form Elements &amp; Cookie Consent</div>
+  <p class="section-intro">Inputs are 0px radius, surface-card background, hairline border. Focus state thickens the border to white.</p>
+
+  <div class="form-grid">
+    <div class="form-cell">
+      <label class="form-label">Email address</label>
+      <input class="form-input" type="email" placeholder="you@example.com">
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Email (focused)</label>
+      <input class="form-input focused" type="email" value="alex@studio.com">
+    </div>
+    <div class="form-cell">
+      <label class="form-label">Postal code</label>
+      <input class="form-input" type="text" placeholder="80788 — Munich, DE">
+    </div>
+    <div class="form-cell wide">
+      <label class="form-label">Inquiry</label>
+      <textarea class="form-textarea" placeholder="Tell us about your interest..."></textarea>
+    </div>
+  </div>
+
+  <div style="margin-top:48px;">
+    <div class="cookie-consent-card">
+      <p><strong style="color:var(--ink);">Cookies on BMW M.</strong> We use cookies to deliver content and improve your browsing experience. Manage your preferences below.</p>
+      <button class="btn btn-primary-outline">Accept all</button>
+      <button class="btn-text-link" style="margin-left:16px;">Manage cookies</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">10 — Spacing Scale</div>
+  <p class="section-intro">Section rhythm 96px between major editorial bands.</p>
+  <div class="spacing-row">
+    <div class="spacing-block"><div class="spacing-bar" style="width:4px;"></div><div class="spacing-label">xxs · 4px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:8px;"></div><div class="spacing-label">xs · 8px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:12px;"></div><div class="spacing-label">sm · 12px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:16px;"></div><div class="spacing-label">md · 16px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:24px;"></div><div class="spacing-label">lg · 24px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:40px;"></div><div class="spacing-label">xl · 40px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:64px;"></div><div class="spacing-label">xxl · 64px</div></div>
+    <div class="spacing-block"><div class="spacing-bar" style="width:96px;"></div><div class="spacing-label">section · 96px</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">11 — Border Radius Scale</div>
+  <p class="section-intro">Almost always 0px. Reserve full radius for circular icon buttons only.</p>
+  <div class="radius-row">
+    <div class="radius-block" style="border-radius:0;">0 · none</div>
+    <div class="radius-block" style="border-radius:2px;">2 · xs</div>
+    <div class="radius-block" style="border-radius:4px;">4 · sm</div>
+    <div class="radius-block" style="border-radius:6px;">6 · md</div>
+    <div class="radius-block" style="border-radius:50%;">full</div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">12 — Elevation &amp; Depth</div>
+  <p class="section-intro">No drop shadows. Depth comes from photography subjects + lighting and from the contrast between black canvas and slightly-elevated surface-card.</p>
+
+  <div class="elevation-grid">
+    <div class="elevation-card elevation-flat"><h5>Flat</h5><p>No shadow. Body, top nav, footer, photo bands.</p></div>
+    <div class="elevation-card elevation-flat"><h5>Soft hairline</h5><p>1px hairline border. Section dividers, card outlines.</p></div>
+    <div class="elevation-card elevation-elevated"><h5>Card surface</h5><p>surface-card over canvas — visible elevation.</p></div>
+    <div class="elevation-photo"><h5>Photographic depth</h5><p>Full-bleed photo. Subject + lens does shadow's work.</p></div>
+    <div class="elevation-card elevation-flat"><h5>Carbon-spec</h5><p>carbon-gray on tech-spec cards. Texture overlay optional.</p></div>
+    <div class="elevation-card elevation-flat"><h5>M-stripe accent</h5><p>4px tricolor stripe as brand-identity divider.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">13 — CTA Band</div>
+  <h2 class="section-heading">Drive an M</h2>
+  <div class="cta-band-photo">
+    <h2>Experience M for yourself</h2>
+    <button class="btn btn-primary-outline">Book a test drive</button>
+  </div>
+</section>
+
+<section id="responsive">
+  <div class="section-label">14 — Responsive Behavior</div>
+
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Mobile</td><td>&lt; 768px</td><td>Hamburger nav; hero h1 80→48px; photo cards stack full-width; spec grid 1-up.</td></tr>
+      <tr><td>Tablet</td><td>768–1024px</td><td>Top nav tightens; 2-up card grids; spec tables 2-up.</td></tr>
+      <tr><td>Desktop</td><td>1024–1440px</td><td>Full top-nav; 3-up card grids; 4-up spec grids.</td></tr>
+      <tr><td>Wide</td><td>&gt; 1440px</td><td>Same as desktop with more breathing room; max content 1440px.</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="device-bar" style="width:60px; height:120px;">375<br>mobile</div>
+    <div class="device-bar" style="width:90px; height:140px;">600<br>small phone</div>
+    <div class="device-bar" style="width:140px; height:160px;">768<br>tablet</div>
+    <div class="device-bar" style="width:200px; height:180px;">1024<br>laptop</div>
+    <div class="device-bar" style="width:260px; height:200px;">1280<br>desktop</div>
+    <div class="device-bar" style="width:320px; height:220px;">1440<br>wide</div>
+  </div>
+  <div class="responsive-sub"><h4>Touch Targets</h4><ul><li>Primary CTA at min 48 × 48px — meets WCAG AAA.</li><li>Icon button at exactly 48 × 48.</li><li>Text input height 48px.</li></ul></div>
+  <div class="responsive-sub"><h4>Collapsing Strategy</h4><ul><li>Top nav collapses to hamburger; menu opens as full-screen black overlay with M-stripe at top.</li><li>Photography stays full-bleed at every breakpoint.</li><li>Card grids reduce columns rather than scaling cards down.</li><li>Spec tables collapse 4→2→1; values stay at display-sm.</li><li>M-stripe stays 4px height across breakpoints.</li></ul></div>
+</section>
+
+<footer class="footer">
+  <div class="footer-shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h6>VoltAgent Framework</h6>
+        <span>TypeScript agents</span>
+        <span>Tool orchestration</span>
+        <span>Multi-agent workflows</span>
+      </div>
+      <div class="footer-col">
+        <h6>VoltOps LLM Observability</h6>
+        <span>LLM tracing</span>
+        <span>Live debugging</span>
+        <span>Visual timelines</span>
+      </div>
+      <div class="footer-col">
+        <h6>Production</h6>
+        <span>Evaluations</span>
+        <span>Prompt management</span>
+        <span>Guardrails</span>
+      </div>
+      <div class="footer-col">
+        <h6>Platform</h6>
+        <span>VoltOps console</span>
+        <span>Open source core</span>
+        <span>Agent engineering</span>
+      </div>
+    </div>
+    <div class="footer-credit">
+      Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14">VoltAgent</a> team
+    </div>
+  </div>
+</footer>
+
+
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch light or dark">☾</button><script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  var chip = document.getElementById('themeChip');
+  var native = root.dataset.native || 'light';
+  // two controls, one state: the generated pages carry the corner button, the ported ones carry
+  // the hero chip, and each is labelled with what a click gets you
+  function paint(t) {
+    if (btn) btn.textContent = t === 'dark' ? '\u2600' : '\u263e';
+    if (chip) chip.textContent = t === 'dark' ? 'Light Preview' : 'Dark Preview';
+  }
+  function apply(t, persist) {
+    if (t !== 'light' && t !== 'dark') t = native;
+    root.dataset.theme = t;
+    paint(t);
+    if (persist) { try { localStorage.setItem('design-md:theme', t); } catch (e) {} }
+    try {
+      if (window.parent && window.parent !== window)
+        window.parent.postMessage({ type: 'design-md:theme', theme: t, from: 'preview' }, '*');
+    } catch (e) {}
+  }
+  var m = /[?&#]theme=(light|dark)/.exec(location.href);
+  var s = null;
+  try { s = localStorage.getItem('design-md:theme'); } catch (e) {}
+  apply(m ? m[1] : (s || native), false);
+  function flip() { apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true); }
+  btn && btn.addEventListener('click', flip);
+  chip && chip.addEventListener('click', flip);
+  addEventListener('keydown', function (e) {
+    var el = e.target || {};
+    if (e.key === 't' && !/^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName || '')) {
+      e.preventDefault();
+      apply(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
+    }
+  });
+  addEventListener('message', function (e) {
+    var d = e.data;
+    if (d && d.type === 'design-md:theme' && d.from !== 'preview') apply(d.theme, false);
+  });
+})();
+</script><script>
+(function () {
+  // both layers carry the same sections; the ids sit on the light one, so a plain #anchor would
+  // jump to a hidden element whenever the dark layer is the one showing. Resolve against whichever
+  // layer is visible, falling back to the id when only one layer exists.
+  function target(id) {
+    var vis = document.querySelector('.theme-layer:not([data-when="__none__"])');
+    var layers = [].slice.call(document.querySelectorAll('.theme-layer')).filter(function (l) {
+      return getComputedStyle(l).display !== 'none';
+    });
+    for (var i = 0; i < layers.length; i++) {
+      var hit = layers[i].querySelector('[data-sec="' + id + '"], #' + id);
+      if (hit) return hit;
+    }
+    return document.getElementById(id);
+  }
+  function go(id, push) {
+    var el = id && target(id);
+    if (!el) return false;
+    el.scrollIntoView();
+    if (push) try { history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  addEventListener('click', function (e) {
+    var a = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) { e.preventDefault(); scrollTo(0, 0); return; }
+    if (go(id, true)) e.preventDefault();
+  });
+  // arriving with #colors on a dark page, or flipping theme while parked on one
+  addEventListener('hashchange', function () { go(decodeURIComponent(location.hash.slice(1)), false); });
+  addEventListener('message', function () { setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0); });
+  if (location.hash) setTimeout(function () { go(decodeURIComponent(location.hash.slice(1)), false); }, 0);
+})();
+</script>
+</body>
+</html>

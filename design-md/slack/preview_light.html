@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044) -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Design System Analysis of Slacc</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-700-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-800-normal.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-800-normal.woff2) format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-800-normal.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-800-normal.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-800-normal.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-800-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/inter/inter-latin-800-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+:root {
+  --primary: #4a154b;
+  --ink: #1d1d1d;
+  --on-primary: #ffffff;
+  --canvas: #ffffff;
+  --canvas-alt: #f4ede4;
+  --hairline: #e6e6e6;
+  --muted: #696969;
+  --accent-2: #1264a3;
+  --featured-bg: #4a154b;
+  --featured-fg: #ffffff;
+  --rad-button: 90px;
+  --rad-card: 16px;
+  --rad-input: 4px;
+  --font-display: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, Menlo, Monaco, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: var(--font-body); color: var(--ink); background: var(--canvas); -webkit-font-smoothing: antialiased; }
+
+.nav { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; position: sticky; top: 0; z-index: 50; background: var(--canvas); border-bottom: 1px solid var(--hairline); padding: 0 48px; height: 64px; }
+.nav > .nav-left { justify-self: start; }
+.nav > .nav-links { justify-self: center; }
+.nav > :last-child { justify-self: end; }
+.nav-links { list-style: none; display: flex; gap: 24px; padding: 0; margin: 0; font-size: 14px; font-weight: 500; }
+.nav-links a { color: var(--ink); text-decoration: none; }
+.nav-cta { background: var(--primary); color: var(--on-primary); font-weight: 700; font-size: 14px; border: 0; border-radius: var(--rad-button); padding: 0 20px; height: 40px; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+
+.hero { padding: 96px 48px; background: var(--canvas); display: block; max-width: 1440px; margin: 0 auto; background: linear-gradient(120deg, #fff0e6 0%, #f4ede4 25%, #f9f0ff 50%, #e9d8ff 75%, #d8e6e0 100%); }
+.hero-content { max-width: 1200px; }
+.hero h1 { font-family: var(--font-display); font-size: 64px; font-weight: 700; line-height: 1.12; color: var(--ink); margin: 0 0 32px; letter-spacing: -0.768px; }
+.hero p { font-size: 18px; color: var(--ink); max-width: 720px; margin: 0 0 40px; line-height: 1.55; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn { font-family: var(--font-body); font-weight: 700; font-size: 16px; border-radius: var(--rad-button); padding: 0 28px; height: 48px; display: inline-flex; align-items: center; justify-content: center; border: 0; cursor: pointer; line-height: 1; }
+.btn-primary { background: var(--primary); color: var(--on-primary); }
+.btn-secondary { background: var(--canvas-alt); color: var(--ink); }
+.btn-outline { background: var(--canvas); color: var(--primary); border: 2px solid var(--primary); }
+
+section { padding: 96px 48px; max-width: 1440px; margin: 0 auto; border-top: 1px solid var(--hairline); }
+.section-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.96px; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; }
+.section-heading { font-family: var(--font-display); font-size: 50px; font-weight: 700; letter-spacing: -0.6px; line-height: 1.12; color: var(--ink); margin: 0 0 16px; }
+.section-sub { font-size: 18px; color: var(--ink); max-width: 720px; margin: 0 0 48px; line-height: 1.55; }
+.subhead { font-family: var(--font-display); font-weight: 700; font-size: 22px; margin: 32px 0 16px; color: var(--ink); }
+
+.palette-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
+.swatch { border: 1px solid var(--hairline); border-radius: var(--rad-card); overflow: hidden; background: var(--canvas); }
+.swatch .chip { height: 96px; }
+.swatch .meta { padding: 12px; }
+.swatch .name { font-size: 13px; font-weight: 700; color: var(--ink); }
+.swatch .hex { font-family: var(--font-mono); font-size: 12px; color: var(--muted); margin-top: 2px; }
+.swatch .role { font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.4; }
+
+.type-row { display: grid; grid-template-columns: 240px 1fr; gap: 24px; padding: 16px 0; border-bottom: 1px solid var(--hairline); align-items: baseline; min-width: 0; }
+.type-row > * { min-width: 0; }
+.type-meta { font-family: var(--font-mono); font-size: 12px; color: var(--muted); line-height: 1.5; }
+.type-meta strong { display: block; font-family: var(--font-body); font-size: 13px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+
+.button-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.button-cell { padding: 24px; border: 1px solid var(--hairline); border-radius: var(--rad-card); background: var(--canvas); display: flex; flex-direction: column; align-items: flex-start; gap: 12px; min-width: 0; }
+.button-cell .label { font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
+.card { padding: 32px; border-radius: var(--rad-card); min-width: 0; }
+.card.pricing-light { background: var(--canvas); border: 1px solid var(--hairline); color: var(--ink); }
+.card.pricing-featured { background: var(--featured-bg); color: var(--featured-fg); }
+.card.feature-alt { background: var(--canvas-alt); color: var(--ink); }
+.card h3 { font-family: var(--font-display); font-size: 24px; font-weight: 700; margin: 0 0 8px; letter-spacing: -0.1px; }
+.card .price { font-family: var(--font-display); font-size: 50px; font-weight: 700; line-height: 1.12; margin: 8px 0 16px; letter-spacing: -0.6px; }
+.card p { font-size: 16px; line-height: 1.55; margin: 0 0 16px; }
+.card ul { list-style: none; padding: 0; margin: 16px 0; font-size: 14px; line-height: 1.8; }
+.card ul li::before { content: "✓ "; color: var(--primary); font-weight: 700; }
+.card.pricing-featured ul li::before { color: var(--featured-fg); }
+
+.form-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
+.field label { display: block; font-size: 13px; font-weight: 700; color: var(--ink); margin: 0 0 6px; }
+.input { width: 100%; box-sizing: border-box; background: var(--canvas); color: var(--ink); border: 1px solid var(--hairline); border-radius: var(--rad-input); padding: 10px 12px; font-family: var(--font-body); font-size: 16px; line-height: 1.5; }
+.input:focus { outline: 0; border-color: var(--primary); }
+
+.spacing-row, .radius-row { display: flex; gap: 24px; flex-wrap: wrap; align-items: flex-end; }
+.spacing-row .stack, .radius-row .stack { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+.spacing-row .bar { background: var(--primary); height: 32px; border-radius: 4px; }
+.radius-row .box { width: 88px; height: 88px; background: var(--primary); }
+.spacing-row .lbl, .radius-row .lbl { font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+
+.elevation-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 24px; padding: 32px; background: #fafafa; border-radius: var(--rad-card); }
+.elev-cell { padding: 24px; background: var(--canvas); border-radius: var(--rad-card); min-height: 120px; display: flex; flex-direction: column; justify-content: flex-end; }
+.elev-cell .lbl { font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+.elev-0 { border: 1px solid var(--hairline); }
+.elev-1 { box-shadow: rgba(0,0,0,0.1) 0 5px 20px 0; }
+.elev-2 { box-shadow: rgba(0,0,0,0.1) 0 0 32px 0; }
+.elev-3 { box-shadow: rgba(0,0,0,0.2) 0 1px 10px 0; }
+
+.responsive-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.responsive-table th, .responsive-table td { text-align: left; padding: 14px 16px; border-bottom: 1px solid var(--hairline); }
+.responsive-table th { font-family: var(--font-mono); font-weight: 700; font-size: 11px; letter-spacing: 0.2px; text-transform: uppercase; color: var(--ink); }
+.device-ladder { display: flex; gap: 16px; align-items: flex-end; flex-wrap: wrap; margin-top: 32px; }
+.device-ladder .device { background: var(--ink); border-radius: 8px; min-width: 60px; }
+.device-ladder .lbl { font-family: var(--font-mono); font-size: 11px; color: var(--muted); margin-top: 8px; }
+.device-ladder .stack { display: flex; flex-direction: column; align-items: center; }
+
+.signature-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
+.sig-card { padding: 24px; border: 1px solid var(--hairline); border-radius: var(--rad-card); background: var(--canvas); }
+.sig-card h4 { font-family: var(--font-display); font-size: 18px; margin: 0 0 8px; color: var(--ink); font-weight: 700; }
+.sig-card p { font-size: 14px; color: var(--muted); margin: 0; line-height: 1.6; }
+
+.footer { padding: 32px 48px; border-top: 1px solid var(--hairline); text-align: center; font-size: 14px; color: var(--muted); }
+.footer a { color: var(--ink); }
+
+.nav-left { display: flex; align-items: center; gap: 20px; }
+.nav-brand-link, .nav-brand-link:link, .nav-brand-link:visited, .nav-brand-link:hover, .nav-brand-link:active { text-decoration: none; color: inherit; }
+.nav-brand { font-family: var(--font-display); font-weight: 700; font-size: 18px; color: var(--ink); }
+.nav-github, .nav-github:link, .nav-github:visited, .nav-github:hover, .nav-github:active { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: inherit; text-decoration: none; padding: 5px 10px; border: 1px solid rgba(128,128,128,0.3); border-radius: 6px; opacity: 0.75; transition: opacity 200ms ease, border-color 200ms ease; font-family: inherit; line-height: 1; white-space: nowrap; }
+.nav-github:hover { opacity: 1; border-color: rgba(128,128,128,0.55); }
+.nav-github svg { display: block; flex-shrink: 0; }
+
+
+.cell, .cell > *, .demo, .button-cell, .component-cell { min-width: 0; }
+
+@media (max-width: 1024px) {
+  section { padding: 64px 32px; }
+  .section-heading { font-size: 36px; }
+  .nav > :last-child { display: none; }
+  .nav { padding: 0 32px; }
+  .hero { padding: 64px 32px; }
+  .hero h1 { font-size: 44px; }
+  .type-row { grid-template-columns: 1fr; gap: 8px; }
+}
+@media (max-width: 720px) {
+  .nav { padding: 12px 20px; height: auto; min-height: 56px; }
+  .nav-links { display: none; }
+  .hero { padding: 48px 20px; }
+  .hero h1 { font-size: 32px; letter-spacing: -0.3px; }
+  .hero p { font-size: 16px; }
+  section { padding: 48px 20px; }
+  .section-heading { font-size: 28px; }
+  .palette-grid, .button-grid, .card-grid, .form-grid, .signature-grid, .elevation-grid { grid-template-columns: 1fr !important; gap: 16px; }
+  .footer { padding: 24px 16px; font-size: 12px; }
+}
+
+
+/* ============ KIT-MIRROR ALIAS BRIDGE (light) — slack ============ */
+:root {
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--on-primary);
+  --color-foreground: var(--ink);
+  --color-foreground-muted: var(--muted);
+  --color-foreground-tertiary: var(--muted);
+  --color-foreground-disabled: var(--hairline);
+  --color-foreground-on-primary: var(--on-primary);
+  --color-canvas: var(--canvas);
+  --color-canvas-soft: var(--canvas-alt);
+  --color-surface-elevated: var(--canvas);
+  --color-border: var(--hairline);
+  --color-border-soft: var(--hairline);
+  --color-accent: var(--accent-2);
+  --color-accent-soft: rgba(18,100,163,0.10);
+  --color-success: #16a34a;
+  --color-warning: #b66c00;
+  --color-danger: #dc2626;
+  --color-silver: #aaa;
+  --color-avatar-fill: rgba(0,0,0,0.06);
+  --color-chip-bg: rgba(0,0,0,0.06);
+  --font-display: var(--font-display);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-mono);
+  --shadow-md: 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* ============================== EXAMPLES (kit-mirror) ==============================
+ *
+ * Shared CSS for the 9 product-UI patterns (Pricing, Product Selector, Shopping Cart,
+ * App Shell, Data Table, Auth Forms, Modal, Empty State, Toast Stack) emitted at the
+ * end of every preview.html / preview-dark.html.
+ *
+ * This file is BRAND-AGNOSTIC. It uses only the kit's `--color-*` / `--font-*` /
+ * `--shadow-*` token names. Each brand's preview.html must include a `:root { ... }`
+ * alias block that maps these names to the brand's local tokens (see preview-design.md
+ * Step "Emit kit-mirror Examples block" for the alias spec).
+ *
+ * Hardcoded radii (4px / 6px / 9999px) intentionally inherited from the kit's
+ * /generate-kit base template defaults. Do not tokenize without a parallel update to
+ * the base template's `index.tsx`.
+ * ============================================================================ */
+
+.ex-section { padding: clamp(48px, 8vw, 96px) 0; border-top: 1px solid var(--color-border); background: var(--color-canvas); }
+.ex-section .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+.ex-h2 { font-family: var(--font-display); font-size: clamp(32px, 5vw, 50px); font-weight: 700; line-height: 1.0; letter-spacing: -0.5px; color: var(--color-foreground); margin: 0 0 12px; }
+.ex-intro { font-size: 16px; color: var(--color-foreground-muted); max-width: 720px; margin: 0 0 48px; line-height: 1.43; }
+.ex-mono { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase; color: var(--color-foreground-muted); }
+/* Buttons use inline-flex centring + line-height:1 so brand-shape overrides that copy
+   `line-height: 1.75` (or any leading > 1) from `typography.button-md` cannot push
+   descenders past the fixed `height` boundary. height is the single source of truth
+   for vertical box; horizontal padding controls width-padding only. */
+.ex-primary { background: var(--color-primary); color: var(--color-primary-foreground); border: 1px solid var(--color-primary); border-radius: 4px; padding: 0 22px; height: 48px; font-family: var(--font-sans); font-size: 16px; font-weight: 600; letter-spacing: 0.162px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+.ex-outlined { background: var(--color-canvas); color: var(--color-foreground); border: 1px solid var(--color-border-soft); border-radius: 4px; padding: 0 20px; height: 44px; font-family: var(--font-sans); font-size: 14px; font-weight: 500; line-height: 1; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+.ex-textlink { background: transparent; color: var(--color-foreground); border: none; padding: 6px; font-family: var(--font-sans); font-size: 14px; font-weight: 500; cursor: pointer; text-decoration: underline; }
+.ex-input { background: var(--color-canvas); border: 1px solid var(--color-border-soft); border-radius: 4px; padding: 0 16px; height: 48px; font-family: var(--font-sans); font-size: 16px; color: var(--color-foreground); width: 100%; box-sizing: border-box; }
+.ex-field { display: flex; flex-direction: column; gap: 8px; }
+.ex-field-label { font-size: 12px; font-weight: 400; letter-spacing: 0.5px; text-transform: uppercase; color: var(--color-foreground); font-family: var(--font-mono); }
+.ex-td { padding: 14px 16px; text-align: left; border-bottom: 1px solid var(--color-border); font-size: 14px; color: var(--color-foreground); line-height: 1.5; vertical-align: middle; }
+.ex-th { padding: 14px 16px; text-align: left; border-bottom: 1px solid var(--color-border); font-size: 11px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: var(--color-foreground-muted); background: var(--color-canvas-soft); font-family: var(--font-mono); }
+.ex-pager { height: 32px; min-width: 32px; padding: 0 10px; font-family: var(--font-mono); font-size: 12px; background: var(--color-canvas); border: 1px solid var(--color-border-soft); color: var(--color-foreground); border-radius: 4px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+.ex-pager.active { background: var(--color-foreground); color: var(--color-foreground-on-primary); border-color: var(--color-foreground); }
+.ex-grid-pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+.ex-grid-product { display: grid; grid-template-columns: 1fr; gap: 32px; }
+@media (min-width: 1024px) { .ex-grid-product { grid-template-columns: 1.1fr 1fr; } }
+.ex-grid-gallery { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 8px; }
+.ex-tile { background: var(--color-canvas-soft); border: 1px solid var(--color-border); border-radius: 4px; aspect-ratio: 1; padding: 12px; display: flex; align-items: flex-end; background-image: linear-gradient(135deg, var(--color-canvas-soft) 0%, var(--color-canvas) 50%, var(--color-canvas-soft) 100%); }
+.ex-tile.tall { grid-row: span 2; aspect-ratio: 1 / 2; }
+.ex-grid-sizes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.ex-size-btn { height: 44px; border-radius: 4px; font-family: var(--font-sans); font-size: 13px; font-weight: 500; line-height: 1; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; border: 1px solid var(--color-border-soft); background: var(--color-canvas); color: var(--color-foreground); }
+.ex-size-btn.selected { border-color: var(--color-foreground); background: var(--color-foreground); color: var(--color-foreground-on-primary); }
+.ex-size-btn:disabled { color: var(--color-foreground-disabled); text-decoration: line-through; cursor: not-allowed; }
+.ex-grid-appshell { display: grid; grid-template-columns: 1fr; border: 1px solid var(--color-border); border-radius: 6px; overflow: hidden; background: var(--color-canvas); }
+@media (min-width: 768px) { .ex-grid-appshell { grid-template-columns: 200px 1fr; } }
+.ex-grid-kpi { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.ex-grid-auth { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+.ex-grid-toasts { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+.ex-table-wrap { overflow-x: auto; }
+.ex-table-wrap table { width: 100%; min-width: 720px; border-collapse: collapse; font-size: 14px; }
+.ex-features { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--color-border); }
+.ex-features li { padding: 12px 0; font-size: 14px; border-bottom: 1px solid var(--color-border); display: flex; align-items: flex-start; gap: 10px; }
+.ex-features.dark { border-top-color: rgba(255,255,255,0.18); }
+.ex-features.dark li { border-bottom-color: rgba(255,255,255,0.10); }
+.ex-bullet { margin-top: 7px; width: 6px; height: 6px; background: var(--color-accent); border-radius: 9999px; flex-shrink: 0; }
+.ex-tier-card { border: 1px solid var(--color-border); border-radius: 6px; padding: 28px; background: var(--color-canvas); color: var(--color-foreground); display: flex; flex-direction: column; gap: 20px; }
+.ex-tier-card.dark { background: var(--color-foreground); color: var(--color-foreground-on-primary); border-color: var(--color-foreground); }
+.ex-tier-price { font-family: var(--font-display); font-size: clamp(40px, 5vw, 50px); font-weight: 700; line-height: 1; letter-spacing: -1.5px; }
+.ex-tier-cta { margin-top: auto; height: 44px; border-radius: 4px; font-family: var(--font-sans); font-size: 14px; font-weight: 600; letter-spacing: 0.162px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }
+.ex-tier-cta.ink { border: 1px solid var(--color-foreground); background: var(--color-foreground); color: var(--color-foreground-on-primary); }
+.ex-tier-cta.invert { border: 1px solid var(--color-canvas); background: var(--color-canvas); color: var(--color-foreground); }
+.ex-status { display: inline-block; padding: 4px 10px; border-radius: 4px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase; }
+.ex-status.ok { color: var(--color-success); background: var(--color-accent-soft); }
+.ex-status.pending { color: var(--color-foreground-muted); background: var(--color-chip-bg); }
+.ex-status.fail { color: var(--color-danger); background: var(--color-accent-soft); }
+.ex-frame { position: relative; border-radius: 6px; border: 1px solid var(--color-border); overflow: hidden; background: var(--color-canvas-soft); }
+.ex-frame.short { height: 420px; }
+.ex-frame.tall { height: clamp(480px, 70vh, 560px); }
+.ex-scrim { position: absolute; inset: 0; background: rgba(26, 24, 22, 0.5); }
+.ex-cart-drawer { position: absolute; top: 0; right: 0; bottom: 0; width: min(420px, 100%); background: var(--color-surface-elevated); border-left: 1px solid var(--color-border); box-shadow: var(--shadow-lg); display: flex; flex-direction: column; }
+.ex-modal-card { width: 100%; max-width: 480px; background: var(--color-surface-elevated); border-radius: 6px; box-shadow: var(--shadow-lg); border: 1px solid var(--color-border); }
+.ex-emptystate { border: 1px solid var(--color-border); border-radius: 6px; padding: 72px 24px; display: flex; flex-direction: column; align-items: center; text-align: center; background: var(--color-canvas); }
+.ex-toast { display: grid; grid-template-columns: 3px 1fr auto; background: var(--color-surface-elevated); border: 1px solid var(--color-border); border-radius: 4px; box-shadow: var(--shadow-md); overflow: hidden; }
+
+
+/* DESIGN.md SOURCE RECEIPTS — what I read to write this block:
+ *   components.button-primary-pill   → rounded {rounded.pill}=90px (Slack signature, NOT 9999) · padding 14px 28px · typography button-md
+ *   components.button-outline-aubergine → rounded {rounded.pill}=90px · padding 14px 28px · typography button-md
+ *   components.text-input            → rounded {rounded.sm}=4px · padding 10px 12px · typography body-md
+ *   components.card-pricing          → rounded {rounded.xl}=16px · padding 32px
+ *   typography.button-md             → Salesforce-Sans · 16px · 700 · lh 1.38 · letter-spacing 0.2px (drives ex-primary/cta)
+ *   typography.display-xl            → Salesforce-Avant-Garde · 58px · 600 · lh 1.25 · letter-spacing -0.464px (drives ex-tier-price)
+ *   typography.display-md            → Salesforce-Avant-Garde · 32px · 700 · letter-spacing -0.256px (drives ex-h2)
+ *   typography.body-md               → Salesforce-Sans · 16px · 400 · lh 1.55 (drives ex-input)
+ *   typography.micro-cap             → Salesforce-Sans · 12px · 700 · lh 1.0 · letter-spacing 0.96px (Slack's wide-tracked uppercase — drives ex-mono / ex-th / ex-field-label)
+ *   colors.success/warning/danger    → NOT defined in DESIGN.md → fallback Tailwind hex via alias bridge
+ */
+/* Brand-shape overrides — align kit-mirror block with slack DESIGN.md spec */
+.ex-primary { border-radius: var(--rad-button); height: 48px; padding: 0 28px; font-family: var(--font-body); font-size: 16px; font-weight: 700; letter-spacing: 0.2px; line-height: 1; }
+.ex-outlined { border-radius: var(--rad-button); height: 48px; padding: 0 28px; font-family: var(--font-body); font-size: 16px; font-weight: 700; letter-spacing: 0.2px; line-height: 1; }
+.ex-textlink { font-family: var(--font-body); font-size: 16px; font-weight: 700; letter-spacing: 0.2px; }
+.ex-input { border-radius: var(--rad-input); height: 44px; padding: 0 12px; font-family: var(--font-body); font-size: 16px; font-weight: 400; }
+.ex-field-label { font-family: var(--font-body); font-size: 12px; font-weight: 700; letter-spacing: 0.96px; text-transform: uppercase; }
+.ex-tier-card { border-radius: var(--rad-card); padding: 32px; }
+.ex-tier-card.dark { border-radius: var(--rad-card); padding: 32px; }
+.ex-tier-price { font-family: var(--font-display); font-weight: 600; letter-spacing: -0.464px; }
+.ex-tier-cta { border-radius: var(--rad-button); height: 48px; font-family: var(--font-body); font-size: 16px; font-weight: 700; letter-spacing: 0.2px; line-height: 1; }
+.ex-h2 { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.256px; }
+.ex-mono, .ex-th { font-family: var(--font-body); font-size: 12px; font-weight: 700; letter-spacing: 0.96px; text-transform: uppercase; }
+.ex-pager { border-radius: var(--rad-button); font-family: var(--font-body); }
+.ex-pager.active { border-radius: var(--rad-button); }
+.ex-status { border-radius: var(--rad-button); font-family: var(--font-body); font-weight: 700; }
+.ex-frame, .ex-emptystate, .ex-toast, .ex-tile { border-radius: var(--rad-card); }
+.ex-modal-card { border-radius: var(--rad-card); }
+.ex-size-btn, .ex-size-btn.selected { border-radius: var(--rad-button); font-family: var(--font-body); }
+
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-left">
+    <a href="https://getdesign.md/" target="_blank" rel="noopener noreferrer" class="nav-brand-link"><span class="nav-brand">getdesign.md</span></a>
+    <a class="nav-github" href="https://github.com/VoltAgent/awesome-design-md" target="_blank" rel="noopener noreferrer" aria-label="awesome-design-md on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+      awesome-design-md
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#palette">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#cards">Cards</a></li>
+    <li><a href="#responsive">Responsive</a></li>
+  </ul>
+  <button class="nav-cta">Get Started</button>
+</nav>
+<header class="hero">
+  <div class="hero-content">
+    <h1>Design System Analysis of Slacc</h1>
+    <p>An inspired interpretation of Slacc's design language — a workplace messaging brand built on a deep aubergine primary, cream-lavender hero gradients with floating product UI mockups, blue inline links, and over-padded pill CTAs at 90px radius.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">Get started</button>
+      <button class="btn btn-secondary">Talk to sales</button>
+    </div>
+  </div>
+</header>
+
+<section id="palette">
+  <p class="section-eyebrow">01 — Colors</p>
+  <h2 class="section-heading">Color Palette</h2>
+  <p class="section-sub">Core brand and surface tokens.</p>
+  <div class="palette-grid"><div class="swatch"><div class="chip" style="background:#4a154b"></div><div class="meta"><div class="name">Primary</div><div class="hex">#4a154b</div><div class="role">Brand primary surface and CTA color.</div></div></div><div class="swatch"><div class="chip" style="background:#1d1d1d"></div><div class="meta"><div class="name">Ink</div><div class="hex">#1d1d1d</div><div class="role">Default body text color.</div></div></div><div class="swatch"><div class="chip" style="background:#ffffff;border:1px solid #e6e6e6"></div><div class="meta"><div class="name">On Primary</div><div class="hex">#ffffff</div><div class="role">Text on primary surfaces.</div></div></div><div class="swatch"><div class="chip" style="background:#ffffff;border:1px solid #e6e6e6"></div><div class="meta"><div class="name">Canvas</div><div class="hex">#ffffff</div><div class="role">Default content surface.</div></div></div><div class="swatch"><div class="chip" style="background:#f4ede4"></div><div class="meta"><div class="name">Canvas Alt</div><div class="hex">#f4ede4</div><div class="role">Secondary surface / band fill.</div></div></div><div class="swatch"><div class="chip" style="background:#e6e6e6"></div><div class="meta"><div class="name">Hairline</div><div class="hex">#e6e6e6</div><div class="role">1px divider on cards and tables.</div></div></div><div class="swatch"><div class="chip" style="background:#696969"></div><div class="meta"><div class="name">Muted</div><div class="hex">#696969</div><div class="role">Secondary text and helper copy.</div></div></div><div class="swatch"><div class="chip" style="background:#1264a3"></div><div class="meta"><div class="name">Accent 2</div><div class="hex">#1264a3</div><div class="role">Inline link / second chromatic accent.</div></div></div></div>
+  <h3 class="subhead">Brand &amp; Accent (extended)</h3><div class="palette-grid"><div class="swatch"><div class="chip" style="background:#611f69"></div><div class="meta"><div class="name">Aubergine Press</div><div class="hex">#611f69</div><div class="role">Pressed state lift of primary.</div></div></div><div class="swatch"><div class="chip" style="background:#592466"></div><div class="meta"><div class="name">Aubergine Tint</div><div class="hex">#592466</div><div class="role">Border accent on aubergine surfaces.</div></div></div><div class="swatch"><div class="chip" style="background:#f9f0ff"></div><div class="meta"><div class="name">Canvas Lavender</div><div class="hex">#f9f0ff</div><div class="role">Soft section band fill.</div></div></div><div class="swatch"><div class="chip" style="background:#d9bdde"></div><div class="meta"><div class="name">On Aubergine Mute</div><div class="hex">#d9bdde</div><div class="role">Muted text on aubergine surfaces.</div></div></div></div>
+</section>
+
+<section id="typography">
+  <p class="section-eyebrow">02 — Typography</p>
+  <h2 class="section-heading">Typography Scale</h2>
+  <p class="section-sub">Display tier handles hero and section openers; body tier carries UI copy and captions.</p>
+  <div class="type-row"><div class="type-meta"><strong>display-xxl</strong>64px / 700 / 1.12 / -0.768px</div><div style="font-family:var(--font-display);font-size:64px;font-weight:700;line-height:1.12;letter-spacing:-0.768px;color:var(--ink)">Display headline</div></div>
+<div class="type-row"><div class="type-meta"><strong>display-lg</strong>50 / 700 / 1.12 / -0.6px</div><div style="font-family:var(--font-display);font-size:50px;font-weight:700;line-height:1.12;letter-spacing:-0.6px">Section opener</div></div>
+<div class="type-row"><div class="type-meta"><strong>display-md</strong>32 / 700 / 1.25 / -0.256px</div><div style="font-family:var(--font-display);font-size:32px;font-weight:700;line-height:1.25;letter-spacing:-0.256px">Card title</div></div>
+<div class="type-row"><div class="type-meta"><strong>heading-lg</strong>24 / 700 / 1.33</div><div style="font-family:var(--font-display);font-size:24px;font-weight:700">Pricing tier name</div></div>
+<div class="type-row"><div class="type-meta"><strong>body-lg</strong>18 / 400 / 1.55</div><div style="font-family:var(--font-body);font-size:18px;line-height:1.55">Marketing body lead — relaxed leading for comfortable reading at scale.</div></div>
+<div class="type-row"><div class="type-meta"><strong>body-md</strong>16 / 400 / 1.55</div><div style="font-family:var(--font-body);font-size:16px;line-height:1.55">Default UI body, table cells, form labels.</div></div>
+<div class="type-row"><div class="type-meta"><strong>caption</strong>14 / 400 / 1.43</div><div style="font-family:var(--font-body);font-size:14px;line-height:1.43">Helper copy, footnotes.</div></div>
+<div class="type-row"><div class="type-meta"><strong>button-md</strong>16 / 700 / 1.38 / 0.2px</div><div style="font-family:var(--font-body);font-size:16px;font-weight:700;letter-spacing:0.2px">CTA Label</div></div>
+<div class="type-row"><div class="type-meta"><strong>micro-cap</strong>12 / 700 / 1.0 / 0.96px</div><div style="font-family:var(--font-body);font-size:12px;font-weight:700;letter-spacing:0.96px;text-transform:uppercase">Eyebrow Label</div></div>
+</section>
+
+<section id="buttons">
+  <p class="section-eyebrow">03 — Components</p>
+  <h2 class="section-heading">Button Variants</h2>
+  <p class="section-sub">Primary, secondary, and outline variants.</p>
+  <div class="button-grid">
+    <div class="button-cell"><span class="label">button-primary</span><button class="btn btn-primary">Get Started</button></div>
+    <div class="button-cell"><span class="label">button-secondary</span><button class="btn btn-secondary">Sign in</button></div>
+    <div class="button-cell"><span class="label">button-outline</span><button class="btn btn-outline">Learn more</button></div>
+    <div class="button-cell"><span class="label">button-secondary-pill · lavender</span><button class="btn" style="background:#f9f0ff;color:#1d1d1d;border:0;border-radius:var(--rad-button);padding:0 24px;height:48px">Sign in</button></div><div class="button-cell"><span class="label">button-outline-aubergine</span><button class="btn" style="background:#ffffff;color:#4a154b;border:2px solid #4a154b;border-radius:var(--rad-button);padding:0 24px;height:48px">Talk to sales</button></div>
+  </div>
+</section>
+
+<section id="cards">
+  <p class="section-eyebrow">04 — Components</p>
+  <h2 class="section-heading">Card Examples</h2>
+  <p class="section-sub">Pricing tiers with one inverted featured tier, plus alt-canvas feature card.</p>
+  <div class="card-grid">
+    <div class="card pricing-light"><h3>Starter</h3><div class="price">$0</div><p>For small teams.</p><ul><li>Core features</li><li>Email support</li><li>3 seats</li></ul><button class="btn btn-primary">Choose Starter</button></div>
+    <div class="card pricing-light"><h3>Pro</h3><div class="price">$29</div><p>For growing teams.</p><ul><li>Everything in Starter</li><li>Priority support</li><li>20 seats</li></ul><button class="btn btn-primary">Choose Pro</button></div>
+    <div class="card pricing-featured"><h3>Business</h3><div class="price">$80</div><p>For scaled organizations.</p><ul><li>Everything in Pro</li><li>SSO + audit log</li><li>Unlimited seats</li></ul><button class="btn" style="background:var(--featured-fg);color:var(--featured-bg);border:0;border-radius:var(--rad-button);padding:0 24px;height:48px;font-weight:700">Choose Business</button></div>
+    <div class="card feature-alt"><h3>Built-in security</h3><p>SOC 2 Type II, GDPR, HIPAA-ready out of the box.</p></div>
+  </div>
+</section>
+
+<section id="forms">
+  <p class="section-eyebrow">05 — Components</p>
+  <h2 class="section-heading">Form Elements</h2>
+  <p class="section-sub">Standard inputs with hairline borders; focus replaces hairline with primary color.</p>
+  <div class="form-grid">
+    <div class="field"><label>First name</label><input class="input" placeholder="Jane"></div>
+    <div class="field"><label>Email address</label><input class="input" type="email" placeholder="jane@team.com"></div>
+    <div class="field"><label>Country</label><select class="input"><option>United States</option><option>United Kingdom</option></select></div>
+    <div class="field"><label>Tell us more</label><textarea class="input" rows="3"></textarea></div>
+  </div>
+</section>
+
+<section id="spacing">
+  <p class="section-eyebrow">06 — Foundations</p>
+  <h2 class="section-heading">Spacing Scale</h2>
+  <p class="section-sub">8px base with denser sub-units for fine vertical rhythm.</p>
+  <div class="spacing-row">
+    <div class="stack"><div class="bar" style="width:4px"></div><div class="lbl">xs · 4px</div></div>
+    <div class="stack"><div class="bar" style="width:8px"></div><div class="lbl">sm · 8px</div></div>
+    <div class="stack"><div class="bar" style="width:12px"></div><div class="lbl">md · 12px</div></div>
+    <div class="stack"><div class="bar" style="width:16px"></div><div class="lbl">lg · 16px</div></div>
+    <div class="stack"><div class="bar" style="width:24px"></div><div class="lbl">xl · 24px</div></div>
+    <div class="stack"><div class="bar" style="width:32px"></div><div class="lbl">xxl · 32px</div></div>
+    <div class="stack"><div class="bar" style="width:64px"></div><div class="lbl">huge · 64px</div></div>
+  </div>
+</section>
+
+<section id="radius">
+  <p class="section-eyebrow">07 — Foundations</p>
+  <h2 class="section-heading">Border Radius Scale</h2>
+  <p class="section-sub">From inputs to pill buttons; the brand's radius vocabulary.</p>
+  <div class="radius-row">
+    <div class="stack"><div class="box" style="border-radius:4px"></div><div class="lbl">sm · 4px</div></div>
+    <div class="stack"><div class="box" style="border-radius:8px"></div><div class="lbl">md · 8px</div></div>
+    <div class="stack"><div class="box" style="border-radius:12px"></div><div class="lbl">lg · 12px</div></div>
+    <div class="stack"><div class="box" style="border-radius:16px"></div><div class="lbl">xl · 16px</div></div>
+    <div class="stack"><div class="box" style="border-radius:90px"></div><div class="lbl">button · 90px</div></div>
+  </div>
+</section>
+
+<section id="elevation">
+  <p class="section-eyebrow">08 — Foundations</p>
+  <h2 class="section-heading">Elevation &amp; Depth</h2>
+  <p class="section-sub">Layered shadow stacks for surface lift; deeper shadows for floating panels.</p>
+  <div class="elevation-grid">
+    <div class="elev-cell elev-0"><span class="lbl">L0 · Flat</span></div>
+    <div class="elev-cell elev-1"><span class="lbl">L1 · Card</span></div>
+    <div class="elev-cell elev-2"><span class="lbl">L2 · Mockup halo</span></div>
+    <div class="elev-cell elev-3"><span class="lbl">L3 · Toast</span></div>
+  </div>
+</section>
+
+<section id="responsive">
+  <p class="section-eyebrow">09 — Responsive</p>
+  <h2 class="section-heading">Responsive Behavior</h2>
+  <p class="section-sub">Display sizes scale through the breakpoint stair; pricing tiers stair-step 4-up to 1-up.</p>
+  <table class="responsive-table">
+    <thead><tr><th>Name</th><th>Width</th><th>Key Changes</th></tr></thead>
+    <tbody>
+      <tr><td>Wide</td><td>≥ 1440px</td><td>Full hero band; pricing 4-up</td></tr>
+      <tr><td>Desktop</td><td>1024–1440px</td><td>Default content max-width</td></tr>
+      <tr><td>Tablet</td><td>768–1023px</td><td>Pricing 2-up; grid feature 1-up</td></tr>
+      <tr><td>Mobile</td><td>&lt; 768px</td><td>Pricing 1-up; hamburger nav</td></tr>
+    </tbody>
+  </table>
+  <div class="device-ladder">
+    <div class="stack"><div class="device" style="width:60px;height:96px"></div><div class="lbl">375</div></div>
+    <div class="stack"><div class="device" style="width:120px;height:144px"></div><div class="lbl">768</div></div>
+    <div class="stack"><div class="device" style="width:160px;height:160px"></div><div class="lbl">1024</div></div>
+    <div class="stack"><div class="device" style="width:240px;height:160px"></div><div class="lbl">1440</div></div>
+  </div>
+  <h3 class="subhead">Touch Targets</h3>
+  <p>Pill buttons hit ≥44×44px on mobile. Form fields stay at the 44px minimum. WCAG AAA compliant.</p>
+  <h3 class="subhead">Collapsing Strategy</h3>
+  <ul style="line-height:1.8"><li>Display tiers stair-step across breakpoints.</li><li>Pricing tiers stair 4-up → 2-up → 1-up; featured tier always distinguished.</li><li>Top nav collapses to hamburger below 768px.</li></ul>
+</section>
+
+<footer class="footer">Maintained by <a href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAESElEQVR4nLSWTWwbRRTH3+x2d72O7cSu12nq1iEWqbBqQxOJRkjpAYKchohGQkIIDhwihOCAhBKJAxfaCwJEIhAHLigHhMoBCSlFIU3UwCGhkEsM2JWrhqSNmzQfa9aJnXi/sjvIteuP9dpWJTLyYWb8n/d77+3ue3PM7/fDUQ7iSK0DwLGGCgyg+lxSoE31OnWHJedUWqI2Upb4JpUQUKPjqE6KdJZOD4bSAyFAyBJbp++niLQIGPRmVjntkkJe0LF9Otr8c5TIKo8HwAD7fQFhuJeNJByTEWZ5p9pTDCB3etJD58SudtfEgm0ubhqNCUCnSP79F9Un3NzYLLPKN0gBgOzn+NEwdS/JfXGDULUGAJ0ity5fIvdlbmyGUIzqgu8IAcbl/uo0yY+ENbvlxOVrBgbpdDrLo+ZHw4SqeT69Tmi6qXXNSj/4/FXtuI2Nrpfc1HDTbyvisx3Z8x1NN1fK2RWv6X5fQG13c+OzCGNT6zpNbn90STlzgtrcNaYCY258Ru1wZ/oCYArQWPrf4V5uvHZmSLT94aD09CnAmI0kqgWEonFjs8Jwr8bSJoD0YIiNrDGrSXPrCHZG+sWe3AOj7iaPpbKmMmaVZyOJ9GDICMAAmYvB5sk/za0DJN99/uCFp/JL69KaqSw/micjmYtBbAAoPhcmCGZ5x/RM6s3nMi8/U1yySyb5KQWxvAMEUnyuCoAcaGNj66Zfyu4r3buv95TWsmqJbdQBIABLbEMOtOWXhVqkep1UQqhWp/vPCm9dqNiiyMTVtw0y68Ky58sbJUlCUL3OCoBmt1DrKcOx/d4nk+/1AaoMjCB0G1Oxo2q2+TvlG2RaKgJqlutst2/ngwEgG9VzTfd8Nm2t/VQKEZAZSXtYikvuXzhDyIcgH5Zv6lYKiDIkxu6v5mwL/xihDguZkSoA1EZKOnuyXJTLaVla82Xq3g/vAFMCuL6Zd8zcqvZa9bkstx7k5wU1E9+Ugl7z+vBoSEEvMFRx2fL9YsuPS9UyDCAGTzHxzQoAnRBAx3Knpw5A7PYV5/af/nJ++7upTO70IKzTj97JAgAB2K/H9oa66gCy3e35SdMvt91f/1qrWe4NnbNPx4r/lhLqmIqKXT7Zz5keO3Ra1Q537jNeXPWMz6Aa2ZT9brGr3TEVhWoAKSquiQV+NKzTZPVJscuX68x/r7d+PIW0msWcH+k/PrFAiooJIJfZuTh1N8mP9GNkTIB6soW+s9V65VqdNsePhKm1pG0uXr5fo2VmJG58ttxWzmeE6jQifrRfszENWmbOiI6b5pezPR17r51nbm8V6z56+DMdsp/bvjJECgetn0xXN30joMC4uULIh/xoWPG7ST5DCge1ri3CcO/uGz3Oq4vO7/4gdJP46l68rPTeS6HMQAgIZIlu0PcFYk8EBLqDVU47pWCudzqmo46pKCE+5sXL4OlRXR3/l3Hkt+v/AgAA//80vsKUJF9LTwAAAABJRU5ErkJggg==" alt="VoltAgent" width="14" height="14" style="border-radius:3px;vertical-align:-2px;margin-right:3px;">VoltAgent</a> team</footer>
+
+
+
+</body></html>
